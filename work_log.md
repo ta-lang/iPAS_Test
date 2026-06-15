@@ -4,7 +4,65 @@
 
 ## 📅 專案時程與工作里程碑
 
-### 📌 2026-06-14 (今日進度) —— iPAS 模擬考系統登入體驗優化、版權宣告動態化與 GitHub 同步發佈
+### 📌 2026-06-15 —— pwa_QuizQuiz 移植（IndexedDB + SM-2）、Git 整合與 Gitea 推送
+
+#### 🕐 階段一：pwa_QuizQuiz 功能分析與移植計畫
+* **【功能分析】**：完成 `pwa_QuizQuiz_analysis.md`，比較 pwa_QuizQuiz 與 exam/ 的架構差異，列出可移植功能與優先級。
+* **【移植決策】**：確定以 IndexedDB 練習紀錄 + SM-2 間隔複習為第一優先，逐步移植。
+
+#### 🕑 階段二：根專案 Git 初始化與遠端設定
+* **【Git 初始化】**：在 `C:\Drive224\Projects\iPAS 證照` 根目錄初始化 git repo，新增 `.gitignore`（排除 `__pycache__/`、`.venv/`、`.temp/`、`sync.log`、`*.mp4`、`*.pptx`、`*.xlsx`、`*.docx`）。
+* **【exam/ 歷史整合】**：將 `exam/` 原本獨立的 Git 儲存庫歷史整合進根 repo（保留 GitHub 遠端為 `github` secondary remote）。
+* **【Gitea 推送】**：建立 Gitea remote `origin`（`ssh://git@www.talang.org:2222/Talang/ipas_exam.git`），完成 initial commit 並推送至 `main` 分支。
+* **【GitHub 保留】**：`exam/` 保留 GitHub 為 `github` remote，可手動同步。
+
+#### 🕒 階段三：IndexedDB + SM-2 間隔複習模組實作
+* **【IndexedDB 封裝】**：在 `exam/script.js` 實作 `openDB()`、`getWrongPool()`、`addWrongQuestion()`、`loadStats()`、`saveStats()`，建立 `wrongPool`、`stats`、`quizHistory` 三個 store。
+* **【SM-2 演算法】**：實作 `sm2Schedule()` 與 `createSM2Card()`，支援間隔遞增（1-6-N 天）、EF 因子調整、到期日期計算。
+* **【gradeQuiz 擴充】**：wrap `gradeQuiz`，在評分後自動將錯題寫入 IndexedDB wrongPool、更新累積答題統計。
+* **【練習模式即時持久化】**：wrap `showPracticeFeedback`，正確時更新 SM-2 排程，錯誤時加入錯題池；refresh UI 統計數字。
+* **【錯題複習模式】**：wrap `startPracticeMode`，新增「錯題特訓」開關（`#chkWrongBook`），過濾到期待複習題目，支援科目/章節篩選，無題目時顯示提示。
+* **【UI 整合】**：`exam/index.html` 新增 switch toggle 與統計欄位（`#wrongPoolCount`、`#totalAnsweredCount`、`#totalCorrectRate`）；`exam/style.css` 新增 switch-slider 樣式。
+* **【修復】**：修正 compound key（`${certId}_${q.num}`）避免跨證照題號衝突；補齊 normal practice path 缺少的 UI 設定；修復 `showPracticeFeedback` 中未定義變數 `correctLetter`。
+
+---
+
+### 📌 2026-06-16 —— PWA / Service Worker、題庫 lazy chunk、弱點雷達、IRT 審題儀表板、課程學習閱讀模式、營運智慧分析師題庫更新
+
+#### 🕐 階段一：PWA / Service Worker
+* **【離線支援】**：建立 `exam/manifest.json`（standalone 顯示、主題色、SVG 圖示）、`exam/sw.js`（cache-first 快取策略）、`exam/icon-192.svg` / `icon-512.svg`。更新 `index.html` 加入 manifest link 與 theme-color meta。`script.js` 尾端註冊 Service Worker。
+
+#### 🕑 階段二：題庫 lazy chunk
+* **【按需載入】**：移除 `index.html` 三個靜態 `<script>` 標籤（`questions.js`、`ai_questions.js`、`ai_mid_questions.js`），利用原有 `loadQuestions()` 的動態載入邏輯，選證照時才下載對應題庫，減少初始載入。
+
+#### 🕒 階段三：Chart.js 弱點雷達與趨勢圖
+* **【雷達圖】**：在歡迎畫面新增摺疊式「弱點分析」面板，使用 Chart.js 繪製各科目錯題數分佈雷達圖。
+* **【趨勢圖】**：實作 `saveQuizHistory` / `loadQuizHistory`，在 `gradeQuiz` 自動記錄每次測驗成績，繪製歷次成績趨勢折線圖（及格線以上綠點、以下紅點）。
+* **【quizHistory 持久化】**：IndexedDB 新增 `quizHistory` store，記錄每次測驗的 certId、timestamp、正確數、總題數、分數、模式。
+
+#### 🕓 階段四：IRT 審題儀表板
+* **【questionStats 儲存】**：IndexedDB 新增 `questionStats` store（DB v3），在 `gradeQuiz` 與 practice 模式中逐題記錄答對/答錯次數。
+* **【儀表板 UI】**：新增獨立 `#irtScreen` 區塊，包含統計總覽卡與題項分析表（題號、科目、章節、難度、答對/答錯、正確率、最近答錯）。
+* **【難度分級】**：依正確率分四級（簡單≥80%、中等≥50%、困難≥20%、極難<20%），顏色標示。
+* **【Cronbach α】**：基於題目變異數估算信度係數。
+* **【排序切換】**：支援依難度、錯題次數、最近答錯三種排序。
+* **【UI 調整】**：改為單列三層布局，按鈕移至統計區上方、全寬置中。
+
+#### 🕔 階段五：課程學習（講義閱讀模式）
+* **【config.js 擴充】**：各證照模組新增 `studyNotes` 陣列，對應到 `營運智慧分析師/` 與 `AI應用規劃師/` 目錄下的 `.md` 講義檔案路徑。
+* **【閱讀器實作】**：新增 `#readerScreen` 全螢幕閱讀區，使用 `fetch()` 載入 `.md` 檔，marked 程式庫轉 HTML 渲染，支援標題/表格/程式碼區塊/引用等樣式。
+* **【學習選單】**：主畫面第三張卡「📖 課程學習」點擊後彈出 modal 顯示該證照可用講義清單，點選即進入閱讀模式。
+* **【CSS 樣式】**：新增 reader-content 完整樣式集（含深淺色模式）。
+
+#### 🕕 階段六：營運智慧分析師題庫更新（依官方華筑教材重新解析）
+* **【PDF 來源確認】**：三份指定 PDF 中，`115年度營運智慧分析師能力鑑定簡章(初級)` 為 22 頁考試簡章（無題目），實際題庫來源為 `1128（華筑）考科1_營運智慧概論`（55頁）與 `1128（華筑）考科2_經營管理數位化概論`（68頁）。
+* **【解析路徑修正】**：`parse_questions.py` 的 `pdf_dir` 由不存在的預覽目錄修正為 `營運智慧分析師/官方教材及考試簡章`。
+* **【去重邏輯加入】**：在 `parse_questions.py` 的 `main()` 中加入 `seen_questions` 集合與 `normalize()` 函式，依正規化後的題幹文字比對，自動跳過重複題目。
+* **【重新產出】**：成功解析 **163 題**（考科一 76 題 + 考科二 87 題），無重複。寫入 `exam/questions.json` 與 `exam/questions.js`，覆蓋舊版非官方模擬題。
+
+---
+
+### 📌 2026-06-14 —— iPAS 模擬考系統登入體驗優化、版權宣告動態化與 GitHub 同步發佈
 
 #### 👑 階段一：模擬考系統登入體驗與版權宣告優化 (Phase 1: Login UI & Copyright Notice Optimization)
 *   **【頁尾版權動態化】**：優化 [index.html](file:///c:/Drive224/Projects/iPAS%20證照/exam/index.html) 與 [script.js](file:///c:/Drive224/Projects/iPAS%20證照/exam/script.js) 的頁尾結構，為頁尾版權宣告文字新增 ID 識別，並於 `selectCert()` 中實作動態更新，使頁尾版權文字會隨著目前選擇的證照（營運智慧分析師、AI應用規劃師初級/中級）即時切換，不再固定顯示單一證照名稱。
@@ -128,6 +186,19 @@
 ---
 
 ## 📈 後續維護與學習建議
+
+### 📌 2026-06-16 —— 全真模擬考按章節比例配題 + 課程學習依官方綱要整理
+
+* **【按比例配題】**：`startExamSubjectMode` 改為先依 `q.chapter` 分組，按各章節題數佔比分配 50 題（largest remainder method），再 shuffle 混合排序。以考科一為例：第四章 29 題 + 第五章 21 題（原為純隨機抽 50 題）。
+* **【參考來源】**：115 年度簡章「評鑑主題與評鑑內容」確認考科一含 L111（營運智慧基本知識）與 L112（基礎資料分析），考科二含 L121（經營管理基本知識）與 L122（新興數位資訊工具基本知識）。
+* **【課程學習重整】**：創建 `exam/notes/` 目錄，按官方綱要建立 `oi/`（營運智慧分析師）、`ai/`（AI 初級）、`ai_mid/`（AI 中級）子目錄。oi 下依考科（s1/s2）→ 評鑑主題（L111/L112/L121/L122）→ 評鑑內容（L11101~L11204/L12101~L12203）階層組織。
+* **【階層選單】**：`studyNotes` 格式支援 `subjectGroup`（考科標題）與 `topicGroup`（評鑑主題標題）特殊欄位，`showStudyNoteModal()` 依序渲染為階層標題與可點擊筆記按鈕。對應之 CSS 類別 `.note-group-header`、`.note-topic-header` 新增於 `style.css`。
+* **【路徑修正】**：所有筆記檔案路徑從根目錄改為 `exam/notes/` 下（GitHub Pages 可存取），同時保留根目錄原始檔案供 PDF 轉換使用。
+* **【題庫標註 assessmentTopic】**：`questions.json`、`questions.js`、`parse_questions.py` 均新增 `assessmentTopic` 欄位，依 chapter 自動映射：第四章營運智慧基本知識→L111、第五章基礎資料分析→L112、第四章經營管理基本知識→L121、第五章數位化企業資訊工具基本知識→L122（共 163 題，44+32+47+40）。
+* **【系統驗證 assessmentTopic】**：`assessmentTopic` 已帶入前端三個顯示位置：(1) 作答畫面 `#lblTopic` badge 緊接在章節後方；(2) 檢討 accordion 的類別標示行（`${q.subject} > ${q.chapter} | ${q.assessmentTopic}`）；(3) IRT 分析表新增「主題」欄（L111~L122）。同時 `addWrongQuestion()` 存入 wrongPool 時一併保留 `assessmentTopic`，兩處 IRT row builder 均從 wrongPool/qIndex 取出該欄位，確保資料在 IndexedDB 生命週期中不遺失。
+* **【修復 Failed to fetch】**：`questions.js` 使用 `const ipasQuestions`，動態 `<script>` 載入時 `const` 不掛在 `window` 上，導致 `window[questionsVar]` 為 undefined，fallback `fetch(questions.json)` 在 `file://` 協議下失敗。已將 `const` → `var`，動態載入後即可透過 `window.ipasQuestions` 讀取。同時 `openReader()` 錯誤提示新增 `file://` 下需使用本機伺服器的建議。
+
+---
 
 1.  **教材同步狀態監控**：背景排程已開啟，若雲端教材有新增，本地將於 30 分鐘內自動下載。您可以透過檢視 `sync.log` 檔案確認同步狀態。
 2.  **講義更新與手動重新轉檔**：

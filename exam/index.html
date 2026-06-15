@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iPAS 模擬考系統</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0d1117">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="iPAS 模擬考">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -102,7 +106,20 @@
                             <p>自由篩選考科與單元進行練習。答題後**即時顯示答案與官方詳細解析**，並無時間限制，適合進行各個重點章節的專題突破。</p>
                             <span class="mode-action-btn">開啟練習模式 →</span>
                         </div>
+
+                        <!-- Study Mode Card -->
+                        <div class="mode-card card hover-scale" id="btnStartStudy">
+                            <div class="mode-icon">📖</div>
+                            <h3>課程學習</h3>
+                            <p>按章節順序瀏覽題目，**即時顯示答案與解析**，無時間壓力。適合初次學習或地毯式複習時使用。</p>
+                            <span class="mode-action-btn">開始學習 →</span>
+                        </div>
                     </div>
+
+                    <!-- IRT Dashboard Button -->
+                    <button id="btnShowIrt" class="card hover-scale" style="width:100%;border:none;cursor:pointer;padding:18px 24px;font-size:15px;font-weight:600;color:var(--text-primary);background:var(--bg-card);text-align:center;">
+                        📊 審題儀表板
+                    </button>
 
                     <!-- Statistics Summary -->
                     <div class="stats-summary card">
@@ -119,6 +136,38 @@
                             <div class="stat-item">
                                 <span class="stat-val" id="totalChaptersCount">4</span>
                                 <span class="stat-lbl">涵蓋章節</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-val" id="wrongPoolCount">0</span>
+                                <span class="stat-lbl">待複習錯題</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-val" id="totalAnsweredCount">0</span>
+                                <span class="stat-lbl">累積答題</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-val" id="totalCorrectRate">-</span>
+                                <span class="stat-lbl">正確率</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Weakness Analysis -->
+                    <div class="weakness-section card" id="weaknessSection" style="display:none;">
+                        <div class="weakness-header">
+                            <h4>📊 弱點分析</h4>
+                            <span class="weakness-toggle" id="weaknessToggle" style="cursor:pointer;user-select:none;">▼ 展開</span>
+                        </div>
+                        <div class="weakness-body" id="weaknessBody" style="display:none;">
+                            <div class="chart-row">
+                                <div class="chart-container">
+                                    <canvas id="radarChart"></canvas>
+                                    <p class="chart-label">錯題分佈</p>
+                                </div>
+                                <div class="chart-container">
+                                    <canvas id="trendChart"></canvas>
+                                    <p class="chart-label">成績趨勢</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -145,11 +194,18 @@
                     </div>
                     <div class="filter-group">
                         <label for="practiceNum">題數：</label>
-                        <select id="practiceNum">
-                            <option value="20">20 題</option>
-                            <option value="50">50 題</option>
-                            <option value="all">全部練習</option>
-                        </select>
+                            <select id="practiceNum">
+                                <option value="20">20 題</option>
+                                <option value="50">50 題</option>
+                                <option value="all">全部練習</option>
+                            </select>
+                            <div class="filter-group" style="margin-left:auto;">
+                                <label class="switch-label">
+                                    <input type="checkbox" id="chkWrongBook">
+                                    <span class="switch-slider"></span>
+                                    錯題特訓
+                                </label>
+                            </div>
                     </div>
                     <button id="btnApplyPractice" class="btn btn-primary">開始練習</button>
                 </div>
@@ -160,6 +216,7 @@
                         <div class="question-meta">
                             <span class="badge" id="lblSubject">科目</span>
                             <span class="badge badge-secondary" id="lblChapter">章節</span>
+                            <span class="badge badge-topic" id="lblTopic">評鑑主題</span>
                             <span class="badge badge-accent" id="lblIndex">第 1 / 50 題</span>
                         </div>
                         
@@ -294,6 +351,77 @@
         </footer>
     </div>
 
+    <!-- IRT 審題儀表板 Screen -->
+    <section id="irtScreen" class="screen">
+        <div class="results-container animate-fade-in">
+            <div class="card" style="padding:16px 24px;display:flex;align-items:center;gap:12px;">
+                <h2 style="margin:0;font-size:18px;">📊 審題儀表板</h2>
+                <span id="irtSummary" style="color:var(--text-secondary);font-size:13px;flex:1;"></span>
+                <button id="btnBackFromIrt" class="btn btn-outline" style="padding:4px 12px;font-size:13px;">← 回主選單</button>
+            </div>
+            <div class="card" style="padding:16px 24px;">
+                <h3 style="margin:0 0 12px;font-size:15px;">📈 測驗統計</h3>
+                <div id="irtStatsPanel" style="display:flex;gap:12px;flex-wrap:wrap;"></div>
+            </div>
+            <div class="card" style="padding:16px 24px;">
+                <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;">
+                    <h3 style="margin:0;font-size:15px;">📋 題項分析</h3>
+                    <div style="display:flex;gap:6px;">
+                        <button class="btn btn-sm btn-outline irt-sort active" data-sort="difficulty">難度</button>
+                        <button class="btn btn-sm btn-outline irt-sort" data-sort="wrong">錯題</button>
+                        <button class="btn btn-sm btn-outline irt-sort" data-sort="recent">最近</button>
+                    </div>
+                </div>
+                <div class="irt-table-wrapper" style="overflow-x:auto;">
+                    <table class="irt-table" id="irtTable" style="width:100%;border-collapse:collapse;font-size:13px;">
+                        <thead>
+                            <tr style="border-bottom:1px solid var(--border);">
+                                <th style="padding:6px 8px;text-align:left;">題號</th>
+                                <th style="padding:6px 8px;text-align:left;">科目</th>
+                                <th style="padding:6px 8px;text-align:left;">章節</th>
+                                <th style="padding:6px 8px;text-align:left;">主題</th>
+                                <th style="padding:6px 8px;text-align:left;">難度</th>
+                                <th style="padding:6px 8px;text-align:center;">答對/答錯</th>
+                                <th style="padding:6px 8px;text-align:center;">正確率</th>
+                                <th style="padding:6px 8px;text-align:left;">最近答錯</th>
+                            </tr>
+                        </thead>
+                        <tbody id="irtTbody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 課程學習 Note Selection Modal -->
+    <div id="studyNoteModal" class="modal-overlay">
+        <div class="modal-card" style="max-width:600px;">
+            <div class="modal-header">
+                <h3>📖 選擇學習單元</h3>
+                <button id="btnCancelStudyModal" class="modal-close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p id="studyModalDesc">請選擇要閱讀的講義單元：</p>
+                <div class="exam-subject-options" id="studyNoteOptions"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reader Screen -->
+    <section id="readerScreen" class="screen">
+        <div class="results-container animate-fade-in">
+            <div class="results-header card">
+                <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+                    <button id="btnBackFromReader" class="btn btn-outline" style="padding:6px 12px;font-size:13px;">← 回選單</button>
+                    <h2 id="readerTitle" style="margin:0;font-size:18px;"></h2>
+                </div>
+            </div>
+            <div class="card reader-content" id="readerContent" style="padding:24px;line-height:1.8;">
+                載入中...
+            </div>
+        </div>
+    </section>
+
     <!-- Exam Subject Selection Modal -->
     <div id="examSubjectModal" class="modal-overlay">
         <div class="modal-card">
@@ -310,11 +438,16 @@
         </div>
     </div>
 
+    <!-- JS Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked@15/marked.min.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16/dist/katex.min.css" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16/dist/katex.min.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16/dist/contrib/auto-render.min.js" charset="utf-8"></script>
+
     <!-- JS Scripts -->
     <script src="config.js" charset="utf-8"></script>
-    <script src="questions.js" charset="utf-8"></script>
-    <script src="ai_questions.js" charset="utf-8"></script>
-    <script src="ai_mid_questions.js" charset="utf-8"></script>
     <script src="script.js" charset="utf-8"></script>
 </body>
 </html>

@@ -285,6 +285,11 @@ function selectCert(certType) {
     
     // Populate chapter and subject filters dynamically
     populateFilters();
+
+    // Refresh persistent stats and wrong pool count
+    refreshWrongPoolCount();
+    refreshAnsweredStats();
+    renderWeaknessCharts();
 }
 
 // Render subject buttons in the exam modal dynamically based on active module
@@ -395,10 +400,19 @@ function setupEventListeners() {
     // Navigation setup
     document.getElementById('btnStartExam').addEventListener('click', showExamSubjectModal);
     document.getElementById('btnStartPractice').addEventListener('click', enterPracticeSetup);
+    document.getElementById('btnStartStudy').addEventListener('click', showStudyNoteModal);
     document.getElementById('btnApplyPractice').addEventListener('click', startPracticeMode);
     
     // Exam Modal Action Bindings
     if (btnCancelExamModal) btnCancelExamModal.addEventListener('click', hideExamSubjectModal);
+    if (btnCancelStudyModal) btnCancelStudyModal.addEventListener('click', () => studyNoteModal.classList.remove('active'));
+
+    // Reader back button
+    document.getElementById('btnBackFromReader')?.addEventListener('click', () => {
+        const readerScreen = document.getElementById('readerScreen');
+        const welcomeScreen = document.getElementById('welcomeScreen');
+        if (readerScreen && welcomeScreen) transitionScreen(readerScreen, welcomeScreen);
+    });
     
     btnPrev.addEventListener('click', prevQuestion);
     btnNext.addEventListener('click', nextQuestion);
@@ -413,7 +427,69 @@ function setupEventListeners() {
     document.getElementById('btnBackToWelcome').addEventListener('click', () => {
         transitionScreen(resultsScreen, welcomeScreen);
     });
-    
+
+    // Weakness toggle
+    const weaknessToggle = document.getElementById('weaknessToggle');
+    const weaknessBody = document.getElementById('weaknessBody');
+    if (weaknessToggle && weaknessBody) {
+        weaknessToggle.addEventListener('click', () => {
+            const isHidden = weaknessBody.style.display === 'none';
+            weaknessBody.style.display = isHidden ? 'block' : 'none';
+            weaknessToggle.textContent = isHidden ? '▲ 收合' : '▼ 展開';
+            if (isHidden) renderWeaknessCharts();
+        });
+    }
+
+    // IRT Dashboard navigation
+    document.getElementById('btnShowIrt')?.addEventListener('click', showIrtDashboard);
+    document.getElementById('btnBackFromIrt')?.addEventListener('click', () => {
+        const irtScreen = document.getElementById('irtScreen');
+        const welcomeScreen = document.getElementById('welcomeScreen');
+        if (irtScreen && welcomeScreen) transitionScreen(irtScreen, welcomeScreen);
+    });
+
+    // IRT sort buttons
+    document.querySelectorAll('.irt-sort').forEach(btn => {
+        btn.addEventListener('click', async (e) => {
+            document.querySelectorAll('.irt-sort').forEach(b => b.classList.remove('active'));
+            e.currentTarget.classList.add('active');
+            const sort = e.currentTarget.getAttribute('data-sort');
+            const wrongPool = await getWrongPool(appData.currentCert);
+            const qStats = await loadQuestionStats(appData.currentCert);
+            const qIndex = {};
+            if (appData.questions) appData.questions.forEach(q => { qIndex[q.num] = q; });
+            const qMap = {};
+            for (const s of qStats) { qMap[s.num] = { correct: s.correct, wrong: s.wrong }; }
+            for (const w of wrongPool) {
+                if (!qMap[w.num]) qMap[w.num] = { correct: 0, wrong: 0 };
+                qMap[w.num].lastWrong = w.lastWrongDate || '';
+                qMap[w.num].wrong = Math.max(qMap[w.num].wrong, w.wrongCount || 1);
+                qMap[w.num].subject = w.subject || (qIndex[w.num] && qIndex[w.num].subject) || '';
+                qMap[w.num].chapter = w.chapter || (qIndex[w.num] && qIndex[w.num].chapter) || '';
+                qMap[w.num].assessmentTopic = w.assessmentTopic || (qIndex[w.num] && qIndex[w.num].assessmentTopic) || '';
+            }
+            for (const num of Object.keys(qMap)) {
+                if (!qMap[num].subject && qIndex[num]) {
+                    qMap[num].subject = qIndex[num].subject || '';
+                    qMap[num].chapter = qIndex[num].chapter || '';
+                    qMap[num].assessmentTopic = qIndex[num].assessmentTopic || '';
+                }
+            }
+            let rows = Object.entries(qMap).map(([num, d]) => {
+                const total = d.correct + d.wrong;
+                const rate = total > 0 ? Math.round((d.correct / total) * 100) : 0;
+                const diffScore = total > 0 ? Math.round((1 - d.correct / total) * 100) : 0;
+                return { num, correct: d.correct, wrong: d.wrong, total, rate, diffScore, lastWrong: d.lastWrong || '', subject: d.subject || '', chapter: d.chapter || '', assessmentTopic: d.assessmentTopic || '' };
+            });
+            switch (sort) {
+                case 'difficulty': rows.sort((a, b) => b.diffScore - a.diffScore); break;
+                case 'wrong': rows.sort((a, b) => b.wrong - a.wrong); break;
+                case 'recent': rows.sort((a, b) => (b.lastWrong || '').localeCompare(a.lastWrong || '')); break;
+            }
+            renderIrtTable(rows);
+        });
+    });
+
     // Result Filter controls
     const filterButtons = document.querySelectorAll('.filter-controls button');
     filterButtons.forEach(btn => {
@@ -495,6 +571,96 @@ function startPracticeMode() {
 }
 
 // Show/Hide Exam Subject Selection Modal
+// ════════════════════════════════════════════════════════════════
+// 課程學習模式 — 講義閱讀
+// ════════════════════════════════════════════════════════════════
+
+const studyNoteModal = document.getElementById('studyNoteModal');
+const btnCancelStudyModal = document.getElementById('btnCancelStudyModal');
+
+function showStudyNoteModal() {
+    if (!appData.currentCert || !studyNoteModal) return;
+    const container = document.getElementById('studyNoteOptions');
+    if (!container) return;
+    container.innerHTML = '';
+
+    const modules = window.EXAM_CONFIG.modules.filter(m => m.enabled);
+    const mod = modules.find(m => m.id === appData.currentCert);
+    if (!mod || !mod.studyNotes || mod.studyNotes.length === 0) {
+        container.innerHTML = '<p style="color:var(--text-secondary);">此證照暫無講義資料</p>';
+        return;
+    }
+    mod.studyNotes.forEach((note, idx) => {
+        if (note.subjectGroup) {
+            const header = document.createElement('div');
+            header.className = 'note-group-header';
+            header.textContent = note.subjectGroup;
+            container.appendChild(header);
+            return;
+        }
+        if (note.topicGroup) {
+            const sub = document.createElement('div');
+            sub.className = 'note-topic-header';
+            sub.textContent = note.topicGroup;
+            container.appendChild(sub);
+            return;
+        }
+        const btn = document.createElement('button');
+        btn.className = 'exam-subject-btn card hover-scale note-item-btn';
+        btn.innerHTML = `<strong>${note.title}</strong>`;
+        btn.addEventListener('click', () => {
+            studyNoteModal.classList.remove('active');
+            openReader(note.title, note.file);
+        });
+        container.appendChild(btn);
+    });
+    studyNoteModal.classList.add('active');
+}
+
+async function openReader(title, filePath) {
+    const readerScreen = document.getElementById('readerScreen');
+    const welcomeScreen = document.getElementById('welcomeScreen');
+    const readerTitle = document.getElementById('readerTitle');
+    const readerContent = document.getElementById('readerContent');
+    if (!readerScreen || !readerContent || !readerTitle) return;
+
+    readerTitle.textContent = title;
+    readerContent.innerHTML = '載入中...';
+    if (welcomeScreen) transitionScreen(welcomeScreen, readerScreen);
+
+    try {
+        const resp = await fetch(filePath);
+        if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+        const md = await resp.text();
+        if (typeof marked !== 'undefined') {
+            readerContent.innerHTML = marked.parse(md);
+        } else {
+            readerContent.innerHTML = `<pre style="white-space:pre-wrap;">${md}</pre>`;
+        }
+        // Apply syntax highlight-friendly styles to code blocks
+        readerContent.querySelectorAll('pre code').forEach(block => {
+            block.classList.add('code-block');
+        });
+        if (typeof mermaid !== 'undefined') {
+            mermaid.run({ nodes: readerContent.querySelectorAll('.language-mermaid') });
+        }
+        if (typeof renderMathInElement !== 'undefined') {
+            renderMathInElement(readerContent, {
+                delimiters: [
+                    { left: '$$', right: '$$', display: true },
+                    { left: '$', right: '$', display: false }
+                ],
+                throwOnError: false
+            });
+        }
+    } catch (e) {
+        const hint = (location.protocol === 'file:')
+            ? '<br><small style="color:var(--text-secondary);">提示：在瀏覽器直接開啟 HTML 檔案時無法讀取筆記，請使用本機伺服器啟動：<br><code style="background:rgba(0,0,0,0.3);padding:4px 8px;border-radius:4px;">npx serve exam</code> 或 <code style="background:rgba(0,0,0,0.3);padding:4px 8px;border-radius:4px;">python -m http.server 8000 -d exam</code></small>'
+            : '';
+        readerContent.innerHTML = `<p style="color:var(--danger);">載入失敗：${e.message}${hint}</p>`;
+    }
+}
+
 function showExamSubjectModal() {
     if (examSubjectModal) examSubjectModal.classList.add('active');
 }
@@ -524,8 +690,38 @@ function startExamSubjectMode(subjKey) {
         return;
     }
     
-    // Draw 50 random questions
-    appData.currentQuiz = shuffleArray(pool).slice(0, 50);
+    // Group by chapter for proportional allocation
+    const chapterGroups = {};
+    pool.forEach(q => {
+        const ch = q.chapter || '未分類';
+        if (!chapterGroups[ch]) chapterGroups[ch] = [];
+        chapterGroups[ch].push(q);
+    });
+    
+    const chapters = Object.keys(chapterGroups);
+    const TOTAL = 50;
+    const allocation = {};
+    let allocated = 0;
+    chapters.forEach(ch => {
+        const raw = (chapterGroups[ch].length / pool.length) * TOTAL;
+        allocation[ch] = Math.floor(raw);
+        allocated += allocation[ch];
+    });
+    // Distribute remainder by largest fractional part
+    const remainders = chapters.map(ch => ({
+        ch,
+        rem: (chapterGroups[ch].length / pool.length) * TOTAL - allocation[ch]
+    })).sort((a, b) => b.rem - a.rem);
+    for (let i = 0; i < TOTAL - allocated; i++) {
+        allocation[remainders[i].ch]++;
+    }
+    
+    // Draw proportionally from each chapter, then shuffle for mixed order
+    let selected = [];
+    chapters.forEach(ch => {
+        selected = selected.concat(shuffleArray(chapterGroups[ch]).slice(0, allocation[ch]));
+    });
+    appData.currentQuiz = shuffleArray(selected);
     appData.quizMode = 'exam';
     
     practiceSetup.classList.add('hidden');
@@ -646,6 +842,8 @@ function showQuestion(idx) {
     lblSubject.textContent = q.subject;
     lblChapter.textContent = q.chapter;
     lblIndex.textContent = `第 ${idx + 1} / ${appData.currentQuiz.length} 題 (原始題號: ${q.num})`;
+    const lblTopic = document.getElementById('lblTopic');
+    if (lblTopic) lblTopic.textContent = q.assessmentTopic || '';
     
     // Update active nav button state
     document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('current'));
@@ -709,7 +907,7 @@ function showQuestion(idx) {
     
     // Handle Feedback display (Practice mode only)
     if (appData.quizMode === 'practice' && appData.userAnswers[idx] !== undefined) {
-        showPracticeFeedback(idx);
+            showPracticeFeedback(idx);
     } else {
         feedbackArea.classList.add('hidden');
     }
@@ -1009,7 +1207,7 @@ function renderReviewList() {
                         <p><strong>標準選項：</strong>(${q.answer}) ${q.ans_text}</p>
                         ${q.explanation ? `<p style="margin-top:10px;"><strong>官方詳細解析：</strong><br>${q.explanation}</p>` : ''}
                         <p style="margin-top:10px; font-size:12px; color:var(--text-muted);">
-                            類別：${q.subject} > ${q.chapter} (原始題號: ${q.num})
+                            類別：${q.subject} > ${q.chapter} | ${q.assessmentTopic || ''} | 原始題號: ${q.num}
                         </p>
                     </div>
                 </div>
@@ -1175,5 +1373,756 @@ function validateTaiwanID(id) {
     sum += parseInt(id[9]) * 1;
     
     return sum % 10 === 0;
+}
+
+// ════════════════════════════════════════════════════════════════
+// IndexedDB 持久化儲存 + SM-2 間隔複習模組
+// ════════════════════════════════════════════════════════════════
+
+const DB_NAME = 'iPAS_Exam_DB';
+const DB_VERSION = 3;
+
+function createSM2Card() {
+    return { repetitions: 0, interval: 0, efactor: 2.5, nextReviewDate: new Date().toISOString().split('T')[0] };
+}
+
+function sm2Schedule(card, quality) {
+    if (quality >= 3) {
+        if (card.repetitions === 0) card.interval = 1;
+        else if (card.repetitions === 1) card.interval = 6;
+        else card.interval = Math.round(card.interval * card.efactor);
+        card.repetitions++;
+    } else {
+        card.repetitions = 0;
+        card.interval = 1;
+    }
+    card.efactor = Math.max(1.3, card.efactor + (0.1 - (5 - quality) * (0.08 + (5 - quality) * 0.02)));
+    const nextDate = new Date();
+    nextDate.setDate(nextDate.getDate() + card.interval);
+    card.nextReviewDate = nextDate.toISOString().split('T')[0];
+    return card;
+}
+
+function openDB() {
+    return new Promise((resolve, reject) => {
+        const req = indexedDB.open(DB_NAME, DB_VERSION);
+        req.onupgradeneeded = (e) => {
+            const db = e.target.result;
+            if (!db.objectStoreNames.contains('wrongPool')) {
+                const store = db.createObjectStore('wrongPool', { keyPath: 'id' });
+                store.createIndex('certId', 'certId', { unique: false });
+                store.createIndex('nextReviewDate', 'nextReviewDate', { unique: false });
+            }
+            if (!db.objectStoreNames.contains('stats')) {
+                db.createObjectStore('stats', { keyPath: 'certId' });
+            }
+            if (!db.objectStoreNames.contains('quizHistory')) {
+                const store = db.createObjectStore('quizHistory', { keyPath: 'sessionId', autoIncrement: true });
+                store.createIndex('certId', 'certId', { unique: false });
+                store.createIndex('timestamp', 'timestamp', { unique: false });
+            }
+            if (!db.objectStoreNames.contains('questionStats')) {
+                const store = db.createObjectStore('questionStats', { keyPath: 'id' });
+                store.createIndex('certId', 'certId', { unique: false });
+            }
+        };
+        req.onsuccess = (e) => resolve(e.target.result);
+        req.onerror = (e) => reject(e.target.error);
+    });
+}
+
+async function getWrongPool(certId) {
+    try {
+        const db = await openDB();
+        return new Promise((resolve, reject) => {
+            const tx = db.transaction('wrongPool', 'readonly');
+            const index = tx.objectStore('wrongPool').index('certId');
+            const req = index.getAll(certId);
+            req.onsuccess = () => resolve(req.result || []);
+            req.onerror = () => reject(req.error);
+        });
+    } catch (e) {
+        console.warn('IndexedDB 讀取錯題池失敗:', e);
+        return [];
+    }
+}
+
+async function addWrongQuestion(certId, q) {
+    try {
+        const db = await openDB();
+        const prefixes = ['A', 'B', 'C', 'D'];
+        const correctIdx = prefixes.indexOf(q.answer);
+        const entry = {
+            id: `${certId}_${q.num}`,
+            certId: certId,
+            num: q.num,
+            subject: q.subject,
+            chapter: q.chapter,
+            assessmentTopic: q.assessmentTopic || '',
+            question: q.question,
+            options: q.options,
+            answer: q.answer,
+            ans_text: q.ans_text,
+            explanation: q.explanation || '',
+            lastWrongDate: new Date().toISOString(),
+            wrongCount: 1,
+            ...createSM2Card()
+        };
+        return new Promise((resolve, reject) => {
+            const tx = db.transaction('wrongPool', 'readwrite');
+            const store = tx.objectStore('wrongPool');
+            const getReq = store.get(entry.id);
+            getReq.onsuccess = () => {
+                const existing = getReq.result;
+                if (existing) {
+                    existing.wrongCount = (existing.wrongCount || 0) + 1;
+                    existing.lastWrongDate = new Date().toISOString();
+                    existing.subject = q.subject;
+                    existing.chapter = q.chapter;
+                    existing.assessmentTopic = q.assessmentTopic || '';
+                    existing.question = q.question;
+                    existing.options = q.options;
+                    existing.answer = q.answer;
+                    existing.ans_text = q.ans_text;
+                    existing.explanation = q.explanation || '';
+                    store.put(existing);
+                } else {
+                    store.put(entry);
+                }
+                resolve();
+            };
+            getReq.onerror = () => reject(getReq.error);
+        });
+    } catch (e) {
+        console.warn('IndexedDB 寫入錯題失敗:', e);
+    }
+}
+
+async function updateWrongPoolAfterCorrect(certId, quizId) {
+    try {
+        const db = await openDB();
+        const id = `${certId}_${quizId}`;
+        return new Promise((resolve, reject) => {
+            const tx = db.transaction('wrongPool', 'readwrite');
+            const store = tx.objectStore('wrongPool');
+            const req = store.get(id);
+            req.onsuccess = () => {
+                const entry = req.result;
+                if (entry) {
+                    const updated = sm2Schedule(entry, 4);
+                    store.put(updated);
+                }
+                resolve();
+            };
+            req.onerror = () => reject(req.error);
+        });
+    } catch (e) {
+        console.warn('IndexedDB 更新錯題排程失敗:', e);
+    }
+}
+
+async function loadStats(certId) {
+    try {
+        const db = await openDB();
+        return new Promise((resolve, reject) => {
+            const tx = db.transaction('stats', 'readonly');
+            const req = tx.objectStore('stats').get(certId);
+            req.onsuccess = () => {
+                if (req.result) resolve(req.result);
+                else resolve({ certId, totalAnswered: 0, totalCorrect: 0, quizCount: 0 });
+            };
+            req.onerror = () => reject(req.error);
+        });
+    } catch (e) {
+        console.warn('IndexedDB 讀取統計失敗:', e);
+        return { certId, totalAnswered: 0, totalCorrect: 0, quizCount: 0 };
+    }
+}
+
+async function saveStats(certId, deltaCorrect, deltaTotal) {
+    try {
+        const stats = await loadStats(certId);
+        stats.totalAnswered += deltaTotal;
+        stats.totalCorrect += deltaCorrect;
+        stats.quizCount = (stats.quizCount || 0) + 1;
+        stats.lastQuizDate = new Date().toISOString();
+        const db = await openDB();
+        return new Promise((resolve, reject) => {
+            const tx = db.transaction('stats', 'readwrite');
+            const req = tx.objectStore('stats').put(stats);
+            req.onsuccess = () => resolve();
+            req.onerror = () => reject(req.error);
+        });
+    } catch (e) {
+        console.warn('IndexedDB 儲存統計失敗:', e);
+    }
+}
+
+async function refreshWrongPoolCount() {
+    if (!appData.currentCert) return;
+    const pool = await getWrongPool(appData.currentCert);
+    const el = document.getElementById('wrongPoolCount');
+    if (el) {
+        const dueCount = pool.filter(e => e.nextReviewDate <= new Date().toISOString().split('T')[0]).length;
+        el.textContent = pool.length;
+        el.title = `待複習：${dueCount} 題`;
+        if (dueCount > 0) el.style.color = 'var(--warning)';
+        else el.style.color = '';
+    }
+}
+
+async function refreshAnsweredStats() {
+    if (!appData.currentCert) return;
+    const stats = await loadStats(appData.currentCert);
+    const answeredEl = document.getElementById('totalAnsweredCount');
+    const rateEl = document.getElementById('totalCorrectRate');
+    if (answeredEl) answeredEl.textContent = stats.totalAnswered;
+    if (rateEl) {
+        rateEl.textContent = stats.totalAnswered > 0
+            ? Math.round((stats.totalCorrect / stats.totalAnswered) * 100) + '%'
+            : '-';
+    }
+}
+
+async function saveQuizHistory(certId, correctCount, total, score, mode) {
+    try {
+        const db = await openDB();
+        return new Promise((resolve, reject) => {
+            const tx = db.transaction('quizHistory', 'readwrite');
+            const req = tx.objectStore('quizHistory').put({
+                certId,
+                timestamp: new Date().toISOString(),
+                correct: correctCount,
+                total,
+                score,
+                mode
+            });
+            req.onsuccess = () => resolve();
+            req.onerror = () => reject(req.error);
+        });
+    } catch (e) {
+        console.warn('IndexedDB 儲存測驗歷史失敗:', e);
+    }
+}
+
+async function loadQuizHistory(certId, limit = 20) {
+    try {
+        const db = await openDB();
+        return new Promise((resolve, reject) => {
+            const tx = db.transaction('quizHistory', 'readonly');
+            const index = tx.objectStore('quizHistory').index('certId');
+            const req = index.openCursor(null, 'prev');
+            const results = [];
+            req.onsuccess = () => {
+                const cursor = req.result;
+                if (cursor && results.length < limit) {
+                    if (cursor.value.certId === certId) results.push(cursor.value);
+                    cursor.continue();
+                } else {
+                    resolve(results);
+                }
+            };
+            req.onerror = () => reject(req.error);
+        });
+    } catch (e) {
+        console.warn('IndexedDB 讀取測驗歷史失敗:', e);
+        return [];
+    }
+}
+
+async function updateQuestionStats(certId, qNum, isCorrect) {
+    try {
+        const db = await openDB();
+        const id = `${certId}_${qNum}`;
+        return new Promise((resolve, reject) => {
+            const tx = db.transaction('questionStats', 'readwrite');
+            const store = tx.objectStore('questionStats');
+            const req = store.get(id);
+            req.onsuccess = () => {
+                const entry = req.result || { id, certId, num: qNum, correct: 0, wrong: 0, lastSeen: null };
+                if (isCorrect) entry.correct++;
+                else entry.wrong++;
+                entry.lastSeen = new Date().toISOString();
+                store.put(entry);
+                resolve();
+            };
+            req.onerror = () => reject(req.error);
+        });
+    } catch (e) {
+        console.warn('IndexedDB 更新題目統計失敗:', e);
+    }
+}
+
+async function loadQuestionStats(certId) {
+    try {
+        const db = await openDB();
+        return new Promise((resolve, reject) => {
+            const tx = db.transaction('questionStats', 'readonly');
+            const index = tx.objectStore('questionStats').index('certId');
+            const req = index.getAll(certId);
+            req.onsuccess = () => resolve(req.result || []);
+            req.onerror = () => reject(req.error);
+        });
+    } catch (e) {
+        console.warn('IndexedDB 讀取題目統計失敗:', e);
+        return [];
+    }
+}
+
+// Wrap existing gradeQuiz to persist wrong answers and stats
+const _origGradeQuiz = gradeQuiz;
+gradeQuiz = function () {
+    clearInterval(appData.timerInterval);
+    appData.quizActive = false;
+
+    const total = appData.currentQuiz.length;
+    let correctCount = 0;
+    const wrongQuestions = [];
+
+    const modules = window.EXAM_CONFIG.modules.filter(m => m.enabled);
+    const mod = modules.find(m => m.id === appData.currentCert);
+
+    let subjectStats = {};
+    if (mod) {
+        mod.subjects.forEach(subj => {
+            subjectStats[subj.id] = { name: subj.name, total: 0, correct: 0 };
+        });
+    }
+
+    const prefixes = ['A', 'B', 'C', 'D'];
+
+    appData.currentQuiz.forEach((q, idx) => {
+        let subjKey = null;
+        if (mod) {
+            const matchedSubj = mod.subjects.find(subj =>
+                subj.matchKeywords.some(keyword => q.subject.includes(keyword)));
+            if (matchedSubj) subjKey = matchedSubj.id;
+        }
+        if (!subjKey && mod && mod.subjects.length > 0) subjKey = mod.subjects[0].id;
+        if (subjKey && subjectStats[subjKey]) subjectStats[subjKey].total++;
+
+        const userChoiceIdx = appData.userAnswers[idx];
+        const correctIdx = prefixes.indexOf(q.answer);
+
+        const isCorrect = userChoiceIdx === correctIdx;
+        if (isCorrect) {
+            correctCount++;
+            if (subjKey && subjectStats[subjKey]) subjectStats[subjKey].correct++;
+            q.gradedResult = 'correct';
+        } else {
+            q.gradedResult = 'wrong';
+            wrongQuestions.push(q);
+        }
+        if (appData.currentCert) {
+            updateQuestionStats(appData.currentCert, q.num, isCorrect);
+        }
+    });
+
+    // Persist wrong questions and stats
+    if (appData.currentCert && wrongQuestions.length > 0) {
+        wrongQuestions.forEach(q => addWrongQuestion(appData.currentCert, q));
+    }
+    if (appData.currentCert) {
+        saveStats(appData.currentCert, correctCount, total);
+        saveQuizHistory(appData.currentCert, correctCount, total, score, appData.quizMode);
+        refreshWrongPoolCount();
+        refreshAnsweredStats();
+    }
+
+    const score = Math.round((correctCount / total) * 100);
+    const passed = score >= 70;
+
+    lblScore.textContent = score;
+    const circumference = 283;
+    const offset = circumference - (score / 100) * circumference;
+    scoreCircleProgress.style.strokeDashoffset = offset;
+    scoreCircleProgress.style.stroke = passed ? 'var(--success)' : 'var(--danger)';
+
+    lblResultTitle.textContent = passed ? '🎉 及格！恭喜通過！' : '⚠️ 分數未及格，請繼續加油！';
+    lblResultTitle.style.color = passed ? 'var(--success)' : 'var(--danger)';
+    lblResultDesc.textContent = passed
+        ? '恭喜你達到 70 分及格門檻，你已經具備一定的專業水準！'
+        : '離 70 分及格門檻差了一點，建議檢驗下方錯題，並複習相關單元講義。';
+
+    const minsUsed = Math.floor(appData.timeSpent / 60);
+    const secsUsed = appData.timeSpent % 60;
+    lblTimeSpent.textContent = appData.quizMode === 'exam'
+        ? `${minsUsed} 分 ${secsUsed} 秒` : '無限制';
+    lblCorrectCount.textContent = `${correctCount} / ${total} 題`;
+    lblAnswerRate.textContent = `${Math.round((Object.keys(appData.userAnswers).length / total) * 100)}%`;
+
+    buildBreakdownHTML(subjectStats);
+    renderReviewList();
+    transitionScreen(quizScreen, resultsScreen);
+};
+
+// Wrap startPracticeMode to support wrong book mode
+const _origStartPractice = startPracticeMode;
+startPracticeMode = async function () {
+    const subjVal = document.getElementById('selectSubject').value;
+    const chapVal = selectChapter.value;
+    const numLimit = document.getElementById('practiceNum').value;
+    const isWrongBook = document.getElementById('chkWrongBook').checked;
+
+    if (isWrongBook) {
+        const pool = await getWrongPool(appData.currentCert);
+        if (pool.length === 0) {
+            alert('錯題池為空，尚無需複習的題目！');
+            return;
+        }
+        let filtered = pool.filter(e => e.nextReviewDate <= new Date().toISOString().split('T')[0]);
+        if (subjVal !== 'all') {
+            const modules = window.EXAM_CONFIG.modules.filter(m => m.enabled);
+            const mod = modules.find(m => m.id === appData.currentCert);
+            if (mod) {
+                const targetSubj = mod.subjects.find(s => s.id === subjVal);
+                if (targetSubj) {
+                    filtered = filtered.filter(e => targetSubj.matchKeywords.some(k => e.subject.includes(k)));
+                }
+            }
+        }
+        if (chapVal !== 'all') {
+            filtered = filtered.filter(e => e.chapter === chapVal);
+        }
+        if (filtered.length === 0) {
+            alert('篩選範圍內無待複習錯題！');
+            return;
+        }
+        appData.currentQuiz = shuffleArray(filtered).slice(0, numLimit === 'all' ? filtered.length : parseInt(numLimit));
+        appData.quizMode = 'practice';
+        practiceSetup.classList.add('hidden');
+        timerDisplay.classList.add('hidden');
+        document.querySelector('.quiz-nav-panel').classList.remove('hidden');
+        initQuizSession('practice');
+        return;
+    }
+
+    const modules = window.EXAM_CONFIG.modules.filter(m => m.enabled);
+    const mod = modules.find(m => m.id === appData.currentCert);
+    if (!mod) return;
+
+    let filtered = appData.questions.filter(q => {
+        let isSubjMatch = false;
+        if (subjVal === 'all') isSubjMatch = true;
+        else {
+            const targetSubj = mod.subjects.find(s => s.id === subjVal);
+            if (targetSubj) isSubjMatch = targetSubj.matchKeywords.some(keyword => q.subject.includes(keyword));
+        }
+        const isChapMatch = chapVal === 'all' || q.chapter === chapVal;
+        return isSubjMatch && isChapMatch;
+    });
+
+    if (filtered.length === 0) {
+        alert('此範圍內無題目，請重新選擇！');
+        return;
+    }
+
+    filtered = shuffleArray(filtered);
+    if (numLimit !== 'all') {
+        const limit = parseInt(numLimit);
+        filtered = filtered.slice(0, Math.min(limit, filtered.length));
+    }
+
+    appData.currentQuiz = filtered;
+    appData.quizMode = 'practice';
+    practiceSetup.classList.add('hidden');
+    timerDisplay.classList.add('hidden');
+    document.querySelector('.quiz-nav-panel').classList.remove('hidden');
+    initQuizSession('practice');
+};
+
+// Override showPracticeFeedback to update wrong pool when answered correctly
+const _origShowFeedback = showPracticeFeedback;
+showPracticeFeedback = function (qIdx) {
+    const q = appData.currentQuiz[qIdx];
+    const userChoiceIdx = appData.userAnswers[qIdx];
+    const prefixes = ['A', 'B', 'C', 'D'];
+    const correctIdx = prefixes.indexOf(q.answer);
+
+    const isCorrect = userChoiceIdx === correctIdx;
+
+    const cards = optionsList.querySelectorAll('.option-card');
+    cards.forEach((card, idx) => {
+        card.classList.remove('selected');
+        if (idx === correctIdx) card.classList.add('correct');
+        else if (idx === userChoiceIdx) card.classList.add('wrong');
+    });
+
+    feedbackArea.className = `feedback-box animate-fade-in ${isCorrect ? 'correct' : 'wrong'}`;
+    feedbackIcon.textContent = isCorrect ? '✅' : '❌';
+    feedbackTitle.textContent = isCorrect ? '答對了！' : `答錯了！正確答案是 (${q.answer})`;
+
+    let explText = `標準答案：(${q.answer}) ${q.ans_text}\n\n`;
+    if (q.explanation) explText += `解析：\n${q.explanation}`;
+    else explText += '無額外解析資訊。';
+    lblExplanationText.textContent = explText;
+    feedbackArea.classList.remove('hidden');
+
+    // Persist: add to wrong pool if wrong, update SM-2 if correct
+    if (appData.currentCert) {
+        updateQuestionStats(appData.currentCert, q.num, isCorrect);
+        if (!isCorrect) {
+            addWrongQuestion(appData.currentCert, q);
+        } else {
+            updateWrongPoolAfterCorrect(appData.currentCert, q.num);
+        }
+        refreshWrongPoolCount();
+        refreshAnsweredStats();
+    }
+};
+
+// ════════════════════════════════════════════════════════════════
+// 弱點分析 — 雷達圖 + 趨勢圖
+// ════════════════════════════════════════════════════════════════
+
+let radarChartInstance = null;
+let trendChartInstance = null;
+
+async function renderWeaknessCharts() {
+    if (!appData.currentCert || typeof Chart === 'undefined') return;
+
+    const history = await loadQuizHistory(appData.currentCert, 20);
+    const section = document.getElementById('weaknessSection');
+    if (!section) return;
+
+    // Only show section if there's at least one quiz history record
+    if (history.length === 0) {
+        section.style.display = 'none';
+        return;
+    }
+    section.style.display = '';
+
+    const subjectLabels = [];
+    const subjectWrongCount = [];
+
+    const modules = window.EXAM_CONFIG.modules.filter(m => m.enabled);
+    const mod = modules.find(m => m.id === appData.currentCert);
+    if (mod) {
+        const wrongPool = await getWrongPool(appData.currentCert);
+        for (const subj of mod.subjects) {
+            const related = wrongPool.filter(e =>
+                subj.matchKeywords.some(k => e.subject.includes(k)));
+            subjectLabels.push(subj.name);
+            subjectWrongCount.push(related.length);
+        }
+    }
+
+    const maxWrong = Math.max(...subjectWrongCount, 1);
+    const ctx1 = document.getElementById('radarChart');
+    if (ctx1) {
+        if (radarChartInstance) radarChartInstance.destroy();
+        radarChartInstance = new Chart(ctx1, {
+            type: 'radar',
+            data: {
+                labels: subjectLabels,
+                datasets: [{
+                    label: '錯題數',
+                    data: subjectWrongCount,
+                    backgroundColor: 'rgba(248, 81, 73, 0.15)',
+                    borderColor: '#f85149',
+                    pointBackgroundColor: '#f85149',
+                    pointBorderColor: '#fff',
+                    pointHoverRadius: 5
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: true,
+                scales: {
+                    r: {
+                        min: 0, max: maxWrong,
+                        ticks: { stepSize: Math.max(1, Math.ceil(maxWrong / 5)), color: '#8b949e' },
+                        grid: { color: 'rgba(139, 148, 158, 0.3)' },
+                        angleLines: { color: 'rgba(139, 148, 158, 0.3)' },
+                        pointLabels: { color: '#c9d1d9', font: { size: 11 } }
+                    }
+                },
+                plugins: {
+                    legend: { display: false }
+                }
+            }
+        });
+    }
+
+    const ctx2 = document.getElementById('trendChart');
+    if (ctx2 && history.length > 0) {
+        if (trendChartInstance) trendChartInstance.destroy();
+        const labels = history.map((h, i) => `#${i + 1}`);
+        const scores = history.map(h => h.score);
+        trendChartInstance = new Chart(ctx2, {
+            type: 'line',
+            data: {
+                labels,
+                datasets: [{
+                    label: '成績',
+                    data: scores,
+                    borderColor: '#58a6ff',
+                    backgroundColor: 'rgba(88, 166, 255, 0.1)',
+                    fill: true,
+                    tension: 0.3,
+                    pointBackgroundColor: scores.map(s => s >= 70 ? '#3fb950' : '#f85149'),
+                    pointRadius: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: true,
+                scales: {
+                    y: { min: 0, max: 100, ticks: { color: '#8b949e' }, grid: { color: 'rgba(139,148,158,0.2)' } },
+                    x: { ticks: { color: '#8b949e' }, grid: { display: false } }
+                },
+                plugins: {
+                    legend: { display: false }
+                }
+            }
+        });
+    }
+}
+
+// ════════════════════════════════════════════════════════════════
+// IRT 審題儀表板
+// ════════════════════════════════════════════════════════════════
+
+function showIrtDashboard() {
+    const irtScreen = document.getElementById('irtScreen');
+    const welcomeScreen = document.getElementById('welcomeScreen');
+    if (irtScreen && welcomeScreen) transitionScreen(welcomeScreen, irtScreen);
+    renderIrtDashboard();
+}
+
+async function renderIrtDashboard() {
+    if (!appData.currentCert) return;
+    const wrongPool = await getWrongPool(appData.currentCert);
+    const qStats = await loadQuestionStats(appData.currentCert);
+    const stats = await loadStats(appData.currentCert);
+    const history = await loadQuizHistory(appData.currentCert, 50);
+
+    const overallRate = stats.totalAnswered > 0
+        ? Math.round((stats.totalCorrect / stats.totalAnswered) * 100) : 0;
+
+    // Build question map with subject/chapter from wrong pool or original questions
+    const qMap = {};
+    const qIndex = {};
+    if (appData.questions) {
+        appData.questions.forEach(q => { qIndex[q.num] = q; });
+    }
+    for (const s of qStats) {
+        const key = s.num;
+        qMap[key] = { correct: s.correct, wrong: s.wrong };
+    }
+    for (const w of wrongPool) {
+        if (!qMap[w.num]) qMap[w.num] = { correct: 0, wrong: 0 };
+        qMap[w.num].lastWrong = w.lastWrongDate || w.lastAnswerDate || '';
+        qMap[w.num].wrong = Math.max(qMap[w.num].wrong, w.wrongCount || 1);
+        qMap[w.num].subject = w.subject || (qIndex[w.num] && qIndex[w.num].subject) || '';
+        qMap[w.num].chapter = w.chapter || (qIndex[w.num] && qIndex[w.num].chapter) || '';
+        qMap[w.num].assessmentTopic = w.assessmentTopic || (qIndex[w.num] && qIndex[w.num].assessmentTopic) || '';
+    }
+    // Fill missing subject/chapter from original questions
+    for (const num of Object.keys(qMap)) {
+        if (!qMap[num].subject && qIndex[num]) {
+            qMap[num].subject = qIndex[num].subject || '';
+            qMap[num].chapter = qIndex[num].chapter || '';
+            qMap[num].assessmentTopic = qIndex[num].assessmentTopic || '';
+        }
+    }
+
+    const rows = Object.entries(qMap).map(([num, d]) => {
+        const total = d.correct + d.wrong;
+        const rate = total > 0 ? Math.round((d.correct / total) * 100) : 0;
+        let level;
+        if (rate >= 80) level = '簡單';
+        else if (rate >= 50) level = '中等';
+        else if (rate >= 20) level = '困難';
+        else level = '極難';
+        const diffScore = total > 0 ? Math.round((1 - d.correct / total) * 100) : 0;
+        return {
+            num, correct: d.correct, wrong: d.wrong, total, rate, level, diffScore,
+            lastWrong: d.lastWrong || '',
+            subject: d.subject || '',
+            chapter: d.chapter || '',
+            assessmentTopic: d.assessmentTopic || ''
+        };
+    });
+
+    rows.sort((a, b) => b.diffScore - a.diffScore);
+    renderIrtTable(rows);
+    renderIrtStats(stats, history, rows, overallRate);
+}
+
+function renderIrtTable(rows) {
+    const tbody = document.getElementById('irtTbody');
+    if (!tbody) return;
+    tbody.innerHTML = rows.map(r => {
+        const levelColors = { '簡單': 'var(--success)', '中等': 'var(--warning)', '困難': '#f85149', '極難': '#da3633' };
+        const color = levelColors[r.level] || 'var(--text-secondary)';
+        const lastWrong = r.lastWrong ? new Date(r.lastWrong).toLocaleDateString() : '-';
+        const shortSubj = r.subject.length > 14 ? r.subject.slice(0, 14) + '…' : r.subject;
+        const shortChap = r.chapter.length > 14 ? r.chapter.slice(0, 14) + '…' : r.chapter;
+        return `<tr style="border-bottom:1px solid var(--border);">
+            <td style="padding:6px 8px;">#${r.num}</td>
+            <td style="padding:6px 8px;font-size:12px;" title="${r.subject}">${shortSubj}</td>
+            <td style="padding:6px 8px;font-size:12px;" title="${r.chapter}">${shortChap}</td>
+            <td style="padding:6px 8px;font-size:12px;color:var(--accent);">${r.assessmentTopic || '-'}</td>
+            <td style="padding:6px 8px;"><span style="color:${color};font-weight:600;">${r.level}</span></td>
+            <td style="padding:6px 8px;text-align:center;white-space:nowrap;">
+                <span style="color:var(--success);">${r.correct}</span>/<span style="color:#f85149;">${r.wrong}</span>
+            </td>
+            <td style="padding:6px 8px;text-align:center;">${r.rate}%</td>
+            <td style="padding:6px 8px;font-size:12px;color:var(--text-secondary);">${lastWrong}</td>
+        </tr>`;
+    }).join('');
+}
+
+function renderIrtStats(stats, history, rows, overallRate) {
+    const panel = document.getElementById('irtStatsPanel');
+    const summary = document.getElementById('irtSummary');
+    if (!panel) return;
+    const quizCount = history.length;
+    const totalQ = rows.length;
+    const hardCount = rows.filter(r => r.level === '困難' || r.level === '極難').length;
+
+    if (summary) {
+        summary.textContent = `共 ${totalQ} 題納入分析 | ${quizCount} 次測驗 | 整體正確率 ${overallRate}%`;
+    }
+
+    // Cronbach's alpha approximation: based on item variance
+    let alpha = '-';
+    if (rows.length > 1) {
+        const rates = rows.map(r => r.rate / 100);
+        const mean = rates.reduce((a, b) => a + b, 0) / rates.length;
+        const varSum = rates.reduce((a, r) => a + (r - mean) ** 2, 0);
+        const itemVar = varSum / rates.length;
+        const totalVar = overallRate / 100 * (1 - overallRate / 100);
+        if (totalVar > 0) {
+            const k = rates.length;
+            const rawAlpha = (k / (k - 1)) * (1 - (itemVar * k) / (totalVar * k));
+            alpha = Math.max(0, Math.min(1, rawAlpha)).toFixed(3);
+        }
+    }
+
+    const cards = [
+        { label: '累積答題', value: stats.totalAnswered || 0 },
+        { label: '正確率', value: `${overallRate}%` },
+        { label: '測驗次數', value: quizCount },
+        { label: '困難題數', value: hardCount, color: '#f85149' },
+        { label: 'Cronbach α', value: alpha },
+    ];
+
+    panel.innerHTML = cards.map(c => `
+        <div class="detail-card" style="min-width:120px;flex:1;">
+            <span class="detail-label">${c.label}</span>
+            <span class="detail-val" style="${c.color ? `color:${c.color};` : ''}">${c.value}</span>
+        </div>
+    `).join('');
+}
+
+// ════════════════════════════════════════════════════════════════
+// PWA — 註冊 Service Worker
+// ════════════════════════════════════════════════════════════════
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js').catch(e => console.warn('SW 註冊失敗:', e));
+    });
 }
 

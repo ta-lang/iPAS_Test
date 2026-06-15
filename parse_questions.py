@@ -5,7 +5,7 @@ import pypdf
 
 # Workspace directories
 workspace_dir = os.path.dirname(os.path.abspath(__file__))
-pdf_dir = os.path.join(workspace_dir, "官方教材及考試簡章（請先自行下載預習）")
+pdf_dir = os.path.join(workspace_dir, "營運智慧分析師", "官方教材及考試簡章")
 output_dir = os.path.join(workspace_dir, "exam")
 os.makedirs(output_dir, exist_ok=True)
 output_json_path = os.path.join(output_dir, "questions.json")
@@ -148,9 +148,14 @@ def parse_answers_text(text):
             }
     return answers
 
+def normalize(text):
+    """Normalize text for duplicate comparison."""
+    return re.sub(r'\s+', '', text).lower()
+
 def main():
     all_questions = []
     question_id_counter = 1
+    seen_questions = set()  # for dedup
 
     for subject_key, subject_info in pdf_files.items():
         pdf_name = subject_info["name"]
@@ -162,7 +167,14 @@ def main():
             
         print(f"Processing PDF: {pdf_name}")
         reader = pypdf.PdfReader(pdf_path)
-        
+
+        CHAPTER_TOPIC_MAP = {
+            "第四章 營運智慧基本知識": "L111",
+            "第五章 基礎資料分析": "L112",
+            "第四章 經營管理基本知識": "L121",
+            "第五章 數位化企業資訊工具基本知識": "L122",
+        }
+
         for chapter in subject_info["chapters"]:
             print(f"  Parsing Chapter: {chapter['name']}")
             
@@ -189,10 +201,16 @@ def main():
             for num, q_data in parsed_qs.items():
                 if num in parsed_as:
                     ans_data = parsed_as[num]
+                    dedup_key = normalize(q_data["question"])
+                    if dedup_key in seen_questions:
+                        print(f"    Skipping duplicate Q{num}: {q_data['question'][:60]}")
+                        continue
+                    seen_questions.add(dedup_key)
                     all_questions.append({
                         "id": question_id_counter,
                         "subject": subject_info["title"],
                         "chapter": chapter["name"],
+                        "assessmentTopic": CHAPTER_TOPIC_MAP.get(chapter["name"], ""),
                         "num": num,
                         "question": q_data["question"],
                         "options": q_data["options"],

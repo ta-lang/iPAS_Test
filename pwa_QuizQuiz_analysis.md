@@ -79,13 +79,25 @@
 - 錯題池 + 間隔複習 + 弱點雷達，比單次模擬考更有長期學習價值。
 - PWA precache 能讓題庫離線可用，和本專案的純前端 GitHub Pages 模式相容。
 
-## 待續分析
+## 待續分析（✅ 已於第二輪全數完成）
 
-- 檢查 `QuizPage` chunk：確認一般測驗、模擬考、adaptive/CAT 具體選題邏輯。
-- 檢查題庫 chunk：確認題目欄位格式、IRT 欄位、tags 與 isActive 用法。
-- 檢查 `SettingsPage`：確認 GAS URL 設定、同步流程與使用者體驗。
-- 檢查 `WeaknessPage`：確認錯題池呈現與複習排程。
-- 與本專案 `exam/` 逐項比較，整理可移植功能與風險。
+- [x] 檢查 `QuizPage` chunk → 已確認選題邏輯、模擬考配題、adaptive/CAT 實作（見第二輪分析 §測驗核心、§模擬考配題、§Adaptive/CAT）
+- [x] 檢查題庫 chunk → 已確認欄位格式含 id/subject/topicCode/difficulty/question/options/answer/explanation，進階含 irt/tags/isActive/reviewNotes
+- [x] 檢查 `SettingsPage` → 已確認 GAS URL 設定、同步流程、隱藏 IRT 入口
+- [x] 檢查 `WeaknessPage` → 已確認錯題池 SM-2 排程、統計面板、Chart.js 雷達圖
+- [x] 與本專案 `exam/` 逐項比較 → 已列出核心差異（見 §初步差異）
+
+## 可移植功能建議（for exam/）
+
+| 功能 | 優先級 | 移植難度 | 說明 |
+|------|--------|----------|------|
+| IndexedDB 練習紀錄 | 高 | 低 | 取代 localStorage，支援大量資料 |
+| 錯題間隔複習（SM-2） | 高 | 中 | 提升長期學習價值 |
+| 弱點雷達/趨勢圖 | 中 | 中 | Chart.js 圖表視覺化 |
+| PWA / Service Worker | 中 | 低 | 題庫離線可用 |
+| GAS 雲端同步 | 低 | 高 | 多裝置進度同步 |
+| IRT 審題儀表板 | 低 | 高 | 教師用進階功能 |
+| 題庫 lazy chunk | 中 | 中 | Vite 分包減少初始載入 |
 
 ## 第二輪分析：測驗核心
 
@@ -176,3 +188,47 @@
 - 本專案支援三張證照題庫；pwa_QuizQuiz 聚焦營運智慧分析師初級，但學習閉環更完整。
 - 本專案有身分證登入模擬與三證照切換；pwa_QuizQuiz 有 PWA、IndexedDB、錯題間隔複習、GAS 多裝置同步與 IRT/審題儀表板。
 - pwa_QuizQuiz 的一些高階文案（如 4PL/CAT）比實作更理想化，若移植需保守命名，避免過度宣稱。
+
+## 優缺點比較
+
+### pwa_QuizQuiz
+
+**優點**
+- 學習閉環完整：一般測驗 → 錯題池 + SM-2 間隔複習 → 弱點雷達 → 特訓，形成正向循環
+- IndexedDB 儲存大量練習紀錄，比 localStorage 可靠
+- GAS 雲端同步支援多裝置
+- PWA 離線可用
+- 題庫 lazy chunk 減少初始載入
+- CBT 模擬考介面成熟（題號格、旗標、交卷確認）
+- Chart.js 圖表視覺化（趨勢、雷達圖）
+- IRT 審題儀表板（Cronbach's alpha、P-Value、D-Index）
+
+**缺點**
+- 只支援單一證照（營運智慧分析師初級），擴充性低
+- Vite + React 技術棧，維護門檻較高
+- 無身分驗證機制
+- Adaptive/CAT 宣傳 > 實作（簡化分數估計，非真正 MLE/EAP）
+- GAS 同步流程複雜（iframe/popup/postMessage），使用者體驗不順
+- 部分程式碼打包後不易直接參考（minified chunk）
+- 無多證照切換能力
+
+### exam/（本專案）
+
+**優點**
+- 支援三張證照（營運智慧分析師、AI 初級、AI 中級）且可自由切換
+- 純 Vanilla JS，零框架、零依賴，直接開檔執行
+- 身分證驗證登入模擬真實考場
+- 全真模擬考（限時、科目配題、交卷動畫、及格判斷）
+- 自主練習模式（依科目/章節篩選）
+- 深淺色模式、響應式設計、毛玻璃質感
+- 代碼題 Markdown 渲染支援
+- GitHub Pages 已部署，可線上使用
+
+**缺點**
+- 無練習紀錄持久化（無 IndexedDB，重新整理即重置）
+- 無錯題池與間隔複習機制
+- 無弱點分析與圖表視覺化
+- 無 PWA 離線支援
+- 題庫 JS 一次載入全部，無分包
+- 無雲端同步
+- 無 IRT/審題功能

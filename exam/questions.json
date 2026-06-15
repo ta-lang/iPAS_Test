@@ -13,7 +13,8 @@
     ],
     "answer": "C",
     "ans_text": "商業智慧分析無法提升組織競爭優勢。",
-    "explanation": "商業智慧是運用一系列的資訊科技分析工具，從大量多樣的日常營運資料中 分析與整理出有價值的經營資訊，以有效改善企業的營運績效，提升組織的 競爭優勢 。 營運智慧則是將商業智慧分析應用於企業營運模式中的動態系統 。"
+    "explanation": "商業智慧是運用一系列的資訊科技分析工具，從大量多樣的日常營運資料中 分析與整理出有價值的經營資訊，以有效改善企業的營運績效，提升組織的 競爭優勢 。 營運智慧則是將商業智慧分析應用於企業營運模式中的動態系統 。",
+    "assessmentTopic": "L111"
   },
   {
     "id": 2,
@@ -29,7 +30,8 @@
     ],
     "answer": "B",
     "ans_text": "員工。",
-    "explanation": "平衡計分卡包括四個構面，分別是財務、顧客、內部流程、學習與成長。"
+    "explanation": "平衡計分卡包括四個構面，分別是財務、顧客、內部流程、學習與成長。",
+    "assessmentTopic": "L111"
   },
   {
     "id": 3,
@@ -45,7 +47,8 @@
     ],
     "answer": "A",
     "ans_text": "記憶體內運算 （in-memory computing ）。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L111"
   },
   {
     "id": 4,
@@ -61,7 +64,8 @@
     ],
     "answer": "B",
     "ans_text": "文字探勘。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L111"
   },
   {
     "id": 5,
@@ -77,7 +81,8 @@
     ],
     "answer": "D",
     "ans_text": "假設分析。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L111"
   },
   {
     "id": 6,
@@ -93,7 +98,8 @@
     ],
     "answer": "B",
     "ans_text": "目標搜尋。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L111"
   },
   {
     "id": 7,
@@ -109,7 +115,8 @@
     ],
     "answer": "C",
     "ans_text": "預測。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L111"
   },
   {
     "id": 8,
@@ -125,7 +132,8 @@
     ],
     "answer": "D",
     "ans_text": "線上分析處理。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L111"
   },
   {
     "id": 9,
@@ -141,7 +149,8 @@
     ],
     "answer": "A",
     "ans_text": "購物籃分析。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L111"
   },
   {
     "id": 10,
@@ -157,7 +166,8 @@
     ],
     "answer": "C",
     "ans_text": "產品生命週期管理系統。",
-    "explanation": "產品生命週期管理系統 （Product Life -cycle Management System, PLM ）主要是 用以協助企業瞭解並管理產品的詳細狀況。"
+    "explanation": "產品生命週期管理系統 （Product Life -cycle Management System, PLM ）主要是 用以協助企業瞭解並管理產品的詳細狀況。",
+    "assessmentTopic": "L111"
   },
   {
     "id": 11,
@@ -173,7 +183,8 @@
     ],
     "answer": "D",
     "ans_text": "自動提供財務 問題的解決方法。",
-    "explanation": "企業導入 ERP 系統的財務與會計模組的效用包括：簡化會計處理程序、即時 提供整合性資料、即時提供財務分析資訊、進行更精細的財務分析。"
+    "explanation": "企業導入 ERP 系統的財務與會計模組的效用包括：簡化會計處理程序、即時 提供整合性資料、即時提供財務分析資訊、進行更精細的財務分析。",
+    "assessmentTopic": "L111"
   },
   {
     "id": 12,
@@ -189,7 +200,8 @@
     ],
     "answer": "C",
     "ans_text": "組織文化因素。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L111"
   },
   {
     "id": 13,
@@ -205,7 +217,8 @@
     ],
     "answer": "B",
     "ans_text": "著重於管理小規模的營運事件。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L111"
   },
   {
     "id": 14,
@@ -221,7 +234,8 @@
     ],
     "answer": "B",
     "ans_text": "「實際確認數量」除以「生產數量」 。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L111"
   },
   {
     "id": 15,
@@ -237,7 +251,8 @@
     ],
     "answer": "D",
     "ans_text": "先購買一套 CRM 來使用。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L111"
   },
   {
     "id": 16,
@@ -253,7 +268,8 @@
     ],
     "answer": "D",
     "ans_text": "如何串聯以上各個部分。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L111"
   },
   {
     "id": 17,
@@ -269,7 +285,8 @@
     ],
     "answer": "C",
     "ans_text": "提升員工個人在統計方面的專業知識。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L111"
   },
   {
     "id": 18,
@@ -285,7 +302,8 @@
     ],
     "answer": "A",
     "ans_text": "可用來分析消費者行為的大數據分析 ， 其四大特徵為數量（Volume）、",
-    "explanation": "速度 （Velocity）、多樣性 （Variety）和可見性 （Visibility ）。"
+    "explanation": "速度 （Velocity）、多樣性 （Variety）和可見性 （Visibility ）。",
+    "assessmentTopic": "L111"
   },
   {
     "id": 19,
@@ -301,7 +319,8 @@
     ],
     "answer": "B",
     "ans_text": "4213。",
-    "explanation": "資料倉儲系統建置過程中的規劃與設計流程共有四個步驟，依序是需求與現 況、架構設計、系統建置、測試與發布。"
+    "explanation": "資料倉儲系統建置過程中的規劃與設計流程共有四個步驟，依序是需求與現 況、架構設計、系統建置、測試與發布。",
+    "assessmentTopic": "L111"
   },
   {
     "id": 20,
@@ -317,7 +336,8 @@
     ],
     "answer": "D",
     "ans_text": "以上皆是。",
-    "explanation": "營運智慧系統架構的子系統包含資料倉儲系統、資料分析系統與資料呈現系 統。"
+    "explanation": "營運智慧系統架構的子系統包含資料倉儲系統、資料分析系統與資料呈現系 統。",
+    "assessmentTopic": "L111"
   },
   {
     "id": 21,
@@ -333,7 +353,8 @@
     ],
     "answer": "B",
     "ans_text": "資料庫管理。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L111"
   },
   {
     "id": 22,
@@ -349,7 +370,8 @@
     ],
     "answer": "A",
     "ans_text": "專家系統。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L111"
   },
   {
     "id": 23,
@@ -365,7 +387,8 @@
     ],
     "answer": "A",
     "ans_text": "Completely Automated Public Turing test to tell Computers and Humans",
-    "explanation": "Apart （CAPTCHA ）。"
+    "explanation": "Apart （CAPTCHA ）。",
+    "assessmentTopic": "L111"
   },
   {
     "id": 24,
@@ -381,7 +404,8 @@
     ],
     "answer": "C",
     "ans_text": "去中心化管理。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L111"
   },
   {
     "id": 25,
@@ -397,7 +421,8 @@
     ],
     "answer": "A",
     "ans_text": "監督式學習。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L111"
   },
   {
     "id": 26,
@@ -413,7 +438,8 @@
     ],
     "answer": "D",
     "ans_text": "Conversion rate 。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L111"
   },
   {
     "id": 27,
@@ -429,7 +455,8 @@
     ],
     "answer": "A",
     "ans_text": "CPC（Cost-per-Click ）。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L111"
   },
   {
     "id": 28,
@@ -445,7 +472,8 @@
     ],
     "answer": "D",
     "ans_text": "人力資源管理。",
-    "explanation": "價值鏈中的主要活動是指產品從生產者至消費者過程中的一連串相關活動， 包括進貨物流、生產作業、產品配送、行銷與銷售、售後服務，而人力資源管 理則是屬於價值鏈中的支援活動。"
+    "explanation": "價值鏈中的主要活動是指產品從生產者至消費者過程中的一連串相關活動， 包括進貨物流、生產作業、產品配送、行銷與銷售、售後服務，而人力資源管 理則是屬於價值鏈中的支援活動。",
+    "assessmentTopic": "L111"
   },
   {
     "id": 29,
@@ -461,7 +489,8 @@
     ],
     "answer": "B",
     "ans_text": "增加文件作業",
-    "explanation": "電子採購（E-procurement ）模式能夠加速採購、降低成本、整合供應鏈、增強 競爭優勢，進而提升企業價值。"
+    "explanation": "電子採購（E-procurement ）模式能夠加速採購、降低成本、整合供應鏈、增強 競爭優勢，進而提升企業價值。",
+    "assessmentTopic": "L111"
   },
   {
     "id": 30,
@@ -477,7 +506,8 @@
     ],
     "answer": "A",
     "ans_text": "企業的定位和價值主張。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L111"
   },
   {
     "id": 31,
@@ -493,7 +523,8 @@
     ],
     "answer": "C",
     "ans_text": "量化與質化資料都應收集並納入考量。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L111"
   },
   {
     "id": 32,
@@ -509,7 +540,8 @@
     ],
     "answer": "B",
     "ans_text": "改變顧客群。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L111"
   },
   {
     "id": 33,
@@ -525,7 +557,8 @@
     ],
     "answer": "C",
     "ans_text": "消費者自加入會員起留下的每一筆交易紀錄都同等重要。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L111"
   },
   {
     "id": 34,
@@ -541,7 +574,8 @@
     ],
     "answer": "D",
     "ans_text": "應特定層面的現象。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L111"
   },
   {
     "id": 35,
@@ -557,7 +591,8 @@
     ],
     "answer": "B",
     "ans_text": "配銷科層化。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L111"
   },
   {
     "id": 36,
@@ -573,7 +608,8 @@
     ],
     "answer": "C",
     "ans_text": "分析型 CRM 的核心技術。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L111"
   },
   {
     "id": 37,
@@ -589,7 +625,8 @@
     ],
     "answer": "B",
     "ans_text": "網路安全平台。",
-    "explanation": "在營運智慧 /商業智慧系統規劃階段中的企業基礎設施評估中的技術面基礎 設施方面，評估項目包含硬體平台、中介軟體平台與資料庫管理系統平台。"
+    "explanation": "在營運智慧 /商業智慧系統規劃階段中的企業基礎設施評估中的技術面基礎 設施方面，評估項目包含硬體平台、中介軟體平台與資料庫管理系統平台。",
+    "assessmentTopic": "L111"
   },
   {
     "id": 38,
@@ -605,7 +642,8 @@
     ],
     "answer": "D",
     "ans_text": "以上皆是。",
-    "explanation": "甘特圖 （Gantt chart ）、計畫評核技術 （PERT）及要徑法 （CPM）三種方法可 用來進行營運智慧 /商業智慧專案的規劃、排程與控制。"
+    "explanation": "甘特圖 （Gantt chart ）、計畫評核技術 （PERT）及要徑法 （CPM）三種方法可 用來進行營運智慧 /商業智慧專案的規劃、排程與控制。",
+    "assessmentTopic": "L111"
   },
   {
     "id": 39,
@@ -621,7 +659,8 @@
     ],
     "answer": "A",
     "ans_text": "企業資訊入口網站。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L111"
   },
   {
     "id": 40,
@@ -637,7 +676,8 @@
     ],
     "answer": "B",
     "ans_text": "半結構化知識系統。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L111"
   },
   {
     "id": 41,
@@ -653,7 +693,8 @@
     ],
     "answer": "C",
     "ans_text": "知識網路系統。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L111"
   },
   {
     "id": 42,
@@ -669,7 +710,8 @@
     ],
     "answer": "C",
     "ans_text": "支援知識工作者創造知識。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L111"
   },
   {
     "id": 43,
@@ -685,7 +727,8 @@
     ],
     "answer": "A",
     "ans_text": "智慧型系統。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L111"
   },
   {
     "id": 44,
@@ -701,7 +744,8 @@
     ],
     "answer": "A",
     "ans_text": "結構化知識系統。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L111"
   },
   {
     "id": 45,
@@ -717,7 +761,8 @@
     ],
     "answer": "B",
     "ans_text": "次序資料。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L112"
   },
   {
     "id": 46,
@@ -733,7 +778,8 @@
     ],
     "answer": "C",
     "ans_text": "模擬資料。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L112"
   },
   {
     "id": 47,
@@ -749,7 +795,8 @@
     ],
     "answer": "D",
     "ans_text": "文件範例的內容。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L112"
   },
   {
     "id": 48,
@@ -765,7 +812,8 @@
     ],
     "answer": "A",
     "ans_text": "連續變數。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L112"
   },
   {
     "id": 49,
@@ -781,7 +829,8 @@
     ],
     "answer": "D",
     "ans_text": "信用評估。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L112"
   },
   {
     "id": 50,
@@ -797,7 +846,8 @@
     ],
     "answer": "A",
     "ans_text": "資料蒐集、資料轉換、資料載入。",
-    "explanation": "ETL 作業流程的順序依序為資料蒐集、資料轉換、資料載入。"
+    "explanation": "ETL 作業流程的順序依序為資料蒐集、資料轉換、資料載入。",
+    "assessmentTopic": "L112"
   },
   {
     "id": 51,
@@ -813,7 +863,8 @@
     ],
     "answer": "C",
     "ans_text": "分析（Analyze ）。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L112"
   },
   {
     "id": 52,
@@ -829,7 +880,8 @@
     ],
     "answer": "D",
     "ans_text": "分解資料。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L112"
   },
   {
     "id": 53,
@@ -845,7 +897,8 @@
     ],
     "answer": "B",
     "ans_text": "轉換 （Transform ）。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L112"
   },
   {
     "id": 54,
@@ -861,7 +914,8 @@
     ],
     "answer": "A",
     "ans_text": "週期性。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L112"
   },
   {
     "id": 55,
@@ -877,7 +931,8 @@
     ],
     "answer": "C",
     "ans_text": "資料檔案太大。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L112"
   },
   {
     "id": 56,
@@ -893,7 +948,8 @@
     ],
     "answer": "C",
     "ans_text": "儲存資料具備彈性 。 結構性資料通常是先有結構存在再有資料進入 。",
-    "explanation": "由於資料有一致固定的欄位及格式，程式處理較易，可節省儲存空間，資料也 容易被整併。但缺點是當遇到不符合規則的資料時，資料儲存就會產生困難， 資料儲存欠缺彈性。"
+    "explanation": "由於資料有一致固定的欄位及格式，程式處理較易，可節省儲存空間，資料也 容易被整併。但缺點是當遇到不符合規則的資料時，資料儲存就會產生困難， 資料儲存欠缺彈性。",
+    "assessmentTopic": "L112"
   },
   {
     "id": 57,
@@ -909,7 +965,8 @@
     ],
     "answer": "A",
     "ans_text": "非結構化資料顯示較仔細的資訊。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L112"
   },
   {
     "id": 58,
@@ -925,7 +982,8 @@
     ],
     "answer": "A",
     "ans_text": "非結構性。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L112"
   },
   {
     "id": 59,
@@ -941,7 +999,8 @@
     ],
     "answer": "C",
     "ans_text": "非結構性。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L112"
   },
   {
     "id": 60,
@@ -957,7 +1016,8 @@
     ],
     "answer": "B",
     "ans_text": "深度學習 （Deep learning ）。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L112"
   },
   {
     "id": 61,
@@ -973,7 +1033,8 @@
     ],
     "answer": "C",
     "ans_text": "重要訊息有可能流失。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L112"
   },
   {
     "id": 62,
@@ -989,7 +1050,8 @@
     ],
     "answer": "D",
     "ans_text": "資料稽核。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L112"
   },
   {
     "id": 63,
@@ -1005,7 +1067,8 @@
     ],
     "answer": "A",
     "ans_text": "資料概述。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L112"
   },
   {
     "id": 64,
@@ -1021,7 +1084,8 @@
     ],
     "answer": "C",
     "ans_text": "度量衡問題。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L112"
   },
   {
     "id": 65,
@@ -1037,7 +1101,8 @@
     ],
     "answer": "C",
     "ans_text": "資料的差異性 。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L112"
   },
   {
     "id": 66,
@@ -1053,7 +1118,8 @@
     ],
     "answer": "D",
     "ans_text": "刪除定義不一致的資料。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L112"
   },
   {
     "id": 67,
@@ -1069,7 +1135,8 @@
     ],
     "answer": "D",
     "ans_text": "存有非線性關聯。",
-    "explanation": "沒有線性關聯並不代表不存在相關性 ， 如圖所示 ， 工作時間與出現不良品的機 率之間，在工作時間較短時，兩者呈現正向關聯，但當在工作時間超過某一程 度時，兩者則會出現負向關聯。整體來說，工作時間與出現不良品的機率之間 存在的是非線性關聯。"
+    "explanation": "沒有線性關聯並不代表不存在相關性 ， 如圖所示 ， 工作時間與出現不良品的機 率之間，在工作時間較短時，兩者呈現正向關聯，但當在工作時間超過某一程 度時，兩者則會出現負向關聯。整體來說，工作時間與出現不良品的機率之間 存在的是非線性關聯。",
+    "assessmentTopic": "L112"
   },
   {
     "id": 68,
@@ -1085,7 +1152,8 @@
     ],
     "answer": "D",
     "ans_text": "0.33。",
-    "explanation": "利用貝氏定理：   𝑃𝑟(𝑌 = 𝑦|𝑋 = 𝑥) = 𝑃𝑟(𝑋 = 𝑥, 𝑌 = 𝑦) 𝑃𝑟(𝑋 = 𝑥)   定義隨機變數 X 為是否成品為良品，變數 Y 則為是否能使用，   P（無法使用｜ 非良品 ）=0.05/0.15= 0.33"
+    "explanation": "利用貝氏定理：   𝑃𝑟(𝑌 = 𝑦|𝑋 = 𝑥) = 𝑃𝑟(𝑋 = 𝑥, 𝑌 = 𝑦) 𝑃𝑟(𝑋 = 𝑥)   定義隨機變數 X 為是否成品為良品，變數 Y 則為是否能使用，   P（無法使用｜ 非良品 ）=0.05/0.15= 0.33",
+    "assessmentTopic": "L112"
   },
   {
     "id": 69,
@@ -1101,7 +1169,8 @@
     ],
     "answer": "A",
     "ans_text": "正偏態分佈。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L112"
   },
   {
     "id": 70,
@@ -1117,7 +1186,8 @@
     ],
     "answer": "B",
     "ans_text": "散佈圖。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L112"
   },
   {
     "id": 71,
@@ -1133,7 +1203,8 @@
     ],
     "answer": "C",
     "ans_text": "75%。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L112"
   },
   {
     "id": 72,
@@ -1149,7 +1220,8 @@
     ],
     "answer": "D",
     "ans_text": "95%。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L112"
   },
   {
     "id": 73,
@@ -1165,7 +1237,8 @@
     ],
     "answer": "C",
     "ans_text": "長條圖用於屬質資料，直方圖用於屬量資料。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L112"
   },
   {
     "id": 74,
@@ -1181,7 +1254,8 @@
     ],
     "answer": "C",
     "ans_text": "標準差。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L112"
   },
   {
     "id": 75,
@@ -1197,7 +1271,8 @@
     ],
     "answer": "D",
     "ans_text": "ABC 皆為描述非監督式學習方法特點。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L112"
   },
   {
     "id": 76,
@@ -1213,7 +1288,8 @@
     ],
     "answer": "A",
     "ans_text": "迴歸模型與分類模型在監督式學習中應用廣泛 ， 它們的主要區別在於預測的目",
-    "explanation": "標變數類型：迴歸模型預測的是連續數值，而分類模型預測的是離散的類別。"
+    "explanation": "標變數類型：迴歸模型預測的是連續數值，而分類模型預測的是離散的類別。",
+    "assessmentTopic": "L112"
   },
   {
     "id": 77,
@@ -1229,7 +1305,8 @@
     ],
     "answer": "D",
     "ans_text": "內部環境的組成因子包括股東、董事會、組織文化、組織結構、員工態度及價",
-    "explanation": "值觀、管理程序及方法等。"
+    "explanation": "值觀、管理程序及方法等。",
+    "assessmentTopic": "L121"
   },
   {
     "id": 78,
@@ -1245,7 +1322,8 @@
     ],
     "answer": "B",
     "ans_text": "特定環境的因子有顧客群、供應商、競爭群、金融機構、股東、政府、壓力團",
-    "explanation": "體。"
+    "explanation": "體。",
+    "assessmentTopic": "L121"
   },
   {
     "id": 79,
@@ -1261,7 +1339,8 @@
     ],
     "answer": "A",
     "ans_text": "管理者運用組織資源達成目標的過程稱為管理（ Management ）。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L121"
   },
   {
     "id": 80,
@@ -1277,7 +1356,8 @@
     ],
     "answer": "A",
     "ans_text": "第一線管理者（ First -Line Managers ） ：管理中的最基層主管，負責",
-    "explanation": "直接指揮、管理基層作業人員的日常工作。"
+    "explanation": "直接指揮、管理基層作業人員的日常工作。",
+    "assessmentTopic": "L121"
   },
   {
     "id": 81,
@@ -1293,7 +1373,8 @@
     ],
     "answer": "D",
     "ans_text": "將當前情況與某 些標準或目標進行比較。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L121"
   },
   {
     "id": 82,
@@ -1309,7 +1390,8 @@
     ],
     "answer": "A",
     "ans_text": "解決問題。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L121"
   },
   {
     "id": 83,
@@ -1325,7 +1407,8 @@
     ],
     "answer": "D",
     "ans_text": "非書面形式，而且很少分享。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L121"
   },
   {
     "id": 84,
@@ -1341,7 +1424,8 @@
     ],
     "answer": "A",
     "ans_text": "較高的利潤。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L121"
   },
   {
     "id": 85,
@@ -1357,7 +1441,8 @@
     ],
     "answer": "C",
     "ans_text": "改變或發展組織的結構。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L121"
   },
   {
     "id": 86,
@@ -1373,7 +1458,8 @@
     ],
     "answer": "C",
     "ans_text": "地理區域。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L121"
   },
   {
     "id": 87,
@@ -1389,7 +1475,8 @@
     ],
     "answer": "D",
     "ans_text": "誰向誰報告？",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L121"
   },
   {
     "id": 88,
@@ -1405,7 +1492,8 @@
     ],
     "answer": "A",
     "ans_text": "永久的個人特質。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L121"
   },
   {
     "id": 89,
@@ -1421,7 +1509,8 @@
     ],
     "answer": "C",
     "ans_text": "需求需要依順序來滿足。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L121"
   },
   {
     "id": 90,
@@ -1437,7 +1526,8 @@
     ],
     "answer": "B",
     "ans_text": "一維品質（ one-dimensional ）。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L121"
   },
   {
     "id": 91,
@@ -1453,7 +1543,8 @@
     ],
     "answer": "D",
     "ans_text": "僵硬的身體姿勢。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L121"
   },
   {
     "id": 92,
@@ -1469,7 +1560,8 @@
     ],
     "answer": "B",
     "ans_text": "規劃 —組織—領導—控制。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L121"
   },
   {
     "id": 93,
@@ -1485,7 +1577,8 @@
     ],
     "answer": "A",
     "ans_text": "賦予員工權力。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L121"
   },
   {
     "id": 94,
@@ -1501,7 +1594,8 @@
     ],
     "answer": "B",
     "ans_text": "衡量實際表現。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L121"
   },
   {
     "id": 95,
@@ -1517,7 +1611,8 @@
     ],
     "answer": "B",
     "ans_text": "達成目標。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L121"
   },
   {
     "id": 96,
@@ -1533,7 +1628,8 @@
     ],
     "answer": "B",
     "ans_text": "",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L121"
   },
   {
     "id": 97,
@@ -1549,7 +1645,8 @@
     ],
     "answer": "A",
     "ans_text": "基礎研究（ Basic Research ） ：主要是汲取不同或相關領域的知識： （1）用來發",
-    "explanation": "展及考驗理論與假設。 （2）研究結果可能有實際應用價值，也有可能無實用價 值。 （3）通常是抽象及特殊的概念。   應用研究（ Applied Research ） ：基礎研究所拼湊出產生的較完整知識，採取可 應用並解決人們所需求的下一個研究階段的研究。"
+    "explanation": "展及考驗理論與假設。 （2）研究結果可能有實際應用價值，也有可能無實用價 值。 （3）通常是抽象及特殊的概念。   應用研究（ Applied Research ） ：基礎研究所拼湊出產生的較完整知識，採取可 應用並解決人們所需求的下一個研究階段的研究。",
+    "assessmentTopic": "L121"
   },
   {
     "id": 98,
@@ -1565,7 +1662,8 @@
     ],
     "answer": "B",
     "ans_text": "132。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L121"
   },
   {
     "id": 99,
@@ -1581,7 +1679,8 @@
     ],
     "answer": "A",
     "ans_text": "採取預防行動，避免錯誤發生。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L121"
   },
   {
     "id": 100,
@@ -1597,7 +1696,8 @@
     ],
     "answer": "A",
     "ans_text": "合夥關係。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L121"
   },
   {
     "id": 101,
@@ -1613,7 +1713,8 @@
     ],
     "answer": "A",
     "ans_text": "人口統計變數。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L121"
   },
   {
     "id": 102,
@@ -1629,7 +1730,8 @@
     ],
     "answer": "A",
     "ans_text": "銷售觀念。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L121"
   },
   {
     "id": 103,
@@ -1645,7 +1747,8 @@
     ],
     "answer": "B",
     "ans_text": "競爭導向 。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L121"
   },
   {
     "id": 104,
@@ -1661,7 +1764,8 @@
     ],
     "answer": "A",
     "ans_text": "銷售量急遽攀升。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L121"
   },
   {
     "id": 105,
@@ -1677,7 +1781,8 @@
     ],
     "answer": "A",
     "ans_text": "工作說明書。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L121"
   },
   {
     "id": 106,
@@ -1693,7 +1798,8 @@
     ],
     "answer": "D",
     "ans_text": "以上皆是。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L121"
   },
   {
     "id": 107,
@@ -1709,7 +1815,8 @@
     ],
     "answer": "A",
     "ans_text": "物料清單。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L121"
   },
   {
     "id": 108,
@@ -1725,7 +1832,8 @@
     ],
     "answer": "A",
     "ans_text": "財務會計（ Financial Accounting ）是為了想要或需要了解該企業財",
-    "explanation": "務資訊的外部人士所編制的財務資訊。"
+    "explanation": "務資訊的外部人士所編制的財務資訊。",
+    "assessmentTopic": "L121"
   },
   {
     "id": 109,
@@ -1741,7 +1849,8 @@
     ],
     "answer": "C",
     "ans_text": "稽核（ Auditing ）是企業執行內部控制的一部分，稽核人員應獨立",
-    "explanation": "向董事會報告，主要針對企業內部的生產、銷售、會計、營運、財務等各項與 營業活動相關之作業流程。"
+    "explanation": "向董事會報告，主要針對企業內部的生產、銷售、會計、營運、財務等各項與 營業活動相關之作業流程。",
+    "assessmentTopic": "L121"
   },
   {
     "id": 110,
@@ -1757,7 +1866,8 @@
     ],
     "answer": "B",
     "ans_text": "成本會計人員。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L121"
   },
   {
     "id": 111,
@@ -1773,7 +1883,8 @@
     ],
     "answer": "D",
     "ans_text": "流動比率。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L121"
   },
   {
     "id": 112,
@@ -1789,7 +1900,8 @@
     ],
     "answer": "C",
     "ans_text": "資產負債表。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L121"
   },
   {
     "id": 113,
@@ -1805,7 +1917,8 @@
     ],
     "answer": "A",
     "ans_text": "該公司應收款項週轉率為 10 次。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L121"
   },
   {
     "id": 114,
@@ -1821,7 +1934,8 @@
     ],
     "answer": "A",
     "ans_text": "資產總額。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L121"
   },
   {
     "id": 115,
@@ -1837,7 +1951,8 @@
     ],
     "answer": "A",
     "ans_text": "流動比率。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L121"
   },
   {
     "id": 116,
@@ -1853,7 +1968,8 @@
     ],
     "answer": "D",
     "ans_text": "規劃的基本目的，是為了幫助組織能順利的達成目標。其順序是由高階層經營",
-    "explanation": "者先設定了組織使命 、 總體預定目標和策略 ， 中階層管理者在各部門內繼而設 立部門目標，最後再由基層督導者帶領員工執行，以達成總體預定目標。"
+    "explanation": "者先設定了組織使命 、 總體預定目標和策略 ， 中階層管理者在各部門內繼而設 立部門目標，最後再由基層督導者帶領員工執行，以達成總體預定目標。",
+    "assessmentTopic": "L121"
   },
   {
     "id": 117,
@@ -1869,7 +1985,8 @@
     ],
     "answer": "A",
     "ans_text": "企業流程再造是指對企業運作模式的重新思考 ， 它是以企業流程為主要的革新",
-    "explanation": "對象，並且加入顧客關係、營運品質、創新及作業績效和組織文化等關鍵因素 的一種流程變革。"
+    "explanation": "對象，並且加入顧客關係、營運品質、創新及作業績效和組織文化等關鍵因素 的一種流程變革。",
+    "assessmentTopic": "L121"
   },
   {
     "id": 118,
@@ -1885,7 +2002,8 @@
     ],
     "answer": "A",
     "ans_text": "由上而下。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L121"
   },
   {
     "id": 119,
@@ -1901,7 +2019,8 @@
     ],
     "answer": "D",
     "ans_text": "制定策略。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L121"
   },
   {
     "id": 120,
@@ -1917,7 +2036,8 @@
     ],
     "answer": "C",
     "ans_text": "社會文化環境（ Socio -cultural ）。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L121"
   },
   {
     "id": 121,
@@ -1933,7 +2053,8 @@
     ],
     "answer": "B",
     "ans_text": "金牛型事業（ Cash Cows ）。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L121"
   },
   {
     "id": 122,
@@ -1949,7 +2070,8 @@
     ],
     "answer": "C",
     "ans_text": "BCG 矩陣。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L121"
   },
   {
     "id": 123,
@@ -1965,7 +2087,8 @@
     ],
     "answer": "D",
     "ans_text": "替代品的威脅。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L121"
   },
   {
     "id": 124,
@@ -1981,7 +2104,8 @@
     ],
     "answer": "C",
     "ans_text": "技術研發",
-    "explanation": "技術研發屬於支援性價值鏈活動，其他三項則屬於主要活動。"
+    "explanation": "技術研發屬於支援性價值鏈活動，其他三項則屬於主要活動。",
+    "assessmentTopic": "L122"
   },
   {
     "id": 125,
@@ -1997,7 +2121,8 @@
     ],
     "answer": "A",
     "ans_text": "價值主張",
-    "explanation": "根據 Al-Debei and Avison 對於建構商業模式的四個重要構面 ， 價值主張是指針 對目標客群所提出能為其創造價值的商業營運邏輯。"
+    "explanation": "根據 Al-Debei and Avison 對於建構商業模式的四個重要構面 ， 價值主張是指針 對目標客群所提出能為其創造價值的商業營運邏輯。",
+    "assessmentTopic": "L122"
   },
   {
     "id": 126,
@@ -2013,7 +2138,8 @@
     ],
     "answer": "A",
     "ans_text": "破壞式創新",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L122"
   },
   {
     "id": 127,
@@ -2029,7 +2155,8 @@
     ],
     "answer": "B",
     "ans_text": "創造性破壞",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L122"
   },
   {
     "id": 128,
@@ -2045,7 +2172,8 @@
     ],
     "answer": "B",
     "ans_text": "QR Code",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L122"
   },
   {
     "id": 129,
@@ -2061,7 +2189,8 @@
     ],
     "answer": "B",
     "ans_text": "Open Source Software",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L122"
   },
   {
     "id": 130,
@@ -2077,7 +2206,8 @@
     ],
     "answer": "C",
     "ans_text": "聚焦利基策略",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L122"
   },
   {
     "id": 131,
@@ -2093,7 +2223,8 @@
     ],
     "answer": "D",
     "ans_text": "價值鏈模型",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L122"
   },
   {
     "id": 132,
@@ -2109,7 +2240,8 @@
     ],
     "answer": "A",
     "ans_text": "檢驗基準",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L122"
   },
   {
     "id": 133,
@@ -2125,7 +2257,8 @@
     ],
     "answer": "D",
     "ans_text": "Software as a Service, SaaS",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L122"
   },
   {
     "id": 134,
@@ -2141,7 +2274,8 @@
     ],
     "answer": "A",
     "ans_text": "自動倉儲系統。",
-    "explanation": "自動倉儲系統是屬於物料管理的功能 ， 不屬於協同合作與社群企業的資訊工具 及科技。"
+    "explanation": "自動倉儲系統是屬於物料管理的功能 ， 不屬於協同合作與社群企業的資訊工具 及科技。",
+    "assessmentTopic": "L122"
   },
   {
     "id": 135,
@@ -2157,7 +2291,8 @@
     ],
     "answer": "C",
     "ans_text": "區域網路。",
-    "explanation": "500 公尺的網路連結範圍落於區域網路定義的範疇。"
+    "explanation": "500 公尺的網路連結範圍落於區域網路定義的範疇。",
+    "assessmentTopic": "L122"
   },
   {
     "id": 136,
@@ -2173,7 +2308,8 @@
     ],
     "answer": "C",
     "ans_text": "開放資料。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L122"
   },
   {
     "id": 137,
@@ -2189,7 +2325,8 @@
     ],
     "answer": "C",
     "ans_text": "SoMoCLo （Social, Mobile, Cloud ）。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L122"
   },
   {
     "id": 138,
@@ -2205,7 +2342,8 @@
     ],
     "answer": "D",
     "ans_text": "允許各種技術標準共存，並廣泛拒絕技術標準。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L122"
   },
   {
     "id": 139,
@@ -2221,7 +2359,8 @@
     ],
     "answer": "B",
     "ans_text": "社群運算。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L122"
   },
   {
     "id": 140,
@@ -2237,7 +2376,8 @@
     ],
     "answer": "C",
     "ans_text": "情緒運算。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L122"
   },
   {
     "id": 141,
@@ -2253,7 +2393,8 @@
     ],
     "answer": "D",
     "ans_text": "Context Aware Computing, CAC 。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L122"
   },
   {
     "id": 142,
@@ -2269,7 +2410,8 @@
     ],
     "answer": "B",
     "ans_text": "點對點 P2P 的共享經濟。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L122"
   },
   {
     "id": 143,
@@ -2285,7 +2427,8 @@
     ],
     "answer": "B",
     "ans_text": "Search engine optimization （SEO）。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L122"
   },
   {
     "id": 144,
@@ -2301,7 +2444,8 @@
     ],
     "answer": "A",
     "ans_text": "企業資源規劃 ERP 系統。",
-    "explanation": "ERP 是一套財務會計導向的資訊系統 ， 用於有效率地規劃 、 控制和整合企業內 部包括財務與會計流程 、 人力資源流程 、製造與生產流程及業務行銷流程所有 資源及資訊。"
+    "explanation": "ERP 是一套財務會計導向的資訊系統 ， 用於有效率地規劃 、 控制和整合企業內 部包括財務與會計流程 、 人力資源流程 、製造與生產流程及業務行銷流程所有 資源及資訊。",
+    "assessmentTopic": "L122"
   },
   {
     "id": 145,
@@ -2317,7 +2461,8 @@
     ],
     "answer": "B",
     "ans_text": "行銷資源規劃。",
-    "explanation": "行銷資源規劃通常是屬於企業資源規劃系統的功能。"
+    "explanation": "行銷資源規劃通常是屬於企業資源規劃系統的功能。",
+    "assessmentTopic": "L122"
   },
   {
     "id": 146,
@@ -2333,7 +2478,8 @@
     ],
     "answer": "C",
     "ans_text": "樞紐分析。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L122"
   },
   {
     "id": 147,
@@ -2349,7 +2495,8 @@
     ],
     "answer": "D",
     "ans_text": "雲端運算。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L122"
   },
   {
     "id": 148,
@@ -2365,7 +2512,8 @@
     ],
     "answer": "D",
     "ans_text": "企業架構師。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L122"
   },
   {
     "id": 149,
@@ -2381,7 +2529,8 @@
     ],
     "answer": "A",
     "ans_text": "桌面服務層。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L122"
   },
   {
     "id": 150,
@@ -2397,7 +2546,8 @@
     ],
     "answer": "A",
     "ans_text": "資料倉儲。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L122"
   },
   {
     "id": 151,
@@ -2413,7 +2563,8 @@
     ],
     "answer": "C",
     "ans_text": "XML。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L122"
   },
   {
     "id": 152,
@@ -2429,7 +2580,8 @@
     ],
     "answer": "C",
     "ans_text": "In-memory database 。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L122"
   },
   {
     "id": 153,
@@ -2445,7 +2597,8 @@
     ],
     "answer": "B",
     "ans_text": "資料倉儲。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L122"
   },
   {
     "id": 154,
@@ -2461,7 +2614,8 @@
     ],
     "answer": "C",
     "ans_text": "甘特圖。",
-    "explanation": "甘特圖是專案管理工具中最常被使用來管控專案時程的圖表工具。"
+    "explanation": "甘特圖是專案管理工具中最常被使用來管控專案時程的圖表工具。",
+    "assessmentTopic": "L122"
   },
   {
     "id": 155,
@@ -2477,7 +2631,8 @@
     ],
     "answer": "A",
     "ans_text": "感測器層。",
-    "explanation": "RFID 晶片是具有感測、辨識及通訊能力 的感知元件，常被嵌入真實物體，已 針對不同場景進行感測與監控，所以應屬於感測器層。"
+    "explanation": "RFID 晶片是具有感測、辨識及通訊能力 的感知元件，常被嵌入真實物體，已 針對不同場景進行感測與監控，所以應屬於感測器層。",
+    "assessmentTopic": "L122"
   },
   {
     "id": 156,
@@ -2493,7 +2648,8 @@
     ],
     "answer": "D",
     "ans_text": "成本、時間、範疇。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L122"
   },
   {
     "id": 157,
@@ -2509,7 +2665,8 @@
     ],
     "answer": "A",
     "ans_text": "範圍蔓延。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L122"
   },
   {
     "id": 158,
@@ -2525,7 +2682,8 @@
     ],
     "answer": "A",
     "ans_text": "員工自攜設備。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L122"
   },
   {
     "id": 159,
@@ -2541,7 +2699,8 @@
     ],
     "answer": "D",
     "ans_text": "Radio Frequency IDentification （RFID）。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L122"
   },
   {
     "id": 160,
@@ -2557,7 +2716,8 @@
     ],
     "answer": "C",
     "ans_text": "NoSQL 。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L122"
   },
   {
     "id": 161,
@@ -2573,7 +2733,8 @@
     ],
     "answer": "A",
     "ans_text": "大數據。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L122"
   },
   {
     "id": 162,
@@ -2589,7 +2750,8 @@
     ],
     "answer": "B",
     "ans_text": "52143 。",
-    "explanation": ""
+    "explanation": "",
+    "assessmentTopic": "L122"
   },
   {
     "id": 163,
@@ -2605,2406 +2767,7 @@
     ],
     "answer": "D",
     "ans_text": "專家系統。",
-    "explanation": ""
-  },
-  {
-    "id": 164,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 101,
-    "question": "【模擬題 1】某零售連鎖超商總部為了分析過去五年的營業額趨勢，並評估明年是否要在高雄市開設新分店。他們應該主要使用下列哪一種系統？",
-    "options": [
-      "營運智慧 (OI)",
-      "商業智慧 (BI)",
-      "物料需求規劃 (MRP)",
-      "機器人流程自動化 (RPA)"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 商業智慧 (BI)",
-    "explanation": "商業智慧 (BI) 著重於分析長期歷史資料，支援企業進行長期的策略決策（如展店、換菜單）。"
-  },
-  {
-    "id": 165,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 102,
-    "question": "【模擬題 2】在營運智慧 (OI) 中，系統強調的「即時性 (Real-time)」最主要是為了解決下列哪一個實務問題？",
-    "options": [
-      "提供遵循公認會計原則的年度財務報告",
-      "現場營運動態發生異常時，能夠即時偵測並立刻調整或採取補救行動",
-      "精確計算未來十年產品生命週期的 BOM 表研發配方",
-      "橫向擴大員工的日常工作任務數量以提升滿意度"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 現場營運動態發生異常時，能夠即時偵測並立刻調整或採取補救行動",
-    "explanation": "OI 的即時動態監控是為了在現場發生異常時（如設備過熱、庫存歸零）能立刻做出調整，防止損害擴大。"
-  },
-  {
-    "id": 166,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 103,
-    "question": "【模擬題 3】營運智慧 (OI) 的三層架構中，『分析層 (Analytical Layer)』的最主要功能為何？",
-    "options": [
-      "提供資料庫的底層硬體存取接口",
-      "進行資料本身的多維度分析、指標計算與決策報表製作",
-      "負責從設備感測器進行資料的實時萃取",
-      "統一不同來源系統的日期與編碼格式"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 進行資料本身的多維度分析、指標計算與決策報表製作",
-    "explanation": "分析層主要負責資料本身的分析運算、指標（KPI）計算與決策報表製作，以提供高層主管或大廚視覺化決策大腦。"
-  },
-  {
-    "id": 167,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 104,
-    "question": "【模擬題 4】在營運智慧架構中，如果我們將資料流程比喻為「餐廳做菜流程」，則『大廚根據客人的訂單，利用切好備妥的食材烹調出美味佳餚』應對應到哪一層？",
-    "options": [
-      "資料層 (Data Layer)",
-      "整合層 (Integration Layer)",
-      "分析層 (Analytical Layer)",
-      "呈現場景層 (Presentation Layer)"
-    ],
-    "answer": "C",
-    "ans_text": "標準答案：(C) 分析層 (Analytical Layer)",
-    "explanation": "大廚烹調佳餚代表將清洗整合好的資料（備好的料）編譯分析並製作成決策報表（美食），屬於分析層。"
-  },
-  {
-    "id": 168,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 105,
-    "question": "【模擬題 5】在建立資料倉儲時，ETL 流程中的『ECCD』是指哪四個資料處理步驟的縮寫？",
-    "options": [
-      "Extract (萃取), Clean (清理), Conform (一致化), Delivery (交付)",
-      "Evaluation (評估), Classification (分類), Conversion (轉換), Database (資料庫)",
-      "Encryption (加密), Compression (壓縮), Customization (客製), Deployment (部署)",
-      "Entry (輸入), Check (檢查), Calculation (計算), Distribution (分發)"
-    ],
-    "answer": "A",
-    "ans_text": "標準答案：(A) Extract (萃取), Clean (清理), Conform (一致化), Delivery (交付)",
-    "explanation": "ETL 進入資料倉儲前遵循 ECCD 順序：萃取 (Extract) ➔ 清理 (Clean) ➔ 一致化 (Conform) ➔ 交付 (Delivery)。"
-  },
-  {
-    "id": 169,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 106,
-    "question": "【模擬題 6】在 ETL 的資料一致化 (Conform) 步驟中，下列何者是主要處理的項目？",
-    "options": [
-      "刪除資料表中重複出現的客戶 ID 紀錄",
-      "將不同分店系統中代表男性的代碼（如 M, Male, 男, 1）統一標準化為『M』",
-      "防止未授權的使用者讀取資料庫敏感欄位",
-      "提高資料庫伺服器的固態硬碟讀寫速度"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 將不同分店系統中代表男性的代碼（如 M, Male, 男, 1）統一標準化為『M』",
-    "explanation": "一致化 (Conform) 的核心是將不同來源系統的代碼、日期、單位等格式標準化，使其具備一致的商業語意。"
-  },
-  {
-    "id": 170,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 107,
-    "question": "【模擬題 7】線上分析處理 (OLAP) 允許使用者將資料倉儲內的龐大資料進行多維度分析。如果主管想將報表從「看各產品各月份銷售額」轉變為「只鎖定台北地區的各產品銷售額」，此操作稱為：",
-    "options": [
-      "向上鑽取 (Drill-up)",
-      "向下鑽取 (Drill-down)",
-      "切片 (Slice)",
-      "轉置 (Pivot)"
-    ],
-    "answer": "C",
-    "ans_text": "標準答案：(C) 切片 (Slice)",
-    "explanation": "「切片 (Slice)」是指在多維度資料中，選定單一維度（如地區 = 台北）的某個特定值，以觀察其他維度數據的變化。"
-  },
-  {
-    "id": 171,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 108,
-    "question": "【模擬題 8】線上分析處理 (OLAP) 中，『切塊 (Dice)』操作的定義為何？",
-    "options": [
-      "將報表中的行列欄位進行互換，改變觀察視角",
-      "在兩個或多個維度上定義一個子集區間（如：時間為第一季且地區為台北與台中），觀察交叉數據",
-      "從摘要數據層級點選展開以查看最底層的交易明細",
-      "將非結構化的影像資料轉換為結構化表格"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 在兩個或多個維度上定義一個子集區間（如：時間為第一季且地區為台北與台中），觀察交叉數據",
-    "explanation": "「切塊 (Dice)」是在多個維度上定義特定範圍子集（切出一個小魔術方塊），而「切片 (Slice)」則是只在單一維度固定一個值。"
-  },
-  {
-    "id": 172,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 109,
-    "question": "【模擬題 9】平衡計分卡 (BSC) 從四個構面來衡量企業績效。若微風電商為了提升未來創新能力，設定了「員工平均每年接受培訓時數」與「新專利申請數量」指標，這屬於哪一個構面？",
-    "options": [
-      "財務構面",
-      "顧客構面",
-      "內部流程構面",
-      "學習與成長構面"
-    ],
-    "answer": "D",
-    "ans_text": "標準答案：(D) 學習與成長構面",
-    "explanation": "學習與成長構面關注組織的無形資產，包括員工能力、企業文化、教育訓練與創新專利等未來成長驅動力。"
-  },
-  {
-    "id": 173,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 110,
-    "question": "【模擬題 10】「如果我們把這款手機的保固期從 1 年延長為 2 年，預估未來的售後保固維修成本會增加多少？」這屬於下列哪一種決策分析方法？",
-    "options": [
-      "目標搜尋 (Goal Seeking)",
-      "假設分析 (What-if Analysis)",
-      "敏感度分群 (Clustering)",
-      "線上分析處理 (OLAP)"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 假設分析 (What-if Analysis)",
-    "explanation": "這是變更一個輸入變數（保固期），觀測結果變數（保固成本）如何變化的「假設分析 (What-if)」。"
-  },
-  {
-    "id": 174,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 111,
-    "question": "【模擬題 11】「我們希望明年公司的淨利潤能達到 5000 萬元。在其他開銷固定的情況下，我們的客單價至少需要調高到多少元？」這屬於下列哪一種決策分析方法？",
-    "options": [
-      "假設分析 (What-if)",
-      "目標搜尋 (Goal Seeking)",
-      "關聯規則探勘",
-      "文字探勘"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 目標搜尋 (Goal Seeking)",
-    "explanation": "這是給定一個最終目標值（淨利潤 5000 萬元），要求系統反向推算輸入條件（客單價）的「目標搜尋 (Goal Seeking)」。"
-  },
-  {
-    "id": 175,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 112,
-    "question": "【模擬題 12】在建置資料倉儲 (Data Warehouse) 時，設計實體資料庫表格、配置索引 (Indexes) 與設計 ETL 的具體轉換邏輯程式碼，主要發生在下列哪一個階段？",
-    "options": [
-      "需求與現況 (Requirements & Realities)",
-      "架構設計 (Architecture)",
-      "系統建置 (System Implementation)",
-      "測試與發布 (Test & Release)"
-    ],
-    "answer": "C",
-    "ans_text": "標準答案：(C) 系統建置 (System Implementation)",
-    "explanation": "「系統建置 (System Implementation)」階段是動手編寫代碼、建置資料庫實體、撰寫並執行 ETL 程式的實作階段。"
-  },
-  {
-    "id": 176,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 113,
-    "question": "【模擬題 13】在資料倉儲中，「詮釋資料 (Metadata)」扮演著至關重要的角色。下列哪一項最符合詮釋資料的定義？",
-    "options": [
-      "儲存在資料庫中的客戶歷史交易金額",
-      "描述資料的資料，例如記錄資料表的欄位名稱、資料型態、來源系統與轉換規則",
-      "經過加密處理以防外洩的個人識別資料",
-      "已經載入記憶體中以加速運算的資料快取"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 描述資料的資料，例如記錄資料表的欄位名稱、資料型態、來源系統與轉換規則",
-    "explanation": "詮釋資料 (Metadata) 即「描述資料的資料」，定義了資料的結構、型態、來源、目的地與對應關係。"
-  },
-  {
-    "id": 177,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 114,
-    "question": "【模擬題 14】在大數據與營運智慧分析中，為了解決傳統硬碟 I/O 速度過慢、無法即時產生分析報表的問題，通常會採用下列哪一種計算技術？",
-    "options": [
-      "磁帶儲存技術",
-      "記憶體內運算 (In-memory Computing)",
-      "機器人流程自動化 (RPA)",
-      "文字探勘技術 (Text Mining)"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 記憶體內運算 (In-memory Computing)",
-    "explanation": "記憶體內運算 (In-memory Computing) 將數據直接載入系統隨機存取記憶體 (RAM) 中進行高速運算，能大幅降低延遲，實現即時分析。"
-  },
-  {
-    "id": 178,
-    "subject": "考科二：經營管理數位化概論",
-    "chapter": "第五章 數位化企業資訊工具基本知識",
-    "num": 115,
-    "question": "【模擬題 15】飛馬物流採取『推式 (Push) 供應鏈管理模式』。下列關於推式供應鏈模式的敘述，何者正確？",
-    "options": [
-      "只有在顧客到收銀台付款結帳後，系統才會向工廠下單生產",
-      "依據歷史銷售數據與預測來主動規劃生產，並將成品推向市場",
-      "前半段零組件為拉式，後半段組裝為推式",
-      "完全不需要使用資料庫進行需求預測"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 依據歷史銷售數據與預測來主動規劃生產，並將成品推向市場",
-    "explanation": "推式 (Push) 供應鏈是預測導向的，企業根據歷史預測主動計劃生產並推向市場；拉式 (Pull) 則是訂單導向的。"
-  },
-  {
-    "id": 179,
-    "subject": "考科二：經營管理數位化概論",
-    "chapter": "第五章 數位化企業資訊工具基本知識",
-    "num": 116,
-    "question": "【模擬題 16】企業流程再造 (BPR) 旨在根本性重新思考與徹底改造業務流程。在 Davenport and Short 的五步驟模型中，其核心目標不包括下列哪一項？",
-    "options": [
-      "建立企業願景及流程改善目的",
-      "了解現行流程以找出核心瓶頸",
-      "微調現有流程中不影響大局的小細節",
-      "利用資訊科技 (IT) 來發揮賦能作用以重新設計新流程"
-    ],
-    "answer": "C",
-    "ans_text": "標準答案：(C) 微調現有流程中不影響大局的小細節",
-    "explanation": "BPR 追求的是「徹底 (Radical)」與「大幅度 (Dramatic)」的效能飛躍，而非對現有流程進行微調（小步快跑的微調是屬於持續改善，而非 BPR）。"
-  },
-  {
-    "id": 180,
-    "subject": "考科二：經營管理數位化概論",
-    "chapter": "第四章 經營管理基本知識",
-    "num": 117,
-    "question": "【模擬題 17】在專案管理中，甘特圖 (Gantt Chart) 最適合應用於下列哪一種情境？",
-    "options": [
-      "需要精密計算多個複雜子任務相依性與要徑的研發專案",
-      "簡單、成本低，用以監控活動進度與先後順序的時程工具",
-      "需要使用機率分配計算完工機率的創新專案",
-      "需要自動發送補貨 Email 的行政流程"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 簡單、成本低，用以監控活動進度與先後順序的時程工具",
-    "explanation": "甘特圖製作成本低、直觀，適合簡單專案進度監控，但其主要缺點是無法描繪複雜活動與資源間的相依相鎖關係。"
-  },
-  {
-    "id": 181,
-    "subject": "考科二：經營管理數位化概論",
-    "chapter": "第四章 經營管理基本知識",
-    "num": 118,
-    "question": "【模擬題 18】巨木家具為了提升基層行政人員的工作動機與自主性，決定實施工作豐富化 (Job Enrichment)。下列何者最符合工作豐富化的實施方式？",
-    "options": [
-      "增加該員工每天需要登錄的表格數量（橫向擴張）",
-      "安排員工在客服部與出貨部之間輪流工作（職位輪換）",
-      "賦予員工參與流程規劃、工作進度排定與自我績效評估的權限（縱向擴權）",
-      "將該職位拆分為多個極為簡單且高度重複的步驟（工作簡化）"
-    ],
-    "answer": "C",
-    "ans_text": "標準答案：(C) 賦予員工參與流程規劃、工作進度排定與自我績效評估的權限（縱向擴權）",
-    "explanation": "工作豐富化 (Job Enrichment) 是工作責任的「縱向擴張」，旨在增加規劃、控制與評估的職責與決策自主權。"
-  },
-  {
-    "id": 182,
-    "subject": "考科二：經營管理數位化概論",
-    "chapter": "第四章 經營管理基本知識",
-    "num": 119,
-    "question": "【模擬題 19】企業內部稽核人員 (Auditor) 的主要職責是稽查生、銷、會、研、財等流程是否落實內部控制。為了確保其稽核的獨立性與客觀性，其報告路徑應為：",
-    "options": [
-      "直接向財務長 (CFO) 報告",
-      "直接向總經理 (CEO) 報告",
-      "獨立向董事會 (Board of Directors) 報告",
-      "向人力資源部經理報告"
-    ],
-    "answer": "C",
-    "ans_text": "標準答案：(C) 獨立向董事會 (Board of Directors) 報告",
-    "explanation": "稽核人員必須保持高度獨立，不能受被稽核部門（如財務、營運）的行政干預，因此組織上必須設計為直接向董事會或審計委員會報告。"
-  },
-  {
-    "id": 183,
-    "subject": "考科二：經營管理數位化概論",
-    "chapter": "第五章 數位化企業資訊工具基本知識",
-    "num": 120,
-    "question": "【模擬題 20】某家電腦製造商採取「推拉式 (Push-Pull) 供應鏈模式」：先依據預測大量採購主機板與 CPU 等標準零組件（推式），等到收到客戶的客製化訂單後，才依訂單需求進行組裝與出貨（拉式）。這兩種模式的交界點在供應鏈管理中稱為：",
-    "options": [
-      "訂單履行點 (Order Fulfillment Point)",
-      "推拉邊界 (Push-Pull Boundary / Decoupling Point)",
-      "瓶頸要徑點 (Bottleneck Point)",
-      "安全庫存點 (Safety Stock Point)"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 推拉邊界 (Push-Pull Boundary / Decoupling Point)",
-    "explanation": "推拉邊界（或解耦點 Decoupling Point）是推式（預測導向）與拉式（訂單導向）的交界點，在此點之前為標準化生產，此點之後為客製化組裝。"
-  },
-  {
-    "id": 184,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 121,
-    "question": "【模擬題 21】某零售連鎖超商總部為了分析過去五年的營業額趨勢，並評估明年是否要在高雄市開設新分店。他們應該主要使用下列哪一種系統？",
-    "options": [
-      "營運智慧 (OI)",
-      "商業智慧 (BI)",
-      "物料需求規劃 (MRP)",
-      "機器人流程自動化 (RPA)"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 商業智慧 (BI)",
-    "explanation": "商業智慧 (BI) 著重於分析長期歷史資料，支援企業進行長期的策略決策（如展店、換菜單）。"
-  },
-  {
-    "id": 185,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 122,
-    "question": "【模擬題 22】在營運智慧 (OI) 中，系統強調的「即時性 (Real-time)」最主要是為了解決下列哪一個實務問題？",
-    "options": [
-      "提供遵循公認會計原則的年度財務報告",
-      "現場營運動態發生異常時，能夠即時偵測並立刻調整或採取補救行動",
-      "精確計算未來十年產品生命週期的 BOM 表研發配方",
-      "橫向擴大員工的日常工作任務數量以提升滿意度"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 現場營運動態發生異常時，能夠即時偵測並立刻調整或採取補救行動",
-    "explanation": "OI 的即時動態監控是為了在現場發生異常時（如設備過熱、庫存歸零）能立刻做出調整，防止損害擴大。"
-  },
-  {
-    "id": 186,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 123,
-    "question": "【模擬題 23】營運智慧 (OI) 的三層架構中，『分析層 (Analytical Layer)』的最主要功能為何？",
-    "options": [
-      "提供資料庫的底層硬體存取接口",
-      "進行資料本身的多維度分析、指標計算與決策報表製作",
-      "負責從設備感測器進行資料的實時萃取",
-      "統一不同來源系統的日期與編碼格式"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 進行資料本身的多維度分析、指標計算與決策報表製作",
-    "explanation": "分析層主要負責資料本身的分析運算、指標（KPI）計算與決策報表製作，以提供高層主管或大廚視覺化決策大腦。"
-  },
-  {
-    "id": 187,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 124,
-    "question": "【模擬題 24】在營運智慧架構中，如果我們將資料流程比喻為「餐廳做菜流程」，則『大廚根據客人的訂單，利用切好備妥的食材烹調出美味佳餚』應對應到哪一層？",
-    "options": [
-      "資料層 (Data Layer)",
-      "整合層 (Integration Layer)",
-      "分析層 (Analytical Layer)",
-      "呈現場景層 (Presentation Layer)"
-    ],
-    "answer": "C",
-    "ans_text": "標準答案：(C) 分析層 (Analytical Layer)",
-    "explanation": "大廚烹調佳餚代表將清洗整合好的資料（備好的料）編譯分析並製作成決策報表（美食），屬於分析層。"
-  },
-  {
-    "id": 188,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 125,
-    "question": "【模擬題 25】在建立資料倉儲時，ETL 流程中的『ECCD』是指哪四個資料處理步驟的縮寫？",
-    "options": [
-      "Extract (萃取), Clean (清理), Conform (一致化), Delivery (交付)",
-      "Evaluation (評估), Classification (分類), Conversion (轉換), Database (資料庫)",
-      "Encryption (加密), Compression (壓縮), Customization (客製), Deployment (部署)",
-      "Entry (輸入), Check (檢查), Calculation (計算), Distribution (分發)"
-    ],
-    "answer": "A",
-    "ans_text": "標準答案：(A) Extract (萃取), Clean (清理), Conform (一致化), Delivery (交付)",
-    "explanation": "ETL 進入資料倉儲前遵循 ECCD 順序：萃取 (Extract) ➔ 清理 (Clean) ➔ 一致化 (Conform) ➔ 交付 (Delivery)。"
-  },
-  {
-    "id": 189,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 126,
-    "question": "【模擬題 26】在 ETL 的資料一致化 (Conform) 步驟中，下列何者是主要處理的項目？",
-    "options": [
-      "刪除資料表中重複出現的客戶 ID 紀錄",
-      "將不同分店系統中代表男性的代碼（如 M, Male, 男, 1）統一標準化為『M』",
-      "防止未授權的使用者讀取資料庫敏感欄位",
-      "提高資料庫伺服器的固態硬碟讀寫速度"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 將不同分店系統中代表男性的代碼（如 M, Male, 男, 1）統一標準化為『M』",
-    "explanation": "一致化 (Conform) 的核心是將不同來源系統的代碼、日期、單位等格式標準化，使其具備一致的商業語意。"
-  },
-  {
-    "id": 190,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 127,
-    "question": "【模擬題 27】線上分析處理 (OLAP) 允許使用者將資料倉儲內的龐大資料進行多維度分析。如果主管想將報表從「看各產品各月份銷售額」轉變為「只鎖定台北地區的各產品銷售額」，此操作稱為：",
-    "options": [
-      "向上鑽取 (Drill-up)",
-      "向下鑽取 (Drill-down)",
-      "切片 (Slice)",
-      "轉置 (Pivot)"
-    ],
-    "answer": "C",
-    "ans_text": "標準答案：(C) 切片 (Slice)",
-    "explanation": "「切片 (Slice)」是指在多維度資料中，選定單一維度（如地區 = 台北）的某個特定值，以觀察其他維度數據的變化。"
-  },
-  {
-    "id": 191,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 128,
-    "question": "【模擬題 28】線上分析處理 (OLAP) 中，『切塊 (Dice)』操作的定義為何？",
-    "options": [
-      "將報表中的行列欄位進行互換，改變觀察視角",
-      "在兩個或多個維度上定義一個子集區間（如：時間為第一季且地區為台北與台中），觀察交叉數據",
-      "從摘要數據層級點選展開以查看最底層的交易明細",
-      "將非結構化的影像資料轉換為結構化表格"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 在兩個或多個維度上定義一個子集區間（如：時間為第一季且地區為台北與台中），觀察交叉數據",
-    "explanation": "「切塊 (Dice)」是在多個維度上定義特定範圍子集（切出一個小魔術方塊），而「切片 (Slice)」則是只在單一維度固定一個值。"
-  },
-  {
-    "id": 192,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 129,
-    "question": "【模擬題 29】平衡計分卡 (BSC) 從四個構面來衡量企業績效。若微風電商為了提升未來創新能力，設定了「員工平均每年接受培訓時數」與「新專利申請數量」指標，這屬於哪一個構面？",
-    "options": [
-      "財務構面",
-      "顧客構面",
-      "內部流程構面",
-      "學習與成長構面"
-    ],
-    "answer": "D",
-    "ans_text": "標準答案：(D) 學習與成長構面",
-    "explanation": "學習與成長構面關注組織的無形資產，包括員工能力、企業文化、教育訓練與創新專利等未來成長驅動力。"
-  },
-  {
-    "id": 193,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 130,
-    "question": "【模擬題 30】「如果我們把這款手機的保固期從 1 年延長為 2 年，預估未來的售後保固維修成本會增加多少？」這屬於下列哪一種決策分析方法？",
-    "options": [
-      "目標搜尋 (Goal Seeking)",
-      "假設分析 (What-if Analysis)",
-      "敏感度分群 (Clustering)",
-      "線上分析處理 (OLAP)"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 假設分析 (What-if Analysis)",
-    "explanation": "這是變更一個輸入變數（保固期），觀測結果變數（保固成本）如何變化的「假設分析 (What-if)」。"
-  },
-  {
-    "id": 194,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 131,
-    "question": "【模擬題 31】「我們希望明年公司的淨利潤能達到 5000 萬元。在其他開銷固定的情況下，我們的客單價至少需要調高到多少元？」這屬於下列哪一種決策分析方法？",
-    "options": [
-      "假設分析 (What-if)",
-      "目標搜尋 (Goal Seeking)",
-      "關聯規則探勘",
-      "文字探勘"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 目標搜尋 (Goal Seeking)",
-    "explanation": "這是給定一個最終目標值（淨利潤 5000 萬元），要求系統反向推算輸入條件（客單價）的「目標搜尋 (Goal Seeking)」。"
-  },
-  {
-    "id": 195,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 132,
-    "question": "【模擬題 32】在建置資料倉儲 (Data Warehouse) 時，設計實體資料庫表格、配置索引 (Indexes) 與設計 ETL 的具體轉換邏輯程式碼，主要發生在下列哪一個階段？",
-    "options": [
-      "需求與現況 (Requirements & Realities)",
-      "架構設計 (Architecture)",
-      "系統建置 (System Implementation)",
-      "測試與發布 (Test & Release)"
-    ],
-    "answer": "C",
-    "ans_text": "標準答案：(C) 系統建置 (System Implementation)",
-    "explanation": "「系統建置 (System Implementation)」階段是動手編寫代碼、建置資料庫實體、撰寫並執行 ETL 程式的實作階段。"
-  },
-  {
-    "id": 196,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 133,
-    "question": "【模擬題 33】在資料倉儲中，「詮釋資料 (Metadata)」扮演著至關重要的角色。下列哪一項最符合詮釋資料的定義？",
-    "options": [
-      "儲存在資料庫中的客戶歷史交易金額",
-      "描述資料的資料，例如記錄資料表的欄位名稱、資料型態、來源系統與轉換規則",
-      "經過加密處理以防外洩的個人識別資料",
-      "已經載入記憶體中以加速運算的資料快取"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 描述資料的資料，例如記錄資料表的欄位名稱、資料型態、來源系統與轉換規則",
-    "explanation": "詮釋資料 (Metadata) 即「描述資料的資料」，定義了資料的結構、型態、來源、目的地與對應關係。"
-  },
-  {
-    "id": 197,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 134,
-    "question": "【模擬題 34】在大數據與營運智慧分析中，為了解決傳統硬碟 I/O 速度過慢、無法即時產生分析報表的問題，通常會採用下列哪一種計算技術？",
-    "options": [
-      "磁帶儲存技術",
-      "記憶體內運算 (In-memory Computing)",
-      "機器人流程自動化 (RPA)",
-      "文字探勘技術 (Text Mining)"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 記憶體內運算 (In-memory Computing)",
-    "explanation": "記憶體內運算 (In-memory Computing) 將數據直接載入系統隨機存取記憶體 (RAM) 中進行高速運算，能大幅降低延遲，實現即時分析。"
-  },
-  {
-    "id": 198,
-    "subject": "考科二：經營管理數位化概論",
-    "chapter": "第五章 數位化企業資訊工具基本知識",
-    "num": 135,
-    "question": "【模擬題 35】飛馬物流採取『推式 (Push) 供應鏈管理模式』。下列關於推式供應鏈模式的敘述，何者正確？",
-    "options": [
-      "只有在顧客到收銀台付款結帳後，系統才會向工廠下單生產",
-      "依據歷史銷售數據與預測來主動規劃生產，並將成品推向市場",
-      "前半段零組件為拉式，後半段組裝為推式",
-      "完全不需要使用資料庫進行需求預測"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 依據歷史銷售數據與預測來主動規劃生產，並將成品推向市場",
-    "explanation": "推式 (Push) 供應鏈是預測導向的，企業根據歷史預測主動計劃生產並推向市場；拉式 (Pull) 則是訂單導向的。"
-  },
-  {
-    "id": 199,
-    "subject": "考科二：經營管理數位化概論",
-    "chapter": "第五章 數位化企業資訊工具基本知識",
-    "num": 136,
-    "question": "【模擬題 36】企業流程再造 (BPR) 旨在根本性重新思考與徹底改造業務流程。在 Davenport and Short 的五步驟模型中，其核心目標不包括下列哪一項？",
-    "options": [
-      "建立企業願景及流程改善目的",
-      "了解現行流程以找出核心瓶頸",
-      "微調現有流程中不影響大局的小細節",
-      "利用資訊科技 (IT) 來發揮賦能作用以重新設計新流程"
-    ],
-    "answer": "C",
-    "ans_text": "標準答案：(C) 微調現有流程中不影響大局的小細節",
-    "explanation": "BPR 追求的是「徹底 (Radical)」與「大幅度 (Dramatic)」的效能飛躍，而非對現有流程進行微調（小步快跑的微調是屬於持續改善，而非 BPR）。"
-  },
-  {
-    "id": 200,
-    "subject": "考科二：經營管理數位化概論",
-    "chapter": "第四章 經營管理基本知識",
-    "num": 137,
-    "question": "【模擬題 37】在專案管理中，甘特圖 (Gantt Chart) 最適合應用於下列哪一種情境？",
-    "options": [
-      "需要精密計算多個複雜子任務相依性與要徑的研發專案",
-      "簡單、成本低，用以監控活動進度與先後順序的時程工具",
-      "需要使用機率分配計算完工機率的創新專案",
-      "需要自動發送補貨 Email 的行政流程"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 簡單、成本低，用以監控活動進度與先後順序的時程工具",
-    "explanation": "甘特圖製作成本低、直觀，適合簡單專案進度監控，但其主要缺點是無法描繪複雜活動與資源間的相依相鎖關係。"
-  },
-  {
-    "id": 201,
-    "subject": "考科二：經營管理數位化概論",
-    "chapter": "第四章 經營管理基本知識",
-    "num": 138,
-    "question": "【模擬題 38】巨木家具為了提升基層行政人員的工作動機與自主性，決定實施工作豐富化 (Job Enrichment)。下列何者最符合工作豐富化的實施方式？",
-    "options": [
-      "增加該員工每天需要登錄的表格數量（橫向擴張）",
-      "安排員工在客服部與出貨部之間輪流工作（職位輪換）",
-      "賦予員工參與流程規劃、工作進度排定與自我績效評估的權限（縱向擴權）",
-      "將該職位拆分為多個極為簡單且高度重複的步驟（工作簡化）"
-    ],
-    "answer": "C",
-    "ans_text": "標準答案：(C) 賦予員工參與流程規劃、工作進度排定與自我績效評估的權限（縱向擴權）",
-    "explanation": "工作豐富化 (Job Enrichment) 是工作責任的「縱向擴張」，旨在增加規劃、控制與評估的職責與決策自主權。"
-  },
-  {
-    "id": 202,
-    "subject": "考科二：經營管理數位化概論",
-    "chapter": "第四章 經營管理基本知識",
-    "num": 139,
-    "question": "【模擬題 39】企業內部稽核人員 (Auditor) 的主要職責是稽查生、銷、會、研、財等流程是否落實內部控制。為了確保其稽核的獨立性與客觀性，其報告路徑應為：",
-    "options": [
-      "直接向財務長 (CFO) 報告",
-      "直接向總經理 (CEO) 報告",
-      "獨立向董事會 (Board of Directors) 報告",
-      "向人力資源部經理報告"
-    ],
-    "answer": "C",
-    "ans_text": "標準答案：(C) 獨立向董事會 (Board of Directors) 報告",
-    "explanation": "稽核人員必須保持高度獨立，不能受被稽核部門（如財務、營運）的行政干預，因此組織上必須設計為直接向董事會或審計委員會報告。"
-  },
-  {
-    "id": 203,
-    "subject": "考科二：經營管理數位化概論",
-    "chapter": "第五章 數位化企業資訊工具基本知識",
-    "num": 140,
-    "question": "【模擬題 40】某家電腦製造商採取「推拉式 (Push-Pull) 供應鏈模式」：先依據預測大量採購主機板與 CPU 等標準零組件（推式），等到收到客戶的客製化訂單後，才依訂單需求進行組裝與出貨（拉式）。這兩種模式的交界點在供應鏈管理中稱為：",
-    "options": [
-      "訂單履行點 (Order Fulfillment Point)",
-      "推拉邊界 (Push-Pull Boundary / Decoupling Point)",
-      "瓶頸要徑點 (Bottleneck Point)",
-      "安全庫存點 (Safety Stock Point)"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 推拉邊界 (Push-Pull Boundary / Decoupling Point)",
-    "explanation": "推拉邊界（或解耦點 Decoupling Point）是推式（預測導向）與拉式（訂單導向）的交界點，在此點之前為標準化生產，此點之後為客製化組裝。"
-  },
-  {
-    "id": 204,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 141,
-    "question": "【模擬題 41】某零售連鎖超商總部為了分析過去五年的營業額趨勢，並評估明年是否要在高雄市開設新分店。他們應該主要使用下列哪一種系統？",
-    "options": [
-      "營運智慧 (OI)",
-      "商業智慧 (BI)",
-      "物料需求規劃 (MRP)",
-      "機器人流程自動化 (RPA)"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 商業智慧 (BI)",
-    "explanation": "商業智慧 (BI) 著重於分析長期歷史資料，支援企業進行長期的策略決策（如展店、換菜單）。"
-  },
-  {
-    "id": 205,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 142,
-    "question": "【模擬題 42】在營運智慧 (OI) 中，系統強調的「即時性 (Real-time)」最主要是為了解決下列哪一個實務問題？",
-    "options": [
-      "提供遵循公認會計原則的年度財務報告",
-      "現場營運動態發生異常時，能夠即時偵測並立刻調整或採取補救行動",
-      "精確計算未來十年產品生命週期的 BOM 表研發配方",
-      "橫向擴大員工的日常工作任務數量以提升滿意度"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 現場營運動態發生異常時，能夠即時偵測並立刻調整或採取補救行動",
-    "explanation": "OI 的即時動態監控是為了在現場發生異常時（如設備過熱、庫存歸零）能立刻做出調整，防止損害擴大。"
-  },
-  {
-    "id": 206,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 143,
-    "question": "【模擬題 43】營運智慧 (OI) 的三層架構中，『分析層 (Analytical Layer)』的最主要功能為何？",
-    "options": [
-      "提供資料庫的底層硬體存取接口",
-      "進行資料本身的多維度分析、指標計算與決策報表製作",
-      "負責從設備感測器進行資料的實時萃取",
-      "統一不同來源系統的日期與編碼格式"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 進行資料本身的多維度分析、指標計算與決策報表製作",
-    "explanation": "分析層主要負責資料本身的分析運算、指標（KPI）計算與決策報表製作，以提供高層主管或大廚視覺化決策大腦。"
-  },
-  {
-    "id": 207,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 144,
-    "question": "【模擬題 44】在營運智慧架構中，如果我們將資料流程比喻為「餐廳做菜流程」，則『大廚根據客人的訂單，利用切好備妥的食材烹調出美味佳餚』應對應到哪一層？",
-    "options": [
-      "資料層 (Data Layer)",
-      "整合層 (Integration Layer)",
-      "分析層 (Analytical Layer)",
-      "呈現場景層 (Presentation Layer)"
-    ],
-    "answer": "C",
-    "ans_text": "標準答案：(C) 分析層 (Analytical Layer)",
-    "explanation": "大廚烹調佳餚代表將清洗整合好的資料（備好的料）編譯分析並製作成決策報表（美食），屬於分析層。"
-  },
-  {
-    "id": 208,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 145,
-    "question": "【模擬題 45】在建立資料倉儲時，ETL 流程中的『ECCD』是指哪四個資料處理步驟的縮寫？",
-    "options": [
-      "Extract (萃取), Clean (清理), Conform (一致化), Delivery (交付)",
-      "Evaluation (評估), Classification (分類), Conversion (轉換), Database (資料庫)",
-      "Encryption (加密), Compression (壓縮), Customization (客製), Deployment (部署)",
-      "Entry (輸入), Check (檢查), Calculation (計算), Distribution (分發)"
-    ],
-    "answer": "A",
-    "ans_text": "標準答案：(A) Extract (萃取), Clean (清理), Conform (一致化), Delivery (交付)",
-    "explanation": "ETL 進入資料倉儲前遵循 ECCD 順序：萃取 (Extract) ➔ 清理 (Clean) ➔ 一致化 (Conform) ➔ 交付 (Delivery)。"
-  },
-  {
-    "id": 209,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 146,
-    "question": "【模擬題 46】在 ETL 的資料一致化 (Conform) 步驟中，下列何者是主要處理的項目？",
-    "options": [
-      "刪除資料表中重複出現的客戶 ID 紀錄",
-      "將不同分店系統中代表男性的代碼（如 M, Male, 男, 1）統一標準化為『M』",
-      "防止未授權的使用者讀取資料庫敏感欄位",
-      "提高資料庫伺服器的固態硬碟讀寫速度"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 將不同分店系統中代表男性的代碼（如 M, Male, 男, 1）統一標準化為『M』",
-    "explanation": "一致化 (Conform) 的核心是將不同來源系統的代碼、日期、單位等格式標準化，使其具備一致的商業語意。"
-  },
-  {
-    "id": 210,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 147,
-    "question": "【模擬題 47】線上分析處理 (OLAP) 允許使用者將資料倉儲內的龐大資料進行多維度分析。如果主管想將報表從「看各產品各月份銷售額」轉變為「只鎖定台北地區的各產品銷售額」，此操作稱為：",
-    "options": [
-      "向上鑽取 (Drill-up)",
-      "向下鑽取 (Drill-down)",
-      "切片 (Slice)",
-      "轉置 (Pivot)"
-    ],
-    "answer": "C",
-    "ans_text": "標準答案：(C) 切片 (Slice)",
-    "explanation": "「切片 (Slice)」是指在多維度資料中，選定單一維度（如地區 = 台北）的某個特定值，以觀察其他維度數據的變化。"
-  },
-  {
-    "id": 211,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 148,
-    "question": "【模擬題 48】線上分析處理 (OLAP) 中，『切塊 (Dice)』操作的定義為何？",
-    "options": [
-      "將報表中的行列欄位進行互換，改變觀察視角",
-      "在兩個或多個維度上定義一個子集區間（如：時間為第一季且地區為台北與台中），觀察交叉數據",
-      "從摘要數據層級點選展開以查看最底層的交易明細",
-      "將非結構化的影像資料轉換為結構化表格"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 在兩個或多個維度上定義一個子集區間（如：時間為第一季且地區為台北與台中），觀察交叉數據",
-    "explanation": "「切塊 (Dice)」是在多個維度上定義特定範圍子集（切出一個小魔術方塊），而「切片 (Slice)」則是只在單一維度固定一個值。"
-  },
-  {
-    "id": 212,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 149,
-    "question": "【模擬題 49】平衡計分卡 (BSC) 從四個構面來衡量企業績效。若微風電商為了提升未來創新能力，設定了「員工平均每年接受培訓時數」與「新專利申請數量」指標，這屬於哪一個構面？",
-    "options": [
-      "財務構面",
-      "顧客構面",
-      "內部流程構面",
-      "學習與成長構面"
-    ],
-    "answer": "D",
-    "ans_text": "標準答案：(D) 學習與成長構面",
-    "explanation": "學習與成長構面關注組織的無形資產，包括員工能力、企業文化、教育訓練與創新專利等未來成長驅動力。"
-  },
-  {
-    "id": 213,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 150,
-    "question": "【模擬題 50】「如果我們把這款手機的保固期從 1 年延長為 2 年，預估未來的售後保固維修成本會增加多少？」這屬於下列哪一種決策分析方法？",
-    "options": [
-      "目標搜尋 (Goal Seeking)",
-      "假設分析 (What-if Analysis)",
-      "敏感度分群 (Clustering)",
-      "線上分析處理 (OLAP)"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 假設分析 (What-if Analysis)",
-    "explanation": "這是變更一個輸入變數（保固期），觀測結果變數（保固成本）如何變化的「假設分析 (What-if)」。"
-  },
-  {
-    "id": 214,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 151,
-    "question": "【模擬題 51】「我們希望明年公司的淨利潤能達到 5000 萬元。在其他開銷固定的情況下，我們的客單價至少需要調高到多少元？」這屬於下列哪一種決策分析方法？",
-    "options": [
-      "假設分析 (What-if)",
-      "目標搜尋 (Goal Seeking)",
-      "關聯規則探勘",
-      "文字探勘"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 目標搜尋 (Goal Seeking)",
-    "explanation": "這是給定一個最終目標值（淨利潤 5000 萬元），要求系統反向推算輸入條件（客單價）的「目標搜尋 (Goal Seeking)」。"
-  },
-  {
-    "id": 215,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 152,
-    "question": "【模擬題 52】在建置資料倉儲 (Data Warehouse) 時，設計實體資料庫表格、配置索引 (Indexes) 與設計 ETL 的具體轉換邏輯程式碼，主要發生在下列哪一個階段？",
-    "options": [
-      "需求與現況 (Requirements & Realities)",
-      "架構設計 (Architecture)",
-      "系統建置 (System Implementation)",
-      "測試與發布 (Test & Release)"
-    ],
-    "answer": "C",
-    "ans_text": "標準答案：(C) 系統建置 (System Implementation)",
-    "explanation": "「系統建置 (System Implementation)」階段是動手編寫代碼、建置資料庫實體、撰寫並執行 ETL 程式的實作階段。"
-  },
-  {
-    "id": 216,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 153,
-    "question": "【模擬題 53】在資料倉儲中，「詮釋資料 (Metadata)」扮演著至關重要的角色。下列哪一項最符合詮釋資料的定義？",
-    "options": [
-      "儲存在資料庫中的客戶歷史交易金額",
-      "描述資料的資料，例如記錄資料表的欄位名稱、資料型態、來源系統與轉換規則",
-      "經過加密處理以防外洩的個人識別資料",
-      "已經載入記憶體中以加速運算的資料快取"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 描述資料的資料，例如記錄資料表的欄位名稱、資料型態、來源系統與轉換規則",
-    "explanation": "詮釋資料 (Metadata) 即「描述資料的資料」，定義了資料的結構、型態、來源、目的地與對應關係。"
-  },
-  {
-    "id": 217,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 154,
-    "question": "【模擬題 54】在大數據與營運智慧分析中，為了解決傳統硬碟 I/O 速度過慢、無法即時產生分析報表的問題，通常會採用下列哪一種計算技術？",
-    "options": [
-      "磁帶儲存技術",
-      "記憶體內運算 (In-memory Computing)",
-      "機器人流程自動化 (RPA)",
-      "文字探勘技術 (Text Mining)"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 記憶體內運算 (In-memory Computing)",
-    "explanation": "記憶體內運算 (In-memory Computing) 將數據直接載入系統隨機存取記憶體 (RAM) 中進行高速運算，能大幅降低延遲，實現即時分析。"
-  },
-  {
-    "id": 218,
-    "subject": "考科二：經營管理數位化概論",
-    "chapter": "第五章 數位化企業資訊工具基本知識",
-    "num": 155,
-    "question": "【模擬題 55】飛馬物流採取『推式 (Push) 供應鏈管理模式』。下列關於推式供應鏈模式的敘述，何者正確？",
-    "options": [
-      "只有在顧客到收銀台付款結帳後，系統才會向工廠下單生產",
-      "依據歷史銷售數據與預測來主動規劃生產，並將成品推向市場",
-      "前半段零組件為拉式，後半段組裝為推式",
-      "完全不需要使用資料庫進行需求預測"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 依據歷史銷售數據與預測來主動規劃生產，並將成品推向市場",
-    "explanation": "推式 (Push) 供應鏈是預測導向的，企業根據歷史預測主動計劃生產並推向市場；拉式 (Pull) 則是訂單導向的。"
-  },
-  {
-    "id": 219,
-    "subject": "考科二：經營管理數位化概論",
-    "chapter": "第五章 數位化企業資訊工具基本知識",
-    "num": 156,
-    "question": "【模擬題 56】企業流程再造 (BPR) 旨在根本性重新思考與徹底改造業務流程。在 Davenport and Short 的五步驟模型中，其核心目標不包括下列哪一項？",
-    "options": [
-      "建立企業願景及流程改善目的",
-      "了解現行流程以找出核心瓶頸",
-      "微調現有流程中不影響大局的小細節",
-      "利用資訊科技 (IT) 來發揮賦能作用以重新設計新流程"
-    ],
-    "answer": "C",
-    "ans_text": "標準答案：(C) 微調現有流程中不影響大局的小細節",
-    "explanation": "BPR 追求的是「徹底 (Radical)」與「大幅度 (Dramatic)」的效能飛躍，而非對現有流程進行微調（小步快跑的微調是屬於持續改善，而非 BPR）。"
-  },
-  {
-    "id": 220,
-    "subject": "考科二：經營管理數位化概論",
-    "chapter": "第四章 經營管理基本知識",
-    "num": 157,
-    "question": "【模擬題 57】在專案管理中，甘特圖 (Gantt Chart) 最適合應用於下列哪一種情境？",
-    "options": [
-      "需要精密計算多個複雜子任務相依性與要徑的研發專案",
-      "簡單、成本低，用以監控活動進度與先後順序的時程工具",
-      "需要使用機率分配計算完工機率的創新專案",
-      "需要自動發送補貨 Email 的行政流程"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 簡單、成本低，用以監控活動進度與先後順序的時程工具",
-    "explanation": "甘特圖製作成本低、直觀，適合簡單專案進度監控，但其主要缺點是無法描繪複雜活動與資源間的相依相鎖關係。"
-  },
-  {
-    "id": 221,
-    "subject": "考科二：經營管理數位化概論",
-    "chapter": "第四章 經營管理基本知識",
-    "num": 158,
-    "question": "【模擬題 58】巨木家具為了提升基層行政人員的工作動機與自主性，決定實施工作豐富化 (Job Enrichment)。下列何者最符合工作豐富化的實施方式？",
-    "options": [
-      "增加該員工每天需要登錄的表格數量（橫向擴張）",
-      "安排員工在客服部與出貨部之間輪流工作（職位輪換）",
-      "賦予員工參與流程規劃、工作進度排定與自我績效評估的權限（縱向擴權）",
-      "將該職位拆分為多個極為簡單且高度重複的步驟（工作簡化）"
-    ],
-    "answer": "C",
-    "ans_text": "標準答案：(C) 賦予員工參與流程規劃、工作進度排定與自我績效評估的權限（縱向擴權）",
-    "explanation": "工作豐富化 (Job Enrichment) 是工作責任的「縱向擴張」，旨在增加規劃、控制與評估的職責與決策自主權。"
-  },
-  {
-    "id": 222,
-    "subject": "考科二：經營管理數位化概論",
-    "chapter": "第四章 經營管理基本知識",
-    "num": 159,
-    "question": "【模擬題 59】企業內部稽核人員 (Auditor) 的主要職責是稽查生、銷、會、研、財等流程是否落實內部控制。為了確保其稽核的獨立性與客觀性，其報告路徑應為：",
-    "options": [
-      "直接向財務長 (CFO) 報告",
-      "直接向總經理 (CEO) 報告",
-      "獨立向董事會 (Board of Directors) 報告",
-      "向人力資源部經理報告"
-    ],
-    "answer": "C",
-    "ans_text": "標準答案：(C) 獨立向董事會 (Board of Directors) 報告",
-    "explanation": "稽核人員必須保持高度獨立，不能受被稽核部門（如財務、營運）的行政干預，因此組織上必須設計為直接向董事會或審計委員會報告。"
-  },
-  {
-    "id": 223,
-    "subject": "考科二：經營管理數位化概論",
-    "chapter": "第五章 數位化企業資訊工具基本知識",
-    "num": 160,
-    "question": "【模擬題 60】某家電腦製造商採取「推拉式 (Push-Pull) 供應鏈模式」：先依據預測大量採購主機板與 CPU 等標準零組件（推式），等到收到客戶的客製化訂單後，才依訂單需求進行組裝與出貨（拉式）。這兩種模式的交界點在供應鏈管理中稱為：",
-    "options": [
-      "訂單履行點 (Order Fulfillment Point)",
-      "推拉邊界 (Push-Pull Boundary / Decoupling Point)",
-      "瓶頸要徑點 (Bottleneck Point)",
-      "安全庫存點 (Safety Stock Point)"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 推拉邊界 (Push-Pull Boundary / Decoupling Point)",
-    "explanation": "推拉邊界（或解耦點 Decoupling Point）是推式（預測導向）與拉式（訂單導向）的交界點，在此點之前為標準化生產，此點之後為客製化組裝。"
-  },
-  {
-    "id": 224,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 161,
-    "question": "【模擬題 61】某零售連鎖超商總部為了分析過去五年的營業額趨勢，並評估明年是否要在高雄市開設新分店。他們應該主要使用下列哪一種系統？",
-    "options": [
-      "營運智慧 (OI)",
-      "商業智慧 (BI)",
-      "物料需求規劃 (MRP)",
-      "機器人流程自動化 (RPA)"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 商業智慧 (BI)",
-    "explanation": "商業智慧 (BI) 著重於分析長期歷史資料，支援企業進行長期的策略決策（如展店、換菜單）。"
-  },
-  {
-    "id": 225,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 162,
-    "question": "【模擬題 62】在營運智慧 (OI) 中，系統強調的「即時性 (Real-time)」最主要是為了解決下列哪一個實務問題？",
-    "options": [
-      "提供遵循公認會計原則的年度財務報告",
-      "現場營運動態發生異常時，能夠即時偵測並立刻調整或採取補救行動",
-      "精確計算未來十年產品生命週期的 BOM 表研發配方",
-      "橫向擴大員工的日常工作任務數量以提升滿意度"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 現場營運動態發生異常時，能夠即時偵測並立刻調整或採取補救行動",
-    "explanation": "OI 的即時動態監控是為了在現場發生異常時（如設備過熱、庫存歸零）能立刻做出調整，防止損害擴大。"
-  },
-  {
-    "id": 226,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 163,
-    "question": "【模擬題 63】營運智慧 (OI) 的三層架構中，『分析層 (Analytical Layer)』的最主要功能為何？",
-    "options": [
-      "提供資料庫的底層硬體存取接口",
-      "進行資料本身的多維度分析、指標計算與決策報表製作",
-      "負責從設備感測器進行資料的實時萃取",
-      "統一不同來源系統的日期與編碼格式"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 進行資料本身的多維度分析、指標計算與決策報表製作",
-    "explanation": "分析層主要負責資料本身的分析運算、指標（KPI）計算與決策報表製作，以提供高層主管或大廚視覺化決策大腦。"
-  },
-  {
-    "id": 227,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 164,
-    "question": "【模擬題 64】在營運智慧架構中，如果我們將資料流程比喻為「餐廳做菜流程」，則『大廚根據客人的訂單，利用切好備妥的食材烹調出美味佳餚』應對應到哪一層？",
-    "options": [
-      "資料層 (Data Layer)",
-      "整合層 (Integration Layer)",
-      "分析層 (Analytical Layer)",
-      "呈現場景層 (Presentation Layer)"
-    ],
-    "answer": "C",
-    "ans_text": "標準答案：(C) 分析層 (Analytical Layer)",
-    "explanation": "大廚烹調佳餚代表將清洗整合好的資料（備好的料）編譯分析並製作成決策報表（美食），屬於分析層。"
-  },
-  {
-    "id": 228,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 165,
-    "question": "【模擬題 65】在建立資料倉儲時，ETL 流程中的『ECCD』是指哪四個資料處理步驟的縮寫？",
-    "options": [
-      "Extract (萃取), Clean (清理), Conform (一致化), Delivery (交付)",
-      "Evaluation (評估), Classification (分類), Conversion (轉換), Database (資料庫)",
-      "Encryption (加密), Compression (壓縮), Customization (客製), Deployment (部署)",
-      "Entry (輸入), Check (檢查), Calculation (計算), Distribution (分發)"
-    ],
-    "answer": "A",
-    "ans_text": "標準答案：(A) Extract (萃取), Clean (清理), Conform (一致化), Delivery (交付)",
-    "explanation": "ETL 進入資料倉儲前遵循 ECCD 順序：萃取 (Extract) ➔ 清理 (Clean) ➔ 一致化 (Conform) ➔ 交付 (Delivery)。"
-  },
-  {
-    "id": 229,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 166,
-    "question": "【模擬題 66】在 ETL 的資料一致化 (Conform) 步驟中，下列何者是主要處理的項目？",
-    "options": [
-      "刪除資料表中重複出現的客戶 ID 紀錄",
-      "將不同分店系統中代表男性的代碼（如 M, Male, 男, 1）統一標準化為『M』",
-      "防止未授權的使用者讀取資料庫敏感欄位",
-      "提高資料庫伺服器的固態硬碟讀寫速度"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 將不同分店系統中代表男性的代碼（如 M, Male, 男, 1）統一標準化為『M』",
-    "explanation": "一致化 (Conform) 的核心是將不同來源系統的代碼、日期、單位等格式標準化，使其具備一致的商業語意。"
-  },
-  {
-    "id": 230,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 167,
-    "question": "【模擬題 67】線上分析處理 (OLAP) 允許使用者將資料倉儲內的龐大資料進行多維度分析。如果主管想將報表從「看各產品各月份銷售額」轉變為「只鎖定台北地區的各產品銷售額」，此操作稱為：",
-    "options": [
-      "向上鑽取 (Drill-up)",
-      "向下鑽取 (Drill-down)",
-      "切片 (Slice)",
-      "轉置 (Pivot)"
-    ],
-    "answer": "C",
-    "ans_text": "標準答案：(C) 切片 (Slice)",
-    "explanation": "「切片 (Slice)」是指在多維度資料中，選定單一維度（如地區 = 台北）的某個特定值，以觀察其他維度數據的變化。"
-  },
-  {
-    "id": 231,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 168,
-    "question": "【模擬題 68】線上分析處理 (OLAP) 中，『切塊 (Dice)』操作的定義為何？",
-    "options": [
-      "將報表中的行列欄位進行互換，改變觀察視角",
-      "在兩個或多個維度上定義一個子集區間（如：時間為第一季且地區為台北與台中），觀察交叉數據",
-      "從摘要數據層級點選展開以查看最底層的交易明細",
-      "將非結構化的影像資料轉換為結構化表格"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 在兩個或多個維度上定義一個子集區間（如：時間為第一季且地區為台北與台中），觀察交叉數據",
-    "explanation": "「切塊 (Dice)」是在多個維度上定義特定範圍子集（切出一個小魔術方塊），而「切片 (Slice)」則是只在單一維度固定一個值。"
-  },
-  {
-    "id": 232,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 169,
-    "question": "【模擬題 69】平衡計分卡 (BSC) 從四個構面來衡量企業績效。若微風電商為了提升未來創新能力，設定了「員工平均每年接受培訓時數」與「新專利申請數量」指標，這屬於哪一個構面？",
-    "options": [
-      "財務構面",
-      "顧客構面",
-      "內部流程構面",
-      "學習與成長構面"
-    ],
-    "answer": "D",
-    "ans_text": "標準答案：(D) 學習與成長構面",
-    "explanation": "學習與成長構面關注組織的無形資產，包括員工能力、企業文化、教育訓練與創新專利等未來成長驅動力。"
-  },
-  {
-    "id": 233,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 170,
-    "question": "【模擬題 70】「如果我們把這款手機的保固期從 1 年延長為 2 年，預估未來的售後保固維修成本會增加多少？」這屬於下列哪一種決策分析方法？",
-    "options": [
-      "目標搜尋 (Goal Seeking)",
-      "假設分析 (What-if Analysis)",
-      "敏感度分群 (Clustering)",
-      "線上分析處理 (OLAP)"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 假設分析 (What-if Analysis)",
-    "explanation": "這是變更一個輸入變數（保固期），觀測結果變數（保固成本）如何變化的「假設分析 (What-if)」。"
-  },
-  {
-    "id": 234,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 171,
-    "question": "【模擬題 71】「我們希望明年公司的淨利潤能達到 5000 萬元。在其他開銷固定的情況下，我們的客單價至少需要調高到多少元？」這屬於下列哪一種決策分析方法？",
-    "options": [
-      "假設分析 (What-if)",
-      "目標搜尋 (Goal Seeking)",
-      "關聯規則探勘",
-      "文字探勘"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 目標搜尋 (Goal Seeking)",
-    "explanation": "這是給定一個最終目標值（淨利潤 5000 萬元），要求系統反向推算輸入條件（客單價）的「目標搜尋 (Goal Seeking)」。"
-  },
-  {
-    "id": 235,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 172,
-    "question": "【模擬題 72】在建置資料倉儲 (Data Warehouse) 時，設計實體資料庫表格、配置索引 (Indexes) 與設計 ETL 的具體轉換邏輯程式碼，主要發生在下列哪一個階段？",
-    "options": [
-      "需求與現況 (Requirements & Realities)",
-      "架構設計 (Architecture)",
-      "系統建置 (System Implementation)",
-      "測試與發布 (Test & Release)"
-    ],
-    "answer": "C",
-    "ans_text": "標準答案：(C) 系統建置 (System Implementation)",
-    "explanation": "「系統建置 (System Implementation)」階段是動手編寫代碼、建置資料庫實體、撰寫並執行 ETL 程式的實作階段。"
-  },
-  {
-    "id": 236,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 173,
-    "question": "【模擬題 73】在資料倉儲中，「詮釋資料 (Metadata)」扮演著至關重要的角色。下列哪一項最符合詮釋資料的定義？",
-    "options": [
-      "儲存在資料庫中的客戶歷史交易金額",
-      "描述資料的資料，例如記錄資料表的欄位名稱、資料型態、來源系統與轉換規則",
-      "經過加密處理以防外洩的個人識別資料",
-      "已經載入記憶體中以加速運算的資料快取"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 描述資料的資料，例如記錄資料表的欄位名稱、資料型態、來源系統與轉換規則",
-    "explanation": "詮釋資料 (Metadata) 即「描述資料的資料」，定義了資料的結構、型態、來源、目的地與對應關係。"
-  },
-  {
-    "id": 237,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 174,
-    "question": "【模擬題 74】在大數據與營運智慧分析中，為了解決傳統硬碟 I/O 速度過慢、無法即時產生分析報表的問題，通常會採用下列哪一種計算技術？",
-    "options": [
-      "磁帶儲存技術",
-      "記憶體內運算 (In-memory Computing)",
-      "機器人流程自動化 (RPA)",
-      "文字探勘技術 (Text Mining)"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 記憶體內運算 (In-memory Computing)",
-    "explanation": "記憶體內運算 (In-memory Computing) 將數據直接載入系統隨機存取記憶體 (RAM) 中進行高速運算，能大幅降低延遲，實現即時分析。"
-  },
-  {
-    "id": 238,
-    "subject": "考科二：經營管理數位化概論",
-    "chapter": "第五章 數位化企業資訊工具基本知識",
-    "num": 175,
-    "question": "【模擬題 75】飛馬物流採取『推式 (Push) 供應鏈管理模式』。下列關於推式供應鏈模式的敘述，何者正確？",
-    "options": [
-      "只有在顧客到收銀台付款結帳後，系統才會向工廠下單生產",
-      "依據歷史銷售數據與預測來主動規劃生產，並將成品推向市場",
-      "前半段零組件為拉式，後半段組裝為推式",
-      "完全不需要使用資料庫進行需求預測"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 依據歷史銷售數據與預測來主動規劃生產，並將成品推向市場",
-    "explanation": "推式 (Push) 供應鏈是預測導向的，企業根據歷史預測主動計劃生產並推向市場；拉式 (Pull) 則是訂單導向的。"
-  },
-  {
-    "id": 239,
-    "subject": "考科二：經營管理數位化概論",
-    "chapter": "第五章 數位化企業資訊工具基本知識",
-    "num": 176,
-    "question": "【模擬題 76】企業流程再造 (BPR) 旨在根本性重新思考與徹底改造業務流程。在 Davenport and Short 的五步驟模型中，其核心目標不包括下列哪一項？",
-    "options": [
-      "建立企業願景及流程改善目的",
-      "了解現行流程以找出核心瓶頸",
-      "微調現有流程中不影響大局的小細節",
-      "利用資訊科技 (IT) 來發揮賦能作用以重新設計新流程"
-    ],
-    "answer": "C",
-    "ans_text": "標準答案：(C) 微調現有流程中不影響大局的小細節",
-    "explanation": "BPR 追求的是「徹底 (Radical)」與「大幅度 (Dramatic)」的效能飛躍，而非對現有流程進行微調（小步快跑的微調是屬於持續改善，而非 BPR）。"
-  },
-  {
-    "id": 240,
-    "subject": "考科二：經營管理數位化概論",
-    "chapter": "第四章 經營管理基本知識",
-    "num": 177,
-    "question": "【模擬題 77】在專案管理中，甘特圖 (Gantt Chart) 最適合應用於下列哪一種情境？",
-    "options": [
-      "需要精密計算多個複雜子任務相依性與要徑的研發專案",
-      "簡單、成本低，用以監控活動進度與先後順序的時程工具",
-      "需要使用機率分配計算完工機率的創新專案",
-      "需要自動發送補貨 Email 的行政流程"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 簡單、成本低，用以監控活動進度與先後順序的時程工具",
-    "explanation": "甘特圖製作成本低、直觀，適合簡單專案進度監控，但其主要缺點是無法描繪複雜活動與資源間的相依相鎖關係。"
-  },
-  {
-    "id": 241,
-    "subject": "考科二：經營管理數位化概論",
-    "chapter": "第四章 經營管理基本知識",
-    "num": 178,
-    "question": "【模擬題 78】巨木家具為了提升基層行政人員的工作動機與自主性，決定實施工作豐富化 (Job Enrichment)。下列何者最符合工作豐富化的實施方式？",
-    "options": [
-      "增加該員工每天需要登錄的表格數量（橫向擴張）",
-      "安排員工在客服部與出貨部之間輪流工作（職位輪換）",
-      "賦予員工參與流程規劃、工作進度排定與自我績效評估的權限（縱向擴權）",
-      "將該職位拆分為多個極為簡單且高度重複的步驟（工作簡化）"
-    ],
-    "answer": "C",
-    "ans_text": "標準答案：(C) 賦予員工參與流程規劃、工作進度排定與自我績效評估的權限（縱向擴權）",
-    "explanation": "工作豐富化 (Job Enrichment) 是工作責任的「縱向擴張」，旨在增加規劃、控制與評估的職責與決策自主權。"
-  },
-  {
-    "id": 242,
-    "subject": "考科二：經營管理數位化概論",
-    "chapter": "第四章 經營管理基本知識",
-    "num": 179,
-    "question": "【模擬題 79】企業內部稽核人員 (Auditor) 的主要職責是稽查生、銷、會、研、財等流程是否落實內部控制。為了確保其稽核的獨立性與客觀性，其報告路徑應為：",
-    "options": [
-      "直接向財務長 (CFO) 報告",
-      "直接向總經理 (CEO) 報告",
-      "獨立向董事會 (Board of Directors) 報告",
-      "向人力資源部經理報告"
-    ],
-    "answer": "C",
-    "ans_text": "標準答案：(C) 獨立向董事會 (Board of Directors) 報告",
-    "explanation": "稽核人員必須保持高度獨立，不能受被稽核部門（如財務、營運）的行政干預，因此組織上必須設計為直接向董事會或審計委員會報告。"
-  },
-  {
-    "id": 243,
-    "subject": "考科二：經營管理數位化概論",
-    "chapter": "第五章 數位化企業資訊工具基本知識",
-    "num": 180,
-    "question": "【模擬題 80】某家電腦製造商採取「推拉式 (Push-Pull) 供應鏈模式」：先依據預測大量採購主機板與 CPU 等標準零組件（推式），等到收到客戶的客製化訂單後，才依訂單需求進行組裝與出貨（拉式）。這兩種模式的交界點在供應鏈管理中稱為：",
-    "options": [
-      "訂單履行點 (Order Fulfillment Point)",
-      "推拉邊界 (Push-Pull Boundary / Decoupling Point)",
-      "瓶頸要徑點 (Bottleneck Point)",
-      "安全庫存點 (Safety Stock Point)"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 推拉邊界 (Push-Pull Boundary / Decoupling Point)",
-    "explanation": "推拉邊界（或解耦點 Decoupling Point）是推式（預測導向）與拉式（訂單導向）的交界點，在此點之前為標準化生產，此點之後為客製化組裝。"
-  },
-  {
-    "id": 244,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 181,
-    "question": "【模擬題 81】某零售連鎖超商總部為了分析過去五年的營業額趨勢，並評估明年是否要在高雄市開設新分店。他們應該主要使用下列哪一種系統？",
-    "options": [
-      "營運智慧 (OI)",
-      "商業智慧 (BI)",
-      "物料需求規劃 (MRP)",
-      "機器人流程自動化 (RPA)"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 商業智慧 (BI)",
-    "explanation": "商業智慧 (BI) 著重於分析長期歷史資料，支援企業進行長期的策略決策（如展店、換菜單）。"
-  },
-  {
-    "id": 245,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 182,
-    "question": "【模擬題 82】在營運智慧 (OI) 中，系統強調的「即時性 (Real-time)」最主要是為了解決下列哪一個實務問題？",
-    "options": [
-      "提供遵循公認會計原則的年度財務報告",
-      "現場營運動態發生異常時，能夠即時偵測並立刻調整或採取補救行動",
-      "精確計算未來十年產品生命週期的 BOM 表研發配方",
-      "橫向擴大員工的日常工作任務數量以提升滿意度"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 現場營運動態發生異常時，能夠即時偵測並立刻調整或採取補救行動",
-    "explanation": "OI 的即時動態監控是為了在現場發生異常時（如設備過熱、庫存歸零）能立刻做出調整，防止損害擴大。"
-  },
-  {
-    "id": 246,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 183,
-    "question": "【模擬題 83】營運智慧 (OI) 的三層架構中，『分析層 (Analytical Layer)』的最主要功能為何？",
-    "options": [
-      "提供資料庫的底層硬體存取接口",
-      "進行資料本身的多維度分析、指標計算與決策報表製作",
-      "負責從設備感測器進行資料的實時萃取",
-      "統一不同來源系統的日期與編碼格式"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 進行資料本身的多維度分析、指標計算與決策報表製作",
-    "explanation": "分析層主要負責資料本身的分析運算、指標（KPI）計算與決策報表製作，以提供高層主管或大廚視覺化決策大腦。"
-  },
-  {
-    "id": 247,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 184,
-    "question": "【模擬題 84】在營運智慧架構中，如果我們將資料流程比喻為「餐廳做菜流程」，則『大廚根據客人的訂單，利用切好備妥的食材烹調出美味佳餚』應對應到哪一層？",
-    "options": [
-      "資料層 (Data Layer)",
-      "整合層 (Integration Layer)",
-      "分析層 (Analytical Layer)",
-      "呈現場景層 (Presentation Layer)"
-    ],
-    "answer": "C",
-    "ans_text": "標準答案：(C) 分析層 (Analytical Layer)",
-    "explanation": "大廚烹調佳餚代表將清洗整合好的資料（備好的料）編譯分析並製作成決策報表（美食），屬於分析層。"
-  },
-  {
-    "id": 248,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 185,
-    "question": "【模擬題 85】在建立資料倉儲時，ETL 流程中的『ECCD』是指哪四個資料處理步驟的縮寫？",
-    "options": [
-      "Extract (萃取), Clean (清理), Conform (一致化), Delivery (交付)",
-      "Evaluation (評估), Classification (分類), Conversion (轉換), Database (資料庫)",
-      "Encryption (加密), Compression (壓縮), Customization (客製), Deployment (部署)",
-      "Entry (輸入), Check (檢查), Calculation (計算), Distribution (分發)"
-    ],
-    "answer": "A",
-    "ans_text": "標準答案：(A) Extract (萃取), Clean (清理), Conform (一致化), Delivery (交付)",
-    "explanation": "ETL 進入資料倉儲前遵循 ECCD 順序：萃取 (Extract) ➔ 清理 (Clean) ➔ 一致化 (Conform) ➔ 交付 (Delivery)。"
-  },
-  {
-    "id": 249,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 186,
-    "question": "【模擬題 86】在 ETL 的資料一致化 (Conform) 步驟中，下列何者是主要處理的項目？",
-    "options": [
-      "刪除資料表中重複出現的客戶 ID 紀錄",
-      "將不同分店系統中代表男性的代碼（如 M, Male, 男, 1）統一標準化為『M』",
-      "防止未授權的使用者讀取資料庫敏感欄位",
-      "提高資料庫伺服器的固態硬碟讀寫速度"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 將不同分店系統中代表男性的代碼（如 M, Male, 男, 1）統一標準化為『M』",
-    "explanation": "一致化 (Conform) 的核心是將不同來源系統的代碼、日期、單位等格式標準化，使其具備一致的商業語意。"
-  },
-  {
-    "id": 250,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 187,
-    "question": "【模擬題 87】線上分析處理 (OLAP) 允許使用者將資料倉儲內的龐大資料進行多維度分析。如果主管想將報表從「看各產品各月份銷售額」轉變為「只鎖定台北地區的各產品銷售額」，此操作稱為：",
-    "options": [
-      "向上鑽取 (Drill-up)",
-      "向下鑽取 (Drill-down)",
-      "切片 (Slice)",
-      "轉置 (Pivot)"
-    ],
-    "answer": "C",
-    "ans_text": "標準答案：(C) 切片 (Slice)",
-    "explanation": "「切片 (Slice)」是指在多維度資料中，選定單一維度（如地區 = 台北）的某個特定值，以觀察其他維度數據的變化。"
-  },
-  {
-    "id": 251,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 188,
-    "question": "【模擬題 88】線上分析處理 (OLAP) 中，『切塊 (Dice)』操作的定義為何？",
-    "options": [
-      "將報表中的行列欄位進行互換，改變觀察視角",
-      "在兩個或多個維度上定義一個子集區間（如：時間為第一季且地區為台北與台中），觀察交叉數據",
-      "從摘要數據層級點選展開以查看最底層的交易明細",
-      "將非結構化的影像資料轉換為結構化表格"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 在兩個或多個維度上定義一個子集區間（如：時間為第一季且地區為台北與台中），觀察交叉數據",
-    "explanation": "「切塊 (Dice)」是在多個維度上定義特定範圍子集（切出一個小魔術方塊），而「切片 (Slice)」則是只在單一維度固定一個值。"
-  },
-  {
-    "id": 252,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 189,
-    "question": "【模擬題 89】平衡計分卡 (BSC) 從四個構面來衡量企業績效。若微風電商為了提升未來創新能力，設定了「員工平均每年接受培訓時數」與「新專利申請數量」指標，這屬於哪一個構面？",
-    "options": [
-      "財務構面",
-      "顧客構面",
-      "內部流程構面",
-      "學習與成長構面"
-    ],
-    "answer": "D",
-    "ans_text": "標準答案：(D) 學習與成長構面",
-    "explanation": "學習與成長構面關注組織的無形資產，包括員工能力、企業文化、教育訓練與創新專利等未來成長驅動力。"
-  },
-  {
-    "id": 253,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 190,
-    "question": "【模擬題 90】「如果我們把這款手機的保固期從 1 年延長為 2 年，預估未來的售後保固維修成本會增加多少？」這屬於下列哪一種決策分析方法？",
-    "options": [
-      "目標搜尋 (Goal Seeking)",
-      "假設分析 (What-if Analysis)",
-      "敏感度分群 (Clustering)",
-      "線上分析處理 (OLAP)"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 假設分析 (What-if Analysis)",
-    "explanation": "這是變更一個輸入變數（保固期），觀測結果變數（保固成本）如何變化的「假設分析 (What-if)」。"
-  },
-  {
-    "id": 254,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 191,
-    "question": "【模擬題 91】「我們希望明年公司的淨利潤能達到 5000 萬元。在其他開銷固定的情況下，我們的客單價至少需要調高到多少元？」這屬於下列哪一種決策分析方法？",
-    "options": [
-      "假設分析 (What-if)",
-      "目標搜尋 (Goal Seeking)",
-      "關聯規則探勘",
-      "文字探勘"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 目標搜尋 (Goal Seeking)",
-    "explanation": "這是給定一個最終目標值（淨利潤 5000 萬元），要求系統反向推算輸入條件（客單價）的「目標搜尋 (Goal Seeking)」。"
-  },
-  {
-    "id": 255,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 192,
-    "question": "【模擬題 92】在建置資料倉儲 (Data Warehouse) 時，設計實體資料庫表格、配置索引 (Indexes) 與設計 ETL 的具體轉換邏輯程式碼，主要發生在下列哪一個階段？",
-    "options": [
-      "需求與現況 (Requirements & Realities)",
-      "架構設計 (Architecture)",
-      "系統建置 (System Implementation)",
-      "測試與發布 (Test & Release)"
-    ],
-    "answer": "C",
-    "ans_text": "標準答案：(C) 系統建置 (System Implementation)",
-    "explanation": "「系統建置 (System Implementation)」階段是動手編寫代碼、建置資料庫實體、撰寫並執行 ETL 程式的實作階段。"
-  },
-  {
-    "id": 256,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 193,
-    "question": "【模擬題 93】在資料倉儲中，「詮釋資料 (Metadata)」扮演著至關重要的角色。下列哪一項最符合詮釋資料的定義？",
-    "options": [
-      "儲存在資料庫中的客戶歷史交易金額",
-      "描述資料的資料，例如記錄資料表的欄位名稱、資料型態、來源系統與轉換規則",
-      "經過加密處理以防外洩的個人識別資料",
-      "已經載入記憶體中以加速運算的資料快取"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 描述資料的資料，例如記錄資料表的欄位名稱、資料型態、來源系統與轉換規則",
-    "explanation": "詮釋資料 (Metadata) 即「描述資料的資料」，定義了資料的結構、型態、來源、目的地與對應關係。"
-  },
-  {
-    "id": 257,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 194,
-    "question": "【模擬題 94】在大數據與營運智慧分析中，為了解決傳統硬碟 I/O 速度過慢、無法即時產生分析報表的問題，通常會採用下列哪一種計算技術？",
-    "options": [
-      "磁帶儲存技術",
-      "記憶體內運算 (In-memory Computing)",
-      "機器人流程自動化 (RPA)",
-      "文字探勘技術 (Text Mining)"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 記憶體內運算 (In-memory Computing)",
-    "explanation": "記憶體內運算 (In-memory Computing) 將數據直接載入系統隨機存取記憶體 (RAM) 中進行高速運算，能大幅降低延遲，實現即時分析。"
-  },
-  {
-    "id": 258,
-    "subject": "考科二：經營管理數位化概論",
-    "chapter": "第五章 數位化企業資訊工具基本知識",
-    "num": 195,
-    "question": "【模擬題 95】飛馬物流採取『推式 (Push) 供應鏈管理模式』。下列關於推式供應鏈模式的敘述，何者正確？",
-    "options": [
-      "只有在顧客到收銀台付款結帳後，系統才會向工廠下單生產",
-      "依據歷史銷售數據與預測來主動規劃生產，並將成品推向市場",
-      "前半段零組件為拉式，後半段組裝為推式",
-      "完全不需要使用資料庫進行需求預測"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 依據歷史銷售數據與預測來主動規劃生產，並將成品推向市場",
-    "explanation": "推式 (Push) 供應鏈是預測導向的，企業根據歷史預測主動計劃生產並推向市場；拉式 (Pull) 則是訂單導向的。"
-  },
-  {
-    "id": 259,
-    "subject": "考科二：經營管理數位化概論",
-    "chapter": "第五章 數位化企業資訊工具基本知識",
-    "num": 196,
-    "question": "【模擬題 96】企業流程再造 (BPR) 旨在根本性重新思考與徹底改造業務流程。在 Davenport and Short 的五步驟模型中，其核心目標不包括下列哪一項？",
-    "options": [
-      "建立企業願景及流程改善目的",
-      "了解現行流程以找出核心瓶頸",
-      "微調現有流程中不影響大局的小細節",
-      "利用資訊科技 (IT) 來發揮賦能作用以重新設計新流程"
-    ],
-    "answer": "C",
-    "ans_text": "標準答案：(C) 微調現有流程中不影響大局的小細節",
-    "explanation": "BPR 追求的是「徹底 (Radical)」與「大幅度 (Dramatic)」的效能飛躍，而非對現有流程進行微調（小步快跑的微調是屬於持續改善，而非 BPR）。"
-  },
-  {
-    "id": 260,
-    "subject": "考科二：經營管理數位化概論",
-    "chapter": "第四章 經營管理基本知識",
-    "num": 197,
-    "question": "【模擬題 97】在專案管理中，甘特圖 (Gantt Chart) 最適合應用於下列哪一種情境？",
-    "options": [
-      "需要精密計算多個複雜子任務相依性與要徑的研發專案",
-      "簡單、成本低，用以監控活動進度與先後順序的時程工具",
-      "需要使用機率分配計算完工機率的創新專案",
-      "需要自動發送補貨 Email 的行政流程"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 簡單、成本低，用以監控活動進度與先後順序的時程工具",
-    "explanation": "甘特圖製作成本低、直觀，適合簡單專案進度監控，但其主要缺點是無法描繪複雜活動與資源間的相依相鎖關係。"
-  },
-  {
-    "id": 261,
-    "subject": "考科二：經營管理數位化概論",
-    "chapter": "第四章 經營管理基本知識",
-    "num": 198,
-    "question": "【模擬題 98】巨木家具為了提升基層行政人員的工作動機與自主性，決定實施工作豐富化 (Job Enrichment)。下列何者最符合工作豐富化的實施方式？",
-    "options": [
-      "增加該員工每天需要登錄的表格數量（橫向擴張）",
-      "安排員工在客服部與出貨部之間輪流工作（職位輪換）",
-      "賦予員工參與流程規劃、工作進度排定與自我績效評估的權限（縱向擴權）",
-      "將該職位拆分為多個極為簡單且高度重複的步驟（工作簡化）"
-    ],
-    "answer": "C",
-    "ans_text": "標準答案：(C) 賦予員工參與流程規劃、工作進度排定與自我績效評估的權限（縱向擴權）",
-    "explanation": "工作豐富化 (Job Enrichment) 是工作責任的「縱向擴張」，旨在增加規劃、控制與評估的職責與決策自主權。"
-  },
-  {
-    "id": 262,
-    "subject": "考科二：經營管理數位化概論",
-    "chapter": "第四章 經營管理基本知識",
-    "num": 199,
-    "question": "【模擬題 99】企業內部稽核人員 (Auditor) 的主要職責是稽查生、銷、會、研、財等流程是否落實內部控制。為了確保其稽核的獨立性與客觀性，其報告路徑應為：",
-    "options": [
-      "直接向財務長 (CFO) 報告",
-      "直接向總經理 (CEO) 報告",
-      "獨立向董事會 (Board of Directors) 報告",
-      "向人力資源部經理報告"
-    ],
-    "answer": "C",
-    "ans_text": "標準答案：(C) 獨立向董事會 (Board of Directors) 報告",
-    "explanation": "稽核人員必須保持高度獨立，不能受被稽核部門（如財務、營運）的行政干預，因此組織上必須設計為直接向董事會或審計委員會報告。"
-  },
-  {
-    "id": 263,
-    "subject": "考科二：經營管理數位化概論",
-    "chapter": "第五章 數位化企業資訊工具基本知識",
-    "num": 200,
-    "question": "【模擬題 100】某家電腦製造商採取「推拉式 (Push-Pull) 供應鏈模式」：先依據預測大量採購主機板與 CPU 等標準零組件（推式），等到收到客戶的客製化訂單後，才依訂單需求進行組裝與出貨（拉式）。這兩種模式的交界點在供應鏈管理中稱為：",
-    "options": [
-      "訂單履行點 (Order Fulfillment Point)",
-      "推拉邊界 (Push-Pull Boundary / Decoupling Point)",
-      "瓶頸要徑點 (Bottleneck Point)",
-      "安全庫存點 (Safety Stock Point)"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 推拉邊界 (Push-Pull Boundary / Decoupling Point)",
-    "explanation": "推拉邊界（或解耦點 Decoupling Point）是推式（預測導向）與拉式（訂單導向）的交界點，在此點之前為標準化生產，此點之後為客製化組裝。"
-  },
-  {
-    "id": 264,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 201,
-    "question": "【模擬題 101】某零售連鎖超商總部為了分析過去五年的營業額趨勢，並評估明年是否要在高雄市開設新分店。他們應該主要使用下列哪一種系統？",
-    "options": [
-      "營運智慧 (OI)",
-      "商業智慧 (BI)",
-      "物料需求規劃 (MRP)",
-      "機器人流程自動化 (RPA)"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 商業智慧 (BI)",
-    "explanation": "商業智慧 (BI) 著重於分析長期歷史資料，支援企業進行長期的策略決策（如展店、換菜單）。"
-  },
-  {
-    "id": 265,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 202,
-    "question": "【模擬題 102】在營運智慧 (OI) 中，系統強調的「即時性 (Real-time)」最主要是為了解決下列哪一個實務問題？",
-    "options": [
-      "提供遵循公認會計原則的年度財務報告",
-      "現場營運動態發生異常時，能夠即時偵測並立刻調整或採取補救行動",
-      "精確計算未來十年產品生命週期的 BOM 表研發配方",
-      "橫向擴大員工的日常工作任務數量以提升滿意度"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 現場營運動態發生異常時，能夠即時偵測並立刻調整或採取補救行動",
-    "explanation": "OI 的即時動態監控是為了在現場發生異常時（如設備過熱、庫存歸零）能立刻做出調整，防止損害擴大。"
-  },
-  {
-    "id": 266,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 203,
-    "question": "【模擬題 103】營運智慧 (OI) 的三層架構中，『分析層 (Analytical Layer)』的最主要功能為何？",
-    "options": [
-      "提供資料庫的底層硬體存取接口",
-      "進行資料本身的多維度分析、指標計算與決策報表製作",
-      "負責從設備感測器進行資料的實時萃取",
-      "統一不同來源系統的日期與編碼格式"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 進行資料本身的多維度分析、指標計算與決策報表製作",
-    "explanation": "分析層主要負責資料本身的分析運算、指標（KPI）計算與決策報表製作，以提供高層主管或大廚視覺化決策大腦。"
-  },
-  {
-    "id": 267,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 204,
-    "question": "【模擬題 104】在營運智慧架構中，如果我們將資料流程比喻為「餐廳做菜流程」，則『大廚根據客人的訂單，利用切好備妥的食材烹調出美味佳餚』應對應到哪一層？",
-    "options": [
-      "資料層 (Data Layer)",
-      "整合層 (Integration Layer)",
-      "分析層 (Analytical Layer)",
-      "呈現場景層 (Presentation Layer)"
-    ],
-    "answer": "C",
-    "ans_text": "標準答案：(C) 分析層 (Analytical Layer)",
-    "explanation": "大廚烹調佳餚代表將清洗整合好的資料（備好的料）編譯分析並製作成決策報表（美食），屬於分析層。"
-  },
-  {
-    "id": 268,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 205,
-    "question": "【模擬題 105】在建立資料倉儲時，ETL 流程中的『ECCD』是指哪四個資料處理步驟的縮寫？",
-    "options": [
-      "Extract (萃取), Clean (清理), Conform (一致化), Delivery (交付)",
-      "Evaluation (評估), Classification (分類), Conversion (轉換), Database (資料庫)",
-      "Encryption (加密), Compression (壓縮), Customization (客製), Deployment (部署)",
-      "Entry (輸入), Check (檢查), Calculation (計算), Distribution (分發)"
-    ],
-    "answer": "A",
-    "ans_text": "標準答案：(A) Extract (萃取), Clean (清理), Conform (一致化), Delivery (交付)",
-    "explanation": "ETL 進入資料倉儲前遵循 ECCD 順序：萃取 (Extract) ➔ 清理 (Clean) ➔ 一致化 (Conform) ➔ 交付 (Delivery)。"
-  },
-  {
-    "id": 269,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 206,
-    "question": "【模擬題 106】在 ETL 的資料一致化 (Conform) 步驟中，下列何者是主要處理的項目？",
-    "options": [
-      "刪除資料表中重複出現的客戶 ID 紀錄",
-      "將不同分店系統中代表男性的代碼（如 M, Male, 男, 1）統一標準化為『M』",
-      "防止未授權的使用者讀取資料庫敏感欄位",
-      "提高資料庫伺服器的固態硬碟讀寫速度"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 將不同分店系統中代表男性的代碼（如 M, Male, 男, 1）統一標準化為『M』",
-    "explanation": "一致化 (Conform) 的核心是將不同來源系統的代碼、日期、單位等格式標準化，使其具備一致的商業語意。"
-  },
-  {
-    "id": 270,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 207,
-    "question": "【模擬題 107】線上分析處理 (OLAP) 允許使用者將資料倉儲內的龐大資料進行多維度分析。如果主管想將報表從「看各產品各月份銷售額」轉變為「只鎖定台北地區的各產品銷售額」，此操作稱為：",
-    "options": [
-      "向上鑽取 (Drill-up)",
-      "向下鑽取 (Drill-down)",
-      "切片 (Slice)",
-      "轉置 (Pivot)"
-    ],
-    "answer": "C",
-    "ans_text": "標準答案：(C) 切片 (Slice)",
-    "explanation": "「切片 (Slice)」是指在多維度資料中，選定單一維度（如地區 = 台北）的某個特定值，以觀察其他維度數據的變化。"
-  },
-  {
-    "id": 271,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 208,
-    "question": "【模擬題 108】線上分析處理 (OLAP) 中，『切塊 (Dice)』操作的定義為何？",
-    "options": [
-      "將報表中的行列欄位進行互換，改變觀察視角",
-      "在兩個或多個維度上定義一個子集區間（如：時間為第一季且地區為台北與台中），觀察交叉數據",
-      "從摘要數據層級點選展開以查看最底層的交易明細",
-      "將非結構化的影像資料轉換為結構化表格"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 在兩個或多個維度上定義一個子集區間（如：時間為第一季且地區為台北與台中），觀察交叉數據",
-    "explanation": "「切塊 (Dice)」是在多個維度上定義特定範圍子集（切出一個小魔術方塊），而「切片 (Slice)」則是只在單一維度固定一個值。"
-  },
-  {
-    "id": 272,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 209,
-    "question": "【模擬題 109】平衡計分卡 (BSC) 從四個構面來衡量企業績效。若微風電商為了提升未來創新能力，設定了「員工平均每年接受培訓時數」與「新專利申請數量」指標，這屬於哪一個構面？",
-    "options": [
-      "財務構面",
-      "顧客構面",
-      "內部流程構面",
-      "學習與成長構面"
-    ],
-    "answer": "D",
-    "ans_text": "標準答案：(D) 學習與成長構面",
-    "explanation": "學習與成長構面關注組織的無形資產，包括員工能力、企業文化、教育訓練與創新專利等未來成長驅動力。"
-  },
-  {
-    "id": 273,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 210,
-    "question": "【模擬題 110】「如果我們把這款手機的保固期從 1 年延長為 2 年，預估未來的售後保固維修成本會增加多少？」這屬於下列哪一種決策分析方法？",
-    "options": [
-      "目標搜尋 (Goal Seeking)",
-      "假設分析 (What-if Analysis)",
-      "敏感度分群 (Clustering)",
-      "線上分析處理 (OLAP)"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 假設分析 (What-if Analysis)",
-    "explanation": "這是變更一個輸入變數（保固期），觀測結果變數（保固成本）如何變化的「假設分析 (What-if)」。"
-  },
-  {
-    "id": 274,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 211,
-    "question": "【模擬題 111】「我們希望明年公司的淨利潤能達到 5000 萬元。在其他開銷固定的情況下，我們的客單價至少需要調高到多少元？」這屬於下列哪一種決策分析方法？",
-    "options": [
-      "假設分析 (What-if)",
-      "目標搜尋 (Goal Seeking)",
-      "關聯規則探勘",
-      "文字探勘"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 目標搜尋 (Goal Seeking)",
-    "explanation": "這是給定一個最終目標值（淨利潤 5000 萬元），要求系統反向推算輸入條件（客單價）的「目標搜尋 (Goal Seeking)」。"
-  },
-  {
-    "id": 275,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 212,
-    "question": "【模擬題 112】在建置資料倉儲 (Data Warehouse) 時，設計實體資料庫表格、配置索引 (Indexes) 與設計 ETL 的具體轉換邏輯程式碼，主要發生在下列哪一個階段？",
-    "options": [
-      "需求與現況 (Requirements & Realities)",
-      "架構設計 (Architecture)",
-      "系統建置 (System Implementation)",
-      "測試與發布 (Test & Release)"
-    ],
-    "answer": "C",
-    "ans_text": "標準答案：(C) 系統建置 (System Implementation)",
-    "explanation": "「系統建置 (System Implementation)」階段是動手編寫代碼、建置資料庫實體、撰寫並執行 ETL 程式的實作階段。"
-  },
-  {
-    "id": 276,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 213,
-    "question": "【模擬題 113】在資料倉儲中，「詮釋資料 (Metadata)」扮演著至關重要的角色。下列哪一項最符合詮釋資料的定義？",
-    "options": [
-      "儲存在資料庫中的客戶歷史交易金額",
-      "描述資料的資料，例如記錄資料表的欄位名稱、資料型態、來源系統與轉換規則",
-      "經過加密處理以防外洩的個人識別資料",
-      "已經載入記憶體中以加速運算的資料快取"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 描述資料的資料，例如記錄資料表的欄位名稱、資料型態、來源系統與轉換規則",
-    "explanation": "詮釋資料 (Metadata) 即「描述資料的資料」，定義了資料的結構、型態、來源、目的地與對應關係。"
-  },
-  {
-    "id": 277,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 214,
-    "question": "【模擬題 114】在大數據與營運智慧分析中，為了解決傳統硬碟 I/O 速度過慢、無法即時產生分析報表的問題，通常會採用下列哪一種計算技術？",
-    "options": [
-      "磁帶儲存技術",
-      "記憶體內運算 (In-memory Computing)",
-      "機器人流程自動化 (RPA)",
-      "文字探勘技術 (Text Mining)"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 記憶體內運算 (In-memory Computing)",
-    "explanation": "記憶體內運算 (In-memory Computing) 將數據直接載入系統隨機存取記憶體 (RAM) 中進行高速運算，能大幅降低延遲，實現即時分析。"
-  },
-  {
-    "id": 278,
-    "subject": "考科二：經營管理數位化概論",
-    "chapter": "第五章 數位化企業資訊工具基本知識",
-    "num": 215,
-    "question": "【模擬題 115】飛馬物流採取『推式 (Push) 供應鏈管理模式』。下列關於推式供應鏈模式的敘述，何者正確？",
-    "options": [
-      "只有在顧客到收銀台付款結帳後，系統才會向工廠下單生產",
-      "依據歷史銷售數據與預測來主動規劃生產，並將成品推向市場",
-      "前半段零組件為拉式，後半段組裝為推式",
-      "完全不需要使用資料庫進行需求預測"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 依據歷史銷售數據與預測來主動規劃生產，並將成品推向市場",
-    "explanation": "推式 (Push) 供應鏈是預測導向的，企業根據歷史預測主動計劃生產並推向市場；拉式 (Pull) 則是訂單導向的。"
-  },
-  {
-    "id": 279,
-    "subject": "考科二：經營管理數位化概論",
-    "chapter": "第五章 數位化企業資訊工具基本知識",
-    "num": 216,
-    "question": "【模擬題 116】企業流程再造 (BPR) 旨在根本性重新思考與徹底改造業務流程。在 Davenport and Short 的五步驟模型中，其核心目標不包括下列哪一項？",
-    "options": [
-      "建立企業願景及流程改善目的",
-      "了解現行流程以找出核心瓶頸",
-      "微調現有流程中不影響大局的小細節",
-      "利用資訊科技 (IT) 來發揮賦能作用以重新設計新流程"
-    ],
-    "answer": "C",
-    "ans_text": "標準答案：(C) 微調現有流程中不影響大局的小細節",
-    "explanation": "BPR 追求的是「徹底 (Radical)」與「大幅度 (Dramatic)」的效能飛躍，而非對現有流程進行微調（小步快跑的微調是屬於持續改善，而非 BPR）。"
-  },
-  {
-    "id": 280,
-    "subject": "考科二：經營管理數位化概論",
-    "chapter": "第四章 經營管理基本知識",
-    "num": 217,
-    "question": "【模擬題 117】在專案管理中，甘特圖 (Gantt Chart) 最適合應用於下列哪一種情境？",
-    "options": [
-      "需要精密計算多個複雜子任務相依性與要徑的研發專案",
-      "簡單、成本低，用以監控活動進度與先後順序的時程工具",
-      "需要使用機率分配計算完工機率的創新專案",
-      "需要自動發送補貨 Email 的行政流程"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 簡單、成本低，用以監控活動進度與先後順序的時程工具",
-    "explanation": "甘特圖製作成本低、直觀，適合簡單專案進度監控，但其主要缺點是無法描繪複雜活動與資源間的相依相鎖關係。"
-  },
-  {
-    "id": 281,
-    "subject": "考科二：經營管理數位化概論",
-    "chapter": "第四章 經營管理基本知識",
-    "num": 218,
-    "question": "【模擬題 118】巨木家具為了提升基層行政人員的工作動機與自主性，決定實施工作豐富化 (Job Enrichment)。下列何者最符合工作豐富化的實施方式？",
-    "options": [
-      "增加該員工每天需要登錄的表格數量（橫向擴張）",
-      "安排員工在客服部與出貨部之間輪流工作（職位輪換）",
-      "賦予員工參與流程規劃、工作進度排定與自我績效評估的權限（縱向擴權）",
-      "將該職位拆分為多個極為簡單且高度重複的步驟（工作簡化）"
-    ],
-    "answer": "C",
-    "ans_text": "標準答案：(C) 賦予員工參與流程規劃、工作進度排定與自我績效評估的權限（縱向擴權）",
-    "explanation": "工作豐富化 (Job Enrichment) 是工作責任的「縱向擴張」，旨在增加規劃、控制與評估的職責與決策自主權。"
-  },
-  {
-    "id": 282,
-    "subject": "考科二：經營管理數位化概論",
-    "chapter": "第四章 經營管理基本知識",
-    "num": 219,
-    "question": "【模擬題 119】企業內部稽核人員 (Auditor) 的主要職責是稽查生、銷、會、研、財等流程是否落實內部控制。為了確保其稽核的獨立性與客觀性，其報告路徑應為：",
-    "options": [
-      "直接向財務長 (CFO) 報告",
-      "直接向總經理 (CEO) 報告",
-      "獨立向董事會 (Board of Directors) 報告",
-      "向人力資源部經理報告"
-    ],
-    "answer": "C",
-    "ans_text": "標準答案：(C) 獨立向董事會 (Board of Directors) 報告",
-    "explanation": "稽核人員必須保持高度獨立，不能受被稽核部門（如財務、營運）的行政干預，因此組織上必須設計為直接向董事會或審計委員會報告。"
-  },
-  {
-    "id": 283,
-    "subject": "考科二：經營管理數位化概論",
-    "chapter": "第五章 數位化企業資訊工具基本知識",
-    "num": 220,
-    "question": "【模擬題 120】某家電腦製造商採取「推拉式 (Push-Pull) 供應鏈模式」：先依據預測大量採購主機板與 CPU 等標準零組件（推式），等到收到客戶的客製化訂單後，才依訂單需求進行組裝與出貨（拉式）。這兩種模式的交界點在供應鏈管理中稱為：",
-    "options": [
-      "訂單履行點 (Order Fulfillment Point)",
-      "推拉邊界 (Push-Pull Boundary / Decoupling Point)",
-      "瓶頸要徑點 (Bottleneck Point)",
-      "安全庫存點 (Safety Stock Point)"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 推拉邊界 (Push-Pull Boundary / Decoupling Point)",
-    "explanation": "推拉邊界（或解耦點 Decoupling Point）是推式（預測導向）與拉式（訂單導向）的交界點，在此點之前為標準化生產，此點之後為客製化組裝。"
-  },
-  {
-    "id": 284,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 221,
-    "question": "【模擬題 121】某零售連鎖超商總部為了分析過去五年的營業額趨勢，並評估明年是否要在高雄市開設新分店。他們應該主要使用下列哪一種系統？",
-    "options": [
-      "營運智慧 (OI)",
-      "商業智慧 (BI)",
-      "物料需求規劃 (MRP)",
-      "機器人流程自動化 (RPA)"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 商業智慧 (BI)",
-    "explanation": "商業智慧 (BI) 著重於分析長期歷史資料，支援企業進行長期的策略決策（如展店、換菜單）。"
-  },
-  {
-    "id": 285,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 222,
-    "question": "【模擬題 122】在營運智慧 (OI) 中，系統強調的「即時性 (Real-time)」最主要是為了解決下列哪一個實務問題？",
-    "options": [
-      "提供遵循公認會計原則的年度財務報告",
-      "現場營運動態發生異常時，能夠即時偵測並立刻調整或採取補救行動",
-      "精確計算未來十年產品生命週期的 BOM 表研發配方",
-      "橫向擴大員工的日常工作任務數量以提升滿意度"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 現場營運動態發生異常時，能夠即時偵測並立刻調整或採取補救行動",
-    "explanation": "OI 的即時動態監控是為了在現場發生異常時（如設備過熱、庫存歸零）能立刻做出調整，防止損害擴大。"
-  },
-  {
-    "id": 286,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 223,
-    "question": "【模擬題 123】營運智慧 (OI) 的三層架構中，『分析層 (Analytical Layer)』的最主要功能為何？",
-    "options": [
-      "提供資料庫的底層硬體存取接口",
-      "進行資料本身的多維度分析、指標計算與決策報表製作",
-      "負責從設備感測器進行資料的實時萃取",
-      "統一不同來源系統的日期與編碼格式"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 進行資料本身的多維度分析、指標計算與決策報表製作",
-    "explanation": "分析層主要負責資料本身的分析運算、指標（KPI）計算與決策報表製作，以提供高層主管或大廚視覺化決策大腦。"
-  },
-  {
-    "id": 287,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 224,
-    "question": "【模擬題 124】在營運智慧架構中，如果我們將資料流程比喻為「餐廳做菜流程」，則『大廚根據客人的訂單，利用切好備妥的食材烹調出美味佳餚』應對應到哪一層？",
-    "options": [
-      "資料層 (Data Layer)",
-      "整合層 (Integration Layer)",
-      "分析層 (Analytical Layer)",
-      "呈現場景層 (Presentation Layer)"
-    ],
-    "answer": "C",
-    "ans_text": "標準答案：(C) 分析層 (Analytical Layer)",
-    "explanation": "大廚烹調佳餚代表將清洗整合好的資料（備好的料）編譯分析並製作成決策報表（美食），屬於分析層。"
-  },
-  {
-    "id": 288,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 225,
-    "question": "【模擬題 125】在建立資料倉儲時，ETL 流程中的『ECCD』是指哪四個資料處理步驟的縮寫？",
-    "options": [
-      "Extract (萃取), Clean (清理), Conform (一致化), Delivery (交付)",
-      "Evaluation (評估), Classification (分類), Conversion (轉換), Database (資料庫)",
-      "Encryption (加密), Compression (壓縮), Customization (客製), Deployment (部署)",
-      "Entry (輸入), Check (檢查), Calculation (計算), Distribution (分發)"
-    ],
-    "answer": "A",
-    "ans_text": "標準答案：(A) Extract (萃取), Clean (清理), Conform (一致化), Delivery (交付)",
-    "explanation": "ETL 進入資料倉儲前遵循 ECCD 順序：萃取 (Extract) ➔ 清理 (Clean) ➔ 一致化 (Conform) ➔ 交付 (Delivery)。"
-  },
-  {
-    "id": 289,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 226,
-    "question": "【模擬題 126】在 ETL 的資料一致化 (Conform) 步驟中，下列何者是主要處理的項目？",
-    "options": [
-      "刪除資料表中重複出現的客戶 ID 紀錄",
-      "將不同分店系統中代表男性的代碼（如 M, Male, 男, 1）統一標準化為『M』",
-      "防止未授權的使用者讀取資料庫敏感欄位",
-      "提高資料庫伺服器的固態硬碟讀寫速度"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 將不同分店系統中代表男性的代碼（如 M, Male, 男, 1）統一標準化為『M』",
-    "explanation": "一致化 (Conform) 的核心是將不同來源系統的代碼、日期、單位等格式標準化，使其具備一致的商業語意。"
-  },
-  {
-    "id": 290,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 227,
-    "question": "【模擬題 127】線上分析處理 (OLAP) 允許使用者將資料倉儲內的龐大資料進行多維度分析。如果主管想將報表從「看各產品各月份銷售額」轉變為「只鎖定台北地區的各產品銷售額」，此操作稱為：",
-    "options": [
-      "向上鑽取 (Drill-up)",
-      "向下鑽取 (Drill-down)",
-      "切片 (Slice)",
-      "轉置 (Pivot)"
-    ],
-    "answer": "C",
-    "ans_text": "標準答案：(C) 切片 (Slice)",
-    "explanation": "「切片 (Slice)」是指在多維度資料中，選定單一維度（如地區 = 台北）的某個特定值，以觀察其他維度數據的變化。"
-  },
-  {
-    "id": 291,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 228,
-    "question": "【模擬題 128】線上分析處理 (OLAP) 中，『切塊 (Dice)』操作的定義為何？",
-    "options": [
-      "將報表中的行列欄位進行互換，改變觀察視角",
-      "在兩個或多個維度上定義一個子集區間（如：時間為第一季且地區為台北與台中），觀察交叉數據",
-      "從摘要數據層級點選展開以查看最底層的交易明細",
-      "將非結構化的影像資料轉換為結構化表格"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 在兩個或多個維度上定義一個子集區間（如：時間為第一季且地區為台北與台中），觀察交叉數據",
-    "explanation": "「切塊 (Dice)」是在多個維度上定義特定範圍子集（切出一個小魔術方塊），而「切片 (Slice)」則是只在單一維度固定一個值。"
-  },
-  {
-    "id": 292,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 229,
-    "question": "【模擬題 129】平衡計分卡 (BSC) 從四個構面來衡量企業績效。若微風電商為了提升未來創新能力，設定了「員工平均每年接受培訓時數」與「新專利申請數量」指標，這屬於哪一個構面？",
-    "options": [
-      "財務構面",
-      "顧客構面",
-      "內部流程構面",
-      "學習與成長構面"
-    ],
-    "answer": "D",
-    "ans_text": "標準答案：(D) 學習與成長構面",
-    "explanation": "學習與成長構面關注組織的無形資產，包括員工能力、企業文化、教育訓練與創新專利等未來成長驅動力。"
-  },
-  {
-    "id": 293,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 230,
-    "question": "【模擬題 130】「如果我們把這款手機的保固期從 1 年延長為 2 年，預估未來的售後保固維修成本會增加多少？」這屬於下列哪一種決策分析方法？",
-    "options": [
-      "目標搜尋 (Goal Seeking)",
-      "假設分析 (What-if Analysis)",
-      "敏感度分群 (Clustering)",
-      "線上分析處理 (OLAP)"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 假設分析 (What-if Analysis)",
-    "explanation": "這是變更一個輸入變數（保固期），觀測結果變數（保固成本）如何變化的「假設分析 (What-if)」。"
-  },
-  {
-    "id": 294,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 231,
-    "question": "【模擬題 131】「我們希望明年公司的淨利潤能達到 5000 萬元。在其他開銷固定的情況下，我們的客單價至少需要調高到多少元？」這屬於下列哪一種決策分析方法？",
-    "options": [
-      "假設分析 (What-if)",
-      "目標搜尋 (Goal Seeking)",
-      "關聯規則探勘",
-      "文字探勘"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 目標搜尋 (Goal Seeking)",
-    "explanation": "這是給定一個最終目標值（淨利潤 5000 萬元），要求系統反向推算輸入條件（客單價）的「目標搜尋 (Goal Seeking)」。"
-  },
-  {
-    "id": 295,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 232,
-    "question": "【模擬題 132】在建置資料倉儲 (Data Warehouse) 時，設計實體資料庫表格、配置索引 (Indexes) 與設計 ETL 的具體轉換邏輯程式碼，主要發生在下列哪一個階段？",
-    "options": [
-      "需求與現況 (Requirements & Realities)",
-      "架構設計 (Architecture)",
-      "系統建置 (System Implementation)",
-      "測試與發布 (Test & Release)"
-    ],
-    "answer": "C",
-    "ans_text": "標準答案：(C) 系統建置 (System Implementation)",
-    "explanation": "「系統建置 (System Implementation)」階段是動手編寫代碼、建置資料庫實體、撰寫並執行 ETL 程式的實作階段。"
-  },
-  {
-    "id": 296,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 233,
-    "question": "【模擬題 133】在資料倉儲中，「詮釋資料 (Metadata)」扮演著至關重要的角色。下列哪一項最符合詮釋資料的定義？",
-    "options": [
-      "儲存在資料庫中的客戶歷史交易金額",
-      "描述資料的資料，例如記錄資料表的欄位名稱、資料型態、來源系統與轉換規則",
-      "經過加密處理以防外洩的個人識別資料",
-      "已經載入記憶體中以加速運算的資料快取"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 描述資料的資料，例如記錄資料表的欄位名稱、資料型態、來源系統與轉換規則",
-    "explanation": "詮釋資料 (Metadata) 即「描述資料的資料」，定義了資料的結構、型態、來源、目的地與對應關係。"
-  },
-  {
-    "id": 297,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 234,
-    "question": "【模擬題 134】在大數據與營運智慧分析中，為了解決傳統硬碟 I/O 速度過慢、無法即時產生分析報表的問題，通常會採用下列哪一種計算技術？",
-    "options": [
-      "磁帶儲存技術",
-      "記憶體內運算 (In-memory Computing)",
-      "機器人流程自動化 (RPA)",
-      "文字探勘技術 (Text Mining)"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 記憶體內運算 (In-memory Computing)",
-    "explanation": "記憶體內運算 (In-memory Computing) 將數據直接載入系統隨機存取記憶體 (RAM) 中進行高速運算，能大幅降低延遲，實現即時分析。"
-  },
-  {
-    "id": 298,
-    "subject": "考科二：經營管理數位化概論",
-    "chapter": "第五章 數位化企業資訊工具基本知識",
-    "num": 235,
-    "question": "【模擬題 135】飛馬物流採取『推式 (Push) 供應鏈管理模式』。下列關於推式供應鏈模式的敘述，何者正確？",
-    "options": [
-      "只有在顧客到收銀台付款結帳後，系統才會向工廠下單生產",
-      "依據歷史銷售數據與預測來主動規劃生產，並將成品推向市場",
-      "前半段零組件為拉式，後半段組裝為推式",
-      "完全不需要使用資料庫進行需求預測"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 依據歷史銷售數據與預測來主動規劃生產，並將成品推向市場",
-    "explanation": "推式 (Push) 供應鏈是預測導向的，企業根據歷史預測主動計劃生產並推向市場；拉式 (Pull) 則是訂單導向的。"
-  },
-  {
-    "id": 299,
-    "subject": "考科二：經營管理數位化概論",
-    "chapter": "第五章 數位化企業資訊工具基本知識",
-    "num": 236,
-    "question": "【模擬題 136】企業流程再造 (BPR) 旨在根本性重新思考與徹底改造業務流程。在 Davenport and Short 的五步驟模型中，其核心目標不包括下列哪一項？",
-    "options": [
-      "建立企業願景及流程改善目的",
-      "了解現行流程以找出核心瓶頸",
-      "微調現有流程中不影響大局的小細節",
-      "利用資訊科技 (IT) 來發揮賦能作用以重新設計新流程"
-    ],
-    "answer": "C",
-    "ans_text": "標準答案：(C) 微調現有流程中不影響大局的小細節",
-    "explanation": "BPR 追求的是「徹底 (Radical)」與「大幅度 (Dramatic)」的效能飛躍，而非對現有流程進行微調（小步快跑的微調是屬於持續改善，而非 BPR）。"
-  },
-  {
-    "id": 300,
-    "subject": "考科二：經營管理數位化概論",
-    "chapter": "第四章 經營管理基本知識",
-    "num": 237,
-    "question": "【模擬題 137】在專案管理中，甘特圖 (Gantt Chart) 最適合應用於下列哪一種情境？",
-    "options": [
-      "需要精密計算多個複雜子任務相依性與要徑的研發專案",
-      "簡單、成本低，用以監控活動進度與先後順序的時程工具",
-      "需要使用機率分配計算完工機率的創新專案",
-      "需要自動發送補貨 Email 的行政流程"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 簡單、成本低，用以監控活動進度與先後順序的時程工具",
-    "explanation": "甘特圖製作成本低、直觀，適合簡單專案進度監控，但其主要缺點是無法描繪複雜活動與資源間的相依相鎖關係。"
-  },
-  {
-    "id": 301,
-    "subject": "考科二：經營管理數位化概論",
-    "chapter": "第四章 經營管理基本知識",
-    "num": 238,
-    "question": "【模擬題 138】巨木家具為了提升基層行政人員的工作動機與自主性，決定實施工作豐富化 (Job Enrichment)。下列何者最符合工作豐富化的實施方式？",
-    "options": [
-      "增加該員工每天需要登錄的表格數量（橫向擴張）",
-      "安排員工在客服部與出貨部之間輪流工作（職位輪換）",
-      "賦予員工參與流程規劃、工作進度排定與自我績效評估的權限（縱向擴權）",
-      "將該職位拆分為多個極為簡單且高度重複的步驟（工作簡化）"
-    ],
-    "answer": "C",
-    "ans_text": "標準答案：(C) 賦予員工參與流程規劃、工作進度排定與自我績效評估的權限（縱向擴權）",
-    "explanation": "工作豐富化 (Job Enrichment) 是工作責任的「縱向擴張」，旨在增加規劃、控制與評估的職責與決策自主權。"
-  },
-  {
-    "id": 302,
-    "subject": "考科二：經營管理數位化概論",
-    "chapter": "第四章 經營管理基本知識",
-    "num": 239,
-    "question": "【模擬題 139】企業內部稽核人員 (Auditor) 的主要職責是稽查生、銷、會、研、財等流程是否落實內部控制。為了確保其稽核的獨立性與客觀性，其報告路徑應為：",
-    "options": [
-      "直接向財務長 (CFO) 報告",
-      "直接向總經理 (CEO) 報告",
-      "獨立向董事會 (Board of Directors) 報告",
-      "向人力資源部經理報告"
-    ],
-    "answer": "C",
-    "ans_text": "標準答案：(C) 獨立向董事會 (Board of Directors) 報告",
-    "explanation": "稽核人員必須保持高度獨立，不能受被稽核部門（如財務、營運）的行政干預，因此組織上必須設計為直接向董事會或審計委員會報告。"
-  },
-  {
-    "id": 303,
-    "subject": "考科二：經營管理數位化概論",
-    "chapter": "第五章 數位化企業資訊工具基本知識",
-    "num": 240,
-    "question": "【模擬題 140】某家電腦製造商採取「推拉式 (Push-Pull) 供應鏈模式」：先依據預測大量採購主機板與 CPU 等標準零組件（推式），等到收到客戶的客製化訂單後，才依訂單需求進行組裝與出貨（拉式）。這兩種模式的交界點在供應鏈管理中稱為：",
-    "options": [
-      "訂單履行點 (Order Fulfillment Point)",
-      "推拉邊界 (Push-Pull Boundary / Decoupling Point)",
-      "瓶頸要徑點 (Bottleneck Point)",
-      "安全庫存點 (Safety Stock Point)"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 推拉邊界 (Push-Pull Boundary / Decoupling Point)",
-    "explanation": "推拉邊界（或解耦點 Decoupling Point）是推式（預測導向）與拉式（訂單導向）的交界點，在此點之前為標準化生產，此點之後為客製化組裝。"
-  },
-  {
-    "id": 304,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 241,
-    "question": "【模擬題 141】某零售連鎖超商總部為了分析過去五年的營業額趨勢，並評估明年是否要在高雄市開設新分店。他們應該主要使用下列哪一種系統？",
-    "options": [
-      "營運智慧 (OI)",
-      "商業智慧 (BI)",
-      "物料需求規劃 (MRP)",
-      "機器人流程自動化 (RPA)"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 商業智慧 (BI)",
-    "explanation": "商業智慧 (BI) 著重於分析長期歷史資料，支援企業進行長期的策略決策（如展店、換菜單）。"
-  },
-  {
-    "id": 305,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 242,
-    "question": "【模擬題 142】在營運智慧 (OI) 中，系統強調的「即時性 (Real-time)」最主要是為了解決下列哪一個實務問題？",
-    "options": [
-      "提供遵循公認會計原則的年度財務報告",
-      "現場營運動態發生異常時，能夠即時偵測並立刻調整或採取補救行動",
-      "精確計算未來十年產品生命週期的 BOM 表研發配方",
-      "橫向擴大員工的日常工作任務數量以提升滿意度"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 現場營運動態發生異常時，能夠即時偵測並立刻調整或採取補救行動",
-    "explanation": "OI 的即時動態監控是為了在現場發生異常時（如設備過熱、庫存歸零）能立刻做出調整，防止損害擴大。"
-  },
-  {
-    "id": 306,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 243,
-    "question": "【模擬題 143】營運智慧 (OI) 的三層架構中，『分析層 (Analytical Layer)』的最主要功能為何？",
-    "options": [
-      "提供資料庫的底層硬體存取接口",
-      "進行資料本身的多維度分析、指標計算與決策報表製作",
-      "負責從設備感測器進行資料的實時萃取",
-      "統一不同來源系統的日期與編碼格式"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 進行資料本身的多維度分析、指標計算與決策報表製作",
-    "explanation": "分析層主要負責資料本身的分析運算、指標（KPI）計算與決策報表製作，以提供高層主管或大廚視覺化決策大腦。"
-  },
-  {
-    "id": 307,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 244,
-    "question": "【模擬題 144】在營運智慧架構中，如果我們將資料流程比喻為「餐廳做菜流程」，則『大廚根據客人的訂單，利用切好備妥的食材烹調出美味佳餚』應對應到哪一層？",
-    "options": [
-      "資料層 (Data Layer)",
-      "整合層 (Integration Layer)",
-      "分析層 (Analytical Layer)",
-      "呈現場景層 (Presentation Layer)"
-    ],
-    "answer": "C",
-    "ans_text": "標準答案：(C) 分析層 (Analytical Layer)",
-    "explanation": "大廚烹調佳餚代表將清洗整合好的資料（備好的料）編譯分析並製作成決策報表（美食），屬於分析層。"
-  },
-  {
-    "id": 308,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 245,
-    "question": "【模擬題 145】在建立資料倉儲時，ETL 流程中的『ECCD』是指哪四個資料處理步驟的縮寫？",
-    "options": [
-      "Extract (萃取), Clean (清理), Conform (一致化), Delivery (交付)",
-      "Evaluation (評估), Classification (分類), Conversion (轉換), Database (資料庫)",
-      "Encryption (加密), Compression (壓縮), Customization (客製), Deployment (部署)",
-      "Entry (輸入), Check (檢查), Calculation (計算), Distribution (分發)"
-    ],
-    "answer": "A",
-    "ans_text": "標準答案：(A) Extract (萃取), Clean (清理), Conform (一致化), Delivery (交付)",
-    "explanation": "ETL 進入資料倉儲前遵循 ECCD 順序：萃取 (Extract) ➔ 清理 (Clean) ➔ 一致化 (Conform) ➔ 交付 (Delivery)。"
-  },
-  {
-    "id": 309,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 246,
-    "question": "【模擬題 146】在 ETL 的資料一致化 (Conform) 步驟中，下列何者是主要處理的項目？",
-    "options": [
-      "刪除資料表中重複出現的客戶 ID 紀錄",
-      "將不同分店系統中代表男性的代碼（如 M, Male, 男, 1）統一標準化為『M』",
-      "防止未授權的使用者讀取資料庫敏感欄位",
-      "提高資料庫伺服器的固態硬碟讀寫速度"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 將不同分店系統中代表男性的代碼（如 M, Male, 男, 1）統一標準化為『M』",
-    "explanation": "一致化 (Conform) 的核心是將不同來源系統的代碼、日期、單位等格式標準化，使其具備一致的商業語意。"
-  },
-  {
-    "id": 310,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 247,
-    "question": "【模擬題 147】線上分析處理 (OLAP) 允許使用者將資料倉儲內的龐大資料進行多維度分析。如果主管想將報表從「看各產品各月份銷售額」轉變為「只鎖定台北地區的各產品銷售額」，此操作稱為：",
-    "options": [
-      "向上鑽取 (Drill-up)",
-      "向下鑽取 (Drill-down)",
-      "切片 (Slice)",
-      "轉置 (Pivot)"
-    ],
-    "answer": "C",
-    "ans_text": "標準答案：(C) 切片 (Slice)",
-    "explanation": "「切片 (Slice)」是指在多維度資料中，選定單一維度（如地區 = 台北）的某個特定值，以觀察其他維度數據的變化。"
-  },
-  {
-    "id": 311,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 248,
-    "question": "【模擬題 148】線上分析處理 (OLAP) 中，『切塊 (Dice)』操作的定義為何？",
-    "options": [
-      "將報表中的行列欄位進行互換，改變觀察視角",
-      "在兩個或多個維度上定義一個子集區間（如：時間為第一季且地區為台北與台中），觀察交叉數據",
-      "從摘要數據層級點選展開以查看最底層的交易明細",
-      "將非結構化的影像資料轉換為結構化表格"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 在兩個或多個維度上定義一個子集區間（如：時間為第一季且地區為台北與台中），觀察交叉數據",
-    "explanation": "「切塊 (Dice)」是在多個維度上定義特定範圍子集（切出一個小魔術方塊），而「切片 (Slice)」則是只在單一維度固定一個值。"
-  },
-  {
-    "id": 312,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 249,
-    "question": "【模擬題 149】平衡計分卡 (BSC) 從四個構面來衡量企業績效。若微風電商為了提升未來創新能力，設定了「員工平均每年接受培訓時數」與「新專利申請數量」指標，這屬於哪一個構面？",
-    "options": [
-      "財務構面",
-      "顧客構面",
-      "內部流程構面",
-      "學習與成長構面"
-    ],
-    "answer": "D",
-    "ans_text": "標準答案：(D) 學習與成長構面",
-    "explanation": "學習與成長構面關注組織的無形資產，包括員工能力、企業文化、教育訓練與創新專利等未來成長驅動力。"
-  },
-  {
-    "id": 313,
-    "subject": "考科一：營運智慧概論",
-    "chapter": "第四章 營運智慧基本知識",
-    "num": 250,
-    "question": "【模擬題 150】「如果我們把這款手機的保固期從 1 年延長為 2 年，預估未來的售後保固維修成本會增加多少？」這屬於下列哪一種決策分析方法？",
-    "options": [
-      "目標搜尋 (Goal Seeking)",
-      "假設分析 (What-if Analysis)",
-      "敏感度分群 (Clustering)",
-      "線上分析處理 (OLAP)"
-    ],
-    "answer": "B",
-    "ans_text": "標準答案：(B) 假設分析 (What-if Analysis)",
-    "explanation": "這是變更一個輸入變數（保固期），觀測結果變數（保固成本）如何變化的「假設分析 (What-if)」。"
+    "explanation": "",
+    "assessmentTopic": "L122"
   }
 ]
