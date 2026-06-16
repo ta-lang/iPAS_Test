@@ -1,8 +1,9 @@
-console.log("ai_mid_questions.js executed!");
-var ipasAiMidQuestions = [
+const ipasAiMidQuestions = [
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 1,
     "question": "某電商企業希望利用自然語言處理（NLP）技術，分析顧客在社群平 台與商品評論中的文字內容，以即時掌握顧客對產品的滿意度變化。 若採用情感分析（Sentiment Analysis）模型，其主要目的為何？",
     "options": [
@@ -17,8 +18,10 @@ var ipasAiMidQuestions = [
     "id": 1
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 2,
     "question": "某跨國金融科技公司導入 Transformer 架構開發多語客服系統，以提 升長篇金融文件的自動翻譯品質。下列何者為該模型能顯著改善翻譯 準確度的主要原因？",
     "options": [
@@ -33,8 +36,10 @@ var ipasAiMidQuestions = [
     "id": 2
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 3,
     "question": "某企業計畫應用 BERT（Bidirectional Encoder Representations  from Transformers）模型分析大量顧客意見，以強化客服自動回覆 系統。在 BERT 的預訓練過程中， 「遮罩語言模型（Masked Language  Model, MLM） 」的主要訓練策略為何？",
     "options": [
@@ -49,8 +54,10 @@ var ipasAiMidQuestions = [
     "id": 3
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 4,
     "question": "在詞向量（Word Embedding）訓練方法中，GloVe（Global Vectors  for Word Representation）與 Word2Vec 的主要差異為何？",
     "options": [
@@ -65,8 +72,10 @@ var ipasAiMidQuestions = [
     "id": 4
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 5,
     "question": "某企業以詞頻–逆文件頻率（Term Frequency–Inverse Document  Frequency, TF-IDF）方法分析顧客意見內容，但發現模型在處理篇 幅較長的回饋文本時，無法準確反映關鍵詞的重要性。下列何者為造 成此現象的主要原因？",
     "options": [
@@ -81,8 +90,10 @@ var ipasAiMidQuestions = [
     "id": 5
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 6,
     "question": "某企業嘗試以 N-gram 語言模型（N-gram Language Model）建立客服 自動回覆系統，但發現模型生成的句子雖在片段上合理，卻缺乏整體 語意連貫性。此問題最可能源自 N-gram 模型的哪一項限制？",
     "options": [
@@ -97,8 +108,10 @@ var ipasAiMidQuestions = [
     "id": 6
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 7,
     "question": "在企業導入的智慧監控系統中，模型以物件偵測（Object  Detection）方式自動辨識影像中的人物與車輛。若評估指標採用平 均精確率（Mean Average Precision, mAP） ，其中 IoU （Intersection over Union）閾值設定較高時，代表下列哪一項意 義？",
     "options": [
@@ -113,8 +126,10 @@ var ipasAiMidQuestions = [
     "id": 7
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 8,
     "question": "關於 Softmax 與 Max-Pooling，下列敘述何者正確？",
     "options": [
@@ -129,8 +144,10 @@ var ipasAiMidQuestions = [
     "id": 8
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 9,
     "question": "某企業在訓練生成式 AI 模型時，導入資料增強（Data  Augmentation）技術以擴充訓練資料，但觀察到模型效能反而下降。  下列哪一項最可能的原因與對應改善策略最為正確？",
     "options": [
@@ -145,8 +162,10 @@ var ipasAiMidQuestions = [
     "id": 9
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 10,
     "question": "如果希望同時兼顧「精確率（Precision） 」和「召回率（Recall）」， 下列哪一個指標可以作為綜合評估的標準？",
     "options": [
@@ -161,8 +180,10 @@ var ipasAiMidQuestions = [
     "id": 10
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 11,
     "question": "企業資料分析團隊使用 DBSCAN（Density-Based Spatial Clustering  of Applications with Noise）演算法進行顧客行為分群，並希望模 型能自動區分主要群集與雜訊資料。  在此演算法中，決定聚類結果的兩個主要超參數為下列何者？",
     "options": [
@@ -177,8 +198,10 @@ var ipasAiMidQuestions = [
     "id": 11
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 12,
     "question": "某金融科技公司建立房價預測模型，使用多項特徵（如建坪、房齡、 樓層、總價等）進行線性迴歸分析（Linear Regression  Analysis） 。資料分析師發現多個特徵之間存在高度相關性，導致模 型係數不穩定、預測誤差上升。為解決此問題，下列哪一種方法最適 合？",
     "options": [
@@ -193,8 +216,10 @@ var ipasAiMidQuestions = [
     "id": 12
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 13,
     "question": "下列何者為 Kubernetes 在 AI 模型部署與運行中的核心功能？",
     "options": [
@@ -209,8 +234,10 @@ var ipasAiMidQuestions = [
     "id": 13
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 14,
     "question": "在調整模型超參數（Hyperparameters）時，若希望避免因過度調整 參數而導致過擬合，下列哪一種做法最有效提升模型的泛化能力？",
     "options": [
@@ -225,8 +252,10 @@ var ipasAiMidQuestions = [
     "id": 14
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 15,
     "question": "在企業導入的 MLOps（Machine Learning Operations）流程中， Model Registry 最常用於哪一個階段？",
     "options": [
@@ -241,8 +270,10 @@ var ipasAiMidQuestions = [
     "id": 15
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 16,
     "question": "下列哪一種情境中最適合使用「序列到序列（Seq2Seq） 」模型？",
     "options": [
@@ -257,8 +288,10 @@ var ipasAiMidQuestions = [
     "id": 16
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 17,
     "question": "在自然語言處理中，檢索增強生成（Retrieval-Augmented  Generation, RAG）是一種結合語言模型與向量搜尋的技術，可有效 減少模型知識過時與產生幻覺的問題。若要建立一套高效能的 RAG 系 統，下列何者為在「檢索階段」最關鍵的挑戰？",
     "options": [
@@ -273,8 +306,10 @@ var ipasAiMidQuestions = [
     "id": 17
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 18,
     "question": "當 Transformer 模型發生「注意力分布過於平均（Attention  Collapse） 」的情形時，導致模型無法有效聚焦於關鍵資訊，下列哪 一項策略可有效改善此問題？",
     "options": [
@@ -289,8 +324,10 @@ var ipasAiMidQuestions = [
     "id": 18
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 19,
     "question": "某研究團隊正在訓練一個針對低資源語言（如少數民族語言）的語言 模型，但該語言僅有約 1 萬筆語料可用。在訓練過程中出現明顯的過 擬合現象，若希望在不新增真實語料的前提下提升模型的泛化能力， 採用下列哪一種方法最為適合？",
     "options": [
@@ -305,8 +342,10 @@ var ipasAiMidQuestions = [
     "id": 19
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 20,
     "question": "在使用生成對抗網路（GAN）進行人臉影像生成時，若出現「模式崩 潰」 （Mode Collapse）現象，下列哪一種方法最常被用來有效解決此 問題？",
     "options": [
@@ -321,8 +360,10 @@ var ipasAiMidQuestions = [
     "id": 20
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 21,
     "question": "在多模態 AI 模型訓練或推論過程中，遇到某一模態資料缺失（例如 僅有影像資料但缺少文本說明） ，下列哪一種策略最有效維持模型效 能？",
     "options": [
@@ -337,8 +378,10 @@ var ipasAiMidQuestions = [
     "id": 21
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 22,
     "question": "某電商平台開發的顧客流失預測模型在上線數月後，預測準確率明顯 下降。專案團隊懷疑顧客行為模式改變，導致模型輸入特徵的分佈與 原始訓練資料不同，出現典型的資料漂移（Data Drift）問題。為了 偵測並確認資料分佈是否發生變化，下列哪一種作法最合適？",
     "options": [
@@ -353,8 +396,10 @@ var ipasAiMidQuestions = [
     "id": 22
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 23,
     "question": "某大型醫院即將部署一套輔助診斷的 AI 系統，為降低對臨床流程的 衝擊，同時確保風險可控與回饋可收斂，應採取何種『漸進式部署』 （Phased Rollout）策略最為合適？",
     "options": [
@@ -369,8 +414,10 @@ var ipasAiMidQuestions = [
     "id": 23
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 24,
     "question": "某金融機構的 AI 風控系統遭受對抗性攻擊，駭客透過對輸入特徵進 行微小但惡意的擾動，成功欺騙了模型。為了從根本上解決模型自身 對這類攻擊的脆弱性，下列何者並非針對此種攻擊型態的技術手段？",
     "options": [
@@ -385,8 +432,10 @@ var ipasAiMidQuestions = [
     "id": 24
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 25,
     "question": "某企業部署生成式 AI 系統協助行銷與內容產出，但近期遭質疑部分 生成內容可能涉及著作權侵權。為降低企業在法律層面的潛在責任與 風險，下列哪一項策略最能有效預防侵權問題產生？",
     "options": [
@@ -401,8 +450,10 @@ var ipasAiMidQuestions = [
     "id": 25
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 26,
     "question": "在房價預測任務中，若發現特徵如「房間數」與「坪數」存在高度多 重共線性（Multicollinearity） ，為降低共線性對模型參數估計的負 面影響，應優先選擇下列哪種模型？",
     "options": [
@@ -417,8 +468,10 @@ var ipasAiMidQuestions = [
     "id": 26
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 27,
     "question": "某企業需分析半結構化的系統日誌（JSON 格式） ，以提取關鍵的時序 特徵供故障預測模型使用。考量日誌結構複雜且包含巢狀欄位 （Nested Fields） ，下列哪一種策略最有效且實務可行？",
     "options": [
@@ -433,8 +486,10 @@ var ipasAiMidQuestions = [
     "id": 27
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 28,
     "question": "在一個同時包含連續型特徵與類別型特徵的資料集中，若希望透過適 當的特徵工程流程來提升模型整體表現，下列哪一種作法最為合適？",
     "options": [
@@ -449,8 +504,10 @@ var ipasAiMidQuestions = [
     "id": 28
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 29,
     "question": "某 AI 開發團隊為提升模型開發效率及品質控制，計畫實施持續整合 （Continuous Integration, CI）流程。下列哪一項做法最符合 CI 的核心實踐，且能有效減少整合風險？",
     "options": [
@@ -465,8 +522,10 @@ var ipasAiMidQuestions = [
     "id": 29
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 30,
     "question": "某銀行計劃將 AI 詐欺偵測模組整合至核心交易系統，主管機關要求 全流程必須符合金融監管對「不可否認性（Non-repudiation） 」的資 訊安全規範，以確保日後能進行法務追蹤與稽核。下列哪一項措施最 能確保此要求的落實？",
     "options": [
@@ -481,8 +540,10 @@ var ipasAiMidQuestions = [
     "id": 30
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 31,
     "question": "某 AI 服務系統每次推論請求需約 1 秒完成，且必須支撐高達 10,000 次請求每秒（RPS）的流量。為確保系統具備高可用性且能穩定應付 流量峰值，下列哪一種架構方案最為合適？",
     "options": [
@@ -497,8 +558,10 @@ var ipasAiMidQuestions = [
     "id": 31
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 32,
     "question": "某企業已將 AI 模型部署於生產環境，為確保系統持續穩定運作，並 能提前偵測模型效能可能衰退，技術團隊希望透過監控指標進行預 警。  下列哪一項監控指標最具預測效力，能提早發現模型效能下滑風險？",
     "options": [
@@ -513,8 +576,10 @@ var ipasAiMidQuestions = [
     "id": 32
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 33,
     "question": "企業團隊在使用 Word2Vec 模型訓練客服文本語料時，若訓練資料量 龐大且希望模型能更有效捕捉罕見詞的語意關聯，下列哪一種訓練策 略最為適合？",
     "options": [
@@ -529,8 +594,10 @@ var ipasAiMidQuestions = [
     "id": 33
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 34,
     "question": "在自駕車影像辨識系統中，開發團隊希望模型能同時辨識每個像素所 屬的物件類別（例如道路、建築、行人） ，又能區分出同類物件的不 同個體（例如多位行人） 。此時最適合採用下列哪一項電腦視覺技 術？",
     "options": [
@@ -545,8 +612,10 @@ var ipasAiMidQuestions = [
     "id": 34
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 35,
     "question": "某媒體公司計畫導入 CLIP（Contrastive Language–Image Pre- training）模型，以協助大量影像自動標註與搜尋，並希望在無需新 增標訓資料的情況下，僅透過文字提示（Text Prompt）即可識別影 像內容。請問此應用情境中，CLIP 能夠達成的關鍵技術特性為何？",
     "options": [
@@ -561,8 +630,10 @@ var ipasAiMidQuestions = [
     "id": 35
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 36,
     "question": "某資料科學團隊在開發預測模型時，針對多種模型設定（如學習率、 樹深度、正則化係數等）進行系統化測試，希望找出在驗證資料上表 現最穩定的組合。此過程最可能採用下列哪一種方法？",
     "options": [
@@ -577,8 +648,10 @@ var ipasAiMidQuestions = [
     "id": 36
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 37,
     "question": "某公司正在訓練一個大型語音合成模型，開發團隊使用多台 GPU 進行 訓練，但經常出現 GPU 記憶體不足問題。由於模型架構已固定且無 法更換硬體，團隊希望在維持模型效能與收斂品質的前提下，下列哪 一種方法最有效降低單張 GPU 的記憶體壓力？",
     "options": [
@@ -593,8 +666,10 @@ var ipasAiMidQuestions = [
     "id": 37
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 38,
     "question": "某影像設計團隊在使用 Stable Diffusion 生成 4K 級產品圖時，發現 影像邊緣與細節存在顆粒化與模糊現象。  若僅能在生成階段進行調整，希望提升畫面清晰度與紋理層次，同時 避免過度平滑，下列哪一項作法最適合？",
     "options": [
@@ -609,8 +684,10 @@ var ipasAiMidQuestions = [
     "id": 38
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 39,
     "question": "某企業的資料科學團隊利用 ARIMA 模型（AutoRegressive  Integrated Moving Average Model）預測每週產品銷售量。模型建 立完成後，分析人員發現預測誤差隨時間呈現週期性波動，且自相關 函數（ACF）顯示殘差在多個時滯（Lag）上仍顯著不為零。根據上述 現象，最合理的模型診斷結論為何？",
     "options": [
@@ -625,8 +702,10 @@ var ipasAiMidQuestions = [
     "id": 39
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 40,
     "question": "下列哪一項最正確地描述了 VAE（Variational Autoencoder）、GAN （Generative Adversarial Network）與擴散模型（Diffusion  Model）在多模態潛在空間對齊（Latent Alignment）與生成策略上 的根本差異？",
     "options": [
@@ -641,8 +720,10 @@ var ipasAiMidQuestions = [
     "id": 40
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 41,
     "question": "在進行超參數調校（Hyperparameter Tuning）時，若直接在 K-Fold  交叉驗證（Cross-Validation）的資料上同時調整模型參數並評估效 能，最可能導致下列哪一種問題？",
     "options": [
@@ -657,8 +738,10 @@ var ipasAiMidQuestions = [
     "id": 41
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 42,
     "question": "若部署一個深度學習模型至金融風控系統，該模型採用鑑別式架構 （如 Transformer Classifier） 。然而上線後，模型對新樣本的分類 錯誤率顯著上升，經檢查發現，輸入資料分佈已與原訓練集明顯不 同。針對此情形，下列哪一種應對策略最為適合？",
     "options": [
@@ -673,8 +756,10 @@ var ipasAiMidQuestions = [
     "id": 42
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 43,
     "question": "某金融科技公司欲導入 AI 模型協助客服郵件自動分類（投訴、詢 問、表揚） 。團隊同時考慮兩種模型設計：  方案 A（生成式路徑） ：採用VAE 建構潛在語意空間，再結合下游分 類器進行標籤預測；  方案 B（鑑別式路徑） ：採用BERT Classifier 直接根據輸入文本進 行監督式分類。  現有標註資料約 2,000 筆，資料分佈均勻但擴充成本高。若團隊希 望公平比較兩種模型的資料利用效率與泛化能力，下列哪一種實驗設 計最能突顯兩者的本質差異？",
     "options": [
@@ -689,8 +774,10 @@ var ipasAiMidQuestions = [
     "id": 43
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 44,
     "question": "某電信公司希望建立一個模型來預測顧客是否即將流失，並進一步模 擬不同促銷或服務策略下顧客的行為變化，以生成多樣化的虛擬樣本 資料進行 A/B 測試與行銷策略評估。若要同時兼顧預測與資料生成的 需求，最適合採用下列哪一種方法？",
     "options": [
@@ -705,8 +792,10 @@ var ipasAiMidQuestions = [
     "id": 44
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 45,
     "question": "進行影像分類任務時，研究團隊嘗試利用主成分分析（Principal  Component Analysis, PCA）將輸入特徵從 1024 維降至 100 維，並將 降維後的資料輸入支持向量機（Support Vector Machine, SVM）模 型進行訓練。關於此作法，下列哪一項描述最為合理？",
     "options": [
@@ -721,8 +810,10 @@ var ipasAiMidQuestions = [
     "id": 45
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 46,
     "question": "某企業的 AI 模型已部署於線上服務環境中，用於即時預測顧客流失 機率。近期團隊注意到模型預測準確率逐漸下降，但系統運作正常且 未出現錯誤訊息。經分析發現，近期輸入資料的分布與模型訓練資料 相比出現顯著偏移。若要在 MLOps 流程中主動偵測並預警此類問題， 最應採用下列哪項措施？",
     "options": [
@@ -737,8 +828,10 @@ var ipasAiMidQuestions = [
     "id": 46
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 47,
     "question": "某金融科技公司導入多任務學習架構，讓單一 Transformer 模型同 時執行 OCR（Optical Character Recognition）後的文檔分類以及命 名實體辨識（Named Entity Recognition, NER）任務，  以協助自動歸檔與抽取關鍵金融資訊。在部署初期，團隊發現當模型 的 NER 準確率（Accuracy）提升時，文檔分類準確率反而下降。若模 型架構正確且資料品質良好，下列哪一項最可能是造成此現象的原 因？",
     "options": [
@@ -753,8 +846,10 @@ var ipasAiMidQuestions = [
     "id": 47
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 48,
     "question": "某數據工程師使用 DBSCAN 演算法對一份數百萬筆的高維顧客資料進 行聚類分析，但發現程式執行速度極慢，甚至出現記憶體不足的情 況。若要在不改變演算法核心邏輯的前提下，最有效提升其運算效率 的作法為何？",
     "options": [
@@ -769,8 +864,10 @@ var ipasAiMidQuestions = [
     "id": 48
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 49,
     "question": "某電商平台導入 AI 情感分析模型，用以自動偵測顧客評論中的負面 情緒並觸發客服機制。然而，上線後發現模型在面對不同語言或族群 書寫風格的評論時表現不一致，例如部分語氣強烈的正面評論被誤判 為負面，而禮貌但含批評意圖的評論卻被判為中性。若從技術與資料 治理的角度分析，下列哪一項描述不正確？",
     "options": [
@@ -785,8 +882,10 @@ var ipasAiMidQuestions = [
     "id": 49
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 50,
     "question": "某設計師使用公司內部建置的生成式 AI 工具製作行銷素材，並輸入 提示語（Prompt） ： 「請生成一張模特兒手持品牌飲料、背景為海邊夕 陽的照片」 。系統能正確生成主要主題與場景，但輸出的圖像中，品 牌標誌顏色常有誤差，或人物手部姿勢顯得不自然。若從多模態生成 模型的技術機制分析，此現象最可能是下列哪一項原因所造成？",
     "options": [
@@ -801,8 +900,10 @@ var ipasAiMidQuestions = [
     "id": 50
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 1,
     "question": "若某數據點的 Z 分數（Z-Score）= 2，請問代表下列哪一種意涵？",
     "options": [
@@ -817,8 +918,10 @@ var ipasAiMidQuestions = [
     "id": 51
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 2,
     "question": "使用 Python 的 pandas 套件處理各商品銷售數據（變數為 df）時，若需 計算「總銷售額」欄位的敘述性統計量（如平均值、標準差等） ，應使用 下列哪一種語法？",
     "options": [
@@ -833,8 +936,10 @@ var ipasAiMidQuestions = [
     "id": 52
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 3,
     "question": "【背景說明：附圖為一個資料的分佈圖（密度分配圖）。該分佈具有以下特徵：分佈的峰值（Peak）約在 40 左右，分佈的尾部（Tail）向左延伸至 0 及 -20 左右，呈現顯著的左偏（向低值延伸）特徵。】\n\n附圖為某資料之分佈圖，此圖資料之偏態（Skewness）值較有可能為下列 哪個選項？",
     "options": [
@@ -849,8 +954,10 @@ var ipasAiMidQuestions = [
     "id": 53
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 4,
     "question": "累積分佈函數（Cumulative Distribution Function, CDF）可用於描述 隨機變數的機率分佈特性，其數學定義為下列何者？",
     "options": [
@@ -865,8 +972,10 @@ var ipasAiMidQuestions = [
     "id": 54
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 5,
     "question": "在進行資料前處理時，若使用 Label Encoding 將類別變數轉換為數字型 態，下列何者為最常見的潛在風險？",
     "options": [
@@ -881,8 +990,10 @@ var ipasAiMidQuestions = [
     "id": 55
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 6,
     "question": "在進行資料分析時，會遇到類別型（Categorical）與數值型  （Numerical） 資料格式。關於這兩種資料格式的處理，下列敘述何者不 正確？",
     "options": [
@@ -897,8 +1008,10 @@ var ipasAiMidQuestions = [
     "id": 56
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 7,
     "question": "在資料庫的 ACID 特性中，下列何者為「原子性（Atomicity） 」的正確定 義？",
     "options": [
@@ -913,8 +1026,10 @@ var ipasAiMidQuestions = [
     "id": 57
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 8,
     "question": "資料科學家為分析顧客行為，利用現有欄位「銷售金額」與「瀏覽次 數」 ，計算出新變數「銷售金額/瀏覽次數」 。此動作屬於下列哪一類特徵 工程方法？",
     "options": [
@@ -929,8 +1044,10 @@ var ipasAiMidQuestions = [
     "id": 58
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 9,
     "question": "在進行數值特徵的標準化（Normalization）時，若資料中存在極端值 （Outliers） ，下列哪一種方法最適合使用？",
     "options": [
@@ -945,8 +1062,10 @@ var ipasAiMidQuestions = [
     "id": 59
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 10,
     "question": "下列哪一種情境最適合應用異常偵測（Anomaly Detection）技術？",
     "options": [
@@ -961,8 +1080,10 @@ var ipasAiMidQuestions = [
     "id": 60
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 11,
     "question": "若一家公司需即時監控大量物聯網裝置的異常行為，下列哪一種組合最適 合此應用？",
     "options": [
@@ -977,8 +1098,10 @@ var ipasAiMidQuestions = [
     "id": 61
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 12,
     "question": "在處理分類問題時，若某一類樣本數明顯少於其他類別，研究人員可能採 用隨機過採樣（Random Oversampling）以平衡資料比例，此方法最常造 成下列哪一種問題？",
     "options": [
@@ -993,8 +1116,10 @@ var ipasAiMidQuestions = [
     "id": 62
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 13,
     "question": "下列何者為同態加密（Homomorphic Encryption）技術的核心特性？",
     "options": [
@@ -1009,8 +1134,10 @@ var ipasAiMidQuestions = [
     "id": 63
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 14,
     "question": "某組資料共 10 項標籤如下：  A, A, A, A, A, B, B, B, B, B  若該標籤僅有 A、B 兩種，請問這組資料的「正規化吉尼不純度 （Normalized Gini impurity） 」為何？",
     "options": [
@@ -1025,8 +1152,10 @@ var ipasAiMidQuestions = [
     "id": 64
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 15,
     "question": "某家客服中心統計資料發現，平均每小時會接到約 20 通顧客來電，但每 分鐘的來電數量不固定，可能為 0、1、2 通不等。這些來電事件彼此獨 立，且在短時間內，發生的機率與時間長短成正比。若要以機率模型描述 「每分鐘接到幾通來電」的機率分佈，下列哪一種最適合使用？",
     "options": [
@@ -1041,8 +1170,10 @@ var ipasAiMidQuestions = [
     "id": 65
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 16,
     "question": "某金融科技公司以 Z 分數（Z-Score）監控交易金額異常狀況。若交易金 額平均為新台幣 2,000 元，標準差為 400 元，某筆交易金額為 3,200 元，且公司以|Z| ≥ 3 判定為異常值（Outlier） ，下列判斷何者最為正 確？",
     "options": [
@@ -1057,8 +1188,10 @@ var ipasAiMidQuestions = [
     "id": 66
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 17,
     "question": "某電商公司欲利用顧客行為資料建立消費預測模型，其中「會員等級」欄 位包含「一般、白金、黑卡」三種類別。若模型採用梯度提升樹 （Gradient Boosting Tree）演算法，資料科學家在進行特徵編碼時應特 別注意下列何種情況？",
     "options": [
@@ -1073,8 +1206,10 @@ var ipasAiMidQuestions = [
     "id": 67
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 18,
     "question": "某人工智慧團隊使用分散式資料庫（Distributed Database）儲存模型訓 練資料，並在更新訓練樣本時啟用多節點交易。若其中一個節點在交易過 程中發生錯誤，但系統仍確保整體資料不會出現部分更新、最終狀態維持 一致，下列何者最能說明此現象？",
     "options": [
@@ -1089,8 +1224,10 @@ var ipasAiMidQuestions = [
     "id": 68
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 19,
     "question": "某製造企業導入上萬台物聯網（IoT）感測器以進行設備健康監測。系統 需在毫秒級回應異常事件，並同時將完整資料保留於雲端供後續 AI 模型 訓練與分析。若企業希望兼顧即時性、資料完整性與可擴展性，下列哪一 種資料流程設計最符合此目標？",
     "options": [
@@ -1105,8 +1242,10 @@ var ipasAiMidQuestions = [
     "id": 69
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 20,
     "question": "某銀行計畫將信用風險評估模型部署至雲端平台，以便即時分析客戶交易 行為。由於涉及大量敏感金融資料，銀行要求雲端服務商在不解密原始資 料的情況下仍能執行模型運算。為達成此目標，最適合採用下列哪一項技 術？",
     "options": [
@@ -1121,8 +1260,10 @@ var ipasAiMidQuestions = [
     "id": 70
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 21,
     "question": "某資料分析師設計在業務績效報告時，希望單一頁面中同時呈現多區域、 不同產品線的銷售趨勢變化，並確保主管能在短時間內掌握整體資料走 向。若依據 Edward Rolf Tufte 的數據密度（Data Density） 原則，下 列哪一種設計方式最能符合該概念？",
     "options": [
@@ -1137,8 +1278,10 @@ var ipasAiMidQuestions = [
     "id": 71
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 22,
     "question": "某投資研究員希望分析四檔科技類股（A、B、C、D）每日報酬率的變化趨 勢，以判斷這些股票之間是否存在高度相關性與共變動性，並評估投資組 合分散風險的程度。若研究員希望以單一圖表快速呈現各股票間的關聯強 度與方向，下列哪一種視覺化呈現方式最適合？",
     "options": [
@@ -1153,8 +1296,10 @@ var ipasAiMidQuestions = [
     "id": 72
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 23,
     "question": "某研究團隊以單樣本 t 檢定（one-sample t-test）檢驗「新行銷策略後 的平均月銷售額是否與原本的 100 萬元不同」 ，顯著水準設定為 α =0.05。檢定結果顯示：p 值=0.08，且 95%信賴區間為 [95 萬元, 108 萬 元]。根據上述結果，下列敘述何者正確？",
     "options": [
@@ -1169,8 +1314,10 @@ var ipasAiMidQuestions = [
     "id": 73
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 24,
     "question": "某企業建置生成式 AI 系統，利用大量客服紀錄與產品評論資料訓練語言 模型，以自動生成客服回覆與知識摘要。由於資料來源多樣，且包含非結 答 案  題目  構化文字、影像與表格資訊，團隊希望在不降低模型效能的前提下，提升 資料處理效率與一致性，下列哪一種資料處理策略最適合？",
     "options": [
@@ -1185,8 +1332,10 @@ var ipasAiMidQuestions = [
     "id": 74
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 25,
     "question": "某電商資料團隊繪製顧客單筆消費金額的箱型圖後發現：四分位距 （IQR）範圍極小，但上鬚線拉得很長，且在高金額區域有多筆離群值。 若希望協助行銷部門依據消費層級設計分群策略，下列哪一種視覺化方式 最有助於凸顯不同消費層級間的差異？",
     "options": [
@@ -1201,8 +1350,10 @@ var ipasAiMidQuestions = [
     "id": 75
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 26,
     "question": "某串流影音平台運用關聯規則學習（Association Rule Learning）分析 用戶的觀影行為，發現若使用者觀看了科幻影集，則有較高機率接著觀看 超級英雄電影。分析顯示，同時觀看這兩種類型的使用者約佔全部觀影紀 錄的 12%，而觀看科幻影集的使用者中，有 50%也觀看了超級英雄電影， 該規則的提升度（Lift）為 1.8。根據上述資訊，下列哪一項推論最為正 確？",
     "options": [
@@ -1217,8 +1368,10 @@ var ipasAiMidQuestions = [
     "id": 76
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 27,
     "question": "某金融科技公司分析每日上億筆交易資料，以監控客戶轉帳金額分佈與異 常波動。由於資料量極大，為兼顧效率與準確度，團隊決定採用「近似分 位數（Approximate Quantile） 」方法進行資料摘要統計。下列何者最能 正確反映該技術的核心目的？  答 案  題目",
     "options": [
@@ -1233,8 +1386,10 @@ var ipasAiMidQuestions = [
     "id": 77
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 28,
     "question": "若在高維度（>500 維）的資料上應用 DBSCAN（Density-Based Spatial  Clustering of Applications with Noise）演算法，卻發現所有資料點 皆被判定為雜訊（Noise） ，下列何者為最有可能的原因？",
     "options": [
@@ -1249,8 +1404,10 @@ var ipasAiMidQuestions = [
     "id": 78
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 29,
     "question": "某團隊在開發風險評估模型時，使用主成分分析（Principal Component  Analysis, PCA）進行降維。輸入資料包含三個數值欄位： 「交易金額（單 位：新台幣） 」 、 「交易次數（次／月） 」與「年齡（歲） 」 ，其數值量級分別 約為 10⁵、10¹與 10²。分析人員直接將原始數據帶入 PCA，結果第一主成 分（PC1）幾乎完全由「交易金額」主導。下列哪一項作法或判斷最合 理？",
     "options": [
@@ -1265,8 +1422,10 @@ var ipasAiMidQuestions = [
     "id": 79
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 30,
     "question": "某行銷團隊想了解「廣告預算」與「銷售金額」之間的關聯程度。經繪製 散佈圖後發現兩者呈現明顯線性趨勢，且資料中無明顯離群值 （Outliers） 。若希望衡量兩者之間線性關係的強度與方向，下列哪一種 方法最適合？",
     "options": [
@@ -1281,8 +1440,10 @@ var ipasAiMidQuestions = [
     "id": 80
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 31,
     "question": "某電商團隊觀察到，每位顧客對廣告推播的點擊行為可視為一次伯努利試 驗（Bernoulli Trial） ，單次點擊成功機率為p=0.4。當推播對象擴增至 5,000 位顧客時，團隊想快速預估「成功點擊總數」的分佈情形，以進行 答 案  題目  模型效能模擬與預測。若希望以常態分佈（Normal Distribution）近似 原始分佈，下列哪一項判斷最為合理？",
     "options": [
@@ -1297,8 +1458,10 @@ var ipasAiMidQuestions = [
     "id": 81
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 32,
     "question": "某電信公司導入生成式 AI 客服系統，利用過去對話紀錄與用戶行為資料 訓練語言模型，在資料治理與合規審查過程中，團隊發現模型可能會在回 答中生成包含真實姓名、電話或交易資訊的內容。為確保系統符合個資法 及生成式 AI 的安全與隱私要求，下列哪一項作法最符合實務可行及法規 原則？",
     "options": [
@@ -1313,8 +1476,10 @@ var ipasAiMidQuestions = [
     "id": 82
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 33,
     "question": "某金融機構的量化分析師在建立資產風險評估模型時，發現報酬率資料分 佈明顯非對稱，且出現多次極端損失事件，使得傳統假設常態分佈的模型 無法準確反映真實風險。若希望在不依賴常態分佈假設的前提下，採取更 能捕捉資料極端情況的建模策略，下列哪一種方法最為合適？",
     "options": [
@@ -1329,8 +1494,10 @@ var ipasAiMidQuestions = [
     "id": 83
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 34,
     "question": "在圖形資料庫（Graph Database）中建模社群平台資料時，若每筆「按 讚」行為都包含時間戳記（Timestamp）與裝置類型（Device Type）等資 訊。若希望同時保留使用者與貼文之間的互動關係，並能有效查詢「按 答 案  題目  讚」的行為屬性，下列哪一種設計方式最為合適？",
     "options": [
@@ -1345,8 +1512,10 @@ var ipasAiMidQuestions = [
     "id": 84
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 35,
     "question": "某企業欲建構知識圖譜（Knowledge Graph） ，以整合內部的研究報告、專 利資料與專家知識，並支援語意查詢與關聯推理。若希望模型能具備良好 的語意擴展性與高效推理能力，下列哪一種圖模型設計最為合適？",
     "options": [
@@ -1361,8 +1530,10 @@ var ipasAiMidQuestions = [
     "id": 85
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 36,
     "question": "某研究人員欲使用線性迴歸模型（Linear Regression Model）分析變數 Y 與 X 之間的關係，但發現 Y 的分佈明顯右偏，且其變異數隨 X 的增大而 增加。為滿足模型假設並提升配適效果，下列哪一種前處理方法最為合 適？",
     "options": [
@@ -1377,8 +1548,10 @@ var ipasAiMidQuestions = [
     "id": 86
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 37,
     "question": "若開發一個用於罕見疾病自動診斷的分類模型，目前資料集中確診樣本僅 佔不到 1%，且因為標註成本高，短期內無法取得更多資料。在此情況 下，若希望提升模型對少數類的偵測能力，同時避免過擬合，下列哪一種 策略最為合理？",
     "options": [
@@ -1393,8 +1566,10 @@ var ipasAiMidQuestions = [
     "id": 87
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 38,
     "question": "一家製造廠評估新生產線推出後，產品良率是否較原生產線提升。工程師 答 案  題目  分別從兩條生產線各抽樣 100 件產品，原生產線良率為 95%，新生產線 為 97%。若欲檢定兩條生產線良率的差異是否具有統計意義，下列哪一種 方法最為合適？",
     "options": [
@@ -1409,8 +1584,10 @@ var ipasAiMidQuestions = [
     "id": 88
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 39,
     "question": "若評估一個新開發的腫瘤分類模型，其資料集中有 80%的樣本來自良性病 例。若直接使用 5-fold 交叉驗證（Cross-Validation） 進行模型評估， 可能導致模型效能評估出現偏差，為避免此問題，下列哪一種作法最合 適？",
     "options": [
@@ -1425,8 +1602,10 @@ var ipasAiMidQuestions = [
     "id": 89
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 40,
     "question": "【背景說明：附圖虛擬碼（pseudocode）如下】\n```\nInput :\n  - data_set : 包含 N 筆資料的資料集\n  - model_training_function : 用來訓練模型的函式\n  - model_evaluation_function : 用來評估模型的函式 (如計算誤差或準確率)\nOutput :\n  - 平均評估指標 (如平均準確率或平均誤差)\n\nAlgorithm :\n1. 初始化評估指標列表 metrics = []\n2. 對 i = 1 到 N :\n   a. 將第 i 筆資料作為測試集 test_data\n   b. 將其餘 N-1 筆資料作為訓練集 train_data\n   c. 使用 model_training_function 在 train_data 上訓練模型\n   d. 使用訓練好的模型對 test_data 做預測，計算評估指標 metric_i\n   e. 將 metric_i 加入 metrics\n3. 計算 metrics 的平均值 mean_metric\n4. 回傳 mean_metric\n```\n\n請參考附圖，下列虛擬程式碼（pseudocode）最可能是在描述何種驗證 法？",
     "options": [
@@ -1441,8 +1620,10 @@ var ipasAiMidQuestions = [
     "id": 90
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 41,
     "question": "【背景說明：附圖虛擬碼（pseudocode）如下】\n```\nInput :\n  - data_points : N 筆資料，每筆資料有 D 個特徵\n  - X : 要分成的群數\nOutput :\n  - clusters : 每筆資料所屬的群編號\n  - centroids : 每個群的中心點\n\nAlgorithm :\n1. 隨機選擇 X 個資料點作為初始中心\n2. 重複以下步驟直到收斂：\n   a. 分群：\n      對每個資料點，計算它到每個中心的距離\n      將資料點指派給距離最近的中心\n   b. 更新中心：\n      對每個群：\n         計算該群中所有資料點的平均值\n         將群中心更新為這個平均值\n3. 當群中心不再變動時，停止\n\n回傳每筆資料的群編號 clusters，以及最後的群中心 centroids\n```\n\n請參考附圖，下列虛擬程式碼（pseudocode）最可能是在描述何種演算 法？",
     "options": [
@@ -1457,8 +1638,10 @@ var ipasAiMidQuestions = [
     "id": 91
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 42,
     "question": "【背景說明：附圖程式碼如下】\n```python\nimport numpy as np\nfrom scipy.stats import poisson\nlambda_poisson = 5\nprint(poisson.pmf(5, lambda_poisson))\n```\n\n考慮某生產線每小時出現瑕疵品的個數符合卜瓦松分佈（Poisson  Distribution） ，已知平均每小時產生5 個瑕疵品，附圖程式碼展示資料 處理，請問下列敘述何者正確？  答 案  題目",
     "options": [
@@ -1473,8 +1656,10 @@ var ipasAiMidQuestions = [
     "id": 92
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 43,
     "question": "【背景說明：一間遊戲市場研究公司正在分析全球電子遊戲銷售情況，並準備建立一份「熱銷遊戲銷售報告」。分析師取得了一份名為 vgsales.csv 的資料集，內容包含了全球銷量超過 10 萬份的電子遊戲清單。資料集的欄位說明如下：\n- Name：遊戲名稱\n- Platform：遊戲平台（如 PS4、X360、Wii 等）\n- Year：發售年份\n- Genre：遊戲類型（如 Action、Sports、Role-Playing 等）\n- Publisher：發行商名稱\n- NA_Sales / EU_Sales / JP_Sales / Other_Sales：各地區銷售量（單位：百萬份）\n- Global_Sales：全球總銷售量（單位：百萬份）\n\n載入與預覽資料的 Python 程式碼如下：\n```python\nimport pandas as pd\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\ndata = pd.read_csv(\"vgsales.csv\")\ndata.head()\n```\n】\n\n分析師在載入資料後，檢視 Year 欄位的資料型態，發現它是 float64， 而非一般年份常用的整數。他想了解這樣的情形為什麼會發生。請問下列 哪些原因可能導致這種狀況？  原因 A：CSV 檔中 Year 欄位有缺失值(NaN)，導致 Pandas 自動將整欄轉為 浮點數。  原因 B：CSV 檔中的年份資料原本是字串(如 \"2006\")，Pandas 轉換時出 錯而變成浮點數。  原因 C：Pandas 預設會將所有數值型態讀取為 float64，不論資料是否為 整數。  原因 D：CSV 檔中的年份資料可能包含小數點(例如 2006.0)，因此被視為 浮點數。",
     "options": [
@@ -1489,8 +1674,10 @@ var ipasAiMidQuestions = [
     "id": 93
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 44,
     "question": "【背景說明：一間遊戲市場研究公司正在分析全球電子遊戲銷售情況，並準備建立一份「熱銷遊戲銷售報告」。分析師取得了一份名為 vgsales.csv 的資料集，內容包含了全球銷量超過 10 萬份的電子遊戲清單。資料集的欄位說明如下：\n- Name：遊戲名稱\n- Platform：遊戲平台（如 PS4、X360、Wii 等）\n- Year：發售年份\n- Genre：遊戲類型（如 Action、Sports、Role-Playing 等）\n- Publisher：發行商名稱\n- NA_Sales / EU_Sales / JP_Sales / Other_Sales：各地區銷售量（單位：百萬份）\n- Global_Sales：全球總銷售量（單位：百萬份）\n\n載入與預覽資料的 Python 程式碼如下：\n```python\nimport pandas as pd\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\ndata = pd.read_csv(\"vgsales.csv\")\ndata.head()\n```\n】\n\n研究團隊接下來想要將 Year 欄位轉換為整數型態，以便後續進行年份趨 勢分析。考慮到資料中可能包含缺失值（NaN） ，請選出最合適的轉換方 式。",
     "options": [
@@ -1505,8 +1692,10 @@ var ipasAiMidQuestions = [
     "id": 94
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 45,
     "question": "【背景說明：一間遊戲市場研究公司正在分析全球電子遊戲銷售情況，並準備建立一份「熱銷遊戲銷售報告」。分析師取得了一份名為 vgsales.csv 的資料集，內容包含了全球銷量超過 10 萬份的電子遊戲清單。資料集的欄位說明如下：\n- Name：遊戲名稱\n- Platform：遊戲平台（如 PS4、X360、Wii 等）\n- Year：發售年份\n- Genre：遊戲類型（如 Action、Sports、Role-Playing 等）\n- Publisher：發行商名稱\n- NA_Sales / EU_Sales / JP_Sales / Other_Sales：各地區銷售量（單位：百萬份）\n- Global_Sales：全球總銷售量（單位：百萬份）\n\n載入與預覽資料的 Python 程式碼如下：\n```python\nimport pandas as pd\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\ndata = pd.read_csv(\"vgsales.csv\")\ndata.head()\n```\n】\n\n為了觀察各遊戲平台的市場表現，分析師想要統計每個平台的全球銷售總 額，並以長條圖呈現。請選出最能正確實現此分析的程式碼。",
     "options": [
@@ -1521,8 +1710,10 @@ var ipasAiMidQuestions = [
     "id": 95
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 46,
     "question": "【背景說明：一間遊戲市場研究公司正在分析全球電子遊戲銷售情況，並準備建立一份「熱銷遊戲銷售報告」。分析師取得了一份名為 vgsales.csv 的資料集，內容包含了全球銷量超過 10 萬份的電子遊戲清單。資料集的欄位說明如下：\n- Name：遊戲名稱\n- Platform：遊戲平台（如 PS4、X360、Wii 等）\n- Year：發售年份\n- Genre：遊戲類型（如 Action、Sports、Role-Playing 等）\n- Publisher：發行商名稱\n- NA_Sales / EU_Sales / JP_Sales / Other_Sales：各地區銷售量（單位：百萬份）\n- Global_Sales：全球總銷售量（單位：百萬份）\n\n載入與預覽資料的 Python 程式碼如下：\n```python\nimport pandas as pd\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\ndata = pd.read_csv(\"vgsales.csv\")\ndata.head()\n```\n】\n\n團隊希望比較北美、歐洲、日本及其他地區的整體銷售比例，並使用  seaborn 套件以長條圖的形式進行可視化分析。請選出能正確顯示這些地 區銷售總額比例的程式碼。",
     "options": [
@@ -1537,8 +1728,10 @@ var ipasAiMidQuestions = [
     "id": 96
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 47,
     "question": "【背景說明：一間遊戲市場研究公司正在分析全球電子遊戲銷售情況，並準備建立一份「熱銷遊戲銷售報告」。分析師取得了一份名為 vgsales.csv 的資料集，內容包含了全球銷量超過 10 萬份的電子遊戲清單。資料集的欄位說明如下：\n- Name：遊戲名稱\n- Platform：遊戲平台（如 PS4、X360、Wii 等）\n- Year：發售年份\n- Genre：遊戲類型（如 Action、Sports、Role-Playing 等）\n- Publisher：發行商名稱\n- NA_Sales / EU_Sales / JP_Sales / Other_Sales：各地區銷售量（單位：百萬份）\n- Global_Sales：全球總銷售量（單位：百萬份）\n\n載入與預覽資料的 Python 程式碼如下：\n```python\nimport pandas as pd\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\ndata = pd.read_csv(\"vgsales.csv\")\ndata.head()\n```\n】\n\n研究團隊想要知道在北美地區（NA）銷售成績最好的遊戲前五名，並希望 以 seaborn 的條狀圖呈現結果。請選出能正確完成這項分析的程式碼。",
     "options": [
@@ -1553,8 +1746,10 @@ var ipasAiMidQuestions = [
     "id": 97
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 48,
     "question": "【背景說明：某廣告行銷數據集 df 預覽與敘述統計分析結果如下】\n```python\n>>> df.head()\n   youtube  facebook  newspaper  sales\n0   276.12     45.36      83.04  26.52\n1    53.40       NaN      54.12  12.48\n2    20.64     55.08      83.16  11.16\n3   181.80     49.56      70.20  22.20\n4   216.96     12.96      70.08  15.48\n\n>>> df.describe()\n          youtube    facebook   newspaper       sales\ncount  200.000000  199.000000  200.000000  200.000000\nmean   176.451000   27.820101   36.664800   16.827000\nstd    103.025084   17.808410   26.134345    6.260948\nmin      0.840000    0.000000    0.360000    1.920000\n25%     89.250000   11.940000   15.300000   12.450000\n50%    179.700000   27.000000   30.900000   15.480000\n75%    262.590000   43.680000   54.120000   20.880000\nmax    355.680000   59.520000  136.800000   32.400000\n```\n\n根據上述結果，下列何者正確？",
     "options": [
@@ -1569,8 +1764,10 @@ var ipasAiMidQuestions = [
     "id": 98
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 49,
     "question": "【背景說明：計算各欄位遺漏值（df.isnull().sum() 或 df.isna().sum()）之輸出結果如下】\n```\nyoutube      0\nfacebook     1\nnewspaper    0\nsales        0\ndtype: int64\n```\n\n參考上述執行結果，下列何者正確？",
     "options": [
@@ -1585,8 +1782,10 @@ var ipasAiMidQuestions = [
     "id": 99
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 50,
     "question": "【背景說明：執行迴歸模型訓練之程式碼與 OLS 輸出結果如下】\n```python\nfrom sklearn.linear_model import LinearRegression\nimport statsmodels.api as sm\nX = df[['youtube', 'facebook', 'newspaper']]\ny = df['sales']\nreg =  [空格1]\nprint(reg.coef_)\nX2 = sm.add_constant(X)\nmodel_sm =  [空格2]\nprint(model_sm.summary())\n```\n\n```\nOLS Regression Results\n==============================================================================\nDep. Variable:                  sales   R-squared:                       0.898\nModel:                            OLS   Adj. R-squared:                  0.896\nMethod:                 Least Squares   F-statistic:                     573.0\nDate:                Sat, 20 Sep 2025   Prob (F-statistic):          1.03e-96\nTime:                        19:37:30   Log-Likelihood:                -422.21\nNo. Observations:                 200   AIC:                             852.4\nDf Residuals:                     196   BIC:                             865.6\nDf Model:                           3\nCovariance Type:             nonrobust\n==============================================================================\n                 coef    std err          t      P>|t|      [0.025      0.975]\n------------------------------------------------------------------------------\nconst          3.5561      0.373      9.537      0.000       2.821       4.291\nyoutube        0.0455      0.001     32.702      0.000       0.043       0.048\nfacebook       0.1891      0.009     21.960      0.000       0.172       0.206\nnewspaper     -0.0006      0.006     -0.108      0.914      -0.012       0.011\n==============================================================================\n```\n\n參考上述執行結果，下列何者正確？",
     "options": [
@@ -1601,8 +1800,10 @@ var ipasAiMidQuestions = [
     "id": 100
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 1,
     "question": "某零售企業建立一個銷售預測模型，希望評估該模型在不同月份的新資料 上，是否仍能維持穩定的預測表現。資料科學團隊計畫利用統計方法檢驗 模型對未觀察資料的適應能力與泛化效果。下列哪一種方法最適合用於此 目的？",
     "options": [
@@ -1617,8 +1818,10 @@ var ipasAiMidQuestions = [
     "id": 101
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 2,
     "question": "在建立迴歸或分類模型時，若希望避免模型過度擬合（Overfitting） ，可 透過加入正則化項以限制模型的複雜度。其中，L1 正則化（Lasso）的主 要效果為何？",
     "options": [
@@ -1633,8 +1836,10 @@ var ipasAiMidQuestions = [
     "id": 102
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 3,
     "question": "在訓練非線性模型時，若目標函數為非凸函數（Non-convex Function）， 演算法在參數更新過程中可能出現多個極值點，導致最佳化結果不穩定。 請問此時最可能發生下列哪一種情況？",
     "options": [
@@ -1649,8 +1854,10 @@ var ipasAiMidQuestions = [
     "id": 103
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 4,
     "question": "在執行 DBSCAN（Density-Based Spatial Clustering of Applications  with Noise）群集分析時，若某資料點鄰域內的樣本數不足以形成核心點 （Core Point） ，且該點未被任何核心點的鄰域所包含，也未與其他群集形 成密度可達關係（Density Reachability） ，此資料點最終將被歸類為哪一 種類型？",
     "options": [
@@ -1665,8 +1872,10 @@ var ipasAiMidQuestions = [
     "id": 104
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 5,
     "question": "某智慧製造公司開發一套影像辨識系統，用於自動檢測生產線上的瑕疵產 品。系統採用卷積神經網路（Convolutional Neural Network, CNN）作為 主要模型架構，其中第一層卷積層（Convolutional Layer）主要負責的功 能為下列何者？",
     "options": [
@@ -1681,8 +1890,10 @@ var ipasAiMidQuestions = [
     "id": 105
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 6,
     "question": "某智慧城市團隊開發一套交通監控系統，用於即時辨識路口監視器影像中 的車輛與行人。團隊比較後發現，卷積神經網路（Convolutional Neural  Network, CNN）在訓練與推論效率上，明顯優於傳統的全連接神經網路 （Fully Connected Neural Network, FCNN） 。請問下列何者為主要原因？",
     "options": [
@@ -1697,8 +1908,10 @@ var ipasAiMidQuestions = [
     "id": 106
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 7,
     "question": "下列哪一種應用最適合採用長短期記憶網路（Long Short-Term Memory,  LSTM）模型？",
     "options": [
@@ -1713,8 +1926,10 @@ var ipasAiMidQuestions = [
     "id": 107
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 8,
     "question": "資訊增益（Information Gain）常用於衡量特徵對分類結果的不確定性貢 獻程度，並據以進行特徵選擇。此方法主要應用於下列哪一類模型架構 中？",
     "options": [
@@ -1729,8 +1944,10 @@ var ipasAiMidQuestions = [
     "id": 108
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 9,
     "question": "在建構以距離為基礎的機器學習模型（如 KNN、SVM）時，下列哪一項資料 前處理方式最為關鍵？",
     "options": [
@@ -1745,8 +1962,10 @@ var ipasAiMidQuestions = [
     "id": 109
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 10,
     "question": "下列哪一種應用情境最適合導入 AutoML，以提升模型開發效率？",
     "options": [
@@ -1761,8 +1980,10 @@ var ipasAiMidQuestions = [
     "id": 110
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 11,
     "question": "相較於 Grid Search，Random Search 在超參數調整上具備哪一項主要優 勢？",
     "options": [
@@ -1777,8 +1998,10 @@ var ipasAiMidQuestions = [
     "id": 111
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 12,
     "question": "某智慧製造公司開發一套設備故障預測系統，利用感測器資料訓練深度神 經網路（Deep Neural Network, DNN）模型，以提前偵測異常運作跡象。 在訓練過程中，團隊發現模型收斂速度不穩定：有時過快導致過擬合，有 時又遲遲無法達到最佳準確率。開發團隊可以藉由調整下列哪一項超參數 （Hyperparameter）以改善此問題？",
     "options": [
@@ -1793,8 +2016,10 @@ var ipasAiMidQuestions = [
     "id": 112
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 13,
     "question": "標籤偏差(Label Bias)通常是因為什麼原因造成？",
     "options": [
@@ -1809,8 +2034,10 @@ var ipasAiMidQuestions = [
     "id": 113
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 14,
     "question": "下列哪一種 AI 應用情境中，模型的可解釋性（Explainability）最為關 鍵？",
     "options": [
@@ -1825,8 +2052,10 @@ var ipasAiMidQuestions = [
     "id": 114
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 15,
     "question": "在線性迴歸模型中，若 R²值為 0.85，其意義為何？",
     "options": [
@@ -1841,8 +2070,10 @@ var ipasAiMidQuestions = [
     "id": 115
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 16,
     "question": "在二元分類問題中，若精確率（Precision）為 0.8，召回率（Recall）為 0.6，則 F1 分數（F1 Score）為何？",
     "options": [
@@ -1857,8 +2088,10 @@ var ipasAiMidQuestions = [
     "id": 116
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 17,
     "question": "下列哪一種優化演算法內建動量（Momentum）的設計機制？",
     "options": [
@@ -1873,8 +2106,10 @@ var ipasAiMidQuestions = [
     "id": 117
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 18,
     "question": "下列何者最能同時反映 XGBoost（eXtreme Gradient Boosting）相較於傳 統梯度提升決策樹（Gradient Boosting Decision Tree, GBDT）的主要技 術改進？",
     "options": [
@@ -1889,8 +2124,10 @@ var ipasAiMidQuestions = [
     "id": 118
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 19,
     "question": "某醫療機構開發疾病早期偵測模型，正樣本（確診病例）僅佔 3%。在模型 訓練與評估過程中，下列哪一種作法最不適合用於提升對少數類病例的預 測能力？",
     "options": [
@@ -1905,8 +2142,10 @@ var ipasAiMidQuestions = [
     "id": 119
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 20,
     "question": "某電子商務公司為開發商品評論情感分析模型，希望模型能捕捉評論中不 同特徵之間的關聯影響，例如「商品價格」與「顧客滿意度」的互動效 果。下列哪一種特徵工程設計方式最適合用於建立互動特徵（Interaction  Features）？",
     "options": [
@@ -1921,8 +2160,10 @@ var ipasAiMidQuestions = [
     "id": 120
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 21,
     "question": "某語音辨識系統開發團隊採用 Transformer 架構，為了讓模型能同時理解 語音片段中的發音特徵、語速變化與語意脈絡等多層次資訊，團隊在設計 中導入了多頭注意力（Multi-head Attention）機制。請問下列何者為此 機制的主要優點？",
     "options": [
@@ -1937,8 +2178,10 @@ var ipasAiMidQuestions = [
     "id": 121
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 22,
     "question": "某電商平台希望預測顧客是否會購買特定商品。系統蒐集顧客的瀏覽紀 錄、停留時間、商品類別偏好與過去購買行為，並以此推估「在觀察到這 些行為特徵的情況下，該顧客會購買的機率」 。若模型採用貝氏定理 （Bayes’Theorem）進行推論，下列敘述何者最符合其核心運作機制？",
     "options": [
@@ -1953,8 +2196,10 @@ var ipasAiMidQuestions = [
     "id": 122
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 23,
     "question": "一家再生能源公司希望預測未來三個月太陽能發電量的波動範圍。由於氣 候條件具有高度隨機性，且輸入變數（如日照時數、雲量、溫度）之間存 在不確定關係，工程團隊決定以隨機抽樣方式模擬多種可能情境，以估算 整體發電量的機率分佈與風險區間。請問此時所採用的技術最符合下列哪 一種方法？",
     "options": [
@@ -1969,8 +2214,10 @@ var ipasAiMidQuestions = [
     "id": 123
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 24,
     "question": "某房地產公司利用多元迴歸模型（Multiple Regression Model）預測房 價，並繪製殘差圖（Residual Plot）檢查模型品質。結果顯示部分資料點 的殘差極大，且在高價區樣本中出現系統性彎曲分佈現象。根據此觀察， 下列何者為最可能的正確解釋？",
     "options": [
@@ -1985,8 +2232,10 @@ var ipasAiMidQuestions = [
     "id": 124
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 25,
     "question": "某金融機構正在建立傳統信用評分卡模型，採用邏輯迴歸（Logistic  Regression）作為建模方法，並依循監理機關建議的標準化流程進行模型 開發。下列哪一項不是傳統信用評分卡模型開發流程中的常見步驟？",
     "options": [
@@ -2001,8 +2250,10 @@ var ipasAiMidQuestions = [
     "id": 125
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 26,
     "question": "在防止監督式學習模型過擬合（Overfitting）時，下列哪一種策略不屬於 降低模型複雜度或限制學習能力的作法？",
     "options": [
@@ -2017,8 +2268,10 @@ var ipasAiMidQuestions = [
     "id": 126
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 27,
     "question": "某智慧製造團隊在開發瑕疵影像檢測模型時，發現使用線性激活函數 （Activation Function）後，模型的訓練準確率長期停滯，懷疑模型無法 學習到足夠複雜的特徵表達。若要改善此問題，下列哪一項調整方案最為 合適？",
     "options": [
@@ -2033,8 +2286,10 @@ var ipasAiMidQuestions = [
     "id": 127
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 28,
     "question": "一家零售電商公司希望建立顧客流失預測模型，用以判斷哪些會員可能在 三個月內不再消費。團隊以去年會員資料進行訓練，並僅採用「曾經購買 三次以上」的活躍顧客紀錄作為樣本。模型上線後，對整體會員進行預測 時，發現模型對於新註冊會員與低消費會員的預測準確率明顯偏低。下列 何者為造成此現象最可能的原因？",
     "options": [
@@ -2049,8 +2304,10 @@ var ipasAiMidQuestions = [
     "id": 128
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 29,
     "question": "在工業設備故障預測專案中，模型訓練與超參數調整均依賴於一段歷史數 據作為驗證集。然而，隨著設備運行環境與工況條件的變化，原有驗證集 已無法充分反映現況，導致模型在實際部署後的預測準確率逐漸下降。下 列哪一種策略最能有效提升模型在長期運行環境中的穩健性與泛化能力？",
     "options": [
@@ -2065,8 +2322,10 @@ var ipasAiMidQuestions = [
     "id": 129
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 30,
     "question": "某情感分析模型在英文資料集上取得 macro F1-score = 0.91。當該模型 部署於西班牙文資料集時，F1-score 驟降至 0.58。下列哪一項解釋最合 理，且與 F1-score 變化相關？",
     "options": [
@@ -2081,8 +2340,10 @@ var ipasAiMidQuestions = [
     "id": 130
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 31,
     "question": "某能源公司利用歷史氣象與用電資料，開發長期電力需求預測模型，採用 深度神經網路架構進行訓練。在訓練過程中，模型在訓練集上的損失值持 續下降，但在驗證集上，損失在第 80 輪後開始波動，呈現週期性上升與下 降。團隊懷疑模型受到季節性資料波動與隨機噪音影響，導致驗證損失難 以穩定收斂。若要在此情境下合理運用早期停止法（Early Stopping）以 確保模型具最佳泛化能力，下列哪一項策略最為適當？",
     "options": [
@@ -2097,8 +2358,10 @@ var ipasAiMidQuestions = [
     "id": 131
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 32,
     "question": "某電信公司開發客戶流失預測模型，使用大量顧客行為特徵，例如通話時 長、上網頻率、帳單金額、客服聯絡次數等。在訓練過程中，團隊發現部 分特徵彼此高度相關，但同時也懷疑有些特徵對流失預測的貢獻度有限。 若希望模型在避免過擬合（Overfitting）的同時，能自動篩選出較具代表 性的特徵，採用下列哪一種方法最為合適？",
     "options": [
@@ -2113,8 +2376,10 @@ var ipasAiMidQuestions = [
     "id": 132
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 33,
     "question": "某資料科學團隊正在開發一個客戶相似度比對系統，用於計算所有客戶之 間的相似度分數。若系統需逐一比對每一位客戶與其他所有客戶的資料組 合，此時演算法的時間複雜度最可能為哪一種？其代表意義為何？",
     "options": [
@@ -2129,8 +2394,10 @@ var ipasAiMidQuestions = [
     "id": 133
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 34,
     "question": "某醫療人工智慧團隊正在開發心臟病風險預測模型，資料量僅有 150 筆， 其中陽性個案不到 8%。由於樣本數稀少且類別分布極不平衡，團隊希望在 有限資料下，仍能準確評估模型在不同資料上的表現穩定性，同時避免訓 練資料被過度切分而影響模型效能。若團隊希望在有限樣本下，同時兼顧 資料的利用率與各類別在驗證折中的比例一致性，最適合採用下列哪一種 交叉驗證方法？",
     "options": [
@@ -2145,8 +2412,10 @@ var ipasAiMidQuestions = [
     "id": 134
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 35,
     "question": "某公司針對製程感測器資料進行主成分分析（PCA） ，經標準化與協方差矩 陣分解後，得到三個主成分的特徵值如下：λ1=6.0, λ2=3.0, λ3=1.0。 若團隊決定僅保留能解釋至少 80% 總變異量的主成分，以進行後續模型建 構，下列哪一項敘述最合理且數據解讀正確？",
     "options": [
@@ -2161,8 +2430,10 @@ var ipasAiMidQuestions = [
     "id": 135
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 36,
     "question": "某銀行計畫與多家合作機構共同訓練一個 AI 信用風險預測模型，為避免客 戶交易資料在傳輸與運算過程中外洩，技術團隊評估使用同態加密 （Homomorphic Encryption）技術。下列何者最能正確描述同態加密在此 應用中的關鍵特性？",
     "options": [
@@ -2177,8 +2448,10 @@ var ipasAiMidQuestions = [
     "id": 136
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 37,
     "question": "某跨銀行風控平台希望整合多家銀行的用戶行為資料，用於訓練信用風險 預測模型。由於競爭與法規限制，各銀行僅願意提供加密後資料，且資料 在任何時間不得被平台解密。同時，平台需建立安全通訊協議以確保資料 在傳輸過程未被竄改或重放。  下列哪一組技術最能完整對應上述需求？",
     "options": [
@@ -2193,8 +2466,10 @@ var ipasAiMidQuestions = [
     "id": 137
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 38,
     "question": "【背景說明：評估指標程式碼如下】\n```python\ndef metric(y_true, y_pred):\n    return sum((y_true - y_pred) ** 2) / len(y_true)\n```\n\n附圖程式碼所計算的是哪一類型的評估指標？",
     "options": [
@@ -2209,8 +2484,10 @@ var ipasAiMidQuestions = [
     "id": 138
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 39,
     "question": "【背景說明：正則化實作程式碼如下】\n```python\ndef forward(x, p, training=True):\n    if training:\n        mask = np.random.binomial(1, p, size=x.shape)\n        return x * mask / p\n    else:\n        return x\n```\n\n附圖程式碼實現的是哪一種正則化技術？",
     "options": [
@@ -2225,8 +2502,10 @@ var ipasAiMidQuestions = [
     "id": 139
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 40,
     "question": "【背景說明：NumPy 運算程式碼如下】\n```python\nimport numpy as np\n\nv1 = np.array([1, 2, 3])\nv2 = np.array([4, 5, 6])\nA = np.array([[1, 2], [3, 4]])\n```\n\n依據附圖程式碼進行資料處理，下列何者正確？",
     "options": [
@@ -2241,8 +2520,10 @@ var ipasAiMidQuestions = [
     "id": 140
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 41,
     "question": "【背景說明：Monte Carlo 模擬程式碼與事件定義如下】\n```python\nimport numpy as np\n\nnp.random.seed(123)\nn = 100000\ndice_rolls = np.random.randint(1, 7, size=n)\n\nA = (dice_rolls % 2 == 0)\nB = (dice_rolls > 3)\nA_and_B = A & B\n```\n- 事件 A：擲出偶數\n- 事件 B：擲出大於 3\n\n考慮擲出骰子並採用 Monte Carlo 方法估算條件機率，參考附圖程式碼。    事件 A：擲出偶數  事件 B：擲出大於 3  請問下列何者為條件機率 P(A∣B)的正確值？",
     "options": [
@@ -2257,8 +2538,10 @@ var ipasAiMidQuestions = [
     "id": 141
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 42,
     "question": "【背景說明：載入預訓練的 VGG16 模型並輸出其完整層級結構與參數統計摘要如下】\n```python\nfrom torchsummary import summary\nfrom torchvision import models\nmodel = models.vgg16(weights='IMAGENET1K_V1')\nsummary(model, (3, 150, 150))\n```\n\n輸出摘要表：\n```\nLayer (type)                 Output Shape              Param #\n================================================================\nConv2d-1                     [-1, 64, 150, 150]        1,792\nReLU-2                       [-1, 64, 150, 150]        0\nConv2d-3                     [-1, 64, 150, 150]        36,928\nReLU-4                       [-1, 64, 150, 150]        0\nMaxPool2d-5                  [-1, 64, 75, 75]          0\nConv2d-6                     [-1, 128, 75, 75]         73,856\nReLU-7                       [-1, 128, 75, 75]         0\nConv2d-8                     [-1, 128, 75, 75]         147,584\nReLU-9                       [-1, 128, 75, 75]         0\nMaxPool2d-10                 [-1, 128, 37, 37]         0\nConv2d-11                    [-1, 256, 37, 37]         295,168\nReLU-12                      [-1, 256, 37, 37]         0\nConv2d-13                    [-1, 256, 37, 37]         590,080\nReLU-14                      [-1, 256, 37, 37]         0\nConv2d-15                    [-1, 256, 37, 37]         590,080\nReLU-16                      [-1, 256, 37, 37]         0\nMaxPool2d-17                 [-1, 256, 18, 18]         0\nConv2d-18                    [-1, 512, 18, 18]         1,180,160\nReLU-19                      [-1, 512, 18, 18]         0\nConv2d-20                    [-1, 512, 18, 18]         2,359,808\nReLU-21                      [-1, 512, 18, 18]         0\nConv2d-22                    [-1, 512, 18, 18]         2,359,808\nReLU-23                      [-1, 512, 18, 18]         0\nMaxPool2d-24                 [-1, 512, 9, 9]           0\nConv2d-25                    [-1, 512, 9, 9]           2,359,808\nReLU-26                      [-1, 512, 9, 9]           0\nConv2d-27                    [-1, 512, 9, 9]           2,359,808\nReLU-28                      [-1, 512, 9, 9]           0\nConv2d-29                    [-1, 512, 9, 9]           2,359,808\nReLU-30                      [-1, 512, 9, 9]           0\nMaxPool2d-31                 [-1, 512, 4, 4]           0\nAdaptiveAvgPool2d-32         [-1, 512, 7, 7]           0\nLinear-33                    [-1, 4096]                102,764,544\nReLU-34                      [-1, 4096]                0\nDropout-35                   [-1, 4096]                0\nLinear-36                    [-1, 4096]                16,781,312\nReLU-37                      [-1, 4096]                0\nDropout-38                   [-1, 4096]                0\nLinear-39                    [-1, 1000]                4,097,000\n================================================================\nTotal params: 138,357,544\nTrainable params: 138,357,544\nNon-trainable params: 0\n----------------------------------------------------------------\nInput size (MB): 0.26\n```\n\n在深度神經網路中，不同層的參數量（parameter count）差異極大。有些 層雖然數量少但計算量大，有些則相反。了解參數分佈情形，有助於模型 壓縮與遷移學習設計。請問在 VGG16 中，下列何者的參數量最多？",
     "options": [
@@ -2273,8 +2556,10 @@ var ipasAiMidQuestions = [
     "id": 142
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 43,
     "question": "【背景說明：載入預訓練的 VGG16 模型並輸出其完整層級結構與參數統計摘要如下】\n```python\nfrom torchsummary import summary\nfrom torchvision import models\nmodel = models.vgg16(weights='IMAGENET1K_V1')\nsummary(model, (3, 150, 150))\n```\n\n輸出摘要表：\n```\nLayer (type)                 Output Shape              Param #\n================================================================\nConv2d-1                     [-1, 64, 150, 150]        1,792\nReLU-2                       [-1, 64, 150, 150]        0\nConv2d-3                     [-1, 64, 150, 150]        36,928\nReLU-4                       [-1, 64, 150, 150]        0\nMaxPool2d-5                  [-1, 64, 75, 75]          0\nConv2d-6                     [-1, 128, 75, 75]         73,856\nReLU-7                       [-1, 128, 75, 75]         0\nConv2d-8                     [-1, 128, 75, 75]         147,584\nReLU-9                       [-1, 128, 75, 75]         0\nMaxPool2d-10                 [-1, 128, 37, 37]         0\nConv2d-11                    [-1, 256, 37, 37]         295,168\nReLU-12                      [-1, 256, 37, 37]         0\nConv2d-13                    [-1, 256, 37, 37]         590,080\nReLU-14                      [-1, 256, 37, 37]         0\nConv2d-15                    [-1, 256, 37, 37]         590,080\nReLU-16                      [-1, 256, 37, 37]         0\nMaxPool2d-17                 [-1, 256, 18, 18]         0\nConv2d-18                    [-1, 512, 18, 18]         1,180,160\nReLU-19                      [-1, 512, 18, 18]         0\nConv2d-20                    [-1, 512, 18, 18]         2,359,808\nReLU-21                      [-1, 512, 18, 18]         0\nConv2d-22                    [-1, 512, 18, 18]         2,359,808\nReLU-23                      [-1, 512, 18, 18]         0\nMaxPool2d-24                 [-1, 512, 9, 9]           0\nConv2d-25                    [-1, 512, 9, 9]           2,359,808\nReLU-26                      [-1, 512, 9, 9]           0\nConv2d-27                    [-1, 512, 9, 9]           2,359,808\nReLU-28                      [-1, 512, 9, 9]           0\nConv2d-29                    [-1, 512, 9, 9]           2,359,808\nReLU-30                      [-1, 512, 9, 9]           0\nMaxPool2d-31                 [-1, 512, 4, 4]           0\nAdaptiveAvgPool2d-32         [-1, 512, 7, 7]           0\nLinear-33                    [-1, 4096]                102,764,544\nReLU-34                      [-1, 4096]                0\nDropout-35                   [-1, 4096]                0\nLinear-36                    [-1, 4096]                16,781,312\nReLU-37                      [-1, 4096]                0\nDropout-38                   [-1, 4096]                0\nLinear-39                    [-1, 1000]                4,097,000\n================================================================\nTotal params: 138,357,544\nTrainable params: 138,357,544\nNon-trainable params: 0\n----------------------------------------------------------------\nInput size (MB): 0.26\n```\n\n在神經網路中，了解各層的運算量分佈，有助於模型壓縮與硬體加速的策 略設計。請問在 VGG16 中，下列何者運算量(FLOPs)最多？",
     "options": [
@@ -2289,8 +2574,10 @@ var ipasAiMidQuestions = [
     "id": 143
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 44,
     "question": "【背景說明：載入預訓練的 VGG16 模型並輸出其完整層級結構與參數統計摘要如下】\n```python\nfrom torchsummary import summary\nfrom torchvision import models\nmodel = models.vgg16(weights='IMAGENET1K_V1')\nsummary(model, (3, 150, 150))\n```\n\n輸出摘要表：\n```\nLayer (type)                 Output Shape              Param #\n================================================================\nConv2d-1                     [-1, 64, 150, 150]        1,792\nReLU-2                       [-1, 64, 150, 150]        0\nConv2d-3                     [-1, 64, 150, 150]        36,928\nReLU-4                       [-1, 64, 150, 150]        0\nMaxPool2d-5                  [-1, 64, 75, 75]          0\nConv2d-6                     [-1, 128, 75, 75]         73,856\nReLU-7                       [-1, 128, 75, 75]         0\nConv2d-8                     [-1, 128, 75, 75]         147,584\nReLU-9                       [-1, 128, 75, 75]         0\nMaxPool2d-10                 [-1, 128, 37, 37]         0\nConv2d-11                    [-1, 256, 37, 37]         295,168\nReLU-12                      [-1, 256, 37, 37]         0\nConv2d-13                    [-1, 256, 37, 37]         590,080\nReLU-14                      [-1, 256, 37, 37]         0\nConv2d-15                    [-1, 256, 37, 37]         590,080\nReLU-16                      [-1, 256, 37, 37]         0\nMaxPool2d-17                 [-1, 256, 18, 18]         0\nConv2d-18                    [-1, 512, 18, 18]         1,180,160\nReLU-19                      [-1, 512, 18, 18]         0\nConv2d-20                    [-1, 512, 18, 18]         2,359,808\nReLU-21                      [-1, 512, 18, 18]         0\nConv2d-22                    [-1, 512, 18, 18]         2,359,808\nReLU-23                      [-1, 512, 18, 18]         0\nMaxPool2d-24                 [-1, 512, 9, 9]           0\nConv2d-25                    [-1, 512, 9, 9]           2,359,808\nReLU-26                      [-1, 512, 9, 9]           0\nConv2d-27                    [-1, 512, 9, 9]           2,359,808\nReLU-28                      [-1, 512, 9, 9]           0\nConv2d-29                    [-1, 512, 9, 9]           2,359,808\nReLU-30                      [-1, 512, 9, 9]           0\nMaxPool2d-31                 [-1, 512, 4, 4]           0\nAdaptiveAvgPool2d-32         [-1, 512, 7, 7]           0\nLinear-33                    [-1, 4096]                102,764,544\nReLU-34                      [-1, 4096]                0\nDropout-35                   [-1, 4096]                0\nLinear-36                    [-1, 4096]                16,781,312\nReLU-37                      [-1, 4096]                0\nDropout-38                   [-1, 4096]                0\nLinear-39                    [-1, 1000]                4,097,000\n================================================================\nTotal params: 138,357,544\nTrainable params: 138,357,544\nNon-trainable params: 0\n----------------------------------------------------------------\nInput size (MB): 0.26\n```\n\nVGG16 層數深且結構規則，由多層卷積、池化及全連接層組成。了解各層 的輸入/輸出維度、參數量及記憶體需求，有助於掌握 CNN 模型的組成邏輯 與實作技巧。根據 VGG16 的模型架構，下列敘述何者正確？",
     "options": [
@@ -2305,8 +2592,10 @@ var ipasAiMidQuestions = [
     "id": 144
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 45,
     "question": "在實務應用中，我們常使用遷移學習(transfer learning)技巧，即載入預 訓練模型（如 VGG16） ，凍結部分層的參數，只針對特定任務重新訓練最後 幾層，這種做法可節省訓練時間並提升模型效能。假設你要對 VGG16 進行 遷移學習(transfer learning)，希望凍結卷積層的參數，只訓練最後全連 接層(classifier)。下列哪段程式碼寫法正確？",
     "options": [
@@ -2321,8 +2610,10 @@ var ipasAiMidQuestions = [
     "id": 145
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 46,
     "question": "【背景說明】在郵遞區號自動辨識的研究中，研究人員收集了一份手寫數字影像資料集，每一張影像為 8×8 的灰階圖片，共包含多個手寫數字樣本。這份資料集來自 UCI Machine Learning Repository，常被用於數字辨識與機器學習方法的教學與實驗。在過程中，研究人員發現資料中可能存在雜訊，例如筆跡模糊或影像中附加的干擾點，這會影響後續分類模型的效能。因此，他們希望透過資料降噪的方法，提升後續分類的準確度。同時，他們也想透過 KNN (K-Nearest Neighbors) 搭配交叉驗證來評估模型表現，確保模型在不同資料切割下都能有穩定的預測能力。\n\n假設研究人員已將含有雜訊的手寫數字影像存放在變數 noisy 中。部分資 料經視覺化後的外觀如下：      他們嘗試使用 PCA 進行降噪，並希望能保留影像的主要特徵，同時去除影 像中的雜訊。然而，當程式執行後，觀察到影像仍然含有明顯的雜訊。研 究人員懷疑是程式中某個步驟的設定不正確，導致 PCA 沒有發揮降噪的作 用，需要修改程式碼才能讓降噪有效。請問哪一段程式碼需要修改，才能 讓 PCA 對 noisy 影像有效去噪？",
     "options": [
@@ -2337,8 +2628,10 @@ var ipasAiMidQuestions = [
     "id": 146
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 47,
     "question": "【背景說明】在郵遞區號自動辨識的研究中，研究人員收集了一份手寫數字影像資料集，每一張影像為 8×8 的灰階圖片，共包含多個手寫數字樣本。這份資料集來自 UCI Machine Learning Repository，常被用於數字辨識與機器學習方法的教學與實驗。在過程中，研究人員發現資料中可能存在雜訊，例如筆跡模糊或影像中附加的干擾點，這會影響後續分類模型的效能。因此，他們希望透過資料降噪的方法，提升後續分類的準確度。同時，他們也想透過 KNN (K-Nearest Neighbors) 搭配交叉驗證來評估模型表現，確保模型在不同資料切割下都能有穩定的預測能力。\n\n研究人員在對 digits 資料集進行分類時，決定使用 KNN 並搭配交叉驗證來 評估模型準確率。他們撰寫了四組不同的程式碼來進行 KNN 訓練與交叉驗 證，但不確定哪幾組程式碼能正確執行並輸出準確率。每組程式碼在資料 切割、模型訓練、交叉驗證函數的使用上略有差異，研究人員希望找出可 以正確完成任務的程式碼組合，以確保模型評估的可靠性。          請問哪幾組程式碼能正確使用 KNN 搭配交叉驗證，對 digits 資料集進行訓 練並輸出準確率？",
     "options": [
@@ -2353,8 +2646,10 @@ var ipasAiMidQuestions = [
     "id": 147
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 48,
     "question": "【背景說明：df_train 與 df_test 載入與預處理程式碼如下】\n```python\n# 載入鐵達尼號(Titanic)資料集\n# dataset_train = df_train.values.astype('float32')\n# dataset_test = df_test.values.astype('float32')\n# X_train = dataset_train[:, 0:9], y_train = dataset_train[:, 9]\n# X_test = dataset_test[:, 0:9], y_test = dataset_test[:, 9]\n\n# 特徵處理程式碼：\nX_train -= X_train.mean(axis=0)\nX_train /= X_train.std(axis=0)\nX_test -= X_test.mean(axis=0)\nX_test /= X_test.std(axis=0)\n```\n\n參考上述程式碼，下列何者正確？",
     "options": [
@@ -2369,8 +2664,10 @@ var ipasAiMidQuestions = [
     "id": 148
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 49,
     "question": "【背景說明：Keras 多層感知機模型架構與編譯程式碼如下】\n```python\nmodel = Sequential()\nmodel.add(Input(shape=(X_train.shape[1],)))\nmodel.add(Dense(10, activation=\"relu\"))\nmodel.add(Dense(10, activation=\"relu\"))\nmodel.add(Dense(1, activation=\"sigmoid\"))\nmodel.summary()\nmodel.compile(loss=\"binary_crossentropy\", optimizer=\"adam\", metrics=[\"accuracy\"])\n```\n\n模型摘要輸出如下：\n```\nModel: \"sequential\"\n_________________________________________________________________\nLayer (type)                 Output Shape              Param #   \n=================================================================\ndense (Dense)                (None, 10)                [空格1]    \n_________________________________________________________________\ndense_1 (Dense)              (None, 10)                [空格2]    \n_________________________________________________________________\ndense_2 (Dense)              (None, 1)                 11        \n=================================================================\n```\n\n參考上述執行結果，下列何者正確？",
     "options": [
@@ -2385,8 +2682,10 @@ var ipasAiMidQuestions = [
     "id": 149
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "114年第二次歷屆考題",
+    "assessmentTopic": "歷屆",
+    "assessmentContent": "",
     "num": 50,
     "question": "【背景說明：模型擬合與繪製訓練曲線程式碼如下】\n```python\nhistory = model.fit(X_train, y_train, validation_split=0.2, epochs=100, batch_size=10)\nloss, accuracy = model.evaluate(X_train, y_train, verbose=0)\n\nimport matplotlib.pyplot as plt\nloss = history.history[\"loss\"]\nepochs = range(1, len(loss)+1)\nval_loss = history.history[\"val_loss\"]\nplt.plot(epochs, loss, [空格1] , label=\"Training Loss\")\nplt.plot(epochs, val_loss, [空格2] , label=\"Validation Loss\")\nplt.title(\"Training and Validation Loss\")\nplt.xlabel(\"Epochs\")\nplt.ylabel(\"Loss\")\nplt.legend()\nplt.show()\n```\n\n參考上述執行結果，下列何者正確？",
     "options": [
@@ -2401,8 +2700,10 @@ var ipasAiMidQuestions = [
     "id": 150
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "官方樣題範例",
+    "assessmentTopic": "範例",
+    "assessmentContent": "",
     "num": 1,
     "question": "下列何者並未使用人工智慧（AI）或機器學習（ML）技術？",
     "options": [
@@ -2417,8 +2718,10 @@ var ipasAiMidQuestions = [
     "id": 151
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "官方樣題範例",
+    "assessmentTopic": "範例",
+    "assessmentContent": "",
     "num": 2,
     "question": "在文本資料處理過程中， 通常會需要 「將接續的文本轉換為詞彙單位」 ， 以便後續的處理。請問上述所指的是文本資料處理中的哪一個方法？",
     "options": [
@@ -2433,8 +2736,10 @@ var ipasAiMidQuestions = [
     "id": 152
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "官方樣題範例",
+    "assessmentTopic": "範例",
+    "assessmentContent": "",
     "num": 3,
     "question": "下列何者為自然語言處理（NLP）在機器學習應用中的主要用途？",
     "options": [
@@ -2449,8 +2754,10 @@ var ipasAiMidQuestions = [
     "id": 153
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "官方樣題範例",
+    "assessmentTopic": "範例",
+    "assessmentContent": "",
     "num": 4,
     "question": "關於深度學習模型，下列敘述何者不正確？",
     "options": [
@@ -2465,8 +2772,10 @@ var ipasAiMidQuestions = [
     "id": 154
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "官方樣題範例",
+    "assessmentTopic": "範例",
+    "assessmentContent": "",
     "num": 5,
     "question": "下列何者為機器學習模型在業界部署的主要趨勢？",
     "options": [
@@ -2481,8 +2790,10 @@ var ipasAiMidQuestions = [
     "id": 155
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "官方樣題範例",
+    "assessmentTopic": "範例",
+    "assessmentContent": "",
     "num": 6,
     "question": "下列何者「最適合」使用迴歸（Regression）模型進行預測？",
     "options": [
@@ -2497,8 +2808,10 @@ var ipasAiMidQuestions = [
     "id": 156
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "官方樣題範例",
+    "assessmentTopic": "範例",
+    "assessmentContent": "",
     "num": 7,
     "question": "【背景說明：示意圖展示了電腦視覺辨識的四種核心技術示意圖：\n(a) 圖中只有一隻貓，並標記整體類別為「Cat」（圖像分類）\n(b) 圖中有一隻貓和一隻狗，且背景、貓與狗分別用不同色塊大面積著色，區分不同類別的語意像素（語義分割）\n(c) 圖中有一隻貓和一隻狗，並用兩個矩形邊界框（Bounding Box）分別框住並標記類別（物件偵測）\n(d) 圖中有多隻貓和多隻狗，不僅區分貓狗類別，更將每一隻獨立的動物個體用不同的色塊著色以區分個體（實例分割）】\n\n附圖中，展示了電腦視覺辨識的幾項技術。  請問下列選項中，何者正確配對了圖中（a）、（b）、（c）、（d）所代表 的技術名稱？",
     "options": [
@@ -2513,8 +2826,10 @@ var ipasAiMidQuestions = [
     "id": 157
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "官方樣題範例",
+    "assessmentTopic": "範例",
+    "assessmentContent": "",
     "num": 9,
     "question": "供應鏈攻擊（Supply Chain Attacks）如何影響企業內部 AI 系統安全？",
     "options": [
@@ -2529,8 +2844,10 @@ var ipasAiMidQuestions = [
     "id": 158
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "官方樣題範例",
+    "assessmentTopic": "範例",
+    "assessmentContent": "",
     "num": 10,
     "question": "下列何者為自然語言處理（NLP）中的詞嵌入技術 ， 能將文字轉換為向 量以利機器學習處理？",
     "options": [
@@ -2545,8 +2862,10 @@ var ipasAiMidQuestions = [
     "id": 159
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "官方樣題範例",
+    "assessmentTopic": "範例",
+    "assessmentContent": "",
     "num": 11,
     "question": "在多模態學習中，早期融合（Early Fusion）方法的主要特徵為何？",
     "options": [
@@ -2561,8 +2880,10 @@ var ipasAiMidQuestions = [
     "id": 160
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "官方樣題範例",
+    "assessmentTopic": "範例",
+    "assessmentContent": "",
     "num": 12,
     "question": "下列哪項技術最有助於強化醫療多模態  AI 系統在處理影像與文本數 據時的整合能力？",
     "options": [
@@ -2577,8 +2898,10 @@ var ipasAiMidQuestions = [
     "id": 161
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "官方樣題範例",
+    "assessmentTopic": "範例",
+    "assessmentContent": "",
     "num": 13,
     "question": "某線上音樂平台希望根據用戶的聽歌與查詢行為，將用戶劃分為不同 的類型。若事前沒有定義用戶類型，下列哪一種模型最適合用於此任 務？",
     "options": [
@@ -2593,8 +2916,10 @@ var ipasAiMidQuestions = [
     "id": 162
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "官方樣題範例",
+    "assessmentTopic": "範例",
+    "assessmentContent": "",
     "num": 15,
     "question": "某企業即將部署 AI 模型至現有營運系統，進入系統整合測試階段。測 試工程師需確認所有模組在實際環境中能正確協同運作。下列哪項驗 證最應優先執行？",
     "options": [
@@ -2609,8 +2934,10 @@ var ipasAiMidQuestions = [
     "id": 163
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "官方樣題範例",
+    "assessmentTopic": "範例",
+    "assessmentContent": "",
     "num": 1,
     "question": "在巨量資料分析班中，共有一年級至四年級，每個年級有 50 個學生， 且學生身高呈常態分佈。下列敘述何者不正確？",
     "options": [
@@ -2625,8 +2952,10 @@ var ipasAiMidQuestions = [
     "id": 164
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "官方樣題範例",
+    "assessmentTopic": "範例",
+    "assessmentContent": "",
     "num": 2,
     "question": "關於接受者操作特徵（ROC）曲線，下列敘述何者正確？",
     "options": [
@@ -2641,8 +2970,10 @@ var ipasAiMidQuestions = [
     "id": 165
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "官方樣題範例",
+    "assessmentTopic": "範例",
+    "assessmentContent": "",
     "num": 3,
     "question": "下列何者不屬於特徵工程（Feature Engineering）？",
     "options": [
@@ -2657,8 +2988,10 @@ var ipasAiMidQuestions = [
     "id": 166
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "官方樣題範例",
+    "assessmentTopic": "範例",
+    "assessmentContent": "",
     "num": 4,
     "question": "拉拉網路商城的老闆擬透過機器學習的方式，利用過往的產品銷售資 料，預測下一季的產品銷售數量，以調整現有的庫存水位。下列哪一 個類型的模型，比較適合應用在老闆期望的預測目標？",
     "options": [
@@ -2673,8 +3006,10 @@ var ipasAiMidQuestions = [
     "id": 167
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "官方樣題範例",
+    "assessmentTopic": "範例",
+    "assessmentContent": "",
     "num": 5,
     "question": "對於 低結構化的文本或圖像資料，下列哪一種特徵工程（ Feature  Engineering）方法最為適用？",
     "options": [
@@ -2689,8 +3024,10 @@ var ipasAiMidQuestions = [
     "id": 168
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "官方樣題範例",
+    "assessmentTopic": "範例",
+    "assessmentContent": "",
     "num": 6,
     "question": "下列哪種方法屬於非監督式學習中的降維技術？",
     "options": [
@@ -2705,8 +3042,10 @@ var ipasAiMidQuestions = [
     "id": 169
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "官方樣題範例",
+    "assessmentTopic": "範例",
+    "assessmentContent": "",
     "num": 7,
     "question": "異常值偵測使用 IQR（Interquartile Range）法時，下列哪一種範圍 外的數值會被視為異常？",
     "options": [
@@ -2721,8 +3060,10 @@ var ipasAiMidQuestions = [
     "id": 170
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "官方樣題範例",
+    "assessmentTopic": "範例",
+    "assessmentContent": "",
     "num": 8,
     "question": "差分隱私（Differential Privacy）在數據應用中的目的為何？",
     "options": [
@@ -2737,8 +3078,10 @@ var ipasAiMidQuestions = [
     "id": 171
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "官方樣題範例",
+    "assessmentTopic": "範例",
+    "assessmentContent": "",
     "num": 9,
     "question": "若使用主成分分析 （PCA） 將資料降維至兩個主成分 ， 這表示哪一種情 況？",
     "options": [
@@ -2753,8 +3096,10 @@ var ipasAiMidQuestions = [
     "id": 172
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "官方樣題範例",
+    "assessmentTopic": "範例",
+    "assessmentContent": "",
     "num": 10,
     "question": "假設有一組成績資料呈現常態分配，平均數為70，標準差為 10，若某 位學生的成績為 90，該學生的 Z 分數約為多少？",
     "options": [
@@ -2769,8 +3114,10 @@ var ipasAiMidQuestions = [
     "id": 173
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "官方樣題範例",
+    "assessmentTopic": "範例",
+    "assessmentContent": "",
     "num": 11,
     "question": "在 AI 倫理治理的背景下， 「透明性 （Transparency） 」 通常是指什麼？",
     "options": [
@@ -2785,40 +3132,10 @@ var ipasAiMidQuestions = [
     "id": 174
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "官方樣題範例",
-    "num": 12,
-    "question": "若企業希望即時監控交易異常，應選擇下列哪一類數據處理架構？",
-    "options": [
-      "批次式資料倉儲",
-      "離線式資料湖",
-      "串流處理系統",
-      "冷資料備援架構  13 C 為了分析社群網路使用者之間的互動結構，應使用下列哪種分析方"
-    ],
-    "answer": "C",
-    "ans_text": "標準答案：(C)",
-    "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 175
-  },
-  {
-    "subject": "中級：大數據處理分析與應用",
-    "chapter": "官方樣題範例",
-    "num": 14,
-    "question": "為了加速大數據環境下的 AI 模型訓練，以下哪一項為常見技術？",
-    "options": [
-      "早期停止（Early Stopping）",
-      "批次分群（Mini-batching）",
-      "混合精度訓練（Mixed Precision Training）",
-      "主成分分析（PCA）"
-    ],
-    "answer": "C",
-    "ans_text": "標準答案：(C)",
-    "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 176
-  },
-  {
-    "subject": "中級：大數據處理分析與應用",
-    "chapter": "官方樣題範例",
+    "assessmentTopic": "範例",
+    "assessmentContent": "",
     "num": 15,
     "question": "考慮使用 CIFAR-10 資料集進行資料處理，資料包括32×32 像素的多 筆彩色照片。下列程式碼的資料處理，請選出正確的選項。",
     "options": [
@@ -2830,11 +3147,13 @@ var ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 177
+    "id": 175
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "官方樣題範例",
+    "assessmentTopic": "範例",
+    "assessmentContent": "",
     "num": 1,
     "question": "在 MapReduce 計算框架中，關於 Map 和 Reduce 所負責處理資料 的問題，下列敘述何者正確？",
     "options": [
@@ -2846,11 +3165,13 @@ var ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 178
+    "id": 176
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "官方樣題範例",
+    "assessmentTopic": "範例",
+    "assessmentContent": "",
     "num": 2,
     "question": "下列何種卷積神經網路 （Convolution Neural Networks, CNN） 是將 卷積層加寬而非加深？",
     "options": [
@@ -2862,11 +3183,13 @@ var ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 179
+    "id": 177
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "官方樣題範例",
+    "assessmentTopic": "範例",
+    "assessmentContent": "",
     "num": 3,
     "question": "當模型的訓練誤差（Training Error）低、但測試誤差（Test Error）很 大時，這通常是在訓練過程中產生下列哪一種情況？",
     "options": [
@@ -2878,11 +3201,13 @@ var ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 180
+    "id": 178
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "官方樣題範例",
+    "assessmentTopic": "範例",
+    "assessmentContent": "",
     "num": 4,
     "question": "下列哪一種指標通常用於評估迴歸模型的效能？",
     "options": [
@@ -2894,11 +3219,13 @@ var ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 181
+    "id": 179
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "官方樣題範例",
+    "assessmentTopic": "範例",
+    "assessmentContent": "",
     "num": 5,
     "question": "近年來，深度學習研究與應用蓬勃發展，但數據本身可能存在什麼潛 在問題？",
     "options": [
@@ -2910,11 +3237,13 @@ var ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 182
+    "id": 180
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "官方樣題範例",
+    "assessmentTopic": "範例",
+    "assessmentContent": "",
     "num": 6,
     "question": "在分類任務中，深度學習模型通常搭配哪一種輸出函數？",
     "options": [
@@ -2926,11 +3255,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 183
+    "id": 181
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "官方樣題範例",
+    "assessmentTopic": "範例",
+    "assessmentContent": "",
     "num": 7,
     "question": "下列哪一種學習任務不適合使用監督式學習方法處理？",
     "options": [
@@ -2942,11 +3273,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 184
+    "id": 182
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "官方樣題範例",
+    "assessmentTopic": "範例",
+    "assessmentContent": "",
     "num": 8,
     "question": "在神經網路中，前向傳播 （Forward Propagation） 主要依賴下列哪一 種數學操作？",
     "options": [
@@ -2958,11 +3291,13 @@ var ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 185
+    "id": 183
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "官方樣題範例",
+    "assessmentTopic": "範例",
+    "assessmentContent": "",
     "num": 9,
     "question": "特徵縮放 （Feature Scaling）中 ， 下列何者為標準化 （Standardization） 的主要作用？",
     "options": [
@@ -2974,11 +3309,13 @@ var ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 186
+    "id": 184
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "官方樣題範例",
+    "assessmentTopic": "範例",
+    "assessmentContent": "",
     "num": 10,
     "question": "關於準確率（Accuracy）的計算方式，下列何者正確？",
     "options": [
@@ -2990,11 +3327,13 @@ var ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 187
+    "id": 185
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "官方樣題範例",
+    "assessmentTopic": "範例",
+    "assessmentContent": "",
     "num": 11,
     "question": "關於損失函數（Loss Function）的主要功能，下列何者正確？",
     "options": [
@@ -3006,11 +3345,13 @@ var ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 188
+    "id": 186
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "官方樣題範例",
+    "assessmentTopic": "範例",
+    "assessmentContent": "",
     "num": 12,
     "question": "關於歐盟《一般資料保護規則（GDPR） 》 ，所謂的被遺忘權（Right to  be Forgotten）主要賦予資料主體哪一項權利？",
     "options": [
@@ -3022,11 +3363,13 @@ var ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 189
+    "id": 187
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "官方樣題範例",
+    "assessmentTopic": "範例",
+    "assessmentContent": "",
     "num": 14,
     "question": "在優化器中，哪一個方法會自動調整每個 參數的學習率，特別適用於 稀疏資料？",
     "options": [
@@ -3038,11 +3381,13 @@ var ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 190
+    "id": 188
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "第三章 AI 相關技術應用",
+    "assessmentTopic": "L211",
+    "assessmentContent": "L21101",
     "num": 1,
     "question": "下列何者為自然語言處理（ NLP）中的詞嵌入技術，能將文字轉換為向量以利 機器學習處理？",
     "options": [
@@ -3054,11 +3399,13 @@ var ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) Word2Vec",
     "explanation": "：Word2Vec 是一種詞嵌入方法，可將文字轉換為連續向量空間中具語意\n的表示，有利後續模型學習。",
-    "id": 191
+    "id": 189
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "第三章 AI 相關技術應用",
+    "assessmentTopic": "L211",
+    "assessmentContent": "L21101",
     "num": 2,
     "question": "在自然語言處理應用中，哪一項任務主要目的是從文字中識別出人名、地名、 組織等資訊？",
     "options": [
@@ -3070,11 +3417,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 命名實體識別",
     "explanation": "命名實體識別 （Named Entity Recognition, NER ） 用於辨識文本中的具名\n實體，如人名、地點與組織等。",
-    "id": 192
+    "id": 190
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "第三章 AI 相關技術應用",
+    "assessmentTopic": "L211",
+    "assessmentContent": "L21101",
     "num": 3,
     "question": "語言模型 BERT 的主要特性為何？",
     "options": [
@@ -3086,11 +3435,13 @@ var ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D) 具雙向上下文理解能力",
     "explanation": "BERT（Bidirectional Encoder Representations from Transformers ）可同時\n考慮上下文中前後的語意，有利於更精準的語言理解。",
-    "id": 193
+    "id": 191
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "第三章 AI 相關技術應用",
+    "assessmentTopic": "L211",
+    "assessmentContent": "L21101",
     "num": 4,
     "question": "在電腦視覺中，影像分類（ Image Classification ）的主要任務是？",
     "options": [
@@ -3102,11 +3453,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 為整張圖片指定一個標籤",
     "explanation": "影像分類是電腦視覺的基本任務之一，其目標是判斷整張影像的主要內\n容屬於哪一預定義類別 ， 例如將圖片分類為 「貓」 、 「狗」 、 「汽車」 等 。 選項 （A）\n描述的是語義分割 （Semantic Segmentation ），（B） 屬於生成式任務如風格轉換 ，\n（D）則是目標偵測（ Object Detection ） ，因此僅有（C）為正確答案。",
-    "id": 194
+    "id": 192
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "第三章 AI 相關技術應用",
+    "assessmentTopic": "L211",
+    "assessmentContent": "L21101",
     "num": 5,
     "question": "若需在一張影像中辨識出多個目標並標示其位置，最適合使用何種技術？",
     "options": [
@@ -3118,11 +3471,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 目標偵測",
     "explanation": "目標偵測（ Object Detection ）能辨識圖像中多個實體，並給出邊界框位\n置資訊。",
-    "id": 195
+    "id": 193
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "第三章 AI 相關技術應用",
+    "assessmentTopic": "L211",
+    "assessmentContent": "L21101",
     "num": 6,
     "question": "生成對抗網路（ GAN）的訓練包含哪兩個核心組件？",
     "options": [
@@ -3134,11 +3489,13 @@ var ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 產生器與鑑別器",
     "explanation": "GAN 由產生器（ Generator ）負責生成資料，鑑別器（ Discriminator ）判\n斷真偽，兩者相互對抗學習。",
-    "id": 196
+    "id": 194
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "第三章 AI 相關技術應用",
+    "assessmentTopic": "L211",
+    "assessmentContent": "L21101",
     "num": 7,
     "question": "在以下哪一個任務中，生成式 AI 技術最常被應用？",
     "options": [
@@ -3150,11 +3507,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 圖片風格轉換",
     "explanation": "：圖片風格轉換（如將相片轉為畫風）是生成式 AI 常見應用之一，通常\n利用 GAN 完成。",
-    "id": 197
+    "id": 195
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "第三章 AI 相關技術應用",
+    "assessmentTopic": "L211",
+    "assessmentContent": "L21101",
     "num": 8,
     "question": "多模態人工智慧的核心目標為何？",
     "options": [
@@ -3166,11 +3525,13 @@ var ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 同時處理並整合來自不同感知類型的資料",
     "explanation": "：多模態 AI 整合文字、影像、聲音等不同資料來源，提升模型理解與生\n成能力。  \n\n 第三章 AI 相關技術應用 \n3-87",
-    "id": 198
+    "id": 196
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "第三章 AI 相關技術應用",
+    "assessmentTopic": "L211",
+    "assessmentContent": "L21101",
     "num": 9,
     "question": "CLIP 模型結合了哪兩種模態進行訓練？",
     "options": [
@@ -3182,11 +3543,13 @@ var ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 文字",
     "explanation": "CLIP 由 OpenAI 所提出，透過大量圖文配對資料進行對比學習，使模型\n能理解跨模態語意關聯。",
-    "id": 199
+    "id": 197
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "第三章 AI 相關技術應用",
+    "assessmentTopic": "L211",
+    "assessmentContent": "L21101",
     "num": 10,
     "question": "在多模態 AI 應用中，以下哪一情境最能展現其優勢？",
     "options": [
@@ -3198,11 +3561,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 影片自動生成字幕",
     "explanation": "影片字幕生成涉及聲音 （語音辨識） 、文字 （轉錄） 、影像 （上下文輔助）\n等多模態資料處理。",
-    "id": 200
+    "id": 198
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "第四章 AI 導入評估規劃",
+    "assessmentTopic": "L212",
+    "assessmentContent": "L21201",
     "num": 1,
     "question": "在評估企業 AI 導入可行性時，下列哪一項屬於「商業價值評估」的考量？",
     "options": [
@@ -3214,11 +3579,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 預期效益與回報",
     "explanation": "：商業價值評估主要衡量 AI 專案在解決問題或創造價值上的潛力，例如\n降低成本、增加收入或提升效率。",
-    "id": 201
+    "id": 199
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "第四章 AI 導入評估規劃",
+    "assessmentTopic": "L212",
+    "assessmentContent": "L21201",
     "num": 2,
     "question": "在進行 AI 導入評估時，為確保企業體系具備執行能力，應考量下列哪一項？",
     "options": [
@@ -3230,11 +3597,13 @@ var ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 技術成熟度與部署資源",
     "explanation": "技術評估是導入前的重要環節，需確認所選技術是否穩定且能在現有架\n構下順利實作。",
-    "id": 202
+    "id": 200
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "第四章 AI 導入評估規劃",
+    "assessmentTopic": "L212",
+    "assessmentContent": "L21201",
     "num": 3,
     "question": "企業進行 AI 導入前的評估分析，通常第一步應聚焦於？",
     "options": [
@@ -3246,11 +3615,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 業務痛點與需求辨識",
     "explanation": "：AI 導入需以業務需求為出發點，若無明確問題定義，後續模型開發將\n失焦或無法產生實際效益。",
-    "id": 203
+    "id": 201
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "第四章 AI 導入評估規劃",
+    "assessmentTopic": "L212",
+    "assessmentContent": "L21201",
     "num": 4,
     "question": "在 AI 導入專案的初期規劃階段，下列哪一項屬於「人員規劃」的重點內容？",
     "options": [
@@ -3262,11 +3633,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) AI 專案所需的跨部 門協作角色",
     "explanation": "：AI 專案導入涉及資料、業務、 IT 等部門合作，需在規劃階段即明確分\n工與責任分配。",
-    "id": 204
+    "id": 202
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "第四章 AI 導入評估規劃",
+    "assessmentTopic": "L212",
+    "assessmentContent": "L21201",
     "num": 5,
     "question": "在 AI 導入規劃過程中，為確保專案順利推進並落實業務需求，下列哪一項規 劃內容最能避免部門間溝通斷裂與責任不清的風險？",
     "options": [
@@ -3278,11 +3651,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 建立跨部門協作機制與角色分工",
     "explanation": "：AI 導入需橫跨業務、資料、 IT 等多部門，若缺乏明確的溝通與分工安\n排 ， 容易出現責任模糊或推進不順 。 建立協作機制可確保需求對齊 、 資料準備 、\n模型開發與部署流程協同一致 ， 是規劃階段關鍵工作 。 其他選項則過度聚焦於\n單點技術或管理決策，無法解決跨部門合作問題。",
-    "id": 205
+    "id": 203
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "第四章 AI 導入評估規劃",
+    "assessmentTopic": "L212",
+    "assessmentContent": "L21201",
     "num": 6,
     "question": "當 AI 導入規劃需評估系統部署模式時，若考量資料隱私與本地控制需求，應 優先考慮？",
     "options": [
@@ -3294,11 +3669,13 @@ var ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 地端私有部署",
     "explanation": "地端部署可提供更強的資料控制與隱私保障，常見於金融、政府、醫療\n等敏感領域。",
-    "id": 206
+    "id": 204
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "第四章 AI 導入評估規劃",
+    "assessmentTopic": "L212",
+    "assessmentContent": "L21201",
     "num": 7,
     "question": "在 AI 風險評估中，若模型輸出不穩定且缺乏邏輯可解釋性，可能帶來哪一風 險？",
     "options": [
@@ -3310,11 +3687,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 決策透明性不足",
     "explanation": "：模型無法解釋其輸出會降低使用者與監管單位的信任，是常見的 AI 風\n險來源之一。",
-    "id": 207
+    "id": 205
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "第四章 AI 導入評估規劃",
+    "assessmentTopic": "L212",
+    "assessmentContent": "L21201",
     "num": 8,
     "question": "以下何者屬於 AI 模型偏誤造成的風險？",
     "options": [
@@ -3326,11 +3705,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 特定族群預測結果不公平",
     "explanation": "資料或模型偏誤常導致對少數族群、女性或弱勢族群的不公平結果，是\n需積極管理的 AI 倫理風險。  \n\n 第四章  AI 導入評估規劃 \n4-47",
-    "id": 208
+    "id": 206
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "第四章 AI 導入評估規劃",
+    "assessmentTopic": "L212",
+    "assessmentContent": "L21201",
     "num": 9,
     "question": "為管理 AI 導入過程中的「法律與合規風險」 ，企業應採取何種措施？",
     "options": [
@@ -3342,11 +3723,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 檢視個資使用的合法性",
     "explanation": "：若使用涉及個人資料，須確認是否符合資料保護法（如 GDPR 或個資\n法）規範。",
-    "id": 209
+    "id": 207
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "第四章 AI 導入評估規劃",
+    "assessmentTopic": "L212",
+    "assessmentContent": "L21201",
     "num": 10,
     "question": "AI 模型部署後，若長期輸入資料分佈逐漸改變，導致模型效能下降，最適合 採取下列哪一項作法進行風險管理？",
     "options": [
@@ -3358,11 +3741,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 建置概念漂移監控與觸發模型再訓練 流程",
     "explanation": "：概念漂移（ Concept Drift ）指資料分佈隨時間改變，可能使模型預測確\n率下降，因此在風險管理架構中，須建置監控機制偵測輸入與輸出異常，並結\n合模型再訓練策略進行調整。選項（ A）（D）與風險無直接關聯， （B）雖具備\n冗餘設計概念，但不直接針對資料變異處理。",
-    "id": 210
+    "id": 208
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "第五章 AI 技術應用與系統部署",
+    "assessmentTopic": "L213",
+    "assessmentContent": "L21301",
     "num": 1,
     "question": "在進行 AI 建模前，進行「資料標註」的主要目的是？",
     "options": [
@@ -3374,11 +3759,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 讓模型能夠辨識輸入與目標之間的對應關係",
     "explanation": "資料標註是監督式學習的關鍵步驟，能讓模型理解每筆資料對應的標籤\n或結果。",
-    "id": 211
+    "id": 209
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "第五章 AI 技術應用與系統部署",
+    "assessmentTopic": "L213",
+    "assessmentContent": "L21301",
     "num": 2,
     "question": "在特徵工程中，進 行特徵標準化（如 Z-score 標準化）的主要目的是？",
     "options": [
@@ -3390,11 +3777,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 將特徵縮放至相同尺度，利於模型學習",
     "explanation": "：許多演算法（如 SVM、KNN）對特徵尺度敏感，標準化有助於提升模\n型表現與穩定性。",
-    "id": 212
+    "id": 210
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "第五章 AI 技術應用與系統部署",
+    "assessmentTopic": "L213",
+    "assessmentContent": "L21301",
     "num": 3,
     "question": "若某企業的目標是預測顧客是否會流失，最適合選用下列哪一種模型任務？",
     "options": [
@@ -3406,11 +3795,13 @@ var ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A) 分類任務",
     "explanation": "：顧客流失 通常為 「會 /不會」 的二元分 類問題 ，適合使 用分 類模型如  \nLogistic Regression 、決策樹等。",
-    "id": 213
+    "id": 211
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "第五章 AI 技術應用與系統部署",
+    "assessmentTopic": "L213",
+    "assessmentContent": "L21301",
     "num": 4,
     "question": "關於模型選擇，下列哪一項敘述較為正確？",
     "options": [
@@ -3422,11 +3813,13 @@ var ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 模型應優先考慮開發成本與可部署性",
     "explanation": "選擇模型需考量資料特性、開發時間、計算成本與後續維運難度，不應\n一味追求複雜度。",
-    "id": 214
+    "id": 212
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "第五章 AI 技術應用與系統部署",
+    "assessmentTopic": "L213",
+    "assessmentContent": "L21301",
     "num": 5,
     "question": "下列哪一種資料前處理技術主要用來處理缺失值？",
     "options": [
@@ -3438,11 +3831,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 插補法",
     "explanation": "插補法 （Imputation ） 可用平均數、中位數、眾數或模型預測方式填補缺\n失欄位，常用於資料清理階段。",
-    "id": 215
+    "id": 213
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "第五章 AI 技術應用與系統部署",
+    "assessmentTopic": "L213",
+    "assessmentContent": "L21301",
     "num": 6,
     "question": "在設計 AI 應用系統架構時，使用容器技術（如 Docker ）的主要優點為？",
     "options": [
@@ -3454,11 +3849,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 促進模型跨平台部署與環境一致性",
     "explanation": "容器技術可封裝應用與其依賴環境，確保模型從開發到部署保持一致。",
-    "id": 216
+    "id": 214
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "第五章 AI 技術應用與系統部署",
+    "assessmentTopic": "L213",
+    "assessmentContent": "L21301",
     "num": 7,
     "question": "MLOps 的主要目的為何？",
     "options": [
@@ -3470,11 +3867,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 實現 AI 模型的自動化開發、部署與持續維運流程",
     "explanation": "MLOps 結合 DevOps 與機器學習，可實現模型生命週期的持續整合、測\n試與監控。",
-    "id": 217
+    "id": 215
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "第五章 AI 技術應用與系統部署",
+    "assessmentTopic": "L213",
+    "assessmentContent": "L21301",
     "num": 8,
     "question": "在邊緣運算架構中， AI 模型的推論通常會發生在哪裡？",
     "options": [
@@ -3486,11 +3885,13 @@ var ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 終端裝置本地端",
     "explanation": "：邊緣 AI 將模型部署至如手機、攝影機、感測器等裝置上，提升即時性\n並減少延遲。",
-    "id": 218
+    "id": 216
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "第五章 AI 技術應用與系統部署",
+    "assessmentTopic": "L213",
+    "assessmentContent": "L21301",
     "num": 9,
     "question": "持續監控部署後 AI 模型效能的主要目的為何？",
     "options": [
@@ -3502,11 +3903,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 偵測模型概念漂移與效能下降",
     "explanation": "模型部署後若輸入資料特性改變，將可能導致預測不準，故需建立監控\n機制。  \n\n 第五章  AI 技術應用與系統部署 \n5-26",
-    "id": 219
+    "id": 217
   },
   {
-    "subject": "中級：人工智慧技術應用與規劃",
+    "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "第五章 AI 技術應用與系統部署",
+    "assessmentTopic": "L213",
+    "assessmentContent": "L21301",
     "num": 10,
     "question": "在 AI 系統整合過程中，為確保模型可與業務流程無縫對接，通常需要哪種角 色協作？",
     "options": [
@@ -3518,11 +3921,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 產品經理與工程人員",
     "explanation": "產品經理負責需求對齊與驗證場景，工程人員負責將模型封裝並整合至\n應用流程。",
-    "id": 220
+    "id": 218
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "第三章 機率統計基礎",
+    "assessmentTopic": "L221",
+    "assessmentContent": "L22101",
     "num": 1,
     "question": "下列何者屬於 「敘述統計」的主要目的？",
     "options": [
@@ -3534,11 +3939,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 概括並整理資料特徵",
     "explanation": "敘述統計 （Descriptive Statistics ） 主要用於整理、彙整與呈現資料特性，\n不涉及推論或決策。",
-    "id": 221
+    "id": 219
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "第三章 機率統計基礎",
+    "assessmentTopic": "L221",
+    "assessmentContent": "L22101",
     "num": 2,
     "question": "下列何者為常見的離散型機率分佈？",
     "options": [
@@ -3550,11 +3957,13 @@ var ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D) 二項分佈",
     "explanation": "二項分佈用於計算多次伯努利試驗中成功的次數 ， 為典型的離散型分佈 。",
-    "id": 222
+    "id": 220
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "第三章 機率統計基礎",
+    "assessmentTopic": "L221",
+    "assessmentContent": "L22101",
     "num": 3,
     "question": "在資料集中若極端值眾多，應優先採用哪一項代表集中趨勢？",
     "options": [
@@ -3566,11 +3975,13 @@ var ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 中位數",
     "explanation": "：中位數不受極端值影響，適合描述偏態分佈或有離群值的資料。",
-    "id": 223
+    "id": 221
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "第三章 機率統計基礎",
+    "assessmentTopic": "L221",
+    "assessmentContent": "L22101",
     "num": 4,
     "question": "標準差的統計意義為何？",
     "options": [
@@ -3582,11 +3993,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 資料平均偏離中心值的程度",
     "explanation": "標準差衡量資料與平均值的偏離程度，是最常見的離散程度指標之一。",
-    "id": 224
+    "id": 222
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "第三章 機率統計基礎",
+    "assessmentTopic": "L221",
+    "assessmentContent": "L22101",
     "num": 5,
     "question": "假設檢定中，若 p 值小於顯著水準 0.05，代表什麼意思？",
     "options": [
@@ -3598,11 +4011,13 @@ var ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 拒絕虛無假設",
     "explanation": "：當 p 值小於設定的顯著水準 α，表示樣本資料與虛無假設 有顯著差異 ，\n故應拒絕虛無假設。",
-    "id": 225
+    "id": 223
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "第三章 機率統計基礎",
+    "assessmentTopic": "L221",
+    "assessmentContent": "L22101",
     "num": 6,
     "question": "在統計推論中，哪一個值通常用於判斷假設檢定的顯著性？",
     "options": [
@@ -3614,11 +4029,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) p 值",
     "explanation": "p 值表示在虛無假設成立的情況下，觀察到現有樣本結果的機率，是統\n計顯著性的核心指標。",
-    "id": 226
+    "id": 224
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "第三章 機率統計基礎",
+    "assessmentTopic": "L221",
+    "assessmentContent": "L22101",
     "num": 7,
     "question": "下列哪一個情況較適合使用單樣本 t 檢定？",
     "options": [
@@ -3630,11 +4047,13 @@ var ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 比較一組樣本與既定平均值的差異",
     "explanation": "單樣本 t 檢定用來評估樣本平均數是否與某個已知值有顯著差異。",
-    "id": 227
+    "id": 225
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "第三章 機率統計基礎",
+    "assessmentTopic": "L221",
+    "assessmentContent": "L22101",
     "num": 8,
     "question": "平均數、標準差、最大值等統計量的取得屬於何種統計方法？",
     "options": [
@@ -3646,11 +4065,13 @@ var ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A) 敘述統計",
     "explanation": "這些統計量是對資料本身的描述，不涉及推論或預測，屬於敘述統計。",
-    "id": 228
+    "id": 226
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "第三章 機率統計基礎",
+    "assessmentTopic": "L221",
+    "assessmentContent": "L22101",
     "num": 9,
     "question": "關於常態分佈（ Normal Distribution ）的敘述，下列何者「錯誤」？",
     "options": [
@@ -3662,11 +4083,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 任何類型的數據在樣本數足夠大時，都會呈現常態分佈",
     "explanation": "中央極限定理指出，當樣本數足夠大時，樣本平均數的分佈會趨近常態\n分佈；然而，原始資料本身的分佈並不會因此變為常態。",
-    "id": 229
+    "id": 227
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "第三章 機率統計基礎",
+    "assessmentTopic": "L221",
+    "assessmentContent": "L22101",
     "num": 10,
     "question": "若資料呈現明顯左偏，最適合使用下列哪一項統計量作為代表集中趨勢的指 標？",
     "options": [
@@ -3678,11 +4101,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 中位數",
     "explanation": "當資料呈現偏態分佈 （如左偏或右偏） 時，平均數容易受到極端值影響，\n導致偏離中心位置 。 中位數對極端值不敏感 ， 因此在偏態分佈中較能準確代表\n資料集中趨勢。",
-    "id": 230
+    "id": 228
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "第四章 大數據處理技術",
+    "assessmentTopic": "L222",
+    "assessmentContent": "L22201",
     "num": 1,
     "question": "在大數據收集階段，若資料來源來自感測器與機台設備，最常見的資料特性 為？",
     "options": [
@@ -3694,11 +4119,13 @@ var ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 高頻率、串流型資料",
     "explanation": "感測器與機台設備產出的資料具有即時性與高頻率更新特性，屬於典型\n的串流資料來源。",
-    "id": 231
+    "id": 229
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "第四章 大數據處理技術",
+    "assessmentTopic": "L222",
+    "assessmentContent": "L22201",
     "num": 2,
     "question": "在進行資料清理時，下列哪一項操作主要用於處理欄位中存在空值的情況？",
     "options": [
@@ -3710,11 +4137,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 遺漏值補全（ Imputation ）",
     "explanation": "Imputation 是處理缺失值的主要方法，可透過平均數、中位數或模型預\n測進行補值。",
-    "id": 232
+    "id": 230
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "第四章 大數據處理技術",
+    "assessmentTopic": "L222",
+    "assessmentContent": "L22201",
     "num": 3,
     "question": "哪一種資料儲存系統較適合處理半結構化資料，如 JSON 或 XML？",
     "options": [
@@ -3726,11 +4155,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 文件型 NoSQL 資料庫",
     "explanation": "文件型資料庫如 MongoDB 可有效儲存結構不固定的 JSON/XML ，常用\n於半結構化資料管理。",
-    "id": 233
+    "id": 231
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "第四章 大數據處理技術",
+    "assessmentTopic": "L222",
+    "assessmentContent": "L22201",
     "num": 4,
     "question": "下列何者為分散式資料儲存架構中的一項核心特徵？",
     "options": [
@@ -3742,11 +4173,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 跨節點資料切分與冗餘備援",
     "explanation": "分散式系統可將資料分片儲存並建立冗餘副本 ， 提高可用性與容錯能力 。",
-    "id": 234
+    "id": 232
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "第四章 大數據處理技術",
+    "assessmentTopic": "L222",
+    "assessmentContent": "L22201",
     "num": 5,
     "question": "若企業希望即時監控交易異常，應選擇下列哪一類數據處理架構？",
     "options": [
@@ -3758,11 +4191,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 串流處理系統",
     "explanation": "：串流處理（如 Apache Kafka 、Spark Streaming ）可即時處理與分析進入\n系統的資料，適用於異常偵測與即時應用。",
-    "id": 235
+    "id": 233
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "第四章 大數據處理技術",
+    "assessmentTopic": "L222",
+    "assessmentContent": "L22201",
     "num": 6,
     "question": "在進行特徵工程時，特徵衍生（ Feature Derivation ）的主要目的是什麼？",
     "options": [
@@ -3774,11 +4209,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 建立對預測任務更具意義或可解釋性的變數",
     "explanation": "特徵衍生旨在透過現有資料邏輯建立新特徵，如時間差、組合變數，提\n升模型可預測性與可解釋性 。 （A） 增加模型自由度可能導致過擬合，並非特徵\n衍生的核心目的 。 （B） 資料壓縮與儲存效率屬資料處理領域 ， 與特徵衍生無關 。\n（D）移除不連續的類別型欄位屬於特徵選擇或清理行為，並非特徵衍生，其\n目的為簡化模型或排除不具預測力的欄位。",
-    "id": 236
+    "id": 234
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "第四章 大數據處理技術",
+    "assessmentTopic": "L222",
+    "assessmentContent": "L22201",
     "num": 7,
     "question": "在大數據清理流程中 ， 對文字資料進行大小寫統一 、 移除特殊符號與空白等動 作，最適合歸類為哪一種前處理操作？",
     "options": [
@@ -3790,11 +4227,13 @@ var ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A) 資料轉換",
     "explanation": "此類操作目的在於將文字欄位轉換為一致格式，利於分析，屬於典型的\n轉換處理，不涉及數值縮放或資料結構規劃。",
-    "id": 237
+    "id": 235
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "第四章 大數據處理技術",
+    "assessmentTopic": "L222",
+    "assessmentContent": "L22201",
     "num": 8,
     "question": "在處理由 IoT 裝置產生的大規模即時資料時 ， 系統架構應優先考量下列哪一項 需求？",
     "options": [
@@ -3806,11 +4245,13 @@ var ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 即時串流處理與低延遲反應能力",
     "explanation": "IoT 裝置資料具有高頻、連續與即時性等特徵，需使用能支援實時資料\n\n 第四章  大數據處理技術 \n4-33 \n接收、處理與響應的架構（ Kafka、Spark Streaming ）來確保即時決策與效能穩\n定性。",
-    "id": 238
+    "id": 236
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "第四章 大數據處理技術",
+    "assessmentTopic": "L222",
+    "assessmentContent": "L22201",
     "num": 9,
     "question": "在大數據架構中，資料湖（ Data Lake ）與傳統資料倉儲最大的差異為何？",
     "options": [
@@ -3822,11 +4263,13 @@ var ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 資料湖支援多樣資料型態且不需預先定義結構",
     "explanation": "資料湖可儲存原始格式的結構化、半結構化與非結構化資料，支援彈性\n探索與延後建模。",
-    "id": 239
+    "id": 237
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "第四章 大數據處理技術",
+    "assessmentTopic": "L222",
+    "assessmentContent": "L22201",
     "num": 10,
     "question": "資料驗證（ Data Validation ）的主要目的為何？",
     "options": [
@@ -3838,11 +4281,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 檢查資料格式與邏輯是否正確",
     "explanation": "資料驗證確保資料符合預期格式與邏輯規則，是資料品質管理的重要步\n驟。",
-    "id": 240
+    "id": 238
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "第五章 大數據分析方法與工具",
+    "assessmentTopic": "L223",
+    "assessmentContent": "L22301",
     "num": 1,
     "question": "在大數據的描述性分析中，最常用來呈現類別變數分佈的圖形是？",
     "options": [
@@ -3854,11 +4299,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 長條圖",
     "explanation": "長條圖（ BarChart ）可清楚顯示類別型變數的數量分佈，是描述性分析\n中的基礎視覺工具。",
-    "id": 241
+    "id": 239
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "第五章 大數據分析方法與工具",
+    "assessmentTopic": "L223",
+    "assessmentContent": "L22301",
     "num": 2,
     "question": "若要分析網站每日訪客數量的趨勢變化 ， 最適合使用下列哪一種視覺化工具？",
     "options": [
@@ -3870,11 +4317,13 @@ var ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 折線圖",
     "explanation": "：折線圖適合表現隨時間變動的連續數據，如日、週、月的趨勢觀察。",
-    "id": 242
+    "id": 240
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "第五章 大數據分析方法與工具",
+    "assessmentTopic": "L223",
+    "assessmentContent": "L22301",
     "num": 3,
     "question": "在大數據中進行關聯分析時，最常用來量化兩變數線性關係的指標為何？",
     "options": [
@@ -3886,11 +4335,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 相關係數",
     "explanation": "相關係數（如 Pearsonr ）用於衡量兩變數間的線性關聯程度，常見於探\n索性分析。",
-    "id": 243
+    "id": 241
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "第五章 大數據分析方法與工具",
+    "assessmentTopic": "L223",
+    "assessmentContent": "L22301",
     "num": 4,
     "question": "為了分析社群網路使用者之間的互動結構，應使用下列哪種分析方法？",
     "options": [
@@ -3902,11 +4353,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 圖論分析",
     "explanation": "圖論分析可用於建構節點與邊的關係網路，適用於社群關係、推薦系統\n等情境。",
-    "id": 244
+    "id": 242
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "第五章 大數據分析方法與工具",
+    "assessmentTopic": "L223",
+    "assessmentContent": "L22301",
     "num": 5,
     "question": "在文字分析中，使用 TF-IDF 技術的主要目的是？",
     "options": [
@@ -3918,11 +4371,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 辨識常出現的關鍵詞並排除常見詞",
     "explanation": "：TF-IDF（詞頻 -逆文檔頻率）可強化具有辨識性的詞彙，抑制文檔中普\n遍存在但不具代表性的詞語。",
-    "id": 245
+    "id": 243
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "第五章 大數據分析方法與工具",
+    "assessmentTopic": "L223",
+    "assessmentContent": "L22301",
     "num": 6,
     "question": "下列哪一項屬於異常偵測技術常見的應用情境？",
     "options": [
@@ -3934,11 +4389,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 信用卡詐騙識別",
     "explanation": "異常偵測可用於發現違常模式，像是信用卡交易中異常消費、系統入侵\n等風險情境。",
-    "id": 246
+    "id": 244
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "第五章 大數據分析方法與工具",
+    "assessmentTopic": "L223",
+    "assessmentContent": "L22301",
     "num": 7,
     "question": "若要從大量原始變數中萃取低維的代表性特徵，最常使用哪一種降維技術？",
     "options": [
@@ -3950,11 +4407,13 @@ var ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) PCA（主成分分析）",
     "explanation": "PCA 是常見的線性降維方法 ， 將原始特徵投影到新的主成分空間中 ， 以\n保留資料最大變異。",
-    "id": 247
+    "id": 245
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "第五章 大數據分析方法與工具",
+    "assessmentTopic": "L223",
+    "assessmentContent": "L22301",
     "num": 8,
     "question": "在大數據分析中 ， 哪一種資料探勘技術可用於找出客戶購買行為中常見的組合 規則？",
     "options": [
@@ -3966,11 +4425,13 @@ var ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A) 關聯規則分析",
     "explanation": "：關聯規則分析（如 Apriori 演算法）可找出項目間常見組合，例如「買\n牛奶常搭配買麵包」 。",
-    "id": 248
+    "id": 246
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "第五章 大數據分析方法與工具",
+    "assessmentTopic": "L223",
+    "assessmentContent": "L22301",
     "num": 9,
     "question": "箱型圖（ Box Plot ）如何呈現異常值？",
     "options": [
@@ -3982,11 +4443,13 @@ var ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 以特殊符號（如點或星號）單獨標記",
     "explanation": "箱型圖透過特殊符號（如點、星號）單獨標記異常值，使使用者易於辨\n識數據中的異常資料點。  \n\n 第五章  大數據分析方法與工具 \n5-50",
-    "id": 249
+    "id": 247
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "第五章 大數據分析方法與工具",
+    "assessmentTopic": "L223",
+    "assessmentContent": "L22301",
     "num": 10,
     "question": "若企業需自動比對商品評論中出現的品牌名稱，建議使用哪一種處理流程？",
     "options": [
@@ -3998,11 +4461,13 @@ var ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 命名實體識別（ NER）",
     "explanation": "NER 屬於自然語言處理技術，可自動從文字中辨識出品牌、人名、地點\n等實體資訊。",
-    "id": 250
+    "id": 248
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "第六章 大數據在人工智慧之應用",
+    "assessmentTopic": "L224",
+    "assessmentContent": "L22401",
     "num": 1,
     "question": "鑑別式 AI 模型的主要特性為何？",
     "options": [
@@ -4014,11 +4479,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 專注於資料分類與預測決策邊界",
     "explanation": "鑑別式 AI 模型（如邏輯迴歸、 SVM）學習資料間的判別界線，廣泛應\n用於預測任務。",
-    "id": 251
+    "id": 249
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "第六章 大數據在人工智慧之應用",
+    "assessmentTopic": "L224",
+    "assessmentContent": "L22401",
     "num": 2,
     "question": "為了加速大數據環境下的 AI 模型訓練，以下哪一項為常見技術？",
     "options": [
@@ -4030,11 +4497,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 混合精度訓練（ Mixed Precision Training ）",
     "explanation": "混合使用 16-bit 與 32-bit 浮點運算可減少訓練時間與記憶體使用量，提\n升效能。",
-    "id": 252
+    "id": 250
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "第六章 大數據在人工智慧之應用",
+    "assessmentTopic": "L224",
+    "assessmentContent": "L22401",
     "num": 3,
     "question": "在生成式 AI 中，若輸入為結構化資料並希望產出自然語言敘述，最適合使用 下列哪類模型？",
     "options": [
@@ -4046,11 +4515,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 語言生成模型",
     "explanation": "：生成式 AI 可根據結構化或非結構化輸入生成文字、圖像等內容， GPT\n是典型文字生成架構。",
-    "id": 253
+    "id": 251
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "第六章 大數據在人工智慧之應用",
+    "assessmentTopic": "L224",
+    "assessmentContent": "L22401",
     "num": 4,
     "question": "大數據對生成式 AI 內容品質的影響關鍵在於？",
     "options": [
@@ -4062,11 +4533,13 @@ var ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 訓練樣本是否具多樣性與語境一致性",
     "explanation": "生成式模型的品質極度依賴訓練資料的多樣性與語境品質，關係到語言\n流暢性與真實性。",
-    "id": 254
+    "id": 252
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "第六章 大數據在人工智慧之應用",
+    "assessmentTopic": "L224",
+    "assessmentContent": "L22401",
     "num": 5,
     "question": "在 AI 模型訓練過程中，為避免使用含有個資的敏感欄位，常用哪一種資料處 理方法？",
     "options": [
@@ -4078,11 +4551,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 資料匿名化",
     "explanation": "資料匿名化處理如移除姓名、轉換欄位等，可降低個資風險並符合法規\n要求。",
-    "id": 255
+    "id": 253
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "第六章 大數據在人工智慧之應用",
+    "assessmentTopic": "L224",
+    "assessmentContent": "L22401",
     "num": 6,
     "question": "下列哪一項技術可強化 AI 模型對使用者資料的隱私保護？",
     "options": [
@@ -4094,11 +4569,13 @@ var ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 差分隱私（ Differential Privacy ）",
     "explanation": "差分隱私透過加噪機制保護個別資料不被逆推出，即使在公開模型中也\n難以重建原始資料。",
-    "id": 256
+    "id": 254
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "第六章 大數據在人工智慧之應用",
+    "assessmentTopic": "L224",
+    "assessmentContent": "L22401",
     "num": 7,
     "question": "若企業欲將醫療資料用於訓練 AI 模型，下列哪一項最符合合法合規原則？",
     "options": [
@@ -4110,11 +4587,13 @@ var ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 取得合法授權與病患同意，並執行隱私強化",
     "explanation": "處理含敏感資訊 之醫療資料時，必須符合隱私法規與倫理原則，包括告\n知、同意與匿名化處理。",
-    "id": 257
+    "id": 255
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "第六章 大數據在人工智慧之應用",
+    "assessmentTopic": "L224",
+    "assessmentContent": "L22401",
     "num": 8,
     "question": "為確保 AI 系統合規性與可追溯性，應建立哪一種制度？",
     "options": [
@@ -4126,11 +4605,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 資料版本管理與操作紀錄制度",
     "explanation": "版本管理可確保資料來源、處理歷程清楚記錄，對稽核與合規性追蹤至\n關重要。  \n \n\n 第六章  大數據在人工智慧之應用  \n6-43",
-    "id": 258
+    "id": 256
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "第六章 大數據在人工智慧之應用",
+    "assessmentTopic": "L224",
+    "assessmentContent": "L22401",
     "num": 9,
     "question": "在企業內部推動 AI 模型落地時，哪一種治理措施最能確保模型部署後持續符 合法規與道德標準？",
     "options": [
@@ -4142,11 +4623,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 導入 AI 治理框架與跨部門監管流程",
     "explanation": "AI 治理需結合技術、法務、業務等部門共同制定監督機制，確保風險控\n制與合規落實。",
-    "id": 259
+    "id": 257
   },
   {
-    "subject": "中級：大數據處理分析與應用",
+    "subject": "L22 大數據處理分析與應用",
     "chapter": "第六章 大數據在人工智慧之應用",
+    "assessmentTopic": "L224",
+    "assessmentContent": "L22401",
     "num": 10,
     "question": "若欲在大數據環境中有效訓練深度學習模型 ， 以下哪一項策略最常用於解決資 料與運算資源不對稱的問題？",
     "options": [
@@ -4158,11 +4641,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 採用分散式訓練與硬體加速架構",
     "explanation": "在面對龐大資料量與高計算需求時，常採用 GPU/TPU 加速與分散式訓\n練架構（如 Horovod 、SageMaker 、PyTorch Distributed ）以縮短訓練時間並提\n升效能，為目前主流解法。",
-    "id": 260
+    "id": 258
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "第三章 機器學習基礎數學",
+    "assessmentTopic": "L231",
+    "assessmentContent": "L23101",
     "num": 1,
     "question": "若欲描述隨機變數在連續範圍內取值的機率分佈，最適合使用下列哪一種函 數？",
     "options": [
@@ -4174,11 +4659,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 機率密度函數（ PDF）",
     "explanation": "機率密度函數（ PDF）用於描述連續型隨機變 數於某個取值範圍內的機\n率分佈。與離散型隨機變數不同，連續變數在單一點的機率為零， PDF 通常透\n過積分計算區間內的機率，而 PMF 則用於離散型變數。累積分佈函數 （ CDF）\n則是累計機率的工具，而非直接描述機率密度。",
-    "id": 261
+    "id": 259
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "第三章 機器學習基礎數學",
+    "assessmentTopic": "L231",
+    "assessmentContent": "L23101",
     "num": 2,
     "question": "若一個隨機變數服從伯努利 分佈（ Bernoulli Distribution ） ，則該變數可能取值 為下列哪一組？",
     "options": [
@@ -4190,11 +4677,13 @@ var ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 0 或 1",
     "explanation": "伯努利分佈是典型的二元分佈，僅有兩種可能結果，通常以 0 和 1 表\n示，例如成功與失敗、點擊與未點擊。此分佈是多數二元分類模型（如邏輯迴\n歸）的理論基礎。",
-    "id": 262
+    "id": 260
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "第三章 機器學習基礎數學",
+    "assessmentTopic": "L231",
+    "assessmentContent": "L23101",
     "num": 3,
     "question": "在主成分分析 （PCA） 中 ， 常使用哪一種矩陣分解技術來找出資料的主軸方向？",
     "options": [
@@ -4206,11 +4695,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 特徵值分解（ Eigenvalue Decomposition ）",
     "explanation": "PCA 透過對協方差矩陣進行特徵值分 解，找出最大變異方向，並以此降\n低維度並保留最重要的資訊 。 這能讓資料投影到較少的維度上 ， 同時盡可能維\n持原始資料的變異。",
-    "id": 263
+    "id": 261
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "第三章 機器學習基礎數學",
+    "assessmentTopic": "L231",
+    "assessmentContent": "L23101",
     "num": 4,
     "question": "若想將高維資料映射至較低維度空間 ， 同時保留資料的主要變異 ， 常用下列哪 一種方法？",
     "options": [
@@ -4222,11 +4713,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 主成分分析（ PCA）",
     "explanation": "：PCA 是常用的維度簡化工具，透過線性變換找出資料中變異最大的方\n向，將原始高維度資料投影到較少維度上，達到資料壓縮與特徵提取的效果。",
-    "id": 264
+    "id": 262
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "第三章 機器學習基礎數學",
+    "assessmentTopic": "L231",
+    "assessmentContent": "L23101",
     "num": 5,
     "question": "在梯度下降（ Gradient Descent ）中，「梯度」代表下列哪一項？",
     "options": [
@@ -4238,11 +4731,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 損失函數對參數的偏微分",
     "explanation": "梯度是損失函數相對於模型參數的導數，能指引參數應往哪個方向調整\n以減少損失。梯度越大，表示調整幅度應越大，以快速降低誤差。",
-    "id": 265
+    "id": 263
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "第三章 機器學習基礎數學",
+    "assessmentTopic": "L231",
+    "assessmentContent": "L23101",
     "num": 6,
     "question": "在進行假設檢定時 ，顯著水準 （α）表示什麼 ？",
     "options": [
@@ -4254,11 +4749,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 拒絕虛無假設時所容許的 型一錯誤機率",
     "explanation": "顯著水準（α）是研究者事先設定的風險上限 ，代表當虛無假設為真時 ，\n錯誤拒絕該假設的容忍機率。常見設定為 0.05，意即容許 5%的型一錯誤。",
-    "id": 266
+    "id": 264
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "第三章 機器學習基礎數學",
+    "assessmentTopic": "L231",
+    "assessmentContent": "L23101",
     "num": 7,
     "question": "若資料集中存在極端值，以下哪一種集中趨勢指標較不受影響？",
     "options": [
@@ -4270,11 +4767,13 @@ var ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D) 中位數",
     "explanation": "平均數會受極端值拉動而偏離中心位置。中位數則是將資料排序後取中\n間值，不會受到少數極端值的嚴重影響，因此在偏態分佈或極端值存在時，常\n用中位數描述資料集中趨勢。  \n\n 第三章 機器學習基礎數學 \n3-31",
-    "id": 267
+    "id": 265
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "第三章 機器學習基礎數學",
+    "assessmentTopic": "L231",
+    "assessmentContent": "L23101",
     "num": 8,
     "question": "以下哪一種優化方法會累積每個參數的歷史梯度大小，以調整學習率？",
     "options": [
@@ -4286,11 +4785,13 @@ var ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) Adagrad",
     "explanation": "Adagrad 根據各參數歷史梯度平方和，調整每個參數的學習率。對變動\n較少的參數保留較高學習率 ， 而對變動大的參數降低學習率 ， 特別適合處理稀\n疏特徵資料。",
-    "id": 268
+    "id": 266
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "第三章 機器學習基礎數學",
+    "assessmentTopic": "L231",
+    "assessmentContent": "L23101",
     "num": 9,
     "question": "當深度學習模型在訓練時出現梯度爆炸現象 ， 應優先採用哪種技術加以處理？",
     "options": [
@@ -4302,11 +4803,13 @@ var ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 梯度裁剪（ Gradient Clipping ）",
     "explanation": "梯度爆炸會導致權重變動過大甚至溢出，影響模型穩定性。梯度裁剪能\n限制梯度的最大值，防止數值爆炸，特別適用於深度神經網路或 RNN 訓練。",
-    "id": 269
+    "id": 267
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "第三章 機器學習基礎數學",
+    "assessmentTopic": "L231",
+    "assessmentContent": "L23101",
     "num": 10,
     "question": "邏輯迴歸（ Logistic Regression ）模型在處理二元分類問題時，通常假設目標變 數服從哪種分佈？",
     "options": [
@@ -4318,11 +4821,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 伯努利分佈",
     "explanation": "邏輯迴歸假設目標變數為二元型態 （如 0 或 1） ，服從伯努利分佈，並透\n過 sigmoid 函數將預測值映射至機率區間 [0, 1]，以完成二元分類。",
-    "id": 270
+    "id": 268
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "第四章 機器學習與深度學習",
+    "assessmentTopic": "L232",
+    "assessmentContent": "L23201",
     "num": 1,
     "question": "機器學習 （Machine Learning ） 中，若輸入資料沒有標註， 欲探索潛在的群組或 模式，應屬於哪種學習類型？",
     "options": [
@@ -4334,11 +4839,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 非監督式學習（ Unsupervised Learning ）",
     "explanation": "：非監督式學習（ Unsupervised Learning ）不依賴標註資料，主要目的是\n從 資 料 中 發 現 潛 在 結 構 、 模 式 或 分 佈 ， 例 如 分 群 （ Clustering ） 、 降 維\n（Dimensionality Reduction ）等技術，是探索性資料分析 的重要工具。",
-    "id": 271
+    "id": 269
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "第四章 機器學習與深度學習",
+    "assessmentTopic": "L232",
+    "assessmentContent": "L23201",
     "num": 2,
     "question": "在監督式學習中，當模型要預測一個連續數值時，這種任務稱為什麼？",
     "options": [
@@ -4350,11 +4857,13 @@ var ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 迴歸（ Regression ）",
     "explanation": "迴歸（Regression ）是預測連續數值的任務，如房價預測、氣溫預測等，\n與分類不同，分類是用來預測離散類別結果。",
-    "id": 272
+    "id": 270
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "第四章 機器學習與深度學習",
+    "assessmentTopic": "L232",
+    "assessmentContent": "L23201",
     "num": 3,
     "question": "在深度學習中，用於學習資料中局部特徵的網路架構通常是什麼？",
     "options": [
@@ -4366,11 +4875,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 卷積神經網路（ Convolutional Neural Network, CNN ）",
     "explanation": "卷積神經網路（ CNN）透過卷積層偵測局部特徵，尤其擅長處理影像、\n語音等有空間或時間結構的資料，是深度學習中重要的基礎架構之一。",
-    "id": 273
+    "id": 271
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "第四章 機器學習與深度學習",
+    "assessmentTopic": "L232",
+    "assessmentContent": "L23201",
     "num": 4,
     "question": "支援向量機（ Support Vector Machine, SVM ）若用於迴歸問題，稱為什麼？",
     "options": [
@@ -4382,11 +4893,13 @@ var ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D) Support Vector Regression",
     "explanation": "當支援向量 機（SVM）應用於連續數值的預測問題時，稱為支援向量迴\n歸（Support Vector Regression, SVR ）。SVR 與傳統 SVM 不同，目標是尋找一\n條最佳超平面，使大多數資料點落在預設的誤差範圍內。",
-    "id": 274
+    "id": 272
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "第四章 機器學習與深度學習",
+    "assessmentTopic": "L232",
+    "assessmentContent": "L23201",
     "num": 5,
     "question": "機器學習模型若過度學習訓練資料中的雜訊 ， 導致泛化能力下降 ， 此現象稱為 什麼？",
     "options": [
@@ -4398,11 +4911,13 @@ var ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 過擬合（ Overfitting ）",
     "explanation": "：過擬合（ Overfitting ）是指模型在訓練資料上表現極好，卻無法在未知\n新資料上維持預測效能 ， 通常是因為模型過於複雜 ， 學習到不具代表性的噪聲 。",
-    "id": 275
+    "id": 273
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "第四章 機器學習與深度學習",
+    "assessmentTopic": "L232",
+    "assessmentContent": "L23201",
     "num": 6,
     "question": "在深度學習中，哪一個是為了引入非線性，使神經網路能學習複雜 模式的元 件？",
     "options": [
@@ -4414,11 +4929,13 @@ var ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 激活函數（ Activation Function ）",
     "explanation": "激活函數（ Activation Function ）如 ReLU、Sigmoid 等，為神經網路帶\n來非線性能力，若沒有激活函數，多層網路仍只是線性變換，無法表現複雜的\n關係。",
-    "id": 276
+    "id": 274
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "第四章 機器學習與深度學習",
+    "assessmentTopic": "L232",
+    "assessmentContent": "L23201",
     "num": 7,
     "question": "若想在機器學習中降低模型過度擬合風險，可採用哪種方法？",
     "options": [
@@ -4430,11 +4947,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 正則化（ Regularization ）",
     "explanation": "正則化 （Regularization ） 透過在損失函數中加入 L1 或 L2 懲罰項，限制\n模型權重的大小，減少模型過度擬合訓練資料，提升泛化能力。  \n  \n\n 第四章  機器學習與深度學習 \n4-96",
-    "id": 277
+    "id": 275
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "第四章 機器學習與深度學習",
+    "assessmentTopic": "L232",
+    "assessmentContent": "L23201",
     "num": 8,
     "question": "在深度學習模型的訓練過程中 ， 計算模型輸出與實際值差距的函數稱為什麼？",
     "options": [
@@ -4446,11 +4965,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 損失函數（ Loss Function ）",
     "explanation": "損失函數（ Loss Function ）用來衡量模型預測值與實際值的差距，是指\n引優化器調整 參數方向的重要依據。常見如均方誤差（ MSE ） 、交叉熵損失\n（Cross -Entropy Loss ）等。",
-    "id": 278
+    "id": 276
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "第四章 機器學習與深度學習",
+    "assessmentTopic": "L232",
+    "assessmentContent": "L23201",
     "num": 9,
     "question": "Transformer 模 型中 用來 捕捉 輸入序 列不 同位 置間 依賴關 係的 核心 機制 是什 麼？",
     "options": [
@@ -4462,11 +4983,13 @@ var ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 注意力機制（ Attention ）",
     "explanation": "Transformer 模型核心在於注意力機制（ Attention ） ，透過計算序列中各\n元素間的關聯權重，捕捉長距離依賴，徹底取代傳統 RNN 的循環架構，大幅\n提升計算效率與表現。",
-    "id": 279
+    "id": 277
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "第四章 機器學習與深度學習",
+    "assessmentTopic": "L232",
+    "assessmentContent": "L23201",
     "num": 10,
     "question": "在決策樹模型中，用於判斷分裂效果好壞的指標，常見的是下列哪一種？",
     "options": [
@@ -4478,11 +5001,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 基尼不純度（ Gini Impurity ）",
     "explanation": "基尼不純度（ Gini Impurity ）衡量節點內樣本的不純度，數值越低表示\n節點內樣本越集中於單一類別 ， 是 決策樹演算法常用的分裂判斷依據 ， 尤其在\n分類任務中扮演重要角色。",
-    "id": 280
+    "id": 278
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "第五章 機器學習建模與參數調校",
+    "assessmentTopic": "L233",
+    "assessmentContent": "L23301",
     "num": 1,
     "question": "針對缺失值（ Missing Value ）的處理，下列哪種方法屬於利用模型進行補值的 方式？",
     "options": [
@@ -4494,11 +5019,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 預測模型填補（ Predictive Imputation ）",
     "explanation": "預測模型填補是利用其他特徵變數訓練模型，如迴歸或分類器，預測缺\n失值的位置或值，特別適用於特徵之間關聯性高的 情況。相對於簡單的刪除或\n均值填補，模型補值能更好地捕捉數據內在關聯性，降低資訊流失。",
-    "id": 281
+    "id": 279
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "第五章 機器學習建模與參數調校",
+    "assessmentTopic": "L233",
+    "assessmentContent": "L23301",
     "num": 2,
     "question": "在進行異常值 （Outlier ） 偵測時 ， 哪種方法是利用統計特徵分佈來判斷離群點？",
     "options": [
@@ -4510,11 +5037,13 @@ var ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 四分位距法（ IQR）",
     "explanation": "：四分位距法是常見的統計方法，透過計算資料的第一與第三四分位數\n（Q1 與 Q3） ，並判定距離超過IQR（四分位距） 1.5 倍以上的數據點為異常。\n這種方法直觀且適用於大多數數值型資料的初步檢查。",
-    "id": 282
+    "id": 280
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "第五章 機器學習建模與參數調校",
+    "assessmentTopic": "L233",
+    "assessmentContent": "L23301",
     "num": 3,
     "question": "下列哪一種特徵選擇方法會直接在模型訓練過程中進行特徵挑選？",
     "options": [
@@ -4526,11 +5055,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) Embedded 方法",
     "explanation": "Embedded 方法會在模型訓練過程中同步進行特徵挑選。例如決策樹模\n型會產生特徵重要性（ Feature Importance ） ，或像Lasso 、Ridge 透過正則化直\n接控制特徵權重，實現同時建模與特徵選擇的目標。",
-    "id": 283
+    "id": 281
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "第五章 機器學習建模與參數調校",
+    "assessmentTopic": "L233",
+    "assessmentContent": "L23301",
     "num": 4,
     "question": "在進行特徵轉換時 ， 若資料存在極端偏高的右偏分佈 ， 常用哪種轉換以降 低偏 態？",
     "options": [
@@ -4542,11 +5073,13 @@ var ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 對數轉換（ Log Transform ）",
     "explanation": "對數轉換可有效降低右偏分佈的極端值影響，使資料分佈更接近常態。\n常用於收入、銷售額等具極端高值的變數。平方根轉換則較適用於中度偏態資\n料。",
-    "id": 284
+    "id": 282
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "第五章 機器學習建模與參數調校",
+    "assessmentTopic": "L233",
+    "assessmentContent": "L23301",
     "num": 5,
     "question": "在模型訓練過程中，若模型在訓練集表現良好，但測試集效能不佳，可能是發 生了什麼問題？",
     "options": [
@@ -4558,11 +5091,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 過擬合",
     "explanation": "過擬合發生在模型學習了太多訓練集的細節與雜訊，導致在未見過的測\n試資料上表現不佳 。 常見解決方案包括使用正則化 、 降低模型複雜度或早停策\n略（Early Stopping ）。",
-    "id": 285
+    "id": 283
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "第五章 機器學習建模與參數調校",
+    "assessmentTopic": "L233",
+    "assessmentContent": "L23301",
     "num": 6,
     "question": "交叉驗證中，哪一種方法在每次驗證中只留下一筆樣本作為驗證集，其餘皆用 於訓練？",
     "options": [
@@ -4574,11 +5109,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) LOOCV",
     "explanation": "LOOCV（Leave-One-Out Cross -Validation ）是 K-fold 的極端形式，當 K\n等於樣本數 n 時，每次只留一筆做驗證。此方法能最大化資料利用，但計算成\n本極高，不適用於大樣本情境。  \n \n\n 第五章  機器學習建模與參數調校  \n5-57",
-    "id": 286
+    "id": 284
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "第五章 機器學習建模與參數調校",
+    "assessmentTopic": "L233",
+    "assessmentContent": "L23301",
     "num": 7,
     "question": "在訓練深度學習模型時 ， 隨機將部分神經元暫時關閉以減少過擬合的技術是什 麼？",
     "options": [
@@ -4590,11 +5127,13 @@ var ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) Dropout",
     "explanation": "Dropout 透過隨機將神經元暫時設為零，迫使模型在每次訓練都以不同\n的「子網路」進行學習，有效降低模型對特定神經元的過度依賴，減少過擬合\n風險。",
-    "id": 287
+    "id": 285
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "第五章 機器學習建模與參數調校",
+    "assessmentTopic": "L233",
+    "assessmentContent": "L23301",
     "num": 8,
     "question": "在模型壓縮技術中，知識蒸餾（ Knowledge Distillation ）的主要目的是什麼？",
     "options": [
@@ -4606,11 +5145,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 將大型模型的知識轉移至小型模型",
     "explanation": "Knowledge Distillation 是利用大型、高性能的教師模型，將其知識以軟\n標籤 （soft labels） 的形式傳遞給小型學生模型，讓學生模型在參數較少的情況\n下，仍維持接近的預測能力。",
-    "id": 288
+    "id": 286
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "第五章 機器學習建模與參數調校",
+    "assessmentTopic": "L233",
+    "assessmentContent": "L23301",
     "num": 9,
     "question": "在優化器中，哪一個方法會自動調整每個參數的學習率，特別適用 於稀疏資 料？",
     "options": [
@@ -4622,11 +5163,13 @@ var ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) Adagrad",
     "explanation": "Adagrad 能針對每個參數調整不同的學習率，累積梯度平方和後，自動\n減小常被更新參數的學習步伐。適合處理特徵稀疏的場景，如文字分析，但學\n習率會不斷衰減至極小值，需留意訓練是否停滯。",
-    "id": 289
+    "id": 287
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "第五章 機器學習建模與參數調校",
+    "assessmentTopic": "L233",
+    "assessmentContent": "L23301",
     "num": 10,
     "question": "One-hot Encoding 在什麼情況下可能造成模型的運算負擔加重？",
     "options": [
@@ -4638,11 +5181,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 類別變數具有高基數（ High Cardinality ）",
     "explanation": "One-hot Encoding 會為每個不同類別產生獨立欄位，若類別數過多，會\n導致特徵維度爆炸 ， 增加記憶體使用與模型訓練的負擔 ， 尤其在資料量大時更\n明顯。",
-    "id": 290
+    "id": 288
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "第六章 機器學習治理",
+    "assessmentTopic": "L234",
+    "assessmentContent": "L23401",
     "num": 1,
     "question": "在個人資料保護法規的框架下 ， 下列哪一組資訊單獨使用時 ， 最明確地被歸類 為「直接識別個人身份資訊（ Directly I dentifiable Information, PII ） 」？",
     "options": [
@@ -4654,11 +5199,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 姓名、電子郵件地址、身分證字號",
     "explanation": "「直接識別個人身份資訊 （PII） 」 是指無需透過其他資訊輔助，單獨即可\n明確辨識出特定個人的資料。  \n（A）出生日期、郵遞區號和職業等資訊單獨無法直接識別特定個人，通常需\n要結合其他資訊才能達到識別效果，屬於準識別資訊（ Quasi -Identifiers ）。 \n（B）網站 Cookie ID 、IP 位址和地理定位資訊雖然屬於識別符號，且在特定情\n境下可被追溯或結合其他資訊後具有識別性 ， 但其本身通常不被視為單獨可直\n接指向特定個人的 PII。通常被歸類為間接識別資訊。  \n（C） 姓名、電子郵件地址和身分證字號是典型的直接識別資訊，這些資訊單獨\n就能指向一個特定且唯一的人。  \n（D）網路行為模式、匿名化統計數據和加密後的密碼雜湊值均屬於非直接識\n別資訊。匿名化數據已去除識別性，加密雜湊值雖然源於個人密 碼但已不可逆\n地處理，網路行為模式本身也不直接指向個人。",
-    "id": 291
+    "id": 289
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "第六章 機器學習治理",
+    "assessmentTopic": "L234",
+    "assessmentContent": "L23401",
     "num": 2,
     "question": "以下哪一種資料處理方式屬於「隨機擾動（ Noise Injection ） 」？",
     "options": [
@@ -4670,11 +5217,13 @@ var ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 強化匿名化技術",
     "explanation": "即便進行匿名化，外部資料比對仍可能造成再識別風險，因此須強化匿\n名化措施或限制資料使用情境，才能降低風險。",
-    "id": 292
+    "id": 290
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "第六章 機器學習治理",
+    "assessmentTopic": "L234",
+    "assessmentContent": "L23401",
     "num": 3,
     "question": "在 AI 偏見治理中 ， 對不同群體調整模型預測閾值 ， 屬於哪一種偏見修正方法？",
     "options": [
@@ -4686,11 +5235,13 @@ var ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 結果門檻調整",
     "explanation": "結果門檻調整（ Threshold Adjustment ）屬於模型後處理方式，透過改變\n不同群體的決策門檻，以平衡模型在不同群體間的預測公平性。",
-    "id": 293
+    "id": 291
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "第六章 機器學習治理",
+    "assessmentTopic": "L234",
+    "assessmentContent": "L23401",
     "num": 4,
     "question": "若企業想確保 AI 模型在不同群體間「真正該被選擇者」皆有同等機會被正確 預測，應採用哪一個公平性指標？",
     "options": [
@@ -4702,11 +5253,13 @@ var ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A) Equal Opportunity",
     "explanation": "Equal Opportunity 著重在實際應獲得正向結果的個案 ，在不同群體間應\n具有相同的被正確預測機率，尤其適用於醫療、社會福利等情境。",
-    "id": 294
+    "id": 292
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "第六章 機器學習治理",
+    "assessmentTopic": "L234",
+    "assessmentContent": "L23401",
     "num": 5,
     "question": "若企業欲在 AI 專案中降低敏感特徵（如性別）的影響，可以採取哪種模型內 部處理方式？",
     "options": [
@@ -4718,11 +5271,13 @@ var ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A) 對抗式去偏模型（ Adversarial Fairness ）",
     "explanation": "對抗式去偏透過訓練一個對抗網路，迫使主模型無法預測敏感屬性，從\n而降低模型對敏感特徵的依賴，是常見的公平性處理技術。  \n\n 第六章  機器學習治理 \n6-30",
-    "id": 295
+    "id": 293
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "第六章 機器學習治理",
+    "assessmentTopic": "L234",
+    "assessmentContent": "L23401",
     "num": 6,
     "question": "若資料集中存在群體樣本數不均，造成模型偏向多數群體，適合採 用哪種技 術？",
     "options": [
@@ -4734,11 +5289,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 類別重加權（ Class Weighting ）",
     "explanation": "類別重加權能在模型訓練時賦予少數類別更高權重，提升模型對少數群\n體的辨識能力，是處理不平衡資料常見的方法。",
-    "id": 296
+    "id": 294
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "第六章 機器學習治理",
+    "assessmentTopic": "L234",
+    "assessmentContent": "L23401",
     "num": 7,
     "question": "T-接近性（ T-Closeness ）技術主要是為了降低什麼風險？",
     "options": [
@@ -4750,11 +5307,13 @@ var ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A) 機率分佈差異造成的識別風險",
     "explanation": "T-Closeness 要求群組內敏感屬性的分佈，需與全體資料集分佈相近，以\n防止透過分佈偏差推測個人特徵，是進階的隱私保護技術。",
-    "id": 297
+    "id": 295
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "第六章 機器學習治理",
+    "assessmentTopic": "L234",
+    "assessmentContent": "L23401",
     "num": 8,
     "question": "在 AI 公平性治理中，企業應建立什麼跨部門組織，確保公平性納入日常決策 流程？",
     "options": [
@@ -4766,11 +5325,13 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 公平性審查委員會",
     "explanation": "：公平性審查委員會匯集法務、技術、產品與倫理等部門，負責評估 AI\n系統的偏見風險，是企業治理 AI 公平性的重要機制。",
-    "id": 298
+    "id": 296
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "第六章 機器學習治理",
+    "assessmentTopic": "L234",
+    "assessmentContent": "L23401",
     "num": 9,
     "question": "若企業欲降低 AI 模型因少數群體樣本過少而造成的過擬合風險，可以採用哪 種資料增強方法？",
     "options": [
@@ -4782,11 +5343,13 @@ var ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A) SMOTE",
     "explanation": "SMOTE（Synthetic Minority Over -sampling Technique ） 透過合成新樣本，\n擴增少數類別資料，有助於平衡類別分佈，降低過擬合及模型偏誤風險。",
-    "id": 299
+    "id": 297
   },
   {
-    "subject": "中級：機器學習技術與應用",
+    "subject": "L23 機器學習技術與應用",
     "chapter": "第六章 機器學習治理",
+    "assessmentTopic": "L234",
+    "assessmentContent": "L23401",
     "num": 10,
     "question": "下列哪一項不是常見的隱私保護基礎技術？",
     "options": [
@@ -4798,6 +5361,6 @@ var ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 知識蒸餾（ Knowledge Distillation ）",
     "explanation": "知識蒸餾是用於模型壓縮與加速的技術，並非基礎隱私保護技術。隱私\n保護常用技術包括遮蔽、泛化及分桶，用來降低個資識別風險。",
-    "id": 300
+    "id": 298
   }
 ];

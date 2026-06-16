@@ -18,6 +18,41 @@ def to_half_width(char):
     mapping = {'Ａ': 'A', 'Ｂ': 'B', 'Ｃ': 'C', 'Ｄ': 'D'}
     return mapping.get(char.upper(), char.upper())
 
+MID_SUBJECT_MAP = {
+    "人工智慧技術應用與規劃": "L21 人工智慧技術應用與規劃",
+    "大數據處理分析與應用": "L22 大數據處理分析與應用",
+    "機器學習技術與應用": "L23 機器學習技術與應用",
+}
+
+MID_GUIDE_TOPIC_MAP = {
+    "第三章 AI 相關技術應用": "L211",
+    "第四章 AI 導入評估規劃": "L212",
+    "第五章 AI 技術應用與系統部署": "L213",
+    "第三章 機率統計基礎": "L221",
+    "第四章 大數據處理技術": "L222",
+    "第五章 大數據分析方法與工具": "L223",
+    "第六章 大數據在人工智慧之應用": "L224",
+    "第三章 機器學習基礎數學": "L231",
+    "第四章 機器學習與深度學習": "L232",
+    "第五章 機器學習建模與參數調校": "L233",
+    "第六章 機器學習治理": "L234",
+}
+
+def mid_assessment_topic(chapter):
+    if chapter in MID_GUIDE_TOPIC_MAP:
+        return MID_GUIDE_TOPIC_MAP[chapter]
+    if "歷屆" in chapter:
+        return "歷屆"
+    if "官方樣題" in chapter:
+        return "範例"
+    return ""
+
+def mid_assessment_content(chapter):
+    topic = mid_assessment_topic(chapter)
+    if topic and topic.startswith("L") and len(topic) == 4:
+        return topic + "01"
+    return ""
+
 def clean_official_text(text):
     lines = text.splitlines()
     cleaned = []
@@ -79,9 +114,12 @@ def parse_official_exams():
                 idx = ord(opt_letter.upper()) - ord('A')
                 options[idx] = opt_text.replace('\n', ' ').strip()
                 
+            ch = f"{term}歷屆考題"
             parsed_questions.append({
-                "subject": f"中級：{subject}",
-                "chapter": f"{term}歷屆考題",
+                "subject": MID_SUBJECT_MAP.get(subject, f"中級：{subject}"),
+                "chapter": ch,
+                "assessmentTopic": mid_assessment_topic(ch),
+                "assessmentContent": mid_assessment_content(ch),
                 "num": num,
                 "question": stem,
                 "options": options,
@@ -154,9 +192,12 @@ def parse_sample_exam():
                 idx = ord(opt_letter.upper()) - ord('A')
                 options[idx] = opt_text.replace('\n', ' ').strip()
                 
+            ch = "官方樣題範例"
             parsed_questions.append({
-                "subject": f"中級：{current_subject}",
-                "chapter": "官方樣題範例",
+                "subject": MID_SUBJECT_MAP.get(current_subject, f"中級：{current_subject}"),
+                "chapter": ch,
+                "assessmentTopic": mid_assessment_topic(ch),
+                "assessmentContent": mid_assessment_content(ch),
                 "num": num,
                 "question": stem,
                 "options": options,
@@ -274,8 +315,10 @@ def parse_guide_questions():
                     
                 if num in answers:
                     parsed_qs.append({
-                        "subject": cfg["subject"],
+                        "subject": MID_SUBJECT_MAP.get(cfg["subject"].replace("中級：",""), cfg["subject"]),
                         "chapter": ch_name,
+                        "assessmentTopic": mid_assessment_topic(ch_name),
+                        "assessmentContent": mid_assessment_content(ch_name),
                         "num": num,
                         "question": stem,
                         "options": options,
@@ -311,7 +354,7 @@ def main():
             q["options"][i] = q["options"][i].replace("《以下空白》", "").strip()
             
         # Fix Question 45 (Subject 3, 114年第二次歷屆考題)
-        if q["subject"] == "中級：機器學習技術與應用" and q["chapter"] == "114年第二次歷屆考題" and q["num"] == 45:
+        if q["subject"] == "L23 機器學習技術與應用" and q["chapter"] == "114年第二次歷屆考題" and q["num"] == 45:
             q["options"] = [
                 "import torch\nimport torchvision.models as models\n\nmodel = models.vgg16(pretrained=True)\nfor param in model.parameters():\n    param.requires_grad = False\nmodel.classifier[6] = torch.nn.Linear(4096, 10)",
                 "import torch\nimport torchvision.models as models\n\nmodel = models.vgg16(pretrained=True)\nfor param in model.features.parameters():\n    param.requires_grad = False\nmodel.classifier[6] = torch.nn.Linear(4096, 10)",
@@ -320,7 +363,7 @@ def main():
             ]
             
         # Fix Question 47 (Subject 3, 114年第二次歷屆考題) option D trailing Titanic text
-        if q["subject"] == "中級：機器學習技術與應用" and q["chapter"] == "114年第二次歷屆考題" and q["num"] == 47:
+        if q["subject"] == "L23 機器學習技術與應用" and q["chapter"] == "114年第二次歷屆考題" and q["num"] == 47:
             if "使用鐵達尼號" in q["options"][3]:
                 q["options"][3] = q["options"][3].split("使用鐵達尼號")[0].strip()
                 
@@ -333,12 +376,12 @@ def main():
             "提升後續分類的準確度。同時，他們也想透過 KNN (K-Nearest Neighbors) 搭配交叉驗證來評估模型表現，"
             "確保模型在不同資料切割下都能有穩定的預測能力。\n\n"
         )
-        if q["subject"] == "中級：機器學習技術與應用" and q["chapter"] == "114年第二次歷屆考題" and q["num"] in [46, 47]:
+        if q["subject"] == "L23 機器學習技術與應用" and q["chapter"] == "114年第二次歷屆考題" and q["num"] in [46, 47]:
             if not q["question"].startswith("【背景說明】"):
                 q["question"] = digits_context + q["question"]
 
         # Subject 2 (大數據處理分析與應用) Transcriptions:
-        if q["subject"] == "中級：大數據處理分析與應用" and q["chapter"] == "114年第二次歷屆考題":
+        if q["subject"] == "L22 大數據處理分析與應用" and q["chapter"] == "114年第二次歷屆考題":
             if q["num"] == 3:
                 q["question"] = "【背景說明：附圖為一個資料的分佈圖（密度分配圖）。該分佈具有以下特徵：分佈的峰值（Peak）約在 40 左右，分佈的尾部（Tail）向左延伸至 0 及 -20 左右，呈現顯著的左偏（向低值延伸）特徵。】\n\n" + q["question"]
             elif q["num"] == 40:
@@ -492,7 +535,7 @@ def main():
                 )
 
         # Subject 3 (機器學習技術與應用) Transcriptions:
-        if q["subject"] == "中級：機器學習技術與應用" and q["chapter"] == "114年第二次歷屆考題":
+        if q["subject"] == "L23 機器學習技術與應用" and q["chapter"] == "114年第二次歷屆考題":
             if q["num"] == 38:
                 q["question"] = (
                     "【背景說明：評估指標程式碼如下】\n"
@@ -664,7 +707,8 @@ def main():
                 )
 
         # Subject 1 (人工智慧技術應用與規劃) Sample Exam Transcriptions:
-        if q["subject"] == "中級：人工智慧技術應用與規劃" and q["chapter"] == "官方樣題範例" and q["num"] == 7:
+        old_subj = q["subject"]
+        if old_subj == MID_SUBJECT_MAP.get("人工智慧技術應用與規劃") and q["chapter"] == "官方樣題範例" and q["num"] == 7:
             q["question"] = (
                 "【背景說明：示意圖展示了電腦視覺辨識的四種核心技術示意圖：\n"
                 "(a) 圖中只有一隻貓，並標記整體類別為「Cat」（圖像分類）\n"
@@ -672,6 +716,28 @@ def main():
                 "(c) 圖中有一隻貓和一隻狗，並用兩個矩形邊界框（Bounding Box）分別框住並標記類別（物件偵測）\n"
                 "(d) 圖中有多隻貓和多隻狗，不僅區分貓狗類別，更將每一隻獨立的動物個體用不同的色塊著色以區分個體（實例分割）】\n\n" + q["question"]
             )
+
+    # Dedup: prefer guide questions over sample questions
+    seen = {}
+    deduped = []
+    for q in all_qs:
+        key = re.sub(r'\s+', ' ', q["question"]).strip()
+        if key in seen:
+            existing = seen[key]
+            cur_is_sample = "官方樣題" in q.get("chapter", "")
+            ex_is_sample = "官方樣題" in existing.get("chapter", "")
+            if cur_is_sample and not ex_is_sample:
+                continue
+            elif not cur_is_sample and ex_is_sample:
+                deduped.remove(existing)
+                deduped.append(q)
+                seen[key] = q
+                continue
+            else:
+                continue
+        seen[key] = q
+        deduped.append(q)
+    all_qs[:] = deduped
 
     # Assign global unique IDs
     for idx, q in enumerate(all_qs):

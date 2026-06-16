@@ -605,6 +605,7 @@ function showStudyNoteModal() {
             container.appendChild(sub);
             return;
         }
+        if (!note.file) return;
         const btn = document.createElement('button');
         btn.className = 'exam-subject-btn card hover-scale note-item-btn';
         btn.innerHTML = `<strong>${note.title}</strong>`;
@@ -843,7 +844,8 @@ function showQuestion(idx) {
     lblChapter.textContent = q.chapter;
     lblIndex.textContent = `第 ${idx + 1} / ${appData.currentQuiz.length} 題 (原始題號: ${q.num})`;
     const lblTopic = document.getElementById('lblTopic');
-    if (lblTopic) lblTopic.textContent = q.assessmentTopic || '';
+    const contentCode = q.assessmentContent || '';
+    if (lblTopic) lblTopic.textContent = q.assessmentTopic ? (q.assessmentTopic + (contentCode ? ' > ' + contentCode : '')) : '';
     
     // Update active nav button state
     document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('current'));
@@ -1207,7 +1209,7 @@ function renderReviewList() {
                         <p><strong>標準選項：</strong>(${q.answer}) ${q.ans_text}</p>
                         ${q.explanation ? `<p style="margin-top:10px;"><strong>官方詳細解析：</strong><br>${q.explanation}</p>` : ''}
                         <p style="margin-top:10px; font-size:12px; color:var(--text-muted);">
-                            類別：${q.subject} > ${q.chapter} | ${q.assessmentTopic || ''} | 原始題號: ${q.num}
+                            類別：${q.subject} > ${q.chapter} | ${q.assessmentTopic || ''}${q.assessmentContent ? ' > ' + q.assessmentContent : ''} | 原始題號: ${q.num}
                         </p>
                     </div>
                 </div>
@@ -1459,6 +1461,7 @@ async function addWrongQuestion(certId, q) {
             subject: q.subject,
             chapter: q.chapter,
             assessmentTopic: q.assessmentTopic || '',
+            assessmentContent: q.assessmentContent || '',
             question: q.question,
             options: q.options,
             answer: q.answer,
@@ -1480,6 +1483,7 @@ async function addWrongQuestion(certId, q) {
                     existing.subject = q.subject;
                     existing.chapter = q.chapter;
                     existing.assessmentTopic = q.assessmentTopic || '';
+                    existing.assessmentContent = q.assessmentContent || '';
                     existing.question = q.question;
                     existing.options = q.options;
                     existing.answer = q.answer;
@@ -2017,6 +2021,7 @@ async function renderIrtDashboard() {
         qMap[w.num].subject = w.subject || (qIndex[w.num] && qIndex[w.num].subject) || '';
         qMap[w.num].chapter = w.chapter || (qIndex[w.num] && qIndex[w.num].chapter) || '';
         qMap[w.num].assessmentTopic = w.assessmentTopic || (qIndex[w.num] && qIndex[w.num].assessmentTopic) || '';
+        qMap[w.num].assessmentContent = w.assessmentContent || (qIndex[w.num] && qIndex[w.num].assessmentContent) || '';
     }
     // Fill missing subject/chapter from original questions
     for (const num of Object.keys(qMap)) {
@@ -2024,6 +2029,7 @@ async function renderIrtDashboard() {
             qMap[num].subject = qIndex[num].subject || '';
             qMap[num].chapter = qIndex[num].chapter || '';
             qMap[num].assessmentTopic = qIndex[num].assessmentTopic || '';
+            qMap[num].assessmentContent = qIndex[num].assessmentContent || '';
         }
     }
 
@@ -2041,7 +2047,8 @@ async function renderIrtDashboard() {
             lastWrong: d.lastWrong || '',
             subject: d.subject || '',
             chapter: d.chapter || '',
-            assessmentTopic: d.assessmentTopic || ''
+            assessmentTopic: d.assessmentTopic || '',
+            assessmentContent: d.assessmentContent || ''
         };
     });
 
@@ -2064,6 +2071,7 @@ function renderIrtTable(rows) {
             <td style="padding:6px 8px;font-size:12px;" title="${r.subject}">${shortSubj}</td>
             <td style="padding:6px 8px;font-size:12px;" title="${r.chapter}">${shortChap}</td>
             <td style="padding:6px 8px;font-size:12px;color:var(--accent);">${r.assessmentTopic || '-'}</td>
+            <td style="padding:6px 8px;font-size:12px;color:var(--accent);">${r.assessmentContent || '-'}</td>
             <td style="padding:6px 8px;"><span style="color:${color};font-weight:600;">${r.level}</span></td>
             <td style="padding:6px 8px;text-align:center;white-space:nowrap;">
                 <span style="color:var(--success);">${r.correct}</span>/<span style="color:#f85149;">${r.wrong}</span>

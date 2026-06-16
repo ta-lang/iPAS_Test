@@ -16,6 +16,27 @@ def to_half_width(char):
     mapping = {'Ａ': 'A', 'Ｂ': 'B', 'Ｃ': 'C', 'Ｄ': 'D'}
     return mapping.get(char, char)
 
+SUBJECT_MAP_JUNIOR = {
+    "人工智慧基礎概論": "L11 人工智慧基礎概論",
+    "生成式AI應用與規劃": "L12 生成式AI應用與規劃",
+}
+
+def ai_assessment_topic(chapter):
+    m = re.match(r'(L\d{3})', chapter)
+    if m:
+        return m.group(1)
+    if "歷屆" in chapter:
+        return "歷屆"
+    if "官方樣題" in chapter:
+        return "範例"
+    return ""
+
+def ai_assessment_content(chapter):
+    m = re.match(r'(L\d{4,6})', chapter)
+    if m:
+        return m.group(1)[:6]
+    return ""
+
 def clean_official_text(text):
     lines = text.splitlines()
     cleaned = []
@@ -76,9 +97,12 @@ def parse_official_exams():
                 idx = ord(opt_letter.upper()) - ord('A')
                 options[idx] = opt_text.replace('\n', ' ').strip()
                 
+            ch = f"{term}歷屆考題"
             parsed_questions.append({
-                "subject": f"初級：{subject}",
-                "chapter": f"{term}歷屆考題",
+                "subject": SUBJECT_MAP_JUNIOR.get(subject, f"初級：{subject}"),
+                "chapter": ch,
+                "assessmentTopic": ai_assessment_topic(ch),
+                "assessmentContent": ai_assessment_content(ch),
                 "num": num,
                 "question": stem,
                 "options": options,
@@ -149,9 +173,12 @@ def parse_sample_exam():
                 idx = ord(opt_letter.upper()) - ord('A')
                 options[idx] = opt_text.replace('\n', ' ').strip()
                 
+            ch = "官方樣題範例"
             parsed_questions.append({
-                "subject": f"初級：{current_subject}",
-                "chapter": "官方樣題範例",
+                "subject": SUBJECT_MAP_JUNIOR.get(current_subject, f"初級：{current_subject}"),
+                "chapter": ch,
+                "assessmentTopic": ai_assessment_topic(ch),
+                "assessmentContent": ai_assessment_content(ch),
                 "num": num,
                 "question": stem,
                 "options": options,
@@ -217,8 +244,10 @@ def parse_ppt_mock():
             explanation = re.sub(r'^\d+\s+', '', explanation).strip()
             
             parsed_questions.append({
-                "subject": f"初級：{subject}",
+                "subject": SUBJECT_MAP_JUNIOR.get(subject, f"初級：{subject}"),
                 "chapter": chapter_name,
+                "assessmentTopic": ai_assessment_topic(chapter_name),
+                "assessmentContent": ai_assessment_content(chapter_name),
                 "num": num,
                 "question": stem,
                 "options": [opt_a, opt_b, opt_c, opt_d],

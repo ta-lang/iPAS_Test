@@ -194,9 +194,19 @@
 * **【課程學習重整】**：創建 `exam/notes/` 目錄，按官方綱要建立 `oi/`（營運智慧分析師）、`ai/`（AI 初級）、`ai_mid/`（AI 中級）子目錄。oi 下依考科（s1/s2）→ 評鑑主題（L111/L112/L121/L122）→ 評鑑內容（L11101~L11204/L12101~L12203）階層組織。
 * **【階層選單】**：`studyNotes` 格式支援 `subjectGroup`（考科標題）與 `topicGroup`（評鑑主題標題）特殊欄位，`showStudyNoteModal()` 依序渲染為階層標題與可點擊筆記按鈕。對應之 CSS 類別 `.note-group-header`、`.note-topic-header` 新增於 `style.css`。
 * **【路徑修正】**：所有筆記檔案路徑從根目錄改為 `exam/notes/` 下（GitHub Pages 可存取），同時保留根目錄原始檔案供 PDF 轉換使用。
-* **【題庫標註 assessmentTopic】**：`questions.json`、`questions.js`、`parse_questions.py` 均新增 `assessmentTopic` 欄位，依 chapter 自動映射：第四章營運智慧基本知識→L111、第五章基礎資料分析→L112、第四章經營管理基本知識→L121、第五章數位化企業資訊工具基本知識→L122（共 163 題，44+32+47+40）。
-* **【系統驗證 assessmentTopic】**：`assessmentTopic` 已帶入前端三個顯示位置：(1) 作答畫面 `#lblTopic` badge 緊接在章節後方；(2) 檢討 accordion 的類別標示行（`${q.subject} > ${q.chapter} | ${q.assessmentTopic}`）；(3) IRT 分析表新增「主題」欄（L111~L122）。同時 `addWrongQuestion()` 存入 wrongPool 時一併保留 `assessmentTopic`，兩處 IRT row builder 均從 wrongPool/qIndex 取出該欄位，確保資料在 IndexedDB 生命週期中不遺失。
-* **【修復 Failed to fetch】**：`questions.js` 使用 `const ipasQuestions`，動態 `<script>` 載入時 `const` 不掛在 `window` 上，導致 `window[questionsVar]` 為 undefined，fallback `fetch(questions.json)` 在 `file://` 協議下失敗。已將 `const` → `var`，動態載入後即可透過 `window.ipasQuestions` 讀取。同時 `openReader()` 錯誤提示新增 `file://` 下需使用本機伺服器的建議。
+*   **【題庫標註 assessmentTopic】**：`questions.json`、`questions.js`、`parse_questions.py` 均新增 `assessmentTopic` 欄位，依 chapter 自動映射：第四章營運智慧基本知識→L111、第五章基礎資料分析→L112、第四章經營管理基本知識→L121、第五章數位化企業資訊工具基本知識→L122（共 163 題，44+32+47+40）。
+*   **【系統驗證 assessmentTopic】**：`assessmentTopic` 已帶入前端三個顯示位置：(1) 作答畫面 `#lblTopic` badge 緊接在章節後方；(2) 檢討 accordion 的類別標示行（`${q.subject} > ${q.chapter} | ${q.assessmentTopic}`）；(3) IRT 分析表新增「主題」欄（L111~L122）。同時 `addWrongQuestion()` 存入 wrongPool 時一併保留 `assessmentTopic`，兩處 IRT row builder 均從 wrongPool/qIndex 取出該欄位，確保資料在 IndexedDB 生命週期中不遺失。
+*   **【修復 Failed to fetch】**：`questions.js` 使用 `const ipasQuestions`，動態 `<script>` 載入時 `const` 不掛在 `window` 上，導致 `window[questionsVar]` 為 undefined，fallback `fetch(questions.json)` 在 `file://` 協議下失敗。已將 `const` → `var`，動態載入後即可透過 `window.ipasQuestions` 讀取。同時 `openReader()` 錯誤提示新增 `file://` 下需使用本機伺服器的建議。
+
+### 📌 2026-06-16（續）—— AI 應用規劃師 assessmentTopic 標註 + studyNotes 階層化
+
+* **【AI 初級 assessmentTopic】**：`ai_questions.json` / `.js` 及 `parse_ai_questions.py` 均新增 `assessmentTopic` 欄位。依 chapter 中的 L-code（L11101~L12303）自動提取前三碼（L111~L123），歷屆考題→「歷屆」，官方樣題→「範例」。共 530 題，含 L111×20、L112×30、L113×20、L114×20、L121×20、L122×20、L123×30、歷屆×300、範例×70。
+* **【AI 中級 assessmentTopic】**：`ai_mid_questions.json` / `.js` 及 `parse_ai_mid_questions.py` 均從自訂 M-code 改為官方 L-code（L211~L213、L221~L224、L231~L234）。共 298 題（去重 2 題），含各主題×10、歷屆×150、範例×38。
+* **【+ assessmentContent 三層架構】**：兩題庫均新增 `assessmentContent` 欄位（如 L11101、L21101），完成 科目(L11/L12)→評鑑主題(L111~L123)→評鑑內容(L11101~L12303) 三層結構。UI 三處顯示（題目 badge、檢討列、IRT 表）均同步加入評鑑內容欄位。
+* **【科目名稱官方化】**：`subject` 欄位改用官方代碼：L11（人工智慧基礎概論）、L12（生成式AI應用與規劃）、L21（人工智慧技術應用與規劃）、L22（大數據處理分析與應用）、L23（機器學習技術與應用）。`config.js` subjects 與 studyNotes 同步更新。
+* **【去重邏輯】**：`parse_ai_mid_questions.py` 新增 dedup，優先保留學習指引題目（有章節歸屬），移除官方樣題重複題。`restructure_ai_questions.py` 一次性腳本執行完畢後已移除。
+* **【studyNotes 階層化（AI 中級）】**：`config.js` 改用官方 L21/L22/L23 科目代碼 + L211~L234 評鑑主題階層，現有筆記文件掛在 L224 下。
+* **【IRT 表新增評鑑內容欄】**：`index.html` IRT 表頭新增「評鑑內容」th，`renderIrtTable()` 資料管線含 assessmentContent。
 
 ---
 
