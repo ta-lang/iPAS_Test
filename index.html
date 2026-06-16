@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPAS 模擬考系統</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0d1117">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="iPAS 模擬考">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="logo-area">
+                <span class="logo-icon">📊</span>
+                <div class="logo-text">
+                    <h1 id="headerTitle">iPAS 模擬考系統</h1>
+                    <p>學習與模擬考系統</p>
+                </div>
+            </div>
+            <div class="header-controls">
+                <div class="timer-display hidden" id="timerDisplay">
+                    <svg class="icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    <span id="timerText">80:00</span>
+                </div>
+                <button id="themeToggle" class="theme-toggle-btn" aria-label="切換深淺模式">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="app-main">
+            <!-- Login Screen (Taiwan ID Verification) -->
+            <section id="loginScreen" class="screen active">
+                <div class="welcome-card card animate-fade-in" style="max-width: 500px; margin: 40px auto; text-align: center;">
+                    <div class="welcome-header">
+                        <span class="logo-icon" style="font-size: 48px;">🛡️</span>
+                        <h2>iPAS 模擬考試系統登入</h2>
+                        <p>為模擬真實 iPAS 線上鑑定考試體驗，請輸入您的身分證字號進行安全驗證登入。</p>
+                    </div>
+                    
+                    <div class="login-form" style="margin-top: 24px; text-align: left;">
+                        <div class="filter-group" style="margin-bottom: 20px; display: flex; flex-direction: column; align-items: stretch; gap: 8px; width: 100%;">
+                            <label for="txtNationalID" style="font-weight: 500; font-size: 15px; color: var(--text-secondary);">身分證字號：</label>
+                            <input type="password" id="txtNationalID" placeholder="請輸入身分證字號" class="btn btn-outline" style="width: 100%; box-sizing: border-box; text-align: center; font-size: 18px; letter-spacing: 2px; padding: 12px; background: rgba(0,0,0,0.12); color: var(--text-primary); border: 1px solid var(--border); border-radius: 8px;">
+                            <p id="loginError" style="color: var(--danger); font-size: 14px; margin-top: 8px; display: none; text-align: center; font-weight: bold;">⚠️ 身分證格式或驗證碼不正確，請重新輸入！</p>
+                        </div>
+                        <button id="btnLogin" class="btn btn-primary" style="width: 100%; padding: 12px; font-size: 16px; font-weight: 600; justify-content: center;">驗證並登入系統</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mode Selection Screen (Welcome Screen) -->
+            <section id="welcomeScreen" class="screen">
+                <div class="welcome-card card animate-fade-in">
+                    <div class="welcome-header">
+                        <h2 id="welcomeTitle">歡迎使用 IPAS 證照模擬考與自主學習系統</h2>
+                        <p id="welcomeDesc">本系統提供多科證照精選題庫與全真模擬考，協助您高效通過國家人才能力鑑定。請在下方選擇您要準備的證照：</p>
+                    </div>
+
+                    <!-- Certification Selector Card -->
+                    <div class="cert-selector card">
+                        <h3>🎯 選擇要準備的 iPAS 證照</h3>
+                        <div class="cert-grid" id="certGrid">
+                            <!-- Generated dynamically by script.js -->
+                        </div>
+                    </div>
+                    
+                    <div class="modes-grid">
+                        <!-- Exam Mode Card -->
+                        <div class="mode-card card hover-scale" id="btnStartExam">
+                            <div class="mode-icon">📝</div>
+                            <h3>50 題全真模擬考試</h3>
+                            <p id="examModeDesc">選擇單一考科進行 50 題全真模擬考試。限時 **80分鐘**，過程中無即時答案與解析，結束後進行完整批改與各科診斷。</p>
+                            <span class="mode-action-btn">開始全真模擬考 →</span>
+                        </div>
+                        
+                        <!-- Practice Mode Card -->
+                        <div class="mode-card card hover-scale" id="btnStartPractice">
+                            <div class="mode-icon">💡</div>
+                            <h3>單元自主練習模式</h3>
+                            <p>自由篩選考科與單元進行練習。答題後**即時顯示答案與官方詳細解析**，並無時間限制，適合進行各個重點章節的專題突破。</p>
+                            <span class="mode-action-btn">開啟練習模式 →</span>
+                        </div>
+
+                        <!-- Study Mode Card -->
+                        <div class="mode-card card hover-scale" id="btnStartStudy">
+                            <div class="mode-icon">📖</div>
+                            <h3>課程學習</h3>
+                            <p>按章節順序瀏覽題目，**即時顯示答案與解析**，無時間壓力。適合初次學習或地毯式複習時使用。</p>
+                            <span class="mode-action-btn">開始學習 →</span>
+                        </div>
+                    </div>
+
+                    <!-- IRT Dashboard Button -->
+                    <button id="btnShowIrt" class="card hover-scale" style="width:100%;border:none;cursor:pointer;padding:18px 24px;font-size:15px;font-weight:600;color:var(--text-primary);background:var(--bg-card);text-align:center;">
+                        📊 審題儀表板
+                    </button>
+
+                    <!-- Statistics Summary -->
+                    <div class="stats-summary card">
+                        <h4>📊 本地題庫概況</h4>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <span class="stat-val" id="totalQsCount">0</span>
+                                <span class="stat-lbl">總題庫數</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-val" id="totalSubjectsCount">2</span>
+                                <span class="stat-lbl">科目數</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-val" id="totalChaptersCount">4</span>
+                                <span class="stat-lbl">涵蓋章節</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-val" id="wrongPoolCount">0</span>
+                                <span class="stat-lbl">待複習錯題</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-val" id="totalAnsweredCount">0</span>
+                                <span class="stat-lbl">累積答題</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-val" id="totalCorrectRate">-</span>
+                                <span class="stat-lbl">正確率</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Weakness Analysis -->
+                    <div class="weakness-section card" id="weaknessSection" style="display:none;">
+                        <div class="weakness-header">
+                            <h4>📊 弱點分析</h4>
+                            <span class="weakness-toggle" id="weaknessToggle" style="cursor:pointer;user-select:none;">▼ 展開</span>
+                        </div>
+                        <div class="weakness-body" id="weaknessBody" style="display:none;">
+                            <div class="chart-row">
+                                <div class="chart-container">
+                                    <canvas id="radarChart"></canvas>
+                                    <p class="chart-label">錯題分佈</p>
+                                </div>
+                                <div class="chart-container">
+                                    <canvas id="trendChart"></canvas>
+                                    <p class="chart-label">成績趨勢</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quiz Screen (Active Exam or Practice) -->
+            <section id="quizScreen" class="screen">
+                <!-- Practice Setup Sub-bar (Only visible in practice mode) -->
+                <div id="practiceSetup" class="practice-setup-bar card hidden">
+                    <div class="filter-group">
+                        <label for="selectSubject">選擇科目：</label>
+                        <select id="selectSubject">
+                            <option value="all">全部科目 (不限)</option>
+                            <option value="s1">考科一：營運智慧概論</option>
+                            <option value="s2">考科二：經營管理數位化概論</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="selectChapter">選擇章節：</label>
+                        <select id="selectChapter">
+                            <option value="all">全部章節 (不限)</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="practiceNum">題數：</label>
+                            <select id="practiceNum">
+                                <option value="20">20 題</option>
+                                <option value="50">50 題</option>
+                                <option value="all">全部練習</option>
+                            </select>
+                            <div class="filter-group" style="margin-left:auto;">
+                                <label class="switch-label">
+                                    <input type="checkbox" id="chkWrongBook">
+                                    <span class="switch-slider"></span>
+                                    錯題特訓
+                                </label>
+                            </div>
+                    </div>
+                    <button id="btnApplyPractice" class="btn btn-primary">開始練習</button>
+                </div>
+
+                <div class="quiz-layout">
+                    <!-- Left: Question Area -->
+                    <div class="question-container card">
+                        <div class="question-meta">
+                            <span class="badge" id="lblSubject">科目</span>
+                            <span class="badge badge-secondary" id="lblChapter">章節</span>
+                            <span class="badge badge-topic" id="lblTopic">評鑑主題</span>
+                            <span class="badge badge-accent" id="lblIndex">第 1 / 50 題</span>
+                        </div>
+                        
+                        <div class="question-text" id="qText">
+                            載入中...
+                        </div>
+                        
+                        <!-- Options Area -->
+                        <div class="options-list" id="optionsList">
+                            <!-- Options will be generated dynamically -->
+                        </div>
+
+                        <!-- Feedback Area (Only in Practice Mode) -->
+                        <div id="feedbackArea" class="feedback-box hidden animate-fade-in">
+                            <div class="feedback-header">
+                                <span class="feedback-icon" id="feedbackIcon">💡</span>
+                                <span class="feedback-title" id="feedbackTitle">正確 / 錯誤</span>
+                            </div>
+                            <div class="feedback-body">
+                                <p id="lblExplanationText">解析內容將在此顯示。</p>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Controls -->
+                        <div class="question-controls">
+                            <button id="btnPrev" class="btn btn-outline" disabled>上一題</button>
+                            <button id="btnFlag" class="btn btn-outline-warning">
+                                <svg class="icon-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                </svg>
+                                標記待複習
+                            </button>
+                            <button id="btnNext" class="btn btn-primary">下一題</button>
+                            <button id="btnSubmit" class="btn btn-danger hidden">提交考卷</button>
+                            <button id="btnExitQuiz" class="btn btn-outline-danger">結束離開</button>
+                        </div>
+                    </div>
+
+                    <!-- Right: Navigation Panel / Grid -->
+                    <div class="quiz-nav-panel card">
+                        <h4 id="navPanelTitle">答題進度與狀態</h4>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" id="progressBar"></div>
+                        </div>
+                        <p class="progress-text" id="lblProgressText">已回答 0 / 50 題 (0%)</p>
+                        
+                        <div class="nav-grid" id="navGrid">
+                            <!-- Grid buttons will be generated dynamically -->
+                        </div>
+
+                        <div class="legend-box">
+                            <div class="legend-item"><span class="legend-color legend-current"></span> 目前</div>
+                            <div class="legend-item"><span class="legend-color legend-answered"></span> 已答</div>
+                            <div class="legend-item"><span class="legend-color legend-unanswered"></span> 未答</div>
+                            <div class="legend-item"><span class="legend-color legend-flagged"></span> ★ 標記</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Results Screen (Exam Report Card & Review) -->
+            <section id="resultsScreen" class="screen">
+                <div class="results-container animate-fade-in">
+                    <!-- Report Header / Score Circle -->
+                    <div class="results-header card">
+                        <div class="score-circle-container">
+                            <svg class="score-circle-svg" viewBox="0 0 100 100">
+                                <circle class="circle-bg" cx="50" cy="50" r="45"></circle>
+                                <circle class="circle-progress" id="scoreCircleProgress" cx="50" cy="50" r="45" stroke-dasharray="283" stroke-dashoffset="283"></circle>
+                            </svg>
+                            <div class="score-val-container">
+                                <span class="score-number" id="lblScore">0</span>
+                                <span class="score-total">/100</span>
+                            </div>
+                        </div>
+                        
+                        <div class="result-summary-text">
+                            <h2 id="lblResultTitle">及格！恭喜通過！</h2>
+                            <p id="lblResultDesc">你已完成本次模擬考試，以下是你的答題報告統計：</p>
+                            <div class="details-grid">
+                                <div class="detail-card">
+                                    <span class="detail-label">完成時間</span>
+                                    <span class="detail-val" id="lblTimeSpent">0 分鐘</span>
+                                </div>
+                                <div class="detail-card">
+                                    <span class="detail-label">答對題數</span>
+                                    <span class="detail-val" id="lblCorrectCount">0 / 50 題</span>
+                                </div>
+                                <div class="detail-card">
+                                    <span class="detail-label">答題率</span>
+                                    <span class="detail-val" id="lblAnswerRate">100%</span>
+                                </div>
+                            </div>
+                            <div class="results-actions">
+                                <button id="btnRestartQuiz" class="btn btn-primary">重新挑戰</button>
+                                <button id="btnBackToWelcome" class="btn btn-outline">回主選單</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Strengths and Weaknesses breakdown -->
+                    <div class="subject-breakdown-card card">
+                        <h3>📈 科目與單元正確率分析</h3>
+                        <div class="breakdown-list" id="subjectBreakdownList">
+                            <!-- Generated dynamically -->
+                        </div>
+                    </div>
+
+                    <!-- Review Section (Question Accordion) -->
+                    <div class="review-section card">
+                        <h3>🔍 完整試卷覆盤</h3>
+                        <p class="review-desc">檢視所有題目、您的答案以及官方標準答案與詳細解析。</p>
+                        
+                        <div class="filter-controls">
+                            <button class="btn btn-sm btn-outline active" data-filter="all">全部題目</button>
+                            <button class="btn btn-sm btn-outline-danger" data-filter="wrong">錯題覆盤</button>
+                            <button class="btn btn-sm btn-outline-success" data-filter="correct">對題檢驗</button>
+                            <button class="btn btn-sm btn-outline-warning" data-filter="flagged">待複習標記</button>
+                        </div>
+
+                        <div class="accordion-list" id="reviewQuestionsList">
+                            <!-- Accordion items will be generated dynamically -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="app-footer">
+            <p id="appFooterText">© 2026 iPAS 模擬考系統. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <!-- IRT 審題儀表板 Screen -->
+    <section id="irtScreen" class="screen">
+        <div class="results-container animate-fade-in">
+            <div class="card" style="padding:16px 24px;display:flex;align-items:center;gap:12px;">
+                <h2 style="margin:0;font-size:18px;">📊 審題儀表板</h2>
+                <span id="irtSummary" style="color:var(--text-secondary);font-size:13px;flex:1;"></span>
+                <button id="btnBackFromIrt" class="btn btn-outline" style="padding:4px 12px;font-size:13px;">← 回主選單</button>
+            </div>
+            <div class="card" style="padding:16px 24px;">
+                <h3 style="margin:0 0 12px;font-size:15px;">📈 測驗統計</h3>
+                <div id="irtStatsPanel" style="display:flex;gap:12px;flex-wrap:wrap;"></div>
+            </div>
+            <div class="card" style="padding:16px 24px;">
+                <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;">
+                    <h3 style="margin:0;font-size:15px;">📋 題項分析</h3>
+                    <div style="display:flex;gap:6px;">
+                        <button class="btn btn-sm btn-outline irt-sort active" data-sort="difficulty">難度</button>
+                        <button class="btn btn-sm btn-outline irt-sort" data-sort="wrong">錯題</button>
+                        <button class="btn btn-sm btn-outline irt-sort" data-sort="recent">最近</button>
+                    </div>
+                </div>
+                <div class="irt-table-wrapper" style="overflow-x:auto;">
+                    <table class="irt-table" id="irtTable" style="width:100%;border-collapse:collapse;font-size:13px;">
+                        <thead>
+                            <tr style="border-bottom:1px solid var(--border);">
+                                <th style="padding:6px 8px;text-align:left;">題號</th>
+                                <th style="padding:6px 8px;text-align:left;">科目</th>
+                                <th style="padding:6px 8px;text-align:left;">章節</th>
+                                <th style="padding:6px 8px;text-align:left;">主題</th>
+                                <th style="padding:6px 8px;text-align:left;">評鑑內容</th>
+                                <th style="padding:6px 8px;text-align:left;">難度</th>
+                                <th style="padding:6px 8px;text-align:center;">答對/答錯</th>
+                                <th style="padding:6px 8px;text-align:center;">正確率</th>
+                                <th style="padding:6px 8px;text-align:left;">最近答錯</th>
+                            </tr>
+                        </thead>
+                        <tbody id="irtTbody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 課程學習 Note Selection Modal -->
+    <div id="studyNoteModal" class="modal-overlay">
+        <div class="modal-card" style="max-width:600px;">
+            <div class="modal-header">
+                <h3>📖 選擇學習單元</h3>
+                <button id="btnCancelStudyModal" class="modal-close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p id="studyModalDesc">請選擇要閱讀的講義單元：</p>
+                <div class="exam-subject-options" id="studyNoteOptions"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reader Screen -->
+    <section id="readerScreen" class="screen">
+        <div class="results-container animate-fade-in">
+            <div class="results-header card">
+                <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+                    <button id="btnBackFromReader" class="btn btn-outline" style="padding:6px 12px;font-size:13px;">← 回選單</button>
+                    <h2 id="readerTitle" style="margin:0;font-size:18px;"></h2>
+                </div>
+            </div>
+            <div class="card reader-content" id="readerContent" style="padding:24px;line-height:1.8;">
+                載入中...
+            </div>
+        </div>
+    </section>
+
+    <!-- Exam Subject Selection Modal -->
+    <div id="examSubjectModal" class="modal-overlay">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3>📝 選擇全真模擬考試考科</h3>
+                <button id="btnCancelExamModal" class="modal-close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p id="examModalDesc">請選擇您要進行模擬測驗的科目。每科均為 <strong>50 題選擇題</strong>，限時 <strong>80 分鐘</strong>：</p>
+                <div class="exam-subject-options" id="examSubjectOptions">
+                    <!-- Generated dynamically by script.js -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked@15/marked.min.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16/dist/katex.min.css" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16/dist/katex.min.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16/dist/contrib/auto-render.min.js" charset="utf-8"></script>
+
+    <!-- JS Scripts -->
+    <script src="config.js" charset="utf-8"></script>
+    <script src="script.js" charset="utf-8"></script>
+</body>
+</html>
