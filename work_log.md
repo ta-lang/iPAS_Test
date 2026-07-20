@@ -4,6 +4,28 @@
 
 ## 📅 專案時程與工作里程碑
 
+### 📌 2026-07-20 —— 開工、Source/ 講稿 MP3 生成腳本建立、管理中樞初始化
+
+#### 🕐 開工與 Source/ 盤點
+* **【開工】**：首次開工，無可恢復的換手資訊。工作樹乾淨（main, e9e889d），僅未追蹤 `.agents/`、`Source/`。
+* **【Source/ 盤點】**：Source/ 內含 6 份 iPAS 初級 AI 應用規劃師繁體中文 MD 筆記（衝刺學習計劃、總複習、Week1~4），各 100-200 行。
+
+#### 🕑 講稿 MP3 生成腳本開發
+* **【edge-tts 安裝】**：安裝 `edge-tts` 套件（v7.2.8），確認 zh-TW-HsiaoChenNeural（女聲）為可用語音。
+* **【generate_lecture.py 建立】**：撰寫批次轉換腳本，流程為：讀取 Source/*.md → 呼叫 Ollama qwen2.5:3b 轉口語講稿 → edge-tts 產 MP3 至 out/。
+* **【Ollama 整合測試】**：小量內容測試成功（564 字元正常產出），但完整檔案因 Ollama 回應時間過長，首次執行 30 分鐘逾時未產出任何檔案。
+* **【換機環境補強】**：因更換電腦，重新建立專案 `.venv`，並安裝 `edge-tts` v7.2.8 至新環境；同時確認目前新電腦尚未啟用 Ollama CLI 與 `127.0.0.1:11434` 本機服務。
+* **【分段續跑優化】**：重構 `generate_lecture.py`，新增 `--only`、`--no-tts`、`--force-llm`、`--max-chars`、`--max-chunks`、`--timeout` 等參數，將 Markdown 依章節與段落切分後逐段送入 Ollama，並將分段結果快取至 `out/.parts/`，避免長檔案逾時後整份重跑。
+* **【測試輸出保護】**：修正 `--max-chunks` 測試模式，改以 `.sample-Nchunks` 檔名輸出，避免小段測試覆蓋正式完整講稿。
+* **【離線 TTS 備援】**：因 Edge TTS 需將講稿送往 Microsoft 雲端語音服務，外部資料傳輸未取得明確授權前改用本機 Windows SAPI 離線語音 `Microsoft Hanhan Desktop`，並透過本機 `ffmpeg` 將 WAV 轉為 MP3。
+* **【首份 MP3 產出】**：使用既有 `out/01-衝刺學習計劃.txt` 講稿，成功產出本機離線語音 MP3：`out/01-衝刺學習計劃.mp3`。
+* **【Codex 批次轉換完成】**：依使用者指示改由 Codex 本機規則完成轉換，不再等待 Ollama；將 6 份 `Source/*.md` 依課程順序轉為講稿文字與本機離線語音 MP3，輸出至 `out/01-衝刺學習計劃.*`、`out/02-Week1.*`、`out/03-Week2.*`、`out/04-Week3.*`、`out/05-Week4.*`、`out/06-總複習.*`。
+
+#### 🕒 管理中樞初始化
+* **【~/.project-continuity 建立】**：初始化本機專案連續性管理中樞，寫入 state.json、STATUS.md 及 handoff。
+
+---
+
 ### 📌 2026-06-15 —— pwa_QuizQuiz 移植（IndexedDB + SM-2）、Git 整合與 Gitea 推送
 
 #### 🕐 階段一：pwa_QuizQuiz 功能分析與移植計畫
