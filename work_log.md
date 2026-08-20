@@ -2,6 +2,16 @@
 
 本工作日誌記錄了 **IPAS 營運智慧分析師**、**AI應用規劃師** 及其他證照專案的學習講義製作、題庫自動化解析、雲端同步排程設定與雙證照模擬考試系統的開發歷程與里程碑。
 
+### 📌 2026-08-20 —— 未完成工作追蹤與交接邊界
+
+* **【目前分支】**：Phase 3 修改位於 `codex/phase3-account-sync-foundation`，基準 commit 為 `bec593b`；目前工作樹仍有未提交變更，尚未推送 GitHub 或 GitHub Pages。
+* **【後端同步未完成】**：現有 Google Apps Script 目前只能確認回傳證照啟用設定，尚未提供正式的 `user_id`、短效 session、同步 push/pull、session refresh/revoke、登出及帳戶刪除契約。
+* **【前端驗收未完成】**：已完成 IndexedDB v5、帳戶分區、outbox、登入／同步狀態 UI 與 API adapter，但尚未在一般瀏覽器以實際帳戶驗證資料搬移、不同帳戶隔離、IndexedDB v5 與完整考試／練習流程。
+* **【跨裝置驗收未完成】**：尚未建立同帳戶雙裝置、不同帳戶同瀏覽器、離線重送、明確拒絕、未回覆操作保留及 session 到期的整合測試環境。
+* **【Note／Voice／NotebookLM 未完成】**：Note 內容模型、Voice 播放進度與 Note.Voice 整合，以及 NotebookLM MCP 的實際登入、測試 notebook、來源同步與能力驗證尚未開始；正式網站不得依賴 NotebookLM 在線可用性。
+* **【目前驗證】**：JavaScript 32/32、Python 4/4 通過；程式語法、UTF-8、差異檢查及本機 HTTP 靜態資產檢查通過。瀏覽器實際點擊仍受 Windows 沙箱無法存取使用者 AppData 限制。
+* **【下一步順序】**：先依 `docs/account_sync_api_contract.md` 補齊並部署後端；再以一般瀏覽器完成單帳戶／雙裝置及不同帳戶隔離驗收；確認通過後才 commit、推送來源 repo 與更新 GitHub Pages；最後進入 Note、Note.Voice 與 NotebookLM MCP 工作線。
+
 ### 📌 2026-08-20 —— 專案文件基線更新
 
 * **【文件同步】**：更新 `AGENTS.md` 與 `README.md`，補齊 `Source/`、`out/`、`generate_lecture.py`、`project-id.json` 的用途與目前工作流程。
@@ -41,6 +51,18 @@
 * **【離線更新】**：Service Worker app shell 升至 `ipas-exam-v3`；題庫不預載，選用後才進入 runtime cache。
 * **【驗證結果】**：JavaScript 19/19、Python 4/4 測試通過；`exam/script.js` 語法正常，首頁、App Shell 與三套 JSON/JS 題庫共 12 個本機 HTTP 資產均回應 200。
 * **【待人工驗收】**：仍需在一般瀏覽器以既有 IndexedDB 資料驗證自動搬移、隔離提示、三證照切換，以及完整考試／練習操作。
+
+### 📌 2026-08-20 —— Phase 3 帳戶分區與同步前端基礎
+
+* **【後端能力盤點】**：只讀確認現有 Google Apps Script `GET` 僅回傳三證照啟用設定；專案內沒有 Apps Script 後端來源，尚無可驗證的 `user_id`、session、同步、登出或增量拉取契約。
+* **【安全降級】**：登入回應缺少不透明 `user_id`／短效 token 時，UI 明確顯示「本機模式」，不把身分證當資料鍵、不建立帳戶 outbox，也不宣稱跨裝置同步成功。
+* **【帳戶核心】**：新增 `exam/account-core.js`，涵蓋帳戶能力解析、身分證主鍵防護、帳戶／證照／永久題號複合鍵、題目事件狀態與敏感 payload 阻擋。
+* **【API 邊界】**：新增 `exam/account-api.js`，集中登入與同步 POST、HTTPS、逾時及逐筆確認；只有 `accepted_operation_ids` 會移除，只有 `rejected_operation_ids` 會標記衝突，未回覆操作留在本機待重送。
+* **【IndexedDB v5】**：新增 `userQuestionState`、`syncOutbox`、`accountQuizAttempts`、`accountAttemptAnswers` 與 `courseProgress`，正式帳戶模式依 `userId + certId` 分區。
+* **【帳戶狀態】**：答題、錯題／SM-2、標記、測驗紀錄與 Note 開啟進度會以原子交易寫入帳戶快取與 outbox；同帳戶重新開題可恢復標記，不同帳戶鍵值完全分離。
+* **【同步狀態 UI】**：頁首新增未登入、本機模式、帳戶已驗證、待同步、同步中、衝突與 session 到期狀態，以及登出入口；Service Worker 升至 `ipas-exam-v4`。
+* **【契約文件】**：新增 `docs/account_sync_api_contract.md`，定義登入、短效 session、增量同步、冪等操作、逐筆確認、衝突及後端待辦。
+* **【未完成邊界】**：尚未建立後端 pull／merge、session refresh/revoke 與雙裝置測試環境，因此 Phase 3 仍為進行中，不得宣稱跨裝置完成。
 
 ---
 

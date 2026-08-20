@@ -9,6 +9,8 @@ Primary working areas:
 - `exam/`: Static mock exam app for GitHub Pages.
 - `exam/index.html`: App shell and screens.
 - `exam/script.js`: Exam flow, login checks, question loading, scoring, and UI behavior.
+- `exam/account-core.js`: Pure account session, partition key, question-state event, and sync-operation rules.
+- `exam/account-api.js`: Login/sync HTTP adapter; requires explicit per-operation acknowledgement.
 - `exam/style.css`: App styling.
 - `exam/*questions.json`: Parsed question bank data.
 - `exam/*questions.js`: Browser-loaded question bank wrappers.
@@ -22,6 +24,7 @@ Primary working areas:
 - `convert_pdf.py`: Markdown-to-PDF conversion helper.
 - `work_log.md`: Main handoff and work history.
 - `README.md`: Project overview.
+- `docs/account_sync_api_contract.md`: Required backend contract and current local-only fallback boundary.
 - `project-id.json`: Portable project identity marker for continuity tooling.
 
 ## Startup Checklist
@@ -79,6 +82,7 @@ Use the project virtual environment if one is available.
 - The root is the active Git repository; `exam/` is a static application directory, not an independent repository.
 - The current question-bank counts are 163 Operations Intelligence Analyst questions, 530 AI Application Planner junior questions, and 298 AI Application Planner intermediate questions. Confirm counts from the JSON files after parser changes.
 - Persistent wrong-pool and question-stat records use `question_uid`; `display_num`/`num` are display-only compatibility fields. Ambiguous legacy records are kept in the IndexedDB `migrationQuarantine` store.
+- IndexedDB v5 account stores must be keyed by opaque `user_id`; never derive an account key from a national ID. The current backend lacks this contract, so production remains in explicit local-only mode until upgraded.
 - `Source/` currently contains six iPAS junior AI Application Planner Markdown notes. `out/` contains six generated TXT scripts and six offline MP3 files.
 - The default lecture-audio path uses local Windows SAPI. Edge TTS sends lecture text to an external service and requires explicit authorization before use.
 - Management continuity data belongs in the separate Project-Management hub; source-project documentation changes must not be mixed with management-hub Git operations.

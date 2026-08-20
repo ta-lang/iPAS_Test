@@ -26,6 +26,11 @@
                 </div>
             </div>
             <div class="header-controls">
+                <div id="syncStatus" class="sync-status" data-mode="logged-out" title="尚未登入">
+                    <span class="sync-status-dot" aria-hidden="true"></span>
+                    <span id="syncStatusText">未登入</span>
+                </div>
+                <button id="btnLogout" class="btn btn-sm btn-outline hidden" type="button">登出</button>
                 <div class="timer-display hidden" id="timerDisplay">
                     <svg class="icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <circle cx="12" cy="12" r="10"></circle>
@@ -70,6 +75,7 @@
                             <p id="loginError" style="color: var(--danger); font-size: 14px; margin-top: 8px; display: none; text-align: center; font-weight: bold;">⚠️ 身分證格式或驗證碼不正確，請重新輸入！</p>
                         </div>
                         <button id="btnLogin" class="btn btn-primary" style="width: 100%; padding: 12px; font-size: 16px; font-weight: 600; justify-content: center;">驗證並登入系統</button>
+                        <p class="login-privacy-note">身分證字號只送往目前設定的登入驗證服務，不會作為題庫進度主鍵或寫入同步佇列。</p>
                     </div>
                 </div>
             </section>
@@ -450,6 +456,8 @@
     <!-- JS Scripts -->
     <script src="config.js" charset="utf-8"></script>
     <script src="core.js" charset="utf-8"></script>
+    <script src="account-core.js" charset="utf-8"></script>
+    <script src="account-api.js" charset="utf-8"></script>
     <script src="script.js" charset="utf-8"></script>
 </body>
 </html>

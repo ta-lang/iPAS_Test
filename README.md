@@ -32,6 +32,8 @@ c:\Drive224\Projects\iPAS 證照
 └── exam/                          # 模擬考與自主學習網頁系統 (純前端 SPA)
     ├── index.html                 # 系統首頁 (含身分驗證登入與科目選擇)
     ├── core.js                    # 可獨立測試的評分、事件去重與計時核心
+    ├── account-core.js            # 不透明帳戶、分區鍵值、題目事件與同步操作核心
+    ├── account-api.js             # 登入與同步網路邊界、逾時及逐筆確認檢查
     ├── script.js                  # 模擬考系統主控邏輯與加權驗證演算法
     ├── style.css                  # 現代毛玻璃質感 (Glassmorphism) 與響應式樣式
     ├── questions.js/json          # 營運智慧分析師題庫 (163 題)
@@ -153,7 +155,9 @@ node --check exam/config.js
 node --check exam/sw.js
 ```
 
-測試涵蓋評分結果、重複事件防護、牆鐘計時、永久 `question_uid`、舊資料消歧義、按證照載入，以及三份題庫的題數、來源欄位、內容雜湊、四個非空選項、答案格式與 JSON/JS wrapper 一致性。題庫在 GitHub Pages 上以 JSON 為 canonical 格式按需載入；JS wrapper 僅供 `file://` 本機備援，且只能由解析器產生。
+測試涵蓋評分結果、重複事件防護、牆鐘計時、永久 `question_uid`、舊資料消歧義、按證照載入、不透明帳戶、帳戶 A/B 分區、短效 session、同步逐筆確認，以及三份題庫契約與 JSON/JS wrapper 一致性。題庫在 GitHub Pages 上以 JSON 為 canonical 格式按需載入；JS wrapper 僅供 `file://` 本機備援，且只能由解析器產生。
+
+Phase 3 前端基礎已建立，但現有 Google Apps Script 尚未提供正式帳戶與同步契約，因此目前登入後會顯示「本機模式」，不會假裝已跨裝置同步。後端需求請見 [帳戶與同步 API 契約](docs/account_sync_api_contract.md)。
 
 ---
 

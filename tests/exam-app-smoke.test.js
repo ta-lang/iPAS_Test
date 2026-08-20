@@ -14,19 +14,36 @@ function countMatches(text, expression) {
 
 test('核心模組在主程式之前載入並納入離線 app shell', () => {
     assert.ok(index.indexOf('src="core.js"') < index.indexOf('src="script.js"'));
-    assert.match(serviceWorker, /const CACHE = 'ipas-exam-v3'/);
+    assert.match(serviceWorker, /const CACHE = 'ipas-exam-v4'/);
     assert.match(serviceWorker, /'core\.js'/);
 });
 
 test('題庫按證照載入且持久化使用永久題目識別碼', () => {
     assert.match(script, /async function loadModuleQuestions/);
     assert.doesNotMatch(index, /src="(?:questions|ai_questions|ai_mid_questions)\.js"/);
-    assert.match(script, /const DB_VERSION = 4/);
+    assert.match(script, /const DB_VERSION = 5/);
     assert.match(script, /migrationQuarantine/);
     assert.match(script, /getQuestionStorageId\(certId, q\)/);
     assert.match(script, /questions\.find\(item => item\.question_uid === resolution\.question_uid\)/);
     assert.doesNotMatch(script, /const question = resolution\.question/);
     assert.doesNotMatch(script, /id:\s*`\$\{certId\}_\$\{q\.num\}`/);
+});
+
+test('Phase 3 帳戶核心先於主程式載入並建立帳戶分區儲存', () => {
+    assert.ok(index.indexOf('src="account-core.js"') < index.indexOf('src="script.js"'));
+    assert.ok(index.indexOf('src="account-api.js"') < index.indexOf('src="script.js"'));
+    assert.match(serviceWorker, /'account-core\.js'/);
+    assert.match(serviceWorker, /'account-api\.js'/);
+    assert.match(index, /id="syncStatus"/);
+    assert.match(index, /id="btnLogout"/);
+    assert.match(script, /const DB_VERSION = 5/);
+    assert.match(script, /createObjectStore\('userQuestionState'/);
+    assert.match(script, /createObjectStore\('syncOutbox'/);
+    assert.match(script, /createObjectStore\('accountQuizAttempts'/);
+    assert.match(script, /createObjectStore\('accountAttemptAnswers'/);
+    assert.match(script, /createObjectStore\('courseProgress'/);
+    assert.match(script, /parseLoginCapability\(data\)/);
+    assert.match(script, /persistAccountQuestionEvent/);
 });
 
 test('評分、練習啟動與回饋各只有一個正式入口', () => {
