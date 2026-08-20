@@ -3,6 +3,7 @@
     "id": 1,
     "subject": "考科一：營運智慧概論",
     "chapter": "第四章 營運智慧基本知識",
+    "assessmentTopic": "L111",
     "num": 1,
     "question": "下列有關商業智慧及營運智慧的敘述何者有誤？",
     "options": [
@@ -14,12 +15,17 @@
     "answer": "C",
     "ans_text": "商業智慧分析無法提升組織競爭優勢。",
     "explanation": "商業智慧是運用一系列的資訊科技分析工具，從大量多樣的日常營運資料中 分析與整理出有價值的經營資訊，以有效改善企業的營運績效，提升組織的 競爭優勢 。 營運智慧則是將商業智慧分析應用於企業營運模式中的動態系統 。",
-    "assessmentTopic": "L111"
+    "display_num": 1,
+    "source_id": "oi-927cf90e7e8cb530",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-4c000380c1f176da3631d10b",
+    "content_hash": "b5c2f9a0d1d88d81ad1c3431da19d95dda04f0b39d60c38574d11e1d665bb838"
   },
   {
     "id": 2,
     "subject": "考科一：營運智慧概論",
     "chapter": "第四章 營運智慧基本知識",
+    "assessmentTopic": "L111",
     "num": 2,
     "question": "下列何者不是平衡計分卡的構面？",
     "options": [
@@ -31,12 +37,17 @@
     "answer": "B",
     "ans_text": "員工。",
     "explanation": "平衡計分卡包括四個構面，分別是財務、顧客、內部流程、學習與成長。",
-    "assessmentTopic": "L111"
+    "display_num": 2,
+    "source_id": "oi-927cf90e7e8cb530",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-6f1b1490f717bb14ba63e1ee",
+    "content_hash": "288511e26e1f7dbe4ffbc36c5e86fd80227afa44bc9cb9ebafbc2363a8e60325"
   },
   {
     "id": 3,
     "subject": "考科一：營運智慧概論",
     "chapter": "第四章 營運智慧基本知識",
+    "assessmentTopic": "L111",
     "num": 3,
     "question": "商業智慧（ Business Intelligent ）分析工具正逐漸變得越來越強大，用起來也更 友善，其中何種運用可讓分析結果更快顯現？",
     "options": [
@@ -48,12 +59,17 @@
     "answer": "A",
     "ans_text": "記憶體內運算 （in-memory computing ）。",
     "explanation": "",
-    "assessmentTopic": "L111"
+    "display_num": 3,
+    "source_id": "oi-927cf90e7e8cb530",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-a01445eda1cbc452158cd49d",
+    "content_hash": "39c8979041d4fdd4708404a0bd8e57260e7ed4f8e0db0c6f42b1223f7fd03bd2"
   },
   {
     "id": 4,
     "subject": "考科一：營運智慧概論",
     "chapter": "第四章 營運智慧基本知識",
+    "assessmentTopic": "L111",
     "num": 4,
     "question": "下列何者為一種用於分析非結構化文字的的技法 ， 它會檢查關鍵字 、 語意結構 、 語言上的關係、口語片段、常用語詞、帶有情感的文字和其他的特徵來汲取有 意義的商業智慧？",
     "options": [
@@ -65,12 +81,17 @@
     "answer": "B",
     "ans_text": "文字探勘。",
     "explanation": "",
-    "assessmentTopic": "L111"
+    "display_num": 4,
+    "source_id": "oi-927cf90e7e8cb530",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-943706c10806b8a9072dfb9f",
+    "content_hash": "9b97af0ef33b5f46965ab50f4a9d806c3a15253b85015328c45e6dd57fb25e93"
   },
   {
     "id": 5,
     "subject": "考科一：營運智慧概論",
     "chapter": "第四章 營運智慧基本知識",
+    "assessmentTopic": "L111",
     "num": 5,
     "question": "決策支援系統含有一些工具，可幫助管理模擬活動事件，進而預測未來，下列 哪一種工具可用來建立多種變數之間的關係模型 ， 使用者可變更一些變數 ， 看 其他變數如何受影響？",
     "options": [
@@ -82,12 +103,17 @@
     "answer": "D",
     "ans_text": "假設分析。",
     "explanation": "",
-    "assessmentTopic": "L111"
+    "display_num": 5,
+    "source_id": "oi-927cf90e7e8cb530",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-ce1871d94d94f04cc059d974",
+    "content_hash": "d526050dc4f6dfef7fc5a995d4457f264f7b57372e1fda25354676023dff941f"
   },
   {
     "id": 6,
     "subject": "考科一：營運智慧概論",
     "chapter": "第四章 營運智慧基本知識",
+    "assessmentTopic": "L111",
     "num": 6,
     "question": "下列何者為一種決策支援工具，通常是建立在 Excel 模型上，使用者設定某個 特定變數的目標值，然後告訴程式改變哪個變數以嘗試達到目標？",
     "options": [
@@ -99,12 +125,17 @@
     "answer": "B",
     "ans_text": "目標搜尋。",
     "explanation": "",
-    "assessmentTopic": "L111"
+    "display_num": 6,
+    "source_id": "oi-927cf90e7e8cb530",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-22a561c4845f906fec152bfe",
+    "content_hash": "514b5bd8ff99d70d064b4339c0f1ded27e3ccd30b4189c0da3f278a81c52f8d6"
   },
   {
     "id": 7,
     "subject": "考科一：營運智慧概論",
     "chapter": "第四章 營運智慧基本知識",
+    "assessmentTopic": "L111",
     "num": 7,
     "question": "下列何者為一種統計型的決策支援工具 ， 用來分析歷史趨勢和其他商業智慧以 了解我們關心的某些變數？",
     "options": [
@@ -116,12 +147,17 @@
     "answer": "C",
     "ans_text": "預測。",
     "explanation": "",
-    "assessmentTopic": "L111"
+    "display_num": 7,
+    "source_id": "oi-927cf90e7e8cb530",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-c0a0147990013c8c357ca3dc",
+    "content_hash": "dfa18db4fe1b3533f9adcd464cb1a5ddb88b07b5571ad8c13bce4be96aa163bf"
   },
   {
     "id": 8,
     "subject": "考科一：營運智慧概論",
     "chapter": "第四章 營運智慧基本知識",
+    "assessmentTopic": "L111",
     "num": 8,
     "question": "下列何者為一種資料分析處理軟體 ， 允許使用者深入探究資料 ， 或將資料倉儲 內的龐大資料予以切細分塊，以便揭露出隱藏的模式或趨勢？",
     "options": [
@@ -133,12 +169,17 @@
     "answer": "D",
     "ans_text": "線上分析處理。",
     "explanation": "",
-    "assessmentTopic": "L111"
+    "display_num": 8,
+    "source_id": "oi-927cf90e7e8cb530",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-2425e347ac0498bcc66ea970",
+    "content_hash": "389d87e7c8b57ca1632dc58603ea92a6da90e201dbde076b6b183c3fffbe0506"
   },
   {
     "id": 9,
     "subject": "考科一：營運智慧概論",
     "chapter": "第四章 營運智慧基本知識",
+    "assessmentTopic": "L111",
     "num": 9,
     "question": "統計學上的各種關聯性對於我們有用處 ， 哪一種分析的技法是為了尋找這樣的 關聯性？",
     "options": [
@@ -150,12 +191,17 @@
     "answer": "A",
     "ans_text": "購物籃分析。",
     "explanation": "",
-    "assessmentTopic": "L111"
+    "display_num": 9,
+    "source_id": "oi-927cf90e7e8cb530",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-faa2211a42181e650f07fdc9",
+    "content_hash": "b4cb24e55efb6f6b27a412c8c5d34bbb080041447955bfeaa0c4200b4f6b25ea"
   },
   {
     "id": 10,
     "subject": "考科一：營運智慧概論",
     "chapter": "第四章 營運智慧基本知識",
+    "assessmentTopic": "L111",
     "num": 10,
     "question": "下列哪種系統可以協助企業瞭解並管理產品的詳細狀況？",
     "options": [
@@ -167,12 +213,17 @@
     "answer": "C",
     "ans_text": "產品生命週期管理系統。",
     "explanation": "產品生命週期管理系統 （Product Life -cycle Management System, PLM ）主要是 用以協助企業瞭解並管理產品的詳細狀況。",
-    "assessmentTopic": "L111"
+    "display_num": 10,
+    "source_id": "oi-927cf90e7e8cb530",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-2e0d6cb7fc6cbe80b1ee50a8",
+    "content_hash": "e0714380381f58df8119d82ef8a121d14eb2e8a74a3c27b614b739d1faeb6f9d"
   },
   {
     "id": 11,
     "subject": "考科一：營運智慧概論",
     "chapter": "第四章 營運智慧基本知識",
+    "assessmentTopic": "L111",
     "num": 11,
     "question": "下列何者不是企業導入 ERP 系統的財務與會計模組的效用？",
     "options": [
@@ -184,12 +235,17 @@
     "answer": "D",
     "ans_text": "自動提供財務 問題的解決方法。",
     "explanation": "企業導入 ERP 系統的財務與會計模組的效用包括：簡化會計處理程序、即時 提供整合性資料、即時提供財務分析資訊、進行更精細的財務分析。",
-    "assessmentTopic": "L111"
+    "display_num": 11,
+    "source_id": "oi-927cf90e7e8cb530",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-9172950ef113d927385c640f",
+    "content_hash": "ef75893010d5f8f60f55809a8d0f0899e38839c1949c543d8800b7e22e6be9f2"
   },
   {
     "id": 12,
     "subject": "考科一：營運智慧概論",
     "chapter": "第四章 營運智慧基本知識",
+    "assessmentTopic": "L111",
     "num": 12,
     "question": "「雖然企業有營運智慧 （ Operations Intelligence, OI ）人員分析，但公司主管依 舊憑藉直覺來做決策」 ，這是企業中甚麼因素造成的？",
     "options": [
@@ -201,12 +257,17 @@
     "answer": "C",
     "ans_text": "組織文化因素。",
     "explanation": "",
-    "assessmentTopic": "L111"
+    "display_num": 12,
+    "source_id": "oi-927cf90e7e8cb530",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-6e5cc75f9da3533af23fff50",
+    "content_hash": "07a25973959b3fc6eb24a73ca58360d9ee56d519c6f71c706d470914be903844"
   },
   {
     "id": 13,
     "subject": "考科一：營運智慧概論",
     "chapter": "第四章 營運智慧基本知識",
+    "assessmentTopic": "L111",
     "num": 13,
     "question": "下列對於營運智慧（ Operations Intelligence, OI ）的敘述何者有誤？",
     "options": [
@@ -218,12 +279,17 @@
     "answer": "B",
     "ans_text": "著重於管理小規模的營運事件。",
     "explanation": "",
-    "assessmentTopic": "L111"
+    "display_num": 13,
+    "source_id": "oi-927cf90e7e8cb530",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-4712c9d854cbb9b4c541480b",
+    "content_hash": "ad1f3a364b9b7b31f91f3a273540f7940b98f2bf1455c1ab88653f1937a3e56a"
   },
   {
     "id": 14,
     "subject": "考科一：營運智慧概論",
     "chapter": "第四章 營運智慧基本知識",
+    "assessmentTopic": "L111",
     "num": 14,
     "question": "提高製成品的良率是商業智慧應用於生產管理的主要目的之一 ， 請問正確的良 率計算方式為何？",
     "options": [
@@ -235,12 +301,17 @@
     "answer": "B",
     "ans_text": "「實際確認數量」除以「生產數量」 。",
     "explanation": "",
-    "assessmentTopic": "L111"
+    "display_num": 14,
+    "source_id": "oi-927cf90e7e8cb530",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-dcdc0a8fd473231d14966171",
+    "content_hash": "ade5baac7a88c0a6e695c036fa76e7bcdab3377dfae8a14aaadb099614329c3e"
   },
   {
     "id": 15,
     "subject": "考科一：營運智慧概論",
     "chapter": "第四章 營運智慧基本知識",
+    "assessmentTopic": "L111",
     "num": 15,
     "question": "下列何者非雲端顧客關係管理（ Customer Relationship Management, CRM ）系 統的特性？",
     "options": [
@@ -252,12 +323,17 @@
     "answer": "D",
     "ans_text": "先購買一套 CRM 來使用。",
     "explanation": "",
-    "assessmentTopic": "L111"
+    "display_num": 15,
+    "source_id": "oi-927cf90e7e8cb530",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-4c73f926446e3ff76ab4d78c",
+    "content_hash": "e16fd7d691a108c4be42649a393c5f8d5b1ef88bf872b690212b4e3a426e4660"
   },
   {
     "id": 16,
     "subject": "考科一：營運智慧概論",
     "chapter": "第四章 營運智慧基本知識",
+    "assessmentTopic": "L111",
     "num": 16,
     "question": "企業營運計畫中最主要的是？",
     "options": [
@@ -269,12 +345,17 @@
     "answer": "D",
     "ans_text": "如何串聯以上各個部分。",
     "explanation": "",
-    "assessmentTopic": "L111"
+    "display_num": 16,
+    "source_id": "oi-927cf90e7e8cb530",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-2cb62d1fe337421c19a7009b",
+    "content_hash": "7488131163e526f51f4fd9e4e0337e0d69895b7e8b28d996e2d55a9a98cad238"
   },
   {
     "id": 17,
     "subject": "考科一：營運智慧概論",
     "chapter": "第四章 營運智慧基本知識",
+    "assessmentTopic": "L111",
     "num": 17,
     "question": "下列何者不是營運智慧（ Operations Intelligence, OI ）對組織的成效？",
     "options": [
@@ -286,12 +367,17 @@
     "answer": "C",
     "ans_text": "提升員工個人在統計方面的專業知識。",
     "explanation": "",
-    "assessmentTopic": "L111"
+    "display_num": 17,
+    "source_id": "oi-927cf90e7e8cb530",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-d5d476928eeebd4d0f55d16f",
+    "content_hash": "5a04665821e1efef31b870beb2aa6353e1570b597ef700880b7afc39df74ad3f"
   },
   {
     "id": 18,
     "subject": "考科一：營運智慧概論",
     "chapter": "第四章 營運智慧基本知識",
+    "assessmentTopic": "L111",
     "num": 18,
     "question": "電子商務蓬勃發展，相關技術與服務亦推陳出新，下列敘述何者有誤？",
     "options": [
@@ -303,12 +389,17 @@
     "answer": "A",
     "ans_text": "可用來分析消費者行為的大數據分析 ， 其四大特徵為數量（Volume）、",
     "explanation": "速度 （Velocity）、多樣性 （Variety）和可見性 （Visibility ）。",
-    "assessmentTopic": "L111"
+    "display_num": 18,
+    "source_id": "oi-927cf90e7e8cb530",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-6c96785b708eb35b5b55a902",
+    "content_hash": "4fd09da0eb83bcb23c636b47f40d1a86d082620fcdc6f4e33419578d7d790df0"
   },
   {
     "id": 19,
     "subject": "考科一：營運智慧概論",
     "chapter": "第四章 營運智慧基本知識",
+    "assessmentTopic": "L111",
     "num": 19,
     "question": "建置資料倉儲系統需要規劃與設計流程，該流程包括以下四個步驟，請問它們的 順序為何？（1）系統建置；（2）架構設計；（3）測試與發布；（4）需求與現況。",
     "options": [
@@ -320,12 +411,17 @@
     "answer": "B",
     "ans_text": "4213。",
     "explanation": "資料倉儲系統建置過程中的規劃與設計流程共有四個步驟，依序是需求與現 況、架構設計、系統建置、測試與發布。",
-    "assessmentTopic": "L111"
+    "display_num": 19,
+    "source_id": "oi-927cf90e7e8cb530",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-382a88048f45f87dbe03cee4",
+    "content_hash": "1ae17ec391c235d88fed34902bcdec41d0c714ce64d0b68ffaec4947ee7c450f"
   },
   {
     "id": 20,
     "subject": "考科一：營運智慧概論",
     "chapter": "第四章 營運智慧基本知識",
+    "assessmentTopic": "L111",
     "num": 20,
     "question": "下列何者為營運智慧系統架構的子系統？",
     "options": [
@@ -337,12 +433,17 @@
     "answer": "D",
     "ans_text": "以上皆是。",
     "explanation": "營運智慧系統架構的子系統包含資料倉儲系統、資料分析系統與資料呈現系 統。",
-    "assessmentTopic": "L111"
+    "display_num": 20,
+    "source_id": "oi-927cf90e7e8cb530",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-4401b25d2290dc8875d33d44",
+    "content_hash": "1701cbe905432e8d6d840d24820400f6d21e685e3825d1157f31bde117d64ab0"
   },
   {
     "id": 21,
     "subject": "考科一：營運智慧概論",
     "chapter": "第四章 營運智慧基本知識",
+    "assessmentTopic": "L111",
     "num": 21,
     "question": "下列何者是企業組織為了能更系統化管理智慧資本而採用的一系列策略及實 務做法？",
     "options": [
@@ -354,12 +455,17 @@
     "answer": "B",
     "ans_text": "資料庫管理。",
     "explanation": "",
-    "assessmentTopic": "L111"
+    "display_num": 21,
+    "source_id": "oi-927cf90e7e8cb530",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-72241e7ba6c1d40db845d782",
+    "content_hash": "d41ab5dc358e23d74eaad802010c6b67078e15b5ad646cdc97495f863fbd68f1"
   },
   {
     "id": 22,
     "subject": "考科一：營運智慧概論",
     "chapter": "第四章 營運智慧基本知識",
+    "assessmentTopic": "L111",
     "num": 22,
     "question": "下列何者是模仿人類專家推理或決策的一種方法 ， 它汲取自某個藉由專家的協 助而建立起來的特定領域的知識庫？",
     "options": [
@@ -371,12 +477,17 @@
     "answer": "A",
     "ans_text": "專家系統。",
     "explanation": "",
-    "assessmentTopic": "L111"
+    "display_num": 22,
+    "source_id": "oi-927cf90e7e8cb530",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-1216ed0acc5b1bf69ce8810c",
+    "content_hash": "e825b8183fe6d95b00cc4f407654df9c9e43454778da9ec48b49ce37321f3c86"
   },
   {
     "id": 23,
     "subject": "考科一：營運智慧概論",
     "chapter": "第四章 營運智慧基本知識",
+    "assessmentTopic": "L111",
     "num": 23,
     "question": "下列何者是可阻絕大部分軟體機器人的一種方法，亦稱作驗證碼或人機驗證， 造訪者必須先通過這樣的測驗才能進行註冊或進入網站？",
     "options": [
@@ -388,12 +499,17 @@
     "answer": "A",
     "ans_text": "Completely Automated Public Turing test to tell Computers and Humans",
     "explanation": "Apart （CAPTCHA ）。",
-    "assessmentTopic": "L111"
+    "display_num": 23,
+    "source_id": "oi-927cf90e7e8cb530",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-1122b083c8984fb836c40cba",
+    "content_hash": "2df550bc889d19a1574346ff4ce048b9be96e567d8b38b83db6d2f4065078d33"
   },
   {
     "id": 24,
     "subject": "考科一：營運智慧概論",
     "chapter": "第四章 營運智慧基本知識",
+    "assessmentTopic": "L111",
     "num": 24,
     "question": "企業資料倉儲特點不包括？",
     "options": [
@@ -405,12 +521,17 @@
     "answer": "C",
     "ans_text": "去中心化管理。",
     "explanation": "",
-    "assessmentTopic": "L111"
+    "display_num": 24,
+    "source_id": "oi-927cf90e7e8cb530",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-4a9d71850ad45c4600950458",
+    "content_hash": "04e90aece256a01d307ad83852ce1d96d95ccbb02e2c2fc5f3e900bcbc1487dd"
   },
   {
     "id": 25,
     "subject": "考科一：營運智慧概論",
     "chapter": "第四章 營運智慧基本知識",
+    "assessmentTopic": "L111",
     "num": 25,
     "question": "從過去決策而來的資料進行挖掘所得的問題 ， 從中萃取出可增進未來決策過程 精確度的少數規則與模式稱為？",
     "options": [
@@ -422,12 +543,17 @@
     "answer": "A",
     "ans_text": "監督式學習。",
     "explanation": "",
-    "assessmentTopic": "L111"
+    "display_num": 25,
+    "source_id": "oi-927cf90e7e8cb530",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-4ac47ec485f10ad0f1deb9d7",
+    "content_hash": "569759d51f8d9346d2064d74d6fc79c95b0295ebba2f785c1015ae459291ef0f"
   },
   {
     "id": 26,
     "subject": "考科一：營運智慧概論",
     "chapter": "第四章 營運智慧基本知識",
+    "assessmentTopic": "L111",
     "num": 26,
     "question": "下列何者是將在網站上從事廣告和電子商務而完成某些活動的訪客數 ， 除以訪 客總人數的比率稱之為？",
     "options": [
@@ -439,12 +565,17 @@
     "answer": "D",
     "ans_text": "Conversion rate 。",
     "explanation": "",
-    "assessmentTopic": "L111"
+    "display_num": 26,
+    "source_id": "oi-927cf90e7e8cb530",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-04155d7582e7ae10b464888b",
+    "content_hash": "35de12c03a748149f9a07345613f73d5139bf04995a5b6c4de0642f94bf3f81d"
   },
   {
     "id": 27,
     "subject": "考科一：營運智慧概論",
     "chapter": "第四章 營運智慧基本知識",
+    "assessmentTopic": "L111",
     "num": 27,
     "question": "訪客每一次點擊廣告進入廣告主網站 ， 廣告主需要花費的金額 ， 是指下列何種 電子商務指標？",
     "options": [
@@ -456,12 +587,17 @@
     "answer": "A",
     "ans_text": "CPC（Cost-per-Click ）。",
     "explanation": "",
-    "assessmentTopic": "L111"
+    "display_num": 27,
+    "source_id": "oi-927cf90e7e8cb530",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-972d73d5982b0579f991cfcc",
+    "content_hash": "7bf603f52a36df25ec43fb893c1c980e10c154e946085e1e55f30d2da7981382"
   },
   {
     "id": 28,
     "subject": "考科一：營運智慧概論",
     "chapter": "第四章 營運智慧基本知識",
+    "assessmentTopic": "L111",
     "num": 28,
     "question": "下列何者不是價值鏈中的主要活動？",
     "options": [
@@ -473,12 +609,17 @@
     "answer": "D",
     "ans_text": "人力資源管理。",
     "explanation": "價值鏈中的主要活動是指產品從生產者至消費者過程中的一連串相關活動， 包括進貨物流、生產作業、產品配送、行銷與銷售、售後服務，而人力資源管 理則是屬於價值鏈中的支援活動。",
-    "assessmentTopic": "L111"
+    "display_num": 28,
+    "source_id": "oi-927cf90e7e8cb530",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-2b54670dd9c7a9890feda4b0",
+    "content_hash": "74a70072bb78ceaeae7f76d76f01adf36976dad6805fb6c7722b549069bc1547"
   },
   {
     "id": 29,
     "subject": "考科一：營運智慧概論",
     "chapter": "第四章 營運智慧基本知識",
+    "assessmentTopic": "L111",
     "num": 29,
     "question": "下列何者不是電子採購（ E-procurement ）模式帶給企業的價值？",
     "options": [
@@ -490,12 +631,17 @@
     "answer": "B",
     "ans_text": "增加文件作業",
     "explanation": "電子採購（E-procurement ）模式能夠加速採購、降低成本、整合供應鏈、增強 競爭優勢，進而提升企業價值。",
-    "assessmentTopic": "L111"
+    "display_num": 29,
+    "source_id": "oi-927cf90e7e8cb530",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-b76ab80d772b074492915d56",
+    "content_hash": "3acfb3602ea4b34035a9f08a3f0a8a25a916c980607bc47c2fc8e66945a2bd31"
   },
   {
     "id": 30,
     "subject": "考科一：營運智慧概論",
     "chapter": "第四章 營運智慧基本知識",
+    "assessmentTopic": "L111",
     "num": 30,
     "question": "「任何企業對顧客都有存在的價值，這個價值決定顧客的期望」 ，此敘述是屬 於顧客關係管理策略發展循環「 PEPSI 」模式的哪一步驟？",
     "options": [
@@ -507,12 +653,17 @@
     "answer": "A",
     "ans_text": "企業的定位和價值主張。",
     "explanation": "",
-    "assessmentTopic": "L111"
+    "display_num": 30,
+    "source_id": "oi-927cf90e7e8cb530",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-96214f366173ea44caa0ae15",
+    "content_hash": "19efacb904ff5cfa465af34b44fc6f12830d1cb6aa96c86c3caba4726952e85e"
   },
   {
     "id": 31,
     "subject": "考科一：營運智慧概論",
     "chapter": "第四章 營運智慧基本知識",
+    "assessmentTopic": "L111",
     "num": 31,
     "question": "企業績效評估是個複雜且需要大量資料分析的過程 ， 下列關於企業績效評估之 敘述，何者正確？",
     "options": [
@@ -524,12 +675,17 @@
     "answer": "C",
     "ans_text": "量化與質化資料都應收集並納入考量。",
     "explanation": "",
-    "assessmentTopic": "L111"
+    "display_num": 31,
+    "source_id": "oi-927cf90e7e8cb530",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-421ecc081257731354ad6511",
+    "content_hash": "eee7a555a8c8d16159041ff1e69f5ee6a11305c266513a5e63fbde8b86c99baf"
   },
   {
     "id": 32,
     "subject": "考科一：營運智慧概論",
     "chapter": "第四章 營運智慧基本知識",
+    "assessmentTopic": "L111",
     "num": 32,
     "question": "下列何者不是價值鏈管理的重要利益？",
     "options": [
@@ -541,12 +697,17 @@
     "answer": "B",
     "ans_text": "改變顧客群。",
     "explanation": "",
-    "assessmentTopic": "L111"
+    "display_num": 32,
+    "source_id": "oi-927cf90e7e8cb530",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-e680b6734cf19a1312a4ac39",
+    "content_hash": "700123a836fbc61b3792cd4a1a09460c3e478408da90e68c1c0e0873f4066e36"
   },
   {
     "id": 33,
     "subject": "考科一：營運智慧概論",
     "chapter": "第四章 營運智慧基本知識",
+    "assessmentTopic": "L111",
     "num": 33,
     "question": "下列有關大數據行銷的描述，何者有誤？",
     "options": [
@@ -558,12 +719,17 @@
     "answer": "C",
     "ans_text": "消費者自加入會員起留下的每一筆交易紀錄都同等重要。",
     "explanation": "",
-    "assessmentTopic": "L111"
+    "display_num": 33,
+    "source_id": "oi-927cf90e7e8cb530",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-0352284f7b544153caf87e37",
+    "content_hash": "23a7f9bd4a06d41bd781d8fa338e5bec0f9833623daa7587b930bcdea67f2a4b"
   },
   {
     "id": 34,
     "subject": "考科一：營運智慧概論",
     "chapter": "第四章 營運智慧基本知識",
+    "assessmentTopic": "L111",
     "num": 34,
     "question": "下列哪一項不是人力資源績效指標的特性？",
     "options": [
@@ -575,12 +741,17 @@
     "answer": "D",
     "ans_text": "應特定層面的現象。",
     "explanation": "",
-    "assessmentTopic": "L111"
+    "display_num": 34,
+    "source_id": "oi-927cf90e7e8cb530",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-f9d7498a6b3d2493c4ab19c5",
+    "content_hash": "7d943b728cf3dbeb9942f78d10487b21be3c738b35edc81685328076a9e18125"
   },
   {
     "id": 35,
     "subject": "考科一：營運智慧概論",
     "chapter": "第四章 營運智慧基本知識",
+    "assessmentTopic": "L111",
     "num": 35,
     "question": "企業使用大數據分析後，下列何者不是目前的網路行銷的趨勢？",
     "options": [
@@ -592,12 +763,17 @@
     "answer": "B",
     "ans_text": "配銷科層化。",
     "explanation": "",
-    "assessmentTopic": "L111"
+    "display_num": 35,
+    "source_id": "oi-927cf90e7e8cb530",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-ac9bf9e4e9ce462c77834160",
+    "content_hash": "e5f71c8a0da719fabc79530e80176c9cf6256f61c7f9d0fbab207b920c3a143a"
   },
   {
     "id": 36,
     "subject": "考科一：營運智慧概論",
     "chapter": "第四章 營運智慧基本知識",
+    "assessmentTopic": "L111",
     "num": 36,
     "question": "在顧客 關係管理（ Customer Relationship Management, CRM ）中，資料探勘是 屬於？",
     "options": [
@@ -609,12 +785,17 @@
     "answer": "C",
     "ans_text": "分析型 CRM 的核心技術。",
     "explanation": "",
-    "assessmentTopic": "L111"
+    "display_num": 36,
+    "source_id": "oi-927cf90e7e8cb530",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-94193af3e46d9d3ed68de97c",
+    "content_hash": "6b626c3a282627a9cc28d51db22132ad75b2873f0ed797902ba586cb470782aa"
   },
   {
     "id": 37,
     "subject": "考科一：營運智慧概論",
     "chapter": "第四章 營運智慧基本知識",
+    "assessmentTopic": "L111",
     "num": 37,
     "question": "營運智慧 /商業智慧系統規劃階段中的企業基礎設施評估，可分為技術面與非 技術面的評估。請問下列何者不是技術面的基礎設施評估項目？",
     "options": [
@@ -626,12 +807,17 @@
     "answer": "B",
     "ans_text": "網路安全平台。",
     "explanation": "在營運智慧 /商業智慧系統規劃階段中的企業基礎設施評估中的技術面基礎 設施方面，評估項目包含硬體平台、中介軟體平台與資料庫管理系統平台。",
-    "assessmentTopic": "L111"
+    "display_num": 37,
+    "source_id": "oi-927cf90e7e8cb530",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-464374fd5f382f922c47d48c",
+    "content_hash": "b39884a7dac3e50b8ea506d0e38a845b7782ca9db8042b1fa68db0c8775eb4a7"
   },
   {
     "id": 38,
     "subject": "考科一：營運智慧概論",
     "chapter": "第四章 營運智慧基本知識",
+    "assessmentTopic": "L111",
     "num": 38,
     "question": "下列何種技術可用來進行營運智慧 /商業智慧專案的規劃、排程與控制？",
     "options": [
@@ -643,12 +829,17 @@
     "answer": "D",
     "ans_text": "以上皆是。",
     "explanation": "甘特圖 （Gantt chart ）、計畫評核技術 （PERT）及要徑法 （CPM）三種方法可 用來進行營運智慧 /商業智慧專案的規劃、排程與控制。",
-    "assessmentTopic": "L111"
+    "display_num": 38,
+    "source_id": "oi-927cf90e7e8cb530",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-4b3c0c077832ea6ce1431bbd",
+    "content_hash": "dd1cebcd6e07334b474ba612cfbc1a907f56ca68a55c34486bb53c28d3c51a2d"
   },
   {
     "id": 39,
     "subject": "考科一：營運智慧概論",
     "chapter": "第四章 營運智慧基本知識",
+    "assessmentTopic": "L111",
     "num": 39,
     "question": "下列何者是一個以網路為介面的系統 ， 它能整合企業內部網路等科技 ， 讓所有 企業內部網路使用者及特定企業外部網路使用者 ， 存取各種內部與外部企業應 用與服務？",
     "options": [
@@ -660,12 +851,17 @@
     "answer": "A",
     "ans_text": "企業資訊入口網站。",
     "explanation": "",
-    "assessmentTopic": "L111"
+    "display_num": 39,
+    "source_id": "oi-927cf90e7e8cb530",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-59e0e9a3a9971cdeb4f1cf88",
+    "content_hash": "2a40b148b02a9afde3e5590fae004506fb9a997483059218dd38984adfc1d68d"
   },
   {
     "id": 40,
     "subject": "考科一：營運智慧概論",
     "chapter": "第四章 營運智慧基本知識",
+    "assessmentTopic": "L111",
     "num": 40,
     "question": "文件探勘與文件導向的搜尋是支援哪一種知識庫管理系統？",
     "options": [
@@ -677,12 +873,17 @@
     "answer": "B",
     "ans_text": "半結構化知識系統。",
     "explanation": "",
-    "assessmentTopic": "L111"
+    "display_num": 40,
+    "source_id": "oi-927cf90e7e8cb530",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-2be369131b20988258373c51",
+    "content_hash": "ded552a224d075cb80335c0f796da4e5abf9b91719e1bde32df6588d1ac28ccf"
   },
   {
     "id": 41,
     "subject": "考科一：營運智慧概論",
     "chapter": "第四章 營運智慧基本知識",
+    "assessmentTopic": "L111",
     "num": 41,
     "question": "Web 2.0 上的 Wiki、Blog 都是在支援社群網路（ Social Network ）的聯絡與溝 通，是屬於哪一種知識庫管理系統？",
     "options": [
@@ -694,12 +895,17 @@
     "answer": "C",
     "ans_text": "知識網路系統。",
     "explanation": "",
-    "assessmentTopic": "L111"
+    "display_num": 41,
+    "source_id": "oi-927cf90e7e8cb530",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-f4ce9fe7977a740cb4c479ec",
+    "content_hash": "dd8bc045791cb464de0a5e5430604759d5e828e716ce7862fb486e5fee837880"
   },
   {
     "id": 42,
     "subject": "考科一：營運智慧概論",
     "chapter": "第四章 營運智慧基本知識",
+    "assessmentTopic": "L111",
     "num": 42,
     "question": "電腦輔助設計、虛擬實境系統是可用以支援知識管理的資訊科技，並支援知識 工作者創造知識，屬於下列哪一類？",
     "options": [
@@ -711,12 +917,17 @@
     "answer": "C",
     "ans_text": "支援知識工作者創造知識。",
     "explanation": "",
-    "assessmentTopic": "L111"
+    "display_num": 42,
+    "source_id": "oi-927cf90e7e8cb530",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-308e72dbd2ceb4ac7f8f15d7",
+    "content_hash": "c1decb03187de23688c855414e4daa4f4bf51ffaf5647e88cd75dce1b99851d9"
   },
   {
     "id": 43,
     "subject": "考科一：營運智慧概論",
     "chapter": "第四章 營運智慧基本知識",
+    "assessmentTopic": "L111",
     "num": 43,
     "question": "專家系統與類神經網路屬於哪種支援知識管理系統？",
     "options": [
@@ -728,12 +939,17 @@
     "answer": "A",
     "ans_text": "智慧型系統。",
     "explanation": "",
-    "assessmentTopic": "L111"
+    "display_num": 43,
+    "source_id": "oi-927cf90e7e8cb530",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-2c7004f1bf8065b9f96c5951",
+    "content_hash": "9be01b33467347389f33f97f47ae75693625bd17e46b79a2a50ac62ff2bf5ffb"
   },
   {
     "id": 44,
     "subject": "考科一：營運智慧概論",
     "chapter": "第四章 營運智慧基本知識",
+    "assessmentTopic": "L111",
     "num": 44,
     "question": "文件管理系統與搜尋引擎屬哪種知識管理系統？",
     "options": [
@@ -745,12 +961,17 @@
     "answer": "A",
     "ans_text": "結構化知識系統。",
     "explanation": "",
-    "assessmentTopic": "L111"
+    "display_num": 44,
+    "source_id": "oi-927cf90e7e8cb530",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-a0c27cda6100d0ee4202abc9",
+    "content_hash": "fd67138d279beda737fac60c2b8641279830635915ba6d604897c33c7e401ee3"
   },
   {
     "id": 45,
     "subject": "考科一：營運智慧概論",
     "chapter": "第五章 基礎資料分析",
+    "assessmentTopic": "L112",
     "num": 1,
     "question": "假設有一組資料為某襯衫尺寸，分為特小、小、中、大、特大，請問此資料的 特性屬於何種資料？",
     "options": [
@@ -762,12 +983,17 @@
     "answer": "B",
     "ans_text": "次序資料。",
     "explanation": "",
-    "assessmentTopic": "L112"
+    "display_num": 1,
+    "source_id": "oi-7a437925e554e21a",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-d9f80a4b2ebd1add2a5dd763",
+    "content_hash": "951b26384a8390d1e45cf039dbf588388829b61aeb60facfe875cf71dd6aef6d"
   },
   {
     "id": 46,
     "subject": "考科一：營運智慧概論",
     "chapter": "第五章 基礎資料分析",
+    "assessmentTopic": "L112",
     "num": 2,
     "question": "資料倉儲是從結構化的資料來源建立，下列何者為不正統且不合適的資料來 源？",
     "options": [
@@ -779,12 +1005,17 @@
     "answer": "C",
     "ans_text": "模擬資料。",
     "explanation": "",
-    "assessmentTopic": "L112"
+    "display_num": 2,
+    "source_id": "oi-7a437925e554e21a",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-7b9f31b7b0380c04d485afe9",
+    "content_hash": "fcb354ac3791e6ffe6a745f4dc5d7e2206835265e227a4f6466067ba735d553b"
   },
   {
     "id": 47,
     "subject": "考科一：營運智慧概論",
     "chapter": "第五章 基礎資料分析",
+    "assessmentTopic": "L112",
     "num": 3,
     "question": "任何被記錄的事物都是資料 ， 而資料的獲取可以有很多方式 ， 下列何者較不 建 議採用？",
     "options": [
@@ -796,12 +1027,17 @@
     "answer": "D",
     "ans_text": "文件範例的內容。",
     "explanation": "",
-    "assessmentTopic": "L112"
+    "display_num": 3,
+    "source_id": "oi-7a437925e554e21a",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-f63f81fc223c93e8b37560bc",
+    "content_hash": "bb6ed3074314453fb7af4bd1997cbc9b4e184d6e040ce4e0acd03cdac6f002fe"
   },
   {
     "id": 48,
     "subject": "考科一：營運智慧概論",
     "chapter": "第五章 基礎資料分析",
+    "assessmentTopic": "L112",
     "num": 4,
     "question": "變數分為質變數和量變數 ， 若某資料為學生體重 ， 請問此變數為量變數的哪一 類？",
     "options": [
@@ -813,12 +1049,17 @@
     "answer": "A",
     "ans_text": "連續變數。",
     "explanation": "",
-    "assessmentTopic": "L112"
+    "display_num": 4,
+    "source_id": "oi-7a437925e554e21a",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-62200b48aa1e77f8ee6433fd",
+    "content_hash": "b0653e439869efccc47bbcbe24ed76e9e1fe0906b737f4c63cc172260ccee374"
   },
   {
     "id": 49,
     "subject": "考科一：營運智慧概論",
     "chapter": "第五章 基礎資料分析",
+    "assessmentTopic": "L112",
     "num": 5,
     "question": "群集分析可以運用在各種具有大量數據的領域中，下列哪種不是群集分析的應用？",
     "options": [
@@ -830,12 +1071,17 @@
     "answer": "D",
     "ans_text": "信用評估。",
     "explanation": "",
-    "assessmentTopic": "L112"
+    "display_num": 5,
+    "source_id": "oi-7a437925e554e21a",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-97d1b8ad00f0b2bfc8e43b68",
+    "content_hash": "f82b3472bc3ba45eac41736645848064b92e773d902bd3865732f9ade6d5b3f6"
   },
   {
     "id": 50,
     "subject": "考科一：營運智慧概論",
     "chapter": "第五章 基礎資料分析",
+    "assessmentTopic": "L112",
     "num": 6,
     "question": "請問一般資料處理流程也就是 ETL 作業流程的順序為何？",
     "options": [
@@ -847,12 +1093,17 @@
     "answer": "A",
     "ans_text": "資料蒐集、資料轉換、資料載入。",
     "explanation": "ETL 作業流程的順序依序為資料蒐集、資料轉換、資料載入。",
-    "assessmentTopic": "L112"
+    "display_num": 6,
+    "source_id": "oi-7a437925e554e21a",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-6353bffb751720741f3b0569",
+    "content_hash": "b1d7fec09113c80ce6d27a79987401019bc8261d05dca059b6fc5e3da44cbf6c"
   },
   {
     "id": 51,
     "subject": "考科一：營運智慧概論",
     "chapter": "第五章 基礎資料分析",
+    "assessmentTopic": "L112",
     "num": 7,
     "question": "有效的資料倉儲核心在於能自動加入高品質資料至資料倉儲中的流程 ， 下列何 者不包括此流程？",
     "options": [
@@ -864,12 +1115,17 @@
     "answer": "C",
     "ans_text": "分析（Analyze ）。",
     "explanation": "",
-    "assessmentTopic": "L112"
+    "display_num": 7,
+    "source_id": "oi-7a437925e554e21a",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-00002e43b01818fef03be9a5",
+    "content_hash": "cf35b67c8511e97271e9fb77b4232ac1ee3885142bc8db0d87289e2dcec1c1da"
   },
   {
     "id": 52,
     "subject": "考科一：營運智慧概論",
     "chapter": "第五章 基礎資料分析",
+    "assessmentTopic": "L112",
     "num": 8,
     "question": "若某公司依據業務需求將郵件地址資訊分為國家、省 /縣（市） 、城市、郵遞區 號、街道和門牌號碼，請問此為資料轉換的哪一種？",
     "options": [
@@ -881,12 +1137,17 @@
     "answer": "D",
     "ans_text": "分解資料。",
     "explanation": "",
-    "assessmentTopic": "L112"
+    "display_num": 8,
+    "source_id": "oi-7a437925e554e21a",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-701c373f903d5ce5f9b76622",
+    "content_hash": "f7362b1b00c8d1230994e88ce79572a16c11e1ca7b147fa0645935403de4fcfe"
   },
   {
     "id": 53,
     "subject": "考科一：營運智慧概論",
     "chapter": "第五章 基礎資料分析",
+    "assessmentTopic": "L112",
     "num": 9,
     "question": "資料倉儲建置過程中會對資料探勘的結果有很大的影響是屬於哪一階段？",
     "options": [
@@ -898,12 +1159,17 @@
     "answer": "B",
     "ans_text": "轉換 （Transform ）。",
     "explanation": "",
-    "assessmentTopic": "L112"
+    "display_num": 9,
+    "source_id": "oi-7a437925e554e21a",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-9c1a3f43e323101980065083",
+    "content_hash": "a3a0b095d682fbd51380ff8631c6dff73ef8573952c7e572c0edad9597e7814c"
   },
   {
     "id": 54,
     "subject": "考科一：營運智慧概論",
     "chapter": "第五章 基礎資料分析",
+    "assessmentTopic": "L112",
     "num": 10,
     "question": "通常採用 ELT 流程將資料自動載入資料倉儲內應遵從哪一模式執行？",
     "options": [
@@ -915,12 +1181,17 @@
     "answer": "A",
     "ans_text": "週期性。",
     "explanation": "",
-    "assessmentTopic": "L112"
+    "display_num": 10,
+    "source_id": "oi-7a437925e554e21a",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-dc91adcf0921c4088872967e",
+    "content_hash": "4d15ea57a2b0fec09dca14014d9ccd80e20947cee25e2ee8b139be21c7dbf34c"
   },
   {
     "id": 55,
     "subject": "考科一：營運智慧概論",
     "chapter": "第五章 基礎資料分析",
+    "assessmentTopic": "L112",
     "num": 11,
     "question": "會進行資料轉換的主要原因，與下列哪種情況較無關？",
     "options": [
@@ -932,12 +1203,17 @@
     "answer": "C",
     "ans_text": "資料檔案太大。",
     "explanation": "",
-    "assessmentTopic": "L112"
+    "display_num": 11,
+    "source_id": "oi-7a437925e554e21a",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-9ba1b1744065838365ffc1dc",
+    "content_hash": "1f5ecc75e11e27dc22910968efb907f48fca7e2c3f3f5b71dda3354ba8c5427e"
   },
   {
     "id": 56,
     "subject": "考科一：營運智慧概論",
     "chapter": "第五章 基礎資料分析",
+    "assessmentTopic": "L112",
     "num": 12,
     "question": "相對於非結構性資料，以下何者不是結構性資料的優點？",
     "options": [
@@ -949,12 +1225,17 @@
     "answer": "C",
     "ans_text": "儲存資料具備彈性 。 結構性資料通常是先有結構存在再有資料進入 。",
     "explanation": "由於資料有一致固定的欄位及格式，程式處理較易，可節省儲存空間，資料也 容易被整併。但缺點是當遇到不符合規則的資料時，資料儲存就會產生困難， 資料儲存欠缺彈性。",
-    "assessmentTopic": "L112"
+    "display_num": 12,
+    "source_id": "oi-7a437925e554e21a",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-11b9b4370ad4783258eaeede",
+    "content_hash": "f69ac056ebfd53b925f9d5547a8f25ae4c31d88a78230fc39c0bacc5c905eb09"
   },
   {
     "id": 57,
     "subject": "考科一：營運智慧概論",
     "chapter": "第五章 基礎資料分析",
+    "assessmentTopic": "L112",
     "num": 13,
     "question": "在執行資料分析時通常希望資料來源皆為結構化資料 ， 但其實非結構化資料也 具備某種程度的優勢，下列何者為真？",
     "options": [
@@ -966,12 +1247,17 @@
     "answer": "A",
     "ans_text": "非結構化資料顯示較仔細的資訊。",
     "explanation": "",
-    "assessmentTopic": "L112"
+    "display_num": 13,
+    "source_id": "oi-7a437925e554e21a",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-f784b4f6b87f00c3c8e704d3",
+    "content_hash": "c98ea94a115a71dc23e3e43af563d5bd99b9c3d8a41806e9b117112921c03031"
   },
   {
     "id": 58,
     "subject": "考科一：營運智慧概論",
     "chapter": "第五章 基礎資料分析",
+    "assessmentTopic": "L112",
     "num": 14,
     "question": "網頁爬蟲程式所擷取的資料形式為何？",
     "options": [
@@ -983,12 +1269,17 @@
     "answer": "A",
     "ans_text": "非結構性。",
     "explanation": "",
-    "assessmentTopic": "L112"
+    "display_num": 14,
+    "source_id": "oi-7a437925e554e21a",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-7d5b7175eb3973bf78ac9eff",
+    "content_hash": "9865749a97fb7b98e5554bf1805f86b7d3cb88d71cbafca4bcb5f432b04bba31"
   },
   {
     "id": 59,
     "subject": "考科一：營運智慧概論",
     "chapter": "第五章 基礎資料分析",
+    "assessmentTopic": "L112",
     "num": 15,
     "question": "現今透過網路或社群平台可蒐 集到各式各樣的資訊 ， 例如新商品的上架可以透 過社群平台蒐集到客戶對此商品的文字評論，請問這些資料屬於何種性質？",
     "options": [
@@ -1000,12 +1291,17 @@
     "answer": "C",
     "ans_text": "非結構性。",
     "explanation": "",
-    "assessmentTopic": "L112"
+    "display_num": 15,
+    "source_id": "oi-7a437925e554e21a",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-b6ca0163618cff8193ca2b0f",
+    "content_hash": "5c9eadbaff97579572b4892898e4db29675a25cf2fe794d3a177fe1949fbc8e8"
   },
   {
     "id": 60,
     "subject": "考科一：營運智慧概論",
     "chapter": "第五章 基礎資料分析",
+    "assessmentTopic": "L112",
     "num": 16,
     "question": "下列何者屬於機器學習 （ Machine learning ）的分支，且是一種試圖使用複雜結 構或多重非線性變換構成的多個處理層，並對資料進行高層抽象的演算法？",
     "options": [
@@ -1017,12 +1313,17 @@
     "answer": "B",
     "ans_text": "深度學習 （Deep learning ）。",
     "explanation": "",
-    "assessmentTopic": "L112"
+    "display_num": 16,
+    "source_id": "oi-7a437925e554e21a",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-2bd617133a5804a0fd43218f",
+    "content_hash": "b272f51dd412652ba0bb9611d192b6d59b880d7f155b2004223e9a47b5527543"
   },
   {
     "id": 61,
     "subject": "考科一：營運智慧概論",
     "chapter": "第五章 基礎資料分析",
+    "assessmentTopic": "L112",
     "num": 17,
     "question": "將非結構性資料轉化成易於分析的結構性資料時，往往需面臨什麼問題？",
     "options": [
@@ -1034,12 +1335,17 @@
     "answer": "C",
     "ans_text": "重要訊息有可能流失。",
     "explanation": "",
-    "assessmentTopic": "L112"
+    "display_num": 17,
+    "source_id": "oi-7a437925e554e21a",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-ec4a6fe558184f9730cef15f",
+    "content_hash": "c5f0c1a5101afd8de6f7b98f5726a1494b9040be590df81cf85022c985b2d1c0"
   },
   {
     "id": 62,
     "subject": "考科一：營運智慧概論",
     "chapter": "第五章 基礎資料分析",
+    "assessmentTopic": "L112",
     "num": 18,
     "question": "不符合原制定規則的資料須調查其原因 ， 並研擬改善計劃 ， 此動作為維護資料 品質的哪一步驟？",
     "options": [
@@ -1051,12 +1357,17 @@
     "answer": "D",
     "ans_text": "資料稽核。",
     "explanation": "",
-    "assessmentTopic": "L112"
+    "display_num": 18,
+    "source_id": "oi-7a437925e554e21a",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-23f44778e0ca92fa86cd388b",
+    "content_hash": "e571d83e884c7ae84cc5136cf2ec0a6581a3fc2b875cea2b758fc8ff71647259"
   },
   {
     "id": 63,
     "subject": "考科一：營運智慧概論",
     "chapter": "第五章 基礎資料分析",
+    "assessmentTopic": "L112",
     "num": 19,
     "question": "確定所分析的資料與原訂的商業目標是否相關 ， 此動作為維護資料品質的哪一 步驟？",
     "options": [
@@ -1068,12 +1379,17 @@
     "answer": "A",
     "ans_text": "資料概述。",
     "explanation": "",
-    "assessmentTopic": "L112"
+    "display_num": 19,
+    "source_id": "oi-7a437925e554e21a",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-56e24460e4401eca8e695414",
+    "content_hash": "84f5a62f36d1fc5524747f58923580477f730f08d15e40468f4660c92ad489d9"
   },
   {
     "id": 64,
     "subject": "考科一：營運智慧概論",
     "chapter": "第五章 基礎資料分析",
+    "assessmentTopic": "L112",
     "num": 20,
     "question": "在資料生成 、 處理和管理的階段 ， 可能會影響資料的品質 ， 如重量資料合併時 ， 有些資料使用「公斤」為單位，有些使用「公克」為單位，請問此屬於哪一類 的錯誤問題？",
     "options": [
@@ -1085,12 +1401,17 @@
     "answer": "C",
     "ans_text": "度量衡問題。",
     "explanation": "",
-    "assessmentTopic": "L112"
+    "display_num": 20,
+    "source_id": "oi-7a437925e554e21a",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-1c84360b77afbcee92fdd28e",
+    "content_hash": "c0c1658b7d482dceb02ebff8250cf4d9b8f40313c4cf71ed191564813f7dd5a0"
   },
   {
     "id": 65,
     "subject": "考科一：營運智慧概論",
     "chapter": "第五章 基礎資料分析",
+    "assessmentTopic": "L112",
     "num": 21,
     "question": "資料品質的好壞會影響分析的結果，請問下列何者非資料品質的涵義？",
     "options": [
@@ -1102,12 +1423,17 @@
     "answer": "C",
     "ans_text": "資料的差異性 。",
     "explanation": "",
-    "assessmentTopic": "L112"
+    "display_num": 21,
+    "source_id": "oi-7a437925e554e21a",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-ecfd86b2fabdd3aacc58257a",
+    "content_hash": "0f1147e4cb3d13f1eb75512d29ccbea77d5fed10f3bd5db71fd2d5a8d1fb5662"
   },
   {
     "id": 66,
     "subject": "考科一：營運智慧概論",
     "chapter": "第五章 基礎資料分析",
+    "assessmentTopic": "L112",
     "num": 22,
     "question": "為了提升資料品質 ， 資料通常得經過整理並轉換作為分析前的準備 ， 請問下列 資料處理的方式何者有誤？",
     "options": [
@@ -1119,12 +1445,17 @@
     "answer": "D",
     "ans_text": "刪除定義不一致的資料。",
     "explanation": "",
-    "assessmentTopic": "L112"
+    "display_num": 22,
+    "source_id": "oi-7a437925e554e21a",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-18cf68dbf2544c490079a9e4",
+    "content_hash": "0d2daf899d693459583f4fcfe7ab696080aa96b19247b2de8fcc82bfd92dc3fc"
   },
   {
     "id": 67,
     "subject": "考科一：營運智慧概論",
     "chapter": "第五章 基礎資料分析",
+    "assessmentTopic": "L112",
     "num": 23,
     "question": "在實際觀察並記錄生產時不同作業人員，其工作時間與出現不良品數目的頻 率之間的關聯，透過製作出如 右下的散佈圖，可初步推論工作時間與出現不良 品的機率之間存有：",
     "options": [
@@ -1136,12 +1467,17 @@
     "answer": "D",
     "ans_text": "存有非線性關聯。",
     "explanation": "沒有線性關聯並不代表不存在相關性 ， 如圖所示 ， 工作時間與出現不良品的機 率之間，在工作時間較短時，兩者呈現正向關聯，但當在工作時間超過某一程 度時，兩者則會出現負向關聯。整體來說，工作時間與出現不良品的機率之間 存在的是非線性關聯。",
-    "assessmentTopic": "L112"
+    "display_num": 23,
+    "source_id": "oi-7a437925e554e21a",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-9ee99c4e9e0ca2f105408adf",
+    "content_hash": "b0e9af3aadf82bf42f2f9ce176e18655b7c80f4f98ef6c9e6f893df7182f2d93"
   },
   {
     "id": 68,
     "subject": "考科一：營運智慧概論",
     "chapter": "第五章 基礎資料分析",
+    "assessmentTopic": "L112",
     "num": 24,
     "question": "某公司蒐集生產線一段期間的資料後發現 ， 平均每生產 1,000 件成品中 ， 有850 件是良品，有 100 件有瑕疵但堪用，其餘則完全無法使用。若已知一件成品不 是良品，完全不能用的機率為何？",
     "options": [
@@ -1153,12 +1489,17 @@
     "answer": "D",
     "ans_text": "0.33。",
     "explanation": "利用貝氏定理：   𝑃𝑟(𝑌 = 𝑦|𝑋 = 𝑥) = 𝑃𝑟(𝑋 = 𝑥, 𝑌 = 𝑦) 𝑃𝑟(𝑋 = 𝑥)   定義隨機變數 X 為是否成品為良品，變數 Y 則為是否能使用，   P（無法使用｜ 非良品 ）=0.05/0.15= 0.33",
-    "assessmentTopic": "L112"
+    "display_num": 24,
+    "source_id": "oi-7a437925e554e21a",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-eedeb920f6b3e0e2e734e44d",
+    "content_hash": "adb3a7938e04da2559604d8bf8af0abba1235713d5208bc7058c09f36ce7081a"
   },
   {
     "id": 69,
     "subject": "考科一：營運智慧概論",
     "chapter": "第五章 基礎資料分析",
+    "assessmentTopic": "L112",
     "num": 25,
     "question": "某一組資料其集中趨勢測量的平均數和中位數為 10 和 7，離散趨勢測量的標 準差為 2，此資料屬於何種分佈？",
     "options": [
@@ -1170,12 +1511,17 @@
     "answer": "A",
     "ans_text": "正偏態分佈。",
     "explanation": "",
-    "assessmentTopic": "L112"
+    "display_num": 25,
+    "source_id": "oi-7a437925e554e21a",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-8bc98607ae0224b9668f6c19",
+    "content_hash": "7145f69667cf9600eeddc44f043f0c38ea4032826f8a1ec7f458685d9955c1a5"
   },
   {
     "id": 70,
     "subject": "考科一：營運智慧概論",
     "chapter": "第五章 基礎資料分析",
+    "assessmentTopic": "L112",
     "num": 26,
     "question": "若要用統計圖形來描述兩變數間的關係通常會使用何種圖形？",
     "options": [
@@ -1187,12 +1533,17 @@
     "answer": "B",
     "ans_text": "散佈圖。",
     "explanation": "",
-    "assessmentTopic": "L112"
+    "display_num": 26,
+    "source_id": "oi-7a437925e554e21a",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-3a84cc8a1a1b44da46689785",
+    "content_hash": "1e53cb2670eb068296036c6be5d602c82b1d7404cefa6f28638af61f69df8a62"
   },
   {
     "id": 71,
     "subject": "考科一：營運智慧概論",
     "chapter": "第五章 基礎資料分析",
+    "assessmentTopic": "L112",
     "num": 27,
     "question": "依據柴比雪夫定理 （Chebyshev's theorem ） ，某公司員工紅利計畫，發放的平均 金額為 $50，標準差為 $5。請問至少有多少員工比例的數值其紅利會落在平均 加減 2 個標準差範圍內？",
     "options": [
@@ -1204,12 +1555,17 @@
     "answer": "C",
     "ans_text": "75%。",
     "explanation": "",
-    "assessmentTopic": "L112"
+    "display_num": 27,
+    "source_id": "oi-7a437925e554e21a",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-3afa8d9787e87499f3238424",
+    "content_hash": "5ba6c94c2016aab5c7b4efa8c760e9ef5336dea1a476ae36c67b73f786a07bc8"
   },
   {
     "id": 72,
     "subject": "考科一：營運智慧概論",
     "chapter": "第五章 基礎資料分析",
+    "assessmentTopic": "L112",
     "num": 28,
     "question": "某零售商每日營業額的樣本近似對稱鐘形分配，其樣本平均數為 $2,200 ，樣本 變異數為 $100，若依據經驗法則（ Empirical rule ）判別，有多少比例的數值其 營業額落在 $2,000 -$2,400 ？",
     "options": [
@@ -1221,12 +1577,17 @@
     "answer": "D",
     "ans_text": "95%。",
     "explanation": "",
-    "assessmentTopic": "L112"
+    "display_num": 28,
+    "source_id": "oi-7a437925e554e21a",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-c476253df3e3e2535d61d4df",
+    "content_hash": "c50a6353e26187ffd907b7c228a708e0ac5fc36ac18096c9b53e26845b3d197b"
   },
   {
     "id": 73,
     "subject": "考科一：營運智慧概論",
     "chapter": "第五章 基礎資料分析",
+    "assessmentTopic": "L112",
     "num": 29,
     "question": "長條圖（ bar chart ）與直方圖（ histogram ）為常見的資料圖示法，請問下列兩 者之間的差異何者為真？",
     "options": [
@@ -1238,12 +1599,17 @@
     "answer": "C",
     "ans_text": "長條圖用於屬質資料，直方圖用於屬量資料。",
     "explanation": "",
-    "assessmentTopic": "L112"
+    "display_num": 29,
+    "source_id": "oi-7a437925e554e21a",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-7988865d9a71818f3a95d9fb",
+    "content_hash": "cd0f77934db7445b4c056802cc99e72d8b1c5db6eb5cae7495624903d0ffad51"
   },
   {
     "id": 74,
     "subject": "考科一：營運智慧概論",
     "chapter": "第五章 基礎資料分析",
+    "assessmentTopic": "L112",
     "num": 30,
     "question": "利用箱形圖（ box plot ）可以很快看出資料統計的特性，請問在繪製時下列哪 項資訊不須引入？",
     "options": [
@@ -1255,12 +1621,17 @@
     "answer": "C",
     "ans_text": "標準差。",
     "explanation": "",
-    "assessmentTopic": "L112"
+    "display_num": 30,
+    "source_id": "oi-7a437925e554e21a",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-16a68271b301593583d16073",
+    "content_hash": "809fab73e4b98e648b04e5b92c89653c8d397354c5d54e8ef066c7def01b6a4c"
   },
   {
     "id": 75,
     "subject": "考科一：營運智慧概論",
     "chapter": "第五章 基礎資料分析",
+    "assessmentTopic": "L112",
     "num": 31,
     "question": "關於監督式學習（ Supervised Learning ）的敘述，下列哪一項正確？",
     "options": [
@@ -1272,12 +1643,17 @@
     "answer": "D",
     "ans_text": "ABC 皆為描述非監督式學習方法特點。",
     "explanation": "",
-    "assessmentTopic": "L112"
+    "display_num": 31,
+    "source_id": "oi-7a437925e554e21a",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-b1633835d6b9f869756250f2",
+    "content_hash": "5a79744dc0c7f08a1ade778ee1410df3d165f1062a2492d0b61d33c013df44fb"
   },
   {
     "id": 76,
     "subject": "考科一：營運智慧概論",
     "chapter": "第五章 基礎資料分析",
+    "assessmentTopic": "L112",
     "num": 32,
     "question": "在監督式學習中，下列哪一項是迴歸模型與分類模型的主要區別方式？",
     "options": [
@@ -1289,12 +1665,17 @@
     "answer": "A",
     "ans_text": "迴歸模型與分類模型在監督式學習中應用廣泛 ， 它們的主要區別在於預測的目",
     "explanation": "標變數類型：迴歸模型預測的是連續數值，而分類模型預測的是離散的類別。",
-    "assessmentTopic": "L112"
+    "display_num": 32,
+    "source_id": "oi-7a437925e554e21a",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-55894d2527aa309f09cd196a",
+    "content_hash": "58a59be7ac8ebb76e667139f4fb4f11d9ea53649ea2043219a54f5959e06edaa"
   },
   {
     "id": 77,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第四章 經營管理基本知識",
+    "assessmentTopic": "L121",
     "num": 1,
     "question": "影響企業內部環境的組成因子。下列的因 子何者為非？",
     "options": [
@@ -1306,12 +1687,17 @@
     "answer": "D",
     "ans_text": "內部環境的組成因子包括股東、董事會、組織文化、組織結構、員工態度及價",
     "explanation": "值觀、管理程序及方法等。",
-    "assessmentTopic": "L121"
+    "display_num": 1,
+    "source_id": "oi-c3a7741e779e13d8",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-38794e2d0ffd10c8af295d16",
+    "content_hash": "daaa33d6641c650ecadef8089c0ba9adadb208795916a2e5309dc9d9c1785c7c"
   },
   {
     "id": 78,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第四章 經營管理基本知識",
+    "assessmentTopic": "L121",
     "num": 2,
     "question": "影響企業外部環境的特定環境的因子。下列的因子何者為非？",
     "options": [
@@ -1323,12 +1709,17 @@
     "answer": "B",
     "ans_text": "特定環境的因子有顧客群、供應商、競爭群、金融機構、股東、政府、壓力團",
     "explanation": "體。",
-    "assessmentTopic": "L121"
+    "display_num": 2,
+    "source_id": "oi-c3a7741e779e13d8",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-01666e0f48804e9eaea0c266",
+    "content_hash": "5939758574f505adaf08a8c2c8036d59706c0e34a533a2952a98930462d8829d"
   },
   {
     "id": 79,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第四章 經營管理基本知識",
+    "assessmentTopic": "L121",
     "num": 3,
     "question": "管理者運用組織資源達成目標的過程，為以下何者名詞的解釋？",
     "options": [
@@ -1340,12 +1731,17 @@
     "answer": "A",
     "ans_text": "管理者運用組織資源達成目標的過程稱為管理（ Management ）。",
     "explanation": "",
-    "assessmentTopic": "L121"
+    "display_num": 3,
+    "source_id": "oi-c3a7741e779e13d8",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-7d0fc4902ab06ce2fc2a1c2b",
+    "content_hash": "47d0c622ce19965c23b30910c593040d7a389195f57bd94ab73a9edcbf01a426"
   },
   {
     "id": 80,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第四章 經營管理基本知識",
+    "assessmentTopic": "L121",
     "num": 4,
     "question": "管理中負責直接指揮 ， 管理基層作業人員的日常工作 ， 像是服務業及工廠中的 領班，組長，金融業的襄理，科長，副理都屬之，通常稱為？",
     "options": [
@@ -1357,12 +1753,17 @@
     "answer": "A",
     "ans_text": "第一線管理者（ First -Line Managers ） ：管理中的最基層主管，負責",
     "explanation": "直接指揮、管理基層作業人員的日常工作。",
-    "assessmentTopic": "L121"
+    "display_num": 4,
+    "source_id": "oi-c3a7741e779e13d8",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-3f7a089383935d761045be9b",
+    "content_hash": "f42f0bc45489d61f17066cc101710eb6c195d69ad10f04748a59b70a1ceac45e"
   },
   {
     "id": 81,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第四章 經營管理基本知識",
+    "assessmentTopic": "L121",
     "num": 5,
     "question": "企業營運時常遇到需要做決策的情形 ， 而決策的第一步即是確認問題所在 。 因 此，要確認問題是什麼，身為一名經理要如何做？",
     "options": [
@@ -1374,12 +1775,17 @@
     "answer": "D",
     "ans_text": "將當前情況與某 些標準或目標進行比較。",
     "explanation": "",
-    "assessmentTopic": "L121"
+    "display_num": 5,
+    "source_id": "oi-c3a7741e779e13d8",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-19db81f8e5dd10fb0a6ea96f",
+    "content_hash": "2f42d961c349b7d93d10199512d07344926673b3c5ed230c7b24ea230494ed61"
   },
   {
     "id": 82,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第四章 經營管理基本知識",
+    "assessmentTopic": "L121",
     "num": 6,
     "question": "決策過程包含八個步驟，起始自確認問題，結束於下列哪一個步驟？",
     "options": [
@@ -1391,12 +1797,17 @@
     "answer": "A",
     "ans_text": "解決問題。",
     "explanation": "",
-    "assessmentTopic": "L121"
+    "display_num": 6,
+    "source_id": "oi-c3a7741e779e13d8",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-45f4bd64c5337b8f6f900905",
+    "content_hash": "225bd17f26b577d5d44034e7f0fa5b4b3226f0a09408f01d7e6ab2d4112a1f9b"
   },
   {
     "id": 83,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第四章 經營管理基本知識",
+    "assessmentTopic": "L121",
     "num": 7,
     "question": "在非正式計畫中，目 標通常是以何種方式與組織中的其他人共享？",
     "options": [
@@ -1408,12 +1819,17 @@
     "answer": "D",
     "ans_text": "非書面形式，而且很少分享。",
     "explanation": "",
-    "assessmentTopic": "L121"
+    "display_num": 7,
+    "source_id": "oi-c3a7741e779e13d8",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-b829714b19563655600ff0d4",
+    "content_hash": "14fa9c37fb9eb8e4440a45ba1c7080dc62e22ab14cdd5e6447a8f5a0861c8583"
   },
   {
     "id": 84,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第四章 經營管理基本知識",
+    "assessmentTopic": "L121",
     "num": 8,
     "question": "在管理四大功能中 ， 規劃可分為正式規劃與非正式規劃 。 而正式規劃通常可獲 得下列何種結果？",
     "options": [
@@ -1425,12 +1841,17 @@
     "answer": "A",
     "ans_text": "較高的利潤。",
     "explanation": "",
-    "assessmentTopic": "L121"
+    "display_num": 8,
+    "source_id": "oi-c3a7741e779e13d8",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-1b6c92cce520f26cf405e7dc",
+    "content_hash": "64278ed1e30924642e5f6384e9bba7dfc06b4b3d016f141fe2787853a931d461"
   },
   {
     "id": 85,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第四章 經營管理基本知識",
+    "assessmentTopic": "L121",
     "num": 9,
     "question": "組織設計要求經理必須做什麼事？",
     "options": [
@@ -1442,12 +1863,17 @@
     "answer": "C",
     "ans_text": "改變或發展組織的結構。",
     "explanation": "",
-    "assessmentTopic": "L121"
+    "display_num": 9,
+    "source_id": "oi-c3a7741e779e13d8",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-6e87b14e1df83691caac207c",
+    "content_hash": "01c30904d9c9b50adaf25119d16ff0f2c6e788c0dd5463b2b37dbb81c357d621"
   },
   {
     "id": 86,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第四章 經營管理基本知識",
+    "assessmentTopic": "L121",
     "num": 10,
     "question": "何種部門化方 式是基於領土或員工或客戶的實際位置？",
     "options": [
@@ -1459,12 +1885,17 @@
     "answer": "C",
     "ans_text": "地理區域。",
     "explanation": "",
-    "assessmentTopic": "L121"
+    "display_num": 10,
+    "source_id": "oi-c3a7741e779e13d8",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-8192017f4537bb4c13aedfe5",
+    "content_hash": "f3f2b206295f15731a266c814ea239397f162b70c9445ffb3e4502022584e1fe"
   },
   {
     "id": 87,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第四章 經營管理基本知識",
+    "assessmentTopic": "L121",
     "num": 11,
     "question": "指揮鏈（ The chain of command ）此概念可回答什麼問題？",
     "options": [
@@ -1476,12 +1907,17 @@
     "answer": "D",
     "ans_text": "誰向誰報告？",
     "explanation": "",
-    "assessmentTopic": "L121"
+    "display_num": 11,
+    "source_id": "oi-c3a7741e779e13d8",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-16a35b7ec693fe62f75e1fc1",
+    "content_hash": "9793bdaa6a603f1e0d9524633019b8346e9b42b5a12379e3e7a17b9f3b8037c7"
   },
   {
     "id": 88,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第四章 經營管理基本知識",
+    "assessmentTopic": "L121",
     "num": 12,
     "question": "下列關於動機的敘述，何者為非？",
     "options": [
@@ -1493,12 +1929,17 @@
     "answer": "A",
     "ans_text": "永久的個人特質。",
     "explanation": "",
-    "assessmentTopic": "L121"
+    "display_num": 12,
+    "source_id": "oi-c3a7741e779e13d8",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-3a0e86c99d268e4ffb82059e",
+    "content_hash": "288d7171a894901c6dd48282fc00fd0e101c5ed94f947fabbb0686dde39732b5"
   },
   {
     "id": 89,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第四章 經營管理基本知識",
+    "assessmentTopic": "L121",
     "num": 13,
     "question": "馬斯洛需求層級理論 （ Maslow's Hierarchy of Needs Theory ）為層級式 結構是基 於下列何種考量？",
     "options": [
@@ -1510,12 +1951,17 @@
     "answer": "C",
     "ans_text": "需求需要依順序來滿足。",
     "explanation": "",
-    "assessmentTopic": "L121"
+    "display_num": 13,
+    "source_id": "oi-c3a7741e779e13d8",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-0fbdc77e48fd1e36f141bd2d",
+    "content_hash": "639a8278be3bf3ac190f7726ca19c83b1726c077b85d5b11e024a85424acda06"
   },
   {
     "id": 90,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第四章 經營管理基本知識",
+    "assessmentTopic": "L121",
     "num": 14,
     "question": "日本品管大師狩野紀昭（ Noriaki Kano ）提出「二維品質模式」 ，也稱為「狩野 模型」 （Kano model ） ，以滿意度 （顧客的主觀感受） 和功能 （產品的客觀機能） 為兩條軸線，畫出了二維平面，列舉出四種品質要素。當品質愈好，顧客滿意 度愈高。與顧客滿意度呈現線性關係的品質要素是屬於哪一種品質？",
     "options": [
@@ -1527,12 +1973,17 @@
     "answer": "B",
     "ans_text": "一維品質（ one-dimensional ）。",
     "explanation": "",
-    "assessmentTopic": "L121"
+    "display_num": 14,
+    "source_id": "oi-c3a7741e779e13d8",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-5130b152ca37c793ac6cbbff",
+    "content_hash": "b8ff67bcb3cf4b1aac3bb24b8822aa1b8f278dec7ec86ea0145894005e597321"
   },
   {
     "id": 91,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第四章 經營管理基本知識",
+    "assessmentTopic": "L121",
     "num": 15,
     "question": "下列哪一項不是魅力型領導者的典型特徵？",
     "options": [
@@ -1544,12 +1995,17 @@
     "answer": "D",
     "ans_text": "僵硬的身體姿勢。",
     "explanation": "",
-    "assessmentTopic": "L121"
+    "display_num": 15,
+    "source_id": "oi-c3a7741e779e13d8",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-c0017846e1428e148046c597",
+    "content_hash": "aadf112a6691fe71080a9aa0a63caa6b2af1d1fc331f6fd3269e6dec3991b552"
   },
   {
     "id": 92,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第四章 經營管理基本知識",
+    "assessmentTopic": "L121",
     "num": 16,
     "question": "管理具備四大功能 ， 各功能各司其職並前後相關 。 請從下列敘述選擇正確的功 能與依序步驟？",
     "options": [
@@ -1561,12 +2017,17 @@
     "answer": "B",
     "ans_text": "規劃 —組織—領導—控制。",
     "explanation": "",
-    "assessmentTopic": "L121"
+    "display_num": 16,
+    "source_id": "oi-c3a7741e779e13d8",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-dbdb4002e336b30ff7f30e8f",
+    "content_hash": "c284617135d8da0de50cb3e351cf133cc317179d93901f4b3f87f90d7d36241f"
   },
   {
     "id": 93,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第四章 經營管理基本知識",
+    "assessmentTopic": "L121",
     "num": 17,
     "question": "有效的控制可以幫助管理者達成何種任務？",
     "options": [
@@ -1578,12 +2039,17 @@
     "answer": "A",
     "ans_text": "賦予員工權力。",
     "explanation": "",
-    "assessmentTopic": "L121"
+    "display_num": 17,
+    "source_id": "oi-c3a7741e779e13d8",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-31bd5b2ebb315d1a1e13cc80",
+    "content_hash": "84e808cc19d928fd77b74f9930f567df5fdabe1a0e9f6b307de52b7d25500471"
   },
   {
     "id": 94,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第四章 經營管理基本知識",
+    "assessmentTopic": "L121",
     "num": 18,
     "question": "控制過程的第一步為？",
     "options": [
@@ -1595,12 +2061,17 @@
     "answer": "B",
     "ans_text": "衡量實際表現。",
     "explanation": "",
-    "assessmentTopic": "L121"
+    "display_num": 18,
+    "source_id": "oi-c3a7741e779e13d8",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-b37827ed90b426a24e857d65",
+    "content_hash": "76101365ea4fc892103f15274f996981aa52c87e93399c1bea95edd9e810e38b"
   },
   {
     "id": 95,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第四章 經營管理基本知識",
+    "assessmentTopic": "L121",
     "num": 19,
     "question": "控制功能可確保下列何者在組織中完成？",
     "options": [
@@ -1612,12 +2083,17 @@
     "answer": "B",
     "ans_text": "達成目標。",
     "explanation": "",
-    "assessmentTopic": "L121"
+    "display_num": 19,
+    "source_id": "oi-c3a7741e779e13d8",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-fb2c9fa4023797af5c359d3d",
+    "content_hash": "8dbc961968a93764a31b746c4d7200f2bba51f5c70748ddf3ca0872b8a92e60a"
   },
   {
     "id": 96,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第四章 經營管理基本知識",
+    "assessmentTopic": "L121",
     "num": 20,
     "question": "下列敘述何者最能說明基礎研究與應用研究的差異？",
     "options": [
@@ -1629,12 +2105,17 @@
     "answer": "B",
     "ans_text": "",
     "explanation": "",
-    "assessmentTopic": "L121"
+    "display_num": 20,
+    "source_id": "oi-c3a7741e779e13d8",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-91a77f7b8f340602c21bd626",
+    "content_hash": "7e42e6532627f7d9338103e2361cdc135e590a71120ea726af008a428dfb41c9"
   },
   {
     "id": 97,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第四章 經營管理基本知識",
+    "assessmentTopic": "L121",
     "num": 21,
     "question": "那一種研究是基於研究者的好奇心興趣 ， 而所進行的研究 ， 其研究目的在於求 知以發現知識，與知識體系理論化發展有密切關聯？",
     "options": [
@@ -1646,12 +2127,17 @@
     "answer": "A",
     "ans_text": "基礎研究（ Basic Research ） ：主要是汲取不同或相關領域的知識： （1）用來發",
     "explanation": "展及考驗理論與假設。 （2）研究結果可能有實際應用價值，也有可能無實用價 值。 （3）通常是抽象及特殊的概念。   應用研究（ Applied Research ） ：基礎研究所拼湊出產生的較完整知識，採取可 應用並解決人們所需求的下一個研究階段的研究。",
-    "assessmentTopic": "L121"
+    "display_num": 21,
+    "source_id": "oi-c3a7741e779e13d8",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-54df761c88d5dd5038f559dc",
+    "content_hash": "f123090b348861d343a56515475744350494c423f227afbb17266504703b8c13"
   },
   {
     "id": 98,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第四章 經營管理基本知識",
+    "assessmentTopic": "L121",
     "num": 22,
     "question": "小明原本是某公司人力資源部門的員工 ， 專責新進員工職前教育訓練的執行工 作，工作半年後，部門主管將員工在職訓練的執行工作也交給小明負責。然後 又經過半年，除了原先員工教育訓練的執行工作之外，部門主管開始讓小明負 責員工教育訓練的規劃工作與執行後的考評工作 。 工作 2 年後，部門主管將小 明調離員工教育訓練的職位 ， 請小明負責擬定員工招募計畫與執行招募活動等 工作。請問部門主管對小明工作的調整，依事件發生的順序分別屬於哪一類型 的工作擴張？（ 1）工作擴大化 ；（2）工作輪調 ；（3）工作豐富化",
     "options": [
@@ -1663,12 +2149,17 @@
     "answer": "B",
     "ans_text": "132。",
     "explanation": "",
-    "assessmentTopic": "L121"
+    "display_num": 22,
+    "source_id": "oi-c3a7741e779e13d8",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-57d3b21323900c28257aba3b",
+    "content_hash": "fb25bb26839519d60f8166c1dc17840fb6c6eee5e8e7ddab1aaf3009ebc5ccc3"
   },
   {
     "id": 99,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第四章 經營管理基本知識",
+    "assessmentTopic": "L121",
     "num": 23,
     "question": "下列何者是持續製程改善計畫所強調的？",
     "options": [
@@ -1680,12 +2171,17 @@
     "answer": "A",
     "ans_text": "採取預防行動，避免錯誤發生。",
     "explanation": "",
-    "assessmentTopic": "L121"
+    "display_num": 23,
+    "source_id": "oi-c3a7741e779e13d8",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-40fcc12a44058fb73dfcfd8f",
+    "content_hash": "dd3307ac42e4109a1b013ca2ddd9823b5eccd54dc5ad7e2b80bcc147892a73d0"
   },
   {
     "id": 100,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第四章 經營管理基本知識",
+    "assessmentTopic": "L121",
     "num": 24,
     "question": "要獲得即時化 生產（ Just in time ）的效益，其中關鍵在於製造廠商與供應廠商 必須培養何種關係？",
     "options": [
@@ -1697,12 +2193,17 @@
     "answer": "A",
     "ans_text": "合夥關係。",
     "explanation": "",
-    "assessmentTopic": "L121"
+    "display_num": 24,
+    "source_id": "oi-c3a7741e779e13d8",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-0b40e1ca36c3515add0a7eec",
+    "content_hash": "2b554734193994c6e9aa9405d70a254e83b68429e69aff043d0c850474b638a7"
   },
   {
     "id": 101,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第四章 經營管理基本知識",
+    "assessmentTopic": "L121",
     "num": 25,
     "question": "性別、年齡、職業等為市場區隔變數中的哪種變數？",
     "options": [
@@ -1714,12 +2215,17 @@
     "answer": "A",
     "ans_text": "人口統計變數。",
     "explanation": "",
-    "assessmentTopic": "L121"
+    "display_num": 25,
+    "source_id": "oi-c3a7741e779e13d8",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-3c9ee319ed72d8f829aa4edb",
+    "content_hash": "c874a7d57c22f99c71cd8060a0953bf3df55fd66874e33a2e5db7675cc7d1f25"
   },
   {
     "id": 102,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第四章 經營管理基本知識",
+    "assessmentTopic": "L121",
     "num": 26,
     "question": "行銷觀念中只重視企業利潤是指何種概念？",
     "options": [
@@ -1731,12 +2237,17 @@
     "answer": "A",
     "ans_text": "銷售觀念。",
     "explanation": "",
-    "assessmentTopic": "L121"
+    "display_num": 26,
+    "source_id": "oi-c3a7741e779e13d8",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-14c7ca385487d1f3fd60dff0",
+    "content_hash": "a8671b477502dbedfe4703de7bd695c7199af301d0b0dc5760bc55769e80651f"
   },
   {
     "id": 103,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第四章 經營管理基本知識",
+    "assessmentTopic": "L121",
     "num": 27,
     "question": "成熟產業的產品訂價方法比較適合何種訂價方法？",
     "options": [
@@ -1748,12 +2259,17 @@
     "answer": "B",
     "ans_text": "競爭導向 。",
     "explanation": "",
-    "assessmentTopic": "L121"
+    "display_num": 27,
+    "source_id": "oi-c3a7741e779e13d8",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-cdf4005bfeca2e72857ef90a",
+    "content_hash": "45cf545c9aa33b6eb1e6830d6449df8e517b34d63a543555e061ad91417655d8"
   },
   {
     "id": 104,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第四章 經營管理基本知識",
+    "assessmentTopic": "L121",
     "num": 28,
     "question": "下列何者敘述較符合產品生命週期中成長期的特性？",
     "options": [
@@ -1765,12 +2281,17 @@
     "answer": "A",
     "ans_text": "銷售量急遽攀升。",
     "explanation": "",
-    "assessmentTopic": "L121"
+    "display_num": 28,
+    "source_id": "oi-c3a7741e779e13d8",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-d45efb65696d0e6bfa6b00b0",
+    "content_hash": "320e8bdb52f1ef935f033768616de9a701868ab1bd7c777fd8527d3eb76f04fe"
   },
   {
     "id": 105,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第四章 經營管理基本知識",
+    "assessmentTopic": "L121",
     "num": 29,
     "question": "說明一個員工若要順利執行某一特定工作必備的基本資格 ， 有效執行該工作所 要具備的知識、技術與能力的書面說明，稱為？",
     "options": [
@@ -1782,12 +2303,17 @@
     "answer": "A",
     "ans_text": "工作說明書。",
     "explanation": "",
-    "assessmentTopic": "L121"
+    "display_num": 29,
+    "source_id": "oi-c3a7741e779e13d8",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-96b0762be399c1acc0718731",
+    "content_hash": "22a61318c1b544a7547a0909dd9bbb4c3f0ab37c2acc256878a2e53c89bc0dc3"
   },
   {
     "id": 106,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第四章 經營管理基本知識",
+    "assessmentTopic": "L121",
     "num": 30,
     "question": "A 公司販賣無痛皮下注射器給醫院，年度需求量 20,000 單位，每筆訂單的訂 購成本 25 元，每單位商品持有成本 4 元，試問下列何者正確？",
     "options": [
@@ -1799,12 +2325,17 @@
     "answer": "D",
     "ans_text": "以上皆是。",
     "explanation": "",
-    "assessmentTopic": "L121"
+    "display_num": 30,
+    "source_id": "oi-c3a7741e779e13d8",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-fb9329bf41f7dfb3303da232",
+    "content_hash": "528b0ab7572ec1647d447f2de8dd0543c460a8947b938728735d97b0f5caea6b"
   },
   {
     "id": 107,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第四章 經營管理基本知識",
+    "assessmentTopic": "L121",
     "num": 31,
     "question": "製作產品所需組件、成分以及原料的數量清單，一般簡稱 BOM，係指下列何 者？",
     "options": [
@@ -1816,12 +2347,17 @@
     "answer": "A",
     "ans_text": "物料清單。",
     "explanation": "",
-    "assessmentTopic": "L121"
+    "display_num": 31,
+    "source_id": "oi-c3a7741e779e13d8",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-b9aefa8a3928e13f6ccc7dbd",
+    "content_hash": "872934ad01e7a3c37be7b8bbae76b3d32d6e804c5dcec736c8523b57e5eb22c7"
   },
   {
     "id": 108,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第四章 經營管理基本知識",
+    "assessmentTopic": "L121",
     "num": 32,
     "question": "為了讓企業外部者能了解企業的財務資訊，此為",
     "options": [
@@ -1833,12 +2369,17 @@
     "answer": "A",
     "ans_text": "財務會計（ Financial Accounting ）是為了想要或需要了解該企業財",
     "explanation": "務資訊的外部人士所編制的財務資訊。",
-    "assessmentTopic": "L121"
+    "display_num": 32,
+    "source_id": "oi-c3a7741e779e13d8",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-a93588fe2bd435f9ae0f3df8",
+    "content_hash": "6124d25a9ebc6ef974366439bff5672f04d16d4f5e87f1abf8ae6bf784038d83"
   },
   {
     "id": 109,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第四章 經營管理基本知識",
+    "assessmentTopic": "L121",
     "num": 33,
     "question": "以下哪個職務的工作職責是執行企業 內部控制，並應獨立向董事會報告？",
     "options": [
@@ -1850,12 +2391,17 @@
     "answer": "C",
     "ans_text": "稽核（ Auditing ）是企業執行內部控制的一部分，稽核人員應獨立",
     "explanation": "向董事會報告，主要針對企業內部的生產、銷售、會計、營運、財務等各項與 營業活動相關之作業流程。",
-    "assessmentTopic": "L121"
+    "display_num": 33,
+    "source_id": "oi-c3a7741e779e13d8",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-fc9fc30dd52a78d62b179712",
+    "content_hash": "d8dfd2b73f009dcc268ed07204a9ebaae4d12786230f691bec0a2abe9a658922"
   },
   {
     "id": 110,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第四章 經營管理基本知識",
+    "assessmentTopic": "L121",
     "num": 34,
     "question": "負責計算企業生產與配銷過程中相關的各項成本是指 何種人員？",
     "options": [
@@ -1867,12 +2413,17 @@
     "answer": "B",
     "ans_text": "成本會計人員。",
     "explanation": "",
-    "assessmentTopic": "L121"
+    "display_num": 34,
+    "source_id": "oi-c3a7741e779e13d8",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-dce0a62c92e27efed485e074",
+    "content_hash": "385bd8db66ca8eef6622f25e27fa74e738bbe01338779468f4fb90e626f7ead8"
   },
   {
     "id": 111,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第四章 經營管理基本知識",
+    "assessmentTopic": "L121",
     "num": 35,
     "question": "下列何者為非常用的獲利率指標？",
     "options": [
@@ -1884,12 +2435,17 @@
     "answer": "D",
     "ans_text": "流動比率。",
     "explanation": "",
-    "assessmentTopic": "L121"
+    "display_num": 35,
+    "source_id": "oi-c3a7741e779e13d8",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-edd1be28934c80324bf7cb0e",
+    "content_hash": "7b733f4e3a4c07b8ef1c8cf035b91a565608e54b2c393761af6cfa0232061170"
   },
   {
     "id": 112,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第四章 經營管理基本知識",
+    "assessmentTopic": "L121",
     "num": 36,
     "question": "說明企業在某一特定日期的財務狀況的報表是指？",
     "options": [
@@ -1901,12 +2457,17 @@
     "answer": "C",
     "ans_text": "資產負債表。",
     "explanation": "",
-    "assessmentTopic": "L121"
+    "display_num": 36,
+    "source_id": "oi-c3a7741e779e13d8",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-ca2f957a9aff87e31c66d4dc",
+    "content_hash": "839415d66ab91aa935a599c42c1526d2fe0bbbc79b49f4fa6e9585ed145f34e0"
   },
   {
     "id": 113,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第四章 經營管理基本知識",
+    "assessmentTopic": "L121",
     "num": 37,
     "question": "假設有一家買賣業公司的營業循環日數為 73 日，已知其存貨週轉率為 10 次， 請問下列 敘述何者正確？",
     "options": [
@@ -1918,12 +2479,17 @@
     "answer": "A",
     "ans_text": "該公司應收款項週轉率為 10 次。",
     "explanation": "",
-    "assessmentTopic": "L121"
+    "display_num": 37,
+    "source_id": "oi-c3a7741e779e13d8",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-6fe7a304df2766f26e9db29a",
+    "content_hash": "c264076f7caafbe55bec2f461a32b106fefe3dadc58bf77325534101d0e5df4a"
   },
   {
     "id": 114,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第四章 經營管理基本知識",
+    "assessmentTopic": "L121",
     "num": 38,
     "question": "現金流量表是指企業三項主要活動的現金流入與流出狀況，不包括下列哪一 項？",
     "options": [
@@ -1935,12 +2501,17 @@
     "answer": "A",
     "ans_text": "資產總額。",
     "explanation": "",
-    "assessmentTopic": "L121"
+    "display_num": 38,
+    "source_id": "oi-c3a7741e779e13d8",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-0989b5920e55037a6406ffd0",
+    "content_hash": "47c918856546da9708ae14a2ed2f5f8a37f2ffba4dec60024f3ed5f4ad5062de"
   },
   {
     "id": 115,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第四章 經營管理基本知識",
+    "assessmentTopic": "L121",
     "num": 39,
     "question": "下列何者能衡量企業的清償能力？",
     "options": [
@@ -1952,12 +2523,17 @@
     "answer": "A",
     "ans_text": "流動比率。",
     "explanation": "",
-    "assessmentTopic": "L121"
+    "display_num": 39,
+    "source_id": "oi-c3a7741e779e13d8",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-04a2dca6783791671dcdbcc9",
+    "content_hash": "6bee2f297d95d9d56f397e382f6f71b706e82ed99c1ed39b24645f4c0a5af09b"
   },
   {
     "id": 116,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第四章 經營管理基本知識",
+    "assessmentTopic": "L121",
     "num": 40,
     "question": "為了達成規劃的目的包含下列的步驟： （ 1 ） 由 基 層 督 導 者 帶 領 員 工 執 行      （2）由高階層經營者設定組織使命、總體預定目標和策略（ 3）中階層管理者 在各部門設立部門目標。請問正確的順序為何？",
     "options": [
@@ -1969,12 +2545,17 @@
     "answer": "D",
     "ans_text": "規劃的基本目的，是為了幫助組織能順利的達成目標。其順序是由高階層經營",
     "explanation": "者先設定了組織使命 、 總體預定目標和策略 ， 中階層管理者在各部門內繼而設 立部門目標，最後再由基層督導者帶領員工執行，以達成總體預定目標。",
-    "assessmentTopic": "L121"
+    "display_num": 40,
+    "source_id": "oi-c3a7741e779e13d8",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-04815fa79b3d0ff00d2cfde4",
+    "content_hash": "78cececdaa741739f2da97af1ab607b23c466f98f913446e2a2d46be5733bb99"
   },
   {
     "id": 117,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第四章 經營管理基本知識",
+    "assessmentTopic": "L121",
     "num": 41,
     "question": "下列何者沒有被包含在企業流程再造中？",
     "options": [
@@ -1986,12 +2567,17 @@
     "answer": "A",
     "ans_text": "企業流程再造是指對企業運作模式的重新思考 ， 它是以企業流程為主要的革新",
     "explanation": "對象，並且加入顧客關係、營運品質、創新及作業績效和組織文化等關鍵因素 的一種流程變革。",
-    "assessmentTopic": "L121"
+    "display_num": 41,
+    "source_id": "oi-c3a7741e779e13d8",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-3c5e9289264cd57e379cb548",
+    "content_hash": "a1dd345c69f7976f8240c93f7b7b7b739c0b35e6650e2672ac42e3ac45152cf5"
   },
   {
     "id": 118,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第四章 經營管理基本知識",
+    "assessmentTopic": "L121",
     "num": 42,
     "question": "組織的任何管理層級都有其關鍵績效指標，其設計基本原理應該是依循？",
     "options": [
@@ -2003,12 +2589,17 @@
     "answer": "A",
     "ans_text": "由上而下。",
     "explanation": "",
-    "assessmentTopic": "L121"
+    "display_num": 42,
+    "source_id": "oi-c3a7741e779e13d8",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-1baadd609987737bc4a807ac",
+    "content_hash": "12f55f558348ba7080a6b478a811cd7cc2923a004701f5a68774c47abc418ba8"
   },
   {
     "id": 119,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第四章 經營管理基本知識",
+    "assessmentTopic": "L121",
     "num": 43,
     "question": "SWOT 分析完成後 ， 管理人員將依據分析過程中出現的問題以何種方式解決？",
     "options": [
@@ -2020,12 +2611,17 @@
     "answer": "D",
     "ans_text": "制定策略。",
     "explanation": "",
-    "assessmentTopic": "L121"
+    "display_num": 43,
+    "source_id": "oi-c3a7741e779e13d8",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-ecdc31e1eac6f4f87d0a00f8",
+    "content_hash": "4554ad45e738265ec8850611ff82253c55407eab02a901348359c5409d0474aa"
   },
   {
     "id": 120,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第四章 經營管理基本知識",
+    "assessmentTopic": "L121",
     "num": 44,
     "question": "國家或地區的居民文化水平、風俗習慣、宗教信仰可被歸類在 PEST 分析中的 何類環境之中？",
     "options": [
@@ -2037,12 +2633,17 @@
     "answer": "C",
     "ans_text": "社會文化環境（ Socio -cultural ）。",
     "explanation": "",
-    "assessmentTopic": "L121"
+    "display_num": 44,
+    "source_id": "oi-c3a7741e779e13d8",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-e65539fb49689c9659501002",
+    "content_hash": "e366ef371d4927748eebfab761a522c5249b65090061f7ee0afd30fcd7f1906e"
   },
   {
     "id": 121,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第四章 經營管理基本知識",
+    "assessmentTopic": "L121",
     "num": 45,
     "question": "「該事業單位處於成熟期，產品市場佔有率高，具有競爭優勢，為公司創造穩 定的現金流 。 」 請問以上所述較符合BCG 矩陣 （Boston Consulting Group Matrix ） 分析的何種事業？",
     "options": [
@@ -2054,12 +2655,17 @@
     "answer": "B",
     "ans_text": "金牛型事業（ Cash Cows ）。",
     "explanation": "",
-    "assessmentTopic": "L121"
+    "display_num": 45,
+    "source_id": "oi-c3a7741e779e13d8",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-68ba72f426d0e40980834283",
+    "content_hash": "7ae5c3caa8e35a8558df7ec75ff4f737b150b55808ef6256dc0db6002fdda6dd"
   },
   {
     "id": 122,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第四章 經營管理基本知識",
+    "assessmentTopic": "L121",
     "num": 46,
     "question": "此工具是公司進行產品組合或事業組合分析與管理的重要工具 ， 其可幫助公司 找出最佳獲利的產品或事業單位 ， 決定資源分配以達企業獲利極大化 。 請問以 上所述之策略分析工具是指何者？",
     "options": [
@@ -2071,12 +2677,17 @@
     "answer": "C",
     "ans_text": "BCG 矩陣。",
     "explanation": "",
-    "assessmentTopic": "L121"
+    "display_num": 46,
+    "source_id": "oi-c3a7741e779e13d8",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-5f2e47f0d0673492397e8b52",
+    "content_hash": "7776c1c9f1fd838b0b5ec7e4c026943007f747ba8f1157886d0c87302ef28346"
   },
   {
     "id": 123,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第四章 經營管理基本知識",
+    "assessmentTopic": "L121",
     "num": 47,
     "question": "以波特五力分析而言 ， 當具拍照功能的智慧型手機在市場中出現 ， 消費者不再 使用相機而改用智慧手機時，相機廠商受到何種威脅？",
     "options": [
@@ -2088,12 +2699,17 @@
     "answer": "D",
     "ans_text": "替代品的威脅。",
     "explanation": "",
-    "assessmentTopic": "L121"
+    "display_num": 47,
+    "source_id": "oi-c3a7741e779e13d8",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-0ad4d80b38b18f36a8f63794",
+    "content_hash": "de32f3b4ef93384354f79d4d99e3a6b5ac3a989a5ee8b7e7f7cb389f6779b301"
   },
   {
     "id": 124,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第五章 數位化企業資訊工具基本知識",
+    "assessmentTopic": "L122",
     "num": 1,
     "question": "價值鏈是一種價值創造分析的工具，適合用於說明企業的價值創造邏輯及過 程。價值鏈活動分為主要活動及支援活動，以下何種活動屬於支援活動？",
     "options": [
@@ -2105,12 +2721,17 @@
     "answer": "C",
     "ans_text": "技術研發",
     "explanation": "技術研發屬於支援性價值鏈活動，其他三項則屬於主要活動。",
-    "assessmentTopic": "L122"
+    "display_num": 1,
+    "source_id": "oi-d391ad606795933c",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-7a601a83ed2c253878fd7888",
+    "content_hash": "02c53d88f9052f3e2170c09e1f3882ab91ca7ce367a025eb69c123872fb251ca"
   },
   {
     "id": 125,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第五章 數位化企業資訊工具基本知識",
+    "assessmentTopic": "L122",
     "num": 2,
     "question": "Al-Debei and Avison 針對過去許多學者對商業模式的描述，提出四個完整的構 面來建構商業模式，包括價值主張、價值組態，價值結構與價值財務等構面。 企業以資訊系統協助辨識目標客群並提出能為其創造價值的商業營運邏輯 ， 這 是屬於哪一個構面的活動？",
     "options": [
@@ -2122,12 +2743,17 @@
     "answer": "A",
     "ans_text": "價值主張",
     "explanation": "根據 Al-Debei and Avison 對於建構商業模式的四個重要構面 ， 價值主張是指針 對目標客群所提出能為其創造價值的商業營運邏輯。",
-    "assessmentTopic": "L122"
+    "display_num": 2,
+    "source_id": "oi-d391ad606795933c",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-5e41661d032510cb4fd13a5b",
+    "content_hash": "8de9111819144f60404564ea34e3f0f17439e5637554256e1f5b5062e1a2e1c2"
   },
   {
     "id": 126,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第五章 數位化企業資訊工具基本知識",
+    "assessmentTopic": "L122",
     "num": 3,
     "question": "下列何者為一種新產品或服務 ， 通常由於科技進步所帶來的 ， 具有重新形塑整 個產業的潛力。例： Kodak ？",
     "options": [
@@ -2139,12 +2765,17 @@
     "answer": "A",
     "ans_text": "破壞式創新",
     "explanation": "",
-    "assessmentTopic": "L122"
+    "display_num": 3,
+    "source_id": "oi-d391ad606795933c",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-98a22fbed57b6ac1da79d839",
+    "content_hash": "1b35145caaa9e3132af0e586cfa81b70def4d530ecb842c668432e9ed6c88e64"
   },
   {
     "id": 127,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第五章 數位化企業資訊工具基本知識",
+    "assessmentTopic": "L122",
     "num": 4,
     "question": "下列何者威脅到一個產業現有存在者的情況，新進者利用新科技找到獲利方 法，而現存者拒絕改變且設法保護他們舊有的商業模式？",
     "options": [
@@ -2156,12 +2787,17 @@
     "answer": "B",
     "ans_text": "創造性破壞",
     "explanation": "",
-    "assessmentTopic": "L122"
+    "display_num": 4,
+    "source_id": "oi-d391ad606795933c",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-b53c00fb0c28bb8fc8810d9f",
+    "content_hash": "c9c041cdf0096f5c91f6c7f4e6cf7a85d034d6ae46f8e3d01259796b557a5dcc"
   },
   {
     "id": 128,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第五章 數位化企業資訊工具基本知識",
+    "assessmentTopic": "L122",
     "num": 5,
     "question": "下列何者為一種以矩陣式，利用點與空白依一定規則編排，能儲存 3,000 多位 元的一種二維條碼，可以對多種資料進 行編碼？",
     "options": [
@@ -2173,12 +2809,17 @@
     "answer": "B",
     "ans_text": "QR Code",
     "explanation": "",
-    "assessmentTopic": "L122"
+    "display_num": 5,
+    "source_id": "oi-d391ad606795933c",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-504036d8754e21dc67598578",
+    "content_hash": "de5270689f16e85a1e97e626d940d87016a054818d9b757550e936d354c4af69"
   },
   {
     "id": 129,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第五章 數位化企業資訊工具基本知識",
+    "assessmentTopic": "L122",
     "num": 6,
     "question": "下列何者為另一種軟體開發與散布的管道 ， 其授權條款必須符合某些條件 ， 其 中一項就是免費散布？",
     "options": [
@@ -2190,12 +2831,17 @@
     "answer": "B",
     "ans_text": "Open Source Software",
     "explanation": "",
-    "assessmentTopic": "L122"
+    "display_num": 6,
+    "source_id": "oi-d391ad606795933c",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-b7a5b4ce96d93f5e222c8fac",
+    "content_hash": "7adceef5d715820741fb663594545f43c640d6d3e4661c44307c026166d8377a"
   },
   {
     "id": 130,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第五章 數位化企業資訊工具基本知識",
+    "assessmentTopic": "L122",
     "num": 7,
     "question": "下列何者為對某個市場提供差異化產品或服務，找出一群有特殊偏好的消費 者，為他們量身打造？",
     "options": [
@@ -2207,12 +2853,17 @@
     "answer": "C",
     "ans_text": "聚焦利基策略",
     "explanation": "",
-    "assessmentTopic": "L122"
+    "display_num": 7,
+    "source_id": "oi-d391ad606795933c",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-46be86a5336c0b760bb7cda7",
+    "content_hash": "fba31f992e090fd581d2a25757a033086df3449cfa701cdec48b0150b24610a6"
   },
   {
     "id": 131,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第五章 數位化企業資訊工具基本知識",
+    "assessmentTopic": "L122",
     "num": 8,
     "question": "下列何者為波特的提出用以描述企業為了創造價值而進行的活動 ， 向供應商購 入原料，再以某種方法製造出商品，然後將產品或服務賣給消費者？",
     "options": [
@@ -2224,12 +2875,17 @@
     "answer": "D",
     "ans_text": "價值鏈模型",
     "explanation": "",
-    "assessmentTopic": "L122"
+    "display_num": 8,
+    "source_id": "oi-d391ad606795933c",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-b68bc6cdf092de96e7bde43b",
+    "content_hash": "567610e4df3c03713e8fac7f7a4cd2c5c61d01e3784a6ea4484e9d84a60c6b56"
   },
   {
     "id": 132,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第五章 數位化企業資訊工具基本知識",
+    "assessmentTopic": "L122",
     "num": 9,
     "question": "價值鏈模型提供可用甚麼讓企業組織將其執行效率與該行業做比較 ， 看他們排 行如何，也可藉此看出哪些地方需要改進？",
     "options": [
@@ -2241,12 +2897,17 @@
     "answer": "A",
     "ans_text": "檢驗基準",
     "explanation": "",
-    "assessmentTopic": "L122"
+    "display_num": 9,
+    "source_id": "oi-d391ad606795933c",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-640f0a3147152dba274b5071",
+    "content_hash": "37dea2c62228d53e5aae0ae505404b063557db159e901e3badd0a853fa4f2270"
   },
   {
     "id": 133,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第五章 數位化企業資訊工具基本知識",
+    "assessmentTopic": "L122",
     "num": 10,
     "question": "下列何者為軟體的所有權 、 執行環境 、 管理都由供應商從遠端提供的一種資訊 系統，企業組織依照使用 量給付租賃費用，並透過網路來存取該服務？",
     "options": [
@@ -2258,12 +2919,17 @@
     "answer": "D",
     "ans_text": "Software as a Service, SaaS",
     "explanation": "",
-    "assessmentTopic": "L122"
+    "display_num": 10,
+    "source_id": "oi-d391ad606795933c",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-a969d3b2266899fdbda7f124",
+    "content_hash": "1bf402bca5a79763876473471e679f06207c35ddf7730985b91c16277efd69c7"
   },
   {
     "id": 134,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第五章 數位化企業資訊工具基本知識",
+    "assessmentTopic": "L122",
     "num": 11,
     "question": "下列何者不屬於協同合作與社群企業的資訊工具及科技？",
     "options": [
@@ -2275,12 +2941,17 @@
     "answer": "A",
     "ans_text": "自動倉儲系統。",
     "explanation": "自動倉儲系統是屬於物料管理的功能 ， 不屬於協同合作與社群企業的資訊工具 及科技。",
-    "assessmentTopic": "L122"
+    "display_num": 11,
+    "source_id": "oi-d391ad606795933c",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-d1f9473307d0faa760d0cefe",
+    "content_hash": "158b47779de16efd4122c5c950f5ede0cdd25db988a6796a01f3ec38b451dd99"
   },
   {
     "id": 135,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第五章 數位化企業資訊工具基本知識",
+    "assessmentTopic": "L122",
     "num": 12,
     "question": "企業在距離 500 公尺的範圍內，將所擁有的電腦及伺服器以網路連接，彼此分 享資料與數位 裝置資源，這樣的網路類型通常稱為？",
     "options": [
@@ -2292,12 +2963,17 @@
     "answer": "C",
     "ans_text": "區域網路。",
     "explanation": "500 公尺的網路連結範圍落於區域網路定義的範疇。",
-    "assessmentTopic": "L122"
+    "display_num": 12,
+    "source_id": "oi-d391ad606795933c",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-f0c1d36310f9792fc1262daf",
+    "content_hash": "80a623579ef52a4eb76ddbe1606984b6ed9a350f8f553df808ed33f0034db513"
   },
   {
     "id": 136,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第五章 數位化企業資訊工具基本知識",
+    "assessmentTopic": "L122",
     "num": 13,
     "question": "下列何者為政府機構提倡的政策，例如：休閒旅遊、交通運輸，這些資料公開 有助於共享經濟的供需雙方更深入地瞭解市場？",
     "options": [
@@ -2309,12 +2985,17 @@
     "answer": "C",
     "ans_text": "開放資料。",
     "explanation": "",
-    "assessmentTopic": "L122"
+    "display_num": 13,
+    "source_id": "oi-d391ad606795933c",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-eff927dba57a5851267d16f2",
+    "content_hash": "b2303fc03c075c7ba3a9d794e440eb1244629f1abb34f0f0e517a554794588ca"
   },
   {
     "id": 137,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第五章 數位化企業資訊工具基本知識",
+    "assessmentTopic": "L122",
     "num": 14,
     "question": "下列何者為整合社群網站上朋友之間貢獻與分享的各種訊息與評論 ， 並且利用 行動商務無所不在的特性，結合雲端運算平台，提供資訊系統的硬體、軟體、 資料庫、 APP 以及 Server 的一種平台？",
     "options": [
@@ -2326,12 +3007,17 @@
     "answer": "C",
     "ans_text": "SoMoCLo （Social, Mobile, Cloud ）。",
     "explanation": "",
-    "assessmentTopic": "L122"
+    "display_num": 14,
+    "source_id": "oi-d391ad606795933c",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-9722d318bcabf679431e8f8c",
+    "content_hash": "a5716480bd1693b6d795ce357f40aa15acbb70d8ebe8d3fdddd35fbc78fe7c44"
   },
   {
     "id": 138,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第五章 數位化企業資訊工具基本知識",
+    "assessmentTopic": "L122",
     "num": 15,
     "question": "下列哪些因素無法解釋，為什麼今天的運算資源比以前幾十年更加可用？",
     "options": [
@@ -2343,12 +3029,17 @@
     "answer": "D",
     "ans_text": "允許各種技術標準共存，並廣泛拒絕技術標準。",
     "explanation": "",
-    "assessmentTopic": "L122"
+    "display_num": 15,
+    "source_id": "oi-d391ad606795933c",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-aff68580ba1b7e8cdd8f7eec",
+    "content_hash": "8579ba62a2f455350c8deafdcab611c774e862e71b2b9c5516c8e407c69de397"
   },
   {
     "id": 139,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第五章 數位化企業資訊工具基本知識",
+    "assessmentTopic": "L122",
     "num": 16,
     "question": "下列何種平台對供需雙方做真正的身分認證 ， 並瞭解雙方真正的生活背景 。 此 外，平台上的評價、推薦、排名及評論系統，也都可以用來評估當事者的信用 狀況，提升雙方交易的信任程度？",
     "options": [
@@ -2360,12 +3051,17 @@
     "answer": "B",
     "ans_text": "社群運算。",
     "explanation": "",
-    "assessmentTopic": "L122"
+    "display_num": 16,
+    "source_id": "oi-d391ad606795933c",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-c431bd1c8baeb1ccd4f31944",
+    "content_hash": "ffc048e8ee5376af0f0fd6a40fbec7b6679a3ef76a485b38015cfbcf7be232a6"
   },
   {
     "id": 140,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第五章 數位化企業資訊工具基本知識",
+    "assessmentTopic": "L122",
     "num": 17,
     "question": "利用感測器、語言、臉部辨識裝置，來偵測使用者的各種情緒狀態，並由 AI 智慧系統判讀分析，並自動執行某些適當的反應行動系統，此稱為？",
     "options": [
@@ -2377,12 +3073,17 @@
     "answer": "C",
     "ans_text": "情緒運算。",
     "explanation": "",
-    "assessmentTopic": "L122"
+    "display_num": 17,
+    "source_id": "oi-d391ad606795933c",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-f581e70ff01e50f7c632017b",
+    "content_hash": "1113f9eef5850229dab35b076f1cef084507e25a7b4127091f1783df4ed997f3"
   },
   {
     "id": 141,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第五章 數位化企業資訊工具基本知識",
+    "assessmentTopic": "L122",
     "num": 18,
     "question": "下列何者為一種感測器（ Sensor ） 、行動運算與AI，並透過對使用者各種環境 資訊的蒐集、傳遞、分析後，系統採取最適當的反應行為或傳遞最合適資訊的 一種技術？",
     "options": [
@@ -2394,12 +3095,17 @@
     "answer": "D",
     "ans_text": "Context Aware Computing, CAC 。",
     "explanation": "",
-    "assessmentTopic": "L122"
+    "display_num": 18,
+    "source_id": "oi-d391ad606795933c",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-0c85e4d32d0ba5c9f7b20bd3",
+    "content_hash": "92afcee6e77ed344f0724f555330b19fc3e64265617b415760f3e6645ead4a45"
   },
   {
     "id": 142,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第五章 數位化企業資訊工具基本知識",
+    "assessmentTopic": "L122",
     "num": 19,
     "question": "AirBnb 、Uber、P2P 借貸屬於哪種社群商務？",
     "options": [
@@ -2411,12 +3117,17 @@
     "answer": "B",
     "ans_text": "點對點 P2P 的共享經濟。",
     "explanation": "",
-    "assessmentTopic": "L122"
+    "display_num": 19,
+    "source_id": "oi-d391ad606795933c",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-21b2ab16ff02f869bf290e88",
+    "content_hash": "1a523772f83521a63dd261cdedc882eddc25bde07338310efc0f9618d99a46ac"
   },
   {
     "id": 143,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第五章 數位化企業資訊工具基本知識",
+    "assessmentTopic": "L122",
     "num": 20,
     "question": "運用一些策略來增強搜尋引擎的流量 ， 通常是透過改進網站在搜尋結果頁上的 排名位置來達成目的，此稱為？",
     "options": [
@@ -2428,12 +3139,17 @@
     "answer": "B",
     "ans_text": "Search engine optimization （SEO）。",
     "explanation": "",
-    "assessmentTopic": "L122"
+    "display_num": 20,
+    "source_id": "oi-d391ad606795933c",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-1b436e06c7fa223d05869a10",
+    "content_hash": "d6a856f196f53f3e844b8f02b36a6f82e1ac8d57e09cfa1912b18036802f66e2"
   },
   {
     "id": 144,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第五章 數位化企業資訊工具基本知識",
+    "assessmentTopic": "L122",
     "num": 21,
     "question": "用來支援企業內部重要營運流程，包括財務與會計流程、人力資源流程、製 造 與生產流程及業務行銷流程的整合企業系統通稱為：",
     "options": [
@@ -2445,12 +3161,17 @@
     "answer": "A",
     "ans_text": "企業資源規劃 ERP 系統。",
     "explanation": "ERP 是一套財務會計導向的資訊系統 ， 用於有效率地規劃 、 控制和整合企業內 部包括財務與會計流程 、 人力資源流程 、製造與生產流程及業務行銷流程所有 資源及資訊。",
-    "assessmentTopic": "L122"
+    "display_num": 21,
+    "source_id": "oi-d391ad606795933c",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-df33aa3948f7171394b336b2",
+    "content_hash": "7fd29976d64782512bebe94666fe11b041c0ff016f1d7e37e3a20131938b5222"
   },
   {
     "id": 145,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第五章 數位化企業資訊工具基本知識",
+    "assessmentTopic": "L122",
     "num": 22,
     "question": "先進規劃與排程系統（ Advanced Planning and Scheduling, APS ）通常不包含下 列哪項功能？",
     "options": [
@@ -2462,12 +3183,17 @@
     "answer": "B",
     "ans_text": "行銷資源規劃。",
     "explanation": "行銷資源規劃通常是屬於企業資源規劃系統的功能。",
-    "assessmentTopic": "L122"
+    "display_num": 22,
+    "source_id": "oi-d391ad606795933c",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-9168f6279ca225be1b7708f2",
+    "content_hash": "02029c935234cf2fd72f4ce53cd8da745daa43d324b73ee29f1f119c7f86ed0b"
   },
   {
     "id": 146,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第五章 數位化企業資訊工具基本知識",
+    "assessmentTopic": "L122",
     "num": 23,
     "question": "下列何種資料分析技術不屬於資料探勘系統中的常用技術？",
     "options": [
@@ -2479,12 +3205,17 @@
     "answer": "C",
     "ans_text": "樞紐分析。",
     "explanation": "",
-    "assessmentTopic": "L122"
+    "display_num": 23,
+    "source_id": "oi-d391ad606795933c",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-ee9a1be255a5074a15db77df",
+    "content_hash": "81d3762fae7be754b4328a5fd640eb4bec989dffdb5c2985ab9377862cae8db0"
   },
   {
     "id": 147,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第五章 數位化企業資訊工具基本知識",
+    "assessmentTopic": "L122",
     "num": 24,
     "question": "下列何者為一種企業架構 ， 企業自己的資料中心與本地桌上型電腦之外的 資訊 科技資源，只要有網際網路，員工可任何地方存取虛擬伺服器、儲存裝置、串 流視訊、特製軟體或各種雲端服務？",
     "options": [
@@ -2496,12 +3227,17 @@
     "answer": "D",
     "ans_text": "雲端運算。",
     "explanation": "",
-    "assessmentTopic": "L122"
+    "display_num": 24,
+    "source_id": "oi-d391ad606795933c",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-6deae490ee21331461cf2e36",
+    "content_hash": "945ee28e429d1f61b4dfb2f9bc91aaaf722482c1adebcd6cda68f0d8205341ac"
   },
   {
     "id": 148,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第五章 數位化企業資訊工具基本知識",
+    "assessmentTopic": "L122",
     "num": 25,
     "question": "下列何者為帶領分析公司的業務策略 ， 定義出支援業務策略的資訊通訊科技架 構，並建立出一套達成目標架構的路線藍圖？",
     "options": [
@@ -2513,12 +3249,17 @@
     "answer": "D",
     "ans_text": "企業架構師。",
     "explanation": "",
-    "assessmentTopic": "L122"
+    "display_num": 25,
+    "source_id": "oi-d391ad606795933c",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-1c411ba5e59c09c3cbc7ecb7",
+    "content_hash": "a555517ed8ce4c7ada7e3363ae38d5c6b8890b3c39807154f953b7a9ed6d6390"
   },
   {
     "id": 149,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第五章 數位化企業資訊工具基本知識",
+    "assessmentTopic": "L122",
     "num": 26,
     "question": "知識管理系統，區分三層，包含了相同介面的工具與服務應用層結合。何者包 括管理機制、安全機制、及知識管理平台的目錄管理等功能？",
     "options": [
@@ -2530,12 +3271,17 @@
     "answer": "A",
     "ans_text": "桌面服務層。",
     "explanation": "",
-    "assessmentTopic": "L122"
+    "display_num": 26,
+    "source_id": "oi-d391ad606795933c",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-a0eb8bcceb4e1917edad6309",
+    "content_hash": "4d8daa6c6ede2c48ef7b45725d1482d55a39f546fb3c9c5b697851cafa8c2a11"
   },
   {
     "id": 150,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第五章 數位化企業資訊工具基本知識",
+    "assessmentTopic": "L122",
     "num": 27,
     "question": "下列何者為從母資料庫提取資訊 ， 然後轉化 、 清理資料使用它符合運用的資料 定義？",
     "options": [
@@ -2547,12 +3293,17 @@
     "answer": "A",
     "ans_text": "資料倉儲。",
     "explanation": "",
-    "assessmentTopic": "L122"
+    "display_num": 27,
+    "source_id": "oi-d391ad606795933c",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-c3b4a58318887666831794e4",
+    "content_hash": "ffb12dc51671c3d624fdb1a629ae146b2e131499f0d4ce19d1e0adf5c80eff3f"
   },
   {
     "id": 151,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第五章 數位化企業資訊工具基本知識",
+    "assessmentTopic": "L122",
     "num": 28,
     "question": "下列何者具備資料描述能力的語言，也是具有高度結構性即可驗證性的語言， 允許使用者自行定義？",
     "options": [
@@ -2564,12 +3315,17 @@
     "answer": "C",
     "ans_text": "XML。",
     "explanation": "",
-    "assessmentTopic": "L122"
+    "display_num": 28,
+    "source_id": "oi-d391ad606795933c",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-452297eae0aa28c23016b267",
+    "content_hash": "918ded25bebf85486da309c8449274776d64b968bced2d0c0bb45c1af5e851e0"
   },
   {
     "id": 152,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第五章 數位化企業資訊工具基本知識",
+    "assessmentTopic": "L122",
     "num": 29,
     "question": "下列何者為依照主記憶體而非次要儲存裝置來儲存資料庫 ， 這樣能極大地提升 存取速度？",
     "options": [
@@ -2581,12 +3337,17 @@
     "answer": "C",
     "ans_text": "In-memory database 。",
     "explanation": "",
-    "assessmentTopic": "L122"
+    "display_num": 29,
+    "source_id": "oi-d391ad606795933c",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-5f500e46ffdb0bbb32011ac7",
+    "content_hash": "c859d5d132767780089305f0338b6a8e2ac7ce2de5e5c1f394a325eadd7b3a08"
   },
   {
     "id": 153,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第五章 數位化企業資訊工具基本知識",
+    "assessmentTopic": "L122",
     "num": 30,
     "question": "下列何者 為一個中央化的資料儲存庫，儲存著從多個資料來源擷取而來的資 訊，可以做為資料分析、情報收集和策略規劃等用途？",
     "options": [
@@ -2598,12 +3359,17 @@
     "answer": "B",
     "ans_text": "資料倉儲。",
     "explanation": "",
-    "assessmentTopic": "L122"
+    "display_num": 30,
+    "source_id": "oi-d391ad606795933c",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-3a415e58eeb0ad7994bac61f",
+    "content_hash": "21ac6e620ab401f7aefe9d400d953e1baa94364872e851fbef3c58f897213895"
   },
   {
     "id": 154,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第五章 數位化企業資訊工具基本知識",
+    "assessmentTopic": "L122",
     "num": 31,
     "question": "在一個企業資訊系統開發專案管理實務中 ， 專案經理經常使用下列哪項管理工 具來記錄專案計劃與控制時程？",
     "options": [
@@ -2615,12 +3381,17 @@
     "answer": "C",
     "ans_text": "甘特圖。",
     "explanation": "甘特圖是專案管理工具中最常被使用來管控專案時程的圖表工具。",
-    "assessmentTopic": "L122"
+    "display_num": 31,
+    "source_id": "oi-d391ad606795933c",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-55bfa68280af1437af440f70",
+    "content_hash": "f0cb86162e5d83df13aefa3604b76904fad21545a930ed0ef38755609d4c2c02"
   },
   {
     "id": 155,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第五章 數位化企業資訊工具基本知識",
+    "assessmentTopic": "L122",
     "num": 32,
     "question": "物聯網可以說是一種結合分散式運算、行動運算、感測網路、人工智慧與人機 界面的一個科技平台，主要結構可分為三個層級，分別為感測器層、網路層以 及分析層。在物聯網中常使用的射頻識別 （ RFID） 晶片應該被歸類為哪一層？",
     "options": [
@@ -2632,12 +3403,17 @@
     "answer": "A",
     "ans_text": "感測器層。",
     "explanation": "RFID 晶片是具有感測、辨識及通訊能力 的感知元件，常被嵌入真實物體，已 針對不同場景進行感測與監控，所以應屬於感測器層。",
-    "assessmentTopic": "L122"
+    "display_num": 32,
+    "source_id": "oi-d391ad606795933c",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-4ce47be60f95eae2a602b6c0",
+    "content_hash": "26445338c9efb33c02cefa11968742208034aff2f686ffee1e2d9d676e2c8678"
   },
   {
     "id": 156,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第五章 數位化企業資訊工具基本知識",
+    "assessmentTopic": "L122",
     "num": 33,
     "question": "每個專案都有基本條件限制著，下列哪一個選項，其中任何一個因素變了，其 它也會被影響？",
     "options": [
@@ -2649,12 +3425,17 @@
     "answer": "D",
     "ans_text": "成本、時間、範疇。",
     "explanation": "",
-    "assessmentTopic": "L122"
+    "display_num": 33,
+    "source_id": "oi-d391ad606795933c",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-e9a05f47678c023ef90d6ace",
+    "content_hash": "32436b5a1f5d9aed2554bd4194e96b032c663a9e3ef45d5c324b665ecf0e0cd2"
   },
   {
     "id": 157,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第五章 數位化企業資訊工具基本知識",
+    "assessmentTopic": "L122",
     "num": 34,
     "question": "下列何者為專案管理的功能在不受控制且常常未考慮到對預算及時程衝擊下 被隨意增添？",
     "options": [
@@ -2666,12 +3447,17 @@
     "answer": "A",
     "ans_text": "範圍蔓延。",
     "explanation": "",
-    "assessmentTopic": "L122"
+    "display_num": 34,
+    "source_id": "oi-d391ad606795933c",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-9c0148ae19bf802566063ce2",
+    "content_hash": "cc40d225e3b155a77b870a9ffe5f21e186f4ce3c18c469cba1a777efea83414f"
   },
   {
     "id": 158,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第五章 數位化企業資訊工具基本知識",
+    "assessmentTopic": "L122",
     "num": 35,
     "question": "下列何者指企業逐漸可接受私人擁有裝置 ， 太多員工想把他們的智慧型手機連 上公司系統，目前正在發展實用的政策？",
     "options": [
@@ -2683,12 +3469,17 @@
     "answer": "A",
     "ans_text": "員工自攜設備。",
     "explanation": "",
-    "assessmentTopic": "L122"
+    "display_num": 35,
+    "source_id": "oi-d391ad606795933c",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-c1937487ea33746cf81bc259",
+    "content_hash": "95d104dd556fcdc47c42a993195e3fa0c6ae55dd4ab734753e1e60758b966c4c"
   },
   {
     "id": 159,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第五章 數位化企業資訊工具基本知識",
+    "assessmentTopic": "L122",
     "num": 36,
     "question": "下列何者為一種應用在標籤上的科技 ， 包括一個具有微處理的小晶片 ， 再加上 一個能接收與傳輸資料的小型天線？",
     "options": [
@@ -2700,12 +3491,17 @@
     "answer": "D",
     "ans_text": "Radio Frequency IDentification （RFID）。",
     "explanation": "",
-    "assessmentTopic": "L122"
+    "display_num": 36,
+    "source_id": "oi-d391ad606795933c",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-37e74aa82f38c5a4357c402e",
+    "content_hash": "fe67bee03d97e07804306dba646187f3e1edd11532a8e089c29b9482ab86d853"
   },
   {
     "id": 160,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第五章 數位化企業資訊工具基本知識",
+    "assessmentTopic": "L122",
     "num": 37,
     "question": "下列何者為適合儲存與分析大數據的資料庫管理系統？",
     "options": [
@@ -2717,12 +3513,17 @@
     "answer": "C",
     "ans_text": "NoSQL 。",
     "explanation": "",
-    "assessmentTopic": "L122"
+    "display_num": 37,
+    "source_id": "oi-d391ad606795933c",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-59dd6f23b06aae25f0065697",
+    "content_hash": "30f0ecbfc64586f66f2d51586ad5607b4629542d145ab6310b4d1cb964923598"
   },
   {
     "id": 161,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第五章 數位化企業資訊工具基本知識",
+    "assessmentTopic": "L122",
     "num": 38,
     "question": "下列何者為一種資料集合，其數量龐大，其內容多變、累積的速度迅速，以至 於我們難以用傳統方法儲存、分析它？",
     "options": [
@@ -2734,12 +3535,17 @@
     "answer": "A",
     "ans_text": "大數據。",
     "explanation": "",
-    "assessmentTopic": "L122"
+    "display_num": 38,
+    "source_id": "oi-d391ad606795933c",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-2c89a7ff12d02705b3b0c7f4",
+    "content_hash": "49d71c07fdfb97d1fc55042f2eb0ba1b4ac744179adab51c84dbbf1d5c5d7985"
   },
   {
     "id": 162,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第五章 數位化企業資訊工具基本知識",
+    "assessmentTopic": "L122",
     "num": 39,
     "question": "Davenport and Sho rt 提出企業流程再造實施的五個步驟，包括 1.了解現行流 程；2.確定需要重新設計的流程 ；3.建立新流程的雛型 ；4.確定資訊科技的功 用；5.建立企業願景及活動目的。請問正確的順序應該為？",
     "options": [
@@ -2751,12 +3557,17 @@
     "answer": "B",
     "ans_text": "52143 。",
     "explanation": "",
-    "assessmentTopic": "L122"
+    "display_num": 39,
+    "source_id": "oi-d391ad606795933c",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-f0b22bfcdf992b2a9fe706ab",
+    "content_hash": "f289c1027311f7338f8fb58946a46ef642cc2eb9677d05566bdad8d5bfc47b70"
   },
   {
     "id": 163,
     "subject": "考科二：經營管理數位化概論",
     "chapter": "第五章 數位化企業資訊工具基本知識",
+    "assessmentTopic": "L122",
     "num": 40,
     "question": "某運輸公司利用儲存於資料庫中關於客戶需求、可用於駕駛員、車輛、貨物重 量的資料找出數以千計規則 ， 並以此推理規劃出最佳路線以及駕駛員 、 車輛和 貨物指派，這樣的系統技術屬於？",
     "options": [
@@ -2768,6 +3579,10 @@
     "answer": "D",
     "ans_text": "專家系統。",
     "explanation": "",
-    "assessmentTopic": "L122"
+    "display_num": 40,
+    "source_id": "oi-d391ad606795933c",
+    "source_version": "huazhu-1128-20251212",
+    "question_uid": "oi-95ea21299ff34cc68a006f15",
+    "content_hash": "7b7320d4e9e6595e2211b3e63723a0c765d15c382613a5c26ad3d681c5c9a25d"
   }
 ]

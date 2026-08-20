@@ -1,4 +1,4 @@
-const CACHE = 'ipas-exam-v2';
+const CACHE = 'ipas-exam-v3';
 const PRECACHE = [
   '.',
   'index.html',
