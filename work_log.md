@@ -30,6 +30,18 @@
 * **【負面邊界補強】**：程式審查後新增異常作答索引與無效計時輸入測試，答題率不會超過 100%，計時輸入異常時不會產生 `NaN`。
 * **【待人工驗收】**：瀏覽器控制技能因 Windows 沙箱無法存取使用者 AppData 而未能啟動，尚待在一般瀏覽器實際點擊完成三證照的考試與練習流程。
 
+### 📌 2026-08-20 —— Phase 2 題庫永久識別與安全搬移
+
+* **【永久識別碼】**：新增 `question_identity.py`，三支解析器統一產生 `question_uid`、`display_num`、`source_id`、`source_version` 與 `content_hash`；題目文字或解析修訂只改變內容雜湊，不改變永久題號。
+* **【題庫同源】**：重新產生 163／530／298 題 JSON 與 JS wrapper；JSON 為 GitHub Pages canonical 題庫，wrapper 由同次建置自動產生並逐題驗證完全一致。
+* **【可重現建置】**：三支解析器連續執行兩次，六份輸出檔案的 SHA-256 均保持一致，並拒絕任何重複 `question_uid`。
+* **【真正按需載入】**：首頁只顯示設定中的題數，使用者選擇證照後才載入該套題庫；HTTP 優先讀 JSON，`file://` 才使用 JS wrapper 備援，並加入快速切換的競態保護。
+* **【IndexedDB v4】**：錯題、題目統計與 SM-2 改以 `question_uid` 建立鍵值。舊紀錄能唯一比對者自動合併搬移；無法消歧義者保存至 `migrationQuarantine` 後提示使用者，不做猜測式合併。
+* **【統計碰撞修正】**：審題儀表板改以 `question_uid` 彙整，顯示題號只使用 `display_num`，避免不同章節同題號互相覆蓋。
+* **【離線更新】**：Service Worker app shell 升至 `ipas-exam-v3`；題庫不預載，選用後才進入 runtime cache。
+* **【驗證結果】**：JavaScript 19/19、Python 4/4 測試通過；`exam/script.js` 語法正常，首頁、App Shell 與三套 JSON/JS 題庫共 12 個本機 HTTP 資產均回應 200。
+* **【待人工驗收】**：仍需在一般瀏覽器以既有 IndexedDB 資料驗證自動搬移、隔離提示、三證照切換，以及完整考試／練習操作。
+
 ---
 
 ## 📅 專案時程與工作里程碑

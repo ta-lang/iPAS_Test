@@ -18,6 +18,7 @@ Primary working areas:
 - `parse_questions.py`: Parser for Operations Intelligence Analyst questions.
 - `parse_ai_questions.py`: Parser for AI Application Planner junior questions.
 - `parse_ai_mid_questions.py`: Parser for AI Application Planner intermediate questions.
+- `question_identity.py`: Shared stable question identity, source metadata, and content hash generator.
 - `convert_pdf.py`: Markdown-to-PDF conversion helper.
 - `work_log.md`: Main handoff and work history.
 - `README.md`: Project overview.
@@ -51,6 +52,10 @@ python parse_questions.py
 python parse_ai_questions.py
 python parse_ai_mid_questions.py
 
+# Validate question identity and browser question-bank contracts
+python -m unittest tests.test_question_identity
+node --test tests/*.test.js
+
 # Convert Markdown notes to PDF
 python convert_pdf.py
 
@@ -73,6 +78,7 @@ Use the project virtual environment if one is available.
 
 - The root is the active Git repository; `exam/` is a static application directory, not an independent repository.
 - The current question-bank counts are 163 Operations Intelligence Analyst questions, 530 AI Application Planner junior questions, and 298 AI Application Planner intermediate questions. Confirm counts from the JSON files after parser changes.
+- Persistent wrong-pool and question-stat records use `question_uid`; `display_num`/`num` are display-only compatibility fields. Ambiguous legacy records are kept in the IndexedDB `migrationQuarantine` store.
 - `Source/` currently contains six iPAS junior AI Application Planner Markdown notes. `out/` contains six generated TXT scripts and six offline MP3 files.
 - The default lecture-audio path uses local Windows SAPI. Edge TTS sends lecture text to an external service and requires explicit authorization before use.
 - Management continuity data belongs in the separate Project-Management hub; source-project documentation changes must not be mixed with management-hub Git operations.

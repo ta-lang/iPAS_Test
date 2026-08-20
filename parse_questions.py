@@ -2,6 +2,7 @@ import os
 import re
 import json
 import pypdf
+from question_identity import enrich_questions
 
 # Workspace directories
 workspace_dir = os.path.dirname(os.path.abspath(__file__))
@@ -10,6 +11,8 @@ output_dir = os.path.join(workspace_dir, "exam")
 os.makedirs(output_dir, exist_ok=True)
 output_json_path = os.path.join(output_dir, "questions.json")
 output_js_path = os.path.join(output_dir, "questions.js")
+CERT_ID = "oi"
+SOURCE_VERSION = "huazhu-1128-20251212"
 
 
 # PDF file paths
@@ -225,6 +228,12 @@ def main():
             
             print(f"    Successfully merged {merged_count} questions for {chapter['name']}")
 
+    all_questions = enrich_questions(
+        CERT_ID,
+        all_questions,
+        source_version=SOURCE_VERSION,
+    )
+
     # Write out the JSON database
     with open(output_json_path, "w", encoding="utf-8") as f:
         json.dump(all_questions, f, ensure_ascii=False, indent=2)
@@ -232,7 +241,7 @@ def main():
 
     # Write out the JS database (for offline local execution via file:// protocol)
     with open(output_js_path, "w", encoding="utf-8") as f:
-        f.write("const ipasQuestions = " + json.dumps(all_questions, ensure_ascii=False, indent=2) + ";\n")
+        f.write("window.ipasQuestions = " + json.dumps(all_questions, ensure_ascii=False, indent=2) + ";\n")
     print(f"Successfully wrote {len(all_questions)} questions to {output_js_path}")
 
 if __name__ == "__main__":

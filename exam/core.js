@@ -80,6 +80,50 @@
         return true;
     }
 
+    function getQuestionStorageId(certId, question) {
+        const questionUid = String(question && question.question_uid || '').trim();
+        if (!questionUid) {
+            throw new Error('question_uid is required for persistent question state');
+        }
+        return `${certId}_${questionUid}`;
+    }
+
+    function normalizeLegacyText(value) {
+        return String(value || '')
+            .normalize('NFKC')
+            .replace(/\s+/gu, ' ')
+            .trim()
+            .toLowerCase();
+    }
+
+    function resolveLegacyQuestion(legacyEntry, questions) {
+        const legacyNumber = Number(legacyEntry && (legacyEntry.display_num ?? legacyEntry.num));
+        const candidates = (questions || []).filter(question =>
+            Number(question.display_num ?? question.num) === legacyNumber);
+
+        if (candidates.length === 0) {
+            return { status: 'missing', candidate_uids: [] };
+        }
+        if (candidates.length === 1) {
+            return { status: 'resolved', question_uid: candidates[0].question_uid };
+        }
+
+        const comparableFields = ['subject', 'chapter', 'question']
+            .filter(field => normalizeLegacyText(legacyEntry && legacyEntry[field]));
+        const exactMatches = candidates.filter(question =>
+            comparableFields.every(field =>
+                normalizeLegacyText(question[field]) === normalizeLegacyText(legacyEntry[field])));
+
+        if (comparableFields.length > 0 && exactMatches.length === 1) {
+            return { status: 'resolved', question_uid: exactMatches[0].question_uid };
+        }
+
+        return {
+            status: 'ambiguous',
+            candidate_uids: candidates.map(question => question.question_uid).sort()
+        };
+    }
+
     function getTimerSnapshot(startedAtMs, durationSeconds, nowMs = Date.now()) {
         const parsedDuration = Number(durationSeconds);
         const safeDuration = Number.isFinite(parsedDuration)
@@ -103,6 +147,8 @@
         ANSWER_PREFIXES,
         buildQuizResult,
         claimOnce,
-        getTimerSnapshot
+        getQuestionStorageId,
+        getTimerSnapshot,
+        resolveLegacyQuestion
     };
 }));

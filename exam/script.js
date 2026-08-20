@@ -16,7 +16,8 @@ let appData = {
     timeRemaining: 4500, // 75 minutes by default (dynamic based on certification)
     timeSpent: 0,
     quizActive: false,
-    committedEvents: Object.create(null)
+    committedEvents: Object.create(null),
+    certSelectionToken: 0
 };
 
 // DOM Elements
@@ -132,53 +133,47 @@ async function loadQuestions() {
             throw new Error("No modules are enabled in config.js");
         }
         
-        for (const mod of modules) {
-            let questions = [];
-            
-            console.log(`Checking global variable for ${mod.id}: window[${mod.questionsVar}] =`, window[mod.questionsVar]);
-            // 1. Try checking global variable (already loaded)
-            if (window[mod.questionsVar] && Array.isArray(window[mod.questionsVar]) && window[mod.questionsVar].length > 0) {
-                questions = window[mod.questionsVar];
-                console.log(`Successfully loaded ${questions.length} questions from global variable for ${mod.id}`);
-            } else {
-                // 2. Try loading dynamic script (for local file:// protocol)
-                try {
-                    console.log(`Global variable not found, dynamically loading script ${mod.questionsFile}...`);
-                    await loadScript(mod.questionsFile);
-                    console.log(`After dynamic script load, window[${mod.questionsVar}] =`, window[mod.questionsVar]);
-                    if (window[mod.questionsVar] && Array.isArray(window[mod.questionsVar]) && window[mod.questionsVar].length > 0) {
-                        questions = window[mod.questionsVar];
-                    }
-                } catch (e) {
-                    console.warn(`Dynamic script load failed for ${mod.questionsFile}, trying fetch...`, e);
-                }
-            }
-            
-            // 3. Fallback to fetch JSON (for http/https servers)
-            if (questions.length === 0) {
-                try {
-                    const response = await fetch(mod.questionsJson);
-                    if (response.ok) {
-                        questions = await response.json();
-                    }
-                } catch (e) {
-                    console.warn(`Failed to fetch ${mod.questionsJson}: ${e.message}`);
-                }
-            }
-            
-            appData.moduleQuestions[mod.id] = questions;
-        }
-        
         // Render certification selector cards dynamically
         renderCertSelector();
         
         // Set initial default cert type to the first enabled module
         const defaultCert = modules[0].id;
-        selectCert(defaultCert);
+        await selectCert(defaultCert);
     } catch (error) {
         console.error(error);
         qText.innerHTML = `<div style="color:#ef4444; font-weight:700;">讀取題庫錯誤：${error.message}<br>請確認是否已產生題庫檔案或 config.js 是否正確。</div>`;
     }
+}
+
+async function loadModuleQuestions(mod) {
+    if (appData.moduleQuestions[mod.id]) return appData.moduleQuestions[mod.id];
+
+    let questions = [];
+    if (window.location.protocol !== 'file:') {
+        try {
+            const response = await fetch(mod.questionsJson);
+            if (response.ok) questions = await response.json();
+        } catch (e) {
+            console.warn(`Failed to fetch ${mod.questionsJson}: ${e.message}`);
+        }
+    }
+
+    if (questions.length === 0) {
+        if (!window[mod.questionsVar]) await loadScript(mod.questionsFile);
+        questions = window[mod.questionsVar] || [];
+    }
+
+    if (!Array.isArray(questions) || questions.length === 0) {
+        throw new Error(`${mod.name} 題庫是空的或格式錯誤`);
+    }
+    if (questions.some(question => !question.question_uid)) {
+        throw new Error(`${mod.name} 題庫缺少永久題目識別碼，請重新產生題庫`);
+    }
+
+    appData.moduleQuestions[mod.id] = questions;
+    const countLabel = document.getElementById(`lblCount_${mod.id}`);
+    if (countLabel) countLabel.textContent = questions.length;
+    return questions;
 }
 
 // Render certification selector cards dynamically on the welcome page
@@ -194,7 +189,7 @@ function renderCertSelector() {
         card.id = `btnSelect_${mod.id}`;
         card.dataset.cert = mod.id;
         
-        const qCount = appData.moduleQuestions[mod.id] ? appData.moduleQuestions[mod.id].length : 0;
+        const qCount = appData.moduleQuestions[mod.id]?.length || mod.questionCount || 0;
         
         card.innerHTML = `
             <span class="cert-icon">${mod.icon}</span>
@@ -204,18 +199,27 @@ function renderCertSelector() {
             </div>
         `;
         
-        card.addEventListener('click', () => selectCert(mod.id));
+        card.addEventListener('click', () => void selectCert(mod.id));
         certGrid.appendChild(card);
     });
 }
 
 // Select certification and update UI
-function selectCert(certType) {
-    appData.currentCert = certType;
-    
+async function selectCert(certType) {
     const modules = window.EXAM_CONFIG.modules.filter(m => m.enabled);
     const mod = modules.find(m => m.id === certType);
     if (!mod) return;
+
+    const selectionToken = ++appData.certSelectionToken;
+    try {
+        await loadModuleQuestions(mod);
+    } catch (error) {
+        console.error(error);
+        alert(`讀取題庫失敗：${error.message}`);
+        return;
+    }
+    if (selectionToken !== appData.certSelectionToken) return;
+    appData.currentCert = certType;
     
     // Update active card class
     modules.forEach(m => {
@@ -244,7 +248,7 @@ function selectCert(certType) {
         if (appFooterText) appFooterText.textContent = "© 2026 iPAS 模擬考系統. All Rights Reserved.";
     }
     
-    const qCount = appData.moduleQuestions[mod.id] ? appData.moduleQuestions[mod.id].length : 0;
+    const qCount = appData.moduleQuestions[mod.id].length;
     
     welcomeTitle.textContent = `歡迎使用 IPAS ${mod.name} 備考系統`;
     welcomeDesc.textContent = `本系統整合了官方 115 年最新簡章範圍與教材精選題庫，共計有 ${qCount} 題真實樣題。提供您雙重模式進行衝刺學習：`;
@@ -288,6 +292,12 @@ function selectCert(certType) {
     
     // Populate chapter and subject filters dynamically
     populateFilters();
+
+    const migration = await migrateLegacyQuestionState(certType, appData.questions);
+    if (selectionToken !== appData.certSelectionToken) return;
+    if (migration.quarantined > 0) {
+        alert(`已保留 ${migration.quarantined} 筆無法唯一對應的舊版錯題／進度資料，未自動猜測題目。`);
+    }
 
     // Refresh persistent stats and wrong pool count
     refreshWrongPoolCount();
@@ -459,31 +469,7 @@ function setupEventListeners() {
             const sort = e.currentTarget.getAttribute('data-sort');
             const wrongPool = await getWrongPool(appData.currentCert);
             const qStats = await loadQuestionStats(appData.currentCert);
-            const qIndex = {};
-            if (appData.questions) appData.questions.forEach(q => { qIndex[q.num] = q; });
-            const qMap = {};
-            for (const s of qStats) { qMap[s.num] = { correct: s.correct, wrong: s.wrong }; }
-            for (const w of wrongPool) {
-                if (!qMap[w.num]) qMap[w.num] = { correct: 0, wrong: 0 };
-                qMap[w.num].lastWrong = w.lastWrongDate || '';
-                qMap[w.num].wrong = Math.max(qMap[w.num].wrong, w.wrongCount || 1);
-                qMap[w.num].subject = w.subject || (qIndex[w.num] && qIndex[w.num].subject) || '';
-                qMap[w.num].chapter = w.chapter || (qIndex[w.num] && qIndex[w.num].chapter) || '';
-                qMap[w.num].assessmentTopic = w.assessmentTopic || (qIndex[w.num] && qIndex[w.num].assessmentTopic) || '';
-            }
-            for (const num of Object.keys(qMap)) {
-                if (!qMap[num].subject && qIndex[num]) {
-                    qMap[num].subject = qIndex[num].subject || '';
-                    qMap[num].chapter = qIndex[num].chapter || '';
-                    qMap[num].assessmentTopic = qIndex[num].assessmentTopic || '';
-                }
-            }
-            let rows = Object.entries(qMap).map(([num, d]) => {
-                const total = d.correct + d.wrong;
-                const rate = total > 0 ? Math.round((d.correct / total) * 100) : 0;
-                const diffScore = total > 0 ? Math.round((1 - d.correct / total) * 100) : 0;
-                return { num, correct: d.correct, wrong: d.wrong, total, rate, diffScore, lastWrong: d.lastWrong || '', subject: d.subject || '', chapter: d.chapter || '', assessmentTopic: d.assessmentTopic || '' };
-            });
+            const rows = buildQuestionPerformanceRows(qStats, wrongPool, appData.questions);
             switch (sort) {
                 case 'difficulty': rows.sort((a, b) => b.diffScore - a.diffScore); break;
                 case 'wrong': rows.sort((a, b) => b.wrong - a.wrong); break;
@@ -897,7 +883,7 @@ function showQuestion(idx) {
     // Update headers
     lblSubject.textContent = q.subject;
     lblChapter.textContent = q.chapter;
-    lblIndex.textContent = `第 ${idx + 1} / ${appData.currentQuiz.length} 題 (原始題號: ${q.num})`;
+    lblIndex.textContent = `第 ${idx + 1} / ${appData.currentQuiz.length} 題 (原始題號: ${q.display_num ?? q.num})`;
     const lblTopic = document.getElementById('lblTopic');
     const contentCode = q.assessmentContent || '';
     if (lblTopic) lblTopic.textContent = q.assessmentTopic ? (q.assessmentTopic + (contentCode ? ' > ' + contentCode : '')) : '';
@@ -1001,10 +987,10 @@ function persistPracticeAnswer(qIdx) {
     const q = appData.currentQuiz[qIdx];
     const correctIdx = window.ExamCore.ANSWER_PREFIXES.indexOf(String(q.answer || '').toUpperCase());
     const isCorrect = appData.userAnswers[qIdx] === correctIdx;
-    const operations = [updateQuestionStats(appData.currentCert, q.num, isCorrect)];
+    const operations = [updateQuestionStats(appData.currentCert, q, isCorrect)];
 
     if (isCorrect) {
-        operations.push(updateWrongPoolAfterCorrect(appData.currentCert, q.num));
+        operations.push(updateWrongPoolAfterCorrect(appData.currentCert, q));
     } else {
         operations.push(addWrongQuestion(appData.currentCert, q));
     }
@@ -1185,7 +1171,7 @@ async function persistQuizResult(result) {
     if (appData.quizMode === 'exam') {
         appData.currentQuiz.forEach((question, index) => {
             const isCorrect = result.gradedResults[index] === 'correct';
-            operations.push(updateQuestionStats(appData.currentCert, question.num, isCorrect));
+            operations.push(updateQuestionStats(appData.currentCert, question, isCorrect));
             if (!isCorrect) {
                 operations.push(addWrongQuestion(appData.currentCert, question));
             }
@@ -1288,7 +1274,7 @@ function renderReviewList() {
                         <p><strong>標準選項：</strong>(${q.answer}) ${q.ans_text}</p>
                         ${q.explanation ? `<p style="margin-top:10px;"><strong>官方詳細解析：</strong><br>${q.explanation}</p>` : ''}
                         <p style="margin-top:10px; font-size:12px; color:var(--text-muted);">
-                            類別：${q.subject} > ${q.chapter} | ${q.assessmentTopic || ''}${q.assessmentContent ? ' > ' + q.assessmentContent : ''} | 原始題號: ${q.num}
+                            類別：${q.subject} > ${q.chapter} | ${q.assessmentTopic || ''}${q.assessmentContent ? ' > ' + q.assessmentContent : ''} | 原始題號: ${q.display_num ?? q.num}
                         </p>
                     </div>
                 </div>
@@ -1461,7 +1447,7 @@ function validateTaiwanID(id) {
 // ════════════════════════════════════════════════════════════════
 
 const DB_NAME = 'iPAS_Exam_DB';
-const DB_VERSION = 3;
+const DB_VERSION = 4;
 
 function createSM2Card() {
     return { repetitions: 0, interval: 0, efactor: 2.5, nextReviewDate: new Date().toISOString().split('T')[0] };
@@ -1506,10 +1492,138 @@ function openDB() {
                 const store = db.createObjectStore('questionStats', { keyPath: 'id' });
                 store.createIndex('certId', 'certId', { unique: false });
             }
+            if (!db.objectStoreNames.contains('migrationQuarantine')) {
+                const store = db.createObjectStore('migrationQuarantine', { keyPath: 'id' });
+                store.createIndex('certId', 'certId', { unique: false });
+            }
+            if (!db.objectStoreNames.contains('meta')) {
+                db.createObjectStore('meta', { keyPath: 'key' });
+            }
         };
         req.onsuccess = (e) => resolve(e.target.result);
         req.onerror = (e) => reject(e.target.error);
     });
+}
+
+function readIndexedDBRequest(request) {
+    return new Promise((resolve, reject) => {
+        request.onsuccess = () => resolve(request.result);
+        request.onerror = () => reject(request.error);
+    });
+}
+
+async function readStoreByCert(db, storeName, certId) {
+    const tx = db.transaction(storeName, 'readonly');
+    return readIndexedDBRequest(tx.objectStore(storeName).index('certId').getAll(certId));
+}
+
+function finishTransaction(tx) {
+    return new Promise((resolve, reject) => {
+        tx.oncomplete = () => resolve();
+        tx.onerror = () => reject(tx.error);
+        tx.onabort = () => reject(tx.error || new Error('IndexedDB transaction aborted'));
+    });
+}
+
+function mergeMigratedEntry(storeName, current, legacy, question, certId) {
+    const identity = {
+        id: window.ExamCore.getQuestionStorageId(certId, question),
+        certId,
+        question_uid: question.question_uid,
+        display_num: question.display_num ?? question.num,
+        num: question.display_num ?? question.num,
+        subject: question.subject,
+        chapter: question.chapter
+    };
+    const merged = { ...legacy, ...current, ...identity };
+
+    if (storeName === 'wrongPool') {
+        merged.wrongCount = (current?.wrongCount || 0) + (legacy.wrongCount || 1);
+        merged.lastWrongDate = [current?.lastWrongDate, legacy.lastWrongDate].filter(Boolean).sort().pop() || '';
+        merged.assessmentTopic = question.assessmentTopic || legacy.assessmentTopic || '';
+        merged.assessmentContent = question.assessmentContent || legacy.assessmentContent || '';
+        merged.question = question.question;
+        merged.options = question.options;
+        merged.answer = question.answer;
+        merged.ans_text = question.ans_text;
+        merged.explanation = question.explanation || '';
+    } else {
+        merged.correct = (current?.correct || 0) + (legacy.correct || 0);
+        merged.wrong = (current?.wrong || 0) + (legacy.wrong || 0);
+        merged.lastSeen = [current?.lastSeen, legacy.lastSeen].filter(Boolean).sort().pop() || null;
+    }
+    return merged;
+}
+
+async function migrateLegacyStore(db, storeName, certId, questions) {
+    const entries = await readStoreByCert(db, storeName, certId);
+    const currentById = new Map(entries.filter(entry => entry.question_uid).map(entry => [entry.id, entry]));
+    const puts = new Map();
+    const deletes = [];
+    const quarantine = [];
+    let migrated = 0;
+
+    for (const legacy of entries.filter(entry => !entry.question_uid)) {
+        const resolution = window.ExamCore.resolveLegacyQuestion(legacy, questions);
+        if (resolution.status === 'resolved') {
+            const question = questions.find(item => item.question_uid === resolution.question_uid);
+            if (!question) throw new Error(`Resolved question not found: ${resolution.question_uid}`);
+            const newId = window.ExamCore.getQuestionStorageId(certId, question);
+            const current = puts.get(newId) || currentById.get(newId);
+            const merged = mergeMigratedEntry(storeName, current, legacy, question, certId);
+            puts.set(newId, merged);
+            currentById.set(newId, merged);
+            deletes.push(legacy.id);
+            migrated++;
+        } else {
+            quarantine.push({
+                id: `${certId}:${storeName}:${legacy.id}`,
+                certId,
+                storeName,
+                legacyId: legacy.id,
+                reason: resolution.status,
+                candidate_uids: resolution.candidate_uids || [],
+                legacyEntry: legacy,
+                quarantinedAt: new Date().toISOString()
+            });
+            deletes.push(legacy.id);
+        }
+    }
+
+    if (puts.size > 0 || deletes.length > 0 || quarantine.length > 0) {
+        const tx = db.transaction([storeName, 'migrationQuarantine'], 'readwrite');
+        const store = tx.objectStore(storeName);
+        const quarantineStore = tx.objectStore('migrationQuarantine');
+        for (const entry of puts.values()) store.put(entry);
+        for (const id of deletes) store.delete(id);
+        for (const entry of quarantine) quarantineStore.put(entry);
+        await finishTransaction(tx);
+    }
+
+    return { migrated, quarantined: quarantine.length };
+}
+
+async function migrateLegacyQuestionState(certId, questions) {
+    const metaKey = `legacy-question-keys:${certId}:v4`;
+    try {
+        const db = await openDB();
+        const existing = await readIndexedDBRequest(db.transaction('meta', 'readonly').objectStore('meta').get(metaKey));
+        if (existing?.done) return { migrated: 0, quarantined: 0 };
+
+        const wrongPool = await migrateLegacyStore(db, 'wrongPool', certId, questions);
+        const questionStats = await migrateLegacyStore(db, 'questionStats', certId, questions);
+        const result = {
+            migrated: wrongPool.migrated + questionStats.migrated,
+            quarantined: wrongPool.quarantined + questionStats.quarantined
+        };
+        const tx = db.transaction('meta', 'readwrite');
+        tx.objectStore('meta').put({ key: metaKey, done: true, completedAt: new Date().toISOString(), ...result });
+        await finishTransaction(tx);
+        return result;
+    } catch (error) {
+        console.warn('舊版題目資料搬移失敗，將於下次重試:', error);
+        return { migrated: 0, quarantined: 0 };
+    }
 }
 
 async function getWrongPool(certId) {
@@ -1531,12 +1645,12 @@ async function getWrongPool(certId) {
 async function addWrongQuestion(certId, q) {
     try {
         const db = await openDB();
-        const prefixes = ['A', 'B', 'C', 'D'];
-        const correctIdx = prefixes.indexOf(q.answer);
         const entry = {
-            id: `${certId}_${q.num}`,
+            id: window.ExamCore.getQuestionStorageId(certId, q),
             certId: certId,
-            num: q.num,
+            question_uid: q.question_uid,
+            display_num: q.display_num ?? q.num,
+            num: q.display_num ?? q.num,
             subject: q.subject,
             chapter: q.chapter,
             assessmentTopic: q.assessmentTopic || '',
@@ -1559,6 +1673,9 @@ async function addWrongQuestion(certId, q) {
                 if (existing) {
                     existing.wrongCount = (existing.wrongCount || 0) + 1;
                     existing.lastWrongDate = new Date().toISOString();
+                    existing.question_uid = q.question_uid;
+                    existing.display_num = q.display_num ?? q.num;
+                    existing.num = q.display_num ?? q.num;
                     existing.subject = q.subject;
                     existing.chapter = q.chapter;
                     existing.assessmentTopic = q.assessmentTopic || '';
@@ -1581,10 +1698,10 @@ async function addWrongQuestion(certId, q) {
     }
 }
 
-async function updateWrongPoolAfterCorrect(certId, quizId) {
+async function updateWrongPoolAfterCorrect(certId, question) {
     try {
         const db = await openDB();
-        const id = `${certId}_${quizId}`;
+        const id = window.ExamCore.getQuestionStorageId(certId, question);
         return new Promise((resolve, reject) => {
             const tx = db.transaction('wrongPool', 'readwrite');
             const store = tx.objectStore('wrongPool');
@@ -1713,16 +1830,27 @@ async function loadQuizHistory(certId, limit = 20) {
     }
 }
 
-async function updateQuestionStats(certId, qNum, isCorrect) {
+async function updateQuestionStats(certId, question, isCorrect) {
     try {
         const db = await openDB();
-        const id = `${certId}_${qNum}`;
+        const id = window.ExamCore.getQuestionStorageId(certId, question);
         return new Promise((resolve, reject) => {
             const tx = db.transaction('questionStats', 'readwrite');
             const store = tx.objectStore('questionStats');
             const req = store.get(id);
             req.onsuccess = () => {
-                const entry = req.result || { id, certId, num: qNum, correct: 0, wrong: 0, lastSeen: null };
+                const entry = req.result || {
+                    id,
+                    certId,
+                    question_uid: question.question_uid,
+                    display_num: question.display_num ?? question.num,
+                    num: question.display_num ?? question.num,
+                    subject: question.subject,
+                    chapter: question.chapter,
+                    correct: 0,
+                    wrong: 0,
+                    lastSeen: null
+                };
                 if (isCorrect) entry.correct++;
                 else entry.wrong++;
                 entry.lastSeen = new Date().toISOString();
@@ -1864,6 +1992,57 @@ async function renderWeaknessCharts() {
 // IRT 審題儀表板
 // ════════════════════════════════════════════════════════════════
 
+function buildQuestionPerformanceRows(qStats, wrongPool, questions) {
+    const questionIndex = new Map((questions || []).map(question => [question.question_uid, question]));
+    const performance = new Map();
+
+    for (const stats of qStats) {
+        if (!stats.question_uid) continue;
+        performance.set(stats.question_uid, {
+            correct: stats.correct || 0,
+            wrong: stats.wrong || 0
+        });
+    }
+    for (const wrong of wrongPool) {
+        if (!wrong.question_uid) continue;
+        const row = performance.get(wrong.question_uid) || { correct: 0, wrong: 0 };
+        row.lastWrong = wrong.lastWrongDate || wrong.lastAnswerDate || '';
+        row.wrong = Math.max(row.wrong, wrong.wrongCount || 1);
+        row.subject = wrong.subject || '';
+        row.chapter = wrong.chapter || '';
+        row.assessmentTopic = wrong.assessmentTopic || '';
+        row.assessmentContent = wrong.assessmentContent || '';
+        row.display_num = wrong.display_num ?? wrong.num;
+        performance.set(wrong.question_uid, row);
+    }
+
+    return [...performance.entries()].map(([questionUid, data]) => {
+        const question = questionIndex.get(questionUid) || {};
+        const total = data.correct + data.wrong;
+        const rate = total > 0 ? Math.round((data.correct / total) * 100) : 0;
+        let level;
+        if (rate >= 80) level = '簡單';
+        else if (rate >= 50) level = '中等';
+        else if (rate >= 20) level = '困難';
+        else level = '極難';
+        return {
+            questionUid,
+            displayNum: question.display_num ?? data.display_num ?? data.num ?? '?',
+            correct: data.correct,
+            wrong: data.wrong,
+            total,
+            rate,
+            level,
+            diffScore: total > 0 ? Math.round((1 - data.correct / total) * 100) : 0,
+            lastWrong: data.lastWrong || '',
+            subject: data.subject || question.subject || '',
+            chapter: data.chapter || question.chapter || '',
+            assessmentTopic: data.assessmentTopic || question.assessmentTopic || '',
+            assessmentContent: data.assessmentContent || question.assessmentContent || ''
+        };
+    });
+}
+
 function showIrtDashboard() {
     const irtScreen = document.getElementById('irtScreen');
     const welcomeScreen = document.getElementById('welcomeScreen');
@@ -1881,53 +2060,7 @@ async function renderIrtDashboard() {
     const overallRate = stats.totalAnswered > 0
         ? Math.round((stats.totalCorrect / stats.totalAnswered) * 100) : 0;
 
-    // Build question map with subject/chapter from wrong pool or original questions
-    const qMap = {};
-    const qIndex = {};
-    if (appData.questions) {
-        appData.questions.forEach(q => { qIndex[q.num] = q; });
-    }
-    for (const s of qStats) {
-        const key = s.num;
-        qMap[key] = { correct: s.correct, wrong: s.wrong };
-    }
-    for (const w of wrongPool) {
-        if (!qMap[w.num]) qMap[w.num] = { correct: 0, wrong: 0 };
-        qMap[w.num].lastWrong = w.lastWrongDate || w.lastAnswerDate || '';
-        qMap[w.num].wrong = Math.max(qMap[w.num].wrong, w.wrongCount || 1);
-        qMap[w.num].subject = w.subject || (qIndex[w.num] && qIndex[w.num].subject) || '';
-        qMap[w.num].chapter = w.chapter || (qIndex[w.num] && qIndex[w.num].chapter) || '';
-        qMap[w.num].assessmentTopic = w.assessmentTopic || (qIndex[w.num] && qIndex[w.num].assessmentTopic) || '';
-        qMap[w.num].assessmentContent = w.assessmentContent || (qIndex[w.num] && qIndex[w.num].assessmentContent) || '';
-    }
-    // Fill missing subject/chapter from original questions
-    for (const num of Object.keys(qMap)) {
-        if (!qMap[num].subject && qIndex[num]) {
-            qMap[num].subject = qIndex[num].subject || '';
-            qMap[num].chapter = qIndex[num].chapter || '';
-            qMap[num].assessmentTopic = qIndex[num].assessmentTopic || '';
-            qMap[num].assessmentContent = qIndex[num].assessmentContent || '';
-        }
-    }
-
-    const rows = Object.entries(qMap).map(([num, d]) => {
-        const total = d.correct + d.wrong;
-        const rate = total > 0 ? Math.round((d.correct / total) * 100) : 0;
-        let level;
-        if (rate >= 80) level = '簡單';
-        else if (rate >= 50) level = '中等';
-        else if (rate >= 20) level = '困難';
-        else level = '極難';
-        const diffScore = total > 0 ? Math.round((1 - d.correct / total) * 100) : 0;
-        return {
-            num, correct: d.correct, wrong: d.wrong, total, rate, level, diffScore,
-            lastWrong: d.lastWrong || '',
-            subject: d.subject || '',
-            chapter: d.chapter || '',
-            assessmentTopic: d.assessmentTopic || '',
-            assessmentContent: d.assessmentContent || ''
-        };
-    });
+    const rows = buildQuestionPerformanceRows(qStats, wrongPool, appData.questions);
 
     rows.sort((a, b) => b.diffScore - a.diffScore);
     renderIrtTable(rows);
@@ -1944,7 +2077,7 @@ function renderIrtTable(rows) {
         const shortSubj = r.subject.length > 14 ? r.subject.slice(0, 14) + '…' : r.subject;
         const shortChap = r.chapter.length > 14 ? r.chapter.slice(0, 14) + '…' : r.chapter;
         return `<tr style="border-bottom:1px solid var(--border);">
-            <td style="padding:6px 8px;">#${r.num}</td>
+            <td style="padding:6px 8px;">#${r.displayNum}</td>
             <td style="padding:6px 8px;font-size:12px;" title="${r.subject}">${shortSubj}</td>
             <td style="padding:6px 8px;font-size:12px;" title="${r.chapter}">${shortChap}</td>
             <td style="padding:6px 8px;font-size:12px;color:var(--accent);">${r.assessmentTopic || '-'}</td>

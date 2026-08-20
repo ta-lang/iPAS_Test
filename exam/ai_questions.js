@@ -1,4 +1,4 @@
-const ipasAiQuestions = [
+window.ipasAiQuestions = [
   {
     "subject": "L11 人工智慧基礎概論",
     "chapter": "114年第四梯次歷屆考題",
@@ -15,7 +15,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 1
+    "id": 1,
+    "display_num": 1,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-4f73e0222bf493df070eab8a",
+    "content_hash": "5fcb34dad5a3205c748b48cbd9694ce1994dddbb3fd8a7fe0f48608df12c937b"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -33,7 +38,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 2
+    "id": 2,
+    "display_num": 2,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-41d231f24ed9a1433ea9001c",
+    "content_hash": "6c71f52bf6a1203e0692693d8f85e8a9d7847a5c023a0874d98eddfe18bae6d4"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -51,7 +61,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 3
+    "id": 3,
+    "display_num": 3,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-4a907bd7dbb2c98dbdf024b7",
+    "content_hash": "ff0d6358df897de1d0c112e305139780e3a85a2b2ab639c8b938a54c60ff5a98"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -69,7 +84,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 4
+    "id": 4,
+    "display_num": 4,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-f03efb21bfc06f244e969fa3",
+    "content_hash": "7bf77798af63f504c1f3032f785534d600b412d43352644173cc03590b28e377"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -87,7 +107,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 5
+    "id": 5,
+    "display_num": 5,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-153514e0de38e8b0879e9e93",
+    "content_hash": "21d7d6f342e1f7746fbfda28eef462f934d9d755fa7f25d45eac323ba84af487"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -105,7 +130,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 6
+    "id": 6,
+    "display_num": 6,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-b6bea381619cab2d908541a4",
+    "content_hash": "5d155b0427827483a4e04ea3fef5b96bf6d89d4f4555bab76c1d54d07e3279ba"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -123,7 +153,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 7
+    "id": 7,
+    "display_num": 7,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-03e58f34c9f9311fe5a8dfb9",
+    "content_hash": "cad918013148ddbee6cf2c9985a8068b9ad27cb5d375e4c13bf2a74c0e06158a"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -141,7 +176,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 8
+    "id": 8,
+    "display_num": 8,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-c36583744d7b5b9336aa4f60",
+    "content_hash": "33780a05aa36415f00219b75ce91b165cf4cdf9b472af117097403894ae4d3f1"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -159,7 +199,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 9
+    "id": 9,
+    "display_num": 9,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-ca3a99a784dc2b9dca2b67e9",
+    "content_hash": "74ff8fff42e39292e3661642db61715e23c7c5dce883617813c38b8462685a59"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -177,7 +222,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 10
+    "id": 10,
+    "display_num": 10,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-abd5647addb50cb0a50a1df2",
+    "content_hash": "aef84061d6c27e38bfd780cfb070cf49e3080e63eb42de18b33784bf2f43a2e0"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -195,7 +245,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 11
+    "id": 11,
+    "display_num": 11,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-89ca1f93400988d42b66ae59",
+    "content_hash": "f99ea452955eef2be9c032d8e473a65b929b2b31b3ad76d84a37f067aa80712c"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -213,7 +268,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 12
+    "id": 12,
+    "display_num": 12,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-c3cc93ce4aa862a63024fa22",
+    "content_hash": "9819928de4fd3b527a637faa283a1ef23d77c8bcb6136105f26dbb3ca334a8f4"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -231,7 +291,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 13
+    "id": 13,
+    "display_num": 13,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-ad33b99ed017d0ade004b532",
+    "content_hash": "3b9c5255c5eee9c4fae9a44c60d3db94ec39da1489a1e6a02761aa6d039985d2"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -249,7 +314,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 14
+    "id": 14,
+    "display_num": 14,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-952a8d6b66734645a9b96d29",
+    "content_hash": "8e8d173602b621ddd42144b5eae3a259114394d62df29440a3e246ae7656bd25"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -267,7 +337,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 15
+    "id": 15,
+    "display_num": 15,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-a1d00bad9aff1c5ff29fa684",
+    "content_hash": "62a79401b7bbccb354a0910f18b27355475d59a51318980fcdf4a2e1e765fc04"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -285,7 +360,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 16
+    "id": 16,
+    "display_num": 16,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-f2c67c38e4f23a2d914a72ea",
+    "content_hash": "51008eccbc6b4df77efb0c5e8019b0e06ce2a9da703964cbc4c66df9798646d0"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -303,7 +383,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 17
+    "id": 17,
+    "display_num": 17,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-f68a82826b11edb2f7bc536b",
+    "content_hash": "37fc6c537c560fe95ed640cbd8f85bbe4a6caab8ba10a5420de64374825852e1"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -321,7 +406,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 18
+    "id": 18,
+    "display_num": 18,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-37bc2cee0488ac95d482cb4c",
+    "content_hash": "b29d35aace3720d005f6f22dc3e0dbe797177fd7de62ba7f04c63a61bc048f77"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -339,7 +429,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 19
+    "id": 19,
+    "display_num": 19,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-ad10f18223fc31818bf0e876",
+    "content_hash": "08ba0c680462c8a0c4b7bd2d2692fa6d701810f28ce53c5a260ffd9d994a35c8"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -357,7 +452,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 20
+    "id": 20,
+    "display_num": 20,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-d4a724437120bca0253250d5",
+    "content_hash": "bbb71eca4ef096439810e457697478af465545f5d1fc4dd6d6af15e6f67a8921"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -375,7 +475,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 21
+    "id": 21,
+    "display_num": 21,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-bbe066e60ee14bb6a9fea42a",
+    "content_hash": "a1dfd4271633b3efce48aebacccea3de333f72d4e0f1065bed05564b78a0973c"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -393,7 +498,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 22
+    "id": 22,
+    "display_num": 22,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-a98ee1004c43431ae3c03424",
+    "content_hash": "d8deeb7492bc6cee8febb8488604329fe0cf9c3bcf6b0bd73afc9e3b87104d11"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -411,7 +521,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 23
+    "id": 23,
+    "display_num": 23,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-30413a3e6645ad8e00b475d7",
+    "content_hash": "90e9607df13a0bb9925be50ba62c1bfd4ca6641f2d542dd9c9445fdd73e6583b"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -429,7 +544,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 24
+    "id": 24,
+    "display_num": 24,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-d207ad366fd2ed7dc51e6b58",
+    "content_hash": "d5257d96d39e52bee289cf4c9876ecfa35491bb522dfe68cc43168bda8be0d52"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -447,7 +567,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 25
+    "id": 25,
+    "display_num": 25,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-3f4c525100b3208b3c82e7a4",
+    "content_hash": "a844543f63e29a52f48b33d0fadee3c6d7e530f43aeb81793704a426a94c6e76"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -465,7 +590,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 26
+    "id": 26,
+    "display_num": 26,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-c1a76832ab773a28ab9d8b04",
+    "content_hash": "4ada72860d1b958ea25b9e77956ab7a85e296b86b03250e14a968040448602b1"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -483,7 +613,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 27
+    "id": 27,
+    "display_num": 27,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-7c943e62867a016a8c8b6700",
+    "content_hash": "534ade18d5e038c6a5c2a7e3c3079b8d8854d4169d09a6e6b6d1e648d71c4902"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -501,7 +636,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 28
+    "id": 28,
+    "display_num": 28,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-c67d4573796bd7537a1383c1",
+    "content_hash": "3c16511503f837da10c6e22083ba0fc738399776eeb90f179007d45fb3e611ca"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -519,7 +659,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 29
+    "id": 29,
+    "display_num": 29,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-308ff4b17d5b7a588a9ae404",
+    "content_hash": "a5a77f100054ea79723b92f021d7e6f6c6f6b55f3db440c8d776308434c8f19d"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -537,7 +682,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 30
+    "id": 30,
+    "display_num": 30,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-33013af6ad619c508557d6f7",
+    "content_hash": "914fdc1e5c36e2a5720ca185422df0f31d667518e47a6d22373ce458fd0938ad"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -555,7 +705,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 31
+    "id": 31,
+    "display_num": 31,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-a674390b5f3788f25f806d14",
+    "content_hash": "9ec85aea81e280fc35f6523905e032dc3f112f993ba87af84bc61c49e53a7a29"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -573,7 +728,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 32
+    "id": 32,
+    "display_num": 32,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-60e2d00efa426c22ece9912d",
+    "content_hash": "1087b46f84d1df666b8a8525ff216ca66d2adb9b1115ed23856edda9911c30d2"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -591,7 +751,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 33
+    "id": 33,
+    "display_num": 33,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-e5df66f934723bd74bf8f6ee",
+    "content_hash": "47126677471a81cf44584c73929147b63677071a38f69966a99cb86439886ec0"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -609,7 +774,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 34
+    "id": 34,
+    "display_num": 34,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-de72c4e2f5b36286fe4c0315",
+    "content_hash": "ec650426c914ecc2f11b05cecf41d7f6511edb5fe460d8daab91c1f7332a41c9"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -627,7 +797,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 35
+    "id": 35,
+    "display_num": 35,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-30b022c197500349a6a82e1f",
+    "content_hash": "b0f2a38debe66a7cc0c54e3ae30eca6a27c6d67b6f8d537e736fe76043822973"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -645,7 +820,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 36
+    "id": 36,
+    "display_num": 36,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-af85933fc2b4d59216e82192",
+    "content_hash": "23b9d76c691c6138a2482b5f0bf67bcff00a2702ec315de9e2153f08c9d2bd26"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -663,7 +843,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 37
+    "id": 37,
+    "display_num": 37,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-bbbbf4f316418afaea876cc0",
+    "content_hash": "28a5b234bd894f381b4afa3b5b2be9fc7161172ce9cd5638f2329d39f64bfe76"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -681,7 +866,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 38
+    "id": 38,
+    "display_num": 38,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-3803d8e9eaaf7c9ae17eed64",
+    "content_hash": "b4a2ee1115196b789f0b143e8cc83e73b1a6d7e5a4cf69fa04ff827634efe168"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -699,7 +889,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 39
+    "id": 39,
+    "display_num": 39,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-7e33752865a6e591ad6f9611",
+    "content_hash": "e9240fbf5b0d041029010cd1d721a87d39015c8ad44baf5e7228efd82fec0fdc"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -717,7 +912,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 40
+    "id": 40,
+    "display_num": 40,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-8fb2e4347238f731ef7eaff7",
+    "content_hash": "6f2e9754f362603ac80d480350a9b8d7fa6a0b79f3dc8394fd6daa21cf6dcef3"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -735,7 +935,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 41
+    "id": 41,
+    "display_num": 41,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-55e67db22ac239ff9e0559da",
+    "content_hash": "1eb1ac7b7a112b578f95951c98ff234605c3d0f50e089a480107af777723aa11"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -753,7 +958,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 42
+    "id": 42,
+    "display_num": 42,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-6f8fff0dc09f872d0e71176f",
+    "content_hash": "9588902c3802b111fa521f3eda19d8b48cc044f233bba3fb50212200fba5ed85"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -771,7 +981,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 43
+    "id": 43,
+    "display_num": 43,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-0de22e8f92474d0bfcaa0c4e",
+    "content_hash": "70562d4bf9f6425f9039a6d4680abb0ee15dc620278e14df4b8391cf353c7a9f"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -789,7 +1004,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 44
+    "id": 44,
+    "display_num": 44,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-f7fa2f2ca719cafb7792eaeb",
+    "content_hash": "7b8e8e9adb0fa506d406b6efe80b980b1b07abbf20bc64bc161b3209d89afa46"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -807,7 +1027,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 45
+    "id": 45,
+    "display_num": 45,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-3c7195b081bac6c4449d66ec",
+    "content_hash": "2817a19829fe31a236dc8ed7b974858bd77c36af0987855e8c00bb6e7bb821bd"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -825,7 +1050,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 46
+    "id": 46,
+    "display_num": 46,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-49942df9e9b6eacef23ae31b",
+    "content_hash": "9893ff9be04336ae764194be490f6b30498c22d240ceb09913bc3ca49e4487d7"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -843,7 +1073,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 47
+    "id": 47,
+    "display_num": 47,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-f7e4f93c585d140fdca2f461",
+    "content_hash": "97da75fec1e30683dafa074c3985e7e292636733d676f8376dbb3b980372e5e4"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -861,7 +1096,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 48
+    "id": 48,
+    "display_num": 48,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-e9bf96a97068b840f393f02a",
+    "content_hash": "158ba508df251040a2a55cac2f88c1f9934af31975ffad6b302043da934f3b45"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -879,7 +1119,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 49
+    "id": 49,
+    "display_num": 49,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-065c61b896805ac3e6a1f14e",
+    "content_hash": "e72bff85203eae09d2f528efab4ebeba12ab30321555b72e4f4122f5ed9b06c0"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -897,7 +1142,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 50
+    "id": 50,
+    "display_num": 50,
+    "source_id": "ai-f8eac2c5e88bd597",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-29357bfa8d8b2fcc03a5f9ea",
+    "content_hash": "c9cddcdbabb69a9ede35e5a0c43f57b63a2e63e0748f5a88a17c119702059ea3"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -915,7 +1165,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 51
+    "id": 51,
+    "display_num": 1,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-8db667eb56b9ea835617bd2a",
+    "content_hash": "292d2486ab81cc084718ad7cf6819cba39ee4fa4326883eb092b36dc17943198"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -933,7 +1188,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 52
+    "id": 52,
+    "display_num": 2,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-22fc8c07d6e7efdb99d7de88",
+    "content_hash": "a3668e4037aef74317ce6670aad2b78af729616501bf89b256d7d10755be8646"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -951,7 +1211,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 53
+    "id": 53,
+    "display_num": 3,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-49cb9ef7c1d94621f330a50b",
+    "content_hash": "2d95dd15993b9073d471d5828dac7a1bda50aef27c23a522a68820cf31a4d1b5"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -969,7 +1234,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 54
+    "id": 54,
+    "display_num": 4,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-200c0611c9a6a5b8703f8e51",
+    "content_hash": "57ab5c128fb42f499b6cb4b32ccfa5a457f5a3db8f5ce0c74106ca422f457000"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -987,7 +1257,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 55
+    "id": 55,
+    "display_num": 5,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-e9d396ef8c5ba0da687abb90",
+    "content_hash": "7cb7158196e03672482f6ee4b62dfc1dce9a0980ffb5675689e12d5cb642f404"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -1005,7 +1280,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 56
+    "id": 56,
+    "display_num": 6,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-8b7b51a55a951dab714ae447",
+    "content_hash": "8ba10ecf134344572c7844eb4c654b6f4c8b7b87bda810a566aca3c53a11fa6b"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -1023,7 +1303,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 57
+    "id": 57,
+    "display_num": 7,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-73f8eb88eee48fcc708836c5",
+    "content_hash": "5e6566465d94369be0927d9332ceca13ed7ea34a7d0b63c1700395816595cc23"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -1041,7 +1326,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 58
+    "id": 58,
+    "display_num": 8,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-5418d3a4f07b9d70e1d89412",
+    "content_hash": "ceff4838d3a2348798f6bb668d940777581ce4846db56c2c1a3e59a475fc83a7"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -1059,7 +1349,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 59
+    "id": 59,
+    "display_num": 9,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-cd71b80ab67bb4c9b14479da",
+    "content_hash": "944a3001256e5181205b82a8954321985a19aed0bf209e891e08da03af67da88"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -1077,7 +1372,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 60
+    "id": 60,
+    "display_num": 10,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-08a13dd693370b8b8109bd02",
+    "content_hash": "0a8e5c9b19c1a672fcf47de1d8c2e5045e61f175097e69476e488a6562815346"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -1095,7 +1395,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 61
+    "id": 61,
+    "display_num": 11,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-65319c75e329c17ca2f00aeb",
+    "content_hash": "9822478a3464e5aa08ef2cc83210adebeb6a8d92888b29c9f11d4207f236bc96"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -1113,7 +1418,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 62
+    "id": 62,
+    "display_num": 12,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-8987b028b1d90f0cf595a1f9",
+    "content_hash": "b1b8398c003b8c83223f261d21c0daad20bbd47f48571b7acd91093e0cc1c187"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -1131,7 +1441,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 63
+    "id": 63,
+    "display_num": 13,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-1f63cfe34a274123558fad67",
+    "content_hash": "b3380942e17b020424e721b0d1966b0a814f3491b7a85e727b4e750abb6afd1d"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -1149,7 +1464,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 64
+    "id": 64,
+    "display_num": 14,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-35c622cbd8674ea965e3b830",
+    "content_hash": "dd1af7308076dfdabbaf0b1f4b88fda2d886e9c4f70d241f68d032ce4e30bfbf"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -1167,7 +1487,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 65
+    "id": 65,
+    "display_num": 15,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-35b7656908a89d0354bce395",
+    "content_hash": "da4281e47ea8d561fa4e6b8c8a07b8ef9b79158c1a7f0a04247e155c4202090f"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -1185,7 +1510,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 66
+    "id": 66,
+    "display_num": 16,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-0e3bfe93769bb8dad292365a",
+    "content_hash": "159378f6b595e0d077352d800718c5eb16c2c409fe0447f74482811bf018dd72"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -1203,7 +1533,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 67
+    "id": 67,
+    "display_num": 17,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-b82b00924bdbd5c68dac2c55",
+    "content_hash": "9c8fb8c8d170567f1508a02e8255e09e1962a94380e785f1d7470d9704a61773"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -1221,7 +1556,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 68
+    "id": 68,
+    "display_num": 18,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-ba1c664e6d44017a45776ee1",
+    "content_hash": "50b91cd254d47fb6440fac79523c66b0ff3aac84228cfdc1e40a852c01b9d3b4"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -1239,7 +1579,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 69
+    "id": 69,
+    "display_num": 19,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-1db40fe92a7875608b5bcfa1",
+    "content_hash": "077048869ce73f1cb5097db9118a7c1e65d29ad1f32cc684f271617e652ca4f9"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -1257,7 +1602,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 70
+    "id": 70,
+    "display_num": 20,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-9d38437fd22d1c03095d20d5",
+    "content_hash": "572a008a649338fa3a2431bc7dc43f0a4e0dd6fd5db207021de888a61f71d5b2"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -1275,7 +1625,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 71
+    "id": 71,
+    "display_num": 21,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-cbf9ebb3fe4a01d0b877ca28",
+    "content_hash": "2d46221b3e152156d93c05c8844bfa41a5bf78dbd5826da95df959cce69b8ea3"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -1293,7 +1648,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 72
+    "id": 72,
+    "display_num": 22,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-75987f45c09603d6d529e927",
+    "content_hash": "8e2578659f399562eb4817463c11d2d330bb0d901b9cb82a70473c25bb9ad5b4"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -1311,7 +1671,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 73
+    "id": 73,
+    "display_num": 23,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-601b2e3a5bcec0af264d6c1d",
+    "content_hash": "e5e757a0b6a92df44fa02c1703565dfdb63c92d93bbdb87508c16eb515d45936"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -1329,7 +1694,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 74
+    "id": 74,
+    "display_num": 24,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-4f4c504f4808f76aa6aad6f3",
+    "content_hash": "f609da68cc239c6450d30dd4c0abdd9d84edc8f018b47db1b13a880f606d1c5b"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -1347,7 +1717,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 75
+    "id": 75,
+    "display_num": 25,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-10c8732871e9802eb4fb6762",
+    "content_hash": "9815a4875271760d89939b010b0b7d8d8269c463ee82b212a06e198e1dbbea93"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -1365,7 +1740,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 76
+    "id": 76,
+    "display_num": 26,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-620f5ee5d2026ad03a7131b5",
+    "content_hash": "d70d528a4320ce2e5ec570de162be2d401a39e6038ee6ae44fa0882544d88561"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -1383,7 +1763,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 77
+    "id": 77,
+    "display_num": 27,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-dfb6e4afaabc2fd6b2dc19ff",
+    "content_hash": "80ce473dc67d735515260609f82d8f673ddbeeab87ccbd106dc2d56e12643989"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -1401,7 +1786,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 78
+    "id": 78,
+    "display_num": 28,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-e4a9b31cd3c346582a60938d",
+    "content_hash": "5b0d8f8ca89677e4bf2b03f226ebee82eed7877cf278abd0855eeab4a7f0159b"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -1419,7 +1809,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 79
+    "id": 79,
+    "display_num": 29,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-fa211eaa774c980c89877649",
+    "content_hash": "ed27f6a7afd41c1ae003d6430cdad250def5130853efa21e71089099fe9de4d4"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -1437,7 +1832,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 80
+    "id": 80,
+    "display_num": 30,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-1bce0dd2de963c2979d5cf62",
+    "content_hash": "80e354c93d79561d61ba62fbfd26fa184374413d2b181f6a9e3cbfc3af9a2a81"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -1455,7 +1855,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 81
+    "id": 81,
+    "display_num": 31,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-ca459c48a5a9d4c4bf3735f0",
+    "content_hash": "b1a7c1225426036f6196bf534f276d91b64ad59a2d201cfd04c2cd8c8b47ffcb"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -1473,7 +1878,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 82
+    "id": 82,
+    "display_num": 32,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-a313fd967d4d90c05e411f1c",
+    "content_hash": "1e6711fb899297c18993e83f3b178e70158c7b2687d48fa6150b0614be4d3fbf"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -1491,7 +1901,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 83
+    "id": 83,
+    "display_num": 33,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-14d63b43d43f702e55a9842b",
+    "content_hash": "31f78efa66bb6a118eff811e436c8cac9b645a1e78355e4e82a230ba5151065e"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -1509,7 +1924,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 84
+    "id": 84,
+    "display_num": 34,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-6f756d2fe5245fc9288a6612",
+    "content_hash": "01fc83d4ee323e1a5782eda62b56f130ff0623023ac7a5073f0a67403509c83c"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -1527,7 +1947,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 85
+    "id": 85,
+    "display_num": 35,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-d6d45f0d04891ebd71bc6dd3",
+    "content_hash": "5eb04ff9961e446654bd1194d64f68170015d60084060350f6f7a22df0dabda6"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -1545,7 +1970,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 86
+    "id": 86,
+    "display_num": 36,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-444190e4da771c2c00eabddc",
+    "content_hash": "0c6546cf022d3a71d05c60e945e14e53953abcb57183f6c6d650b3a704d54185"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -1563,7 +1993,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 87
+    "id": 87,
+    "display_num": 37,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-563e1d2a3eb98bce3771426a",
+    "content_hash": "2e231f7f5449fabd56dc3569bb9666785c3d99f605a599946e191075576a5a03"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -1581,7 +2016,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 88
+    "id": 88,
+    "display_num": 38,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-731b8635340c6a1255f23901",
+    "content_hash": "7fca096a5dc36e0e155cbacd5ee28c749b569fe2b3fe183a249d8f705a077cc0"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -1599,7 +2039,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 89
+    "id": 89,
+    "display_num": 39,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-983eca544429e4d0a7f22302",
+    "content_hash": "99974f78d6e0f2c5a7f4f6e3a3b239fa3203c6f9e717c554e92aae2afff97139"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -1617,7 +2062,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 90
+    "id": 90,
+    "display_num": 40,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-c1bf4b6e088e037e6b1d0079",
+    "content_hash": "5103ca5bc1127206fbbfd2957afc1835b2010c37ba2e4c55cc650836ab3d63ce"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -1635,7 +2085,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 91
+    "id": 91,
+    "display_num": 41,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-3467a296c989ff762bcf65ce",
+    "content_hash": "1bcb92395c04352710d6ca59a06d7b0cf7aeae98adf19ea7f5e7afc58ad562a6"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -1653,7 +2108,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 92
+    "id": 92,
+    "display_num": 42,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-4881d466f5dc29a3556e95fc",
+    "content_hash": "42af2ce2f3d35a1f638adcefc58d190a6ac989fefce6be7b4978badb9ea216d6"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -1671,7 +2131,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 93
+    "id": 93,
+    "display_num": 43,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-46aa3e6c6baee17370abc95c",
+    "content_hash": "6156eb6dcd1fbdd50c4c06b23a898c3161cd6d1a0ed237c33d13813776477202"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -1689,7 +2154,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 94
+    "id": 94,
+    "display_num": 44,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-5d505c27b07f366f69e3bfcc",
+    "content_hash": "a3676e04f6527e19e215daa6b4fffe717ef84c51413347052c88689c85e33c97"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -1707,7 +2177,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 95
+    "id": 95,
+    "display_num": 45,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-7eda7c5459eaf1e9b2f7d2fe",
+    "content_hash": "fce0be019f12bc1bf635f05d396946551b90b9875c3ccb83e4d2f31f06163829"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -1725,7 +2200,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 96
+    "id": 96,
+    "display_num": 46,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-b0764ef7683dc79ddd679fde",
+    "content_hash": "531b7e38b9443e4463e3cf3abfe0d868646687054d410d8ef48f0d8956a2eed4"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -1743,7 +2223,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 97
+    "id": 97,
+    "display_num": 47,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-496955a00cb1638bbecd234d",
+    "content_hash": "249ad962e5bf9fcf2a4e4128f9aab80a8a0687b6dbe1f4596e5de5533cbb5b64"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -1761,7 +2246,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 98
+    "id": 98,
+    "display_num": 48,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-23947cb6b9cef0a907462b6e",
+    "content_hash": "dcd25c1e14711cf8459a0ce3f8e85de43acd46668a06f0dfc59dd56f1374cbe7"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -1779,7 +2269,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 99
+    "id": 99,
+    "display_num": 49,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-11715342edfa23e29a510946",
+    "content_hash": "1a333e15540fe95d5463b74f69b0cdf099a00c501ffbb7b4c62ca92dbb2b8868"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -1797,7 +2292,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 100
+    "id": 100,
+    "display_num": 50,
+    "source_id": "ai-8f324c9d9dd3e3e1",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-d9677845dc86494305e18be0",
+    "content_hash": "c65a64690b326692e2e46c3f0630cc8ad68978ffe374e432bde8773b48626a7a"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -1815,7 +2315,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 101
+    "id": 101,
+    "display_num": 1,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-8d87ed7ed828998a8c21f381",
+    "content_hash": "03dc3a3ee441a7f22c029ee85f23ed07eabf6edf98a46ce68060299131e0b98a"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -1833,7 +2338,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 102
+    "id": 102,
+    "display_num": 2,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-47c615fd6680bf2218f2d99a",
+    "content_hash": "62078ea2277b3129003a682b4eaafd96f968ce57be355fb3d02c0eb2d3e29006"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -1851,7 +2361,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 103
+    "id": 103,
+    "display_num": 3,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-67a7f44984d856b5752a91a7",
+    "content_hash": "bcde1576a01a968d6c5f6ca1be1bbe8d6143c18aa201ce68e24e11bb88251d4f"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -1869,7 +2384,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 104
+    "id": 104,
+    "display_num": 4,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-af7c7e665f4ad38785795dea",
+    "content_hash": "e0ab95132a832c1386edc48633362931858bc39dc85753b8870f6a3577984d74"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -1887,7 +2407,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 105
+    "id": 105,
+    "display_num": 5,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-e1e9fc38bc8779ffe9a13b2d",
+    "content_hash": "44e6faaeaa9df7a0e84c76ab04c74b260f074a137ca4ac5f894ebd7e3e3cec61"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -1905,7 +2430,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 106
+    "id": 106,
+    "display_num": 6,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-e34d2b19145f0dcb713444a4",
+    "content_hash": "cbf2e7b933b737b6b006efdf344070170f3669094412c2e9192ace071b75510c"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -1923,7 +2453,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 107
+    "id": 107,
+    "display_num": 7,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-4a40e98f11c7859e8a73f23b",
+    "content_hash": "c4b8b346573a5741eb98febe8fa1eaad290edd7f6c23f9c0186eba3606460811"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -1941,7 +2476,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 108
+    "id": 108,
+    "display_num": 8,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-125b2fdad97069eed666e206",
+    "content_hash": "6e401c022222bb536205e77a1a10d2ad3aaea303c6de67acac95f604843d1b8d"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -1959,7 +2499,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 109
+    "id": 109,
+    "display_num": 9,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-aee1318765f30948b32e59f8",
+    "content_hash": "8c0d611c89c7914ded0fe29f3329f51a310ea5748dcefe3a22c19e446c1df163"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -1977,7 +2522,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 110
+    "id": 110,
+    "display_num": 10,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-3e7139ca01804e5c40682d44",
+    "content_hash": "0150188f94466c14c10c7a744f52e6932af1d24262a4671fb4c062eee70b708c"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -1995,7 +2545,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 111
+    "id": 111,
+    "display_num": 11,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-43fb64caf8662f6252478d79",
+    "content_hash": "728037e4bc2b0f9566f705a2fc8afa22685c1975099e3c18e8090fb8fa027cf5"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -2013,7 +2568,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 112
+    "id": 112,
+    "display_num": 12,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-4180e9477e9c850ba7b06e94",
+    "content_hash": "b16a94941208d94b16eb1455d8c4eefe418f1f0d556365dbb26ac8cb775a86ce"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -2031,7 +2591,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 113
+    "id": 113,
+    "display_num": 13,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-1e21dbc6555cdd6055e77c9c",
+    "content_hash": "a3bf723eb82c16e01ae8156ad9ffdc4bcb5a30aebd9840ac8e80428347dff11c"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -2049,7 +2614,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 114
+    "id": 114,
+    "display_num": 14,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-6cfc02bf093acb804dc6bb53",
+    "content_hash": "856330a61a4483cf76cb83800b37b979a82fb75693e1e0cbc793dc271f4a4b9a"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -2067,7 +2637,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 115
+    "id": 115,
+    "display_num": 15,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-a358f7cac220d945a4b347c7",
+    "content_hash": "4457096a7b01dfb11de4e58e4cb01248f67b99c0449ca242eb1c007a0e182394"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -2085,7 +2660,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 116
+    "id": 116,
+    "display_num": 16,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-389dc7d760fd57808cbab260",
+    "content_hash": "d189133f458be6aa5fd0e09658d815c1acac506e5ec17c4a899f48263428c9f8"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -2103,7 +2683,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 117
+    "id": 117,
+    "display_num": 17,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-e72a02bf300849c432571c7b",
+    "content_hash": "23bffe7719d419e3e50d10ecede619a3c2152296757543dd5d4a9c88f003c365"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -2121,7 +2706,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 118
+    "id": 118,
+    "display_num": 18,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-63bd4053b640c7f4acf5fdae",
+    "content_hash": "37b64bb4b642a03cfc22721ac2fbee65f9c550bf63b5e9da636f9881ab917ca5"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -2139,7 +2729,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 119
+    "id": 119,
+    "display_num": 19,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-d305eede31f834fb2acf635a",
+    "content_hash": "3305bd3d134cc22f9b805952d96cc40a413c382e9a874da9eb3ef1fcb0d3ca59"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -2157,7 +2752,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 120
+    "id": 120,
+    "display_num": 20,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-9d0ade92de9916290d5705ff",
+    "content_hash": "4d06802f7df3ddbb0c5b91d5642115f0c44b9473ddb1135d5047896d4ef6dd31"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -2175,7 +2775,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 121
+    "id": 121,
+    "display_num": 21,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-3a2f09497a6f17497b3b9467",
+    "content_hash": "ed749f13f3153254d1e26ede068d0453da22c04b19574ad3f3d1981dc0be6022"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -2193,7 +2798,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 122
+    "id": 122,
+    "display_num": 22,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-8672b352715a157c4b40e929",
+    "content_hash": "946dae283785a675eacce61a391097201d12c707a78b46330b19b7a1b3dd726e"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -2211,7 +2821,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 123
+    "id": 123,
+    "display_num": 23,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-89b659f0ccfc1c521f5483c1",
+    "content_hash": "21189b27a920569f38a3de689d183caac5614e04e0991fa53d3a54863f55043a"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -2229,7 +2844,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 124
+    "id": 124,
+    "display_num": 24,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-924631b7a5c45f11f6f250b2",
+    "content_hash": "35d7cc6789ed97589a35f5556301334637fbf6cc5077eb86b39e768e17b9be52"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -2247,7 +2867,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 125
+    "id": 125,
+    "display_num": 25,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-c9d4a56976833085059dc491",
+    "content_hash": "8c666e314092f7d0464e383a878df8dc4f876223bbf7f855238d9bf1f34abff6"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -2265,7 +2890,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 126
+    "id": 126,
+    "display_num": 26,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-d606df42b1458e794380a138",
+    "content_hash": "faf6838953a958c508c712b1a803684b4bafb7feac094a4e5b6cf48a5cd1be78"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -2283,7 +2913,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 127
+    "id": 127,
+    "display_num": 27,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-7d7f4e0d1afbd78cc52b2fa6",
+    "content_hash": "66b00398ffd6537555c192b00b068bb62e0c2560375779324de15bcc5dd2df9a"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -2301,7 +2936,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 128
+    "id": 128,
+    "display_num": 28,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-ee3c70c9d38e3c2eff105290",
+    "content_hash": "1c1977502e9240c03f0aef43c750fe107b843c3382d57c432688c8f7e0118b00"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -2319,7 +2959,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 129
+    "id": 129,
+    "display_num": 29,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-8e58deed7e044b8a79bce3fb",
+    "content_hash": "866927f9fbbd73db21d1f3043274fda7b31ba6fd554f2791835014ae0dbe572d"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -2337,7 +2982,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 130
+    "id": 130,
+    "display_num": 30,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-b99b8483ac68b3ab79c9c8f6",
+    "content_hash": "2ac45ce4e0b9a1452aa9e4337f30c4a7f7e0616b66bdf8f966e038feca0f6613"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -2355,7 +3005,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 131
+    "id": 131,
+    "display_num": 31,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-d6e126cb95d78d99db8ae620",
+    "content_hash": "ef34fd9218156513df0800f9356a747931dcb964dc9a0f266193ca98772c52f2"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -2373,7 +3028,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 132
+    "id": 132,
+    "display_num": 32,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-a26884faff453fcc257d8fe9",
+    "content_hash": "4445f9ec67f410c151bb4fb0bc228a9a55b3c15b290033b1921b11ef9d578554"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -2391,7 +3051,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 133
+    "id": 133,
+    "display_num": 33,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-41ac4c2726f01a3258cefcf8",
+    "content_hash": "1b1a0c7c439242ec251c4e092b82c46d24b32304a89d1d1c649c31a966e7b916"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -2409,7 +3074,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 134
+    "id": 134,
+    "display_num": 34,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-f32529dd39e6e7ba061bfe93",
+    "content_hash": "172dd39b3490928072a04c2adb5b4165e875600a5aa207c0cc3e841884da0f6a"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -2427,7 +3097,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 135
+    "id": 135,
+    "display_num": 35,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-61b921ea79f365232055af57",
+    "content_hash": "3a576b9ecfe3b21ec5220e81de54b6d562c2e231973805458393d5131de5cf4a"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -2445,7 +3120,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 136
+    "id": 136,
+    "display_num": 36,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-3bad97f6db1ece78925fde02",
+    "content_hash": "26da83beb939ca06c13a3c41ddcdc4ad165d91900f5e8f372620c902d0415959"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -2463,7 +3143,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 137
+    "id": 137,
+    "display_num": 37,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-10d29419b533468afa701437",
+    "content_hash": "f859ff334cb7491e031dde9aa36487d8180e65885b1fdc9393349c63486e6909"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -2481,7 +3166,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 138
+    "id": 138,
+    "display_num": 38,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-afd5c862864860a75c1d369f",
+    "content_hash": "d2d8289b5ed596153f0204a4b6edf5ebb0026423bb713bd19464b72ca2024149"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -2499,7 +3189,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 139
+    "id": 139,
+    "display_num": 39,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-2cccfe22b2ef9bfe3b681eb8",
+    "content_hash": "0be81aa484370755568de26b306e06a6b690f5e880f5d1896e234be63ccfc8b5"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -2517,7 +3212,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 140
+    "id": 140,
+    "display_num": 40,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-76fc6256200a1112c3a5e563",
+    "content_hash": "6f5ad015b3afc1450a6e0462e7faa41d97d092635e07748e7d8da0a3c3530632"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -2535,7 +3235,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 141
+    "id": 141,
+    "display_num": 41,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-2d3c0fb99126e9c2ca401726",
+    "content_hash": "69015bc974de70ce8a78aa5254f4aba89fa95e373325dfe9b36cd36068bf03e0"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -2553,7 +3258,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 142
+    "id": 142,
+    "display_num": 42,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-75bafa8ddd02c329cae3bebe",
+    "content_hash": "f0ceb1d3f3f4265207e7721e3c7080cc0db5a4ab67b435e4abedfef74110ffe9"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -2571,7 +3281,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 143
+    "id": 143,
+    "display_num": 43,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-24402b03e63b3155043fe1aa",
+    "content_hash": "877578d34af99f1f7089934c20772359df94c77e50024de5beaa65979d903a6f"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -2589,7 +3304,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 144
+    "id": 144,
+    "display_num": 44,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-a55c0d11fd8b06b8540f4187",
+    "content_hash": "4501b231e17e18eba3784a4b2b83712f3d73c9965f57215fe925594319dfdb12"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -2607,7 +3327,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 145
+    "id": 145,
+    "display_num": 45,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-cf3732ef72ab41bead00dcab",
+    "content_hash": "15f0c72546fefbd6fddb7fed1b25ff160fd4f9d73e2a9c97e837c9353a115c6a"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -2625,7 +3350,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 146
+    "id": 146,
+    "display_num": 46,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-d16155ca42c66955a53320ca",
+    "content_hash": "3aa1b24ee9ecdc647226c65083f4cc41fa5d9951633c1f92bd58eb5d9c849aeb"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -2643,7 +3373,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 147
+    "id": 147,
+    "display_num": 47,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-8bf8968852bfa28bfe7ad15a",
+    "content_hash": "53102dc8da194c001697f4155230492c4fc10f4861a0b8d439490d54df3b8a28"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -2661,7 +3396,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 148
+    "id": 148,
+    "display_num": 48,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-4ea8c6537e1d33948fcc6658",
+    "content_hash": "bb8770c080dfff0a72a5bf4b3d2e58e646135b3f0ce0aa549f6e8097b3648e3b"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -2679,7 +3419,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 149
+    "id": 149,
+    "display_num": 49,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-17ba3d5a844f221b9ebf26d9",
+    "content_hash": "a79c1c8ee13b031fe9a56439867ac90e173f005d4361a6265067e51dfa937d78"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -2697,7 +3442,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 150
+    "id": 150,
+    "display_num": 50,
+    "source_id": "ai-1339bdb7e986ddc0",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-a14911196d51fbd180ee2482",
+    "content_hash": "daefdc73246a019bca6d110f2e27c8a64b015b5126950e6209c3d21a88529b73"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -2715,7 +3465,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 151
+    "id": 151,
+    "display_num": 1,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-0dc9fc6ac38fe9ad08b4e559",
+    "content_hash": "15eef2b09a5bedfd95f4b2a4b565e52dd09fdbae92dc9b7dfbfadedaa7973cd2"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -2733,7 +3488,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 152
+    "id": 152,
+    "display_num": 2,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-f162709fc7154a9d3ee3fa15",
+    "content_hash": "d166ebc6f09ab773f670114ff043d3fb96170a97ad8925b7376d3c7a369f1611"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -2751,7 +3511,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 153
+    "id": 153,
+    "display_num": 3,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-ff8a4e9f0f8cf2080ce919d7",
+    "content_hash": "36ef5bbe882fe9363445d4c7ca0ddb0697f00d321e843700712ad145040c3e5c"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -2769,7 +3534,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 154
+    "id": 154,
+    "display_num": 4,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-e5614132fb21eabba30423ed",
+    "content_hash": "22cbb568befaea693fc8ae4effd67ada86b6d9b76c00866bab590b7e8c816d5f"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -2787,7 +3557,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 155
+    "id": 155,
+    "display_num": 5,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-85372f3023f842a934351eac",
+    "content_hash": "998133f91cd52e6eccb8c2a803f6dee7a39c2bd1208289e55a46c9577f513a5c"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -2805,7 +3580,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 156
+    "id": 156,
+    "display_num": 6,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-d2fbd12638a51413f36e4bc0",
+    "content_hash": "3c7b86599326cc95c0d037d134b1c9d9d8b4ce6eb0bf460c5dd94e48d4661fd5"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -2823,7 +3603,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 157
+    "id": 157,
+    "display_num": 7,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-c116e60c72aa203d60b282e1",
+    "content_hash": "e8055bf97d57506900b319d0be3642745d50b5a348b647ca24abe6bb02eb5957"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -2841,7 +3626,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 158
+    "id": 158,
+    "display_num": 8,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-da4543527271ac76dcd0fa0f",
+    "content_hash": "fb1dbc0c989e08bd89939b44f45dff48b7d56845ca565dcfd3330e7d9aecf085"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -2859,7 +3649,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 159
+    "id": 159,
+    "display_num": 9,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-46de7920da52f745d2b3ebab",
+    "content_hash": "f7f3d3c585327f29fe6030e8b12a695ad26d4af8a88e1e65e2a0fd90ef2763b2"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -2877,7 +3672,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 160
+    "id": 160,
+    "display_num": 10,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-4f4b050164802ed49e9ddbd7",
+    "content_hash": "7a97c41ec8b3f5a0f61237bc98d6fe9dcc402f0d88962f824ce76456ff3ea208"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -2895,7 +3695,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 161
+    "id": 161,
+    "display_num": 11,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-a8b9e8527415fbc543ad81c5",
+    "content_hash": "78fbfb8e91a4369b4d6d7f5f8c92fa260c0d263ace0a1f7095cae288b3c6f141"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -2913,7 +3718,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 162
+    "id": 162,
+    "display_num": 12,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-9e187fe25a395eea628887ae",
+    "content_hash": "46171ded239dc864231af449d879e6b87c7d907d914b958b02e40be67db583e8"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -2931,7 +3741,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 163
+    "id": 163,
+    "display_num": 13,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-e2e27930432d3ee68334cc17",
+    "content_hash": "be1edd67c01925cf742a1b4b7df8336882ae973bd83e36f0551e9d15fa398860"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -2949,7 +3764,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 164
+    "id": 164,
+    "display_num": 14,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-3ade2ba253427b15a066b11c",
+    "content_hash": "b381940b2683824659230bb74f0e487cb1374c7152132fa26d6a1c1f0857c041"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -2967,7 +3787,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 165
+    "id": 165,
+    "display_num": 15,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-b50ce5d74435d39161d2b629",
+    "content_hash": "38e19a3e8f7e582bb2252514a8dfaa7dcc6b7019f9ea177917d0b35a93447119"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -2985,7 +3810,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 166
+    "id": 166,
+    "display_num": 16,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-d34e2649f1f2ecae1933b5e2",
+    "content_hash": "924c743d3ec4cd55444b015f169067ba81e50a30b6d6a82f18884ef7f64d8d30"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -3003,7 +3833,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 167
+    "id": 167,
+    "display_num": 17,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-ddb52185cf6170aaa1a30d37",
+    "content_hash": "a73d6a35a3335ddba9513421e3df7f85d8d12779c8d8a7b756da704b11d7b196"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -3021,7 +3856,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 168
+    "id": 168,
+    "display_num": 18,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-e4591e682fd01bfa6940765f",
+    "content_hash": "d7c4e172d95372284a44a4e0538548573129a829bd33438dc051296e1eac2193"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -3039,7 +3879,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 169
+    "id": 169,
+    "display_num": 19,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-1b78ac4e23ffbf0f1caf476d",
+    "content_hash": "ab785fdb056d995429a57592fc02e3db6609bd0f95369eab2115732fc3076b27"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -3057,7 +3902,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 170
+    "id": 170,
+    "display_num": 20,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-eb4d4de44e9f089a4cd09a04",
+    "content_hash": "66b6f6ca2f83226c0d0fcf14efcd5329e556e47471ad52924044d1f13e6ba828"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -3075,7 +3925,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 171
+    "id": 171,
+    "display_num": 21,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-48a81a31c7260794000e88a8",
+    "content_hash": "0a17c7e773125a8ee7d9aaaf394db269ebef311774a170314e908cd11a2034c4"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -3093,7 +3948,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 172
+    "id": 172,
+    "display_num": 22,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-bfe0210aa53fa8fbe701212d",
+    "content_hash": "3db27de4e674b671a4908dca4bc0fd0c77c8015b816dabe97dd58c0457bc3209"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -3111,7 +3971,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 173
+    "id": 173,
+    "display_num": 23,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-4d713cea3180f11955de8861",
+    "content_hash": "50c766f8aca862e9be34b160b4f65beab5501ec982b011e22a85d63c3b13922d"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -3129,7 +3994,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 174
+    "id": 174,
+    "display_num": 24,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-e80fd46adaf926ef6c260593",
+    "content_hash": "2e89fd71b7b59eed23ec8f125a12329ee09f5707ab4497bda2908b8760d19812"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -3147,7 +4017,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 175
+    "id": 175,
+    "display_num": 25,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-6053713f2b67e0f296474820",
+    "content_hash": "a48e51522709c3f3fac267768f7c3c8ab4b910435a79d8118249406c7b06b321"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -3165,7 +4040,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 176
+    "id": 176,
+    "display_num": 26,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-45ed1af9ebc7bccafa1f5bfa",
+    "content_hash": "d1804965f5b04fa30391ca344442c3040895dedb3620113099b6c4d80ed8d20b"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -3183,7 +4063,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 177
+    "id": 177,
+    "display_num": 27,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-391162cd4c8e954fc2f9d896",
+    "content_hash": "7f4b31fc83586b00ca3b991c2f9c3f17b8ebdead1608edcad9d4cfd4249871bd"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -3201,7 +4086,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 178
+    "id": 178,
+    "display_num": 28,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-e55edaa0e8aba6d33b25c7e7",
+    "content_hash": "6febfd7104813047e1630ff0e4855a9b979224c81046d0eb4497f4c07b58a788"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -3219,7 +4109,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 179
+    "id": 179,
+    "display_num": 29,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-dab28e6f7b9947e381ff669e",
+    "content_hash": "8acfa7fe26a0239302d56467d143da10536d3de5b1807b2b5340d7d48f81d1e9"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -3237,7 +4132,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 180
+    "id": 180,
+    "display_num": 30,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-8547ce50d10ee940d6ad61f2",
+    "content_hash": "a0bc183c1572425bef61cbed109c5a117240ecf4e5d8b024487cb8517024e22f"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -3255,7 +4155,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 181
+    "id": 181,
+    "display_num": 31,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-fca01996f986dd5cac2ff3c7",
+    "content_hash": "5241d3d305cb19bf2a937e4abb5e2f3f297d7cb6e05d32a833a751dccbbd2f46"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -3273,7 +4178,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 182
+    "id": 182,
+    "display_num": 32,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-ace28d86895ae4bb2f71516f",
+    "content_hash": "714fec24a84c906615b741de03578da2d05beebf69b5c9941b1742a028cd784e"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -3291,7 +4201,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 183
+    "id": 183,
+    "display_num": 33,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-bf047434c551619a8096fe40",
+    "content_hash": "72d53eb9c4f5237acaa75315bee8674a337309c8e11274942f1cbe320966a12f"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -3309,7 +4224,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 184
+    "id": 184,
+    "display_num": 34,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-ef822005221c6c4b6941acf6",
+    "content_hash": "1f4410355b88f947be6ec1665749aede0a7307cea9e8ceb8e71ce0b46fcc0547"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -3327,7 +4247,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 185
+    "id": 185,
+    "display_num": 35,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-5a620e5355f7a979f37d3e7c",
+    "content_hash": "bd3237bfe9a84c355833353e88475b972a7640f8caeddaab086dee0e7d318c5c"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -3345,7 +4270,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 186
+    "id": 186,
+    "display_num": 36,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-a02ab6bde1ce39c0483a147b",
+    "content_hash": "795453f45503083d670a9ae1cd55a39ff1d31cc46b80721abef2877d450d2b95"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -3363,7 +4293,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 187
+    "id": 187,
+    "display_num": 37,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-158e75e5d02c86f757e954bc",
+    "content_hash": "a6ce462c31cf2fa0511739ecf56b58c1850b313a68e6fffd85b94dac1cde49ab"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -3381,7 +4316,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 188
+    "id": 188,
+    "display_num": 38,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-6a649d76a938c06a2cf213f7",
+    "content_hash": "161264185152046efef08f5e480c4572c65bd936e29cdc0add6f68e1966bf170"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -3399,7 +4339,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 189
+    "id": 189,
+    "display_num": 39,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-8ce42d0afb691e72330e61c0",
+    "content_hash": "dff8c941877bda631a033914981e41c6b2af51be8586c4099eb996fdba36e4d1"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -3417,7 +4362,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 190
+    "id": 190,
+    "display_num": 40,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-b18456d77b28edd9c5030f53",
+    "content_hash": "0ebcd2dd918e258b7425b2d6043e5b7a568e17b7ea0c2a24294852e28ec70f21"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -3435,7 +4385,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 191
+    "id": 191,
+    "display_num": 41,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-390df14c4f9d9d5f304b689e",
+    "content_hash": "2cb9760b2cb30e72f1f7554a07d8d7aa03ae6e7d1b786a24f690fbf1eecd0c77"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -3453,7 +4408,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 192
+    "id": 192,
+    "display_num": 42,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-b5bc3e337517d5662d6f1900",
+    "content_hash": "291523f776ebc4bccc2f11e5bb60ae3f6bdedb8d9193adfebf78fbda1c642a0d"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -3471,7 +4431,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 193
+    "id": 193,
+    "display_num": 43,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-8188944b40d5ce863897cfea",
+    "content_hash": "0d62789c1b001fb6c3b43d60cde77c39dbefc69d762d12a127dbeff647cbb7f9"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -3489,7 +4454,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 194
+    "id": 194,
+    "display_num": 44,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-e9db4e4e7d6fdcecdcb7bd8a",
+    "content_hash": "d25d54d1691428a1de2fed95607fca5de691c554a96b95b2a41e6d799963ad16"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -3507,7 +4477,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 195
+    "id": 195,
+    "display_num": 45,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-dc04d14ff1fd91652cf0df95",
+    "content_hash": "d0482d4519562e26ae374d7fa4213435c9624e25e50d2faebfcfd6618203c2d9"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -3525,7 +4500,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 196
+    "id": 196,
+    "display_num": 46,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-55474a6285ece193e9f3cb66",
+    "content_hash": "3726cef3f7ef5f8daa711cfbdbd42b1e83416f67896532e766717dce36a995f0"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -3543,7 +4523,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 197
+    "id": 197,
+    "display_num": 47,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-085b3721468ac373c68456fe",
+    "content_hash": "7dbb8ed4f1ee05866f3187cecb917e095d230f3381dbf9368afa1c0bd80e1e54"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -3561,7 +4546,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 198
+    "id": 198,
+    "display_num": 48,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-3ef138800d785852a04e16c2",
+    "content_hash": "6938c2a68e5dd206dd54f4b288470cadd3ce0d7b3874d183cd75a0e281cdf741"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -3579,7 +4569,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 199
+    "id": 199,
+    "display_num": 49,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-4365d5f920325a0398b31d9b",
+    "content_hash": "961b30b0227b37ae62fe2641cdde2ea2869c3bbc59e5ffbf16c37851f09fbad3"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -3597,7 +4592,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 200
+    "id": 200,
+    "display_num": 50,
+    "source_id": "ai-f32f4c37b814bb9f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-1929697ca01b3b68ff3bbf39",
+    "content_hash": "2d2b74da111b89237d3fa4e4ee6063d51f301750f2d0a804f76235a845c9eb5c"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -3615,7 +4615,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 201
+    "id": 201,
+    "display_num": 1,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-d383e98a8dcb135fcd4ddd62",
+    "content_hash": "c2567783cff639c82f91ca2f64883397348eb7fa541327dd3be05f7038d63427"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -3633,7 +4638,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 202
+    "id": 202,
+    "display_num": 2,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-3e4a91d826d941c81803cd04",
+    "content_hash": "98afcd003030fe9f09ebf461a264f6f2b867fd619efed4eac02c1cadcc3ef8b8"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -3651,7 +4661,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 203
+    "id": 203,
+    "display_num": 3,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-1a55ae6cca096dc3e0ce3994",
+    "content_hash": "3d42f517908fa99a3e7b2e78c17dd1373f4a677632679865a272ee3387dca80b"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -3669,7 +4684,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 204
+    "id": 204,
+    "display_num": 4,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-46e99cf0d5c91f0a88fd0b20",
+    "content_hash": "66868cb493640eba75da99f26bb58355006d26bad5b3cbfad833c8fa44ba586a"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -3687,7 +4707,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 205
+    "id": 205,
+    "display_num": 5,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-1bcc7a7dc7ec7e91edc596f7",
+    "content_hash": "86aeeaa7908642143c8b464493265e8f97ab0fde6db0cafa8915a0e6729134b7"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -3705,7 +4730,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 206
+    "id": 206,
+    "display_num": 6,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-5bcb3ae2d546482392c2d87f",
+    "content_hash": "d5553feb92e17c0f4e52c5b0e7c58cc9c1593cd7216f67276cc2e3c935cb212e"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -3723,7 +4753,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 207
+    "id": 207,
+    "display_num": 7,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-287b9e84eeb4cac225da7b97",
+    "content_hash": "615ca3eb9e5710f3e276e517e8a5418b5e312471f608988f5936142ede1ce12d"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -3741,7 +4776,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 208
+    "id": 208,
+    "display_num": 8,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-80875c504ce7b07258b603f9",
+    "content_hash": "4d7142eed44f85fadc1443cb5d2f6d7a74e468995ff080e43335b223047b0126"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -3759,7 +4799,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 209
+    "id": 209,
+    "display_num": 9,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-1397bb7b0ea2c30800894150",
+    "content_hash": "4d0d5bf3698fbdbe503c4e1fe5a66b0bf2aaed4cc7f21cf53121351dc82cbae4"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -3777,7 +4822,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 210
+    "id": 210,
+    "display_num": 10,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-b5a8c57e0cea6b9e6a767d03",
+    "content_hash": "f5ec2ce974f44eb0bf8bc9e1b31483483886900b9b9d0c090e5d2ed444493ce9"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -3795,7 +4845,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 211
+    "id": 211,
+    "display_num": 11,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-fb5c37cb79909dc568761c51",
+    "content_hash": "87f56eedd9d4b709fac844aca57e45e1ee670f2390c2ba1b8a7ed88650050f4d"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -3813,7 +4868,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 212
+    "id": 212,
+    "display_num": 12,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-09ffe05a2a21612cd1af4d9a",
+    "content_hash": "377c71189ebade3c29cea138e37a9e4737ea89abe7a4c5f576eb41d4b7dbd8bc"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -3831,7 +4891,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 213
+    "id": 213,
+    "display_num": 13,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-59199e46336acfaa62248590",
+    "content_hash": "7237820cb2d49e15e1c6aa45dfad6d634ab3eda6434c44a42152f7a011b14fcb"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -3849,7 +4914,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 214
+    "id": 214,
+    "display_num": 14,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-7636b5874b7ec8d930b5159e",
+    "content_hash": "23c331074b8eb63b20242dc463f0e7ec5fb3e950bdce6557c9a25aa8a4b5aa0e"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -3867,7 +4937,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 215
+    "id": 215,
+    "display_num": 15,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-819e38b43750224af6d219c6",
+    "content_hash": "caf10c5bbde82c5bc482e4f6cc183b9714f5cd46dc25e1a7fab0fa015ae7a658"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -3885,7 +4960,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 216
+    "id": 216,
+    "display_num": 16,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-656b85001ffe515c6547e526",
+    "content_hash": "dfa70344b8623627eb195c2eb1a243ef7fd93bd92f7cb0d78d48e4713809d192"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -3903,7 +4983,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 217
+    "id": 217,
+    "display_num": 17,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-df2aea2e6408b60cd202b682",
+    "content_hash": "56db226c98da618d364cb572482d73b4b5ab9bcc07ed380d966da588db578543"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -3921,7 +5006,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 218
+    "id": 218,
+    "display_num": 18,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-a5f0b324680074615a6e1e0c",
+    "content_hash": "839eeb19a83e29a4b5db1ecf88a7b8aca4059ffa1666f24109a1ef6859b2bed5"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -3939,7 +5029,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 219
+    "id": 219,
+    "display_num": 19,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-ad47ae51cc9660d27cb36046",
+    "content_hash": "9fc76479d3bea118f6e62f26996bbac577a7e910ecebcd7e3bd8728915f8b8e4"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -3957,7 +5052,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 220
+    "id": 220,
+    "display_num": 20,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-6378009b5709ccbc9e793c7f",
+    "content_hash": "738ca32c81034165bb5e040d8b25176aa404ef0c35235581224b5922d13f376a"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -3975,7 +5075,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 221
+    "id": 221,
+    "display_num": 21,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-6a2b600c89a0c8649849f27b",
+    "content_hash": "e19b3967e0b11ea1ce670ba228dc03c4dd369f8720b22d0c20cb3b5d42a8b5ad"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -3993,7 +5098,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 222
+    "id": 222,
+    "display_num": 22,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-9977329e434bc98a5929ca3f",
+    "content_hash": "644e3a983c26c6cb44562560955854a90d26f1fd2d33f3140ca9ad6b1fbde155"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -4011,7 +5121,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 223
+    "id": 223,
+    "display_num": 23,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-019b63cc839cd5815097d026",
+    "content_hash": "897ec07a579bfd79a06050a097fa89d1604766bac0a384c46bbe1882d2eea034"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -4029,7 +5144,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 224
+    "id": 224,
+    "display_num": 24,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-5f551b798c7c1549b4dfd2cd",
+    "content_hash": "307044caf7bdb35afb18cfcbb89725f3255adbfbb5c827cda3ed18bd9a92b0f1"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -4047,7 +5167,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 225
+    "id": 225,
+    "display_num": 25,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-cf3b1e6fa3505bd4353b18d7",
+    "content_hash": "9990959e8ae142c31315cc1e4c8d6f2f9c7e427ccc0ac87007e01899de2b07c0"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -4065,7 +5190,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 226
+    "id": 226,
+    "display_num": 26,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-a1ef13cf25db3274a53197cc",
+    "content_hash": "12959cffa84e4be5ec5f4e7fe4a224a4e5722da83a7c1130436c9b6908f74947"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -4083,7 +5213,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 227
+    "id": 227,
+    "display_num": 27,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-d27e0e3ed078351f21e3cbad",
+    "content_hash": "f1a9852dbc219607372b9a11d541b0d507d5f3ef5526b50b680532be3a6c4580"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -4101,7 +5236,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 228
+    "id": 228,
+    "display_num": 28,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-23ec99261b7f54b7273941ef",
+    "content_hash": "810b6e7e21933ed9e069d3c7f860080370eac44fdef2c58da2c842313e79a2e1"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -4119,7 +5259,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 229
+    "id": 229,
+    "display_num": 29,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-376457ce7b3b5ae45fa1042a",
+    "content_hash": "3427579500839d6f3b3b7a5d08e934943bf57f155088484252f210bad28080dc"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -4137,7 +5282,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 230
+    "id": 230,
+    "display_num": 30,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-41a8052d69a9dd8748da4289",
+    "content_hash": "b237ec9e0a65950a42b58393533506e567101c648bc4423bfae8c916e3265863"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -4155,7 +5305,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 231
+    "id": 231,
+    "display_num": 31,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-4bc0c743fcb46d58cd73c5ac",
+    "content_hash": "604e03a9ebfb0939f18ca4c7c746f4b5f2b63aa548a712f61b791a9f8730d214"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -4173,7 +5328,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 232
+    "id": 232,
+    "display_num": 32,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-03ab832a992edef6e7802303",
+    "content_hash": "6b6bb0d8d12786241a92bdb2e1afa6048ed7cbd7967ac297094b365b938e951b"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -4191,7 +5351,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 233
+    "id": 233,
+    "display_num": 33,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-07f112e3a4b659dde0472342",
+    "content_hash": "55769d3b69b2c73708ad231a13ed9fbe6c15160f84f41fb19011d5b11d2de824"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -4209,7 +5374,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 234
+    "id": 234,
+    "display_num": 34,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-845e1a7b16703fc23bc67428",
+    "content_hash": "731a34e5cbdb32eafce2bc9b76a84c1cb3c92106a8ecd2e2031bade3967a84cb"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -4227,7 +5397,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 235
+    "id": 235,
+    "display_num": 35,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-e0e60373a2c7c8847de9db4c",
+    "content_hash": "4cc9cbc7f5a33c227446b37646f9cdcd48d83b9c0131af32e585056367f30ba7"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -4245,7 +5420,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 236
+    "id": 236,
+    "display_num": 36,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-7201c92610cf7adc5209b11a",
+    "content_hash": "8998d7f42ae3373bfa890f4a070e075a6e80410dad3e58588eba95ab6027fad0"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -4263,7 +5443,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 237
+    "id": 237,
+    "display_num": 37,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-52521bcafe6c22c47d41cb24",
+    "content_hash": "12ad18eb23043aaf41616ea568a9b64f35e6b36679d8ecfbb43aaad1982d3160"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -4281,7 +5466,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 238
+    "id": 238,
+    "display_num": 38,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-37d292ec03e5882343323392",
+    "content_hash": "8ea7a8f87fe2e8de3b782d8cbc875cb8e59e5561a30a7b3133ba59dfc767d7c5"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -4299,7 +5489,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 239
+    "id": 239,
+    "display_num": 39,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-c8ed06054d7f6c2a5d816b6b",
+    "content_hash": "8dac018e04ecaa7f8334e1fe5f7966573462c87db7f9bce2aad4cdc54c6f4d96"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -4317,7 +5512,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 240
+    "id": 240,
+    "display_num": 40,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-41e73650b627b3b0bf2279ab",
+    "content_hash": "dcdf8a0323e722353ab78728cbf4a4e0fbe1be03557102f3a954783298efb3bc"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -4335,7 +5535,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 241
+    "id": 241,
+    "display_num": 41,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-7f762c59ac4b500622756a55",
+    "content_hash": "01d10ee3dfe2b23b830d88e400213559b4669b6ebd0548ba8596fa15706ff4f1"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -4353,7 +5558,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 242
+    "id": 242,
+    "display_num": 42,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-d1a8cd92b04eb8aa8d3af2dd",
+    "content_hash": "ae710f998cade195e053834dd2e884c0b591adaf4d5d42a6bed28e0679a5691e"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -4371,7 +5581,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 243
+    "id": 243,
+    "display_num": 43,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-9069c41a3cad247579634a4e",
+    "content_hash": "99b7d7591d7d589c35baae13c5fa10aa2660829464f10b0ed11f31cf4fb33c1e"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -4389,7 +5604,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 244
+    "id": 244,
+    "display_num": 44,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-6378d9988c35d83a809af10a",
+    "content_hash": "0e2dc2ef6575a84140d2277cb442c39b8821748b7d00fee42082b06637e8fc3e"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -4407,7 +5627,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 245
+    "id": 245,
+    "display_num": 45,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-c720fba56dc9128b1c590f7a",
+    "content_hash": "040f2e31017b6b5ea4834d18ef53c1260b6b1985ef91af9bad79fdf117523b87"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -4425,7 +5650,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 246
+    "id": 246,
+    "display_num": 46,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-edd5487a91195e49e5a796bd",
+    "content_hash": "c05c0218f727bd793c0e59649d87d08a1fec6712c400167b671e721c1892d3d4"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -4443,7 +5673,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 247
+    "id": 247,
+    "display_num": 47,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-7baab9401c8bd6543aa067c3",
+    "content_hash": "929dd622e052b716bd228d5648e92df10f44c214df6a00839a596760dcf9697e"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -4461,7 +5696,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 248
+    "id": 248,
+    "display_num": 48,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-be70eac610ae04b786012d80",
+    "content_hash": "0672e06bd608ca98d721f6b0c5056944e67a4876830c8930afdc416b42c49217"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -4479,7 +5719,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 249
+    "id": 249,
+    "display_num": 49,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-fd8e47daa96cf78a505cf99e",
+    "content_hash": "eadd11602bf0873e781e1fd21320ad4670f3c4a57d0e8da52bd5a4476bd1fa62"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -4497,7 +5742,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 250
+    "id": 250,
+    "display_num": 50,
+    "source_id": "ai-86f8e798ed103784",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-3b7026d99ae44f6c645d222d",
+    "content_hash": "06ef80e1199196cac5ada3214a3306f95c12790db17458716df40f85bf85ba98"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -4515,7 +5765,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 251
+    "id": 251,
+    "display_num": 1,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-a4a20f4a17eb2f5a7f32ae34",
+    "content_hash": "7d747b16c9be939f6bef140c66df4f513fa4d2c2189053411eb5ad132efdb9d1"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -4533,7 +5788,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 252
+    "id": 252,
+    "display_num": 2,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-ef99c6d0ac68c66e0939491d",
+    "content_hash": "7648acf2b2818e628fd6467ed3a13376309212a69a58bc84dd78d5400b7df6a8"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -4551,7 +5811,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 253
+    "id": 253,
+    "display_num": 3,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-d6e0ac19dcb199158adc990f",
+    "content_hash": "627e2206a70581a1111226d430405cccb375104784a4139cea073f6a561d3e1f"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -4569,7 +5834,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 254
+    "id": 254,
+    "display_num": 4,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-1b7032d0e8a0c7450b490474",
+    "content_hash": "a7c65dfc787f5eb93a0d7bd2f33356f035ebbc88f03bf62bde38c0ca2a097a74"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -4587,7 +5857,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 255
+    "id": 255,
+    "display_num": 5,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-776484cc72d574a3fa91ab39",
+    "content_hash": "5dcb9a5aed9842fccccd007ca5d64e28a849ae499cd763de4c29720bf11c77af"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -4605,7 +5880,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 256
+    "id": 256,
+    "display_num": 6,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-17f948e3d2a88e7a75099540",
+    "content_hash": "834b59a2c8469f9c1f77f46a2549e4bcdf6b3202b1299ceaef723526d49c0223"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -4623,7 +5903,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 257
+    "id": 257,
+    "display_num": 7,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-8e0f8e74f9e604f0e4144069",
+    "content_hash": "2f53bae22b8a5e94f033562a7ff2073fd3d4170a0c15d95f0439ce8514fd21c0"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -4641,7 +5926,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 258
+    "id": 258,
+    "display_num": 8,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-44c3bf03b5a3d7ed4aa315ac",
+    "content_hash": "7bd058af4dca6fbff8acc9b06df0bdd618de6c111eaf72505b78bc55c10572eb"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -4659,7 +5949,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 259
+    "id": 259,
+    "display_num": 9,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-620842cec38ed68cb4283cc4",
+    "content_hash": "1058c581696c756d338b492bbd3df4b4c1896ae3d2a572682a47941638eeaac1"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -4677,7 +5972,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 260
+    "id": 260,
+    "display_num": 10,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-bcfe324c76f5d9ac4eca252c",
+    "content_hash": "70db6a7243a64bf1c66699abde1f650d9a805354034b9c7e95745395decc0c26"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -4695,7 +5995,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 261
+    "id": 261,
+    "display_num": 11,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-bf623bf89e370a90d8476173",
+    "content_hash": "72860b3a7da611a52095409a3f6b0b69837e35b50c5672c84f253da6a588c12e"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -4713,7 +6018,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 262
+    "id": 262,
+    "display_num": 12,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-19e75204346cd6da3836960e",
+    "content_hash": "95f022959fe8c336dd2ee28b2bef5bd2726709c1e2b07131dcb70cc88422a844"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -4731,7 +6041,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 263
+    "id": 263,
+    "display_num": 13,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-10d03d0d6a922504907c0d80",
+    "content_hash": "764446ca2e46e19d202b3d7518a738bd5b5cd9ca552aa464ead1b14dca484edc"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -4749,7 +6064,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 264
+    "id": 264,
+    "display_num": 14,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-c5d3f42854113be52c42b3ef",
+    "content_hash": "4a7c4cad04229642c4abdf78ccd8be1565fa13ad8fe63dce498440adda8ae7f4"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -4767,7 +6087,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 265
+    "id": 265,
+    "display_num": 15,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-a7000765b876d32cb99044a1",
+    "content_hash": "bf7962da786e59feab80e31aab4f7d23657e575f707da53b68806a50539ff6cd"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -4785,7 +6110,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 266
+    "id": 266,
+    "display_num": 16,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-8445beafb13e4d3473c2daef",
+    "content_hash": "2e41d2618d1a3bd6386a7af740351e987a4892062b7dcf9ac0c4862577a9506f"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -4803,7 +6133,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 267
+    "id": 267,
+    "display_num": 17,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-1e330ca2e37924737e7405ee",
+    "content_hash": "d4139fe8efe1eb6de46d0fd738debe693ef28d2eb9f9b4f7effdc574c5d948a8"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -4821,7 +6156,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 268
+    "id": 268,
+    "display_num": 18,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-ae1e10fbc93f02884ab85df8",
+    "content_hash": "8b595cf6f82c77a72ceab0bee84cb3bc90549f2aa8f86ad9d40f29c98b59297f"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -4839,7 +6179,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 269
+    "id": 269,
+    "display_num": 19,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-231a17f1f6b8dc4d4ef3bd47",
+    "content_hash": "7bbde2ed65c8851bc09a1ced32b963dbee987e7feb2611300ca873745c3890d4"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -4857,7 +6202,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 270
+    "id": 270,
+    "display_num": 20,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-c11dca009204c26d255acbae",
+    "content_hash": "b54493f9e1f9578e1179b77356593ec425a811a25012adca4e3875b292cfebfe"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -4875,7 +6225,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 271
+    "id": 271,
+    "display_num": 21,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-d74ec245d6c02eefe71914ea",
+    "content_hash": "866137904318c008071ca283838ec65ea4cb3807ac394db082b924ca7637c20b"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -4893,7 +6248,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 272
+    "id": 272,
+    "display_num": 22,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-407adfcecb005771671224ff",
+    "content_hash": "f6ff2328584d0a58d9573915d2063671d4d201c8920d1bc188473ce638455f40"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -4911,7 +6271,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 273
+    "id": 273,
+    "display_num": 23,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-d44bf66779041ba9017315c1",
+    "content_hash": "2806d240009de24e4ee925e3b4e1a637683b0d7eee04f5cdff2d66ee4fcc7cb8"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -4929,7 +6294,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 274
+    "id": 274,
+    "display_num": 24,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-ba5b54283d5293ac527448d2",
+    "content_hash": "32b7cc59c7e02d9891fd89fc2eb634f17acd17ca28f19547a1c305542e78adc4"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -4947,7 +6317,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 275
+    "id": 275,
+    "display_num": 25,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-893f86658a48583272efc72a",
+    "content_hash": "db62d8f12c4ef6f1f4f4d2d7d52621244e979e1d9085704e5f73921d7e417599"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -4965,7 +6340,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 276
+    "id": 276,
+    "display_num": 26,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-8669fa80c081cb7b21f0e2fd",
+    "content_hash": "9bb36ce158d0b811dd50ff90dc45343d10c97d05d3766b2f25d81ca67f6ecbbc"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -4983,7 +6363,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 277
+    "id": 277,
+    "display_num": 27,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-8f0533f1584efca5677be621",
+    "content_hash": "6e6a85c8fba2a805d5b64664c716be367e9c387d2ab9de1968a0ee0f24fc02ad"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -5001,7 +6386,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 278
+    "id": 278,
+    "display_num": 28,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-18a9b5c9895c57ed9a554ec5",
+    "content_hash": "f750a221beceec657e046a90fd99736f0d1bbaf60a623e5b77448b4d819f3260"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -5019,7 +6409,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 279
+    "id": 279,
+    "display_num": 29,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-e90f2cd196fe647f926d869d",
+    "content_hash": "a724153fdcaba23dbc715eb14fa6d1a9e46deb0b0eaf4b66e96c13969ad42ab6"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -5037,7 +6432,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 280
+    "id": 280,
+    "display_num": 30,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-3c9844284472b90b674626f9",
+    "content_hash": "2aac73ac12268f5022aea5af7c82c11bdcb6b02b157262c9f3405b58f03f5321"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -5055,7 +6455,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 281
+    "id": 281,
+    "display_num": 31,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-aebc15bc2ca72e7b5b785827",
+    "content_hash": "9a3da40c254adea08f1ca375ae8d2e9c13b89902ff1124479019c43b6e8c957e"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -5073,7 +6478,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 282
+    "id": 282,
+    "display_num": 32,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-d6063e830917c485fe64d3e4",
+    "content_hash": "eaf8fb1bba5ed16385f8d08edc44b75d92f4f7b8f8d396336f662501003c9a81"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -5091,7 +6501,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 283
+    "id": 283,
+    "display_num": 33,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-54f44d404705a6a72b80ba88",
+    "content_hash": "ddbe2fca4fc4ebec1f25e88d22caec6d72aebca1a293ee9477eab34df2dd64d0"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -5109,7 +6524,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 284
+    "id": 284,
+    "display_num": 34,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-83354486c00569066fa12b0f",
+    "content_hash": "8e7b50f44f9fedc9a1547037e256c9a7af98d2ed3dc1344009822b96e25c9ff6"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -5127,7 +6547,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 285
+    "id": 285,
+    "display_num": 35,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-f2aa48ed19bd7d98331e6097",
+    "content_hash": "814ffdd2f11f4cf5c1a98efe5bf33e4cc0b267932b6daaaad49a990bf47f0ab7"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -5145,7 +6570,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 286
+    "id": 286,
+    "display_num": 36,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-93bab6c22b1aa9c010588436",
+    "content_hash": "1f7c9aa03804067b3955960a3184add0c2533b060ee19374b4061a84f341a332"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -5163,7 +6593,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 287
+    "id": 287,
+    "display_num": 37,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-0225c9f6f40fa820255b6579",
+    "content_hash": "e3577d4ae3e8ebfa309234ae21b3868f27fb33c7af9309ab92904d721e0fe20d"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -5181,7 +6616,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 288
+    "id": 288,
+    "display_num": 38,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-709f863fcb4762622daec3d3",
+    "content_hash": "8af749c6c293e51ead03ab6e88b80dcf5a77ac6479605fbdd5eca85707f03ca5"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -5199,7 +6639,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 289
+    "id": 289,
+    "display_num": 39,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-5ed31fb5cb860ca47bc0d488",
+    "content_hash": "69b2de63c10013db10f1526a72d233fe8ad15dbac2a0c09edb3ac469f8b75717"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -5217,7 +6662,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 290
+    "id": 290,
+    "display_num": 40,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-7d1251ffa0633f38f8ea14e1",
+    "content_hash": "7eab2daa556b22517ef29a3260abd005837f690673dfcf207d8964c48d10eaf8"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -5235,7 +6685,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 291
+    "id": 291,
+    "display_num": 41,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-aa00409472e903f075e01ce1",
+    "content_hash": "1ebaf73db021874a817a30fd8dcb5190754dca5d1d8e03e3c4880d81b694a286"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -5253,7 +6708,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 292
+    "id": 292,
+    "display_num": 42,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-e1f57f9213b2b496eaf1d01a",
+    "content_hash": "227a78ea9211eadf95ee55505218d54ddd1f67d7736ecd3d5a40839a7ac768bf"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -5271,7 +6731,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 293
+    "id": 293,
+    "display_num": 43,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-5f6bc2b95ab442c072487196",
+    "content_hash": "4fa0e14ba434e4649f0a42967e6bdf2c86f04ad8caf843c9ba8b0c7d2b7ae295"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -5289,7 +6754,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "",
-    "id": 294
+    "id": 294,
+    "display_num": 44,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-cca301192ab7158f6d6bc674",
+    "content_hash": "884ecc3e20d71bc3093fde3ddff1dd73a4f8c28864ef5e760e0eb71bf0ee81dd"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -5307,7 +6777,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 295
+    "id": 295,
+    "display_num": 45,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-8de809843cb9c8785e01f3c0",
+    "content_hash": "38316962a22d9ebc0467d9f87a3de2f7f2b053c6d9a2eca9bac0767f380c229d"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -5325,7 +6800,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 296
+    "id": 296,
+    "display_num": 46,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-d08dd12d2f4dccb3bcb7bb2b",
+    "content_hash": "8f7825c2c5e3ab1f9b3c6c7b52e91887f5fc3aacfd1a75a261cee17ec07b3624"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -5343,7 +6823,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "",
-    "id": 297
+    "id": 297,
+    "display_num": 47,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-74e279146f093d34ac10b847",
+    "content_hash": "22cc9a4ca4e8a9929f25bafde7c092a6ef62ec3cdbcff17e73255d063d927a44"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -5361,7 +6846,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 298
+    "id": 298,
+    "display_num": 48,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-7e362c5d8c1ade555d1d60bf",
+    "content_hash": "7e357baceffee0ca5e30a0db2371d342aa1599fcce4f2e6ff3183144a975d0e6"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -5379,7 +6869,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "",
-    "id": 299
+    "id": 299,
+    "display_num": 49,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-c93e9d01f63e607dca4f6553",
+    "content_hash": "96cac0478f64ec3eb84b3ed549cb0a59c660e5dccfa5fa6fecd1e2ea996efd74"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -5397,7 +6892,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "",
-    "id": 300
+    "id": 300,
+    "display_num": 50,
+    "source_id": "ai-e8fd00c948ac50f4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-b0d43a2099b33764d719347d",
+    "content_hash": "c3d03abe273aff4580a78f55944fa31db453970abf9959f98eec69eceb79a697"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -5415,7 +6915,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 301
+    "id": 301,
+    "display_num": 1,
+    "source_id": "ai-a55fc92cb254982f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-2c8a9bfad711699e213b7525",
+    "content_hash": "67a50506198708f6cdbc3a34f995c3f212f64b496b608279d597910ac11569e5"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -5433,7 +6938,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 302
+    "id": 302,
+    "display_num": 2,
+    "source_id": "ai-a55fc92cb254982f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-1fb367311e99669f5e3cfe59",
+    "content_hash": "76cb19163723732a54c5c5f161191b41dfe583480d3b07f06c7e4c12142d6edf"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -5451,7 +6961,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 303
+    "id": 303,
+    "display_num": 3,
+    "source_id": "ai-a55fc92cb254982f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-5b2a90be7c36b6ecdf52339d",
+    "content_hash": "426f1368773337ae391867b21edd402f03558b316e924ffcea45f782fed5b250"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -5469,7 +6984,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 304
+    "id": 304,
+    "display_num": 4,
+    "source_id": "ai-a55fc92cb254982f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-d95ba2f9ac4c87b8a3c77c09",
+    "content_hash": "d668f4a5acc69a8e2d6baecff96733d9892ad42b2fd373d4219aec6203d98b90"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -5487,7 +7007,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 305
+    "id": 305,
+    "display_num": 5,
+    "source_id": "ai-a55fc92cb254982f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-c92a42b9e1e231a4b90c5c16",
+    "content_hash": "53e210c367203c98da8e289c54788ca374bd046f7833b917fdc8b57946a01799"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -5505,7 +7030,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 306
+    "id": 306,
+    "display_num": 6,
+    "source_id": "ai-a55fc92cb254982f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-9e51639e6a0c6509e1b16beb",
+    "content_hash": "b9ad9c4adb728bb67f07b8d9e67bb3ba3322e4654e6909687f3acbaa4a7f7ff2"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -5523,7 +7053,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 307
+    "id": 307,
+    "display_num": 7,
+    "source_id": "ai-a55fc92cb254982f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-1efe6a92d80b259c915819b1",
+    "content_hash": "8560ac0c4c1071be15709c77ddbb9235923ea6470eb6aca284dc7f2fd1916392"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -5541,7 +7076,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 308
+    "id": 308,
+    "display_num": 8,
+    "source_id": "ai-a55fc92cb254982f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-02545405472ed70f841cd049",
+    "content_hash": "5c8d0c1415d01156b12fa6cd91323c30865303993c6d4d3f7f440850d8e89272"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -5559,7 +7099,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 309
+    "id": 309,
+    "display_num": 9,
+    "source_id": "ai-a55fc92cb254982f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-cf693e6b199c35398773cde8",
+    "content_hash": "a33dad74e9206f5889bea2ea46f9ff02c685573d87ec1fddfe24a3f6192dbaa4"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -5577,7 +7122,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 310
+    "id": 310,
+    "display_num": 10,
+    "source_id": "ai-a55fc92cb254982f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-690167e1f80d2e1b0264695e",
+    "content_hash": "dad71c29679c32e9f2c0122b94a41a210c890c9a6b2bfcd0ef17912f61d287ef"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -5595,7 +7145,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 311
+    "id": 311,
+    "display_num": 11,
+    "source_id": "ai-a55fc92cb254982f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-0763cf32a363e8020b345756",
+    "content_hash": "585da4622d01e0975e080dd6a3ea74a7295fce64d13f615ff3372aa5d346c7a5"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -5613,7 +7168,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 312
+    "id": 312,
+    "display_num": 12,
+    "source_id": "ai-a55fc92cb254982f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-3c51be892664ec5441d9927d",
+    "content_hash": "d38632337ee4eb2f9642d4ad1feffb0c7d6a2442825a37da9c2e145900755203"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -5631,7 +7191,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 313
+    "id": 313,
+    "display_num": 13,
+    "source_id": "ai-a55fc92cb254982f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-623061a3e2490e2da7d2fcbe",
+    "content_hash": "6f62500014015744d5bedf279c86f8e85684eaa55313b2681d1d19eb0f3169b7"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -5649,7 +7214,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 314
+    "id": 314,
+    "display_num": 14,
+    "source_id": "ai-a55fc92cb254982f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-ebf1caf4defa9c83002a6b90",
+    "content_hash": "859bf592e1bb5f5d6a7a982af9875188d7f768a834f3b5e16622fd23869c20e2"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -5667,7 +7237,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 315
+    "id": 315,
+    "display_num": 15,
+    "source_id": "ai-a55fc92cb254982f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-18a5143634804ac13da97e26",
+    "content_hash": "d714ddce0adcca432b276a4ef00635857591dd09b6b1eed0bc5cdc821c07d5c6"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -5685,7 +7260,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 316
+    "id": 316,
+    "display_num": 16,
+    "source_id": "ai-a55fc92cb254982f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-95e57be97ff74d6080496f99",
+    "content_hash": "2d3fe3755f0d592f76c530a59283ca86534d8f8a74556458b710c7bb9b11b905"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -5703,7 +7283,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 317
+    "id": 317,
+    "display_num": 17,
+    "source_id": "ai-a55fc92cb254982f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-865279df17fcbeb0eca31e51",
+    "content_hash": "8238b12704e45592f2f92592bb92f374330d8061da1dff0159bccf0a2ea54ebe"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -5721,7 +7306,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 318
+    "id": 318,
+    "display_num": 18,
+    "source_id": "ai-a55fc92cb254982f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-d46bc3930f055a243b4e5825",
+    "content_hash": "f1adb358f3a13416b88631811c0a5475cdca7159c72f49a997c6302783feeb18"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -5739,7 +7329,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 319
+    "id": 319,
+    "display_num": 19,
+    "source_id": "ai-a55fc92cb254982f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-a8fb432b067e116f64c426ff",
+    "content_hash": "b04b8828b5ce141675847688ab5c29acfa21db5acbdce194aef2518b410fe527"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -5757,7 +7352,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 320
+    "id": 320,
+    "display_num": 20,
+    "source_id": "ai-a55fc92cb254982f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-79e33cc918274fc3d8ef8c61",
+    "content_hash": "1331d62c6e127127d5566981cbc606c8f97e1fddfe87b0cd84d1760453ac3c37"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -5775,7 +7375,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 321
+    "id": 321,
+    "display_num": 21,
+    "source_id": "ai-a55fc92cb254982f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-23c95f9d9d5e874a0926ffc9",
+    "content_hash": "a4ae2db07230f15f22e765995cc1ff843d8483d9538ce20fa8e8fa51fe17d34e"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -5793,7 +7398,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 322
+    "id": 322,
+    "display_num": 22,
+    "source_id": "ai-a55fc92cb254982f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-f8e90dacba69cbf3353ad2aa",
+    "content_hash": "9ea2f053318c615230b3874de5322375d96f186ce67212fde53fca9454aeaa69"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -5811,7 +7421,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 323
+    "id": 323,
+    "display_num": 23,
+    "source_id": "ai-a55fc92cb254982f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-1843ecba38bd1a0aaf7c0437",
+    "content_hash": "0b21e828528053ad0a2dbd4a781d36d9ba5c6b90347cb7be15ee159aec5b9db0"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -5829,7 +7444,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 324
+    "id": 324,
+    "display_num": 24,
+    "source_id": "ai-a55fc92cb254982f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-b04e4a12bd77287b84289a36",
+    "content_hash": "b2d0fcf1f79b5ffecc26d378649b4e4e1cec45b0b48952128e9991118765c804"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -5847,7 +7467,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 325
+    "id": 325,
+    "display_num": 25,
+    "source_id": "ai-a55fc92cb254982f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-81770dc2f20994fd68f8af80",
+    "content_hash": "4ed8536c895c39d3e554d80306e9cc2c5339864abe5c1334978ab161b233aa17"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -5865,7 +7490,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 326
+    "id": 326,
+    "display_num": 26,
+    "source_id": "ai-a55fc92cb254982f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-316fae2353acb38eb8671caa",
+    "content_hash": "e80b109e89a594c2f7a72a7812b48b3743e7b9cb2707c9eafa49787ae9147a97"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -5883,7 +7513,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 327
+    "id": 327,
+    "display_num": 27,
+    "source_id": "ai-a55fc92cb254982f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-d509ede4419e6d315a42c1d8",
+    "content_hash": "d5974b3a694252a17c74cd2568f43b1a100cb922aec9d5b1a5867c80452386e0"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -5901,7 +7536,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 328
+    "id": 328,
+    "display_num": 28,
+    "source_id": "ai-a55fc92cb254982f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-32cd1da594305038dafc28c4",
+    "content_hash": "3c4039c7494bcd7437ca8c31360efdc35e7cf2e6164fe1bb0142a3447c55e3e7"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -5919,7 +7559,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 329
+    "id": 329,
+    "display_num": 29,
+    "source_id": "ai-a55fc92cb254982f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-9008e0f30783f61e8951d94d",
+    "content_hash": "8dbc3a0be801a20f9787bdc88f1ac1f2cb3d6a2262a6c695d1bcb959c9bade25"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -5937,7 +7582,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 330
+    "id": 330,
+    "display_num": 30,
+    "source_id": "ai-a55fc92cb254982f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-bfd81d3f403b389a6dfbc884",
+    "content_hash": "b0e32af80e66314b65ef33caffb2282c8f7b109368fcca1fd5085488afcc59b2"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -5955,7 +7605,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 331
+    "id": 331,
+    "display_num": 31,
+    "source_id": "ai-a55fc92cb254982f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-d861c2ccd4a3eb019054ddb8",
+    "content_hash": "c4ee7c98a5ae9fc4e765d3b1ee7dd3e2a5618a3d60092b229191baf94af3a211"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -5973,7 +7628,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 332
+    "id": 332,
+    "display_num": 32,
+    "source_id": "ai-a55fc92cb254982f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-c085d9ffe135d012fd5f6826",
+    "content_hash": "b9dfc3bb525f72ba0a0baf9eade243ecf5dda2cb88f46c193423d6f7984f70bc"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -5991,7 +7651,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 333
+    "id": 333,
+    "display_num": 33,
+    "source_id": "ai-a55fc92cb254982f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-c9dc359ef85519a40a8c5a7c",
+    "content_hash": "5a66a334ed1476f71d61a319429447f9ac1cc42d075203ed97f3821ab90256ed"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -6009,7 +7674,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 334
+    "id": 334,
+    "display_num": 34,
+    "source_id": "ai-a55fc92cb254982f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-842938f481f6eaec22ed8ae3",
+    "content_hash": "8531663682acc415801a952065a30f95db34d80b31844af5b429b2a2a5e8a689"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -6027,7 +7697,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 335
+    "id": 335,
+    "display_num": 35,
+    "source_id": "ai-a55fc92cb254982f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-9d46f482575a5cd34ea0415c",
+    "content_hash": "d2b9ad1d9000a1260f73b3164cbad76fcf4f58fcd522c37dece6a910b2bacc9a"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -6045,7 +7720,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 336
+    "id": 336,
+    "display_num": 1,
+    "source_id": "ai-a8a3a412bb87c904",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-5513f061ac9b1f6594860c5a",
+    "content_hash": "4ca3eb993a58384bdeddc02c31a9822465c50a06be06b3876c1a9e8d8ca2b661"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -6063,7 +7743,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 337
+    "id": 337,
+    "display_num": 2,
+    "source_id": "ai-a8a3a412bb87c904",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-2eab11dbeb8a04aa5ceb97f0",
+    "content_hash": "5dd0c2cc84a78a7c709c0626dfd943f6d4f02e21949db0ab86228dcfbc6a2d01"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -6081,7 +7766,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 338
+    "id": 338,
+    "display_num": 3,
+    "source_id": "ai-a8a3a412bb87c904",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-34519647d008c209c8cb9b37",
+    "content_hash": "59c99f508bc45e4f547cbd3ec360d4968371f5960c18ca0347aabe67bddb28ff"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -6099,7 +7789,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 339
+    "id": 339,
+    "display_num": 4,
+    "source_id": "ai-a8a3a412bb87c904",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-6dc7a3fdc6312eefaea09c24",
+    "content_hash": "4939c475c07f7c6beb41203d4f582165f9a1cf251ce0c4b5b4cc380f00b7cac1"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -6117,7 +7812,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 340
+    "id": 340,
+    "display_num": 5,
+    "source_id": "ai-a8a3a412bb87c904",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-6a18866cc5f3b69eaba67a44",
+    "content_hash": "2ae5eb324cc717223c7170bf89d560f5c74b095f49cf479028718a37d63b1ac9"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -6135,7 +7835,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 341
+    "id": 341,
+    "display_num": 6,
+    "source_id": "ai-a8a3a412bb87c904",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-f5168cbfaf80c8d654bcb72e",
+    "content_hash": "84ec8a094ee222930fdf6c06e096b2fa53b5080be1016dc7d8a75b37da1fea9e"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -6153,7 +7858,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 342
+    "id": 342,
+    "display_num": 7,
+    "source_id": "ai-a8a3a412bb87c904",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-2180325012918c6b9fac0437",
+    "content_hash": "ecd538f73b44e668362b7c7c421bd00100f119d825e91f569a630271d33a802a"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -6171,7 +7881,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 343
+    "id": 343,
+    "display_num": 8,
+    "source_id": "ai-a8a3a412bb87c904",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-68b5fce125b9ab70947f424f",
+    "content_hash": "136a31f4d69f5b0d38b4bdc50c66bdf3253bcce9e4a7059df75b4981f6f30764"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -6189,7 +7904,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 344
+    "id": 344,
+    "display_num": 9,
+    "source_id": "ai-a8a3a412bb87c904",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-4623a5071989d327aebf9c71",
+    "content_hash": "e068477834f232c1261117e24f9e4861733706b52086b37e8f9cd63be2391f78"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -6207,7 +7927,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 345
+    "id": 345,
+    "display_num": 10,
+    "source_id": "ai-a8a3a412bb87c904",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-fc4519340b97daf8e63bfb3c",
+    "content_hash": "4a8be694d5a56fa783c6272365f16c3a9c4a3637df7ddc4b8da0989dbdfa772b"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -6225,7 +7950,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 346
+    "id": 346,
+    "display_num": 11,
+    "source_id": "ai-a8a3a412bb87c904",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-dbb8ed142d7eda673e2d02a8",
+    "content_hash": "a9a2befbd3edd531361762a58340affd14d0ea2ec0b4c51347ba09d70e8759a0"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -6243,7 +7973,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 347
+    "id": 347,
+    "display_num": 12,
+    "source_id": "ai-a8a3a412bb87c904",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-925b55a90b680452d6d076e5",
+    "content_hash": "af942dcaa48941c3b3852306ad4cd60be51dfac078dda92cf6073583519f182b"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -6261,7 +7996,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 348
+    "id": 348,
+    "display_num": 13,
+    "source_id": "ai-a8a3a412bb87c904",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-481e57e4a0a1284c560e1a4c",
+    "content_hash": "3ece11eb7d067b544aeec154945953083126e24e867ebbe76c1cb45be1f311aa"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -6279,7 +8019,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 349
+    "id": 349,
+    "display_num": 14,
+    "source_id": "ai-a8a3a412bb87c904",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-07b8e2506fdf6b1c6409f3c8",
+    "content_hash": "81fc19c8e12e65c53b4e1cc652e47ee7321709737315ff1cda991763c1bc5fb9"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -6297,7 +8042,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 350
+    "id": 350,
+    "display_num": 15,
+    "source_id": "ai-a8a3a412bb87c904",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-a1f805a056f76ebd56d338ca",
+    "content_hash": "0554a15dfd3cb8187e441e72583abfe14798e149508ee96e786ba32c03074446"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -6315,7 +8065,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 351
+    "id": 351,
+    "display_num": 16,
+    "source_id": "ai-a8a3a412bb87c904",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-3b5d86f9a4a8d0b2876d59ca",
+    "content_hash": "b35a044dae3fd0371f06f5d555f8209cb509ef86fdbf70af4246e6c0a45cce92"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -6333,7 +8088,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 352
+    "id": 352,
+    "display_num": 17,
+    "source_id": "ai-a8a3a412bb87c904",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-7d5774236d3d0d83533091df",
+    "content_hash": "05ab79855f9ae14138b554622e068fbbe1ecf354ee18e9b9f06575dc527c5be5"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -6351,7 +8111,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 353
+    "id": 353,
+    "display_num": 18,
+    "source_id": "ai-a8a3a412bb87c904",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-7d4823ee38297a19a5bd6174",
+    "content_hash": "fc53440270d08df23d386c57f73e981b7edc291ef937bb933c50a0ed35ee3c06"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -6369,7 +8134,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 354
+    "id": 354,
+    "display_num": 19,
+    "source_id": "ai-a8a3a412bb87c904",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-b9ca7b6031302595629aef85",
+    "content_hash": "71af2e019f7d6dab0473d9e7c4cca4baa03a27b8235fdd73052597802ab7ffc8"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -6387,7 +8157,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 355
+    "id": 355,
+    "display_num": 20,
+    "source_id": "ai-a8a3a412bb87c904",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-b5780060451b95581bcb9466",
+    "content_hash": "65e38ad8af26208a6d61ec14486019927b573c4e8c75ea9d7a904c8517888675"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -6405,7 +8180,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 356
+    "id": 356,
+    "display_num": 21,
+    "source_id": "ai-a8a3a412bb87c904",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-29b0dbf6e0575652e83b5be1",
+    "content_hash": "00f803a1c4ae574824a2a33b63981b8d1dc977ae2d88a7199f31051268f69043"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -6423,7 +8203,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 357
+    "id": 357,
+    "display_num": 22,
+    "source_id": "ai-a8a3a412bb87c904",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-2fbc02b1482904235785ce26",
+    "content_hash": "0593a912a526960ec718a5e45462c52c5f3ceb605eacf419db9fca8d17e4dbe9"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -6441,7 +8226,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 358
+    "id": 358,
+    "display_num": 23,
+    "source_id": "ai-a8a3a412bb87c904",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-e9be12da794bdf189b742348",
+    "content_hash": "67bf528af36e2f8944d8c5ca318d59f3e19e1bdac21dc8deb1d551949212bbbd"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -6459,7 +8249,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 359
+    "id": 359,
+    "display_num": 24,
+    "source_id": "ai-a8a3a412bb87c904",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-02ae6ddc05beb0d943729291",
+    "content_hash": "f11444c7662e90f3056888bb35d172e9e1bc643ca1e8c051038f8873ce9b286d"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -6477,7 +8272,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 360
+    "id": 360,
+    "display_num": 25,
+    "source_id": "ai-a8a3a412bb87c904",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-4456c8eaf91a0311d0f16bdc",
+    "content_hash": "11fcf1ffbe8f2726c2acb02e89e120603ed6b21954b4400d1083779005aef912"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -6495,7 +8295,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 361
+    "id": 361,
+    "display_num": 26,
+    "source_id": "ai-a8a3a412bb87c904",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-969406aec1574383feb4f9d5",
+    "content_hash": "b02a09133bfb681d22e585ae9af5b1f892b3f12406d0bf1625d811b09797d6ed"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -6513,7 +8318,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 362
+    "id": 362,
+    "display_num": 27,
+    "source_id": "ai-a8a3a412bb87c904",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-9b67cbee4a21d4f8f9cd0f8c",
+    "content_hash": "fec10f5d0fcaa4ce134bda6e91273ff4d03e024a9c9a90020c10b7818f0ae985"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -6531,7 +8341,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 363
+    "id": 363,
+    "display_num": 28,
+    "source_id": "ai-a8a3a412bb87c904",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-34eec5337e01bb2f6231a98a",
+    "content_hash": "b30fdeaa2b55ed305debfbd24b88020370c02e325f72fe5d053ba3090e54e6de"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -6549,7 +8364,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 364
+    "id": 364,
+    "display_num": 29,
+    "source_id": "ai-a8a3a412bb87c904",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-9e8de82bbfcf75ed9dd7ab1e",
+    "content_hash": "0d60cfa3b300cfef50f8f22cd9a009c0230e8acb30d2eabf897704f74f3486c9"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -6567,7 +8387,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 365
+    "id": 365,
+    "display_num": 30,
+    "source_id": "ai-a8a3a412bb87c904",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-1be7a4da7dada3692dcce776",
+    "content_hash": "dac8036192dcec48c859b82e7dc31b2ac449805a7430ad451d0efd752d135947"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -6585,7 +8410,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 366
+    "id": 366,
+    "display_num": 31,
+    "source_id": "ai-a8a3a412bb87c904",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-188eefb0c60a5dcfd4cef590",
+    "content_hash": "2496502be6299064371e6785f1a00e76b6892364e29c6a302c2098319af65859"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -6603,7 +8433,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 367
+    "id": 367,
+    "display_num": 32,
+    "source_id": "ai-a8a3a412bb87c904",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-2d753f01b3f9939d655142e8",
+    "content_hash": "1411dce0941383a59c2bd4fd1dc7c83710947121a65a1b702f2ef21c724da504"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -6621,7 +8456,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 368
+    "id": 368,
+    "display_num": 33,
+    "source_id": "ai-a8a3a412bb87c904",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-9bc7b83e34ee4c2a9a3205cc",
+    "content_hash": "f627874c5e46a1f1db6b3c3138407b820fa5886e689860e86e1849dd5aef1865"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -6639,7 +8479,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 369
+    "id": 369,
+    "display_num": 34,
+    "source_id": "ai-a8a3a412bb87c904",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-59b314d9a1c280fe59acf60a",
+    "content_hash": "65c5eaa8f180f531452dfede8df5ef37751018754c75029b34c9e8919760ea7e"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -6657,7 +8502,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為官方公佈之能力鑑定考試樣題。",
-    "id": 370
+    "id": 370,
+    "display_num": 35,
+    "source_id": "ai-a8a3a412bb87c904",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-81b7dd2b0321712ad29f6aa3",
+    "content_hash": "95638371ea33dfd6686e9435b77591473c01eae8c7e088fc491eada2b1b89406"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -6675,7 +8525,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "任務目標為預測「離散標籤」（如：高/低風險），屬於監督式學習中的分類。若預測具體金額則為迴歸。",
-    "id": 371
+    "id": 371,
+    "display_num": 1,
+    "source_id": "ai-cbc81b619e922d4a",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-4ea6f32b39136ae348b2e700",
+    "content_hash": "642750aa98f736a22d881540e97243ecaf4c1c34f005f6bad849d491c5750105"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -6693,7 +8548,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "達特茅斯會議是人工智慧發展的開端，確立了AI 作為一個獨立科學研究領域的地位。",
-    "id": 372
+    "id": 372,
+    "display_num": 2,
+    "source_id": "ai-cbc81b619e922d4a",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-af960c985407ebe1d71878f6",
+    "content_hash": "013993acf26abf4e30da05228438c706643202239151b0906d2ab8270c1e80ab"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -6711,7 +8571,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "Velocity 指的是數據生成的即時性與處理效能，例如金融交易的即時偵測或串流影音的處理。",
-    "id": 373
+    "id": 373,
+    "display_num": 3,
+    "source_id": "ai-cbc81b619e922d4a",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-62c07c6c3af46f3bc1eb18ef",
+    "content_hash": "234bb298600b8d8e47d7202e1e133417aeb0ee299ec128dc73ac69bf6c0a1677"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -6729,7 +8594,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "非監督式學習是在沒有標記（標籤）的情況下，由演算法自行發掘資料內部的結構或相似性。",
-    "id": 374
+    "id": 374,
+    "display_num": 4,
+    "source_id": "ai-cbc81b619e922d4a",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-e4e34a47348b5d906d2e2f03",
+    "content_hash": "da9ba87ef27fc4dd9c7bf2e1f63ef09d1a1ebfbcf420624cd44a31111c14731e"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -6747,7 +8617,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "生成式AI 的突破點在於「創造力」，它能產生原本不存在的圖像、程式碼或文本，而不僅僅是處理現有的數據。",
-    "id": 375
+    "id": 375,
+    "display_num": 5,
+    "source_id": "ai-cbc81b619e922d4a",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-6fbf863f181260cf52137679",
+    "content_hash": "f62b3201c1c4d2a3a8746636a1843858629c2478866aa8ef2ae8527032b395fb"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -6765,7 +8640,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "深度學習是機器學習的一個分支，專指使用深層類神經網路結構的方法，其範疇包含在機器學習之中。",
-    "id": 376
+    "id": 376,
+    "display_num": 6,
+    "source_id": "ai-cbc81b619e922d4a",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-9e16fdfa77cee7e17716176b",
+    "content_hash": "d1a53fed98e2af166407d64fce5db8d94c55b77b217acbe5fe675f2e3fce97cf"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -6783,7 +8663,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "強AI 或稱通用AI (AGI) 具備人類般的認知與思考能力，能處理非預設的任務。目前已實現的技術多屬弱AI。",
-    "id": 377
+    "id": 377,
+    "display_num": 7,
+    "source_id": "ai-cbc81b619e922d4a",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-37f9599c14601bcf6103c100",
+    "content_hash": "5fc02dd1896a0f8df3279c75e1bc06e9375a34e6a078f8ff22e80afbe5089cf3"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -6801,7 +8686,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "資料漂移是指推論階段的資料分佈與訓練時不一致，這是MLOps階段必須持續監控的重點。",
-    "id": 378
+    "id": 378,
+    "display_num": 8,
+    "source_id": "ai-cbc81b619e922d4a",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-4699bf801a0eb3b747b74172",
+    "content_hash": "46c47348a6d348b2db2ded834edd9ac5264354ab6d28694c8922c5df460955ba"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -6819,7 +8709,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "為了確保AI 決策的透明度與公正性，開發者必須確保模型的邏輯是可以被人類理解與審核的，而非黑盒系統。",
-    "id": 379
+    "id": 379,
+    "display_num": 9,
+    "source_id": "ai-cbc81b619e922d4a",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-3b3528466b488815ea689999",
+    "content_hash": "dcaf089e63bbdbb1db1293eb89d7b3eadcd435bd076913695453c5b3fdc8ddea"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -6837,7 +8732,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "部署(Deployment) 是將模型從開發環境轉移到實際應用場景，而推論(Inference) 則是模型實際進行運算並給出結果的過程。",
-    "id": 380
+    "id": 380,
+    "display_num": 10,
+    "source_id": "ai-cbc81b619e922d4a",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-8ab7cea37137786a27a214ca",
+    "content_hash": "efcdb9d2f81f104b1c49699300933309c66956763d57fe7f5c3f0e872b6bf8cf"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -6855,7 +8755,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "當AI 模型因資料分佈不均而對特定族群產生歧視或偏差待遇時，即違反了公平性原則。",
-    "id": 381
+    "id": 381,
+    "display_num": 1,
+    "source_id": "ai-840889cb789832ce",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-aeb30bd7d1202eef954781ae",
+    "content_hash": "a13ed40609f1dad45a98cc2ec02d83ffcdcb89243045e18b699bce869b58f4e7"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -6873,7 +8778,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "可解釋性(Explainability) 旨在打破黑箱，讓人類理解AI 判斷的依據，對於責任歸屬與錯誤修正至關重要。",
-    "id": 382
+    "id": 382,
+    "display_num": 2,
+    "source_id": "ai-840889cb789832ce",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-23f18929880279c178cb07c6",
+    "content_hash": "04c095c2900d9cc87690f380737138dd52696c817c21914c7574d55e49dd2d97"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -6891,7 +8801,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "風險分級管理是為了平衡技術創新與社會安全，將資源集中監控對人身安全、隱私或社會正義有重大影響的高風險應用。",
-    "id": 383
+    "id": 383,
+    "display_num": 3,
+    "source_id": "ai-840889cb789832ce",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-bf324703605a93d8fa3a2d2c",
+    "content_hash": "dac612aaaf5dd9ba1c5b1178b97817f1039f0515cc59178e1d85a2b890d8e96e"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -6909,7 +8824,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "去識別化(De-identification) 是隱私保護的基本手段，透過處理敏感資訊來降低個資外洩或被回溯追蹤的風險。",
-    "id": 384
+    "id": 384,
+    "display_num": 4,
+    "source_id": "ai-840889cb789832ce",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-78fa4e28e0a73b0139432d73",
+    "content_hash": "b66e558c45b9a8af9199bb070bb5a3ea5a4ed2080070e2de4fdff317729498b7"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -6927,7 +8847,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "HITL 強調人類在AI 決策鏈中的參與，確保模型在處理複雜或具倫理疑慮的任務時，能由人類進行最終把關。",
-    "id": 385
+    "id": 385,
+    "display_num": 5,
+    "source_id": "ai-840889cb789832ce",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-724d2ca7d7ff1f9876595cdc",
+    "content_hash": "20b891e76efea990dd6d02e463b220a6803a0e55321bafdae10e433131c5fe12"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -6945,7 +8870,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "問責性是指開發或使用AI 的組織，必須對系統的運作結果負起法律與倫理上的責任。",
-    "id": 386
+    "id": 386,
+    "display_num": 6,
+    "source_id": "ai-840889cb789832ce",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-2320cbbcf2f96d5ee42c57c9",
+    "content_hash": "a7c1ba119b7b3bc7cef82b0ff35cb4dd69d3bad56e5bebcddd466e573a5817d7"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -6963,7 +8893,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "向使用者明確揭露內容是由AI 生成，是治理中的誠信原則，旨在避免使用者因誤認而產生判斷偏差。",
-    "id": 387
+    "id": 387,
+    "display_num": 7,
+    "source_id": "ai-840889cb789832ce",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-13c2a5d913873668373bf2f2",
+    "content_hash": "aad5e667770caa5ea78918046052490315fd089eaa127d347fdfa06957be0800"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -6981,7 +8916,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "增加資料量不保證消除偏見；若資料本身不具代表性或內含偏差，資料越多反而可能強化偏見。",
-    "id": 388
+    "id": 388,
+    "display_num": 8,
+    "source_id": "ai-840889cb789832ce",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-2304c48263642a0bd8174407",
+    "content_hash": "e70033cd3c3304568af87673c5353e7d5d941a51bad4466f5ad3028543dd1ca4"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -6999,7 +8939,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "諸如聯邦學習、同態加密等技術皆屬於隱私增強技術(Privacy-Enhancing Technologies)，是2026 年AI 合規的關鍵。",
-    "id": 389
+    "id": 389,
+    "display_num": 9,
+    "source_id": "ai-840889cb789832ce",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-168d53ad3291d772cc80c575",
+    "content_hash": "10dcfbeedac595c138c70af9bf34f0cf180c9e6b523593e9d076715b0ff17212"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7017,7 +8962,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "生物特徵（如人臉、指紋）屬於敏感個資，開發此類高風險AI 必須優先考量法規合規性與基本人權保障。",
-    "id": 390
+    "id": 390,
+    "display_num": 10,
+    "source_id": "ai-840889cb789832ce",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-55834a6b9956f26a3bc20d1b",
+    "content_hash": "77a2584c87db27f81b6c2608505971d2b6a0542bba59c05d679fdee1529aeb26"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7035,7 +8985,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "凡是由企業內部營運系統（如ERP、CRM、POS）所產生的資料，皆屬於企業的內部資料來源，通常具備較高的商業機密性。",
-    "id": 391
+    "id": 391,
+    "display_num": 1,
+    "source_id": "ai-cbafb32a5acc9d3e",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-9d1fcf1b78b2c2ea66b9cbc5",
+    "content_hash": "f186cbcda4c8a7ae90f85305562094da82995a8e409152b709d52cb5977f5df5"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7053,7 +9008,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "半結構化資料（如JSON、XML）雖無固定Schema，但透過Key-Value 對應，能讓機器具備自我描述的解析能力，彈性高於結構化資料。",
-    "id": 392
+    "id": 392,
+    "display_num": 2,
+    "source_id": "ai-cbafb32a5acc9d3e",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-866887e36d4398a9397a27eb",
+    "content_hash": "66989fd7a21a61b1c7832d0b869a466b8e80fe7d7d78f58f442bed9db893aadf"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7071,7 +9031,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "速度指的是數據產生的頻率以及處理的高效能需求，特別是在物聯網與即時決策系統中至關重要。",
-    "id": 393
+    "id": 393,
+    "display_num": 3,
+    "source_id": "ai-cbafb32a5acc9d3e",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-14565d3dae9ffc1a71c3a930",
+    "content_hash": "42bea6db1233c270beb8545ce01d8313dd043f93e3b2862620fc5e027f463dd0"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7089,7 +9054,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "一致性是指相同意義的資料在不同來源或系統中，應保持相同的表示方式，這是進行資料整合前必須解決的問題。",
-    "id": 394
+    "id": 394,
+    "display_num": 4,
+    "source_id": "ai-cbafb32a5acc9d3e",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-e7c42d06650fb3654bc3b9d0",
+    "content_hash": "0ac09aa41ecea8215e62ed4fa2155a3d65e4006647328a6217d06391e9f01754"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7107,7 +9077,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "ELT 允許先將原始資料存入資料湖，待AI 模型有特定特徵需求時，再利用強大雲端算力進行轉換，提升了資料處理的靈活性。",
-    "id": 395
+    "id": 395,
+    "display_num": 5,
+    "source_id": "ai-cbafb32a5acc9d3e",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-489595bb9c6e3530c36fb75a",
+    "content_hash": "839c6a3bc176a98675b79ecca0c3d23fbc5aabf14c45114191d8b065d9e1d288"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7125,7 +9100,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "合成資料常用於解決資料稀缺、類別不平衡或隱私保護問題，是2026 年企業導入AI 解決「資料飢渴」的重要手段。",
-    "id": 396
+    "id": 396,
+    "display_num": 6,
+    "source_id": "ai-cbafb32a5acc9d3e",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-8ef9372b6d81dfd3c46bd6aa",
+    "content_hash": "2072032322981f1de6473e9c028366439706421670563466c22a5e9335275047"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7143,7 +9123,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "資料血緣（或稱資料溯源）能記錄資料的來龍去脈，對於發現數據污染源頭、確保模型決策公正性具有關鍵作用。",
-    "id": 397
+    "id": 397,
+    "display_num": 7,
+    "source_id": "ai-cbafb32a5acc9d3e",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-98518ec74d58fa4d2babc50c",
+    "content_hash": "46dfd30f3caea4975ef4aa1c329b78ea1d33b60cbbea0af374a90d0dd6e1a554"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7161,7 +9146,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "向量嵌入是將高維度的非結構化資訊（如圖片、文字）轉化為數學向量的過程，是現今檢索增強生成(RAG) 的技術基石。",
-    "id": 398
+    "id": 398,
+    "display_num": 8,
+    "source_id": "ai-cbafb32a5acc9d3e",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-4695b4cb7f2b80c3e80fcf27",
+    "content_hash": "e2f901708407906528d19f396a6c1738741ec32fbccfcf2718018b98dfbd394d"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7179,7 +9169,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "及時性（或稱時效性）是資料品質的重要維度。延遲的資料可能導致預測模型對市場當前狀況產生誤判。",
-    "id": 399
+    "id": 399,
+    "display_num": 9,
+    "source_id": "ai-cbafb32a5acc9d3e",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-f7888fb6ac5ace506ed715b1",
+    "content_hash": "d2af8655dd0ba8d0ac898308a3c92e92cae702a1d244ca0c8067cedf9ecdb6c5"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7197,7 +9192,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "在多來源資料整合中，確保資料的一致性與元數據定義是AI 專案成功的基礎。若時間基準不統一，模型將無法建立正確的因果關係。",
-    "id": 400
+    "id": 400,
+    "display_num": 10,
+    "source_id": "ai-cbafb32a5acc9d3e",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-c2bfb4535127664bdfcc8cfb",
+    "content_hash": "e7dd7d9cd1d1a47dbe77f94b576dea21b7adad223b41c2110339d1da91f52f47"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7215,7 +9215,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "EDA 是資料分析階段的重要前置作業，旨在發現資料中的模式與異常，為後續的特徵選擇與模型建立提供科學依據。",
-    "id": 401
+    "id": 401,
+    "display_num": 1,
+    "source_id": "ai-7a74c469fa513fb4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-d306fc08a6c2ba00f5dcb8a6",
+    "content_hash": "37bd4af5560f52ac187135b66a386bb2d3ebb18cfc0bb4989ad4cc135b05ff09"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7233,7 +9238,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "處理遺漏值時，若特徵重要性高，應採取填補策略（如眾數、中位數或模型預測填補），而非隨意刪除，以保留最多的資訊量。",
-    "id": 402
+    "id": 402,
+    "display_num": 2,
+    "source_id": "ai-7a74c469fa513fb4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-d9ada06350c497e2b4be95fc",
+    "content_hash": "4b970070e978047a40cf163181f1b048d9417b577b8fcc80545f5263860b634d"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7251,7 +9261,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "正規化（或標準化）是特徵轉換的關鍵步驟，能將各特徵縮放至統一區間，加速模型收斂並提升不同特徵間的可比性。",
-    "id": 403
+    "id": 403,
+    "display_num": 3,
+    "source_id": "ai-7a74c469fa513fb4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-dfbc8c05c6ae4e69121a5141",
+    "content_hash": "755cbaae07e246ac7a9c7c54c09b1385f2074fbdb55cfa74e131e88d2973e524"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7269,7 +9284,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "獨熱編碼能將無順序關係的類別轉化為獨立的二進位向量（0 或1），避免模型誤將類別名稱解釋為具有大小關係的數值。",
-    "id": 404
+    "id": 404,
+    "display_num": 4,
+    "source_id": "ai-7a74c469fa513fb4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-079747ae375cc680d39fa9a5",
+    "content_hash": "66955afc116591811c43859b999d0f848f45278eeb2aea98f61599c9e77f45a0"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7287,7 +9307,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "特徵工程是資料前處理的核心，透過對原始數據的加工、萃取與轉換，提取出對目標變數更有預測價值的特徵。",
-    "id": 405
+    "id": 405,
+    "display_num": 5,
+    "source_id": "ai-7a74c469fa513fb4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-5abdf962e2762c17fe53e2d8",
+    "content_hash": "2278d465bd6c6bc92a164904fad6d65ab9666c62169ea43a445f46acaa4557f9"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7305,7 +9330,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "資料解釋階段強調結果的可視化與說明，旨在讓使用者（如醫師）理解AI 的決策邏輯，增加系統的可信度。",
-    "id": 406
+    "id": 406,
+    "display_num": 6,
+    "source_id": "ai-7a74c469fa513fb4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-8c5b332b5e4e3f05f4338584",
+    "content_hash": "5a983fac3f03c7168178ba3fb49a21a858a5df35cb89ab769124ad274eb51290"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7323,7 +9353,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "當真實資料稀缺或分佈極度不均時，利用演算法生成的合成資料能有效擴充訓練集，解決資料不平衡對模型效能的負面影響。",
-    "id": 407
+    "id": 407,
+    "display_num": 7,
+    "source_id": "ai-7a74c469fa513fb4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-26dd2945b874d56ab28ac16c",
+    "content_hash": "295aa9fc672b1043e4779b0b13ab9d776513d2cba19ee2ca21fa42e3b72d46cd"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7341,7 +9376,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "在企業導入AI 策略中，投資費用包含開發工時、資料準備與業務流程審查工時，是評估專案成敗的重要财务指標。",
-    "id": 408
+    "id": 408,
+    "display_num": 8,
+    "source_id": "ai-7a74c469fa513fb4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-78b93c4abed684f841aa9b41",
+    "content_hash": "54005b3635e18e15f9a09700ed992eae06b7eb66f81b7d1f407c81006679b3e2"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7359,7 +9399,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "元數據（關於資料的資料）定義了數據的來源、定義、更新頻率與計量單位，是異質資料整合與維持資料一致性的核心。",
-    "id": 409
+    "id": 409,
+    "display_num": 9,
+    "source_id": "ai-7a74c469fa513fb4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-16b461f411ddf41e1b37e199",
+    "content_hash": "a17cb5761d29378b631fc3a316c2011a15b0c076af62c9ae0d3c64ccf7dea54a"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7377,7 +9422,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "決策應用階段包含「監控與回饋」。當發生資料漂移時，必須根據回饋結果重新訓練或優化模型，以維持AI 系統的持續價值。",
-    "id": 410
+    "id": 410,
+    "display_num": 10,
+    "source_id": "ai-7a74c469fa513fb4",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-64be883bbb45cbe980f6cdb0",
+    "content_hash": "4dfa228819fed313bf681c1f966e7ffff587be8051c341abc467483dbcd9107a"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7395,7 +9445,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "去識別化是保護隱私的第一道防線，透過遮蔽、置換或刪除可直接辨識個人身分的欄位，使資料無法直接連結至特定個人。",
-    "id": 411
+    "id": 411,
+    "display_num": 1,
+    "source_id": "ai-3afa4694f0e7f13a",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-e5e0ce3af1d2d632cb1c2283",
+    "content_hash": "6da8779ce08d3df2ce4f70b4611b7eb2c0ee934477a989c33acd92323c0bdab3"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7413,7 +9468,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "差分隱私透過在數據集或查詢結果中加入數學噪音，提供強大的隱私保障，防止攻擊者透過交叉比對推測出特定個體的資訊。",
-    "id": 412
+    "id": 412,
+    "display_num": 2,
+    "source_id": "ai-3afa4694f0e7f13a",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-1309a2ee8a853a5804d207be",
+    "content_hash": "7a18e5d4cfe9691f1a62cfa0b8b8e2c78f1d1c549ba578088286a6fd0beb2721"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7431,7 +9491,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "知情同意要求企業必須透明化說明資料的用途與範圍，並讓使用者在充分了解資訊的前提下，自主決定是否授權。",
-    "id": 413
+    "id": 413,
+    "display_num": 3,
+    "source_id": "ai-3afa4694f0e7f13a",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-dd50ccd88f18bf87ec0a206e",
+    "content_hash": "2fe08ab603fd92c0bee934309d7064d6f8402227b0297ebf17ebeb2b19542382"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7449,7 +9514,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "聯邦學習允許各機構在本地訓練模型，僅交換模型參數而非原始數據，是目前解決「資料孤島」與隱私限制的主流技術。",
-    "id": 414
+    "id": 414,
+    "display_num": 4,
+    "source_id": "ai-3afa4694f0e7f13a",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-c0f877ac4c94a28365dddb85",
+    "content_hash": "be89dda81ef9097034cbfaa3680e6273e3f946e3a3a1982200568f28f3eee90f"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7467,7 +9537,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "同態加密是一種特殊的加密形式，允許在加密狀態下進行代數運算，結果解密後與對原始資料運算的結果一致，極具安全性。",
-    "id": 415
+    "id": 415,
+    "display_num": 5,
+    "source_id": "ai-3afa4694f0e7f13a",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-4615f43c25541e7d85cb64d0",
+    "content_hash": "f6b530180363bbeb4a1194137d5becb4056e49bd446d94ae44bcbac812be6efa"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7485,7 +9560,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "在設計階段應導入「隱私設計(Privacy by Design)」，評估數據敏感度並給予對應的技術保護措施（如聯邦學習或差分隱私），以降低法遵風險。",
-    "id": 416
+    "id": 416,
+    "display_num": 6,
+    "source_id": "ai-3afa4694f0e7f13a",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-374245e13b2fb2669139793d",
+    "content_hash": "bf270c3d8ade6579ec3cab7abf00d61ccd3066f7fe32893175d7fb6473ab674f"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7503,7 +9583,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "投資費用包含開發工時、資料準備與「合規審查工時」。在嚴謹的AI 專案中，確保法遵與安全所需的工時是必要投資。",
-    "id": 417
+    "id": 417,
+    "display_num": 7,
+    "source_id": "ai-3afa4694f0e7f13a",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-640c1e67a2b68fe2f07371e5",
+    "content_hash": "014c0896c8556fc789c2bb18b1124092923b28837f23b7c9424180ef73bfd00f"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7521,7 +9606,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "Guardrails 具備檢查AI 輸入與輸出的功能，能過濾敏感內容與有害資訊，是防止LLM 或生成式AI 意外洩露隱私的重要關卡。",
-    "id": 418
+    "id": 418,
+    "display_num": 8,
+    "source_id": "ai-3afa4694f0e7f13a",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-009cf82b2266f88d5392a85b",
+    "content_hash": "a262156da004223de9c3416eafa8a146127e5b057aa07a2735037b2bb2e4ab3a"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7539,7 +9629,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "資料血緣確保資料從收集到應用過程皆可稽核，配合權限控管能有效防止未授權存取，並在發生資安事故時快速追溯源頭。",
-    "id": 419
+    "id": 419,
+    "display_num": 9,
+    "source_id": "ai-3afa4694f0e7f13a",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-97cd73dd37342569ccd908fd",
+    "content_hash": "a4604f5a53398613ee06e4735b60c0b1edea2bd16e6c05c47567fae879d00125"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7557,7 +9652,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "這屬於模型逆向攻擊(Model Inversion Attack) 的防範措施。透過在模型輸出或訓練過程中加入隱私保護技術（如差分隱私），可防止敏感數據被間接推論。",
-    "id": 420
+    "id": 420,
+    "display_num": 10,
+    "source_id": "ai-3afa4694f0e7f13a",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-bb46ef299e632a4ca1eb1dc6",
+    "content_hash": "f82b6fdb456437aa50aeaeaf5d1af8924d79f2ba2c4e31535ce6ff929ffb0877"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7575,7 +9675,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "銷量值為連續數值，預測連續數值屬於「迴歸任務」，線性迴歸是典型的基礎演算法 。",
-    "id": 421
+    "id": 421,
+    "display_num": 1,
+    "source_id": "ai-3179fd6c8d8aae01",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-8580abd06a4efac462d9af87",
+    "content_hash": "9dfa1a9f450c5406eb99ea9b17ccb8db0b9ee914f44fde62d616ff83c6a7bdbe"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7593,7 +9698,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "K-Means 中的K 代表使用者希望將資料自動分成幾個具相似特徵的群組 。",
-    "id": 422
+    "id": 422,
+    "display_num": 2,
+    "source_id": "ai-3179fd6c8d8aae01",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-b97c2ed577954a98c3d1e7ae",
+    "content_hash": "df79387bfe75909c49e7c2313853a9f264de11630a6cfd9b79674bc9ad1c6359"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7611,7 +9721,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "強化學習核心在於代理人透過與環境互動、獲取獎勵（Reward）來學習最佳策略 。",
-    "id": 423
+    "id": 423,
+    "display_num": 3,
+    "source_id": "ai-3179fd6c8d8aae01",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-9acc523697dd9140fe52fa89",
+    "content_hash": "600886d928925c3474df34f18a60c5011df84add8aebb51adc17a2aaa250c467"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7629,7 +9744,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "過擬合（Overfitting）可透過正則化（如L1/L2）來懲罰複雜模型，提升泛化能力 。",
-    "id": 424
+    "id": 424,
+    "display_num": 4,
+    "source_id": "ai-3179fd6c8d8aae01",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-903a59c8703f3fbbd86541eb",
+    "content_hash": "25de47a0bdd12364cc8031513dc90f3e768171f60eb339db3c11dcb94bcadace"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7647,7 +9767,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "LASSO 透過絕對值懲罰項，能產生稀疏解（Sparse Model），具有自動進行「特徵選擇」的效果 。",
-    "id": 425
+    "id": 425,
+    "display_num": 5,
+    "source_id": "ai-3179fd6c8d8aae01",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-0cea2fd3cf96d479c07b8571",
+    "content_hash": "4214cbed46626d7e03ee3041cd379b430c1be7996d1fd5ae9aef1a65e0471fb0"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7665,7 +9790,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "GAN 由生成器（Generator）產生擬真數據，鑑別器（Discriminator）區分真偽，兩者共同進化 。",
-    "id": 426
+    "id": 426,
+    "display_num": 6,
+    "source_id": "ai-3179fd6c8d8aae01",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-f99e4ee7d5cd688cec1336f7",
+    "content_hash": "c39cf949051cc18465b6cf882d233877f105844155e8e33aba09a2aa3b2f76a2"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7683,7 +9813,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "當輸入特徵的統計分佈隨時間改變，導致模型表現衰退，即為典型的資料漂移 。",
-    "id": 427
+    "id": 427,
+    "display_num": 7,
+    "source_id": "ai-3179fd6c8d8aae01",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-881f49213442cb3bbfbbc3f9",
+    "content_hash": "b24eeb538b077903b2a3868a362e245fee3dacdb97460951637988b8d4eb6e9b"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7701,7 +9836,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "同態加密（Homomorphic Encryption）允許直接在加密數據上進行數值運算 。",
-    "id": 428
+    "id": 428,
+    "display_num": 8,
+    "source_id": "ai-3179fd6c8d8aae01",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-17e118048f7fec9bf5797fc6",
+    "content_hash": "7b2ccb0987977c80eeaf65905f739955de7a1a4c4b7f98c8adc4f827b0235673"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7719,7 +9859,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "在不平衡資料中，準確率容易失真，F1 分數能綜合考量精確率與召回率 。",
-    "id": 429
+    "id": 429,
+    "display_num": 9,
+    "source_id": "ai-3179fd6c8d8aae01",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-6502f700c2015a1bacbee15c",
+    "content_hash": "cabe63760dc46bf717541a86ee50a32e840fbf7c148eb30887bf8974116b4dde"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7737,7 +9882,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "創新實驗環境即參考歐盟「Regulatory Sandbox」制度，提供受控的實驗空間 。",
-    "id": 430
+    "id": 430,
+    "display_num": 10,
+    "source_id": "ai-3179fd6c8d8aae01",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-c5849d20f4365f9aea6634dc",
+    "content_hash": "ffb7e70626e8b1d2f4a256bfb4e140249a03e27717be07a2320ea8825f9e1b3f"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7755,7 +9905,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "邏輯迴歸透過Sigmoid 函數將輸出映射至0 到1 之間，代表機率，是經典的分類演算法。",
-    "id": 431
+    "id": 431,
+    "display_num": 1,
+    "source_id": "ai-6c45be89f925d0aa",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-680a27c854a5aa8fc3352dfd",
+    "content_hash": "793fee8a52b076665eec799c10315092a949d272ad8a2d165c8bda668fa19ab1"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7773,7 +9928,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "SVM 透過核函數（如RBF、Linear）將低維非線性問題轉化為高維線性問題。",
-    "id": 432
+    "id": 432,
+    "display_num": 2,
+    "source_id": "ai-6c45be89f925d0aa",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-acf899078aa2568919931c57",
+    "content_hash": "d136ec7876373b7c70f5476cabe017d8dd312ca630f5e4d1e07ee0e2b6312f89"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7791,7 +9951,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "隨機森林是整合學習（Ensemble Learning）的一種，由多棵決策樹透過投票機制決定結果。",
-    "id": 433
+    "id": 433,
+    "display_num": 3,
+    "source_id": "ai-6c45be89f925d0aa",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-8541bfd665359e0b59b6d906",
+    "content_hash": "24c6e7da07249905257deee3b30b60dc7377ee5dca1a2eacb8e4479e2d87b08a"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7809,7 +9974,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "K-Means 是典型的非監督式學習（聚類），適合在無標籤情況下尋找資料內在結構。",
-    "id": 434
+    "id": 434,
+    "display_num": 4,
+    "source_id": "ai-6c45be89f925d0aa",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-6feaab87ff3c6fe4a9f1bbac",
+    "content_hash": "466037042355769a44553607cd85b943c6715d66eb348bd1dca05f537c18e709"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7827,7 +9997,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "單純貝氏假設各特徵對分類結果的影響是「相互獨立」的，雖與現實有落差但計算極快。",
-    "id": 435
+    "id": 435,
+    "display_num": 5,
+    "source_id": "ai-6c45be89f925d0aa",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-d986a952552d2d441dd5c7a3",
+    "content_hash": "e036752b9c96920566674349f858e96f2a295f7c513cfc6c5ff45cef0a1db755"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7845,7 +10020,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "XGBoost（極端梯度提升）是Boosting 的代表作，透過連續修正前一棵樹的殘差來提升準確度。",
-    "id": 436
+    "id": 436,
+    "display_num": 6,
+    "source_id": "ai-6c45be89f925d0aa",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-78db2be72822649380352ae2",
+    "content_hash": "da8398999e05072a9a02e5fe50e3bc64c7c1f7a998dcf6c5d21b66e83368f98c"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7863,7 +10043,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "PCA 是最常用的線性降維技術，透過尋找資料變異量最大的方向來壓縮維度。",
-    "id": 437
+    "id": 437,
+    "display_num": 7,
+    "source_id": "ai-6c45be89f925d0aa",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-78c88fbf2517f61893662fc5",
+    "content_hash": "023bd9a47e55cb23163db7076ad9eb3d179d80aee09fc1e86317b84cf69cff38"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7881,7 +10066,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "GAN（生成對抗網路）的核心原理即為兩個網路的零和賽局。",
-    "id": 438
+    "id": 438,
+    "display_num": 8,
+    "source_id": "ai-6c45be89f925d0aa",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-512f58a91ed41cf7bf6110b9",
+    "content_hash": "6c1592ac090ff0769089971618e516131ec833a295543d3cb431bf4c2d503a70"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7899,7 +10089,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "強化學習強調代理人（Agent）與環境互動，透過獎勵機制優化決策路徑。",
-    "id": 439
+    "id": 439,
+    "display_num": 9,
+    "source_id": "ai-6c45be89f925d0aa",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-84a5b3cb0e3ac4c2ff39e53b",
+    "content_hash": "dd7753405c047095503ca8d478bbdff36c2b50925eca7dcb9af82c3aa5ec9a28"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7917,7 +10112,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "RAG透過檢索機制（如向量搜尋）獲取私有文檔，再交給LLM 生成答案，是企業AI 落地的核心",
-    "id": 440
+    "id": 440,
+    "display_num": 10,
+    "source_id": "ai-6c45be89f925d0aa",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-43b8d6b9e665baee68e56b56",
+    "content_hash": "a4d6b6661609e3ba424ac2d11481cc359782af210854fca50a52d4e82e7a0969"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7935,7 +10135,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "鑑別式模型（如SVM、邏輯迴歸）的核心是學習決策邊界（Decision Boundary），目標是條件機率P(y ｜x) ，即在給定輸入x的情況下，判斷其屬於類別y的機率。",
-    "id": 441
+    "id": 441,
+    "display_num": 1,
+    "source_id": "ai-50b4510c1befb07e",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-297b2df959348b60c72dd641",
+    "content_hash": "d09fcd87f1db7db09e81bcab672eb170e4fd101b66e10a0347862b501c410981"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7953,7 +10158,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "「判斷」或「分類」既存資料的標籤，是鑑別式AI 的典型應用。",
-    "id": 442
+    "id": 442,
+    "display_num": 2,
+    "source_id": "ai-50b4510c1befb07e",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-20a099aa327884505b3a1675",
+    "content_hash": "8758ac126d8038e5c06f97d1d18818bbd4fef860bdff702fced5f4b562f136c6"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7971,7 +10181,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "生成式模型的目標是模擬資料的聯合機率分佈P(x)或P(x, y)，從而從分佈中採樣產出新資料。",
-    "id": 443
+    "id": 443,
+    "display_num": 3,
+    "source_id": "ai-50b4510c1befb07e",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-a553298afd8eb28c2c1d1a1f",
+    "content_hash": "73aec6bc692ad9d2377e08994927bd5a1401ab69db3f4f3a20e6c6216df5c40b"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -7989,7 +10204,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "GAN 結合了生成式（產生資料）與鑑別式（判斷真偽）兩者，在對抗中優化模型。",
-    "id": 444
+    "id": 444,
+    "display_num": 4,
+    "source_id": "ai-50b4510c1befb07e",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-cb545a0465972566a6a2b84f",
+    "content_hash": "85977c8a1c5909841909c26ef4c4d8ade8b8d66e3513b4127613129795f651ec"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -8007,7 +10227,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "生成式AI（如LLM）基於機率預測下一個字，其目標是生成的內容「看起來合理」而非「事實絕對正確」。這種產出虛假或不存在資訊的現象即為幻覺，是生成式模型在專業領域應用時最需警惕的風險。",
-    "id": 445
+    "id": 445,
+    "display_num": 5,
+    "source_id": "ai-50b4510c1befb07e",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-c25bd4d8634c1a3be6496c08",
+    "content_hash": "86698fad91d85eed5245c671d9031aa987b792300b6c35d4a63ba01661bb5830"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -8025,7 +10250,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "醫療「診斷」與「篩檢」本質上是分類任務，屬於鑑別式AI。",
-    "id": 446
+    "id": 446,
+    "display_num": 6,
+    "source_id": "ai-50b4510c1befb07e",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-7225e2759e7fa5a874b64589",
+    "content_hash": "25fe37e616c478522ca57554c86bdf2531eee7788297c8a445d77d5a7e488771"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -8043,7 +10273,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "Transformer 是現代大語言模型（如GPT、Claude）的核心，其注意力機制使其能有效處理長文本。",
-    "id": 447
+    "id": 447,
+    "display_num": 7,
+    "source_id": "ai-50b4510c1befb07e",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-86afa382448754023f91994b",
+    "content_hash": "27a120bb968a945ced59c065c77b5794d35f9e1860aee1179666980cbd7e0444"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -8061,7 +10296,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "撰寫文章屬於從無到有的「創造」過程，是生成式AI 的核心商務應用。",
-    "id": 448
+    "id": 448,
+    "display_num": 8,
+    "source_id": "ai-50b4510c1befb07e",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-850d486475d6814dfbbf2937",
+    "content_hash": "9b80dcef19cc4afc2a8780a6013d8f762835d22d5af5f37d0e2b14a3717fd8cb"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -8079,7 +10319,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "生成式AI 基於機率採樣，同樣的輸入（Prompt）在不同溫度參數（Temperature）下可產生多樣結果。",
-    "id": 449
+    "id": 449,
+    "display_num": 9,
+    "source_id": "ai-50b4510c1befb07e",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-6da7c2c17c9e021f0d6d6250",
+    "content_hash": "4c5b5af73dd69a692851d8e04aa769a4388f6429892cb69002235d6df8e07cab"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -8097,7 +10342,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "為了防止誤導與造假，標記或浮水印是2026 年法規與倫理強調的重點。",
-    "id": 450
+    "id": 450,
+    "display_num": 10,
+    "source_id": "ai-50b4510c1befb07e",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-74e3cae55500652c52446233",
+    "content_hash": "54b7f179f3a17a324fbf7f2fdc9b4280b79d05f0feb13a1c9c4b14b5ffb7a3ce"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -8115,7 +10365,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "透過生成式技術進行「數據擴增(Data Augmentation)」，可強化鑑別式模型在面對稀少樣本（如詐欺案例）時的精準度。",
-    "id": 451
+    "id": 451,
+    "display_num": 1,
+    "source_id": "ai-bf5437cfda78523f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-f7d2382220ca9262d200c125",
+    "content_hash": "1e0e9e86f296d864d05bbd713e07b0e344eeafc768c5fc2b4c89816156c27b17"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -8133,7 +10388,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "判斷情緒（分類）是鑑別式任務；產出草稿（創作內容）是生成式任務。",
-    "id": 452
+    "id": 452,
+    "display_num": 2,
+    "source_id": "ai-bf5437cfda78523f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-96feb018758f1ca652d7cb1d",
+    "content_hash": "17665b18868c266b7af458ebe88a302ab63698b19d3abeefc933227fba8d90be"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -8151,7 +10411,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "鑑別式AI 在此扮演「品質守門員」角色，對生成結果進行合規性檢查。",
-    "id": 453
+    "id": 453,
+    "display_num": 3,
+    "source_id": "ai-bf5437cfda78523f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-7c7a23ad64f6d36a61c120a8",
+    "content_hash": "fb3ec45284552e1257f9742ba241af9beb499eaf1e35a95d159d30ce08ee16a1"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -8169,7 +10434,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "檢索與排序本質上是計算相似度並進行選擇（鑑別），從大量資料中找出正確的子集。",
-    "id": 454
+    "id": 454,
+    "display_num": 4,
+    "source_id": "ai-bf5437cfda78523f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-eeb29b99e23a94b254748179",
+    "content_hash": "5db9d767337b3d4e0d5f1dc1bd6b631baded5875b33e401cc09888ebb8d8afd5"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -8187,7 +10457,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "整合應用雖能提升效率，但法規與倫理風險（如偏見、歧視）依然存在，且更具複雜性。",
-    "id": 455
+    "id": 455,
+    "display_num": 5,
+    "source_id": "ai-bf5437cfda78523f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-1f9f63345533adf592c62059",
+    "content_hash": "89c7207560b307f6ec1b6164c950cf932391f54e15be286a423d638501525ab3"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -8205,7 +10480,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "診斷病灶（是否有病）是分類判斷，屬於鑑別式AI 的範疇。",
-    "id": 456
+    "id": 456,
+    "display_num": 6,
+    "source_id": "ai-bf5437cfda78523f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-ce4d347bc222a8573f662b47",
+    "content_hash": "2fbb955c210d81fa636208516f353f4f14b0f0785ea6cce594baf6450b88b49b"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -8223,7 +10503,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "在GAN 等架構中，生成器與鑑別器透過對抗機制共同演化，提升生成的逼真度。",
-    "id": 457
+    "id": 457,
+    "display_num": 7,
+    "source_id": "ai-bf5437cfda78523f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-d1dae994a613b47bffd40e61",
+    "content_hash": "505bd3557c5b6da2bfb7ae4e73ee8a5a8c8966f4f43e0ffa5a89b0133b8b490f"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -8241,7 +10526,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "針對生成式AI 易產生的幻覺，透過鑑別邏輯進行事實查核是關鍵的後處理步驟。",
-    "id": 458
+    "id": 458,
+    "display_num": 8,
+    "source_id": "ai-bf5437cfda78523f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-386964b8c5fbee2fdda742c3",
+    "content_hash": "1f82de8cb5459b2ab8057c914b8410bc7fe9e4ce785ce0bd55a9dfe44c4db81a"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -8259,7 +10549,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "這是典型的整合路徑：生成式負責「拓寬可能性」，鑑別式負責「收斂至優選」。",
-    "id": 459
+    "id": 459,
+    "display_num": 9,
+    "source_id": "ai-bf5437cfda78523f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-6d8bafa7eca799961aa9b54c",
+    "content_hash": "41ee6086fc424cb4fcb99db6f934e470a88a1b34674249a40c263901f0746a9a"
   },
   {
     "subject": "L11 人工智慧基礎概論",
@@ -8277,7 +10572,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "透過檢索機制（鑑別邏輯）提供出處標註（Citation），是目前提升生成內容可信度與可解釋性（Explainability）的主流方法，能有效緩解幻覺問題。",
-    "id": 460
+    "id": 460,
+    "display_num": 10,
+    "source_id": "ai-bf5437cfda78523f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-ac695fd12d538faea6c68ff5",
+    "content_hash": "eacf2d5be01feb543bb0247a35632cecc8f492ddc6c2e68cb3405444519203f6"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -8295,7 +10595,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "模型是Low Code 的核心，透過圖形化介面定義邏輯與資料流，影響應用的設計與維護。",
-    "id": 461
+    "id": 461,
+    "display_num": 1,
+    "source_id": "ai-2aacdf243e042ff9",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-e2f5e580fe69fb266c4f748a",
+    "content_hash": "eb3c3edea1be650a28902c44ed1fc68cbef2dbb42326ed4dca37a21ac795fa04"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -8313,7 +10618,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "No Code 追求「零代碼」，適合無編程背景者；Low Code 則允許少量代碼（Low Code）以增加開發彈性。",
-    "id": 462
+    "id": 462,
+    "display_num": 2,
+    "source_id": "ai-2aacdf243e042ff9",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-5721747ae022cbffe717d2eb",
+    "content_hash": "d70090b11a29ba5f4f51dbba80e5518fc70050f1b6e64a6bde5f567fa87cb79d"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -8331,7 +10641,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "快速原型設計與縮短開發時程是Low Code 平台在企業數位轉型中最主要的優勢。",
-    "id": 463
+    "id": 463,
+    "display_num": 3,
+    "source_id": "ai-2aacdf243e042ff9",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-b475cd92b2f2a83b84680f88",
+    "content_hash": "a1315ce4eea53002bcfee236d471fca8c0f87c303b2a85eed945e305251d08ef"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -8349,7 +10664,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "視覺化介面與現成組件（Component-based）是No Code / Low Code 平台的基本特徵。",
-    "id": 464
+    "id": 464,
+    "display_num": 4,
+    "source_id": "ai-2aacdf243e042ff9",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-4a086a056ca5e8d99a9755d0",
+    "content_hash": "d50d0573695dddc9fa134de558b41dff3b072704eeb63d420d007672c8b675f7"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -8367,7 +10687,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "Low Code 的優勢在於其「可擴充性」，允許在必要時加入少量代碼來處理複雜邏輯。",
-    "id": 465
+    "id": 465,
+    "display_num": 5,
+    "source_id": "ai-2aacdf243e042ff9",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-50b6b2b4765891aa449eb205",
+    "content_hash": "d3bf00ae3a0e35b3fe0cb9516ca3d64a4f7dd1d08256595ac38434cac0dd423f"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -8385,7 +10710,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "公民開發者是指利用低代碼工具，在不具備深度編程技能下開發應用程式的業務端人員。",
-    "id": 466
+    "id": 466,
+    "display_num": 6,
+    "source_id": "ai-2aacdf243e042ff9",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-117ee1a8d22e5812461a7d63",
+    "content_hash": "d433e07d1ee496d62c7d2c2aaeffc9c524983b0547650c10f66734843f01880f"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -8403,7 +10733,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "由於開發速度快，Low Code 是製作原型與PoC 以驗證商務可行性的首選。",
-    "id": 467
+    "id": 467,
+    "display_num": 7,
+    "source_id": "ai-2aacdf243e042ff9",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-81dbd937a2ae8df0931f5f3b",
+    "content_hash": "6b29d5a8c40dd0d7f8608bb6bdad436556035d0e70a784f1d49495bf239ec5e0"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -8421,7 +10756,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "供應商鎖定是導入這類平台需評估的風險，涉及資料遷移與邏輯重寫的成本。",
-    "id": 468
+    "id": 468,
+    "display_num": 8,
+    "source_id": "ai-2aacdf243e042ff9",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-81a5a5f8413b78b0745ab420",
+    "content_hash": "22ca5644c5c5cb099c918081f3c925bc2b31ec86cc75e548385e4d3697ce3944"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -8439,7 +10779,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "Low Code 平台會自動處理底層技術細節（如記憶體管理），開發者不需手動操作。",
-    "id": 469
+    "id": 469,
+    "display_num": 9,
+    "source_id": "ai-2aacdf243e042ff9",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-a480685946dd764f87e740e4",
+    "content_hash": "a3cd86ec94d9e4513c887be94f8a0059331c0c64e71873566badda94bcaf5a3a"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -8457,7 +10802,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "IT 部門轉變為平台提供者與技術指導者，讓業務單位能安全地進行公民開發。",
-    "id": 470
+    "id": 470,
+    "display_num": 10,
+    "source_id": "ai-2aacdf243e042ff9",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-845095252110efecbb71f2df",
+    "content_hash": "12d5853d70c68596670d730ad13b9b73f8d1f846ac7070d0beef4decf3157e3b"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -8475,7 +10825,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "透過公民開發者（Citizen Developer）參與，可減少業務端與技術端的需求轉譯成本，解決IT 人力不足問題。",
-    "id": 471
+    "id": 471,
+    "display_num": 1,
+    "source_id": "ai-de5f4fb1a4ce3f24",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-ca13a9adfc566fcbf9b7980f",
+    "content_hash": "0123db717f8eb7d10a423b884dc3dfef19e7df683344a0cbb6bf19858bcc5c13"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -8493,7 +10848,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "快速開發與即時反饋是低代碼工具的核心優勢，特別適合快速產出PoC（概念驗證）。",
-    "id": 472
+    "id": 472,
+    "display_num": 2,
+    "source_id": "ai-de5f4fb1a4ce3f24",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-b185132d18419bc933a9cae0",
+    "content_hash": "9972de5787c483caca8add998b4cc0a2e18c2b71e719b58c108f3027f4041ad3"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -8511,7 +10871,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "為了通用性與易用性，平台通常會犧牲部分執行效能與底層調優的靈活性。",
-    "id": 473
+    "id": 473,
+    "display_num": 3,
+    "source_id": "ai-de5f4fb1a4ce3f24",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-4247f5954c1c6896a9f6f438",
+    "content_hash": "3c34a23443e565feb11edaa66842b36f4f8236a927be923fa42a522c370d861c"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -8529,7 +10894,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "若平台不支援標準程式碼匯出，當企業想更換系統時，往往需要從頭開發，成本極高。",
-    "id": 474
+    "id": 474,
+    "display_num": 4,
+    "source_id": "ai-de5f4fb1a4ce3f24",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-107811a1d48f7eb8c976d227",
+    "content_hash": "fb9ec61b066108e96a13c2e8ced8a151de0357ae2105bc7014bc3f3fe35cc2d4"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -8547,7 +10917,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "當非IT 人員自行開發應用且缺乏統一管理時，容易產生安全性與合規性的隱憂。",
-    "id": 475
+    "id": 475,
+    "display_num": 5,
+    "source_id": "ai-de5f4fb1a4ce3f24",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-47837ffe06c303b1f92fb96f",
+    "content_hash": "5f3f0d0bd36b2fa90ce1c0c84f4628c17e3cb4e32e4a440101e2e6e007705894"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -8565,7 +10940,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "視覺化的流程圖與組件化設計，降低了程式碼的理解門檻，方便團隊接手管理。",
-    "id": 476
+    "id": 476,
+    "display_num": 6,
+    "source_id": "ai-de5f4fb1a4ce3f24",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-26dfb5d3b00814620e9ecd46",
+    "content_hash": "d5c9d62b6e4c88e33600ff622a79218f54523acbe710d34d8656709c223e66d5"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -8583,7 +10963,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "許多平台為SaaS 模式，資料必須上傳至供應商雲端，可能違反特定產業的資料留境規範（如金融、醫療）。",
-    "id": 477
+    "id": 477,
+    "display_num": 7,
+    "source_id": "ai-de5f4fb1a4ce3f24",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-cf2a1643a21954f99b38ed9e",
+    "content_hash": "8d350f215436fcd94e02d576454e6f974d087b6878f7d2e9eb0ae5b9957315b6"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -8601,7 +10986,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "雖然可寫少量代碼擴充，但仍需在框架內運行，無法像原生開發般擁有100% 的設計自由度。",
-    "id": 478
+    "id": 478,
+    "display_num": 8,
+    "source_id": "ai-de5f4fb1a4ce3f24",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-5ea8ba48f8a2364d933b968a",
+    "content_hash": "3b85e3ddb1790e7ef1cb9ec1234358951f6e0bae71e7f5dc0bc39db2d301f098"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -8619,7 +11009,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "這是企業導入的兩大核心動機：降低技術門檻與提升開發效率。",
-    "id": 479
+    "id": 479,
+    "display_num": 9,
+    "source_id": "ai-de5f4fb1a4ce3f24",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-01a28b1c965b8a1894f47f6d",
+    "content_hash": "ec05c4c20801ff2d30f340d869dbf68cc4bed05ad1814da0186ed20e1a006bc3"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -8637,7 +11032,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "Low Code 平台通常採訂閱制，隨著應用規模擴大，長期授權費用可能是比初期開發更高的成本。",
-    "id": 480
+    "id": 480,
+    "display_num": 10,
+    "source_id": "ai-de5f4fb1a4ce3f24",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-0313721f611ec745e529ef1d",
+    "content_hash": "b708f11898ebcadf4c83b794d2e6b96e19c01a19ef199e8ddfcee5d7421250d2"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -8655,7 +11055,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "整合應用場景：先由大語言模型(LLM) 摘要關鍵特點並產出Prompt，再交由擴散模型(Diffusion) 生成高品質影像。",
-    "id": 481
+    "id": 481,
+    "display_num": 1,
+    "source_id": "ai-46e33b0edac23926",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-de318906e25517cd95d8895d",
+    "content_hash": "53da35260fe8720db57446e40bd14b12d520be22d9321da4f7907a093594a0ca"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -8673,7 +11078,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "LLM 產出的程式碼仍可能存在邏輯錯誤或資安風險，必須遵循「人在迴圈(HITL)」進行審核。",
-    "id": 482
+    "id": 482,
+    "display_num": 2,
+    "source_id": "ai-46e33b0edac23926",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-eea0226885b0c7f8d11d7c8a",
+    "content_hash": "366b6464ec1e1bc559e25e7baa7262b83ad5b488fc77986aa9407cb5dc865ca4"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -8691,7 +11101,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "影片生成主要基於擴散模型在時間維度上的延伸，能確保畫面連續性與內容一致性。",
-    "id": 483
+    "id": 483,
+    "display_num": 3,
+    "source_id": "ai-46e33b0edac23926",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-69dcf7302f1c6a6c3ed6fa7f",
+    "content_hash": "589e2fa21a43ef42dd90e41413e284fde899120fceccecb7742337ccff52634a"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -8709,7 +11124,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "RAG 允許LLM 在推論時動態檢索外部或內部資料庫，解決知識時效性與私有數據存取問題。",
-    "id": 484
+    "id": 484,
+    "display_num": 4,
+    "source_id": "ai-46e33b0edac23926",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-0af7381c796a15da12667967",
+    "content_hash": "42d75e33e2c18ed2aa397beaa32913a55a327f440f2b2a8d19c9c492cea918ee"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -8727,7 +11147,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "Stable Diffusion 具備開源特性，且可透過LoRA或ControlNet 進行細部微調，適合企業客製化應用。",
-    "id": 485
+    "id": 485,
+    "display_num": 5,
+    "source_id": "ai-46e33b0edac23926",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-2b2851231ea16bf536ee34e4",
+    "content_hash": "4f5e5d5e0bab802cce9d6187820782fabee4fef2fe320302a4853b7cc95f4b58"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -8745,7 +11170,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "辨識與評分排序屬於判別/鑑別式AI；「產出信件內容」則屬於從無到有的生成式AI 應用。",
-    "id": 486
+    "id": 486,
+    "display_num": 6,
+    "source_id": "ai-46e33b0edac23926",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-8f6bd79ea05575a6c3fa7581",
+    "content_hash": "b719088d788ca001cc71c85335b5fc11db87389f685e04ea0de067aac8d420ac"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -8763,7 +11193,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "OCR 負責將圖片轉文字（辨識），LLM 負責理解文意並產出摘要（生成）。",
-    "id": 487
+    "id": 487,
+    "display_num": 7,
+    "source_id": "ai-46e33b0edac23926",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-910cb4b4b771511d23dfb1ce",
+    "content_hash": "ecffa2fef646904a7e6f01c165d72c371bb3cdfaa9a2a593901a206fca2efa53"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -8781,7 +11216,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "生成式AI 在設計領域的核心價值在於「啟發創意」與「快速產出原型」，縮短設計週期。",
-    "id": 488
+    "id": 488,
+    "display_num": 8,
+    "source_id": "ai-46e33b0edac23926",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-6271e59dcb24172cc4b68142",
+    "content_hash": "097fe66bdbb9120227694816f4fa4123b160587c2e4888b901680f909615523f"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -8799,7 +11239,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "TTS (Text-to-Speech) 是將文字轉換為合成語音的技術，屬於音訊生成範疇。",
-    "id": 489
+    "id": 489,
+    "display_num": 9,
+    "source_id": "ai-46e33b0edac23926",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-2b14df4ddf3168e42d41db01",
+    "content_hash": "1d693c1c1ec9eca6ff890fbabcab4a151d9d43abff096051cadcb144d2631e64"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -8817,7 +11262,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "溫度參數控制機率分佈的集中度，高溫度代表採樣較隨機，內容更多樣化但也可能較不穩定。",
-    "id": 490
+    "id": 490,
+    "display_num": 10,
+    "source_id": "ai-46e33b0edac23926",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-fb6499c6aef92bc950dfd5bb",
+    "content_hash": "e3f515fef31da3d50fcee86b4c1f02a96b2005a077f5773b539d2e7815f8db79"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -8835,7 +11285,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "賦予AI 特定身分（Role-playing）能引導其在特定語境下進行推論，提升結果的專業度。",
-    "id": 491
+    "id": 491,
+    "display_num": 1,
+    "source_id": "ai-d2953d4db66fd117",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-473444282dd1bd088fa40663",
+    "content_hash": "19a6a2ed41443657db5f1d842075ffeeb2ca4bcfb3df69522a58e8b4396af126"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -8853,7 +11308,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "「Few-shot」即提供少許樣本，是提升LLM 處理複雜任務、格式化輸出最有效的技巧之一。",
-    "id": 492
+    "id": 492,
+    "display_num": 2,
+    "source_id": "ai-d2953d4db66fd117",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-cc726fa081be69fd407e3f09",
+    "content_hash": "cd5431a4bb885f6fc36ff58f0dbdda65d53324abc6daa38137808f0ef590abdf"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -8871,7 +11331,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "CoT誘導模型產出中間推理過程，能顯著降低複雜問題的錯誤率，提升邏輯準確性。",
-    "id": 493
+    "id": 493,
+    "display_num": 3,
+    "source_id": "ai-d2953d4db66fd117",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-a12adfc2a17c25f263847bfe",
+    "content_hash": "3da8eb992100056627bd83593994074a8eb26197203e5d0af699e3b3f70a3fac"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -8889,7 +11354,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "要求特定的結構化資料格式(Structured Data)，是善用AI 工具與現有業務軟體對接的關鍵。",
-    "id": 494
+    "id": 494,
+    "display_num": 4,
+    "source_id": "ai-d2953d4db66fd117",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-04d29f14fa0e74caedcec795",
+    "content_hash": "32a0778d3a55b1426afa589ba4417564348391ec88fbe04d5a05bea3384be86f"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -8907,7 +11377,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "Negative Prompt 用於明確告訴模型「不希望」產出的特徵，是提升影像生成品質的必備技巧。",
-    "id": 495
+    "id": 495,
+    "display_num": 5,
+    "source_id": "ai-d2953d4db66fd117",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-ce93019b81fcc9385484ba9a",
+    "content_hash": "00759c25157a8488c62c728a1ced92e5c3005a99d2501062b8a34b1daad458de"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -8925,7 +11400,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "提供明確的參考事實（In-context Learning）能強迫模型依據資料回答，有效降低模型瞎編的機率。",
-    "id": 496
+    "id": 496,
+    "display_num": 6,
+    "source_id": "ai-d2953d4db66fd117",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-cf58b5d2a2fc141aad4b3728",
+    "content_hash": "93dce9dd4dbd2a49dc5acf7b7daec427d6a8794ba708c4e4d969fd29582738e1"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -8943,7 +11423,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "溫度值越高，模型採樣越隨機，產出內容越具創意；調低則趨向穩定與一致。",
-    "id": 497
+    "id": 497,
+    "display_num": 7,
+    "source_id": "ai-d2953d4db66fd117",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-5dcd357ee0869cbec356f18f",
+    "content_hash": "0808cc6bb0cc01efd82f9dea7dfea11172ecb2495776e624201a592784dcc23d"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -8961,7 +11446,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "善用AI 的核心在於「對話式修正」，透過連續追問與明確指示來微調結果。",
-    "id": 498
+    "id": 498,
+    "display_num": 8,
+    "source_id": "ai-d2953d4db66fd117",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-25a1d221cbb73e229aa3542e",
+    "content_hash": "d19ff784508e0596f5c48b7fc2ea1637469a84e1490bb02cedf978c08dc473ad"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -8979,7 +11469,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "安全使用工具的前提是保護隱私，進行去識別化（Anonymization）是合規使用的基本功。",
-    "id": 499
+    "id": 499,
+    "display_num": 9,
+    "source_id": "ai-d2953d4db66fd117",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-d71f01529a9b1273eb572f30",
+    "content_hash": "2b882f58d8c75db798ce3cd2c68b528cac8773c182c51af9a02b67f0baffeaa9"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -8997,7 +11492,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "提示工程是連結使用者需求與模型能力的核心橋樑，能極大化工具的實務應用價值。",
-    "id": 500
+    "id": 500,
+    "display_num": 10,
+    "source_id": "ai-d2953d4db66fd117",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-338360e10f6308a2c62b6c80",
+    "content_hash": "d1ad59cc8546fe8ac9f178789fa6217c09931c119e6cf1926614427fc26c17f4"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -9015,7 +11515,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "導入AI 的核心是解決商務痛點。在選擇技術前，必須先明確「為什麼要導」以及「如何衡量成功」。",
-    "id": 501
+    "id": 501,
+    "display_num": 1,
+    "source_id": "ai-54caade952230e0a",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-b3082610717f2bb3be784ad2",
+    "content_hash": "ef34d4c0fcbdb999e32bfedae3a46444dc8c58fbc85125d628d412ea28e99ce5"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -9033,7 +11538,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "企業私有數據（如專利、商業機密）進入公共AI 平台可能導致資安漏洞，是導入評估的重中之重。",
-    "id": 502
+    "id": 502,
+    "display_num": 2,
+    "source_id": "ai-54caade952230e0a",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-71ac2fdbb407d931c9bb4259",
+    "content_hash": "64140075ad29887d743cb815669acf79b8f46fab0e74179e280f5153328b3c72"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -9051,7 +11561,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "SaaS 模式優勢在於無需建置基礎設施，可快速達成PoC（概念驗證），但對模型的控制權較低。",
-    "id": 503
+    "id": 503,
+    "display_num": 3,
+    "source_id": "ai-54caade952230e0a",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-40f603172e1322f1c65f0d32",
+    "content_hash": "7c9e05f599b03ed46171456b9adeb46e5b184871e31de9fbabd0a99442b4674a"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -9069,7 +11584,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "針對高度監管產業（金融、醫療），資料留境（Data Residency）是決定地端或雲端架構的關鍵限制。",
-    "id": 504
+    "id": 504,
+    "display_num": 4,
+    "source_id": "ai-54caade952230e0a",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-747e0980f0c727d6a916c99a",
+    "content_hash": "f0f6ee35e19e4eca2827c9c56b470648345cca58de67159066b4c291b7d5aee0"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -9087,7 +11607,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "對於即時客服等應用，延遲時間是關鍵指標。若回覆過慢，即使答案正確也難以落地。",
-    "id": 505
+    "id": 505,
+    "display_num": 5,
+    "source_id": "ai-54caade952230e0a",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-4a538b28ec376fcb24f53a22",
+    "content_hash": "576e33ab5932af3720b52a633c31d244691dbb1b370d1e2eea79189d2a7732a7"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -9105,7 +11630,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "AI 導入不只是技術問題，更是組織變革問題。培訓員工協作（Prompting 等）是成功的關鍵。",
-    "id": 506
+    "id": 506,
+    "display_num": 6,
+    "source_id": "ai-54caade952230e0a",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-b5e2c38b13c51c4bccee369c",
+    "content_hash": "fe8dd1717f5a348c518c772d0592a89244cf4f934898e6092f6fb81cf502dcf9"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -9123,7 +11653,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "治理委員會需確保AI 應用符合倫理、法律且風險可控，是跨部門協作的關鍵。",
-    "id": 507
+    "id": 507,
+    "display_num": 7,
+    "source_id": "ai-54caade952230e0a",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-d68364e6a3a7b9ceb2dfe7f4",
+    "content_hash": "fbc718474c8e553c09b14ff8e4f860a52397557d91d1550ac0f64ce8cdd18250"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -9141,7 +11676,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "Token 費用隨使用量增長，且模型需要持續監控與重訓（MLOps），這些隱藏成本必須列入評估。",
-    "id": 508
+    "id": 508,
+    "display_num": 8,
+    "source_id": "ai-54caade952230e0a",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-1303aa57be097a019cb55181",
+    "content_hash": "798e50e1e92fd1ee216c2188e67aaafd43a0335c550fc95cd81bde91a43e8f96"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -9159,7 +11699,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "生成式AI 繼承了訓練資料的偏見，企業必須評估並過濾有害或不公平的產出。",
-    "id": 509
+    "id": 509,
+    "display_num": 9,
+    "source_id": "ai-54caade952230e0a",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-6cc573ea6172528b7d8ed1e7",
+    "content_hash": "60dc4f73d92dc544f07c94c776048a8efbe951c0ba0a51dba9da76d4f1869568"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -9177,7 +11722,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "評估必須考量未來全面推廣時，運算資源（GPU/頻寬）是否能隨著用戶數增加而有效擴張。",
-    "id": 510
+    "id": 510,
+    "display_num": 10,
+    "source_id": "ai-54caade952230e0a",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-aad555a453f7203a553ff771",
+    "content_hash": "fdbab1fb407d49fee530df8efe5f52173f89c70923588a84821c9e54a984f567"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -9195,7 +11745,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "構想階段的核心是找出「高價值、低難度」的場景（Low-hanging fruit）進行優先開發，以確保ROI。",
-    "id": 511
+    "id": 511,
+    "display_num": 1,
+    "source_id": "ai-3cb95d7911044b8f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-bf7b76471eb7fd0a35cf2b7f",
+    "content_hash": "54b0b57422eb4c424da812c7d322dc20d0a03d1dd60638aabf972d4397982615"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -9213,7 +11768,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "RAG 透過檢索外部文檔提供解答，適合需要頻繁更新資料且要求出處標註的企業場景。",
-    "id": 512
+    "id": 512,
+    "display_num": 2,
+    "source_id": "ai-3cb95d7911044b8f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-632e356d9a2bae0a807bd977",
+    "content_hash": "c7273cd37b768f567230ec5e0fed77be6f97ba7e3b2290e9f30c711ece896f57"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -9231,7 +11791,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "PoC 是為了降低大規模投入的風險，透過小規模實驗確認技術是否能解決預期問題。",
-    "id": 513
+    "id": 513,
+    "display_num": 3,
+    "source_id": "ai-3cb95d7911044b8f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-18c06077447900fb1fac9b01",
+    "content_hash": "5e7c81e96acd3ed5ce59f44d1f640c15f1eb9016721d8bc37aacf8075876c39e"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -9249,7 +11814,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "高品質的資料是AI 的基礎。在開發前必須進行清洗、去重與必要的標記。",
-    "id": 514
+    "id": 514,
+    "display_num": 4,
+    "source_id": "ai-3cb95d7911044b8f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-78ce6f65055289eac67d7e7e",
+    "content_hash": "861e674d7f12eb55b30eff36170109f3d5b7e689392177a5365b14fab03925c7"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -9267,7 +11837,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "營運階段需確保持續穩定，監控模型表現（如Data Drift）與系統資源消耗是MLOps的核心。",
-    "id": 515
+    "id": 515,
+    "display_num": 5,
+    "source_id": "ai-3cb95d7911044b8f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-77744d214cf757afc7a94067",
+    "content_hash": "c7dd9f2f8597c4869fa44a28d84f1dcc527505fca35b8ae9b742bf9c11bbed4a"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -9285,7 +11860,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "迭代開發（Agile/Iterative）允許企業從小功能開始，滾動式修正，更貼近實際業務需求。",
-    "id": 516
+    "id": 516,
+    "display_num": 6,
+    "source_id": "ai-3cb95d7911044b8f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-e861e71f3c14ec4729eec2db",
+    "content_hash": "38c79e8e59f580a2aebfd890f2aca7d7122b53533eadbbde10c2ed58cd1a2d43"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -9303,7 +11883,12 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "透過人工審核（如品質檢查、事實查核），可確保AI 生成內容的合規性與準確性。",
-    "id": 517
+    "id": 517,
+    "display_num": 7,
+    "source_id": "ai-3cb95d7911044b8f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-17f24f7e48cdafdebc835bf2",
+    "content_hash": "666dd9505b228e636df54435d3fc03be3545a40a989beb613632d783f5cff9f5"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -9321,7 +11906,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "導入規劃必須設定具體的KPI，對於客服應用，解決率與滿意度是最直接的價值體現。",
-    "id": 518
+    "id": 518,
+    "display_num": 8,
+    "source_id": "ai-3cb95d7911044b8f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-e4d8373cd34428fd23fc3060",
+    "content_hash": "48badba87f2d69192d743bb67f3c8affd3d1577c548b0eeeade81f2d68cec770"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -9339,7 +11929,12 @@ const ipasAiQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "雲端部署優勢在於可根據需求快速增減算力（Scalability），且維護工作由服務商負擔。",
-    "id": 519
+    "id": 519,
+    "display_num": 9,
+    "source_id": "ai-3cb95d7911044b8f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-2194e0bf48a857fbfe73fc9d",
+    "content_hash": "ca2ae8fde84d418bd38dd8a84e02b5e47138cb6184e40b861e9afd20a5ff3f31"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -9357,7 +11952,12 @@ const ipasAiQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "AI 導入的成功取決於使用者的能力。培訓能確保員工正確使用工具，將AI 融入日常工作流程。",
-    "id": 520
+    "id": 520,
+    "display_num": 10,
+    "source_id": "ai-3cb95d7911044b8f",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-161d331a2a58f1636adc3d65",
+    "content_hash": "a8e1b4dd6708728563183d96dc62eb629bc0b94d4c09f41e18a87c4b8c3dce70"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -9375,7 +11975,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "風險評估的核心公式為：風險值= 發生機率$\\times$ 影響程度。這決定了風險處理的優先順序。",
-    "id": 521
+    "id": 521,
+    "display_num": 1,
+    "source_id": "ai-2306237c11b2c1ca",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-a34fb847854e21c56a007e71",
+    "content_hash": "8becad7274a3846f4e23e00efce8a80c407c7e5c0289d57e742ae5a5b3a39238"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -9393,7 +11998,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "幻覺是生成式AI 的固有特性，會導致資訊誤導，在法律或醫療等專業領域具備高影響程度。",
-    "id": 522
+    "id": 522,
+    "display_num": 2,
+    "source_id": "ai-2306237c11b2c1ca",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-cf78071f8b39f6a7f959e364",
+    "content_hash": "5c1ba9aea2636c7afbeb0a4cf20a6100ec7c26f30c31b6c206afa6b526e688c8"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -9411,7 +12021,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "透過技術手段降低風險發生的可能性或損失程度，屬於風險減輕。",
-    "id": 523
+    "id": 523,
+    "display_num": 3,
+    "source_id": "ai-2306237c11b2c1ca",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-05c1b555bd0fb35b1d50d2c5",
+    "content_hash": "7d84627828893c919ca26af9456375172a07830c2f58098717defcf4d58fb74b"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -9429,7 +12044,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "越獄攻擊旨在破壞模型的安全護欄（Guardrails），使其產出違規或有害內容。",
-    "id": 524
+    "id": 524,
+    "display_num": 4,
+    "source_id": "ai-2306237c11b2c1ca",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-6670a4e1ff2667826a69fdb2",
+    "content_hash": "f7e28564c572729caa1a751818afc98db660e1a9958b891be301fc46a95f6f27"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -9447,7 +12067,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "智慧財產權(IP) 爭議是目前生成式AI 最具代表性的法律合規挑戰。",
-    "id": 525
+    "id": 525,
+    "display_num": 5,
+    "source_id": "ai-2306237c11b2c1ca",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-81bec43e26525e1926cad51d",
+    "content_hash": "428bcbab918f0ec775718149e471ad52fc3f54d0f90cd4b2c082a48343781421"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -9465,7 +12090,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "風險轉移是指透過契約、保險等方式，將潛在損失轉由第三方承擔。",
-    "id": 526
+    "id": 526,
+    "display_num": 6,
+    "source_id": "ai-2306237c11b2c1ca",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-bdbd7862b749f5cfd52a2dd8",
+    "content_hash": "99dc5bd9879f3af4975a34f3f06dd463645a8e58311c30dbe5e0e3a2c5866bc9"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -9483,7 +12113,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "浮水印有助於識別內容是否由AI 生成，是落實透明度與防止假訊息的重要治理手段。",
-    "id": 527
+    "id": 527,
+    "display_num": 7,
+    "source_id": "ai-2306237c11b2c1ca",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-a0afffc3db2b8ba2358c5912",
+    "content_hash": "4d7eadbda1e42d55342905c08ca9d96c19088edea868c3f782fd39fb6d291108"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -9501,7 +12136,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "模型會繼承訓練資料中的社會偏見，這屬於AI 倫理與公平性的風險範疇。",
-    "id": 528
+    "id": 528,
+    "display_num": 8,
+    "source_id": "ai-2306237c11b2c1ca",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-2bff356bfc3faa7342d55bcd",
+    "content_hash": "944841d76a9e98bcfc5b6d2f59b8fd3c9dcef0ef0b86cdf730794faabb2db5be"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -9519,7 +12159,12 @@ const ipasAiQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "持續監控（Monitoring）能及時發現模型漂移（Drift），是營運階段風險管理的關鍵。",
-    "id": 529
+    "id": 529,
+    "display_num": 9,
+    "source_id": "ai-2306237c11b2c1ca",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-4f9e02c0f8b1ab77ba1621c0",
+    "content_hash": "926a5118015611f91f023183e67d0834874908d7c3e62c8427beb61d132af622"
   },
   {
     "subject": "L12 生成式AI應用與規劃",
@@ -9537,6 +12182,11 @@ const ipasAiQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "AI 治理強調負責任的AI（Responsible AI），企業利潤必須建立在合規與倫理基礎之上。",
-    "id": 530
+    "id": 530,
+    "display_num": 10,
+    "source_id": "ai-2306237c11b2c1ca",
+    "source_version": "official-through-2026-06-04",
+    "question_uid": "ai-1220e9f498b7a228e4a9b22c",
+    "content_hash": "d47f046abb8e75368d22022a8cebe85497186a634d64383c3ba62d7193ec0988"
   }
 ];

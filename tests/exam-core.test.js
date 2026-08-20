@@ -4,7 +4,9 @@ const assert = require('node:assert/strict');
 const {
     buildQuizResult,
     claimOnce,
-    getTimerSnapshot
+    getQuestionStorageId,
+    getTimerSnapshot,
+    resolveLegacyQuestion
 } = require('../exam/core.js');
 
 const subjects = [
@@ -90,4 +92,51 @@ test('getTimerSnapshot 對無效時間輸入安全降級', () => {
     assert.equal(snapshot.timeSpent, 0);
     assert.equal(snapshot.timeRemaining, 60);
     assert.equal(snapshot.expired, false);
+});
+
+test('getQuestionStorageId 只接受永久 question_uid', () => {
+    assert.equal(
+        getQuestionStorageId('ai', { question_uid: 'ai-abc123', num: 1 }),
+        'ai_ai-abc123'
+    );
+    assert.throws(
+        () => getQuestionStorageId('ai', { num: 1 }),
+        /question_uid/
+    );
+});
+
+test('resolveLegacyQuestion 在題號唯一時安全對應', () => {
+    const result = resolveLegacyQuestion(
+        { certId: 'ai', num: 8 },
+        [{ question_uid: 'ai-one', display_num: 8, subject: '科目一', chapter: '章一', question: '題目' }]
+    );
+
+    assert.deepEqual(result, { status: 'resolved', question_uid: 'ai-one' });
+});
+
+test('resolveLegacyQuestion 用舊題目內容消歧義重複題號', () => {
+    const result = resolveLegacyQuestion(
+        { certId: 'ai', num: 1, subject: '科目二', chapter: '章二', question: '第二題' },
+        [
+            { question_uid: 'ai-first', display_num: 1, subject: '科目一', chapter: '章一', question: '第一題' },
+            { question_uid: 'ai-second', display_num: 1, subject: '科目二', chapter: '章二', question: '第二題' }
+        ]
+    );
+
+    assert.deepEqual(result, { status: 'resolved', question_uid: 'ai-second' });
+});
+
+test('resolveLegacyQuestion 不猜測無內容可消歧義的重複題號', () => {
+    const result = resolveLegacyQuestion(
+        { certId: 'ai', num: 1 },
+        [
+            { question_uid: 'ai-first', display_num: 1, subject: '科目一', chapter: '章一', question: '第一題' },
+            { question_uid: 'ai-second', display_num: 1, subject: '科目二', chapter: '章二', question: '第二題' }
+        ]
+    );
+
+    assert.deepEqual(result, {
+        status: 'ambiguous',
+        candidate_uids: ['ai-first', 'ai-second']
+    });
 });

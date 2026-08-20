@@ -1,4 +1,4 @@
-const ipasAiMidQuestions = [
+window.ipasAiMidQuestions = [
   {
     "subject": "L21 人工智慧技術應用與規劃",
     "chapter": "114年第二次歷屆考題",
@@ -15,7 +15,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 1
+    "id": 1,
+    "display_num": 1,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-1954e472da0b9fdd029d9c0b",
+    "content_hash": "f7b2b9a35aadd211b44b09b405a0dcbba3a6c1b8f48ae4e1f1a96bd693d99780"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -33,7 +38,12 @@ const ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 2
+    "id": 2,
+    "display_num": 2,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-900c05954810fca289cfc35b",
+    "content_hash": "371eec7faad716b7400958a017a327a224fcc016de2faab171e20f830f91d449"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -51,7 +61,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 3
+    "id": 3,
+    "display_num": 3,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-27ce678ea2a01a510a950542",
+    "content_hash": "3740b125c3cc4dc70c5344cb0cd5908f76e4e5dfbb766c7a2a85917affe22c40"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -69,7 +84,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 4
+    "id": 4,
+    "display_num": 4,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-03884e961f99c24fac979fa0",
+    "content_hash": "2272e2e70ac916bb885618f4b8372e82d1a31996fd9318b08f9324063118b202"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -87,7 +107,12 @@ const ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 5
+    "id": 5,
+    "display_num": 5,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-c1888ca4512afdb39231815b",
+    "content_hash": "a4231996015e926f285164b4d8469bb4ca4601ef08f004870057922a9efc308e"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -105,7 +130,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 6
+    "id": 6,
+    "display_num": 6,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-e428b151d442c3c7f55146f6",
+    "content_hash": "e43625c3b9cc05c325233db7fb176516540103e373ec02a5abbefb3957fbda7c"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -123,7 +153,12 @@ const ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 7
+    "id": 7,
+    "display_num": 7,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-d83a8d6447566dd884307a98",
+    "content_hash": "d2faa0ff98e9217cce7094c9e5bcaf20b8cf30c4d6f2d2ad9c5f808b22b2658f"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -141,7 +176,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 8
+    "id": 8,
+    "display_num": 8,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-cb2b6ff0ad0545ea9d12485a",
+    "content_hash": "b8a1df467ac8290386db822eaafaf6bc1b9bedd8f176ba68302e78f657a98387"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -159,7 +199,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 9
+    "id": 9,
+    "display_num": 9,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-9ba14fbd6c301f32f10086a6",
+    "content_hash": "f298d25bcb4faa90f617e235670535d29782f5c105abd2059d115032f7e274d2"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -177,7 +222,12 @@ const ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 10
+    "id": 10,
+    "display_num": 10,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-4e0fb78c787f384a898977f6",
+    "content_hash": "6917c6a80a90c6b61a94899aacd135e1e4e21dd4426ebaec9836a09cd53a7837"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -195,7 +245,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 11
+    "id": 11,
+    "display_num": 11,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-619f28b84b2c0bc8e051e2f4",
+    "content_hash": "7eedda7d3d19c2554f3453e2060f35f6e9f9355587965a6a058a19d80cee5e55"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -213,7 +268,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 12
+    "id": 12,
+    "display_num": 12,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-84987efe84517732a3efb149",
+    "content_hash": "b248edceb5d5fd7894e7348fd870d152ca5cde6db6de394fb3f5490bc4bdf943"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -231,7 +291,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 13
+    "id": 13,
+    "display_num": 13,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-ec6b68c8b6738338330bc8ec",
+    "content_hash": "48b302130080e13233240f0658b5ea360acdf2c5b63a65da6345970ff7bc59f6"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -249,7 +314,12 @@ const ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 14
+    "id": 14,
+    "display_num": 14,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-14ef2e6503522f869b55c1bc",
+    "content_hash": "78ba8da5cf190365860df7e0eb08b1293564dc2f924bfaaa8ea6c2f4d855d925"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -267,7 +337,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 15
+    "id": 15,
+    "display_num": 15,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-e311374c3aec24d4e84b7e64",
+    "content_hash": "e72239c39b9ef5bc47a87d0b700bb2a0cc53260158b2a75ff66ae17eacb2f6d9"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -285,7 +360,12 @@ const ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 16
+    "id": 16,
+    "display_num": 16,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-b87c1c0162d49cbd54d8f945",
+    "content_hash": "53565d68c6f36ac7b419b7442629d8a8aea357bb5255ddbab15611b32848cd64"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -303,7 +383,12 @@ const ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 17
+    "id": 17,
+    "display_num": 17,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-4cbbcd676dedc5c9707bb9a2",
+    "content_hash": "9dc28e34f0c662fe32612d0f26bed2f9be2a384542e8af3650495c3616cb3a1e"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -321,7 +406,12 @@ const ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 18
+    "id": 18,
+    "display_num": 18,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-bc87282ae3671d22acdf2719",
+    "content_hash": "fe89fd2e68a72d481d72eefdfa57cea1fdb325c7482e4ed21190a376f99dd0df"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -339,7 +429,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 19
+    "id": 19,
+    "display_num": 19,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-4dcd519d45f6985cec45c50c",
+    "content_hash": "8a882819f6494cdeecd3fd09fff71211cca38753c92a791de2dc0635593a7293"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -357,7 +452,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 20
+    "id": 20,
+    "display_num": 20,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-f393d94ad9b78150f10b78cd",
+    "content_hash": "6adeee9a2d8b10241ed7b2aafb2c4b968f4e8a66127a15d230a6cb47fa7b8482"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -375,7 +475,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 21
+    "id": 21,
+    "display_num": 21,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-68024b84797f5a0c59e283ce",
+    "content_hash": "0633c5db5cb77f0c1fb0021edfa52c3f3789787bded3d5743da129912b06fb59"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -393,7 +498,12 @@ const ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 22
+    "id": 22,
+    "display_num": 22,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-8545a5a075a9c309a3e9dfc5",
+    "content_hash": "1c6302fc66009e470241e63f4caa2b1378f5dd8be045da9ae7ea872f3a88b893"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -411,7 +521,12 @@ const ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 23
+    "id": 23,
+    "display_num": 23,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-8a857a437c866e05b82eb561",
+    "content_hash": "a8c335c7e27630a9eb3fd2d196bacdf2f5ef9393c8eca3a1a6ae63f1bf6ef0d7"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -429,7 +544,12 @@ const ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 24
+    "id": 24,
+    "display_num": 24,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-d478581718e5644b49dcf7a7",
+    "content_hash": "fd78ff7203fc182cffda1086c7fcd2663e1c6d57ed528b86785297f7ca6451c4"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -447,7 +567,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 25
+    "id": 25,
+    "display_num": 25,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-4fc56948e7b7e721eb2a6b72",
+    "content_hash": "544bd2a0577f0dcfe738c101611be18f6e87f194ea1e1f86ac8613489db78a8d"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -465,7 +590,12 @@ const ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 26
+    "id": 26,
+    "display_num": 26,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-d28a09f650a3d6c1216fdc80",
+    "content_hash": "69a7f761423005dc5af7179aa164cd789bbb79ec54b33696eeaea0d4ae0a85c3"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -483,7 +613,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 27
+    "id": 27,
+    "display_num": 27,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-ad8fe32424698cd64bf712d5",
+    "content_hash": "9116a192bea244fc53ea4a3d0f23f05f05c6d11429f1c3460cf1c4810b4cccf4"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -501,7 +636,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 28
+    "id": 28,
+    "display_num": 28,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-6053bcfb5582adc98fa1239e",
+    "content_hash": "fb484bd2e0faa272f7bd3ba72d613de6b05acf43b3be3918caf1c94123e90644"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -519,7 +659,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 29
+    "id": 29,
+    "display_num": 29,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-1b2f752532b09d5be5df3889",
+    "content_hash": "1afa22fcff3bdac8f358cf1ab205d0c0917522a029a6ffd3b134768de1b25a3d"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -537,7 +682,12 @@ const ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 30
+    "id": 30,
+    "display_num": 30,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-941baf093908df9bc18faea4",
+    "content_hash": "40ba4d18ea1bf554e499376756b3e734b598e121fc0e6242cad5ed036db7143b"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -555,7 +705,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 31
+    "id": 31,
+    "display_num": 31,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-5bebcdd3ba3255e12260cab9",
+    "content_hash": "a42ef41c4381295c50bf94a486a90378905997fa1ed32dcbec647d5ef21fea7d"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -573,7 +728,12 @@ const ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 32
+    "id": 32,
+    "display_num": 32,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-e406925337f1ccf2c1ad5a7c",
+    "content_hash": "5eb28453a5dd1fb1672edf088b394fdade99e99bac6d1c9de165e201799f23ac"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -591,7 +751,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 33
+    "id": 33,
+    "display_num": 33,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-bd8a30bcb1356676f0f833dc",
+    "content_hash": "03f66faac1b9cb6b009ebdff4b876fd402cc4e426b58697abd621585933b4740"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -609,7 +774,12 @@ const ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 34
+    "id": 34,
+    "display_num": 34,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-2b27ac0a6547526dc1e0db1d",
+    "content_hash": "3e596783cb5ee9769f4f28ce995d73383d336f7cf936d6ae5e26a8ee0cc4ae55"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -627,7 +797,12 @@ const ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 35
+    "id": 35,
+    "display_num": 35,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-13079eb1cad0616e667d7316",
+    "content_hash": "c8570aff1c7b58ec8b7d44d7197bfd1e0b613d719c138dd71c88da7f2e972898"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -645,7 +820,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 36
+    "id": 36,
+    "display_num": 36,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-4ed0bb53e571ac7375ba4678",
+    "content_hash": "ca1f1eef78b96671570de95359c1ff985baf2d069942ff5b4404cf2095a2826b"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -663,7 +843,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 37
+    "id": 37,
+    "display_num": 37,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-7725635cbe5368cb879189f1",
+    "content_hash": "86644883cd1b5941874b303ca0365488bc8528d678d9bc4eca4605494c4cc227"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -681,7 +866,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 38
+    "id": 38,
+    "display_num": 38,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-9e7b1b89a542d0a9d16b70ee",
+    "content_hash": "14fe4265689ff9dbc154093e7c9dc1ac8521aa11d5ca23b5958ea94e91d5eca5"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -699,7 +889,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 39
+    "id": 39,
+    "display_num": 39,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-a6bdd8e7dc7bd87d2f27ea1d",
+    "content_hash": "6e5d78eedc96c2c266eaa9fda473e043390d40c4d1b3a17b4260549d7985f6a4"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -717,7 +912,12 @@ const ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 40
+    "id": 40,
+    "display_num": 40,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-313aaef25314c540006b8131",
+    "content_hash": "ccd3e46458267c984db495d28eead9cd808611a6f29e137c887c7072b2a9bf8b"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -735,7 +935,12 @@ const ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 41
+    "id": 41,
+    "display_num": 41,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-e6f47c099b713c64cb7b7f75",
+    "content_hash": "d94fbcc4770ac1283cf439ba14229c8e6f48291b144f65e3e3ea6740899819dc"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -753,7 +958,12 @@ const ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 42
+    "id": 42,
+    "display_num": 42,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-10971b2dad2a6a93b1e2e2e6",
+    "content_hash": "59d74c24cf451089efc4a63129b2a99db003b84466612db75d81575c5669e8ab"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -771,7 +981,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 43
+    "id": 43,
+    "display_num": 43,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-b54aeee911b1f79d42ba482b",
+    "content_hash": "4a55b6ebd4633357cba8580b4bf64352fb9257702f24ea59d8bc384326e71dda"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -789,7 +1004,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 44
+    "id": 44,
+    "display_num": 44,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-09c0056600ea84704ac5fc6b",
+    "content_hash": "ce98ee4a4b774e75edbac4c423c234823475de2014b48c2d237440cafa011ea9"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -807,7 +1027,12 @@ const ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 45
+    "id": 45,
+    "display_num": 45,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-542eeb4ec4432e8dbe10d057",
+    "content_hash": "40311bdd42f322b3546db1c79172ab5f6e57f4a2f51e21dd822f67748c813740"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -825,7 +1050,12 @@ const ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 46
+    "id": 46,
+    "display_num": 46,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-d4775e20b82b8d54450193a5",
+    "content_hash": "7e2a1bbaa203da8efa32a97b58a9ef7fddd525e1484f64c55e9a362f29fca3b6"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -843,7 +1073,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 47
+    "id": 47,
+    "display_num": 47,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-d158939bf1ad9a851fbeea56",
+    "content_hash": "b459841fc4500d09d61c1c090a04bb4044a371cff9157115bbc212de49c11d63"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -861,7 +1096,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 48
+    "id": 48,
+    "display_num": 48,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-96b11dfaaa34708d52cc2e1c",
+    "content_hash": "1c29c9e5f5cbbf803f744f39bf192b92ec789caf792e1b7f03117737ed684c9e"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -879,7 +1119,12 @@ const ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 49
+    "id": 49,
+    "display_num": 49,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-c662c9bed7384663bd6dc2bf",
+    "content_hash": "c3f0b27c9c6cb0aaa5fc0d6f2529559c21409b65994fcb68f1344b4a49af61ce"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -897,7 +1142,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 50
+    "id": 50,
+    "display_num": 50,
+    "source_id": "ai_mid-c2f55a2a317c1146",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-a3fcc8cbd5e61b207d90a62d",
+    "content_hash": "20c1502546f0a23ec23b235c7f05d40f834bdbe0c75a5dbdbbf42e71272f1397"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -915,7 +1165,12 @@ const ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 51
+    "id": 51,
+    "display_num": 1,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-1adb930963c46d15bcab921c",
+    "content_hash": "30895d7e5c4a6a93dd20e9a964875da6c297787709bcd4c6a92fdfc269aaa893"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -933,7 +1188,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 52
+    "id": 52,
+    "display_num": 2,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-87f08202c2813b2810158547",
+    "content_hash": "208c4dcf33db25dd4287c71b97d8169cac54f3c152f564f3d9fb7138fc7ca0cb"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -951,7 +1211,12 @@ const ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 53
+    "id": 53,
+    "display_num": 3,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-084ba041509bc2f4e9d3625c",
+    "content_hash": "1d57c57f7bec25a5abade19d19237fcbc406353a88d9fe7f482fd9dde7195560"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -969,7 +1234,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 54
+    "id": 54,
+    "display_num": 4,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-f42da5114cfcd9a38ee2a0e3",
+    "content_hash": "c81818c1e18d1d1fad082d9b23957bcc9ee49f525eda9fcb598980be0f0d732d"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -987,7 +1257,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 55
+    "id": 55,
+    "display_num": 5,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-69999962103540e1bfa61dfd",
+    "content_hash": "e4f8bfbf196cc2f6cfc2e8d0a18d16ebb1e3351f9bb1ab957079231ba7b76850"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -1005,7 +1280,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 56
+    "id": 56,
+    "display_num": 6,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-2de0554bf5575a50289effc8",
+    "content_hash": "1f47bb58db1087e19e936ad701640576095b18b678ad15cab279426a17069533"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -1023,7 +1303,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 57
+    "id": 57,
+    "display_num": 7,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-b3c5f3e5d3cdfc66dac6dbed",
+    "content_hash": "50eb5ad49417035626074ad259ac2b3d54de48acd47736da041fb821f065345a"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -1041,7 +1326,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 58
+    "id": 58,
+    "display_num": 8,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-486535ae4e45dba205732116",
+    "content_hash": "f1c33df8accf8fcbfc24616ca404573a67afaa55ecad3eade06383e826e094a4"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -1059,7 +1349,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 59
+    "id": 59,
+    "display_num": 9,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-4289b403e02b2259ae476d19",
+    "content_hash": "8a8de2ef72e6907af39d8141acccce6e52636426a7f82c99e1cae48e5651ae49"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -1077,7 +1372,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 60
+    "id": 60,
+    "display_num": 10,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-a666fb25d1b8b539388c3ac0",
+    "content_hash": "2e001987fd4d6893b28ee4016130a0ee3f8bd7cd7faa5f287e68a5827e010f66"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -1095,7 +1395,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 61
+    "id": 61,
+    "display_num": 11,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-546974e6fddbb279413ccf53",
+    "content_hash": "1edd3d68bed2dd8ab900fb0092d881963d77184811a95d7ad1ebd668552a3805"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -1113,7 +1418,12 @@ const ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 62
+    "id": 62,
+    "display_num": 12,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-4513a063666890a87bc1434b",
+    "content_hash": "c788cea1ff1268a27807400aba0ef551fa0df6339eb9bdb6a9f1fb9ad1454f19"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -1131,7 +1441,12 @@ const ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 63
+    "id": 63,
+    "display_num": 13,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-5641feb36dd92002573d4459",
+    "content_hash": "bba76ae8bdde9718e33949b07639795457eb78d101d02efe77147cb37a73c6d2"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -1149,7 +1464,12 @@ const ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 64
+    "id": 64,
+    "display_num": 14,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-d09f268601ca7ab492dc499c",
+    "content_hash": "b6603b438143e9ed1f46a743163aa957fc31bc6e1c7337f0c7f419036c9aad43"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -1167,7 +1487,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 65
+    "id": 65,
+    "display_num": 15,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-aca4f2dcf3346510e62fa194",
+    "content_hash": "047d02951035dfbef1ba5d4a19cd5ce482c3dd5f274d0080941ccda013fd34d5"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -1185,7 +1510,12 @@ const ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 66
+    "id": 66,
+    "display_num": 16,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-ad992aa0e943f4525699186e",
+    "content_hash": "11652d90aa7c8fbb179647bc2389871c348538185ec3821990a2c4b19f589445"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -1203,7 +1533,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 67
+    "id": 67,
+    "display_num": 17,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-7b7ec95a0c3f7678a24cead8",
+    "content_hash": "dcbb3961d73a9eb4f5b267e107d20feb7e6b89841f14916f6a59054f2e12ee2b"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -1221,7 +1556,12 @@ const ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 68
+    "id": 68,
+    "display_num": 18,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-2d90da297dbe22f03ea017f9",
+    "content_hash": "0d812d54e0c9b22b79c34323f7c0f1014694c1b4e33c38519802cec2ec53f724"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -1239,7 +1579,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 69
+    "id": 69,
+    "display_num": 19,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-0eaf040dcee8a15ed43f9465",
+    "content_hash": "0894b6fecdaf10263b98ac9d38459bb794aee8f2adfee62e1e5e2afd0436c48e"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -1257,7 +1602,12 @@ const ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 70
+    "id": 70,
+    "display_num": 20,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-bdf15bd76c95ac4a84075cb4",
+    "content_hash": "7adf1d7c5c1168bdc2ab602112376648deb246916378d74b51adbf3d34820c8f"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -1275,7 +1625,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 71
+    "id": 71,
+    "display_num": 21,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-419ad1919ad2dfbc4e640fe1",
+    "content_hash": "88b0297e68a14789d46c02a203418407981450c0ac180741c0f332b347e32176"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -1293,7 +1648,12 @@ const ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 72
+    "id": 72,
+    "display_num": 22,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-a48c78e5dc46fb3f29708d54",
+    "content_hash": "7c314a7bfd20f7af4a66a2497c3a466c421702e9629edc29b0d042bf2c7efd26"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -1311,7 +1671,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 73
+    "id": 73,
+    "display_num": 23,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-a7788f70e77d5041bcf75dff",
+    "content_hash": "ea9bb0f3618336cacc275e2859f5f52bbe8a2bac6c3c9d60d29ce3fce66072ba"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -1329,7 +1694,12 @@ const ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 74
+    "id": 74,
+    "display_num": 24,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-d6685ec6f77849ca63c12378",
+    "content_hash": "23380a12f18d47a09ff3be64ecd245e70829c27552d8672c78a11239ede19e8c"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -1347,7 +1717,12 @@ const ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 75
+    "id": 75,
+    "display_num": 25,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-8d78e1d471b5e344299ecc35",
+    "content_hash": "b0e0dab4f0b38b48b6f43e921f0dc89ed431c74888d02946a19121e82771f166"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -1365,7 +1740,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 76
+    "id": 76,
+    "display_num": 26,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-255653bc4bac5ee018191a2c",
+    "content_hash": "0290904cc4a6d7e4ab6351dd510a87edf965aa482052e059f96e55baf0e7bc3c"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -1383,7 +1763,12 @@ const ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 77
+    "id": 77,
+    "display_num": 27,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-399e845f1ae429b0e5adccbe",
+    "content_hash": "eb5eee8d576e6a7224c15e3bdc857087d8310af60e930ef706201d3b671670a2"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -1401,7 +1786,12 @@ const ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 78
+    "id": 78,
+    "display_num": 28,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-76d45b7f5449ca043a5be1a1",
+    "content_hash": "6b8675f289bd6915ea52f0ed9bdfad37eba34f7d02188310608d41f69f234d1d"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -1419,7 +1809,12 @@ const ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 79
+    "id": 79,
+    "display_num": 29,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-e239620e190e224fdf2242c3",
+    "content_hash": "8162e6ab5fd1f2f32e19f84a0f27ca44647c1aa71bf8c551e1381d9bcbf808a4"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -1437,7 +1832,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 80
+    "id": 80,
+    "display_num": 30,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-ed8a4575b52fc58952470918",
+    "content_hash": "918c4ddcafbd33711c582a4e235f06648fe8228844772a1cd903444691f1bec5"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -1455,7 +1855,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 81
+    "id": 81,
+    "display_num": 31,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-3cc00050c887cf82a5b24927",
+    "content_hash": "5722b2e8d52bd3fc1c546fb1a547f9d8a50c92a50040d397dcd58e9e33d3e181"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -1473,7 +1878,12 @@ const ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 82
+    "id": 82,
+    "display_num": 32,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-c4e73f279fa315b7b371c09d",
+    "content_hash": "6bf482aa126f9cb34167bdf842a4ae1e4dfc353c72785d3d6e606c8e073dee8c"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -1491,7 +1901,12 @@ const ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 83
+    "id": 83,
+    "display_num": 33,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-5367f86393c5acd285f7f015",
+    "content_hash": "5f29368e628bda708657e075e7f3c34938a09f2535f5ed2ffcfd1b1ffbdc3f1f"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -1509,7 +1924,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 84
+    "id": 84,
+    "display_num": 34,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-cf053e6db4b6a958da3ee96c",
+    "content_hash": "61a28b7286c7c56b6c0387c88b945eaf7459fce1ef17683333f9f340cab58a75"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -1527,7 +1947,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 85
+    "id": 85,
+    "display_num": 35,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-09ec7c3606bad5dc3610a37f",
+    "content_hash": "77a2bb9dc1ec91d8920b947ff891f449c120e1314a442479ecfc8af936501a38"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -1545,7 +1970,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 86
+    "id": 86,
+    "display_num": 36,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-c13df66668df439d74fcf984",
+    "content_hash": "4a8e099c4e7b44f5cfc05dd3a57468b5e97eec069986b8794db11bcb58138b9b"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -1563,7 +1993,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 87
+    "id": 87,
+    "display_num": 37,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-a4b9f95af4bb2713cbdb16a8",
+    "content_hash": "1f3dc4acd82e6c4e35f45b0ade1c8c5961192f705ac91e254065eb71060a60f4"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -1581,7 +2016,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 88
+    "id": 88,
+    "display_num": 38,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-bcd2c08ab2248f0f88c2b881",
+    "content_hash": "1d51f8c1714718bd240927ad18276b4e6b7c5e3ca0bb2369f5f9ebfb850cb7b3"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -1599,7 +2039,12 @@ const ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 89
+    "id": 89,
+    "display_num": 39,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-fc3f46e0dac033c7dd4e12c9",
+    "content_hash": "e85bfad6fb36f160eb6d4bcf90422b51d976f014b7f9950660572f0ca37b1f38"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -1617,7 +2062,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 90
+    "id": 90,
+    "display_num": 40,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-3a1ba792562bb0eca9fffbf5",
+    "content_hash": "f0c39d6e08eaea34b446f59f621dbee7e31abc7663660002cb6685fc8c61c5ee"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -1635,7 +2085,12 @@ const ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 91
+    "id": 91,
+    "display_num": 41,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-40bf3e3cba9d476862f4f9b1",
+    "content_hash": "22e58e54de17d2d375bda392aa2fc89609d639f49c1b8aba14a2728d5fcea62b"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -1653,7 +2108,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 92
+    "id": 92,
+    "display_num": 42,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-bfafcbd5e20e70676454d152",
+    "content_hash": "23d164bdd84c00b965a03bc95f9ad00e502b83b09245b331fd09c82128ede4b1"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -1671,7 +2131,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 93
+    "id": 93,
+    "display_num": 43,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-7dfdbb97c07d3c6b06431f65",
+    "content_hash": "cf6b4ae3c0174bb7914a68b14be1ce6b61ce919dc40ce9fdff9174d9184afc05"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -1689,7 +2154,12 @@ const ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 94
+    "id": 94,
+    "display_num": 44,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-ed1fb1c79237b4f467c2ab01",
+    "content_hash": "2cd652b299c9cff2c1c4f76f2719ceb8a454767779cbe8aced8b83b8a40efd06"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -1707,7 +2177,12 @@ const ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 95
+    "id": 95,
+    "display_num": 45,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-12497ef7d56b729d0dcbb8e8",
+    "content_hash": "8ed28b0e731cfd1085afb35ae6045e51a3786ece96390e055c0400c478eaae99"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -1725,7 +2200,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 96
+    "id": 96,
+    "display_num": 46,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-ee7fee0b2f1537788862559a",
+    "content_hash": "2ca68ea843ae581cdceaa0799e3932c6897819ecf824df5ace945c12d7b4e4cd"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -1743,7 +2223,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 97
+    "id": 97,
+    "display_num": 47,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-59f60466afb9afe6567e1a46",
+    "content_hash": "81553e11a1715f11cfff1f333c00d85a7bc90e9d03f1cf9ec509b6b1fa2dce56"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -1761,7 +2246,12 @@ const ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 98
+    "id": 98,
+    "display_num": 48,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-8ddb710017719661b408172c",
+    "content_hash": "37dc31248c25f83472715f46f71301bbb02575945aaf5e0916fc3f1bd3b5d04f"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -1779,7 +2269,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 99
+    "id": 99,
+    "display_num": 49,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-cae689d36cbf1824863014b4",
+    "content_hash": "c89618031466e1410677a6b8c454df8701b4e7518169e16904d6f1054788ea23"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -1797,7 +2292,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 100
+    "id": 100,
+    "display_num": 50,
+    "source_id": "ai_mid-e1179a0d075883ab",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-a5689ddeddaaa1a66fe06bfe",
+    "content_hash": "b4ffbfc672739079f11c4196bcde3697b67f19ef4f509dce7ba2092ffc2bac3e"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -1815,7 +2315,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 101
+    "id": 101,
+    "display_num": 1,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-775fecbed224311f53a3c9cb",
+    "content_hash": "fbe26b3e0301b7c9d4d8e086e4310620d1692198f75d7b6a0e4328ffa3ce3133"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -1833,7 +2338,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 102
+    "id": 102,
+    "display_num": 2,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-4388ab5585fadcd757fbb7cd",
+    "content_hash": "f0a2da96ba107cf14b552a05f0cbb4f10e33880220d724690d557e84cbb3749a"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -1851,7 +2361,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 103
+    "id": 103,
+    "display_num": 3,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-e4a93c62db31292919cceffc",
+    "content_hash": "6f1f422efcf7bb0c56dd94a872d125d2de7a05437de5723db78b1cd7b5e3f662"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -1869,7 +2384,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 104
+    "id": 104,
+    "display_num": 4,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-ebf91cb7c05081e4641ce0e9",
+    "content_hash": "bbb9812043fe44da949cbe1dd83c501a3fb8b593327da2d240cf4a3f84b6114a"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -1887,7 +2407,12 @@ const ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 105
+    "id": 105,
+    "display_num": 5,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-d3827916b2015218c3ff35dd",
+    "content_hash": "524609b37c08d80edb0cb7b75ccee64af1508b2511b3f260f03cd1053c0a50b0"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -1905,7 +2430,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 106
+    "id": 106,
+    "display_num": 6,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-a01dec942b22057ea659d8d7",
+    "content_hash": "64c21cb92f930ef2dbbe368816ade6e1b1434cff166b37ff322448c4905afdd8"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -1923,7 +2453,12 @@ const ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 107
+    "id": 107,
+    "display_num": 7,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-fbd2d90383d6e7c5e1f9fd31",
+    "content_hash": "c3cda13de4a8c04268b978f89a1a82a6ffbdacf9eb5ed44ad30c1d642fddd2a7"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -1941,7 +2476,12 @@ const ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 108
+    "id": 108,
+    "display_num": 8,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-6719fbeb64fa5746ec849e61",
+    "content_hash": "d0a5bf0219b83c5c9cf5d3e4eb665c20eb1bd70482a8bc53e60d11e933076813"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -1959,7 +2499,12 @@ const ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 109
+    "id": 109,
+    "display_num": 9,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-5304cb46db468f287f20e59a",
+    "content_hash": "5854e6773f3237d0f6d034aaaa84b2ec65fd67a9f2e8a4164aa35bad34fe20c5"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -1977,7 +2522,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 110
+    "id": 110,
+    "display_num": 10,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-ecb8fb5e27efca16983ffeaa",
+    "content_hash": "ca58c10d8c10297d64a89d9782b7dd642fbd1ddeaf13716b46c7a2a7370cdf64"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -1995,7 +2545,12 @@ const ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 111
+    "id": 111,
+    "display_num": 11,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-1a257201c5e51610031011a5",
+    "content_hash": "8bd06bb25bd40982dc2f71691978fe86d590c27b80d8f2473dce4031ba456c43"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -2013,7 +2568,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 112
+    "id": 112,
+    "display_num": 12,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-7bd08c406a95349098a622c0",
+    "content_hash": "f73a2adc788bff06f329652c2450f62ca89ed353a66a290877de7989c7037ce1"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -2031,7 +2591,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 113
+    "id": 113,
+    "display_num": 13,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-d63646ef229d2ede5a221824",
+    "content_hash": "1b698e5f59f6fd3474704fcb1d44b27b0f2040722c80f96688fbef59d1f2547b"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -2049,7 +2614,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 114
+    "id": 114,
+    "display_num": 14,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-17d442c0f0578bc57d16f524",
+    "content_hash": "aab1ae7556fd75bc66810f4dcc215e3af96d5289bd34d0a5a9f964564a44e62f"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -2067,7 +2637,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 115
+    "id": 115,
+    "display_num": 15,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-03f1d58fc0581760ed06abe0",
+    "content_hash": "4f1213a062d1282eb8cbbd8d822023c3993d4ecefef7b92aa35abe5aa583cbf1"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -2085,7 +2660,12 @@ const ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 116
+    "id": 116,
+    "display_num": 16,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-2e44b3f4544dcba2f4f48ab0",
+    "content_hash": "1ad703645c5319815b03ddfe0a068bab014babd46560c76a920f33695cfa11fa"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -2103,7 +2683,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 117
+    "id": 117,
+    "display_num": 17,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-8ccfd9a2bbb712f9b42c7fc2",
+    "content_hash": "306e322047935048d237b4d2dfd90a1ae350455d38ea82918a186b36a20d07ea"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -2121,7 +2706,12 @@ const ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 118
+    "id": 118,
+    "display_num": 18,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-0064a8de714e5a23b1657f94",
+    "content_hash": "86be019f155bb1d41be8657d4474e76b0a298cc655de0adc17e5779d3e33959e"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -2139,7 +2729,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 119
+    "id": 119,
+    "display_num": 19,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-b702710f2d1da7da4a4623b2",
+    "content_hash": "8838fb71d6e7ce1976534522bdc0e0b0a9f609762a521d15d55229df942b67ac"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -2157,7 +2752,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 120
+    "id": 120,
+    "display_num": 20,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-a83858953ca64c0d0930ec4a",
+    "content_hash": "903f5d9ae780851e2b95a2b4d9561f22e135237f951e3cb251b7c65c2555bb04"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -2175,7 +2775,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 121
+    "id": 121,
+    "display_num": 21,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-1cb65e152d8413689c11e5e5",
+    "content_hash": "81aa49f105d414ee72e0f7564e834643df9f9bf5cfcf8d242ff92e47e6ae8267"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -2193,7 +2798,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 122
+    "id": 122,
+    "display_num": 22,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-91d2be0814cd29b2cd601f24",
+    "content_hash": "b37ec7d93094c206eb71663b4ec1e111df179963f702cc5cc55cfe48fa8fd98a"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -2211,7 +2821,12 @@ const ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 123
+    "id": 123,
+    "display_num": 23,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-aac40d5a0289529ecd9e6ad8",
+    "content_hash": "7371347a3344b709da1ccc1733d216b6e97f1c5f4b76c961bd852403aa181097"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -2229,7 +2844,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 124
+    "id": 124,
+    "display_num": 24,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-17bc87e7bb90249b9130fda6",
+    "content_hash": "b3b7f387d918d964857532417f9274b0c880838c54d4603d879c08ff0fadff7b"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -2247,7 +2867,12 @@ const ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 125
+    "id": 125,
+    "display_num": 25,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-0f993300d8b2d69256221cb7",
+    "content_hash": "6d7155ec60dca2c2d096ff5385be7ec11b3c57e2d126f0c9cecb956133440404"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -2265,7 +2890,12 @@ const ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 126
+    "id": 126,
+    "display_num": 26,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-ec6d15e270f79b1de015cacb",
+    "content_hash": "604f9ddff26486c450931aee62f62da97c7db7861be111540f72e18f230c78ba"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -2283,7 +2913,12 @@ const ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 127
+    "id": 127,
+    "display_num": 27,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-4cc89fe74209d356eeb741bc",
+    "content_hash": "341b41adba0bb845d35a81f0dce4acc8e399a45a4885ca253a0c92378f1bb682"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -2301,7 +2936,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 128
+    "id": 128,
+    "display_num": 28,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-0a5b81505292a8f9043a4230",
+    "content_hash": "98fc8deeafe80c0d4dae1f2e87649cf7eecf7b8df2a13b7066c7dbba297f15e0"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -2319,7 +2959,12 @@ const ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 129
+    "id": 129,
+    "display_num": 29,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-c61c0b10c46e60cbb4419242",
+    "content_hash": "7679abd0a5d2bcea3c88388285f71b6426a582fcb43ec02474335dc966ac8974"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -2337,7 +2982,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 130
+    "id": 130,
+    "display_num": 30,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-603da1c94f424d3e930f9324",
+    "content_hash": "e8e1cecb0eb0579fdaeaafcca6c6d69ba8836d658ac3944f82ee4db826f9e201"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -2355,7 +3005,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 131
+    "id": 131,
+    "display_num": 31,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-a6930f944d841a5f180ac1ed",
+    "content_hash": "459fa5b3958132ca109e42f637fa0807759bc30745d15500c43fa2d12991bf62"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -2373,7 +3028,12 @@ const ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 132
+    "id": 132,
+    "display_num": 32,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-e04b02501b2a5e07d48636ba",
+    "content_hash": "e95d2b11a33548c004816f09dc94b55b40e0dd85947f78e5bbada596f97178a1"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -2391,7 +3051,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 133
+    "id": 133,
+    "display_num": 33,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-8618d4d9c55b6e26b99a5508",
+    "content_hash": "299142cb340d58bbd4bf3587a15914eceaefc83b9b7c2a3d9746d512e2c4e272"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -2409,7 +3074,12 @@ const ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 134
+    "id": 134,
+    "display_num": 34,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-777b3ac7493547ff0bf47859",
+    "content_hash": "df55d05b74e754926d35045939c49fd6f1d213b300d7bc66e82d2832bbee9894"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -2427,7 +3097,12 @@ const ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 135
+    "id": 135,
+    "display_num": 35,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-72bec39e47166999f9e06129",
+    "content_hash": "aa9b3d0e7b675ee2da318e0d6f388e3b2e656f60bf7dff069eeb7669a3e72a9d"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -2445,7 +3120,12 @@ const ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 136
+    "id": 136,
+    "display_num": 36,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-a04eeccd1943b10f43fb0d12",
+    "content_hash": "ff03cbf30fc0fc02052db4072008d84df12a60582300aaf97e96082869be324b"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -2463,7 +3143,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 137
+    "id": 137,
+    "display_num": 37,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-e3e0726fe3b0ed47c29bb790",
+    "content_hash": "9435de183a673934224ca4a2c1b73cb6293cce4f1b763949322883a655e5b509"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -2481,7 +3166,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 138
+    "id": 138,
+    "display_num": 38,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-d9cdc5a1a6408bebc81faa2d",
+    "content_hash": "f582579192306a6ace937e4a85c96e9411144b160435e0ac35955ede87a8cfa2"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -2499,7 +3189,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 139
+    "id": 139,
+    "display_num": 39,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-f43791c74d670e1434f2482e",
+    "content_hash": "1abd0933a0b782071518776091b35e651f9837d1956ba6e3b34576bd278615a9"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -2517,7 +3212,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 140
+    "id": 140,
+    "display_num": 40,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-a4d7bc116bcf41850c7268a8",
+    "content_hash": "5da7528a3d2aa44a2523b7f6943411b0861f62cbce7cbdfce4fbdd50df1ea747"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -2535,7 +3235,12 @@ const ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 141
+    "id": 141,
+    "display_num": 41,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-f77597ae1e793f78515fdc59",
+    "content_hash": "3a674320fdfbf080864bd73028389082dcabc921150382b834a8cfbef7c8265c"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -2553,7 +3258,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 142
+    "id": 142,
+    "display_num": 42,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-dea052ef5eb251e83be620bb",
+    "content_hash": "aa4e50960bd0b52dc38293c9f553f4053ee41b588e7c638e2c9c56cf01559f07"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -2571,7 +3281,12 @@ const ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 143
+    "id": 143,
+    "display_num": 43,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-4ae26374f927514419171f3f",
+    "content_hash": "138c90c77a40b0caf45df411f3d48aab361139cd8cc331c95dabb7651b788252"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -2589,7 +3304,12 @@ const ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 144
+    "id": 144,
+    "display_num": 44,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-fa22aebef0325b452b5424f0",
+    "content_hash": "5d806d615eb67f196824fb87e99a7e9bf22ee3e097d011685eec0c512b32d8b9"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -2607,7 +3327,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 145
+    "id": 145,
+    "display_num": 45,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-85cd29bb3e89ee7a63def7d6",
+    "content_hash": "61f328350d77e8d36e77fc72e0e8061155cfcda68e048ce7ac03c973fd2a6eed"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -2625,7 +3350,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 146
+    "id": 146,
+    "display_num": 46,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-3d4f2bd4f769020cd6205ada",
+    "content_hash": "d843ec3e1c6b97427ab08a39b8b38f1fea85b6798a3e6e7d0686a37e695c1017"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -2643,7 +3373,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 147
+    "id": 147,
+    "display_num": 47,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-7f2f7b88a950e3e1c19612bb",
+    "content_hash": "5791fceffd9aafa5729129551cb75707256454c432ed8ea91e96d89ae1fe2c9e"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -2661,7 +3396,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 148
+    "id": 148,
+    "display_num": 48,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-c057c7b276d621f476841a0b",
+    "content_hash": "a61331adc01b0061335fbddab29d50b5b9f649b02d350614d0d11e2c106f5615"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -2679,7 +3419,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 149
+    "id": 149,
+    "display_num": 49,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-c82e5e3da2ca8c5d4c15803b",
+    "content_hash": "ac88c87ad340b5e792458d9980b941a18bf2c7b926241178c98687a3343b90f9"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -2697,7 +3442,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。",
-    "id": 150
+    "id": 150,
+    "display_num": 50,
+    "source_id": "ai_mid-afa7c9f918978a0d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-a66537ab3f5ff95a8d14de1e",
+    "content_hash": "99dbad9494277cc57451abb3fca9d012b9007aaae75431a642a04cd3dca374de"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -2715,7 +3465,12 @@ const ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 151
+    "id": 151,
+    "display_num": 1,
+    "source_id": "ai_mid-2e7030246ba163fb",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-dfcf422a498e4a2a5b45018a",
+    "content_hash": "3c4125bdd686c4331cf4bc484278c35a32bf8be36cbc59ab148ac238fbe3dc7b"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -2733,7 +3488,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 152
+    "id": 152,
+    "display_num": 2,
+    "source_id": "ai_mid-2e7030246ba163fb",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-fd074f7d2659426ed92c38cc",
+    "content_hash": "5c2b8900df09cc2fcb0445dd159f1c0d9b7b1643896c43d6f53b454270783756"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -2751,7 +3511,12 @@ const ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 153
+    "id": 153,
+    "display_num": 3,
+    "source_id": "ai_mid-2e7030246ba163fb",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-04f1a411f4541b5671f30317",
+    "content_hash": "2e4348b6ee9603a0a40bc2690e269ebc9306bc4ff9a4946060dc6831842b81ec"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -2769,7 +3534,12 @@ const ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 154
+    "id": 154,
+    "display_num": 4,
+    "source_id": "ai_mid-2e7030246ba163fb",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-7109d1714240f74d9bd7cef8",
+    "content_hash": "d95531762965c0cc12fd93c8e9f238f7a14690140e516870e0a825ed53c04b18"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -2787,7 +3557,12 @@ const ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 155
+    "id": 155,
+    "display_num": 5,
+    "source_id": "ai_mid-2e7030246ba163fb",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-3b625e7a8811bf6415c27565",
+    "content_hash": "263e9c0d31262cc8701f75dfdacb5caf7699c809b4fb73e024a3a3c5e0ab67ec"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -2805,7 +3580,12 @@ const ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 156
+    "id": 156,
+    "display_num": 6,
+    "source_id": "ai_mid-2e7030246ba163fb",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-0ca2941c339372c2ae9a6120",
+    "content_hash": "f0e99be411bd76c76adbeed08380325263d84470301a5aec133677d83ff3317d"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -2823,7 +3603,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 157
+    "id": 157,
+    "display_num": 7,
+    "source_id": "ai_mid-2e7030246ba163fb",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-f7e317af9f141a6e16fd79f4",
+    "content_hash": "7b0b8c13cf7d81a330142e7615ce0d5dee393ae3f2918d8be3075684a7ab3eb6"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -2841,7 +3626,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 158
+    "id": 158,
+    "display_num": 9,
+    "source_id": "ai_mid-2e7030246ba163fb",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-bacec986902acefa92b57f69",
+    "content_hash": "e3322424faf966d2f900c3d6be82706ca01b0bfb7e9b348775b44f4055e35f9f"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -2859,7 +3649,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 159
+    "id": 159,
+    "display_num": 10,
+    "source_id": "ai_mid-2e7030246ba163fb",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-f0f2b094525626eea13e28ed",
+    "content_hash": "0733e53e0f2cb9b02a8beea18c8f08233f0bae21afd7b49af1a7b27e15e4dc41"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -2877,7 +3672,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 160
+    "id": 160,
+    "display_num": 11,
+    "source_id": "ai_mid-2e7030246ba163fb",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-88e02abd8ed2402390209235",
+    "content_hash": "e3eb9658e626fa13f3afea0852c8df939daf4cb45c0f289f04b516008554bc95"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -2895,7 +3695,12 @@ const ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 161
+    "id": 161,
+    "display_num": 12,
+    "source_id": "ai_mid-2e7030246ba163fb",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-6394508c89b7b709578134d9",
+    "content_hash": "bdffe8161dd99f37f2aae5dce7822ce58a485200219b33150f44199dcb4d4d34"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -2913,7 +3718,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 162
+    "id": 162,
+    "display_num": 13,
+    "source_id": "ai_mid-2e7030246ba163fb",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-8d3f0ba2ec30e061d548507d",
+    "content_hash": "7cf7ef3a2956f0e63025345c9da34ab4f73ce8116a5fce9396431f3438856e0a"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -2931,7 +3741,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 163
+    "id": 163,
+    "display_num": 15,
+    "source_id": "ai_mid-2e7030246ba163fb",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-02c12ddc430c33857ee7be21",
+    "content_hash": "0e131e563bc790ae7b1d349850c0a8bfb4ed6a9d3dff3e4ae71b779e09cd10b1"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -2949,7 +3764,12 @@ const ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 164
+    "id": 164,
+    "display_num": 1,
+    "source_id": "ai_mid-89318ed4f027bbcf",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-23993e2e1ba6772bcef5d58d",
+    "content_hash": "69a5bbc81ff9b05ff5d4bfee152bf5cf8b6ef75cd93fb89e667f491833a64ccf"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -2967,7 +3787,12 @@ const ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 165
+    "id": 165,
+    "display_num": 2,
+    "source_id": "ai_mid-89318ed4f027bbcf",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-dc070f13898f0cba1228b4ec",
+    "content_hash": "495b69a87d7ce85771a2530f88ae2cb57fd5767bea50b9377d0347b5e52837d8"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -2985,7 +3810,12 @@ const ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 166
+    "id": 166,
+    "display_num": 3,
+    "source_id": "ai_mid-89318ed4f027bbcf",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-030bb287e7c960b006ed2037",
+    "content_hash": "4df5b3208cf32059caf3a4fc8f53371955367ffd1578ee1416a46804b30e24a5"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -3003,7 +3833,12 @@ const ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 167
+    "id": 167,
+    "display_num": 4,
+    "source_id": "ai_mid-89318ed4f027bbcf",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-ac78e65a7445a0773490c02d",
+    "content_hash": "5fc8872deb764d52f8e877f61b5bda5d15943be6347627a53d0f9d3e6a6d55e2"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -3021,7 +3856,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 168
+    "id": 168,
+    "display_num": 5,
+    "source_id": "ai_mid-89318ed4f027bbcf",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-bbc5e37d48ef5d1b14ffb7cf",
+    "content_hash": "42fd8064b29fb3b7b8106d9cdf100c0d5af01156e2e3d24fae21ba6c584b81a7"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -3039,7 +3879,12 @@ const ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 169
+    "id": 169,
+    "display_num": 6,
+    "source_id": "ai_mid-89318ed4f027bbcf",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-ebc02753e179d9d43b6b9d21",
+    "content_hash": "d13ab480d4c207694d38d4ada404febb3b6be2c0b7530149a1ad216072ba39bf"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -3057,7 +3902,12 @@ const ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 170
+    "id": 170,
+    "display_num": 7,
+    "source_id": "ai_mid-89318ed4f027bbcf",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-251918ec7aa67f497bed8b43",
+    "content_hash": "49b94438c17a9e53861b363be61fa60009c8ffeea914dbecfedbd5d821d89d2d"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -3075,7 +3925,12 @@ const ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 171
+    "id": 171,
+    "display_num": 8,
+    "source_id": "ai_mid-89318ed4f027bbcf",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-db9129b603c68d86bff707ed",
+    "content_hash": "72f4c80dbe570552a2442dc010b512eb9ec1b14911e2b08bc5632d0432d8c6bb"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -3093,7 +3948,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 172
+    "id": 172,
+    "display_num": 9,
+    "source_id": "ai_mid-89318ed4f027bbcf",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-d990fb86d5d0ef4f97b45f51",
+    "content_hash": "87dca42b0497a6374e488a3858370254bbe754910dadb90adbff7bdb3a513382"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -3111,7 +3971,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 173
+    "id": 173,
+    "display_num": 10,
+    "source_id": "ai_mid-89318ed4f027bbcf",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-e43a9c2824268ceaabdb7d1e",
+    "content_hash": "09f6b9c1512290bbd43147aa2ef2e54defcb3aa5f85936a8dcd2f81fdc43f0c0"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -3129,7 +3994,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 174
+    "id": 174,
+    "display_num": 11,
+    "source_id": "ai_mid-89318ed4f027bbcf",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-f9f03aa7a8739f74af49c4a7",
+    "content_hash": "83096e36006f0be81f1a77400815f0eb2567980753896a680e46e784d3642ad4"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -3147,7 +4017,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 175
+    "id": 175,
+    "display_num": 15,
+    "source_id": "ai_mid-89318ed4f027bbcf",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-112680a7c1eae89873650030",
+    "content_hash": "0190a0f4c7f037c356fd56e4d4b3e324414fb9d4002f4a7b453a89b0ebe0c4db"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -3165,7 +4040,12 @@ const ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 176
+    "id": 176,
+    "display_num": 1,
+    "source_id": "ai_mid-95a558f715252da5",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-86abcaa086b5c9005a1de699",
+    "content_hash": "2fd8260d6b13b79c53c353803aaec9d99d17242e0f55ab2d83526d236908b447"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -3183,7 +4063,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 177
+    "id": 177,
+    "display_num": 2,
+    "source_id": "ai_mid-95a558f715252da5",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-1bddec65e55290bf05665f3a",
+    "content_hash": "4acfbbd92c67c4e4b55d9f58f5df104ac4d839506a75e9997e6b00bf1930b697"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -3201,7 +4086,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 178
+    "id": 178,
+    "display_num": 3,
+    "source_id": "ai_mid-95a558f715252da5",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-7fd1d3ea2d8f69f3c1b4ba2b",
+    "content_hash": "127d2402f92bf8be8aa0d9a305ab77c880beb5a6b13f45cc68c043d12924b034"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -3219,7 +4109,12 @@ const ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 179
+    "id": 179,
+    "display_num": 4,
+    "source_id": "ai_mid-95a558f715252da5",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-146c087cef044f0f482d1cf6",
+    "content_hash": "e981fa32b6dbb9fd3dd9459067eed3d2e3354434aa36c3992825bcde575e622f"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -3237,7 +4132,12 @@ const ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 180
+    "id": 180,
+    "display_num": 5,
+    "source_id": "ai_mid-95a558f715252da5",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-6081e80423f2dd762743095b",
+    "content_hash": "c313a2982bbff62119fbf54133a1f527741af1427b5a4f8e2becb847413c2846"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -3255,7 +4155,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 181
+    "id": 181,
+    "display_num": 6,
+    "source_id": "ai_mid-95a558f715252da5",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-6e7197ba6bd215e29eb86973",
+    "content_hash": "9172a3a74bd5c1e488bdc42223c8026c3efee2af478be04b8c094522b169575c"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -3273,7 +4178,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 182
+    "id": 182,
+    "display_num": 7,
+    "source_id": "ai_mid-95a558f715252da5",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-0a0b678ed6007965d0480618",
+    "content_hash": "4c33dc9acb7bb165f0a1ce136bb3f5246e31277ce4e2def576dfb448f794a487"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -3291,7 +4201,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 183
+    "id": 183,
+    "display_num": 8,
+    "source_id": "ai_mid-95a558f715252da5",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-c922ac94fad6e43df244c221",
+    "content_hash": "ebba8d372648f21f855054367861d31d87b87ba0362c054b599721a1a1ad0e84"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -3309,7 +4224,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 184
+    "id": 184,
+    "display_num": 9,
+    "source_id": "ai_mid-95a558f715252da5",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-d4a4bc0090ea95c6aed414ca",
+    "content_hash": "809508656b236de8c7b51f9ca8e4748b065dacdb252135e840192353c2e2cb49"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -3327,7 +4247,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 185
+    "id": 185,
+    "display_num": 10,
+    "source_id": "ai_mid-95a558f715252da5",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-b8df9d1343391bdc72a1a631",
+    "content_hash": "57d116fc00259dd3ae69afd96b473f8f06bce1c05f2f491ee503c8bc1b92b133"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -3345,7 +4270,12 @@ const ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 186
+    "id": 186,
+    "display_num": 11,
+    "source_id": "ai_mid-95a558f715252da5",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-45d122730300fcc0767a7ede",
+    "content_hash": "f3abacf4258441dbfb2a21651874663ef1ba2bf8e1174cf7296c9971f166adf5"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -3363,7 +4293,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 187
+    "id": 187,
+    "display_num": 12,
+    "source_id": "ai_mid-95a558f715252da5",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-6907edb38218e568a8961245",
+    "content_hash": "31a1b0cb900e9b55079609f8872cf8d14b6ea706fa3f76f9b098e5855e18df1b"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -3381,7 +4316,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "explanation": "此題為官方公佈之中級能力鑑定考試樣題。",
-    "id": 188
+    "id": 188,
+    "display_num": 14,
+    "source_id": "ai_mid-95a558f715252da5",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-cfadf4cf13ef3d6f96fb78db",
+    "content_hash": "825b1a92d4eeb941ec727082d15789630889b80f5363f0b715e8fb7770f0c3c6"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -3399,7 +4339,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) Word2Vec",
     "explanation": "：Word2Vec 是一種詞嵌入方法，可將文字轉換為連續向量空間中具語意\n的表示，有利後續模型學習。",
-    "id": 189
+    "id": 189,
+    "display_num": 1,
+    "source_id": "ai_mid-ce5913e5c0e4893e",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-94b1d81139b1aafcf26c6500",
+    "content_hash": "39bd3b52bce380dd83e3ab761d6247bbdfa6c528d27c14846bd81bf6274761aa"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -3417,7 +4362,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 命名實體識別",
     "explanation": "命名實體識別 （Named Entity Recognition, NER ） 用於辨識文本中的具名\n實體，如人名、地點與組織等。",
-    "id": 190
+    "id": 190,
+    "display_num": 2,
+    "source_id": "ai_mid-ce5913e5c0e4893e",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-f8d497700e7cc92339154bd1",
+    "content_hash": "421c7195b357d45e68986a1ac05436544669994cd622141ad344e7ce0b3fe9d4"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -3435,7 +4385,12 @@ const ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D) 具雙向上下文理解能力",
     "explanation": "BERT（Bidirectional Encoder Representations from Transformers ）可同時\n考慮上下文中前後的語意，有利於更精準的語言理解。",
-    "id": 191
+    "id": 191,
+    "display_num": 3,
+    "source_id": "ai_mid-ce5913e5c0e4893e",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-15d0061916ed37da1cb7ecb8",
+    "content_hash": "b9edc1e27cc459fa8f55fcb648a93f14785ffe3552825f059fd249c03c904283"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -3453,7 +4408,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 為整張圖片指定一個標籤",
     "explanation": "影像分類是電腦視覺的基本任務之一，其目標是判斷整張影像的主要內\n容屬於哪一預定義類別 ， 例如將圖片分類為 「貓」 、 「狗」 、 「汽車」 等 。 選項 （A）\n描述的是語義分割 （Semantic Segmentation ），（B） 屬於生成式任務如風格轉換 ，\n（D）則是目標偵測（ Object Detection ） ，因此僅有（C）為正確答案。",
-    "id": 192
+    "id": 192,
+    "display_num": 4,
+    "source_id": "ai_mid-ce5913e5c0e4893e",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-85e677735452149e3592214f",
+    "content_hash": "7ae60ac8476509f9e149881772990e2594f521ade10c556e34b0610198903498"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -3471,7 +4431,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 目標偵測",
     "explanation": "目標偵測（ Object Detection ）能辨識圖像中多個實體，並給出邊界框位\n置資訊。",
-    "id": 193
+    "id": 193,
+    "display_num": 5,
+    "source_id": "ai_mid-ce5913e5c0e4893e",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-6c4d0ac57c1b84f5c61f8596",
+    "content_hash": "858d91c6eeb4af5656b9749c8b52a4eebf09e5ef13aa171ab7154ca80c77b18c"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -3489,7 +4454,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 產生器與鑑別器",
     "explanation": "GAN 由產生器（ Generator ）負責生成資料，鑑別器（ Discriminator ）判\n斷真偽，兩者相互對抗學習。",
-    "id": 194
+    "id": 194,
+    "display_num": 6,
+    "source_id": "ai_mid-ce5913e5c0e4893e",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-9367e102d2451043c449d108",
+    "content_hash": "35edc0f55374917bd510bb62ec6544b9e221e17417b8f40292de2fdd442827b8"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -3507,7 +4477,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 圖片風格轉換",
     "explanation": "：圖片風格轉換（如將相片轉為畫風）是生成式 AI 常見應用之一，通常\n利用 GAN 完成。",
-    "id": 195
+    "id": 195,
+    "display_num": 7,
+    "source_id": "ai_mid-ce5913e5c0e4893e",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-0ab4bce8b67c0fb11c5b8dca",
+    "content_hash": "d1686e03c9122df16be19873fa46d1f919116edd3a447cedd12857f24ed3cd63"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -3525,7 +4500,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 同時處理並整合來自不同感知類型的資料",
     "explanation": "：多模態 AI 整合文字、影像、聲音等不同資料來源，提升模型理解與生\n成能力。  \n\n 第三章 AI 相關技術應用 \n3-87",
-    "id": 196
+    "id": 196,
+    "display_num": 8,
+    "source_id": "ai_mid-ce5913e5c0e4893e",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-56eeb8addbfc156597cdd273",
+    "content_hash": "efd7a366e5536e5bd585850f085f3ebb30b21854608070b4397f6bc711290eab"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -3543,7 +4523,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 文字",
     "explanation": "CLIP 由 OpenAI 所提出，透過大量圖文配對資料進行對比學習，使模型\n能理解跨模態語意關聯。",
-    "id": 197
+    "id": 197,
+    "display_num": 9,
+    "source_id": "ai_mid-ce5913e5c0e4893e",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-2b17b38af805dd8cd3146032",
+    "content_hash": "b85c3c00c7e860cfca88c839ed2dbb3910a70f1f2b3f93ca531c85fcafd8fe71"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -3561,7 +4546,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 影片自動生成字幕",
     "explanation": "影片字幕生成涉及聲音 （語音辨識） 、文字 （轉錄） 、影像 （上下文輔助）\n等多模態資料處理。",
-    "id": 198
+    "id": 198,
+    "display_num": 10,
+    "source_id": "ai_mid-ce5913e5c0e4893e",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-719778cff6055e0ecd8b4ef4",
+    "content_hash": "0584cdaf6f7db04668d49de6f61ed0dfd1654ce51260aec533e6952f87682562"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -3579,7 +4569,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 預期效益與回報",
     "explanation": "：商業價值評估主要衡量 AI 專案在解決問題或創造價值上的潛力，例如\n降低成本、增加收入或提升效率。",
-    "id": 199
+    "id": 199,
+    "display_num": 1,
+    "source_id": "ai_mid-a4830190a1a9345d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-8f963db7d329aaea900da9d5",
+    "content_hash": "14d355287e5790a2d06cc8ecae3d0ef737a76ce7f7cea5720e2e676edb565b4b"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -3597,7 +4592,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 技術成熟度與部署資源",
     "explanation": "技術評估是導入前的重要環節，需確認所選技術是否穩定且能在現有架\n構下順利實作。",
-    "id": 200
+    "id": 200,
+    "display_num": 2,
+    "source_id": "ai_mid-a4830190a1a9345d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-945cf2ef59b4af18286889d8",
+    "content_hash": "9e6d4dbed235416abd052c4297e0f9f8898aa8688a4188d562e56e062ad47792"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -3615,7 +4615,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 業務痛點與需求辨識",
     "explanation": "：AI 導入需以業務需求為出發點，若無明確問題定義，後續模型開發將\n失焦或無法產生實際效益。",
-    "id": 201
+    "id": 201,
+    "display_num": 3,
+    "source_id": "ai_mid-a4830190a1a9345d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-5bae996475decb4beb26e847",
+    "content_hash": "92bee5791d6663e9c00531ce0988b8db63d3ddf0464b9cff3a4f9a676924d373"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -3633,7 +4638,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) AI 專案所需的跨部 門協作角色",
     "explanation": "：AI 專案導入涉及資料、業務、 IT 等部門合作，需在規劃階段即明確分\n工與責任分配。",
-    "id": 202
+    "id": 202,
+    "display_num": 4,
+    "source_id": "ai_mid-a4830190a1a9345d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-840c1bbda19a4012162b2d7c",
+    "content_hash": "6b724f49ee53859db4e8dd45a52d1a3a7b91b3bef73e69b90d659341e98a2502"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -3651,7 +4661,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 建立跨部門協作機制與角色分工",
     "explanation": "：AI 導入需橫跨業務、資料、 IT 等多部門，若缺乏明確的溝通與分工安\n排 ， 容易出現責任模糊或推進不順 。 建立協作機制可確保需求對齊 、 資料準備 、\n模型開發與部署流程協同一致 ， 是規劃階段關鍵工作 。 其他選項則過度聚焦於\n單點技術或管理決策，無法解決跨部門合作問題。",
-    "id": 203
+    "id": 203,
+    "display_num": 5,
+    "source_id": "ai_mid-a4830190a1a9345d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-bdcfcf085612cbd0530b19d8",
+    "content_hash": "938d35c36a79daac904d6fb8c084e8ac7a33df6f5f192f627c6d63199dcfcbb9"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -3669,7 +4684,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 地端私有部署",
     "explanation": "地端部署可提供更強的資料控制與隱私保障，常見於金融、政府、醫療\n等敏感領域。",
-    "id": 204
+    "id": 204,
+    "display_num": 6,
+    "source_id": "ai_mid-a4830190a1a9345d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-e6bca73799cbc8fedb5c7537",
+    "content_hash": "31cdbb5317bbdd0220a367e2d472e051248f6e5ef5b42ac6a52587675e29768d"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -3687,7 +4707,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 決策透明性不足",
     "explanation": "：模型無法解釋其輸出會降低使用者與監管單位的信任，是常見的 AI 風\n險來源之一。",
-    "id": 205
+    "id": 205,
+    "display_num": 7,
+    "source_id": "ai_mid-a4830190a1a9345d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-e21b473352f3d33f2c91ee73",
+    "content_hash": "04d47bee9fa2453879f874e4c39c54b29668871ed0eb1f77c8cb33eb0e046e09"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -3705,7 +4730,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 特定族群預測結果不公平",
     "explanation": "資料或模型偏誤常導致對少數族群、女性或弱勢族群的不公平結果，是\n需積極管理的 AI 倫理風險。  \n\n 第四章  AI 導入評估規劃 \n4-47",
-    "id": 206
+    "id": 206,
+    "display_num": 8,
+    "source_id": "ai_mid-a4830190a1a9345d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-7d3143ee15578a733ff00b2a",
+    "content_hash": "3ead0dbfc9da2bc1909278699a1df271dd8271ba2da17b694b3ca2a580469d2a"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -3723,7 +4753,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 檢視個資使用的合法性",
     "explanation": "：若使用涉及個人資料，須確認是否符合資料保護法（如 GDPR 或個資\n法）規範。",
-    "id": 207
+    "id": 207,
+    "display_num": 9,
+    "source_id": "ai_mid-a4830190a1a9345d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-8f89857f3883d70e3efcfe64",
+    "content_hash": "de9404d1b6ad842dc1da1c04a0f7cfcc9aafc724fb2b3b4acfdb089c584a6aeb"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -3741,7 +4776,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 建置概念漂移監控與觸發模型再訓練 流程",
     "explanation": "：概念漂移（ Concept Drift ）指資料分佈隨時間改變，可能使模型預測確\n率下降，因此在風險管理架構中，須建置監控機制偵測輸入與輸出異常，並結\n合模型再訓練策略進行調整。選項（ A）（D）與風險無直接關聯， （B）雖具備\n冗餘設計概念，但不直接針對資料變異處理。",
-    "id": 208
+    "id": 208,
+    "display_num": 10,
+    "source_id": "ai_mid-a4830190a1a9345d",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-596c97785e767b2f7ae4cc08",
+    "content_hash": "5029bafc2513850534cd7eadaed408587d7cbb5c66dddcd5fa5e15af78585258"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -3759,7 +4799,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 讓模型能夠辨識輸入與目標之間的對應關係",
     "explanation": "資料標註是監督式學習的關鍵步驟，能讓模型理解每筆資料對應的標籤\n或結果。",
-    "id": 209
+    "id": 209,
+    "display_num": 1,
+    "source_id": "ai_mid-1cc48ff9eed844f6",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-c16098d7aaf9a33b87634ae9",
+    "content_hash": "f6913c5fc7e352e6ea0e5eb4d07f69e7693ff7094eafbe73ac1cb2c2fb32360e"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -3777,7 +4822,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 將特徵縮放至相同尺度，利於模型學習",
     "explanation": "：許多演算法（如 SVM、KNN）對特徵尺度敏感，標準化有助於提升模\n型表現與穩定性。",
-    "id": 210
+    "id": 210,
+    "display_num": 2,
+    "source_id": "ai_mid-1cc48ff9eed844f6",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-f1d911fd8a521b1c15a495ea",
+    "content_hash": "abb54d9a14b0eb429c20424f5c940e3458c01d9732fd1e99f156fe97a30c4c84"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -3795,7 +4845,12 @@ const ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A) 分類任務",
     "explanation": "：顧客流失 通常為 「會 /不會」 的二元分 類問題 ，適合使 用分 類模型如  \nLogistic Regression 、決策樹等。",
-    "id": 211
+    "id": 211,
+    "display_num": 3,
+    "source_id": "ai_mid-1cc48ff9eed844f6",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-5cc65ff8bb8a21b9d974b8cf",
+    "content_hash": "d4157fe3202fa05c7e273240d85411e37f62fd8682b52be25af9cafe6a76c077"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -3813,7 +4868,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 模型應優先考慮開發成本與可部署性",
     "explanation": "選擇模型需考量資料特性、開發時間、計算成本與後續維運難度，不應\n一味追求複雜度。",
-    "id": 212
+    "id": 212,
+    "display_num": 4,
+    "source_id": "ai_mid-1cc48ff9eed844f6",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-5e47e673fed063540769ab17",
+    "content_hash": "9585173a91a10aebeb08f8d7d1c24f3b001ef0235987129c740e1c819a144fec"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -3831,7 +4891,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 插補法",
     "explanation": "插補法 （Imputation ） 可用平均數、中位數、眾數或模型預測方式填補缺\n失欄位，常用於資料清理階段。",
-    "id": 213
+    "id": 213,
+    "display_num": 5,
+    "source_id": "ai_mid-1cc48ff9eed844f6",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-2bd0bf60cbbd7fd471100de2",
+    "content_hash": "a56fc1d148c268a6166461b9a2f2c029c58edbacdfa7e3ad7da5f5b47f565a8a"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -3849,7 +4914,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 促進模型跨平台部署與環境一致性",
     "explanation": "容器技術可封裝應用與其依賴環境，確保模型從開發到部署保持一致。",
-    "id": 214
+    "id": 214,
+    "display_num": 6,
+    "source_id": "ai_mid-1cc48ff9eed844f6",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-9707ea13b42881483c05707a",
+    "content_hash": "2c173861befc6802fb6272f25b48c13976d740338f764208e714c9658e34452b"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -3867,7 +4937,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 實現 AI 模型的自動化開發、部署與持續維運流程",
     "explanation": "MLOps 結合 DevOps 與機器學習，可實現模型生命週期的持續整合、測\n試與監控。",
-    "id": 215
+    "id": 215,
+    "display_num": 7,
+    "source_id": "ai_mid-1cc48ff9eed844f6",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-db1a06a5c581f05f445309c0",
+    "content_hash": "cab11fd042e89656198bda6ebe81ae0644b68e33700ae94b439f0351960513aa"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -3885,7 +4960,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 終端裝置本地端",
     "explanation": "：邊緣 AI 將模型部署至如手機、攝影機、感測器等裝置上，提升即時性\n並減少延遲。",
-    "id": 216
+    "id": 216,
+    "display_num": 8,
+    "source_id": "ai_mid-1cc48ff9eed844f6",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-3b591de2d2f0fe6fee777807",
+    "content_hash": "b2e3e4b3fa921c1ecf6ed7cef440ef7af8352cce6798ae3af56b10fdea608551"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -3903,7 +4983,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 偵測模型概念漂移與效能下降",
     "explanation": "模型部署後若輸入資料特性改變，將可能導致預測不準，故需建立監控\n機制。  \n\n 第五章  AI 技術應用與系統部署 \n5-26",
-    "id": 217
+    "id": 217,
+    "display_num": 9,
+    "source_id": "ai_mid-1cc48ff9eed844f6",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-f18d55f02af34a44cc8929c8",
+    "content_hash": "ce9e2a03fc70e114be4ca88986e112dbac223cf9f69e8bf36bf6a8a7ddb1794b"
   },
   {
     "subject": "L21 人工智慧技術應用與規劃",
@@ -3921,7 +5006,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 產品經理與工程人員",
     "explanation": "產品經理負責需求對齊與驗證場景，工程人員負責將模型封裝並整合至\n應用流程。",
-    "id": 218
+    "id": 218,
+    "display_num": 10,
+    "source_id": "ai_mid-1cc48ff9eed844f6",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-79d0d5c2e408be65b705e537",
+    "content_hash": "58441817f0845dcec1d0e5558ec2fb07bde2e93c137b85e1155731a475d374de"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -3939,7 +5029,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 概括並整理資料特徵",
     "explanation": "敘述統計 （Descriptive Statistics ） 主要用於整理、彙整與呈現資料特性，\n不涉及推論或決策。",
-    "id": 219
+    "id": 219,
+    "display_num": 1,
+    "source_id": "ai_mid-4887758cc49a5a1e",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-1683afc0125225ce6ba7d62b",
+    "content_hash": "92b2fb06c072a9c1259197ab558fda992eacdf2d10959b8330ad2282736d4081"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -3957,7 +5052,12 @@ const ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D) 二項分佈",
     "explanation": "二項分佈用於計算多次伯努利試驗中成功的次數 ， 為典型的離散型分佈 。",
-    "id": 220
+    "id": 220,
+    "display_num": 2,
+    "source_id": "ai_mid-4887758cc49a5a1e",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-6a412a4fd344a365bdab9457",
+    "content_hash": "e78f042437c6d9b38916ccec62c6138bf6eeb18b7a9109f26856d7deb3f5538b"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -3975,7 +5075,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 中位數",
     "explanation": "：中位數不受極端值影響，適合描述偏態分佈或有離群值的資料。",
-    "id": 221
+    "id": 221,
+    "display_num": 3,
+    "source_id": "ai_mid-4887758cc49a5a1e",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-47f985aea1f28e903f1c4817",
+    "content_hash": "c8fe2a34d447cbeae6bbbed576044c388b7d0fb8f0348ea58c352c5c142a7996"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -3993,7 +5098,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 資料平均偏離中心值的程度",
     "explanation": "標準差衡量資料與平均值的偏離程度，是最常見的離散程度指標之一。",
-    "id": 222
+    "id": 222,
+    "display_num": 4,
+    "source_id": "ai_mid-4887758cc49a5a1e",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-b0530d02749f849fb8d8b7c8",
+    "content_hash": "0a142457ff7b3691a5d7375fa445286c221a6e5a18bee6f10d0fd1a3fea58475"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -4011,7 +5121,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 拒絕虛無假設",
     "explanation": "：當 p 值小於設定的顯著水準 α，表示樣本資料與虛無假設 有顯著差異 ，\n故應拒絕虛無假設。",
-    "id": 223
+    "id": 223,
+    "display_num": 5,
+    "source_id": "ai_mid-4887758cc49a5a1e",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-b25490d87c733baa3d823ff1",
+    "content_hash": "1e396185c16967bf714fcd785f9f36c2987afd6b1f82438d79c461b18bb80e2f"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -4029,7 +5144,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) p 值",
     "explanation": "p 值表示在虛無假設成立的情況下，觀察到現有樣本結果的機率，是統\n計顯著性的核心指標。",
-    "id": 224
+    "id": 224,
+    "display_num": 6,
+    "source_id": "ai_mid-4887758cc49a5a1e",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-804e8ab8f248a9856ec7f2ac",
+    "content_hash": "791bb6a4cc4b4796033630737af326771af13772999d7cfbcd35b8689e59e85c"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -4047,7 +5167,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 比較一組樣本與既定平均值的差異",
     "explanation": "單樣本 t 檢定用來評估樣本平均數是否與某個已知值有顯著差異。",
-    "id": 225
+    "id": 225,
+    "display_num": 7,
+    "source_id": "ai_mid-4887758cc49a5a1e",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-042a304c565463ac0cf8884b",
+    "content_hash": "5c27e7703242c99bb6281e998281bcb45b57927e7a037ea7a95b0204ca77c0cb"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -4065,7 +5190,12 @@ const ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A) 敘述統計",
     "explanation": "這些統計量是對資料本身的描述，不涉及推論或預測，屬於敘述統計。",
-    "id": 226
+    "id": 226,
+    "display_num": 8,
+    "source_id": "ai_mid-4887758cc49a5a1e",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-6ff704d03a93e459cbe46eff",
+    "content_hash": "c9174f04171ca4bf81520819ea9d848cf1a120a10df48e02bbb25f4695761d01"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -4083,7 +5213,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 任何類型的數據在樣本數足夠大時，都會呈現常態分佈",
     "explanation": "中央極限定理指出，當樣本數足夠大時，樣本平均數的分佈會趨近常態\n分佈；然而，原始資料本身的分佈並不會因此變為常態。",
-    "id": 227
+    "id": 227,
+    "display_num": 9,
+    "source_id": "ai_mid-4887758cc49a5a1e",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-9d1fcb18cdbeb747335ba05d",
+    "content_hash": "9f7a046545640abb6532e9c050f5d090859b1b1cde30cd1cab176ef3745637d4"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -4101,7 +5236,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 中位數",
     "explanation": "當資料呈現偏態分佈 （如左偏或右偏） 時，平均數容易受到極端值影響，\n導致偏離中心位置 。 中位數對極端值不敏感 ， 因此在偏態分佈中較能準確代表\n資料集中趨勢。",
-    "id": 228
+    "id": 228,
+    "display_num": 10,
+    "source_id": "ai_mid-4887758cc49a5a1e",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-9f905159ac85b7f2e2fa711e",
+    "content_hash": "db9b8a01159f1c1fada545f7ee74dc9eb7beb2265f88e3640cc8811093ccf997"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -4119,7 +5259,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 高頻率、串流型資料",
     "explanation": "感測器與機台設備產出的資料具有即時性與高頻率更新特性，屬於典型\n的串流資料來源。",
-    "id": 229
+    "id": 229,
+    "display_num": 1,
+    "source_id": "ai_mid-323fabf675401d88",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-3a1b1c83c1cd155e007723d3",
+    "content_hash": "993b2ecbbd18707351fa3a13a74728f05719d1f209530281bb4b0330fcccb30e"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -4137,7 +5282,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 遺漏值補全（ Imputation ）",
     "explanation": "Imputation 是處理缺失值的主要方法，可透過平均數、中位數或模型預\n測進行補值。",
-    "id": 230
+    "id": 230,
+    "display_num": 2,
+    "source_id": "ai_mid-323fabf675401d88",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-e85c7195efa2d6310f63b96e",
+    "content_hash": "a5b350baf1daa55eb9f8d49334a5ba6b2a055e91618e4de37a9bef22c7394bb0"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -4155,7 +5305,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 文件型 NoSQL 資料庫",
     "explanation": "文件型資料庫如 MongoDB 可有效儲存結構不固定的 JSON/XML ，常用\n於半結構化資料管理。",
-    "id": 231
+    "id": 231,
+    "display_num": 3,
+    "source_id": "ai_mid-323fabf675401d88",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-1ef00b9abe6d3a14f915a48d",
+    "content_hash": "358e4bd1356303f10126e4d10bc4ca52b46cf5a1b46e1c1ed18fdd3047b09f1e"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -4173,7 +5328,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 跨節點資料切分與冗餘備援",
     "explanation": "分散式系統可將資料分片儲存並建立冗餘副本 ， 提高可用性與容錯能力 。",
-    "id": 232
+    "id": 232,
+    "display_num": 4,
+    "source_id": "ai_mid-323fabf675401d88",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-8f81abe0e3e2b8a8d3434021",
+    "content_hash": "03174e60ab1795000b39ba765d39a93ea93d133e043bc692989bf091875ec198"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -4191,7 +5351,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 串流處理系統",
     "explanation": "：串流處理（如 Apache Kafka 、Spark Streaming ）可即時處理與分析進入\n系統的資料，適用於異常偵測與即時應用。",
-    "id": 233
+    "id": 233,
+    "display_num": 5,
+    "source_id": "ai_mid-323fabf675401d88",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-c954fa1ffc55f6d7c9a075f4",
+    "content_hash": "c934fce7bb90d9a20230b28f3782b5e4588434ce1c6c0a5a76db635419e272a6"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -4209,7 +5374,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 建立對預測任務更具意義或可解釋性的變數",
     "explanation": "特徵衍生旨在透過現有資料邏輯建立新特徵，如時間差、組合變數，提\n升模型可預測性與可解釋性 。 （A） 增加模型自由度可能導致過擬合，並非特徵\n衍生的核心目的 。 （B） 資料壓縮與儲存效率屬資料處理領域 ， 與特徵衍生無關 。\n（D）移除不連續的類別型欄位屬於特徵選擇或清理行為，並非特徵衍生，其\n目的為簡化模型或排除不具預測力的欄位。",
-    "id": 234
+    "id": 234,
+    "display_num": 6,
+    "source_id": "ai_mid-323fabf675401d88",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-2c9dd0ec31157317f18f489a",
+    "content_hash": "18a05d66109cdf3c78f3cf5773e4617bce90538532b219ed0237cfe0dd8a1183"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -4227,7 +5397,12 @@ const ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A) 資料轉換",
     "explanation": "此類操作目的在於將文字欄位轉換為一致格式，利於分析，屬於典型的\n轉換處理，不涉及數值縮放或資料結構規劃。",
-    "id": 235
+    "id": 235,
+    "display_num": 7,
+    "source_id": "ai_mid-323fabf675401d88",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-8ec4075c7a98494c0dfeb150",
+    "content_hash": "3443d2c34e224c68c469b14ac815bf747ff252037c41c4331d747c1c58b29c4e"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -4245,7 +5420,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 即時串流處理與低延遲反應能力",
     "explanation": "IoT 裝置資料具有高頻、連續與即時性等特徵，需使用能支援實時資料\n\n 第四章  大數據處理技術 \n4-33 \n接收、處理與響應的架構（ Kafka、Spark Streaming ）來確保即時決策與效能穩\n定性。",
-    "id": 236
+    "id": 236,
+    "display_num": 8,
+    "source_id": "ai_mid-323fabf675401d88",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-69980900dce2214aca8c625b",
+    "content_hash": "a91b22b4af4f8c5a91e46d30488e6880330dbd179e53423702473366679caf88"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -4263,7 +5443,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 資料湖支援多樣資料型態且不需預先定義結構",
     "explanation": "資料湖可儲存原始格式的結構化、半結構化與非結構化資料，支援彈性\n探索與延後建模。",
-    "id": 237
+    "id": 237,
+    "display_num": 9,
+    "source_id": "ai_mid-323fabf675401d88",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-db4dcb90d570b2b59b0a3d36",
+    "content_hash": "a318d8532ed8250e2c7f0f5a0c216a2c5e259205c25ef400ea424be7f1d00435"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -4281,7 +5466,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 檢查資料格式與邏輯是否正確",
     "explanation": "資料驗證確保資料符合預期格式與邏輯規則，是資料品質管理的重要步\n驟。",
-    "id": 238
+    "id": 238,
+    "display_num": 10,
+    "source_id": "ai_mid-323fabf675401d88",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-7f4f866c5e9dbf19577a4666",
+    "content_hash": "623497f4ea5efa30b5f14e415f6db007263478322608d9e926e3107bfc4d1d13"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -4299,7 +5489,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 長條圖",
     "explanation": "長條圖（ BarChart ）可清楚顯示類別型變數的數量分佈，是描述性分析\n中的基礎視覺工具。",
-    "id": 239
+    "id": 239,
+    "display_num": 1,
+    "source_id": "ai_mid-c1676c07f248310e",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-18ded8b59b193fead6d0cfa5",
+    "content_hash": "0906273991ce378e3f1d35242a6f3bcd7ac9f601e913b5636019b74ebc120db4"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -4317,7 +5512,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 折線圖",
     "explanation": "：折線圖適合表現隨時間變動的連續數據，如日、週、月的趨勢觀察。",
-    "id": 240
+    "id": 240,
+    "display_num": 2,
+    "source_id": "ai_mid-c1676c07f248310e",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-1d3e98d839207f6af683e786",
+    "content_hash": "7647cb740015a59754f30a6daa9e075c9a35759d53060b185a5acccd6de54cc5"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -4335,7 +5535,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 相關係數",
     "explanation": "相關係數（如 Pearsonr ）用於衡量兩變數間的線性關聯程度，常見於探\n索性分析。",
-    "id": 241
+    "id": 241,
+    "display_num": 3,
+    "source_id": "ai_mid-c1676c07f248310e",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-0f02783ba35a64ed87f0d282",
+    "content_hash": "8d234b8479b55f2d777261e91e9ced681bb7729626dd0b3af4d58ed61b3002f9"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -4353,7 +5558,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 圖論分析",
     "explanation": "圖論分析可用於建構節點與邊的關係網路，適用於社群關係、推薦系統\n等情境。",
-    "id": 242
+    "id": 242,
+    "display_num": 4,
+    "source_id": "ai_mid-c1676c07f248310e",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-b6e93f20be6bbf7aca4a80b4",
+    "content_hash": "00b6feed6ed8bd7865785bb32aa4823f04722948996d7fcdd570f7e26a833f90"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -4371,7 +5581,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 辨識常出現的關鍵詞並排除常見詞",
     "explanation": "：TF-IDF（詞頻 -逆文檔頻率）可強化具有辨識性的詞彙，抑制文檔中普\n遍存在但不具代表性的詞語。",
-    "id": 243
+    "id": 243,
+    "display_num": 5,
+    "source_id": "ai_mid-c1676c07f248310e",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-6a5599a1d681e871d9393813",
+    "content_hash": "a8dfbe44dfa73c2ed308a702b278d43b2fda0d0d1f882ae1234bf8fe8cad025d"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -4389,7 +5604,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 信用卡詐騙識別",
     "explanation": "異常偵測可用於發現違常模式，像是信用卡交易中異常消費、系統入侵\n等風險情境。",
-    "id": 244
+    "id": 244,
+    "display_num": 6,
+    "source_id": "ai_mid-c1676c07f248310e",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-5173bca08ccf12ad6a966eb4",
+    "content_hash": "35e1442a32dbd235db405ddf9461c267647f43f2b171d587b2393a9732b567cf"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -4407,7 +5627,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) PCA（主成分分析）",
     "explanation": "PCA 是常見的線性降維方法 ， 將原始特徵投影到新的主成分空間中 ， 以\n保留資料最大變異。",
-    "id": 245
+    "id": 245,
+    "display_num": 7,
+    "source_id": "ai_mid-c1676c07f248310e",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-fdbb098e86f59a5285a19c84",
+    "content_hash": "717583e41bca871ec80deb743179119ca1cceabc54b0bf0c32f9ae8b4630d576"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -4425,7 +5650,12 @@ const ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A) 關聯規則分析",
     "explanation": "：關聯規則分析（如 Apriori 演算法）可找出項目間常見組合，例如「買\n牛奶常搭配買麵包」 。",
-    "id": 246
+    "id": 246,
+    "display_num": 8,
+    "source_id": "ai_mid-c1676c07f248310e",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-d9daaaa70f6f65d529831523",
+    "content_hash": "0a798d92e94b71a352d9ffe88c1074686c331361fde3d563761447fcd7d54d1a"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -4443,7 +5673,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 以特殊符號（如點或星號）單獨標記",
     "explanation": "箱型圖透過特殊符號（如點、星號）單獨標記異常值，使使用者易於辨\n識數據中的異常資料點。  \n\n 第五章  大數據分析方法與工具 \n5-50",
-    "id": 247
+    "id": 247,
+    "display_num": 9,
+    "source_id": "ai_mid-c1676c07f248310e",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-7e0e368d1353882c09ef815d",
+    "content_hash": "291b7d733627534e40776c60d763fccc8edefa422abf8c093f9adbb5d7647bdc"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -4461,7 +5696,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 命名實體識別（ NER）",
     "explanation": "NER 屬於自然語言處理技術，可自動從文字中辨識出品牌、人名、地點\n等實體資訊。",
-    "id": 248
+    "id": 248,
+    "display_num": 10,
+    "source_id": "ai_mid-c1676c07f248310e",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-6f4720b5d3345f00e06552d3",
+    "content_hash": "1067179da42c967c1827e78713610a889300bd563218eedae3c2eb441532b8d8"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -4479,7 +5719,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 專注於資料分類與預測決策邊界",
     "explanation": "鑑別式 AI 模型（如邏輯迴歸、 SVM）學習資料間的判別界線，廣泛應\n用於預測任務。",
-    "id": 249
+    "id": 249,
+    "display_num": 1,
+    "source_id": "ai_mid-2b7c794e9721e2d9",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-50ffb50f117cf1c0aa5a8e66",
+    "content_hash": "0162ba13a270c1be3023faef533e2988e64634752dd7dbb1d918087b61e1e17e"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -4497,7 +5742,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 混合精度訓練（ Mixed Precision Training ）",
     "explanation": "混合使用 16-bit 與 32-bit 浮點運算可減少訓練時間與記憶體使用量，提\n升效能。",
-    "id": 250
+    "id": 250,
+    "display_num": 2,
+    "source_id": "ai_mid-2b7c794e9721e2d9",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-236f3ef53cd50eb1b6ab707f",
+    "content_hash": "624a753bd107132cf4439c6fa9c5958a24cfb0a643be22f36104044ba7f275e9"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -4515,7 +5765,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 語言生成模型",
     "explanation": "：生成式 AI 可根據結構化或非結構化輸入生成文字、圖像等內容， GPT\n是典型文字生成架構。",
-    "id": 251
+    "id": 251,
+    "display_num": 3,
+    "source_id": "ai_mid-2b7c794e9721e2d9",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-4c53b7225da094cb3c833c67",
+    "content_hash": "5ad910df9d70281df36501445291800763c2ed15342d6f6eb43454875527a5c8"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -4533,7 +5788,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 訓練樣本是否具多樣性與語境一致性",
     "explanation": "生成式模型的品質極度依賴訓練資料的多樣性與語境品質，關係到語言\n流暢性與真實性。",
-    "id": 252
+    "id": 252,
+    "display_num": 4,
+    "source_id": "ai_mid-2b7c794e9721e2d9",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-0004683ac053e9574d44a2ba",
+    "content_hash": "cecf6caf6fc9cf66afa5d3f4438f508db2c238b16f3671687dc89ee04151120c"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -4551,7 +5811,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 資料匿名化",
     "explanation": "資料匿名化處理如移除姓名、轉換欄位等，可降低個資風險並符合法規\n要求。",
-    "id": 253
+    "id": 253,
+    "display_num": 5,
+    "source_id": "ai_mid-2b7c794e9721e2d9",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-953c985614f5269bccdd25b1",
+    "content_hash": "a7bf0a1ad2aa0a7df5e8d3d72bbddbdfc213c066143b6271fc65e695a59b5c94"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -4569,7 +5834,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 差分隱私（ Differential Privacy ）",
     "explanation": "差分隱私透過加噪機制保護個別資料不被逆推出，即使在公開模型中也\n難以重建原始資料。",
-    "id": 254
+    "id": 254,
+    "display_num": 6,
+    "source_id": "ai_mid-2b7c794e9721e2d9",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-2d8a9f47d382e681aa353052",
+    "content_hash": "22a147792f21e3d7672ce122a86a4c97411270edebf0a2426ac798d5b4078044"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -4587,7 +5857,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 取得合法授權與病患同意，並執行隱私強化",
     "explanation": "處理含敏感資訊 之醫療資料時，必須符合隱私法規與倫理原則，包括告\n知、同意與匿名化處理。",
-    "id": 255
+    "id": 255,
+    "display_num": 7,
+    "source_id": "ai_mid-2b7c794e9721e2d9",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-083aaff4d555c7dea08ae44f",
+    "content_hash": "d2b5e8a8eadbec9e5290287ac3e1b64c00dbd694ee1f811be924d407d99b5bc5"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -4605,7 +5880,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 資料版本管理與操作紀錄制度",
     "explanation": "版本管理可確保資料來源、處理歷程清楚記錄，對稽核與合規性追蹤至\n關重要。  \n \n\n 第六章  大數據在人工智慧之應用  \n6-43",
-    "id": 256
+    "id": 256,
+    "display_num": 8,
+    "source_id": "ai_mid-2b7c794e9721e2d9",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-61b02f0343af718c4c464b65",
+    "content_hash": "4ef4da41ee34533bcc4a5b161f9922dfdf0eb58a52b15937a8fc71e3e8f17f7a"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -4623,7 +5903,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 導入 AI 治理框架與跨部門監管流程",
     "explanation": "AI 治理需結合技術、法務、業務等部門共同制定監督機制，確保風險控\n制與合規落實。",
-    "id": 257
+    "id": 257,
+    "display_num": 9,
+    "source_id": "ai_mid-2b7c794e9721e2d9",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-8e1cae426d12d9ec46df6488",
+    "content_hash": "6a94d9f399cb97c3cb5a2cc5413170472625bf5b7a64800edaf868a79cddcd5d"
   },
   {
     "subject": "L22 大數據處理分析與應用",
@@ -4641,7 +5926,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 採用分散式訓練與硬體加速架構",
     "explanation": "在面對龐大資料量與高計算需求時，常採用 GPU/TPU 加速與分散式訓\n練架構（如 Horovod 、SageMaker 、PyTorch Distributed ）以縮短訓練時間並提\n升效能，為目前主流解法。",
-    "id": 258
+    "id": 258,
+    "display_num": 10,
+    "source_id": "ai_mid-2b7c794e9721e2d9",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-223af2169b601b46010fdfa1",
+    "content_hash": "c6186ae70370150cf61bdccd32c376f6bbf976146b15670208b898884d096989"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -4659,7 +5949,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 機率密度函數（ PDF）",
     "explanation": "機率密度函數（ PDF）用於描述連續型隨機變 數於某個取值範圍內的機\n率分佈。與離散型隨機變數不同，連續變數在單一點的機率為零， PDF 通常透\n過積分計算區間內的機率，而 PMF 則用於離散型變數。累積分佈函數 （ CDF）\n則是累計機率的工具，而非直接描述機率密度。",
-    "id": 259
+    "id": 259,
+    "display_num": 1,
+    "source_id": "ai_mid-a54c2c0cf9aed246",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-f12cedf09ed2b316cb3b056e",
+    "content_hash": "09d12e15bd689e4aeac24bafbdb9688f655bd53b1e286a1f59bfc78a115d89c6"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -4677,7 +5972,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 0 或 1",
     "explanation": "伯努利分佈是典型的二元分佈，僅有兩種可能結果，通常以 0 和 1 表\n示，例如成功與失敗、點擊與未點擊。此分佈是多數二元分類模型（如邏輯迴\n歸）的理論基礎。",
-    "id": 260
+    "id": 260,
+    "display_num": 2,
+    "source_id": "ai_mid-a54c2c0cf9aed246",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-ccc7dff4b1ded3d2a3b2aab6",
+    "content_hash": "17e302bdcbba190f0e5cdd70bdbbc60ba1589c314272c1025f34b6c509872148"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -4695,7 +5995,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 特徵值分解（ Eigenvalue Decomposition ）",
     "explanation": "PCA 透過對協方差矩陣進行特徵值分 解，找出最大變異方向，並以此降\n低維度並保留最重要的資訊 。 這能讓資料投影到較少的維度上 ， 同時盡可能維\n持原始資料的變異。",
-    "id": 261
+    "id": 261,
+    "display_num": 3,
+    "source_id": "ai_mid-a54c2c0cf9aed246",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-5755832ffcbf720820d1d6fe",
+    "content_hash": "03e9ece69b730e8e03b1e62ef1c5259aeea6a22e8c656e4f9dad9b443084c06c"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -4713,7 +6018,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 主成分分析（ PCA）",
     "explanation": "：PCA 是常用的維度簡化工具，透過線性變換找出資料中變異最大的方\n向，將原始高維度資料投影到較少維度上，達到資料壓縮與特徵提取的效果。",
-    "id": 262
+    "id": 262,
+    "display_num": 4,
+    "source_id": "ai_mid-a54c2c0cf9aed246",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-424cb40dada7ffe05355bdf3",
+    "content_hash": "d5b89230e5778cb44f1b0d769c953927b36e8bdbb7c2193ae20b4f15a66a6d5a"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -4731,7 +6041,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 損失函數對參數的偏微分",
     "explanation": "梯度是損失函數相對於模型參數的導數，能指引參數應往哪個方向調整\n以減少損失。梯度越大，表示調整幅度應越大，以快速降低誤差。",
-    "id": 263
+    "id": 263,
+    "display_num": 5,
+    "source_id": "ai_mid-a54c2c0cf9aed246",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-c2a4366de8384c25ee7ad31d",
+    "content_hash": "259193c90293f845b4f4ff2c4c0c133fe4bf9b3abf400622b7f7feb7fbeb571d"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -4749,7 +6064,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 拒絕虛無假設時所容許的 型一錯誤機率",
     "explanation": "顯著水準（α）是研究者事先設定的風險上限 ，代表當虛無假設為真時 ，\n錯誤拒絕該假設的容忍機率。常見設定為 0.05，意即容許 5%的型一錯誤。",
-    "id": 264
+    "id": 264,
+    "display_num": 6,
+    "source_id": "ai_mid-a54c2c0cf9aed246",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-9d442f68c6b5d213a4fcbda6",
+    "content_hash": "a08f410fba0b539bb0fb1b725b5c913102e0b6c869139bf135a4ee7339f801d4"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -4767,7 +6087,12 @@ const ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D) 中位數",
     "explanation": "平均數會受極端值拉動而偏離中心位置。中位數則是將資料排序後取中\n間值，不會受到少數極端值的嚴重影響，因此在偏態分佈或極端值存在時，常\n用中位數描述資料集中趨勢。  \n\n 第三章 機器學習基礎數學 \n3-31",
-    "id": 265
+    "id": 265,
+    "display_num": 7,
+    "source_id": "ai_mid-a54c2c0cf9aed246",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-c30322e18d85436534dfdc22",
+    "content_hash": "35199390ae5b538af0d2cb903444a1bae32f15d44814398fb7d8acf308647b36"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -4785,7 +6110,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) Adagrad",
     "explanation": "Adagrad 根據各參數歷史梯度平方和，調整每個參數的學習率。對變動\n較少的參數保留較高學習率 ， 而對變動大的參數降低學習率 ， 特別適合處理稀\n疏特徵資料。",
-    "id": 266
+    "id": 266,
+    "display_num": 8,
+    "source_id": "ai_mid-a54c2c0cf9aed246",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-3653bbfa7ce121fc1438b915",
+    "content_hash": "4bc0ba2d4dceda1e8a5547a50d0901a5ddba9cf5e2e4b001285daa6002100fd0"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -4803,7 +6133,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 梯度裁剪（ Gradient Clipping ）",
     "explanation": "梯度爆炸會導致權重變動過大甚至溢出，影響模型穩定性。梯度裁剪能\n限制梯度的最大值，防止數值爆炸，特別適用於深度神經網路或 RNN 訓練。",
-    "id": 267
+    "id": 267,
+    "display_num": 9,
+    "source_id": "ai_mid-a54c2c0cf9aed246",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-13a84252c501c21e728872c9",
+    "content_hash": "fccf25dae1b588db4aae7f0e0ab6d4c6877586b35bcd5d34b23d49e356ed1e60"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -4821,7 +6156,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 伯努利分佈",
     "explanation": "邏輯迴歸假設目標變數為二元型態 （如 0 或 1） ，服從伯努利分佈，並透\n過 sigmoid 函數將預測值映射至機率區間 [0, 1]，以完成二元分類。",
-    "id": 268
+    "id": 268,
+    "display_num": 10,
+    "source_id": "ai_mid-a54c2c0cf9aed246",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-5ee5fb8e52118c2e57dd597a",
+    "content_hash": "6713acc92131659a9b0bb230b62e10218decf3f7a2e17da45414fcbc8d486741"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -4839,7 +6179,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 非監督式學習（ Unsupervised Learning ）",
     "explanation": "：非監督式學習（ Unsupervised Learning ）不依賴標註資料，主要目的是\n從 資 料 中 發 現 潛 在 結 構 、 模 式 或 分 佈 ， 例 如 分 群 （ Clustering ） 、 降 維\n（Dimensionality Reduction ）等技術，是探索性資料分析 的重要工具。",
-    "id": 269
+    "id": 269,
+    "display_num": 1,
+    "source_id": "ai_mid-37d19891cd0cac77",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-109655890778b0bd531a9ffa",
+    "content_hash": "81706085954d8def6caf8bc44816d18356377ffa5190f190360a2169e795ac6e"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -4857,7 +6202,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 迴歸（ Regression ）",
     "explanation": "迴歸（Regression ）是預測連續數值的任務，如房價預測、氣溫預測等，\n與分類不同，分類是用來預測離散類別結果。",
-    "id": 270
+    "id": 270,
+    "display_num": 2,
+    "source_id": "ai_mid-37d19891cd0cac77",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-948d911660bba26f46cd5773",
+    "content_hash": "80c2e4d1f70a3361876ac83e73daf69b1e65f88403f0c1a7bdef6a78f4894dc3"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -4875,7 +6225,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 卷積神經網路（ Convolutional Neural Network, CNN ）",
     "explanation": "卷積神經網路（ CNN）透過卷積層偵測局部特徵，尤其擅長處理影像、\n語音等有空間或時間結構的資料，是深度學習中重要的基礎架構之一。",
-    "id": 271
+    "id": 271,
+    "display_num": 3,
+    "source_id": "ai_mid-37d19891cd0cac77",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-cd183b1a10bbb4a826545e81",
+    "content_hash": "ba376bd3947a32b1232e17d7fe267055e860f16f0769ca996e8976caa34a7909"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -4893,7 +6248,12 @@ const ipasAiMidQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D) Support Vector Regression",
     "explanation": "當支援向量 機（SVM）應用於連續數值的預測問題時，稱為支援向量迴\n歸（Support Vector Regression, SVR ）。SVR 與傳統 SVM 不同，目標是尋找一\n條最佳超平面，使大多數資料點落在預設的誤差範圍內。",
-    "id": 272
+    "id": 272,
+    "display_num": 4,
+    "source_id": "ai_mid-37d19891cd0cac77",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-0be0228c48888b00966219bf",
+    "content_hash": "692d9a1e854c11804261e386273258845d31b3ee70118a285b41fab6d69157a1"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -4911,7 +6271,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 過擬合（ Overfitting ）",
     "explanation": "：過擬合（ Overfitting ）是指模型在訓練資料上表現極好，卻無法在未知\n新資料上維持預測效能 ， 通常是因為模型過於複雜 ， 學習到不具代表性的噪聲 。",
-    "id": 273
+    "id": 273,
+    "display_num": 5,
+    "source_id": "ai_mid-37d19891cd0cac77",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-8fb19c92cee9b49b427bf01c",
+    "content_hash": "4e0274d4a732eedf9549c6fa226b5133726445b729350312b27f79daa1dff253"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -4929,7 +6294,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 激活函數（ Activation Function ）",
     "explanation": "激活函數（ Activation Function ）如 ReLU、Sigmoid 等，為神經網路帶\n來非線性能力，若沒有激活函數，多層網路仍只是線性變換，無法表現複雜的\n關係。",
-    "id": 274
+    "id": 274,
+    "display_num": 6,
+    "source_id": "ai_mid-37d19891cd0cac77",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-b5409e1af0ce85b308bff141",
+    "content_hash": "9719d42d0566ab6e564799a37c912de6781082c53a9f990053d095f8b11ec062"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -4947,7 +6317,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 正則化（ Regularization ）",
     "explanation": "正則化 （Regularization ） 透過在損失函數中加入 L1 或 L2 懲罰項，限制\n模型權重的大小，減少模型過度擬合訓練資料，提升泛化能力。  \n  \n\n 第四章  機器學習與深度學習 \n4-96",
-    "id": 275
+    "id": 275,
+    "display_num": 7,
+    "source_id": "ai_mid-37d19891cd0cac77",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-6873c9c04b840e06e7cef2d0",
+    "content_hash": "75fc39418262aaf01769779834f85cd1fd19fb2d51e7b7869cb146e38a2a52aa"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -4965,7 +6340,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 損失函數（ Loss Function ）",
     "explanation": "損失函數（ Loss Function ）用來衡量模型預測值與實際值的差距，是指\n引優化器調整 參數方向的重要依據。常見如均方誤差（ MSE ） 、交叉熵損失\n（Cross -Entropy Loss ）等。",
-    "id": 276
+    "id": 276,
+    "display_num": 8,
+    "source_id": "ai_mid-37d19891cd0cac77",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-da7be4ce7ea48a41eabbfdb8",
+    "content_hash": "b58ebf550cef10f2ba07dd360b7f27a2aefaf8330a4946e3c0a05dec7f1f30a4"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -4983,7 +6363,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 注意力機制（ Attention ）",
     "explanation": "Transformer 模型核心在於注意力機制（ Attention ） ，透過計算序列中各\n元素間的關聯權重，捕捉長距離依賴，徹底取代傳統 RNN 的循環架構，大幅\n提升計算效率與表現。",
-    "id": 277
+    "id": 277,
+    "display_num": 9,
+    "source_id": "ai_mid-37d19891cd0cac77",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-e4452b2dd96afce28da498f2",
+    "content_hash": "6319c94af20dfa0ba752c81ebbfef852934ec811b8d0636056d9006e03167901"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -5001,7 +6386,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 基尼不純度（ Gini Impurity ）",
     "explanation": "基尼不純度（ Gini Impurity ）衡量節點內樣本的不純度，數值越低表示\n節點內樣本越集中於單一類別 ， 是 決策樹演算法常用的分裂判斷依據 ， 尤其在\n分類任務中扮演重要角色。",
-    "id": 278
+    "id": 278,
+    "display_num": 10,
+    "source_id": "ai_mid-37d19891cd0cac77",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-f652edde6a2662a304d151e8",
+    "content_hash": "1d83b5201bae5069274982e04f1426dbe837898369bddc8db42dbb3a02c2ac3e"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -5019,7 +6409,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 預測模型填補（ Predictive Imputation ）",
     "explanation": "預測模型填補是利用其他特徵變數訓練模型，如迴歸或分類器，預測缺\n失值的位置或值，特別適用於特徵之間關聯性高的 情況。相對於簡單的刪除或\n均值填補，模型補值能更好地捕捉數據內在關聯性，降低資訊流失。",
-    "id": 279
+    "id": 279,
+    "display_num": 1,
+    "source_id": "ai_mid-fb2f38ec867dbf5f",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-baa1e60b579d6a4d1d32a86c",
+    "content_hash": "deaf58b6026edc9e1e608ab7e86e83e11b279a385956c37b1f3469eb18ec599f"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -5037,7 +6432,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 四分位距法（ IQR）",
     "explanation": "：四分位距法是常見的統計方法，透過計算資料的第一與第三四分位數\n（Q1 與 Q3） ，並判定距離超過IQR（四分位距） 1.5 倍以上的數據點為異常。\n這種方法直觀且適用於大多數數值型資料的初步檢查。",
-    "id": 280
+    "id": 280,
+    "display_num": 2,
+    "source_id": "ai_mid-fb2f38ec867dbf5f",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-2dd792d5631359bf60d92b78",
+    "content_hash": "5bf7bad0dad7cb93aa96a0674c1140c33ddbb5dc6a61c9ad1b5db4aea4a75418"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -5055,7 +6455,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) Embedded 方法",
     "explanation": "Embedded 方法會在模型訓練過程中同步進行特徵挑選。例如決策樹模\n型會產生特徵重要性（ Feature Importance ） ，或像Lasso 、Ridge 透過正則化直\n接控制特徵權重，實現同時建模與特徵選擇的目標。",
-    "id": 281
+    "id": 281,
+    "display_num": 3,
+    "source_id": "ai_mid-fb2f38ec867dbf5f",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-c85eddef9d24cd116d4c66b0",
+    "content_hash": "2994e456355644da7861e6475543c7a7475bf47df7bee9543c2b6621cefe27c3"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -5073,7 +6478,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 對數轉換（ Log Transform ）",
     "explanation": "對數轉換可有效降低右偏分佈的極端值影響，使資料分佈更接近常態。\n常用於收入、銷售額等具極端高值的變數。平方根轉換則較適用於中度偏態資\n料。",
-    "id": 282
+    "id": 282,
+    "display_num": 4,
+    "source_id": "ai_mid-fb2f38ec867dbf5f",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-5e1660c646110b39e81a2d32",
+    "content_hash": "9e999b3aebcdedf98c9df7eb0261d823243d9a81e99c986342e78f7fa4794d44"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -5091,7 +6501,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 過擬合",
     "explanation": "過擬合發生在模型學習了太多訓練集的細節與雜訊，導致在未見過的測\n試資料上表現不佳 。 常見解決方案包括使用正則化 、 降低模型複雜度或早停策\n略（Early Stopping ）。",
-    "id": 283
+    "id": 283,
+    "display_num": 5,
+    "source_id": "ai_mid-fb2f38ec867dbf5f",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-81efe3749e3e04d9c3e475c1",
+    "content_hash": "ed4445450082aa6d81d922119ecd7d5d9ddcb4b32ca85862ac6e799a01449810"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -5109,7 +6524,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) LOOCV",
     "explanation": "LOOCV（Leave-One-Out Cross -Validation ）是 K-fold 的極端形式，當 K\n等於樣本數 n 時，每次只留一筆做驗證。此方法能最大化資料利用，但計算成\n本極高，不適用於大樣本情境。  \n \n\n 第五章  機器學習建模與參數調校  \n5-57",
-    "id": 284
+    "id": 284,
+    "display_num": 6,
+    "source_id": "ai_mid-fb2f38ec867dbf5f",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-5121c221bb64fc5136051da4",
+    "content_hash": "8a16fb475c3bf0c0ee13dd494f02f2bdff66a0fa43ff6f27c74b37458d76d677"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -5127,7 +6547,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) Dropout",
     "explanation": "Dropout 透過隨機將神經元暫時設為零，迫使模型在每次訓練都以不同\n的「子網路」進行學習，有效降低模型對特定神經元的過度依賴，減少過擬合\n風險。",
-    "id": 285
+    "id": 285,
+    "display_num": 7,
+    "source_id": "ai_mid-fb2f38ec867dbf5f",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-1bbf2ab32524c2afea881f45",
+    "content_hash": "63be55c454d5543847a027ef0e5d9fe68eb9d73a2cd5c524490b4e078098a0c8"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -5145,7 +6570,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 將大型模型的知識轉移至小型模型",
     "explanation": "Knowledge Distillation 是利用大型、高性能的教師模型，將其知識以軟\n標籤 （soft labels） 的形式傳遞給小型學生模型，讓學生模型在參數較少的情況\n下，仍維持接近的預測能力。",
-    "id": 286
+    "id": 286,
+    "display_num": 8,
+    "source_id": "ai_mid-fb2f38ec867dbf5f",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-01a0f3a4855c33b48c942fff",
+    "content_hash": "015b601b42bfdf4d64983062d943668dcd59bccaeb3bcee7a3900e8d0e2bb00f"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -5163,7 +6593,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) Adagrad",
     "explanation": "Adagrad 能針對每個參數調整不同的學習率，累積梯度平方和後，自動\n減小常被更新參數的學習步伐。適合處理特徵稀疏的場景，如文字分析，但學\n習率會不斷衰減至極小值，需留意訓練是否停滯。",
-    "id": 287
+    "id": 287,
+    "display_num": 9,
+    "source_id": "ai_mid-fb2f38ec867dbf5f",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-b85bad8e17e69c50fa22496e",
+    "content_hash": "fdf052aa370fd2134309f1c202ba17cc6946429d938e808680b045dedff8c32d"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -5181,7 +6616,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 類別變數具有高基數（ High Cardinality ）",
     "explanation": "One-hot Encoding 會為每個不同類別產生獨立欄位，若類別數過多，會\n導致特徵維度爆炸 ， 增加記憶體使用與模型訓練的負擔 ， 尤其在資料量大時更\n明顯。",
-    "id": 288
+    "id": 288,
+    "display_num": 10,
+    "source_id": "ai_mid-fb2f38ec867dbf5f",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-56d42204688499db3f672e15",
+    "content_hash": "a7550742cb859b6aa743ac44254abe894fad738181950149a495634443ea7d32"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -5199,7 +6639,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 姓名、電子郵件地址、身分證字號",
     "explanation": "「直接識別個人身份資訊 （PII） 」 是指無需透過其他資訊輔助，單獨即可\n明確辨識出特定個人的資料。  \n（A）出生日期、郵遞區號和職業等資訊單獨無法直接識別特定個人，通常需\n要結合其他資訊才能達到識別效果，屬於準識別資訊（ Quasi -Identifiers ）。 \n（B）網站 Cookie ID 、IP 位址和地理定位資訊雖然屬於識別符號，且在特定情\n境下可被追溯或結合其他資訊後具有識別性 ， 但其本身通常不被視為單獨可直\n接指向特定個人的 PII。通常被歸類為間接識別資訊。  \n（C） 姓名、電子郵件地址和身分證字號是典型的直接識別資訊，這些資訊單獨\n就能指向一個特定且唯一的人。  \n（D）網路行為模式、匿名化統計數據和加密後的密碼雜湊值均屬於非直接識\n別資訊。匿名化數據已去除識別性，加密雜湊值雖然源於個人密 碼但已不可逆\n地處理，網路行為模式本身也不直接指向個人。",
-    "id": 289
+    "id": 289,
+    "display_num": 1,
+    "source_id": "ai_mid-2e3a50ca7a63cc7f",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-f3b075c6bdfa9275bd770959",
+    "content_hash": "12c20bc101e5d95cda56a273fd06001eff2bc810e078f2ff4da93caca9b7a957"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -5217,7 +6662,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 強化匿名化技術",
     "explanation": "即便進行匿名化，外部資料比對仍可能造成再識別風險，因此須強化匿\n名化措施或限制資料使用情境，才能降低風險。",
-    "id": 290
+    "id": 290,
+    "display_num": 2,
+    "source_id": "ai_mid-2e3a50ca7a63cc7f",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-41b7377636190dcb6e3a0cbd",
+    "content_hash": "af966cb8cb70536f7bddffcfd796a5e22f52c145f289b75ab31601c998403692"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -5235,7 +6685,12 @@ const ipasAiMidQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B) 結果門檻調整",
     "explanation": "結果門檻調整（ Threshold Adjustment ）屬於模型後處理方式，透過改變\n不同群體的決策門檻，以平衡模型在不同群體間的預測公平性。",
-    "id": 291
+    "id": 291,
+    "display_num": 3,
+    "source_id": "ai_mid-2e3a50ca7a63cc7f",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-60bde25097a1efa54dd517ac",
+    "content_hash": "a2dd78881f9cd17f5e39bfb89a58f111bf80fd6183c9d6453fdf96f4b735b860"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -5253,7 +6708,12 @@ const ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A) Equal Opportunity",
     "explanation": "Equal Opportunity 著重在實際應獲得正向結果的個案 ，在不同群體間應\n具有相同的被正確預測機率，尤其適用於醫療、社會福利等情境。",
-    "id": 292
+    "id": 292,
+    "display_num": 4,
+    "source_id": "ai_mid-2e3a50ca7a63cc7f",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-3cdc9662cad03772dec86977",
+    "content_hash": "b4ac584d637ad051df926e4bc25c90b00f67e71d39a2d365b39b5e468c38652a"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -5271,7 +6731,12 @@ const ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A) 對抗式去偏模型（ Adversarial Fairness ）",
     "explanation": "對抗式去偏透過訓練一個對抗網路，迫使主模型無法預測敏感屬性，從\n而降低模型對敏感特徵的依賴，是常見的公平性處理技術。  \n\n 第六章  機器學習治理 \n6-30",
-    "id": 293
+    "id": 293,
+    "display_num": 5,
+    "source_id": "ai_mid-2e3a50ca7a63cc7f",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-7c91929edd7d87ba455076bf",
+    "content_hash": "3e249c3d228d83371c38691b5d82cb4b06ed91a6218b45fdb20aaaf10bf8c9be"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -5289,7 +6754,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 類別重加權（ Class Weighting ）",
     "explanation": "類別重加權能在模型訓練時賦予少數類別更高權重，提升模型對少數群\n體的辨識能力，是處理不平衡資料常見的方法。",
-    "id": 294
+    "id": 294,
+    "display_num": 6,
+    "source_id": "ai_mid-2e3a50ca7a63cc7f",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-47226be799f0cbf2a1cbdcd8",
+    "content_hash": "176011416e3815015b4a812c9365cd24424674ae5a7c7f04efe061fc55864605"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -5307,7 +6777,12 @@ const ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A) 機率分佈差異造成的識別風險",
     "explanation": "T-Closeness 要求群組內敏感屬性的分佈，需與全體資料集分佈相近，以\n防止透過分佈偏差推測個人特徵，是進階的隱私保護技術。",
-    "id": 295
+    "id": 295,
+    "display_num": 7,
+    "source_id": "ai_mid-2e3a50ca7a63cc7f",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-b345e4a7f08d0782ad749809",
+    "content_hash": "fc47b532e6067eec36db75c5bdd9020538b9fa655b79f394fb8eed2f30a1a619"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -5325,7 +6800,12 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 公平性審查委員會",
     "explanation": "：公平性審查委員會匯集法務、技術、產品與倫理等部門，負責評估 AI\n系統的偏見風險，是企業治理 AI 公平性的重要機制。",
-    "id": 296
+    "id": 296,
+    "display_num": 8,
+    "source_id": "ai_mid-2e3a50ca7a63cc7f",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-9a58d6d5a19db959f651cf45",
+    "content_hash": "9734e325679052354ffa84ac0832657e30d9bf707f833d106b51ae08fc572ae9"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -5343,7 +6823,12 @@ const ipasAiMidQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A) SMOTE",
     "explanation": "SMOTE（Synthetic Minority Over -sampling Technique ） 透過合成新樣本，\n擴增少數類別資料，有助於平衡類別分佈，降低過擬合及模型偏誤風險。",
-    "id": 297
+    "id": 297,
+    "display_num": 9,
+    "source_id": "ai_mid-2e3a50ca7a63cc7f",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-aef5ca5dc26228d3b2eff42a",
+    "content_hash": "87a661badf0824e10acdcabe7031c43147ec0c47d076998e7b6df3ed9b038037"
   },
   {
     "subject": "L23 機器學習技術與應用",
@@ -5361,6 +6846,11 @@ const ipasAiMidQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C) 知識蒸餾（ Knowledge Distillation ）",
     "explanation": "知識蒸餾是用於模型壓縮與加速的技術，並非基礎隱私保護技術。隱私\n保護常用技術包括遮蔽、泛化及分桶，用來降低個資識別風險。",
-    "id": 298
+    "id": 298,
+    "display_num": 10,
+    "source_id": "ai_mid-2e3a50ca7a63cc7f",
+    "source_version": "official-through-2025-12-26",
+    "question_uid": "ai_mid-e8fd1f9f76800037b35b3efc",
+    "content_hash": "0a07a095e76373f96110e4d741b1109dc655748a75a1f24936a55d0998019ca9"
   }
 ];

@@ -3,6 +3,7 @@ import re
 import json
 import glob
 import pypdf
+from question_identity import enrich_questions
 
 # Workspace directories
 workspace_dir = r"c:\Drive224\Projects\iPAS 證照"
@@ -11,6 +12,8 @@ output_dir = os.path.join(workspace_dir, "exam")
 os.makedirs(output_dir, exist_ok=True)
 output_json_path = os.path.join(output_dir, "ai_questions.json")
 output_js_path = os.path.join(output_dir, "ai_questions.js")
+CERT_ID = "ai"
+SOURCE_VERSION = "official-through-2026-06-04"
 
 def to_half_width(char):
     mapping = {'Ａ': 'A', 'Ｂ': 'B', 'Ｃ': 'C', 'Ｄ': 'D'}
@@ -287,6 +290,12 @@ def main():
     # Assign global unique IDs
     for idx, q in enumerate(all_qs):
         q["id"] = idx + 1
+
+    all_qs = enrich_questions(
+        CERT_ID,
+        all_qs,
+        source_version=SOURCE_VERSION,
+    )
         
     print(f"Total parsed questions: {len(all_qs)}")
     
@@ -297,7 +306,7 @@ def main():
     
     # Write to JS
     with open(output_js_path, "w", encoding="utf-8") as f:
-        f.write("const ipasAiQuestions = " + json.dumps(all_qs, ensure_ascii=False, indent=2) + ";\n")
+        f.write("window.ipasAiQuestions = " + json.dumps(all_qs, ensure_ascii=False, indent=2) + ";\n")
     print(f"Successfully wrote database to {output_js_path}")
 
 if __name__ == "__main__":

@@ -4,9 +4,9 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 const banks = [
-    { file: 'questions.json', expectedCount: 163 },
-    { file: 'ai_questions.json', expectedCount: 530 },
-    { file: 'ai_mid_questions.json', expectedCount: 298 }
+    { file: 'questions.json', wrapper: 'questions.js', variable: 'ipasQuestions', expectedCount: 163 },
+    { file: 'ai_questions.json', wrapper: 'ai_questions.js', variable: 'ipasAiQuestions', expectedCount: 530 },
+    { file: 'ai_mid_questions.json', wrapper: 'ai_mid_questions.js', variable: 'ipasAiMidQuestions', expectedCount: 298 }
 ];
 
 for (const bank of banks) {
@@ -32,6 +32,20 @@ for (const bank of banks) {
                 assert.notEqual(option.trim(), '', `id ${question.id} 選項 ${optionIndex + 1} 為空`);
             });
             assert.match(question.answer, /^[A-D]$/, `id ${question.id} 答案不在 A-D`);
+            assert.match(question.question_uid, /^(oi|ai|ai_mid)-[a-f0-9]{24}$/, `id ${question.id} question_uid 格式錯誤`);
+            assert.equal(question.display_num, question.num, `id ${question.id} display_num 與 num 不一致`);
+            assert.match(question.source_id, /^(oi|ai|ai_mid)-[a-f0-9]{16}$/, `id ${question.id} source_id 格式錯誤`);
+            assert.equal(typeof question.source_version, 'string', `id ${question.id} 缺少 source_version`);
+            assert.match(question.content_hash, /^[a-f0-9]{64}$/, `id ${question.id} content_hash 格式錯誤`);
         });
+
+        assert.equal(new Set(questions.map(question => question.question_uid)).size, questions.length);
+
+        const wrapperPath = path.join(__dirname, '..', 'exam', bank.wrapper);
+        const wrapperSource = fs.readFileSync(wrapperPath, 'utf8').trim();
+        const prefix = `window.${bank.variable} = `;
+        assert.equal(wrapperSource.startsWith(prefix), true, `${bank.wrapper} wrapper 格式錯誤`);
+        const wrappedQuestions = JSON.parse(wrapperSource.slice(prefix.length).replace(/;$/, ''));
+        assert.deepEqual(wrappedQuestions, questions, `${bank.wrapper} 與 ${bank.file} 內容不一致`);
     });
 }

@@ -19,6 +19,7 @@ c:\Drive224\Projects\iPAS 證照
 ├── parse_questions.py             # 營運智慧分析師題庫解析器
 ├── parse_ai_questions.py          # AI 應用規劃師 (初級) 題庫解析器
 ├── parse_ai_mid_questions.py      # AI 應用規劃師 (中級) 題庫解析器
+├── question_identity.py           # 題庫永久識別碼、來源代碼與內容雜湊共用模組
 ├── generate_lecture.py             # Markdown → 口語講稿 TXT / MP3
 ├── docs/                            # 系統改造、資料模型與階段計畫
 ├── tests/                           # Node 內建測試與三題庫 smoke test
@@ -141,17 +142,18 @@ c:\Drive224\Projects\iPAS 證照
 
 ### ✅ 自動化基線驗證
 
-本專案使用 Node.js 內建測試執行器，不需要安裝 npm 套件：
+本專案使用 Node.js 與 Python 內建測試工具，不需要安裝額外測試套件：
 
 ```powershell
 node --test tests/*.test.js
+python -m unittest tests.test_question_identity
 node --check exam/core.js
 node --check exam/script.js
 node --check exam/config.js
 node --check exam/sw.js
 ```
 
-測試涵蓋評分結果、重複事件防護、牆鐘計時、核心載入順序，以及三份題庫的題數、唯一 ID、四個非空選項與答案格式。
+測試涵蓋評分結果、重複事件防護、牆鐘計時、永久 `question_uid`、舊資料消歧義、按證照載入，以及三份題庫的題數、來源欄位、內容雜湊、四個非空選項、答案格式與 JSON/JS wrapper 一致性。題庫在 GitHub Pages 上以 JSON 為 canonical 格式按需載入；JS wrapper 僅供 `file://` 本機備援，且只能由解析器產生。
 
 ---
 
