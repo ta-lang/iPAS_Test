@@ -11,9 +11,12 @@ let appData = {
     currentQuestionIdx: 0,
     quizMode: 'exam', // 'exam' or 'practice'
     timerInterval: null,
+    timerStartedAt: null,
+    timerDurationSeconds: 4500,
     timeRemaining: 4500, // 75 minutes by default (dynamic based on certification)
     timeSpent: 0,
-    quizActive: false
+    quizActive: false,
+    committedEvents: Object.create(null)
 };
 
 // DOM Elements
@@ -526,11 +529,51 @@ function enterPracticeSetup() {
 }
 
 // Start Practice Mode Session
-function startPracticeMode() {
+async function startPracticeMode() {
     const subjVal = document.getElementById('selectSubject').value;
     const chapVal = selectChapter.value;
     const numLimit = document.getElementById('practiceNum').value;
-    
+    const isWrongBook = document.getElementById('chkWrongBook').checked;
+
+    if (isWrongBook) {
+        const pool = await getWrongPool(appData.currentCert);
+        if (pool.length === 0) {
+            alert('錯題池為空，尚無需複習的題目！');
+            return;
+        }
+
+        let filtered = pool.filter(entry =>
+            entry.nextReviewDate <= new Date().toISOString().split('T')[0]);
+
+        if (subjVal !== 'all') {
+            const modules = window.EXAM_CONFIG.modules.filter(module => module.enabled);
+            const mod = modules.find(module => module.id === appData.currentCert);
+            const targetSubject = mod && mod.subjects.find(subject => subject.id === subjVal);
+            if (targetSubject) {
+                filtered = filtered.filter(entry =>
+                    targetSubject.matchKeywords.some(keyword => entry.subject.includes(keyword)));
+            }
+        }
+        if (chapVal !== 'all') {
+            filtered = filtered.filter(entry => entry.chapter === chapVal);
+        }
+        if (filtered.length === 0) {
+            alert('篩選範圍內無待複習錯題！');
+            return;
+        }
+
+        appData.currentQuiz = shuffleArray(filtered).slice(
+            0,
+            numLimit === 'all' ? filtered.length : parseInt(numLimit, 10)
+        );
+        appData.quizMode = 'practice';
+        practiceSetup.classList.add('hidden');
+        timerDisplay.classList.add('hidden');
+        document.querySelector('.quiz-nav-panel').classList.remove('hidden');
+        initQuizSession('practice');
+        return;
+    }
+
     const modules = window.EXAM_CONFIG.modules.filter(m => m.enabled);
     const mod = modules.find(m => m.id === appData.currentCert);
     if (!mod) return;
@@ -567,6 +610,10 @@ function startPracticeMode() {
     
     // Set current quiz
     appData.currentQuiz = filtered;
+    appData.quizMode = 'practice';
+    practiceSetup.classList.add('hidden');
+    timerDisplay.classList.add('hidden');
+    document.querySelector('.quiz-nav-panel').classList.remove('hidden');
     initQuizSession('practice');
 }
 
@@ -737,12 +784,15 @@ function startExamSubjectMode(subjKey) {
 function initQuizSession(mode) {
     appData.userAnswers = {};
     appData.flaggedQuestions = {};
+    appData.committedEvents = Object.create(null);
     appData.currentQuestionIdx = 0;
     appData.quizActive = true;
     
     const durationMinutes = (appData.currentCert === 'ai_mid') ? 90 : 75;
-    appData.timeRemaining = durationMinutes * 60;
+    appData.timerDurationSeconds = durationMinutes * 60;
+    appData.timeRemaining = appData.timerDurationSeconds;
     appData.timeSpent = 0;
+    appData.timerStartedAt = null;
     
     document.querySelector('.quiz-nav-panel').classList.remove('hidden');
     
@@ -781,13 +831,18 @@ function shuffleArray(array) {
 
 // Timer management
 function startTimer() {
+    appData.timerStartedAt = Date.now();
     updateTimerText();
     appData.timerInterval = setInterval(() => {
-        appData.timeRemaining--;
-        appData.timeSpent++;
+        const snapshot = window.ExamCore.getTimerSnapshot(
+            appData.timerStartedAt,
+            appData.timerDurationSeconds
+        );
+        appData.timeRemaining = snapshot.timeRemaining;
+        appData.timeSpent = snapshot.timeSpent;
         updateTimerText();
-        
-        if (appData.timeRemaining <= 0) {
+
+        if (snapshot.expired && appData.quizActive) {
             clearInterval(appData.timerInterval);
             alert('考試時間截止！系統將自動為您繳卷。');
             gradeQuiz();
@@ -880,9 +935,8 @@ function showQuestion(idx) {
     
     if (idx === appData.currentQuiz.length - 1) {
         btnNext.classList.add('hidden');
-        if (appData.quizMode === 'exam') {
-            btnSubmit.classList.remove('hidden');
-        }
+        btnSubmit.textContent = appData.quizMode === 'exam' ? '提交考卷' : '完成練習';
+        btnSubmit.classList.remove('hidden');
     } else {
         btnNext.classList.remove('hidden');
         btnSubmit.classList.add('hidden');
@@ -933,11 +987,29 @@ function selectOption(qIdx, oIdx) {
     // Redraw current question to apply selection styles
     showQuestion(qIdx);
     updateProgress();
-    
-    // If practice mode, render feedback immediately
+
+    // Practice persistence belongs to the answer event, never to screen rendering.
     if (appData.quizMode === 'practice') {
-        showPracticeFeedback(qIdx);
+        persistPracticeAnswer(qIdx);
     }
+}
+
+function persistPracticeAnswer(qIdx) {
+    const eventKey = `practice-answer:${qIdx}`;
+    if (!window.ExamCore.claimOnce(appData.committedEvents, eventKey)) return;
+
+    const q = appData.currentQuiz[qIdx];
+    const correctIdx = window.ExamCore.ANSWER_PREFIXES.indexOf(String(q.answer || '').toUpperCase());
+    const isCorrect = appData.userAnswers[qIdx] === correctIdx;
+    const operations = [updateQuestionStats(appData.currentCert, q.num, isCorrect)];
+
+    if (isCorrect) {
+        operations.push(updateWrongPoolAfterCorrect(appData.currentCert, q.num));
+    } else {
+        operations.push(addWrongQuestion(appData.currentCert, q));
+    }
+
+    void Promise.allSettled(operations).then(() => refreshWrongPoolCount());
 }
 
 // Immediate feedback for Practice Mode
@@ -1013,10 +1085,14 @@ function confirmSubmitExam() {
     const total = appData.currentQuiz.length;
     const answered = Object.keys(appData.userAnswers).length;
     const unanswered = total - answered;
-    
-    let confirmMsg = '您確定要交卷嗎？';
+
+    let confirmMsg = appData.quizMode === 'exam'
+        ? '您確定要交卷嗎？'
+        : '要完成本次練習並查看結果嗎？';
     if (unanswered > 0) {
-        confirmMsg = `您還有 ${unanswered} 題尚未回答！確定要交卷嗎？`;
+        confirmMsg = appData.quizMode === 'exam'
+            ? `您還有 ${unanswered} 題尚未回答！確定要交卷嗎？`
+            : `您還有 ${unanswered} 題尚未練習，仍要查看本次結果嗎？`;
     }
     
     if (confirm(confirmMsg)) {
@@ -1034,96 +1110,99 @@ function exitQuizSession() {
 
 // Grading Algorithm
 function gradeQuiz() {
+    if (!appData.currentQuiz.length) return;
+    if (!window.ExamCore.claimOnce(appData.committedEvents, 'quiz-result')) return;
+
+    if (appData.quizMode === 'exam' && appData.timerStartedAt !== null) {
+        const snapshot = window.ExamCore.getTimerSnapshot(
+            appData.timerStartedAt,
+            appData.timerDurationSeconds
+        );
+        appData.timeRemaining = snapshot.timeRemaining;
+        appData.timeSpent = snapshot.timeSpent;
+    }
     clearInterval(appData.timerInterval);
     appData.quizActive = false;
-    
-    const total = appData.currentQuiz.length;
-    let correctCount = 0;
-    
-    // Subject stats structures built dynamically
+
     const modules = window.EXAM_CONFIG.modules.filter(m => m.enabled);
     const mod = modules.find(m => m.id === appData.currentCert);
-    
-    let subjectStats = {};
-    if (mod) {
-        mod.subjects.forEach(subj => {
-            subjectStats[subj.id] = { name: subj.name, total: 0, correct: 0 };
-        });
-    }
-    
-    const prefixes = ['A', 'B', 'C', 'D'];
-    
-    appData.currentQuiz.forEach((q, idx) => {
-        let subjKey = null;
-        if (mod) {
-            const matchedSubj = mod.subjects.find(subj => {
-                return subj.matchKeywords.some(keyword => q.subject.includes(keyword));
-            });
-            if (matchedSubj) {
-                subjKey = matchedSubj.id;
-            }
-        }
-        
-        // Fallback to the first subject if no match found
-        if (!subjKey && mod && mod.subjects.length > 0) {
-            subjKey = mod.subjects[0].id;
-        }
-        
-        if (subjKey && subjectStats[subjKey]) {
-            subjectStats[subjKey].total++;
-        }
-        
-        const userChoiceIdx = appData.userAnswers[idx];
-        const correctIdx = prefixes.indexOf(q.answer);
-        
-        if (userChoiceIdx === correctIdx) {
-            correctCount++;
-            if (subjKey && subjectStats[subjKey]) {
-                subjectStats[subjKey].correct++;
-            }
-            q.gradedResult = 'correct';
-        } else {
-            q.gradedResult = 'wrong';
-        }
+    const result = window.ExamCore.buildQuizResult({
+        questions: appData.currentQuiz,
+        userAnswers: appData.userAnswers,
+        subjects: mod ? mod.subjects : []
     });
-    
-    // Calculations
-    const score = Math.round((correctCount / total) * 100);
-    const passed = score >= 70;
-    
+
+    appData.currentQuiz.forEach((question, index) => {
+        question.gradedResult = result.gradedResults[index];
+    });
+    persistQuizResult(result);
+
     // Display dashboard scores
-    lblScore.textContent = score;
-    
+    lblScore.textContent = result.score;
+
     // Score Circle Animation
     const circumference = 283; // 2 * PI * r (45) = 282.7
-    const offset = circumference - (score / 100) * circumference;
+    const offset = circumference - (result.score / 100) * circumference;
     scoreCircleProgress.style.strokeDashoffset = offset;
-    scoreCircleProgress.style.stroke = passed ? 'var(--success)' : 'var(--danger)';
-    
+    scoreCircleProgress.style.stroke = result.passed ? 'var(--success)' : 'var(--danger)';
+
     // Feedback details text
-    lblResultTitle.textContent = passed ? '🎉 及格！恭喜通過！' : '⚠️ 分數未及格，請繼續加油！';
-    lblResultTitle.style.color = passed ? 'var(--success)' : 'var(--danger)';
-    lblResultDesc.textContent = passed ? 
-        '恭喜你達到 70 分及格門檻，你已經具備一定的專業水準！' : 
-        '離 70 分及格門檻差了一點，建議檢驗下方錯題，並複習相關單元講義。';
-        
+    if (appData.quizMode === 'practice') {
+        lblResultTitle.textContent = `練習完成：${result.score} 分`;
+        lblResultTitle.style.color = result.passed ? 'var(--success)' : 'var(--warning)';
+        lblResultDesc.textContent = '本次練習已完成，可從下方覆盤答題結果與相關解析。';
+    } else {
+        lblResultTitle.textContent = result.passed ? '🎉 及格！恭喜通過！' : '⚠️ 分數未及格，請繼續加油！';
+        lblResultTitle.style.color = result.passed ? 'var(--success)' : 'var(--danger)';
+        lblResultDesc.textContent = result.passed
+            ? '恭喜你達到 70 分及格門檻，你已經具備一定的專業水準！'
+            : '離 70 分及格門檻差了一點，建議檢驗下方錯題，並複習相關單元講義。';
+    }
+
     // Standard statistics labels
     const minsUsed = Math.floor(appData.timeSpent / 60);
     const secsUsed = appData.timeSpent % 60;
-    lblTimeSpent.textContent = appData.quizMode === 'exam' ? 
+    lblTimeSpent.textContent = appData.quizMode === 'exam' ?
         `${minsUsed} 分 ${secsUsed} 秒` : '無限制';
-        
-    lblCorrectCount.textContent = `${correctCount} / ${total} 題`;
-    lblAnswerRate.textContent = `${Math.round((Object.keys(appData.userAnswers).length / total) * 100)}%`;
-    
+
+    lblCorrectCount.textContent = `${result.correctCount} / ${result.total} 題`;
+    lblAnswerRate.textContent = `${result.answerRate}%`;
+
     // Build breakdown bars
-    buildBreakdownHTML(subjectStats);
-    
+    buildBreakdownHTML(result.subjectStats);
+
     // Render the final review accordion list
     renderReviewList();
-    
+
     // Show Screen
     transitionScreen(quizScreen, resultsScreen);
+}
+
+async function persistQuizResult(result) {
+    if (!appData.currentCert) return;
+
+    const operations = [];
+    if (appData.quizMode === 'exam') {
+        appData.currentQuiz.forEach((question, index) => {
+            const isCorrect = result.gradedResults[index] === 'correct';
+            operations.push(updateQuestionStats(appData.currentCert, question.num, isCorrect));
+            if (!isCorrect) {
+                operations.push(addWrongQuestion(appData.currentCert, question));
+            }
+        });
+    }
+
+    operations.push(saveStats(appData.currentCert, result.correctCount, result.answeredCount));
+    operations.push(saveQuizHistory(
+        appData.currentCert,
+        result.correctCount,
+        result.total,
+        result.score,
+        appData.quizMode
+    ));
+
+    await Promise.allSettled(operations);
+    await Promise.all([refreshWrongPoolCount(), refreshAnsweredStats()]);
 }
 
 // Subject breakdown GUI list rendering
@@ -1672,208 +1751,6 @@ async function loadQuestionStats(certId) {
         return [];
     }
 }
-
-// Wrap existing gradeQuiz to persist wrong answers and stats
-const _origGradeQuiz = gradeQuiz;
-gradeQuiz = function () {
-    clearInterval(appData.timerInterval);
-    appData.quizActive = false;
-
-    const total = appData.currentQuiz.length;
-    let correctCount = 0;
-    const wrongQuestions = [];
-
-    const modules = window.EXAM_CONFIG.modules.filter(m => m.enabled);
-    const mod = modules.find(m => m.id === appData.currentCert);
-
-    let subjectStats = {};
-    if (mod) {
-        mod.subjects.forEach(subj => {
-            subjectStats[subj.id] = { name: subj.name, total: 0, correct: 0 };
-        });
-    }
-
-    const prefixes = ['A', 'B', 'C', 'D'];
-
-    appData.currentQuiz.forEach((q, idx) => {
-        let subjKey = null;
-        if (mod) {
-            const matchedSubj = mod.subjects.find(subj =>
-                subj.matchKeywords.some(keyword => q.subject.includes(keyword)));
-            if (matchedSubj) subjKey = matchedSubj.id;
-        }
-        if (!subjKey && mod && mod.subjects.length > 0) subjKey = mod.subjects[0].id;
-        if (subjKey && subjectStats[subjKey]) subjectStats[subjKey].total++;
-
-        const userChoiceIdx = appData.userAnswers[idx];
-        const correctIdx = prefixes.indexOf(q.answer);
-
-        const isCorrect = userChoiceIdx === correctIdx;
-        if (isCorrect) {
-            correctCount++;
-            if (subjKey && subjectStats[subjKey]) subjectStats[subjKey].correct++;
-            q.gradedResult = 'correct';
-        } else {
-            q.gradedResult = 'wrong';
-            wrongQuestions.push(q);
-        }
-        if (appData.currentCert) {
-            updateQuestionStats(appData.currentCert, q.num, isCorrect);
-        }
-    });
-
-    // Persist wrong questions and stats
-    if (appData.currentCert && wrongQuestions.length > 0) {
-        wrongQuestions.forEach(q => addWrongQuestion(appData.currentCert, q));
-    }
-    if (appData.currentCert) {
-        saveStats(appData.currentCert, correctCount, total);
-        saveQuizHistory(appData.currentCert, correctCount, total, score, appData.quizMode);
-        refreshWrongPoolCount();
-        refreshAnsweredStats();
-    }
-
-    const score = Math.round((correctCount / total) * 100);
-    const passed = score >= 70;
-
-    lblScore.textContent = score;
-    const circumference = 283;
-    const offset = circumference - (score / 100) * circumference;
-    scoreCircleProgress.style.strokeDashoffset = offset;
-    scoreCircleProgress.style.stroke = passed ? 'var(--success)' : 'var(--danger)';
-
-    lblResultTitle.textContent = passed ? '🎉 及格！恭喜通過！' : '⚠️ 分數未及格，請繼續加油！';
-    lblResultTitle.style.color = passed ? 'var(--success)' : 'var(--danger)';
-    lblResultDesc.textContent = passed
-        ? '恭喜你達到 70 分及格門檻，你已經具備一定的專業水準！'
-        : '離 70 分及格門檻差了一點，建議檢驗下方錯題，並複習相關單元講義。';
-
-    const minsUsed = Math.floor(appData.timeSpent / 60);
-    const secsUsed = appData.timeSpent % 60;
-    lblTimeSpent.textContent = appData.quizMode === 'exam'
-        ? `${minsUsed} 分 ${secsUsed} 秒` : '無限制';
-    lblCorrectCount.textContent = `${correctCount} / ${total} 題`;
-    lblAnswerRate.textContent = `${Math.round((Object.keys(appData.userAnswers).length / total) * 100)}%`;
-
-    buildBreakdownHTML(subjectStats);
-    renderReviewList();
-    transitionScreen(quizScreen, resultsScreen);
-};
-
-// Wrap startPracticeMode to support wrong book mode
-const _origStartPractice = startPracticeMode;
-startPracticeMode = async function () {
-    const subjVal = document.getElementById('selectSubject').value;
-    const chapVal = selectChapter.value;
-    const numLimit = document.getElementById('practiceNum').value;
-    const isWrongBook = document.getElementById('chkWrongBook').checked;
-
-    if (isWrongBook) {
-        const pool = await getWrongPool(appData.currentCert);
-        if (pool.length === 0) {
-            alert('錯題池為空，尚無需複習的題目！');
-            return;
-        }
-        let filtered = pool.filter(e => e.nextReviewDate <= new Date().toISOString().split('T')[0]);
-        if (subjVal !== 'all') {
-            const modules = window.EXAM_CONFIG.modules.filter(m => m.enabled);
-            const mod = modules.find(m => m.id === appData.currentCert);
-            if (mod) {
-                const targetSubj = mod.subjects.find(s => s.id === subjVal);
-                if (targetSubj) {
-                    filtered = filtered.filter(e => targetSubj.matchKeywords.some(k => e.subject.includes(k)));
-                }
-            }
-        }
-        if (chapVal !== 'all') {
-            filtered = filtered.filter(e => e.chapter === chapVal);
-        }
-        if (filtered.length === 0) {
-            alert('篩選範圍內無待複習錯題！');
-            return;
-        }
-        appData.currentQuiz = shuffleArray(filtered).slice(0, numLimit === 'all' ? filtered.length : parseInt(numLimit));
-        appData.quizMode = 'practice';
-        practiceSetup.classList.add('hidden');
-        timerDisplay.classList.add('hidden');
-        document.querySelector('.quiz-nav-panel').classList.remove('hidden');
-        initQuizSession('practice');
-        return;
-    }
-
-    const modules = window.EXAM_CONFIG.modules.filter(m => m.enabled);
-    const mod = modules.find(m => m.id === appData.currentCert);
-    if (!mod) return;
-
-    let filtered = appData.questions.filter(q => {
-        let isSubjMatch = false;
-        if (subjVal === 'all') isSubjMatch = true;
-        else {
-            const targetSubj = mod.subjects.find(s => s.id === subjVal);
-            if (targetSubj) isSubjMatch = targetSubj.matchKeywords.some(keyword => q.subject.includes(keyword));
-        }
-        const isChapMatch = chapVal === 'all' || q.chapter === chapVal;
-        return isSubjMatch && isChapMatch;
-    });
-
-    if (filtered.length === 0) {
-        alert('此範圍內無題目，請重新選擇！');
-        return;
-    }
-
-    filtered = shuffleArray(filtered);
-    if (numLimit !== 'all') {
-        const limit = parseInt(numLimit);
-        filtered = filtered.slice(0, Math.min(limit, filtered.length));
-    }
-
-    appData.currentQuiz = filtered;
-    appData.quizMode = 'practice';
-    practiceSetup.classList.add('hidden');
-    timerDisplay.classList.add('hidden');
-    document.querySelector('.quiz-nav-panel').classList.remove('hidden');
-    initQuizSession('practice');
-};
-
-// Override showPracticeFeedback to update wrong pool when answered correctly
-const _origShowFeedback = showPracticeFeedback;
-showPracticeFeedback = function (qIdx) {
-    const q = appData.currentQuiz[qIdx];
-    const userChoiceIdx = appData.userAnswers[qIdx];
-    const prefixes = ['A', 'B', 'C', 'D'];
-    const correctIdx = prefixes.indexOf(q.answer);
-
-    const isCorrect = userChoiceIdx === correctIdx;
-
-    const cards = optionsList.querySelectorAll('.option-card');
-    cards.forEach((card, idx) => {
-        card.classList.remove('selected');
-        if (idx === correctIdx) card.classList.add('correct');
-        else if (idx === userChoiceIdx) card.classList.add('wrong');
-    });
-
-    feedbackArea.className = `feedback-box animate-fade-in ${isCorrect ? 'correct' : 'wrong'}`;
-    feedbackIcon.textContent = isCorrect ? '✅' : '❌';
-    feedbackTitle.textContent = isCorrect ? '答對了！' : `答錯了！正確答案是 (${q.answer})`;
-
-    let explText = `標準答案：(${q.answer}) ${q.ans_text}\n\n`;
-    if (q.explanation) explText += `解析：\n${q.explanation}`;
-    else explText += '無額外解析資訊。';
-    lblExplanationText.textContent = explText;
-    feedbackArea.classList.remove('hidden');
-
-    // Persist: add to wrong pool if wrong, update SM-2 if correct
-    if (appData.currentCert) {
-        updateQuestionStats(appData.currentCert, q.num, isCorrect);
-        if (!isCorrect) {
-            addWrongQuestion(appData.currentCert, q);
-        } else {
-            updateWrongPoolAfterCorrect(appData.currentCert, q.num);
-        }
-        refreshWrongPoolCount();
-        refreshAnsweredStats();
-    }
-};
 
 // ════════════════════════════════════════════════════════════════
 // 弱點分析 — 雷達圖 + 趨勢圖

@@ -1,6 +1,6 @@
 # 📚 IPAS 證照學習與模擬考系統工作區
 
-本工作區整合了 **IPAS 營運智慧分析師**、**AI 應用規劃師 (初級)** 與 **AI 應用規劃師 (中級)** 證照考試的官方教材、自製精美考前衝刺學習筆記、自動化 PDF 題庫解析器、背景雲端硬碟同步機制，以及一個現代化的模擬考試網頁系統。
+本工作區整合了 **iPAS 營運智慧分析師**、**AI 應用規劃師 (初級)** 與 **AI 應用規劃師 (中級)** 證照考試的官方教材、自製精美考前衝刺學習筆記、自動化 PDF 題庫解析器、口語講稿與離線 MP3、背景雲端硬碟同步機制，以及一個現代化的模擬考試網頁系統。
 
 ---
 
@@ -8,8 +8,10 @@
 
 ```text
 c:\Drive224\Projects\iPAS 證照
+├── AGENTS.md                       # Agent 工作規範與目前專案基線
 ├── .venv/                         # Python 本地虛擬環境
 ├── .temp/                         # 轉檔時使用的暫存資料夾
+├── project-id.json                 # 跨 Agent 專案識別檔
 ├── sync.py                        # 雲端硬碟同步指令碼 (偵測新增/修改/刪除)
 ├── sync.log                       # 同步日誌檔 (記錄每次執行結果與異動)
 ├── create_task.ps1                # Windows 排程工作註冊指令碼 (每 30 分鐘背景執行)
@@ -17,18 +19,50 @@ c:\Drive224\Projects\iPAS 證照
 ├── parse_questions.py             # 營運智慧分析師題庫解析器
 ├── parse_ai_questions.py          # AI 應用規劃師 (初級) 題庫解析器
 ├── parse_ai_mid_questions.py      # AI 應用規劃師 (中級) 題庫解析器
+├── generate_lecture.py             # Markdown → 口語講稿 TXT / MP3
+├── docs/                            # 系統改造、資料模型與階段計畫
+├── tests/                           # Node 內建測試與三題庫 smoke test
+├── Source/                         # 6 份講稿來源 Markdown（唯讀輸入）
+├── out/                            # 6 份 TXT 與 6 份離線 MP3 輸出
 ├── work_log.md                    # 專案工作日誌 (記錄開發歷程與里程碑)
 ├── 提示詞.txt                      # 題庫生成與 AI 改寫提示詞紀錄
 ├── 營運智慧分析師/                 # 營運智慧分析師教材與衝刺講義 (單元A/B/C)
 ├── AI應用規劃師/                   # AI應用規劃師 (包含初級、中級) 官方教材與講義
 └── exam/                          # 模擬考與自主學習網頁系統 (純前端 SPA)
     ├── index.html                 # 系統首頁 (含身分驗證登入與科目選擇)
+    ├── core.js                    # 可獨立測試的評分、事件去重與計時核心
     ├── script.js                  # 模擬考系統主控邏輯與加權驗證演算法
     ├── style.css                  # 現代毛玻璃質感 (Glassmorphism) 與響應式樣式
-    ├── questions.js/json          # 營運智慧分析師題庫 (313 題)
+    ├── questions.js/json          # 營運智慧分析師題庫 (163 題)
     ├── ai_questions.js/json       # AI應用規劃師 (初級) 題庫 (530 題)
-    └── ai_mid_questions.js/json   # AI應用規劃師 (中級) 題庫 (300 題)
+    └── ai_mid_questions.js/json   # AI應用規劃師 (中級) 題庫 (298 題)
 ```
+
+題庫數量以 `exam/*.json` 的實際內容為準；重新執行解析器後，應再次核對 JSON 題目數與前端顯示。
+
+---
+
+## 🎧 口語講稿與離線 MP3 (`Source/`、`out/`)
+
+`Source/` 保存 6 份 iPAS 初級 AI 應用規劃師 Markdown 筆記，`generate_lecture.py` 將其轉換成老師講課風格的 TXT 講稿，並使用本機 Windows SAPI 產生 MP3 到 `out/`。目前輸出為 6 份 TXT 與 6 份 MP3。
+
+### 產生全部講稿與 MP3
+
+```powershell
+.venv\Scripts\python generate_lecture.py --llm-engine codex --tts-engine sapi
+```
+
+### 常用選項
+
+```powershell
+# 只處理檔名含 Week1 的來源
+.venv\Scripts\python generate_lecture.py --only Week1 --llm-engine codex --tts-engine sapi
+
+# 只產生 TXT，不產生 MP3
+.venv\Scripts\python generate_lecture.py --no-tts --llm-engine codex
+```
+
+`Source/*.md` 是唯一來源，`out/*.txt` 與 `out/*.mp3` 都是產物，不應手動修改。預設使用 Windows SAPI，不會將講稿送往外部語音服務；若改用 Edge TTS，必須先取得外部資料傳輸授權。
 
 ---
 
@@ -71,9 +105,9 @@ c:\Drive224\Projects\iPAS 證照
 ## 📝 多科證照模擬考試系統 (`exam/`)
 
 全真網頁模擬考試與自主練習系統已全面支援三種證照模式：
-1. **營運智慧分析師 (313 題)**：包含原官方 163 題與 150 題情境模擬題（涵蓋 ECCD 流程、PERT/CPM、ERP/CRM/SCM 等）。
+1. **營運智慧分析師 (163 題)**：依官方教材解析，涵蓋營運智慧概論與經營管理數位化概論。
 2. **AI 應用規劃師 - 初級 (530 題)**：涵蓋 AI 基礎理論、生成式 AI、機器學習與無程式碼應用。
-3. **AI 應用規劃師 - 中級 (300 題)**：涵蓋技術應用與規劃、大數據分析與機器學習三大專業學科。
+3. **AI 應用規劃師 - 中級 (298 題)**：涵蓋技術應用與規劃、大數據分析與機器學習三大專業學科。
 
 ### 🚀 啟用與使用考試系統
 
@@ -86,26 +120,44 @@ c:\Drive224\Projects\iPAS 證照
    ```
 
 2. **本地開啟網頁考試**：
-   雙擊開啟 [index.html](file:///c:/Drive224/Projects/iPAS%20證照/exam/index.html) 即可在瀏覽器中進行身分證驗證登入並開始作答。
-   *(本系統為純前端靜態 SPA，不需要網際網路或任何伺服器後台即可完美運作)*
+   由於課程學習與題庫載入使用 `fetch()`，建議從工作區根目錄啟動本機靜態伺服器：
+   ```powershell
+   .venv\Scripts\python -m http.server 8000 --directory .
+   ```
+   然後開啟 [http://localhost:8000/exam/](http://localhost:8000/exam/)。系統不需要後端 API；本機伺服器只用來提供靜態檔案與 Markdown 講義。
 
 3. **線上瀏覽網頁考試 (GitHub Pages)**：
    本系統已部署至 GitHub Pages，您可直接點擊以下連結線上作答：
    👉 **[線上模擬考與自主學習系統](https://ta-lang.github.io/iPAS_Test/)**
 
-4. **推播題庫或網頁更新**：
-   若後續有更新題庫（執行完 `parse_*.py`）或修改網頁介面，請執行以下命令將更新同步至線上版本：
+4. **提交題庫或網頁更新**：
+   根目錄是目前的 Git 儲存庫，`exam/` 不是獨立 Git repository。請在根目錄檢查並提交實際變更：
    ```powershell
-   cd exam
-   git add .
+   git status --short
+   git add AGENTS.md README.md work_log.md exam/
    git commit -m "更新題庫與介面優化"
-   git push origin main
    ```
+   推送前請確認目標遠端與分支；GitHub Pages 的部署分支／遠端依目前 repository 設定處理，不要在 `exam/` 目錄執行 `git push`。
+
+### ✅ 自動化基線驗證
+
+本專案使用 Node.js 內建測試執行器，不需要安裝 npm 套件：
+
+```powershell
+node --test tests/*.test.js
+node --check exam/core.js
+node --check exam/script.js
+node --check exam/config.js
+node --check exam/sw.js
+```
+
+測試涵蓋評分結果、重複事件防護、牆鐘計時、核心載入順序，以及三份題庫的題數、唯一 ID、四個非空選項與答案格式。
 
 ---
 
 ## 📐 系統設計與軟體規格書
 
 有關本系統的詳細架構、系統方塊圖、資料流向、各畫面流程圖、檔案關聯圖以及 AI 提示詞的規劃與定義，請參閱：
+* **[模擬考系統分階段改造工作計畫](docs/ipas_exam_modernization_plan.md)**：涵蓋帳戶資料、題庫、Note.Voice、NotebookLM MCP、離線同步、安全與測試。
 * **[系統軟體規格書 (system_software_specification.md)](file:///C:/Users/talan/.gemini/antigravity-ide/brain/2c5b7cd6-e6ce-4ddf-b77d-04b1e4b997ad/system_software_specification.md)**
 * **[專案工作日誌 (work_log.md)](file:///c:/Drive224/Projects/iPAS%20證照/work_log.md)**

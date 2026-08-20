@@ -123,19 +123,24 @@ def parse_sample_exam():
     print(f"Parsing sample exam: {filename}")
     reader = pypdf.PdfReader(pdf_path)
     parsed_questions = []
-    
-    # We will process page by page and detect which subject it is
+
+    # Merge cleaned pages by subject before parsing. Some questions continue
+    # onto the next PDF page, so page-by-page parsing can drop trailing options.
     current_subject = "人工智慧基礎概論"
-    
-    for page_idx, page in enumerate(reader.pages):
+    subject_pages = {
+        "人工智慧基礎概論": [],
+        "生成式AI應用與規劃": [],
+    }
+
+    for page in reader.pages:
         text = page.extract_text()
-        
+
         # Detect subject switch
         if "科目一" in text:
             current_subject = "人工智慧基礎概論"
         elif "科目二" in text:
             current_subject = "生成式AI應用與規劃"
-            
+
         # Clean text
         lines = text.splitlines()
         cleaned = []
@@ -146,36 +151,39 @@ def parse_sample_exam():
             if l.isdigit() and len(l) < 3: # page numbers
                 continue
             cleaned.append(line)
-        cleaned_text = "\n".join(cleaned)
-        
-        # Parse questions on this page
+        subject_pages[current_subject].append("\n".join(cleaned))
+
+    for subject, pages in subject_pages.items():
+        cleaned_text = "\n".join(pages)
+
+        # Parse all questions in the subject after page continuations are joined.
         # Headers like: "1.  B\n" or "41.  A\n"
         pattern = re.compile(r'(?:^|\n)\s*(\d+)\.\s+([A-D])\s*\n')
         matches = list(pattern.finditer(cleaned_text))
-        
+
         for i in range(len(matches)):
             match = matches[i]
             num = int(match.group(1))
             ans = match.group(2)
-            
+
             start_idx = match.end()
             end_idx = matches[i+1].start() if i + 1 < len(matches) else len(cleaned_text)
             block = cleaned_text[start_idx:end_idx].strip()
-            
+
             opt_pattern = re.compile(r'[\(（]([A-D])[\)）]\s*(.*?)\s*(?=[\(（][A-D][\)）]|$)', re.DOTALL)
             opts_found = opt_pattern.findall(block)
-            
+
             stem_match = re.search(r'^(.*?)\s*(?=[\(（][A-D][\)）])', block, re.DOTALL)
             stem = stem_match.group(1).replace('\n', ' ').strip() if stem_match else block.replace('\n', ' ').strip()
-            
+
             options = ["", "", "", ""]
             for opt_letter, opt_text in opts_found:
                 idx = ord(opt_letter.upper()) - ord('A')
                 options[idx] = opt_text.replace('\n', ' ').strip()
-                
+
             ch = "官方樣題範例"
             parsed_questions.append({
-                "subject": SUBJECT_MAP_JUNIOR.get(current_subject, f"初級：{current_subject}"),
+                "subject": SUBJECT_MAP_JUNIOR.get(subject, f"初級：{subject}"),
                 "chapter": ch,
                 "assessmentTopic": ai_assessment_topic(ch),
                 "assessmentContent": ai_assessment_content(ch),
