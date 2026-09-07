@@ -1,10 +1,12 @@
-const CACHE = 'ipas-exam-v3';
+const CACHE = 'ipas-exam-v4';
 const PRECACHE = [
   '.',
   'index.html',
   'style.css',
   'config.js',
   'core.js',
+  'account-core.js',
+  'account-api.js',
   'script.js',
   'manifest.json',
   'icon-192.svg',

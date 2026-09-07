@@ -17,8 +17,15 @@ let appData = {
     timeSpent: 0,
     quizActive: false,
     committedEvents: Object.create(null),
-    certSelectionToken: 0
+    certSelectionToken: 0,
+    accountSession: null,
+    deviceId: '',
+    syncInFlight: false
 };
+
+const accountApi = /^https:\/\//i.test(window.EXAM_CONFIG.apiEndpoint || '')
+    ? window.ExamAccountApi.createAccountApi({ endpoint: window.EXAM_CONFIG.apiEndpoint })
+    : null;
 
 // DOM Elements
 const loginScreen = document.getElementById('loginScreen');
@@ -33,6 +40,9 @@ const practiceSetup = document.getElementById('practiceSetup');
 const timerDisplay = document.getElementById('timerDisplay');
 const timerText = document.getElementById('timerText');
 const themeToggle = document.getElementById('themeToggle');
+const syncStatus = document.getElementById('syncStatus');
+const syncStatusText = document.getElementById('syncStatusText');
+const btnLogout = document.getElementById('btnLogout');
 
 // Quiz View Elements
 const lblSubject = document.getElementById('lblSubject');
@@ -75,7 +85,9 @@ const btnCancelExamModal = document.getElementById('btnCancelExamModal');
 
 // Initialize App
 document.addEventListener('DOMContentLoaded', () => {
+    appData.deviceId = getOrCreateDeviceId();
     initTheme();
+    renderSyncStatus();
     loadQuestions();
     setupEventListeners();
 });
@@ -325,7 +337,7 @@ function renderExamSubjectModalOptions(mod) {
             </div>
         `;
         
-        btn.addEventListener('click', () => startExamSubjectMode(subj.id));
+        btn.addEventListener('click', () => void startExamSubjectMode(subj.id));
         examSubjectOptions.appendChild(btn);
     });
 }
@@ -409,6 +421,9 @@ function setupEventListeners() {
             }
         });
     }
+    if (btnLogout) btnLogout.addEventListener('click', handleLogout);
+    window.addEventListener('online', () => void flushSyncOutbox());
+    window.addEventListener('offline', () => void renderSyncStatus());
 
     // Navigation setup
     document.getElementById('btnStartExam').addEventListener('click', showExamSubjectModal);
@@ -556,7 +571,7 @@ async function startPracticeMode() {
         practiceSetup.classList.add('hidden');
         timerDisplay.classList.add('hidden');
         document.querySelector('.quiz-nav-panel').classList.remove('hidden');
-        initQuizSession('practice');
+        await initQuizSession('practice');
         return;
     }
 
@@ -600,7 +615,7 @@ async function startPracticeMode() {
     practiceSetup.classList.add('hidden');
     timerDisplay.classList.add('hidden');
     document.querySelector('.quiz-nav-panel').classList.remove('hidden');
-    initQuizSession('practice');
+    await initQuizSession('practice');
 }
 
 // Show/Hide Exam Subject Selection Modal
@@ -687,6 +702,7 @@ async function openReader(title, filePath) {
                 throwOnError: false
             });
         }
+        void persistAccountCourseProgress(title, filePath);
     } catch (e) {
         const hint = (location.protocol === 'file:')
             ? '<br><small style="color:var(--text-secondary);">提示：在瀏覽器直接開啟 HTML 檔案時無法讀取筆記，請使用本機伺服器啟動：<br><code style="background:rgba(0,0,0,0.3);padding:4px 8px;border-radius:4px;">npx serve exam</code> 或 <code style="background:rgba(0,0,0,0.3);padding:4px 8px;border-radius:4px;">python -m http.server 8000 -d exam</code></small>'
@@ -704,7 +720,7 @@ function hideExamSubjectModal() {
     if (examSubjectModal) examSubjectModal.classList.remove('active');
 }
 
-function startExamSubjectMode(subjKey) {
+async function startExamSubjectMode(subjKey) {
     hideExamSubjectModal();
     
     const modules = window.EXAM_CONFIG.modules.filter(m => m.enabled);
@@ -761,13 +777,13 @@ function startExamSubjectMode(subjKey) {
     practiceSetup.classList.add('hidden');
     timerDisplay.classList.remove('hidden');
     
-    initQuizSession('exam');
+    await initQuizSession('exam');
 }
 
 
 
 // Common initialization for a quiz session
-function initQuizSession(mode) {
+async function initQuizSession(mode) {
     appData.userAnswers = {};
     appData.flaggedQuestions = {};
     appData.committedEvents = Object.create(null);
@@ -779,6 +795,7 @@ function initQuizSession(mode) {
     appData.timeRemaining = appData.timerDurationSeconds;
     appData.timeSpent = 0;
     appData.timerStartedAt = null;
+    await restoreAccountFlagsForQuiz();
     
     document.querySelector('.quiz-nav-panel').classList.remove('hidden');
     
@@ -987,12 +1004,19 @@ function persistPracticeAnswer(qIdx) {
     const q = appData.currentQuiz[qIdx];
     const correctIdx = window.ExamCore.ANSWER_PREFIXES.indexOf(String(q.answer || '').toUpperCase());
     const isCorrect = appData.userAnswers[qIdx] === correctIdx;
-    const operations = [updateQuestionStats(appData.currentCert, q, isCorrect)];
+    const operations = [persistAccountQuestionEvent(appData.currentCert, q, {
+        type: 'answer',
+        isCorrect,
+        occurredAt: new Date().toISOString()
+    })];
 
-    if (isCorrect) {
-        operations.push(updateWrongPoolAfterCorrect(appData.currentCert, q));
-    } else {
-        operations.push(addWrongQuestion(appData.currentCert, q));
+    if (!isAccountMode()) {
+        operations.push(updateQuestionStats(appData.currentCert, q, isCorrect));
+        if (isCorrect) {
+            operations.push(updateWrongPoolAfterCorrect(appData.currentCert, q));
+        } else {
+            operations.push(addWrongQuestion(appData.currentCert, q));
+        }
     }
 
     void Promise.allSettled(operations).then(() => refreshWrongPoolCount());
@@ -1040,6 +1064,14 @@ function showPracticeFeedback(qIdx) {
 function toggleFlag() {
     const idx = appData.currentQuestionIdx;
     appData.flaggedQuestions[idx] = !appData.flaggedQuestions[idx];
+    const question = appData.currentQuiz[idx];
+    if (question) {
+        void persistAccountQuestionEvent(appData.currentCert, question, {
+            type: 'flag',
+            flagged: appData.flaggedQuestions[idx],
+            occurredAt: new Date().toISOString()
+        });
+    }
     
     const btn = document.getElementById(`navBtn_${idx}`);
     if (btn) {
@@ -1171,21 +1203,28 @@ async function persistQuizResult(result) {
     if (appData.quizMode === 'exam') {
         appData.currentQuiz.forEach((question, index) => {
             const isCorrect = result.gradedResults[index] === 'correct';
-            operations.push(updateQuestionStats(appData.currentCert, question, isCorrect));
-            if (!isCorrect) {
-                operations.push(addWrongQuestion(appData.currentCert, question));
+            operations.push(persistAccountQuestionEvent(appData.currentCert, question, {
+                type: 'answer',
+                isCorrect,
+                occurredAt: new Date().toISOString()
+            }));
+            if (!isAccountMode()) {
+                operations.push(updateQuestionStats(appData.currentCert, question, isCorrect));
+                if (!isCorrect) operations.push(addWrongQuestion(appData.currentCert, question));
             }
         });
     }
-
-    operations.push(saveStats(appData.currentCert, result.correctCount, result.answeredCount));
-    operations.push(saveQuizHistory(
-        appData.currentCert,
-        result.correctCount,
-        result.total,
-        result.score,
-        appData.quizMode
-    ));
+    if (!isAccountMode()) {
+        operations.push(saveStats(appData.currentCert, result.correctCount, result.answeredCount));
+        operations.push(saveQuizHistory(
+            appData.currentCert,
+            result.correctCount,
+            result.total,
+            result.score,
+            appData.quizMode
+        ));
+    }
+    operations.push(persistAccountQuizAttempt(result));
 
     await Promise.allSettled(operations);
     await Promise.all([refreshWrongPoolCount(), refreshAnsweredStats()]);
@@ -1335,6 +1374,78 @@ function formatQuestionText(text) {
 }
 
 // Taiwan ID validation functions
+function getOrCreateDeviceId() {
+    const storageKey = 'ipas_device_id_v1';
+    const existing = localStorage.getItem(storageKey);
+    if (existing) return existing;
+    const randomPart = typeof globalThis.crypto?.randomUUID === 'function'
+        ? globalThis.crypto.randomUUID().replace(/-/g, '')
+        : `${Date.now().toString(36)}${Math.random().toString(36).slice(2)}`;
+    const deviceId = `dev_${randomPart}`;
+    localStorage.setItem(storageKey, deviceId);
+    return deviceId;
+}
+
+function createOperationId() {
+    const randomPart = typeof globalThis.crypto?.randomUUID === 'function'
+        ? globalThis.crypto.randomUUID().replace(/-/g, '')
+        : `${Date.now().toString(36)}${Math.random().toString(36).slice(2)}`;
+    return `op_${randomPart}`;
+}
+
+function setAccountSession(session) {
+    appData.accountSession = session;
+    if (btnLogout) btnLogout.classList.remove('hidden');
+    void renderSyncStatus().then(() => flushSyncOutbox());
+}
+
+async function renderSyncStatus() {
+    if (!syncStatus || !syncStatusText) return;
+    const session = appData.accountSession;
+    if (!session) {
+        syncStatus.dataset.mode = 'logged-out';
+        syncStatusText.textContent = '未登入';
+        syncStatus.title = '尚未建立工作階段';
+        return;
+    }
+    if (session.mode !== 'account') {
+        syncStatus.dataset.mode = 'local-only';
+        syncStatusText.textContent = '本機模式';
+        syncStatus.title = '目前後端只提供登入驗證，尚未提供帳戶同步契約';
+        return;
+    }
+    if (window.ExamAccountCore.isSessionExpired(session)) {
+        syncStatus.dataset.mode = 'error';
+        syncStatusText.textContent = '登入已到期';
+        syncStatus.title = '請登出後重新登入以更新帳戶工作階段';
+        return;
+    }
+
+    const { pending, conflicts } = await getSyncOperationCounts(session.userId);
+    if (conflicts > 0) {
+        syncStatus.dataset.mode = 'error';
+        syncStatusText.textContent = `同步衝突 ${conflicts}`;
+        syncStatus.title = '伺服器拒絕部分操作，資料仍保留在本機等待處理';
+        return;
+    }
+    if (pending > 0) {
+        syncStatus.dataset.mode = 'pending';
+        syncStatusText.textContent = `待同步 ${pending}`;
+        syncStatus.title = session.syncEnabled ? '有離線操作等待同步' : '後端尚未啟用同步端點';
+    } else {
+        syncStatus.dataset.mode = 'account';
+        syncStatusText.textContent = session.syncEnabled ? '同步可用' : '帳戶已驗證';
+        syncStatus.title = session.syncEnabled ? '帳戶同步契約可用' : '帳戶快取已分區，但同步端點未啟用';
+    }
+}
+
+function handleLogout() {
+    appData.accountSession = null;
+    const idInput = document.getElementById('txtNationalID');
+    if (idInput) idInput.value = '';
+    window.location.reload();
+}
+
 async function handleLogin() {
     const txtNationalID = document.getElementById('txtNationalID');
     const loginError = document.getElementById('loginError');
@@ -1348,26 +1459,16 @@ async function handleLogin() {
     }
     
     // Check if cloud validation is enabled
-    if (window.EXAM_CONFIG.apiEndpoint && window.EXAM_CONFIG.apiEndpoint !== "YOUR_DEPLOYED_WEB_APP_URL") {
+    if (accountApi) {
         btnLogin.disabled = true;
         btnLogin.textContent = "驗證中...";
         loginError.style.display = 'none';
         
         try {
-            const response = await fetch(window.EXAM_CONFIG.apiEndpoint, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'text/plain;charset=utf-8' // Use text/plain to prevent CORS preflight OPTIONS request
-                },
-                body: JSON.stringify({
-                    national_id: idVal,
-                    user_agent: navigator.userAgent
-                })
-            });
-            
-            if (response.ok) {
-                const data = await response.json();
-                if (data.success) {
+            const data = await accountApi.login({ nationalId: idVal, userAgent: navigator.userAgent });
+            if (data.success) {
+                    setAccountSession(window.ExamAccountCore.parseLoginCapability(data));
+                    txtNationalID.value = '';
                     loginError.style.display = 'none';
                     
                     // Filter certificate modules based on user authorization
@@ -1391,13 +1492,9 @@ async function handleLogin() {
                     }
                     
                     transitionScreen(loginScreen, welcomeScreen);
-                    selectCert(appData.currentCert);
-                } else {
-                    loginError.textContent = `⚠️ 驗證失敗：${data.message || '查無此帳號！'}`;
-                    loginError.style.display = 'block';
-                }
+                    void selectCert(appData.currentCert);
             } else {
-                loginError.textContent = "⚠️ 伺服器連線失敗，請稍後再試！";
+                loginError.textContent = `⚠️ 驗證失敗：${data.message || '查無此帳號！'}`;
                 loginError.style.display = 'block';
             }
         } catch (e) {
@@ -1410,9 +1507,11 @@ async function handleLogin() {
         }
     } else {
         // Fallback to offline mode
+        setAccountSession(window.ExamAccountCore.parseLoginCapability({ success: true }));
+        txtNationalID.value = '';
         loginError.style.display = 'none';
         transitionScreen(loginScreen, welcomeScreen);
-        selectCert(appData.currentCert);
+        void selectCert(appData.currentCert);
     }
 }
 
@@ -1447,7 +1546,7 @@ function validateTaiwanID(id) {
 // ════════════════════════════════════════════════════════════════
 
 const DB_NAME = 'iPAS_Exam_DB';
-const DB_VERSION = 4;
+const DB_VERSION = 5;
 
 function createSM2Card() {
     return { repetitions: 0, interval: 0, efactor: 2.5, nextReviewDate: new Date().toISOString().split('T')[0] };
@@ -1499,6 +1598,30 @@ function openDB() {
             if (!db.objectStoreNames.contains('meta')) {
                 db.createObjectStore('meta', { keyPath: 'key' });
             }
+            if (!db.objectStoreNames.contains('userQuestionState')) {
+                const store = db.createObjectStore('userQuestionState', { keyPath: 'id' });
+                store.createIndex('userId', 'userId', { unique: false });
+                store.createIndex('userCert', ['userId', 'certId'], { unique: false });
+            }
+            if (!db.objectStoreNames.contains('syncOutbox')) {
+                const store = db.createObjectStore('syncOutbox', { keyPath: 'id' });
+                store.createIndex('userId', 'userId', { unique: false });
+                store.createIndex('userStatus', ['userId', 'status'], { unique: false });
+                store.createIndex('createdAt', 'createdAt', { unique: false });
+            }
+            if (!db.objectStoreNames.contains('accountQuizAttempts')) {
+                const store = db.createObjectStore('accountQuizAttempts', { keyPath: 'id' });
+                store.createIndex('userCert', ['userId', 'certId'], { unique: false });
+            }
+            if (!db.objectStoreNames.contains('accountAttemptAnswers')) {
+                const store = db.createObjectStore('accountAttemptAnswers', { keyPath: 'id' });
+                store.createIndex('attemptId', 'attemptId', { unique: false });
+            }
+            if (!db.objectStoreNames.contains('courseProgress')) {
+                const store = db.createObjectStore('courseProgress', { keyPath: 'id' });
+                store.createIndex('userId', 'userId', { unique: false });
+                store.createIndex('userCert', ['userId', 'certId'], { unique: false });
+            }
         };
         req.onsuccess = (e) => resolve(e.target.result);
         req.onerror = (e) => reject(e.target.error);
@@ -1523,6 +1646,264 @@ function finishTransaction(tx) {
         tx.onerror = () => reject(tx.error);
         tx.onabort = () => reject(tx.error || new Error('IndexedDB transaction aborted'));
     });
+}
+
+function isAccountMode() {
+    return appData.accountSession?.mode === 'account';
+}
+
+async function loadAccountQuestionStates(userId, certId) {
+    if (!userId || !certId) return [];
+    const db = await openDB();
+    const tx = db.transaction('userQuestionState', 'readonly');
+    const index = tx.objectStore('userQuestionState').index('userCert');
+    return readIndexedDBRequest(index.getAll(IDBKeyRange.only([userId, certId])));
+}
+
+async function restoreAccountFlagsForQuiz() {
+    if (!isAccountMode()) return;
+    const states = await loadAccountQuestionStates(appData.accountSession.userId, appData.currentCert);
+    const flaggedUids = new Set(states.filter(state => state.flagged).map(state => state.question_uid));
+    appData.currentQuiz.forEach((question, index) => {
+        if (flaggedUids.has(question.question_uid)) appData.flaggedQuestions[index] = true;
+    });
+}
+
+async function getSyncOperationCounts(userId) {
+    if (!userId) return { pending: 0, conflicts: 0 };
+    try {
+        const db = await openDB();
+        const pendingTx = db.transaction('syncOutbox', 'readonly');
+        const pendingIndex = pendingTx.objectStore('syncOutbox').index('userStatus');
+        const pending = await readIndexedDBRequest(pendingIndex.count(IDBKeyRange.only([userId, 'pending'])));
+        const conflictTx = db.transaction('syncOutbox', 'readonly');
+        const conflictIndex = conflictTx.objectStore('syncOutbox').index('userStatus');
+        const conflicts = await readIndexedDBRequest(conflictIndex.count(IDBKeyRange.only([userId, 'conflict'])));
+        return { pending, conflicts };
+    } catch (error) {
+        console.warn('讀取待同步操作失敗:', error);
+        return { pending: 0, conflicts: 0 };
+    }
+}
+
+async function loadPendingSyncOperations(userId, limit = 50) {
+    const db = await openDB();
+    const tx = db.transaction('syncOutbox', 'readonly');
+    const index = tx.objectStore('syncOutbox').index('userStatus');
+    return readIndexedDBRequest(index.getAll(IDBKeyRange.only([userId, 'pending']), limit));
+}
+
+async function updateSyncOperationResults(operations, acceptedIds, rejectedIds, failureMessage = '') {
+    if (operations.length === 0) return;
+    const accepted = new Set(acceptedIds);
+    const rejected = new Set(rejectedIds);
+    const db = await openDB();
+    const tx = db.transaction('syncOutbox', 'readwrite');
+    const store = tx.objectStore('syncOutbox');
+    for (const operation of operations) {
+        if (accepted.has(operation.operationId)) {
+            store.delete(operation.id);
+        } else {
+            operation.attempts = (operation.attempts || 0) + 1;
+            operation.lastAttemptAt = new Date().toISOString();
+            if (rejected.has(operation.operationId)) {
+                operation.status = 'conflict';
+                operation.lastError = 'server rejected operation';
+            } else {
+                operation.status = 'pending';
+                operation.lastError = failureMessage || 'operation was not acknowledged';
+            }
+            store.put(operation);
+        }
+    }
+    await finishTransaction(tx);
+}
+
+async function flushSyncOutbox() {
+    const session = appData.accountSession;
+    if (appData.syncInFlight || session?.mode !== 'account' ||
+        window.ExamAccountCore.isSessionExpired(session) || !session.syncEnabled || !navigator.onLine) {
+        await renderSyncStatus();
+        return;
+    }
+    appData.syncInFlight = true;
+    let operations = [];
+    try {
+        operations = await loadPendingSyncOperations(session.userId);
+        if (operations.length === 0) return;
+        if (syncStatus && syncStatusText) {
+            syncStatus.dataset.mode = 'pending';
+            syncStatusText.textContent = `同步中 ${operations.length}`;
+        }
+        const result = await accountApi.pushOperations(session, operations);
+        await updateSyncOperationResults(operations, result.acceptedIds, result.rejectedIds);
+    } catch (error) {
+        console.warn('帳戶同步失敗，操作保留於本機:', error);
+        await updateSyncOperationResults(operations, [], [], String(error.message || 'sync failed'));
+    } finally {
+        appData.syncInFlight = false;
+        await renderSyncStatus();
+    }
+}
+
+async function persistAccountQuestionEvent(certId, question, event) {
+    const session = appData.accountSession;
+    if (session?.mode !== 'account') return;
+
+    const db = await openDB();
+    const stateId = window.ExamAccountCore.getAccountQuestionStateId(
+        session.userId,
+        certId,
+        question.question_uid
+    );
+    const tx = db.transaction(['userQuestionState', 'syncOutbox'], 'readwrite');
+    const stateStore = tx.objectStore('userQuestionState');
+    const outboxStore = tx.objectStore('syncOutbox');
+    const request = stateStore.get(stateId);
+
+    await new Promise((resolve, reject) => {
+        let eventError = null;
+        request.onsuccess = () => {
+            try {
+                const current = request.result || {
+                    id: stateId,
+                    userId: session.userId,
+                    certId,
+                    question_uid: question.question_uid,
+                    display_num: question.display_num ?? question.num,
+                    subject: question.subject,
+                    chapter: question.chapter,
+                    assessmentTopic: question.assessmentTopic || '',
+                    assessmentContent: question.assessmentContent || '',
+                    question: question.question,
+                    options: question.options,
+                    answer: question.answer,
+                    ans_text: question.ans_text,
+                    explanation: question.explanation || ''
+                };
+                const next = window.ExamAccountCore.applyQuestionStateEvent(current, event);
+                if (event.type === 'answer' && !event.isCorrect) {
+                    if (current.nextReviewDate) sm2Schedule(next, 1);
+                    else Object.assign(next, createSM2Card());
+                    next.lastWrongDate = event.occurredAt;
+                } else if (event.type === 'answer' && event.isCorrect && next.wrongCount > 0) {
+                    sm2Schedule(next, 4);
+                }
+                stateStore.put(next);
+                const operation = window.ExamAccountCore.buildSyncOperation({
+                    operationId: createOperationId(),
+                    userId: session.userId,
+                    deviceId: appData.deviceId,
+                    type: 'question_state_changed',
+                    payload: {
+                        cert_id: certId,
+                        question_uid: question.question_uid,
+                        flagged: next.flagged,
+                        correct_count: next.correctCount,
+                        wrong_count: next.wrongCount,
+                        last_result: next.lastResult,
+                        revision: next.revision,
+                        updated_at: next.updatedAt
+                    },
+                    createdAt: event.occurredAt
+                });
+                outboxStore.put(operation);
+            } catch (error) {
+                eventError = error;
+                tx.abort();
+            }
+        };
+        request.onerror = () => reject(request.error);
+        tx.oncomplete = () => resolve();
+        tx.onerror = () => reject(eventError || tx.error);
+        tx.onabort = () => reject(eventError || tx.error || new Error('Account state transaction aborted'));
+    });
+    await renderSyncStatus();
+    void flushSyncOutbox();
+}
+
+async function persistAccountQuizAttempt(result) {
+    const session = appData.accountSession;
+    if (session?.mode !== 'account') return;
+
+    const createdAt = new Date().toISOString();
+    const attemptId = createOperationId().replace(/^op_/, 'attempt_');
+    const answers = appData.currentQuiz.map((question, index) => ({
+        id: `${attemptId}|${question.question_uid}`,
+        attemptId,
+        userId: session.userId,
+        question_uid: question.question_uid,
+        selected_option: appData.userAnswers[index] ?? null,
+        result: result.gradedResults[index],
+        flagged: Boolean(appData.flaggedQuestions[index])
+    }));
+    const attempt = {
+        id: attemptId,
+        userId: session.userId,
+        certId: appData.currentCert,
+        mode: appData.quizMode,
+        correct: result.correctCount,
+        total: result.total,
+        score: result.score,
+        completedAt: createdAt,
+        revision: 1
+    };
+    const operation = window.ExamAccountCore.buildSyncOperation({
+        operationId: createOperationId(),
+        userId: session.userId,
+        deviceId: appData.deviceId,
+        type: 'quiz_attempt_completed',
+        payload: { attempt, answers },
+        createdAt
+    });
+
+    const db = await openDB();
+    const tx = db.transaction(['accountQuizAttempts', 'accountAttemptAnswers', 'syncOutbox'], 'readwrite');
+    tx.objectStore('accountQuizAttempts').put(attempt);
+    const answerStore = tx.objectStore('accountAttemptAnswers');
+    answers.forEach(answer => answerStore.put(answer));
+    tx.objectStore('syncOutbox').put(operation);
+    await finishTransaction(tx);
+    await renderSyncStatus();
+    void flushSyncOutbox();
+}
+
+async function persistAccountCourseProgress(title, filePath) {
+    const session = appData.accountSession;
+    if (session?.mode !== 'account') return;
+    const updatedAt = new Date().toISOString();
+    const id = `${session.userId}|${appData.currentCert}|${filePath}`;
+    const progress = {
+        id,
+        userId: session.userId,
+        certId: appData.currentCert,
+        assetPath: filePath,
+        title,
+        status: 'opened',
+        progress: 0,
+        updatedAt
+    };
+    const operation = window.ExamAccountCore.buildSyncOperation({
+        operationId: createOperationId(),
+        userId: session.userId,
+        deviceId: appData.deviceId,
+        type: 'course_progress_changed',
+        payload: {
+            cert_id: appData.currentCert,
+            asset_path: filePath,
+            status: progress.status,
+            progress: progress.progress,
+            updated_at: updatedAt
+        },
+        createdAt: updatedAt
+    });
+    const db = await openDB();
+    const tx = db.transaction(['courseProgress', 'syncOutbox'], 'readwrite');
+    tx.objectStore('courseProgress').put(progress);
+    tx.objectStore('syncOutbox').put(operation);
+    await finishTransaction(tx);
+    await renderSyncStatus();
+    void flushSyncOutbox();
 }
 
 function mergeMigratedEntry(storeName, current, legacy, question, certId) {
@@ -1627,6 +2008,23 @@ async function migrateLegacyQuestionState(certId, questions) {
 }
 
 async function getWrongPool(certId) {
+    if (isAccountMode()) {
+        try {
+            const states = await loadAccountQuestionStates(appData.accountSession.userId, certId);
+            const questionByUid = new Map(appData.questions.map(question => [question.question_uid, question]));
+            return states
+                .filter(state => (state.wrongCount || 0) > 0)
+                .map(state => ({
+                    ...(questionByUid.get(state.question_uid) || {}),
+                    ...state,
+                    wrongCount: state.wrongCount || 0,
+                    nextReviewDate: state.nextReviewDate || new Date().toISOString().split('T')[0]
+                }));
+        } catch (error) {
+            console.warn('讀取帳戶錯題池失敗:', error);
+            return [];
+        }
+    }
     try {
         const db = await openDB();
         return new Promise((resolve, reject) => {
@@ -1722,6 +2120,14 @@ async function updateWrongPoolAfterCorrect(certId, question) {
 }
 
 async function loadStats(certId) {
+    if (isAccountMode()) {
+        const states = await loadAccountQuestionStates(appData.accountSession.userId, certId);
+        return states.reduce((summary, state) => {
+            summary.totalAnswered += (state.correctCount || 0) + (state.wrongCount || 0);
+            summary.totalCorrect += state.correctCount || 0;
+            return summary;
+        }, { certId, totalAnswered: 0, totalCorrect: 0, quizCount: 0 });
+    }
     try {
         const db = await openDB();
         return new Promise((resolve, reject) => {
@@ -1806,6 +2212,24 @@ async function saveQuizHistory(certId, correctCount, total, score, mode) {
 }
 
 async function loadQuizHistory(certId, limit = 20) {
+    if (isAccountMode()) {
+        try {
+            const db = await openDB();
+            const tx = db.transaction('accountQuizAttempts', 'readonly');
+            const index = tx.objectStore('accountQuizAttempts').index('userCert');
+            const attempts = await readIndexedDBRequest(index.getAll(IDBKeyRange.only([
+                appData.accountSession.userId,
+                certId
+            ])));
+            return attempts
+                .sort((left, right) => (right.completedAt || '').localeCompare(left.completedAt || ''))
+                .slice(0, limit)
+                .map(attempt => ({ ...attempt, timestamp: attempt.completedAt }));
+        } catch (error) {
+            console.warn('讀取帳戶測驗歷史失敗:', error);
+            return [];
+        }
+    }
     try {
         const db = await openDB();
         return new Promise((resolve, reject) => {
@@ -1865,6 +2289,21 @@ async function updateQuestionStats(certId, question, isCorrect) {
 }
 
 async function loadQuestionStats(certId) {
+    if (isAccountMode()) {
+        const states = await loadAccountQuestionStates(appData.accountSession.userId, certId);
+        return states.map(state => ({
+            id: state.id,
+            certId,
+            question_uid: state.question_uid,
+            display_num: state.display_num,
+            num: state.display_num,
+            subject: state.subject,
+            chapter: state.chapter,
+            correct: state.correctCount || 0,
+            wrong: state.wrongCount || 0,
+            lastSeen: state.updatedAt
+        }));
+    }
     try {
         const db = await openDB();
         return new Promise((resolve, reject) => {
