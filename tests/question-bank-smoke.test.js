@@ -5,8 +5,8 @@ const path = require('node:path');
 
 const banks = [
     { file: 'questions.json', wrapper: 'questions.js', variable: 'ipasQuestions', expectedCount: 163 },
-    { file: 'ai_questions.json', wrapper: 'ai_questions.js', variable: 'ipasAiQuestions', expectedCount: 530 },
-    { file: 'ai_mid_questions.json', wrapper: 'ai_mid_questions.js', variable: 'ipasAiMidQuestions', expectedCount: 298 }
+    { file: 'ai_questions.json', wrapper: 'ai_questions.js', variable: 'ipasAiQuestions', expectedCount: 630 },
+    { file: 'ai_mid_questions.json', wrapper: 'ai_mid_questions.js', variable: 'ipasAiMidQuestions', expectedCount: 448 }
 ];
 
 for (const bank of banks) {

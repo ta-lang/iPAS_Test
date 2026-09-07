@@ -13,7 +13,8 @@ os.makedirs(output_dir, exist_ok=True)
 output_json_path = os.path.join(output_dir, "ai_questions.json")
 output_js_path = os.path.join(output_dir, "ai_questions.js")
 CERT_ID = "ai"
-SOURCE_VERSION = "official-through-2026-06-04"
+SOURCE_VERSION = "official-through-2026-09-06"
+from ai_junior_115_3_explanations import JUNIOR_115_3_S1_EXPLANATIONS, JUNIOR_115_3_S2_EXPLANATIONS
 
 def to_half_width(char):
     mapping = {'Ａ': 'A', 'Ｂ': 'B', 'Ｃ': 'C', 'Ｄ': 'D'}
@@ -59,7 +60,9 @@ def parse_official_exams():
         ("115年第一次", "人工智慧基礎概論", "115年第一次初級AI應用規劃師_第一科_人工智慧基礎概論_公告試題_20260410164304.pdf"),
         ("115年第一次", "生成式AI應用與規劃", "115年第一次初級AI應用規劃師_第二科_生成式AI應用與規劃_公告試題_20260410164328.pdf"),
         ("115年第二次", "人工智慧基礎概論", "115年第二次初級AI應用規劃師_第一科_人工智慧基礎概論_公告試題_20260604212644.pdf"),
-        ("115年第二次", "生成式AI應用與規劃", "115年第二次初級AI應用規劃師_第二科_生成式AI應用與規劃_公告試題_20260604212719.pdf")
+        ("115年第二次", "生成式AI應用與規劃", "115年第二次初級AI應用規劃師_第二科_生成式AI應用與規劃_公告試題_20260604212719.pdf"),
+        ("115年第三次", "人工智慧基礎概論", "115年第三次初級AI應用規劃師_第一科_人工智慧基礎概論_公告試題_20260906220418.pdf"),
+        ("115年第三次", "生成式AI應用與規劃", "115年第三次初級AI應用規劃師_第二科_生成式AI應用與規劃_公告試題_20260906220452.pdf")
     ]
     
     parsed_questions = []
@@ -101,6 +104,13 @@ def parse_official_exams():
                 options[idx] = opt_text.replace('\n', ' ').strip()
                 
             ch = f"{term}歷屆考題"
+            explanation = ""
+            if term == "115年第三次":
+                if subject == "人工智慧基礎概論":
+                    explanation = JUNIOR_115_3_S1_EXPLANATIONS.get(str(num), "")
+                elif subject == "生成式AI應用與規劃":
+                    explanation = JUNIOR_115_3_S2_EXPLANATIONS.get(str(num), "")
+
             parsed_questions.append({
                 "subject": SUBJECT_MAP_JUNIOR.get(subject, f"初級：{subject}"),
                 "chapter": ch,
@@ -111,7 +121,7 @@ def parse_official_exams():
                 "options": options,
                 "answer": ans,
                 "ans_text": f"標準答案：({ans})",
-                "explanation": ""
+                "explanation": explanation
             })
             
     return parsed_questions

@@ -15,7 +15,8 @@ os.makedirs(output_dir, exist_ok=True)
 output_json_path = os.path.join(output_dir, "ai_mid_questions.json")
 output_js_path = os.path.join(output_dir, "ai_mid_questions.js")
 CERT_ID = "ai_mid"
-SOURCE_VERSION = "official-through-2025-12-26"
+SOURCE_VERSION = "official-through-2026-06-15"
+from ai_mid_115_1_explanations import MID_115_1_S1_EXPLANATIONS, MID_115_1_S2_EXPLANATIONS, MID_115_1_S3_EXPLANATIONS
 
 def to_half_width(char):
     mapping = {'Ａ': 'A', 'Ｂ': 'B', 'Ｃ': 'C', 'Ｄ': 'D'}
@@ -72,7 +73,10 @@ def parse_official_exams():
     official_files = [
         ("114年第二次", "人工智慧技術應用與規劃", "114年第二梯次中級AI應用規劃師第一科人工智慧技術應用與規劃(當次試題公告114.11.20).pdf"),
         ("114年第二次", "大數據處理分析與應用", "114年第二梯次中級AI應用規劃師第二科大數據處理分析與應用(當次試題公告114.11.20).pdf"),
-        ("114年第二次", "機器學習技術與應用", "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114.11.20).pdf")
+        ("114年第二次", "機器學習技術與應用", "114年第二梯次中級AI應用規劃師第三科機器學習技術與應用(當次試題公告114.11.20).pdf"),
+        ("115年第一次", "人工智慧技術應用與規劃", "115年第一次中級AI應用規劃師_第一科_人工智慧技術應用與規劃_公告試題_20260615003359.pdf"),
+        ("115年第一次", "大數據處理分析與應用", "115年第一次中級AI應用規劃師_第二科_大數據處理分析與應用_公告試題_20260615003417.pdf"),
+        ("115年第一次", "機器學習技術與應用", "115年第一次中級AI應用規劃師_第三科_機器學習技術與應用_公告試題_20260615003428.pdf")
     ]
     
     parsed_questions = []
@@ -80,11 +84,13 @@ def parse_official_exams():
     for term, subject, filename in official_files:
         pdf_path = os.path.join(pdf_dir, filename)
         if not os.path.exists(pdf_path):
-            # Try official exam folder
-            pdf_path = os.path.join(pdf_dir, "官方教材及考試簡章", filename.replace(".11.20).pdf", "_20251226000616.pdf" if "第一科" in filename else ("_20251226000634.pdf" if "第二科" in filename else "_20251226000650.pdf")))
+            # Try official exam folder directly
+            pdf_path = os.path.join(pdf_dir, "官方教材及考試簡章", filename)
             if not os.path.exists(pdf_path):
-                print(f"File not found: {filename}")
-                continue
+                pdf_path = os.path.join(pdf_dir, "官方教材及考試簡章", filename.replace(".11.20).pdf", "_20251226000616.pdf" if "第一科" in filename else ("_20251226000634.pdf" if "第二科" in filename else "_20251226000650.pdf")))
+                if not os.path.exists(pdf_path):
+                    print(f"File not found: {filename}")
+                    continue
             
         print(f"Parsing official exam: {filename}")
         reader = pypdf.PdfReader(pdf_path)
@@ -118,6 +124,17 @@ def parse_official_exams():
                 options[idx] = opt_text.replace('\n', ' ').strip()
                 
             ch = f"{term}歷屆考題"
+            explanation = ""
+            if term == "115年第一次":
+                if subject == "人工智慧技術應用與規劃":
+                    explanation = MID_115_1_S1_EXPLANATIONS.get(str(num), "")
+                elif subject == "大數據處理分析與應用":
+                    explanation = MID_115_1_S2_EXPLANATIONS.get(str(num), "")
+                elif subject == "機器學習技術與應用":
+                    explanation = MID_115_1_S3_EXPLANATIONS.get(str(num), "")
+            else:
+                explanation = f"此題為 {term}中級能力鑑定考試公告試題。"
+
             parsed_questions.append({
                 "subject": MID_SUBJECT_MAP.get(subject, f"中級：{subject}"),
                 "chapter": ch,
@@ -128,7 +145,7 @@ def parse_official_exams():
                 "options": options,
                 "answer": ans,
                 "ans_text": f"標準答案：({ans})",
-                "explanation": "此題為 114 年第二次中級能力鑑定考試公告試題。"
+                "explanation": explanation
             })
             
     return parsed_questions
@@ -355,6 +372,375 @@ def main():
         # Clean up general trailing garbage in options
         for i in range(len(q["options"])):
             q["options"][i] = q["options"][i].replace("《以下空白》", "").strip()
+        # ==========================================
+        # 115年第一次歷屆考題 轉錄與修正
+        # ==========================================
+        # 科目一：人工智慧技術應用與規劃
+        if q["subject"] == "L21 人工智慧技術應用與規劃" and q["chapter"] == "115年第一次歷屆考題":
+            if q["num"] == 19:
+                q["question"] = (
+                    "【背景說明：附圖數據如下】\n"
+                    "| 指標 | 導入前 | 導入後 |\n"
+                    "| :--- | :--- | :--- |\n"
+                    "| 模型離線 AUC | — | 0.91 |\n"
+                    "| 點擊率 (CTR) | 3.2% | 3.1% |\n"
+                    "| 平均訂單金額 | $850 | $1,020 |\n"
+                    "| 系統推論延遲 | — | 平均 85ms |\n"
+                    "| 模型推論費用 | — | 每月 $12,000 |\n\n"
+                    + q["question"]
+                )
+
+        # 科目二：大數據處理分析與應用
+        if q["subject"] == "L22 大數據處理分析與應用" and q["chapter"] == "115年第一次歷屆考題":
+            if q["num"] == 2:
+                q["question"] = "【背景說明：吉尼不純度計算公式為 $G = 1 - \\sum_{i=1}^k p_i^2$】\n\n" + q["question"]
+            elif q["num"] == 4:
+                q["question"] = "【背景說明：Z 檢定統計量公式為 $Z = \\frac{\\bar{x} - \\mu_0}{\\sigma / \\sqrt{n}}$】\n\n" + q["question"]
+            elif q["num"] == 19:
+                q["question"] = (
+                    "【背景說明：超市 8 筆交易紀錄如下表】\n"
+                    "| 單號 | 購買產品 |\n"
+                    "| :--- | :--- |\n"
+                    "| 1 | A, B, E |\n"
+                    "| 2 | C, D |\n"
+                    "| 3 | B, D, E |\n"
+                    "| 4 | A, B, E |\n"
+                    "| 5 | B, C, E |\n"
+                    "| 6 | A, D |\n"
+                    "| 7 | A |\n"
+                    "| 8 | A, D |\n\n"
+                    + q["question"]
+                )
+            elif q["num"] == 23:
+                q["question"] = (
+                    "【背景說明：附圖為 ROC 曲線圖，縱軸為真陽率（TPR，0 到 1），橫軸為假陽率（FPR，0 到 1）。\n"
+                    "- 水平線 A：從 (0,1) 水平延伸至 (1,1)\n"
+                    "- 曲線 B：由 (0,0) 單調遞增並凸向上方至 (1,1) 的平滑曲線\n"
+                    "- 曲線 C：在對角線上下波浪起伏震盪、非單調遞增的曲線\n"
+                    "- 斜直線 D：從 (0,0) 到 (1,1) 的對角斜直線】\n\n"
+                    + q["question"]
+                )
+            elif q["num"] == 39:
+                q["question"] = (
+                    "【背景說明：附圖程式碼如下】\n"
+                    "```python\n"
+                    "def process_record(record, tags=[]):\n"
+                    "    tags.append(\"checked\")\n"
+                    "    record['tags'] = tags\n"
+                    "    return record\n\n"
+                    "row1 = process_record({\"id\": 1})\n"
+                    "row2 = process_record({\"id\": 2})\n"
+                    "```\n\n"
+                    + q["question"]
+                )
+            elif q["num"] == 40:
+                q["question"] = (
+                    "【背景說明：附圖虛擬碼（pseudocode）如下】\n"
+                    "```\n"
+                    "Input :\n"
+                    "  - train_data : 訓練資料集，每筆包含特徵和標籤\n"
+                    "  - test_point : 要預測的資料點\n"
+                    "  - X : 要考慮的最近鄰個數\n"
+                    "Output :\n"
+                    "  - 預測的分類標籤\n"
+                    "Algorithm :\n"
+                    "1. 初始化一個空列表 distances\n"
+                    "2. 對於每個訓練資料中的樣本 sample :\n"
+                    "   a. 計算 sample 與 test_point 的距離 distance\n"
+                    "   b. 把 (distance, sample 的標籤) 加到 distances 中\n"
+                    "3. 按照距離對 distances 升序排序\n"
+                    "4. 取出前 X 個距離最小的項目，記錄它們的標籤\n"
+                    "5. 統計這 X 個標籤中出現次數最多的那個標籤\n"
+                    "6. 返回該標籤作為 test_point 的預測結果\n"
+                    "```\n\n"
+                    + q["question"]
+                )
+            elif q["num"] == 41:
+                q["question"] = (
+                    "【背景說明：附圖程式碼如下】\n"
+                    "```python\n"
+                    "import pandas as pd\n\n"
+                    "df = pd.read_csv('driver_daily_stats.csv')\n"
+                    "print(df['daily_earnings'].describe()[['mean', '50%', 'max']])\n"
+                    "```\n\n"
+                    + q["question"]
+                )
+            elif q["num"] == 44:
+                q["question"] = (
+                    "【背景說明：附圖分類評估報告如下】\n"
+                    "```\n"
+                    "              precision    recall  f1-score\n\n"
+                    "           0       1.00      1.00      1.00\n"
+                    "           1       1.00      1.00      1.00\n\n"
+                    "    accuracy                           1.00\n"
+                    "   macro avg       1.00      1.00      1.00\n"
+                    "weighted avg       1.00      1.00      1.00\n"
+                    "```\n\n"
+                    + q["question"]
+                )
+            elif q["num"] in [48, 49, 50]:
+                iris_context = (
+                    "【背景說明：請根據下方資訊回答第 48~50 題】\n"
+                    "使用鳶尾花卉資料集（iris）進行羅吉斯迴歸（Logistic Regression）分析，以下程式碼展示資料載入與處理：\n"
+                    "```python\n"
+                    "from sklearn.datasets import load_iris\n"
+                    "from sklearn.preprocessing import StandardScaler\n"
+                    "from sklearn.model_selection import train_test_split\n"
+                    "from sklearn.linear_model import LogisticRegression\n"
+                    "from sklearn.metrics import confusion_matrix, f1_score, classification_report\n\n"
+                    "iris = load_iris()\n"
+                    "X, y = iris.data, iris.target\n"
+                    "feature_names = iris.feature_names\n"
+                    "target_names = iris.target_names\n"
+                    "```\n"
+                    "前 5 筆特徵與目標資訊如下：\n"
+                    "```python\n"
+                    ">>> print(X[0:5])\n"
+                    "[[5.1 3.5 1.4 0.2]\n"
+                    " [4.9 3.  1.4 0.2]\n"
+                    " [4.7 3.2 1.3 0.2]\n"
+                    " [4.6 3.1 1.5 0.2]\n"
+                    " [5.  3.6 1.4 0.2]]\n"
+                    ">>> print(y[0:5])\n"
+                    "[0 0 0 0 0]\n"
+                    ">>> print(feature_names)\n"
+                    "['sepal length (cm)', 'sepal width (cm)', 'petal length (cm)', 'petal width (cm)']\n"
+                    ">>> print(target_names)\n"
+                    "['setosa' 'versicolor' 'virginica']\n"
+                    "```\n\n"
+                )
+                if not q["question"].startswith("【背景說明"):
+                    q["question"] = iris_context + q["question"]
+                    
+                if q["num"] == 49:
+                    # Fix option images by replacing with transcribed code
+                    q["options"] = [
+                        'X_train, X_test, y_train, y_test = train_test_split(X_norm, y, train_size=0.2, random_state=123)\nlog_reg = LogisticRegression(solver="liblinear")\nlog_reg.fit(X_train, y_train)',
+                        'X_train, X_test, y_train, y_test = train_test_split(X_norm, y, train_size=0.2, random_state=123)\nlog_reg = LogisticRegression(solver="lbfgs")\nlog_reg.fit(X_train, y_train)',
+                        'X_train, X_test, y_train, y_test = train_test_split(y, X_norm, train_size=0.2, random_state=123)\nlog_reg = LogisticRegression(solver="liblinear")\nlog_reg.fit(X_train, y_train)',
+                        'X_train, X_test, y_train, y_test = train_test_split(y, X_norm, train_size=0.2, random_state=123)\nlog_reg = LogisticRegression(solver="lbfgs")\nlog_reg.fit(X_train, y_train)'
+                    ]
+                elif q["num"] == 50:
+                    q["question"] += (
+                        "\n\n【附圖評估程式碼與輸出如下】\n"
+                        "```python\n"
+                        ">>> y_pred = log_reg.predict(X_test)\n"
+                        ">>> cm = confusion_matrix(y_test, y_pred)\n"
+                        ">>> f1 = f1_score(y_test, y_pred, average=\"weighted\")\n"
+                        ">>> print(cm)\n"
+                        "[[13  0  0]\n"
+                        " [ 0  6  0]\n"
+                        " [ 0  1 10]]\n"
+                        ">>> print(\"F1-score (Weighted):\", f1)\n"
+                        "F1-score (Weighted): 0.9671550671550672\n"
+                        ">>> print(\"Classification Report:\\n\", classification_report(y_test, y_pred, target_names=target_names))\n"
+                        "Classification Report:\n"
+                        "              precision    recall  f1-score   support\n\n"
+                        "      setosa       1.00      1.00      1.00        13\n"
+                        "  versicolor       0.86      1.00      0.92         6\n"
+                        "   virginica       1.00      0.91      0.95        11\n\n"
+                        "    accuracy                           0.97        30\n"
+                        "   macro avg       0.95      0.97      0.96        30\n"
+                        "weighted avg       0.97      0.97      0.97        30\n"
+                        "```"
+                    )
+
+        # 科目三：機器學習技術與應用
+        if q["subject"] == "L23 機器學習技術與應用" and q["chapter"] == "115年第一次歷屆考題":
+            if q["num"] == 40:
+                q["question"] = (
+                    "【背景說明：附圖程式碼如下】\n"
+                    "```python\n"
+                    "from tensorflow.keras import Sequential\n"
+                    "from tensorflow.keras.layers import Dense\n\n"
+                    "model = Sequential([\n"
+                    "    Dense(64, activation='relu', input_shape=(784,)),\n"
+                    "    Dense(10, activation='___(A)___')\n"
+                    "])\n"
+                    "model.compile(loss='___(B)___', optimizer='adam')\n"
+                    "```\n\n"
+                    + q["question"]
+                )
+            elif q["num"] == 41:
+                q["question"] = (
+                    "【背景說明：附圖程式碼如下】\n"
+                    "```python\n"
+                    "import torchvision.transforms as transforms\n\n"
+                    "transform = transforms.Compose([\n"
+                    "    transforms.RandomHorizontalFlip(p=0.5),\n"
+                    "    transforms.RandomRotation(15),\n"
+                    "    transforms.ColorJitter(brightness=0.3),\n"
+                    "    transforms.ToTensor(),\n"
+                    "])\n"
+                    "```\n\n"
+                    + q["question"]
+                )
+            elif q["num"] in [42, 43]:
+                resnet_code = (
+                    "【背景說明：附圖程式碼如下】\n"
+                    "```python\n"
+                    "import torch\n"
+                    "import torch.nn as nn\n"
+                    "import torchvision\n\n"
+                    "model = torchvision.models.resnet50(pretrained=True)\n"
+                    "for param in model.parameters():\n"
+                    "    param.requires_grad = False  # 行(A)\n\n"
+                    "model.fc = nn.Linear(2048, 2)\n"
+                    "optimizer = torch.optim.Adam(model.fc.parameters(), lr=1e-4)\n"
+                    "```\n\n"
+                )
+                if not q["question"].startswith("【背景說明"):
+                    q["question"] = resnet_code + q["question"]
+            elif q["num"] in [44, 45]:
+                iris_lda_context = (
+                    "【背景說明：請依據下方資訊回答第 44~45 題】\n"
+                    "研究人員從 UCI Machine Learning Repository 載入 Iris 資料集：\n"
+                    "```python\n"
+                    "from ucimlrepo import fetch_ucirepo\n\n"
+                    "# 線上載入資料\n"
+                    "iris = fetch_ucirepo(id=53)\n\n"
+                    "# 讀取資料的輸入欄位與預測目標欄位\n"
+                    "X = iris.data.features\n"
+                    "y = iris.data.targets['class']\n"
+                    "```\n"
+                    "特徵與目標欄位概況：\n"
+                    "| sepal length | sepal width | petal length | petal width | class |\n"
+                    "|---|---|---|---|---|\n"
+                    "| 5.1 | 3.5 | 1.4 | 0.2 | Iris-setosa |\n"
+                    "| 4.9 | 3.0 | 1.4 | 0.2 | Iris-setosa |\n"
+                    "| 4.7 | 3.2 | 1.3 | 0.2 | Iris-setosa |\n"
+                    "| 4.6 | 3.1 | 1.5 | 0.2 | Iris-setosa |\n"
+                    "| 5.0 | 3.6 | 1.4 | 0.2 | Iris-setosa |\n\n"
+                )
+                if not q["question"].startswith("【背景說明"):
+                    q["question"] = iris_lda_context + q["question"]
+                if q["num"] == 44:
+                    q["question"] += (
+                        "\n\n【附圖研究人員程式碼如下】\n"
+                        "```python\n"
+                        "from sklearn.model_selection import cross_val_score\n"
+                        "from sklearn.neighbors import KNeighborsClassifier\n"
+                        "from sklearn.discriminant_analysis import LinearDiscriminantAnalysis\n\n"
+                        "lda = LinearDiscriminantAnalysis()\n"
+                        "X_new = lda.fit_transform(X, y)\n\n"
+                        "model = KNeighborsClassifier(n_neighbors=3)\n"
+                        "scores = cross_val_score(model, X_new, y, cv=5, scoring=\"accuracy\")\n"
+                        "scores.mean()\n\n"
+                        "# 輸出: 0.9733333333333334\n"
+                        "```"
+                    )
+                elif q["num"] == 45:
+                    q["question"] += (
+                        "\n\n【附圖原始程式碼如下】\n"
+                        "```python\n"
+                        "from sklearn.model_selection import cross_val_score\n"
+                        "from sklearn.neighbors import KNeighborsClassifier\n"
+                        "from sklearn.discriminant_analysis import LinearDiscriminantAnalysis\n\n"
+                        "model = KNeighborsClassifier(n_neighbors=3)\n\n"
+                        "# [#填入程式碼]\n\n"
+                        "scores = cross_val_score(model, X, y, cv=cv, scoring=\"accuracy\")\n"
+                        "scores.mean()\n"
+                        "```\n"
+                        "【候選程式碼如下】\n"
+                        "- 程式碼 A：`cv = KFold(n_splits=5, shuffle=True)`\n"
+                        "- 程式碼 B：`cv = StratifiedKFold(n_splits=5, shuffle=True)`\n"
+                        "- 程式碼 C：`cv = 5`\n"
+                        "- 程式碼 D：`cv = RepeatedStratifiedKFold(n_splits=5, n_repeats=2)`"
+                    )
+            elif q["num"] in [46, 47, 48]:
+                cifar_context = (
+                    "【背景說明：請依據下方資訊回答第 46~48 題】\n"
+                    "開發人員使用 TensorFlow/Keras 建立 CNN 模型處理 CIFAR-10 影像資料：\n"
+                    "```python\n"
+                    "import tensorflow as tf\n"
+                    "from tensorflow.keras import datasets, layers, models\n"
+                    "import matplotlib.pyplot as plt\n\n"
+                    "(x_train, y_train), (x_test, y_test) = datasets.cifar10.load_data()\n"
+                    "```\n\n"
+                )
+                if not q["question"].startswith("【背景說明"):
+                    q["question"] = cifar_context + q["question"]
+                if q["num"] == 46:
+                    q["question"] += (
+                        "\n\n【附圖資料前處理程式碼如下】\n"
+                        "```python\n"
+                        "x_train, x_test = x_train / 255.0, x_test / 255.0\n"
+                        "y_train = tf.keras.utils.to_categorical(y_train, 10)\n"
+                        "y_test = tf.keras.utils.to_categorical(y_test, 10)\n"
+                        "```\n"
+                        "【候選描述如下】\n"
+                        "- 描述 A：x_train, x_test 將影像範圍壓縮到 0~31 範圍\n"
+                        "- 描述 B：可以增加模型的泛化能力\n"
+                        "- 描述 C：x_train, x_test 資料轉換結果相當於 z-score 標準化\n"
+                        "- 描述 D：資料轉換目的是避免梯度爆炸或梯度消失\n"
+                        "- 描述 E：y_train 將 label 轉換為獨熱編碼（One-hot Encoding）\n"
+                        "- 描述 F：y_train 適合輸出層使用 softmax 函數"
+                    )
+                elif q["num"] == 47:
+                    q["question"] += (
+                        "\n\n【附圖模型建置程式碼如下】\n"
+                        "```python\n"
+                        "model = models.Sequential([\n"
+                        "    # 區塊 1\n"
+                        "    layers.Input(shape=(32, 32, 3)),\n"
+                        "    layers.Conv2D(32, kernel_size=(3,3), padding=\"same\", activation=\"relu\"),\n"
+                        "    layers.BatchNormalization(),\n"
+                        "    layers.Conv2D(32, (3,3), activation='relu', padding='same'),\n"
+                        "    layers.BatchNormalization(),\n"
+                        "    layers.MaxPooling2D((2,2)),\n"
+                        "    layers.Dropout(0.25),\n\n"
+                        "    # 區塊 2\n"
+                        "    layers.Conv2D(64, (3,3), activation='relu', padding='same'),\n"
+                        "    layers.BatchNormalization(),\n"
+                        "    layers.Conv2D(64, (3,3), activation='relu', padding='same'),\n"
+                        "    layers.BatchNormalization(),\n"
+                        "    layers.MaxPooling2D((2,2)),\n"
+                        "    layers.Dropout(0.25),\n\n"
+                        "    # 區塊 3\n"
+                        "    layers.Conv2D(128, (3,3), activation='relu', padding='same'),\n"
+                        "    layers.BatchNormalization(),\n"
+                        "    layers.Conv2D(128, (3,3), activation='relu', padding='same'),\n"
+                        "    layers.BatchNormalization(),\n"
+                        "    layers.MaxPooling2D((2,2)),\n"
+                        "    layers.Dropout(0.25),\n\n"
+                        "    # 區塊 4\n"
+                        "    layers.Flatten(),\n"
+                        "    layers.Dense(256, activation='relu'),\n"
+                        "    layers.BatchNormalization(),\n"
+                        "    layers.Dropout(0.5),\n"
+                        "    layers.Dense(10, activation='softmax')\n"
+                        "])\n"
+                        "```\n"
+                        "【候選描述如下】\n"
+                        "- 描述 A：區塊 1 layers.Input(shape=(32, 32, 3)) 主要目的是進行資料標準化\n"
+                        "- 描述 B：區塊 1 layers.Conv2D(32, kernel_size=(3,3), padding=\"same\", activation=\"relu\") 考慮輸入為(32,32,3)，則輸出 shape 為(32,32,3)\n"
+                        "- 描述 C：區塊 1 layers.BatchNormalization() 放在 Conv2D 之後可以減少梯度消失或爆炸\n"
+                        "- 描述 D：區塊 2 layers.Dropout(0.25) 可以隨機將 25% 神經元輸出設定為 1\n"
+                        "- 描述 E：區塊 3 layers.Dropout(0.25) 可以減少過度擬合（Overfitting）\n"
+                        "- 描述 F：區塊 4 Flatten 層的作用是將 3D 特徵圖展開為平面的 1D 向量"
+                    )
+                elif q["num"] == 48:
+                    q["question"] += (
+                        "\n\n【附圖繪圖結果說明如下】\n"
+                        "附圖為 CIFAR-10 CNN 訓練過程曲線圖。縱軸為 Accuracy（0.45 到 0.85），橫軸為 Epochs（0 到 9）。\n"
+                        "- 藍線（Train Accuracy）：自 0.47 持續單調上升至 0.84。\n"
+                        "- 紅線（Validation Accuracy）：於 Epoch 5 達到峰值約 0.80 後，於 Epoch 6 劇烈下跌至 0.72，隨後在 0.80 震盪未再突破。\n"
+                        "在 Epoch=6 時，訓練曲線值(0.81)明顯大於驗證曲線值(0.72)。"
+                    )
+            elif q["num"] == 50:
+                q["question"] = (
+                    "【背景說明：附圖 PyTorch 訓練迴圈程式碼如下】\n"
+                    "```python\n"
+                    "for images, labels in train_loader:\n"
+                    "    optimizer.zero_grad()               # 位置 1\n"
+                    "    outputs = model(images)             # 位置 2\n"
+                    "    loss = criterion(outputs, labels)   # 位置 3\n"
+                    "    loss.backward()                     # 位置 4\n"
+                    "    optimizer.step()                    # 位置 5\n"
+                    "```\n\n"
+                    + q["question"]
+                )
+
             
         # Fix Question 45 (Subject 3, 114年第二次歷屆考題)
         if q["subject"] == "L23 機器學習技術與應用" and q["chapter"] == "114年第二次歷屆考題" and q["num"] == 45:

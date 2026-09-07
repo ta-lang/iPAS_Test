@@ -37,8 +37,8 @@ c:\Drive224\Projects\iPAS 證照
     ├── script.js                  # 模擬考系統主控邏輯與加權驗證演算法
     ├── style.css                  # 現代毛玻璃質感 (Glassmorphism) 與響應式樣式
     ├── questions.js/json          # 營運智慧分析師題庫 (163 題)
-    ├── ai_questions.js/json       # AI應用規劃師 (初級) 題庫 (530 題)
-    └── ai_mid_questions.js/json   # AI應用規劃師 (中級) 題庫 (298 題)
+    ├── ai_questions.js/json       # AI應用規劃師 (初級) 題庫 (630 題)
+    └── ai_mid_questions.js/json   # AI應用規劃師 (中級) 題庫 (448 題)
 ```
 
 題庫數量以 `exam/*.json` 的實際內容為準；重新執行解析器後，應再次核對 JSON 題目數與前端顯示。
