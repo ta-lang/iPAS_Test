@@ -21,6 +21,9 @@
 * **【驗證與可重現建置】**：
   * `node --test tests/*.test.js` 32/32 測試通過；`python -m unittest tests.test_question_identity` 4/4 測試通過。
   * 題庫連續建置兩次，`exam/ai_questions.json` 與 `exam/ai_mid_questions.json` 之 SHA-256 完全吻合，確認建置結果 100% 確定且可重現。
+* **【GitHub 與 GitHub Pages 發佈】**：
+  * 本地完成 commit `382565d`（新增 19 個檔案，題庫與解析全數納入版本控制）。
+  * 透過 subtree tree-commit 以快轉方式推送至 `github/main`（Commit: `08da4cc`），靜態測驗網站（https://ta-lang.github.io/iPAS_Test/）正式完成部署與線上發佈。
 
 ### 📌 2026-08-20 —— 未完成工作追蹤與交接邊界
 
