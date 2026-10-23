@@ -187,6 +187,45 @@ window.EXAM_CONFIG = {
             ]
         },
         {
+            id: "pcb",
+            name: "電路板製程工程師",
+            icon: "🖧",
+            description: "電路板品管概論、軟性電路板製程概論、硬式電路板製程概論",
+            enabled: true,
+            questionCount: 135,
+            questionsFile: "pcb_questions.js",
+            questionsJson: "pcb_questions.json",
+            questionsVar: "ipasPcbQuestions",
+            subjects: [
+                { id: "s1", name: "第一科：電路板品管概論", matchKeywords: ["第一科", "電路板品管概論", "s1"] },
+                { id: "s2", name: "第二科：軟性電路板製程概論", matchKeywords: ["第二科", "軟性電路板製程概論", "s2"] },
+                { id: "s3", name: "第三科：硬式電路板製程概論", matchKeywords: ["第三科", "硬式電路板製程概論", "s3"] }
+            ],
+            studyNotes: [
+                { subjectGroup: "第一科：電路板品管概論" },
+                { topicGroup: "L211 統計製程管制 SPC" },
+                { title: "L21101 SPC管理意義與管制圖判讀", file: "notes/pcb/s1_電路板品管概論/L211_統計製程管制SPC.md#L21101" },
+                { title: "L21102 製程能力分析指標與計算", file: "notes/pcb/s1_電路板品管概論/L211_統計製程管制SPC.md#L21102" },
+                { title: "L21103 製程管制調整與抽樣檢驗", file: "notes/pcb/s1_電路板品管概論/L211_統計製程管制SPC.md#L21103" },
+                { topicGroup: "L212 QC七大手法與品質管理" },
+                { title: "L21201 QC七大手法定義與時機", file: "notes/pcb/s1_電路板品管概論/L212_QC七大手法與品質管理.md#L21201" },
+                { title: "L21202 QC Story問題解決程序與IPQC", file: "notes/pcb/s1_電路板品管概論/L212_QC七大手法與品質管理.md#L21202" },
+                { title: "L21203 IPC國際規範與PCB常見缺點", file: "notes/pcb/s1_電路板品管概論/L212_QC七大手法與品質管理.md#L21203" },
+                { subjectGroup: "第二科/第三科：軟硬板製造概論" },
+                { topicGroup: "L121 基材材料組成與趨勢" },
+                { title: "L12101 銅箔基板CCL組成要素與功能", file: "notes/pcb/s2_軟硬板製造概論/L121_基材材料組成與趨勢.md#L12101" },
+                { title: "L12102 材料趨勢與6H1L1R高頻高速指標", file: "notes/pcb/s2_軟硬板製造概論/L121_基材材料組成與趨勢.md#L12102" },
+                { topicGroup: "L122 PCB多層板核心製造製程" },
+                { title: "L12201 製前工程與內層線路製作", file: "notes/pcb/s2_軟硬板製造概論/L122_PCB多層板核心製造製程.md#L12201" },
+                { title: "L12202 壓合鑽孔與通孔金屬化PTH", file: "notes/pcb/s2_軟硬板製造概論/L122_PCB多層板核心製造製程.md#L12202" },
+                { title: "L12203 防焊綠漆與表面終檢處理", file: "notes/pcb/s2_軟硬板製造概論/L122_PCB多層板核心製造製程.md#L12203" },
+                { topicGroup: "L221 軟板與軟硬結合板特論" },
+                { title: "L22101 軟板FPC特殊材料與構造", file: "notes/pcb/s2_軟硬板製造概論/L221_軟板與軟硬結合板特論.md#L22101" },
+                { title: "L22102 軟板捲對捲RTR生產與成型", file: "notes/pcb/s2_軟硬板製造概論/L221_軟板與軟硬結合板特論.md#L22102" },
+                { title: "L22103 微切片分析Microsection實務", file: "notes/pcb/s2_軟硬板製造概論/L221_軟板與軟硬結合板特論.md#L22103" }
+            ]
+        },
+        {
             id: "security",
             name: "資安工程師",
             icon: "🛡️",
