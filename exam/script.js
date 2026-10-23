@@ -1,17 +1,24 @@
 // IPAS Exam Web Application JS Logic
 
 // Global Application State
+const ACTIVE_SESSION_STORAGE_KEY = 'ipas_active_session_v1';
+const ACTIVE_QUIZ_STORAGE_KEY = 'ipas_active_quiz_v1';
+
 let appData = {
     currentCert: '', // Configured dynamically
     questions: [], // Active questions database
     moduleQuestions: {}, // Maps module.id -> array of questions
     currentQuiz: [], // Questions in active session
     userAnswers: {}, // Map of { questionIndex: selectedOptionIndex } (0-3)
+    checkedQuestions: new Set(), // Set of checked question indexes
     flaggedQuestions: {}, // Map of { questionIndex: boolean }
     currentQuestionIdx: 0,
+    currentIndex: 0,
+    currentExamSubject: null,
     quizMode: 'exam', // 'exam' or 'practice'
     timerInterval: null,
     timerStartedAt: null,
+    examEndTime: null,
     timerDurationSeconds: 4500,
     timeRemaining: 4500, // 75 minutes by default (dynamic based on certification)
     timeSpent: 0,
@@ -20,7 +27,8 @@ let appData = {
     certSelectionToken: 0,
     accountSession: null,
     deviceId: '',
-    syncInFlight: false
+    syncInFlight: false,
+    currentNoteBasePath: ''
 };
 
 const accountApi = /^https:\/\//i.test(window.EXAM_CONFIG.apiEndpoint || '')
@@ -87,10 +95,214 @@ const btnCancelExamModal = document.getElementById('btnCancelExamModal');
 document.addEventListener('DOMContentLoaded', () => {
     appData.deviceId = getOrCreateDeviceId();
     initTheme();
-    renderSyncStatus();
-    loadQuestions();
     setupEventListeners();
+    void initializeAppStartup();
 });
+
+async function initializeAppStartup() {
+    const restoredSession = loadActiveSessionFromStorage();
+    if (restoredSession && restoredSession.accountSession) {
+        appData.accountSession = restoredSession.accountSession;
+        if (restoredSession.currentCert) {
+            appData.currentCert = restoredSession.currentCert;
+        }
+        if (btnLogout) btnLogout.classList.remove('hidden');
+        transitionScreen(loginScreen, welcomeScreen);
+        void renderSyncStatus().then(() => flushSyncOutbox());
+        await loadQuestions(restoredSession.currentCert);
+        await restoreActiveQuizFromStorage();
+    } else {
+        renderSyncStatus();
+        await loadQuestions();
+    }
+}
+
+function getQuestionKey(question) {
+    if (window.ExamCore && typeof window.ExamCore.getQuestionKey === 'function') {
+        return window.ExamCore.getQuestionKey(question);
+    }
+    return String(question?.question_uid || question?.display_num || question?.num || '');
+}
+
+function saveActiveSessionToStorage() {
+    try {
+        if (!appData.accountSession) return;
+        const payload = window.ExamCore && typeof window.ExamCore.serializeActiveSession === 'function'
+            ? window.ExamCore.serializeActiveSession(appData.accountSession, appData.currentCert)
+            : {
+                mode: appData.accountSession.mode || 'local-only',
+                userId: appData.accountSession.userId || null,
+                displayId: appData.accountSession.displayId || null,
+                partitionKey: appData.accountSession.partitionKey || appData.accountSession.userId || 'local',
+                migrationDone: Boolean(appData.accountSession.migrationDone),
+                syncStatus: appData.accountSession.syncStatus || 'local-only',
+                currentCert: appData.currentCert || ''
+            };
+        if (payload) {
+            sessionStorage.setItem(ACTIVE_SESSION_STORAGE_KEY, JSON.stringify(payload));
+        }
+    } catch (e) {
+        console.warn('無法儲存工作階段至 sessionStorage:', e);
+    }
+}
+
+function loadActiveSessionFromStorage() {
+    try {
+        const raw = sessionStorage.getItem(ACTIVE_SESSION_STORAGE_KEY);
+        if (!raw) return null;
+        const parsed = JSON.parse(raw);
+        if (window.ExamCore && typeof window.ExamCore.restoreActiveSession === 'function') {
+            return window.ExamCore.restoreActiveSession(parsed);
+        }
+        return parsed;
+    } catch (e) {
+        console.warn('無法從 sessionStorage 還原工作階段:', e);
+        return null;
+    }
+}
+
+function clearActiveSessionStorage() {
+    try {
+        sessionStorage.removeItem(ACTIVE_SESSION_STORAGE_KEY);
+    } catch (e) {
+        console.warn('無法清除 sessionStorage 工作階段:', e);
+    }
+}
+
+function saveActiveQuizToStorage() {
+    try {
+        if (!appData.quizActive || !Array.isArray(appData.currentQuiz) || appData.currentQuiz.length === 0) {
+            return;
+        }
+        const payload = window.ExamCore && typeof window.ExamCore.serializeActiveQuiz === 'function'
+            ? window.ExamCore.serializeActiveQuiz(appData)
+            : {
+                certKey: appData.currentCert,
+                quizMode: appData.quizMode,
+                currentExamSubject: appData.currentExamSubject,
+                questionUids: appData.currentQuiz.map(q => getQuestionKey(q)),
+                currentIndex: appData.currentIndex,
+                userAnswers: appData.userAnswers,
+                checkedQuestions: Array.from(appData.checkedQuestions),
+                flaggedQuestions: Array.from(Object.keys(appData.flaggedQuestions).filter(k => appData.flaggedQuestions[k]).map(Number)),
+                examEndTime: appData.examEndTime || null,
+                savedAt: Date.now()
+            };
+        if (payload) {
+            sessionStorage.setItem(ACTIVE_QUIZ_STORAGE_KEY, JSON.stringify(payload));
+        }
+    } catch (e) {
+        console.warn('無法儲存測驗進度至 sessionStorage:', e);
+    }
+}
+
+function clearActiveQuizStorage() {
+    try {
+        sessionStorage.removeItem(ACTIVE_QUIZ_STORAGE_KEY);
+    } catch (e) {
+        console.warn('無法清除 sessionStorage 測驗進度:', e);
+    }
+}
+
+async function restoreActiveQuizFromStorage() {
+    try {
+        const raw = sessionStorage.getItem(ACTIVE_QUIZ_STORAGE_KEY);
+        if (!raw) return false;
+        const saved = JSON.parse(raw);
+        if (!saved || !Array.isArray(saved.questionUids) || saved.questionUids.length === 0) {
+            clearActiveQuizStorage();
+            return false;
+        }
+
+        if (saved.certKey && saved.certKey !== appData.currentCert) {
+            await selectCert(saved.certKey);
+        } else if (!appData.questions || appData.questions.length === 0) {
+            const targetCert = saved.certKey || appData.currentCert;
+            if (targetCert) await selectCert(targetCert);
+        }
+
+        const restored = window.ExamCore && typeof window.ExamCore.restoreActiveQuiz === 'function'
+            ? window.ExamCore.restoreActiveQuiz(saved, appData.questions, Date.now())
+            : null;
+
+        if (!restored || !restored.currentQuiz || restored.currentQuiz.length === 0) {
+            clearActiveQuizStorage();
+            return false;
+        }
+
+        appData.currentQuiz = restored.currentQuiz;
+        appData.quizMode = restored.quizMode;
+        appData.currentExamSubject = restored.currentExamSubject;
+        appData.userAnswers = restored.userAnswers;
+        appData.checkedQuestions = restored.checkedQuestions;
+        appData.flaggedQuestions = restored.flaggedQuestions;
+        appData.currentQuestionIdx = restored.currentIndex;
+        appData.currentIndex = restored.currentIndex;
+        appData.committedEvents = Object.create(null);
+        appData.quizActive = true;
+
+        // Mark already-checked practice questions in committedEvents so they aren't double-persisted
+        if (appData.quizMode === 'practice') {
+            Object.keys(appData.userAnswers).forEach(qIdx => {
+                if (appData.userAnswers[qIdx] !== undefined) {
+                    appData.committedEvents[`practice-answer:${qIdx}`] = true;
+                }
+            });
+        }
+
+        const durationMinutes = (appData.currentCert === 'ai_mid') ? 90 : 75;
+        appData.timerDurationSeconds = restored.timerDurationSeconds || (durationMinutes * 60);
+
+        practiceSetup.classList.add('hidden');
+        document.querySelector('.quiz-nav-panel').classList.remove('hidden');
+        navPanelTitle.textContent = appData.quizMode === 'exam' ? '全真考卷答題進度' : '練習題目清單';
+
+        clearInterval(appData.timerInterval);
+        if (appData.quizMode === 'exam') {
+            timerDisplay.classList.remove('hidden');
+            const remainingSecs = restored.examEndTime
+                ? Math.max(1, Math.floor((restored.examEndTime - Date.now()) / 1000))
+                : appData.timerDurationSeconds;
+            appData.timeRemaining = remainingSecs;
+            appData.examEndTime = Date.now() + remainingSecs * 1000;
+            appData.timeSpent = Math.max(0, appData.timerDurationSeconds - remainingSecs);
+            startTimer(remainingSecs);
+        } else {
+            timerDisplay.classList.add('hidden');
+            appData.examEndTime = null;
+        }
+
+        buildNavGrid();
+        // Restore nav button classes for answered and flagged questions
+        Object.keys(appData.userAnswers).forEach(idx => {
+            if (appData.userAnswers[idx] !== undefined) {
+                const btn = document.getElementById(`navBtn_${idx}`);
+                if (btn) btn.classList.add('answered');
+            }
+        });
+        Object.keys(appData.flaggedQuestions).forEach(idx => {
+            if (appData.flaggedQuestions[idx]) {
+                const btn = document.getElementById(`navBtn_${idx}`);
+                if (btn) btn.classList.add('flagged');
+            }
+        });
+        updateProgress();
+
+        if (loginScreen && loginScreen.classList.contains('active')) {
+            transitionScreen(loginScreen, quizScreen);
+        } else if (welcomeScreen && welcomeScreen.classList.contains('active')) {
+            transitionScreen(welcomeScreen, quizScreen);
+        } else {
+            quizScreen.classList.add('active');
+        }
+
+        showQuestion(appData.currentQuestionIdx);
+        return true;
+    } catch (e) {
+        console.warn('無法從 sessionStorage 還原測驗進度:', e);
+        return false;
+    }
+}
 
 // Theme Management
 function initTheme() {
@@ -118,7 +330,7 @@ function loadScript(src) {
 }
 
 // Load Questions from JSON Database or JS variable
-async function loadQuestions() {
+async function loadQuestions(initialCertKey = '') {
     try {
         // Fetch active module flags from Google Sheets config if apiEndpoint is configured
         if (window.EXAM_CONFIG.apiEndpoint && window.EXAM_CONFIG.apiEndpoint !== "YOUR_DEPLOYED_WEB_APP_URL") {
@@ -148,9 +360,15 @@ async function loadQuestions() {
         // Render certification selector cards dynamically
         renderCertSelector();
         
-        // Set initial default cert type to the first enabled module
-        const defaultCert = modules[0].id;
-        await selectCert(defaultCert);
+        const targetCert = initialCertKey && modules.some(m => m.id === initialCertKey)
+            ? initialCertKey
+            : modules[0].id;
+        appData.currentCert = targetCert;
+
+        const isLoginActive = loginScreen && loginScreen.classList.contains('active');
+        if (!isLoginActive || initialCertKey) {
+            await selectCert(targetCert);
+        }
     } catch (error) {
         console.error(error);
         qText.innerHTML = `<div style="color:#ef4444; font-weight:700;">讀取題庫錯誤：${error.message}<br>請確認是否已產生題庫檔案或 config.js 是否正確。</div>`;
@@ -232,6 +450,9 @@ async function selectCert(certType) {
     }
     if (selectionToken !== appData.certSelectionToken) return;
     appData.currentCert = certType;
+    if (appData.accountSession) {
+        saveActiveSessionToStorage();
+    }
     
     // Update active card class
     modules.forEach(m => {
@@ -364,48 +585,129 @@ function populateFilters() {
         selectSubject.appendChild(opt);
     });
     
-    const chaptersBySubject = {
-        'all': new Set()
-    };
-    mod.subjects.forEach(subj => {
-        chaptersBySubject[subj.id] = new Set();
-    });
-    
-    appData.questions.forEach(q => {
-        // Find matching subject based on matchKeywords in config
-        const matchedSubj = mod.subjects.find(subj => {
-            return subj.matchKeywords.some(keyword => q.subject.includes(keyword));
-        });
-        
-        const subjId = matchedSubj ? matchedSubj.id : mod.subjects[0].id;
-        
-        if (chaptersBySubject[subjId]) {
-            chaptersBySubject[subjId].add(q.chapter);
-        }
-        chaptersBySubject['all'].add(q.chapter);
-    });
-    
-    // Clear and clone to drop old event listeners
+    // Clear and clone selectSubject to drop old event listeners
     const newSelectSubject = selectSubject.cloneNode(true);
     selectSubject.parentNode.replaceChild(newSelectSubject, selectSubject);
     selectSubject = newSelectSubject;
     
     newSelectSubject.addEventListener('change', () => {
-        const selectedSubj = newSelectSubject.value;
-        selectChapter.innerHTML = '<option value="all">全部章節 (不限)</option>';
-        
-        if (chaptersBySubject[selectedSubj]) {
-            chaptersBySubject[selectedSubj].forEach(chap => {
-                const opt = document.createElement('option');
-                opt.value = chap;
-                opt.textContent = chap;
-                selectChapter.appendChild(opt);
-            });
-        }
+        populateTopicsAndChapters();
+        void updatePoolCount();
     });
     
     // Trigger initial change
     newSelectSubject.dispatchEvent(new Event('change'));
+}
+
+function getQuestionsForSubject(subjVal) {
+    const modules = window.EXAM_CONFIG.modules.filter(m => m.enabled);
+    const mod = modules.find(m => m.id === appData.currentCert);
+    if (!mod) return [];
+    if (!subjVal || subjVal === 'all') return appData.questions;
+    const targetSubj = mod.subjects.find(s => s.id === subjVal);
+    if (!targetSubj) return [];
+    return appData.questions.filter(q =>
+        targetSubj.matchKeywords.some(keyword => q.subject.includes(keyword))
+    );
+}
+
+function populateTopicsAndChapters() {
+    const modules = window.EXAM_CONFIG.modules.filter(m => m.enabled);
+    const mod = modules.find(m => m.id === appData.currentCert);
+    const subjVal = selectSubject ? selectSubject.value : 'all';
+    const subjQuestions = getQuestionsForSubject(subjVal);
+
+    const selTopic = document.getElementById('selTopic');
+    const topicFilterGroup = document.getElementById('topicFilterGroup');
+
+    const distinctTopics = [];
+    const seenTopics = new Set();
+    subjQuestions.forEach(q => {
+        const t = String(q.assessmentTopic || '').trim();
+        if (t && !seenTopics.has(t)) {
+            seenTopics.add(t);
+            distinctTopics.push(t);
+        }
+    });
+
+    if (selTopic) {
+        selTopic.innerHTML = '<option value="all">全部評鑑主題 (不限)</option>';
+        distinctTopics.forEach(t => {
+            const opt = document.createElement('option');
+            opt.value = t;
+            opt.textContent = window.ExamCore && typeof window.ExamCore.formatTopicLabel === 'function'
+                ? window.ExamCore.formatTopicLabel(t, subjQuestions, mod ? mod.studyNotes : [])
+                : t;
+            selTopic.appendChild(opt);
+        });
+    }
+
+    if (topicFilterGroup) {
+        topicFilterGroup.style.display = distinctTopics.length > 0 ? '' : 'none';
+    }
+
+    populateChapters();
+}
+
+function populateChapters() {
+    if (!selectChapter) return;
+    const subjVal = selectSubject ? selectSubject.value : 'all';
+    const selTopic = document.getElementById('selTopic');
+    const topicVal = selTopic ? selTopic.value : 'all';
+    const subjQuestions = getQuestionsForSubject(subjVal);
+
+    const chapters = new Set();
+    subjQuestions.forEach(q => {
+        if (topicVal !== 'all' && String(q.assessmentTopic || '').trim() !== topicVal) return;
+        if (q.chapter) chapters.add(q.chapter);
+    });
+
+    selectChapter.innerHTML = '<option value="all">全部章節 (不限)</option>';
+    chapters.forEach(chap => {
+        const opt = document.createElement('option');
+        opt.value = chap;
+        opt.textContent = chap;
+        selectChapter.appendChild(opt);
+    });
+}
+
+async function getFilteredPracticePool() {
+    const modules = window.EXAM_CONFIG.modules.filter(m => m.enabled);
+    const mod = modules.find(m => m.id === appData.currentCert);
+    if (!mod) return [];
+
+    const subjVal = document.getElementById('selectSubject')?.value || 'all';
+    const topicVal = document.getElementById('selTopic')?.value || 'all';
+    const chapVal = selectChapter ? selectChapter.value : 'all';
+    const isWrongBook = Boolean(document.getElementById('chkWrongBook')?.checked);
+    const wrongMode = document.getElementById('selWrongMode')?.value || 'due';
+    const unansweredOnly = Boolean(document.getElementById('chkUnansweredOnly')?.checked);
+
+    const [wrongPool, questionStats] = await Promise.all([
+        isWrongBook ? getWrongPool(appData.currentCert) : Promise.resolve([]),
+        unansweredOnly ? loadQuestionStats(appData.currentCert) : Promise.resolve([])
+    ]);
+
+    return window.ExamCore.filterPracticeQuestions({
+        questions: appData.questions,
+        wrongPool,
+        questionStats,
+        subjects: mod.subjects,
+        subjectId: subjVal,
+        topic: topicVal,
+        chapter: chapVal,
+        isWrongBook,
+        wrongMode,
+        unansweredOnly,
+        today: new Date().toISOString().split('T')[0]
+    });
+}
+
+async function updatePoolCount() {
+    const lblPoolCount = document.getElementById('lblPoolCount');
+    if (!lblPoolCount || !appData.currentCert) return;
+    const filtered = await getFilteredPracticePool();
+    lblPoolCount.textContent = `符合條件：${filtered.length} 題`;
 }
 
 // Setup Main Event Listeners
@@ -430,6 +732,35 @@ function setupEventListeners() {
     document.getElementById('btnStartPractice').addEventListener('click', enterPracticeSetup);
     document.getElementById('btnStartStudy').addEventListener('click', showStudyNoteModal);
     document.getElementById('btnApplyPractice').addEventListener('click', startPracticeMode);
+
+    // Practice setup filter listeners
+    const selTopicEl = document.getElementById('selTopic');
+    if (selTopicEl) {
+        selTopicEl.addEventListener('change', () => {
+            populateChapters();
+            void updatePoolCount();
+        });
+    }
+    if (selectChapter) {
+        selectChapter.addEventListener('change', () => void updatePoolCount());
+    }
+    const chkWrongBookEl = document.getElementById('chkWrongBook');
+    const selWrongModeEl = document.getElementById('selWrongMode');
+    if (chkWrongBookEl) {
+        chkWrongBookEl.addEventListener('change', () => {
+            if (selWrongModeEl) {
+                selWrongModeEl.classList.toggle('hidden', !chkWrongBookEl.checked);
+            }
+            void updatePoolCount();
+        });
+    }
+    if (selWrongModeEl) {
+        selWrongModeEl.addEventListener('change', () => void updatePoolCount());
+    }
+    const chkUnansweredOnlyEl = document.getElementById('chkUnansweredOnly');
+    if (chkUnansweredOnlyEl) {
+        chkUnansweredOnlyEl.addEventListener('change', () => void updatePoolCount());
+    }
     
     // Exam Modal Action Bindings
     if (btnCancelExamModal) btnCancelExamModal.addEventListener('click', hideExamSubjectModal);
@@ -503,6 +834,74 @@ function setupEventListeners() {
             filterReviewList(e.currentTarget.getAttribute('data-filter'));
         });
     });
+
+    // Keyboard Shortcuts for Active Quiz
+    document.addEventListener('keydown', handleQuizKeydown);
+}
+
+function handleQuizKeydown(e) {
+    if (!quizScreen || quizScreen.classList.contains('hidden') || !quizScreen.classList.contains('active')) return;
+    if (!appData.quizActive || !Array.isArray(appData.currentQuiz) || appData.currentQuiz.length === 0) return;
+
+    const isStudyModalOpen = studyNoteModal && studyNoteModal.classList.contains('active');
+    const isExamModalOpen = examSubjectModal && examSubjectModal.classList.contains('active');
+    if (isStudyModalOpen || isExamModalOpen) return;
+
+    const targetTag = (e.target && e.target.tagName) ? e.target.tagName.toUpperCase() : '';
+    if (targetTag === 'INPUT' || targetTag === 'TEXTAREA' || targetTag === 'SELECT') return;
+    if (e.ctrlKey || e.altKey || e.metaKey) return;
+
+    const key = e.key;
+    const optionMap = {
+        '1': 0, '2': 1, '3': 2, '4': 3,
+        'a': 0, 'b': 1, 'c': 2, 'd': 3,
+        'A': 0, 'B': 1, 'C': 2, 'D': 3
+    };
+
+    if (Object.prototype.hasOwnProperty.call(optionMap, key)) {
+        const oIdx = optionMap[key];
+        const qIdx = appData.currentQuestionIdx;
+        if (appData.quizMode === 'practice' && appData.userAnswers[qIdx] !== undefined) {
+            return;
+        }
+        e.preventDefault();
+        selectOption(qIdx, oIdx);
+        return;
+    }
+
+    if (key === 'Enter') {
+        const qIdx = appData.currentQuestionIdx;
+        const btnCheckAnswer = document.getElementById('btnCheckAnswer');
+        if (appData.quizMode === 'practice' && appData.userAnswers[qIdx] !== undefined && !appData.checkedQuestions.has(qIdx) && (!btnCheckAnswer || !btnCheckAnswer.classList.contains('hidden'))) {
+            e.preventDefault();
+            checkAnswer();
+        } else if (btnNext && !btnNext.classList.contains('hidden')) {
+            e.preventDefault();
+            nextQuestion();
+        }
+        return;
+    }
+
+    if (key === 'ArrowLeft') {
+        if (appData.currentIndex > 0) {
+            e.preventDefault();
+            prevQuestion();
+        }
+        return;
+    }
+
+    if (key === 'ArrowRight') {
+        if (appData.currentIndex < appData.currentQuiz.length - 1) {
+            e.preventDefault();
+            nextQuestion();
+        }
+        return;
+    }
+
+    if (key === 'f' || key === 'F') {
+        e.preventDefault();
+        toggleFlag();
+    }
 }
 
 // Transition helper
@@ -518,7 +917,13 @@ function enterPracticeSetup() {
     timerDisplay.classList.add('hidden');
     appData.quizMode = 'practice';
     
-    // Trigger change event to populate chapters initially
+    const chkWrongBookEl = document.getElementById('chkWrongBook');
+    const selWrongModeEl = document.getElementById('selWrongMode');
+    if (chkWrongBookEl && selWrongModeEl) {
+        selWrongModeEl.classList.toggle('hidden', !chkWrongBookEl.checked);
+    }
+
+    // Trigger change event to populate topics, chapters, and pool count initially
     selectSubject.dispatchEvent(new Event('change'));
     
     // Show quiz screen but keep question area blank until "開始練習" is clicked
@@ -531,10 +936,8 @@ function enterPracticeSetup() {
 
 // Start Practice Mode Session
 async function startPracticeMode() {
-    const subjVal = document.getElementById('selectSubject').value;
-    const chapVal = selectChapter.value;
     const numLimit = document.getElementById('practiceNum').value;
-    const isWrongBook = document.getElementById('chkWrongBook').checked;
+    const isWrongBook = Boolean(document.getElementById('chkWrongBook')?.checked);
 
     if (isWrongBook) {
         const pool = await getWrongPool(appData.currentCert);
@@ -542,76 +945,27 @@ async function startPracticeMode() {
             alert('錯題池為空，尚無需複習的題目！');
             return;
         }
-
-        let filtered = pool.filter(entry =>
-            entry.nextReviewDate <= new Date().toISOString().split('T')[0]);
-
-        if (subjVal !== 'all') {
-            const modules = window.EXAM_CONFIG.modules.filter(module => module.enabled);
-            const mod = modules.find(module => module.id === appData.currentCert);
-            const targetSubject = mod && mod.subjects.find(subject => subject.id === subjVal);
-            if (targetSubject) {
-                filtered = filtered.filter(entry =>
-                    targetSubject.matchKeywords.some(keyword => entry.subject.includes(keyword)));
-            }
-        }
-        if (chapVal !== 'all') {
-            filtered = filtered.filter(entry => entry.chapter === chapVal);
-        }
-        if (filtered.length === 0) {
-            alert('篩選範圍內無待複習錯題！');
-            return;
-        }
-
-        appData.currentQuiz = shuffleArray(filtered).slice(
-            0,
-            numLimit === 'all' ? filtered.length : parseInt(numLimit, 10)
-        );
-        appData.quizMode = 'practice';
-        practiceSetup.classList.add('hidden');
-        timerDisplay.classList.add('hidden');
-        document.querySelector('.quiz-nav-panel').classList.remove('hidden');
-        await initQuizSession('practice');
-        return;
     }
 
-    const modules = window.EXAM_CONFIG.modules.filter(m => m.enabled);
-    const mod = modules.find(m => m.id === appData.currentCert);
-    if (!mod) return;
-    
-    // Filter questions based on criteria
-    let filtered = appData.questions.filter(q => {
-        let isSubjMatch = false;
-        if (subjVal === 'all') {
-            isSubjMatch = true;
-        } else {
-            const targetSubj = mod.subjects.find(s => s.id === subjVal);
-            if (targetSubj) {
-                isSubjMatch = targetSubj.matchKeywords.some(keyword => q.subject.includes(keyword));
-            }
-        }
-        
-        const isChapMatch = chapVal === 'all' || q.chapter === chapVal;
-        return isSubjMatch && isChapMatch;
-    });
-    
+    let filtered = await getFilteredPracticePool();
     if (filtered.length === 0) {
-        alert('此範圍內無題目，請重新選擇！');
+        alert(isWrongBook ? '篩選範圍內無待複習錯題！' : '此範圍內無題目，請重新選擇！');
         return;
     }
-    
+
     // Shuffle filtered questions
     filtered = shuffleArray(filtered);
-    
+
     // Apply length limit
     if (numLimit !== 'all') {
-        const limit = parseInt(numLimit);
+        const limit = parseInt(numLimit, 10);
         filtered = filtered.slice(0, Math.min(limit, filtered.length));
     }
-    
+
     // Set current quiz
     appData.currentQuiz = filtered;
     appData.quizMode = 'practice';
+    appData.currentExamSubject = document.getElementById('selectSubject')?.value || 'all';
     practiceSetup.classList.add('hidden');
     timerDisplay.classList.add('hidden');
     document.querySelector('.quiz-nav-panel').classList.remove('hidden');
@@ -659,56 +1013,95 @@ function showStudyNoteModal() {
         btn.innerHTML = `<strong>${note.title}</strong>`;
         btn.addEventListener('click', () => {
             studyNoteModal.classList.remove('active');
-            openReader(note.title, note.file);
+            loadNoteFile(note.file, note.title, btn);
         });
         container.appendChild(btn);
     });
     studyNoteModal.classList.add('active');
 }
 
-async function openReader(title, filePath) {
+function scrollToNoteAnchor(container, anchorId) {
+    if (!container || !anchorId) return;
+    const targetNeedle = String(anchorId).trim().toLowerCase();
+    if (!targetNeedle) return;
+
+    const headings = container.querySelectorAll('h1, h2, h3, h4');
+    for (const heading of headings) {
+        const headingId = (heading.id || '').toLowerCase();
+        const headingText = (heading.textContent || '').toLowerCase();
+        if (headingId.includes(targetNeedle) || headingText.includes(targetNeedle)) {
+            setTimeout(() => {
+                heading.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 0);
+            return;
+        }
+    }
+}
+
+async function loadNoteFile(filePath, title, activeBtn) {
     const readerScreen = document.getElementById('readerScreen');
     const welcomeScreen = document.getElementById('welcomeScreen');
     const readerTitle = document.getElementById('readerTitle');
-    const readerContent = document.getElementById('readerContent');
-    if (!readerScreen || !readerContent || !readerTitle) return;
+    const noteContentBody = document.getElementById('readerContent') || document.getElementById('noteContentBody');
+    if (!readerScreen || !noteContentBody || !readerTitle) return;
 
+    if (activeBtn && activeBtn.parentElement) {
+        activeBtn.parentElement.querySelectorAll('.note-item-btn').forEach(b => b.classList.remove('active'));
+        activeBtn.classList.add('active');
+    }
+
+    const [basePath, anchorId] = String(filePath || '').split('#');
     readerTitle.textContent = title;
-    readerContent.innerHTML = '載入中...';
-    if (welcomeScreen) transitionScreen(welcomeScreen, readerScreen);
+    if (welcomeScreen && welcomeScreen.classList.contains('active')) {
+        transitionScreen(welcomeScreen, readerScreen);
+    }
+
+    // If basePath is already loaded in noteContentBody, skip network fetch and scroll directly
+    if (basePath && appData.currentNoteBasePath === basePath && noteContentBody.innerHTML && noteContentBody.innerHTML !== '載入中...') {
+        if (anchorId) {
+            scrollToNoteAnchor(noteContentBody, anchorId);
+        } else {
+            readerScreen.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+        void persistAccountCourseProgress(title, filePath);
+        return;
+    }
+
+    appData.currentNoteBasePath = '';
+    noteContentBody.innerHTML = '載入中...';
 
     try {
-        const resp = await fetch(filePath);
+        const resp = await fetch(basePath);
         if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
         const md = await resp.text();
         if (typeof marked !== 'undefined') {
-            readerContent.innerHTML = marked.parse(md);
+            noteContentBody.innerHTML = marked.parse(md);
         } else {
-            readerContent.innerHTML = `<pre style="white-space:pre-wrap;">${md}</pre>`;
+            noteContentBody.innerHTML = `<pre style="white-space:pre-wrap;">${md}</pre>`;
         }
+        appData.currentNoteBasePath = basePath;
         // Apply syntax highlight-friendly styles to code blocks
-        readerContent.querySelectorAll('pre code').forEach(block => {
+        noteContentBody.querySelectorAll('pre code').forEach(block => {
             block.classList.add('code-block');
         });
         if (typeof mermaid !== 'undefined') {
-            mermaid.run({ nodes: readerContent.querySelectorAll('.language-mermaid') });
+            mermaid.run({ nodes: noteContentBody.querySelectorAll('.language-mermaid') });
         }
-        if (typeof renderMathInElement !== 'undefined') {
-            renderMathInElement(readerContent, {
-                delimiters: [
-                    { left: '$$', right: '$$', display: true },
-                    { left: '$', right: '$', display: false }
-                ],
-                throwOnError: false
-            });
+        renderMathInContainer(noteContentBody);
+        if (anchorId) {
+            scrollToNoteAnchor(noteContentBody, anchorId);
         }
         void persistAccountCourseProgress(title, filePath);
     } catch (e) {
         const hint = (location.protocol === 'file:')
             ? '<br><small style="color:var(--text-secondary);">提示：在瀏覽器直接開啟 HTML 檔案時無法讀取筆記，請使用本機伺服器啟動：<br><code style="background:rgba(0,0,0,0.3);padding:4px 8px;border-radius:4px;">npx serve exam</code> 或 <code style="background:rgba(0,0,0,0.3);padding:4px 8px;border-radius:4px;">python -m http.server 8000 -d exam</code></small>'
             : '';
-        readerContent.innerHTML = `<p style="color:var(--danger);">載入失敗：${e.message}${hint}</p>`;
+        noteContentBody.innerHTML = `<p style="color:var(--danger);">載入失敗：${e.message}${hint}</p>`;
     }
+}
+
+function openReader(title, filePath) {
+    return loadNoteFile(filePath, title);
 }
 
 function showExamSubjectModal() {
@@ -731,7 +1124,7 @@ async function startExamSubjectMode(subjKey) {
     if (!targetSubj) return;
     
     // Filter questions belonging to this subject
-    let pool = appData.questions.filter(q => {
+    const pool = appData.questions.filter(q => {
         return targetSubj.matchKeywords.some(keyword => q.subject.includes(keyword));
     });
     
@@ -740,39 +1133,16 @@ async function startExamSubjectMode(subjKey) {
         return;
     }
     
-    // Group by chapter for proportional allocation
-    const chapterGroups = {};
-    pool.forEach(q => {
-        const ch = q.chapter || '未分類';
-        if (!chapterGroups[ch]) chapterGroups[ch] = [];
-        chapterGroups[ch].push(q);
-    });
+    const strategy = document.getElementById('selExamSamplingStrategy')?.value || 'balanced_topic';
+    const excludePastExams = Boolean(document.getElementById('chkExcludePastExams')?.checked);
     
-    const chapters = Object.keys(chapterGroups);
-    const TOTAL = 50;
-    const allocation = {};
-    let allocated = 0;
-    chapters.forEach(ch => {
-        const raw = (chapterGroups[ch].length / pool.length) * TOTAL;
-        allocation[ch] = Math.floor(raw);
-        allocated += allocation[ch];
+    appData.currentQuiz = window.ExamCore.sampleExamQuestions(pool, 50, {
+        strategy,
+        excludePastExams,
+        shuffleFn: shuffleArray
     });
-    // Distribute remainder by largest fractional part
-    const remainders = chapters.map(ch => ({
-        ch,
-        rem: (chapterGroups[ch].length / pool.length) * TOTAL - allocation[ch]
-    })).sort((a, b) => b.rem - a.rem);
-    for (let i = 0; i < TOTAL - allocated; i++) {
-        allocation[remainders[i].ch]++;
-    }
-    
-    // Draw proportionally from each chapter, then shuffle for mixed order
-    let selected = [];
-    chapters.forEach(ch => {
-        selected = selected.concat(shuffleArray(chapterGroups[ch]).slice(0, allocation[ch]));
-    });
-    appData.currentQuiz = shuffleArray(selected);
     appData.quizMode = 'exam';
+    appData.currentExamSubject = subjKey;
     
     practiceSetup.classList.add('hidden');
     timerDisplay.classList.remove('hidden');
@@ -785,9 +1155,11 @@ async function startExamSubjectMode(subjKey) {
 // Common initialization for a quiz session
 async function initQuizSession(mode) {
     appData.userAnswers = {};
+    appData.checkedQuestions = new Set();
     appData.flaggedQuestions = {};
     appData.committedEvents = Object.create(null);
     appData.currentQuestionIdx = 0;
+    appData.currentIndex = 0;
     appData.quizActive = true;
     
     const durationMinutes = (appData.currentCert === 'ai_mid') ? 90 : 75;
@@ -795,6 +1167,7 @@ async function initQuizSession(mode) {
     appData.timeRemaining = appData.timerDurationSeconds;
     appData.timeSpent = 0;
     appData.timerStartedAt = null;
+    appData.examEndTime = mode === 'exam' ? (Date.now() + appData.timeRemaining * 1000) : null;
     await restoreAccountFlagsForQuiz();
     
     document.querySelector('.quiz-nav-panel').classList.remove('hidden');
@@ -802,7 +1175,7 @@ async function initQuizSession(mode) {
     // Handle timer
     clearInterval(appData.timerInterval);
     if (mode === 'exam') {
-        startTimer();
+        startTimer(appData.timeRemaining);
     } else {
         timerDisplay.classList.add('hidden');
     }
@@ -820,6 +1193,7 @@ async function initQuizSession(mode) {
     
     // Load first question
     showQuestion(0);
+    saveActiveQuizToStorage();
 }
 
 // Shuffling array helper
@@ -833,8 +1207,11 @@ function shuffleArray(array) {
 }
 
 // Timer management
-function startTimer() {
-    appData.timerStartedAt = Date.now();
+function startTimer(initialRemainingSeconds = appData.timerDurationSeconds) {
+    const totalDuration = appData.timerDurationSeconds || initialRemainingSeconds;
+    const alreadyElapsedMs = Math.max(0, (totalDuration - initialRemainingSeconds) * 1000);
+    appData.timerStartedAt = Date.now() - alreadyElapsedMs;
+    appData.examEndTime = Date.now() + initialRemainingSeconds * 1000;
     updateTimerText();
     appData.timerInterval = setInterval(() => {
         const snapshot = window.ExamCore.getTimerSnapshot(
@@ -876,10 +1253,17 @@ function buildNavGrid() {
         btn.className = 'nav-btn';
         btn.id = `navBtn_${idx}`;
         btn.textContent = idx + 1;
-        btn.addEventListener('click', () => showQuestion(idx));
+        btn.addEventListener('click', () => jumpToQuestion(idx));
         navGrid.appendChild(btn);
     });
     updateProgress();
+}
+
+function jumpToQuestion(idx) {
+    if (idx >= 0 && idx < appData.currentQuiz.length) {
+        showQuestion(idx);
+        saveActiveQuizToStorage();
+    }
 }
 
 // Update progression metrics
@@ -895,6 +1279,7 @@ function updateProgress() {
 // Display specific question
 function showQuestion(idx) {
     appData.currentQuestionIdx = idx;
+    appData.currentIndex = idx;
     const q = appData.currentQuiz[idx];
     
     // Update headers
@@ -923,15 +1308,19 @@ function showQuestion(idx) {
             card.classList.add('selected');
         }
         
+        const letter = prefixes[oIdx];
+        const cleanOpt = stripOptionPrefix(opt, letter);
         card.innerHTML = `
-            <div class="option-prefix">${prefixes[oIdx]}</div>
-            <div class="option-text">${opt}</div>
+            <div class="option-prefix">${letter}</div>
+            <div class="option-text">${formatQuestionText(cleanOpt)}</div>
         `;
         
         // Handle option selection click
         card.addEventListener('click', () => selectOption(idx, oIdx));
         optionsList.appendChild(card);
     });
+    renderMathInContainer(qText);
+    renderMathInContainer(optionsList);
     
     // Toggle Prev/Next buttons
     btnPrev.disabled = idx === 0;
@@ -982,6 +1371,9 @@ function selectOption(qIdx, oIdx) {
     }
     
     appData.userAnswers[qIdx] = oIdx;
+    if (appData.quizMode === 'practice') {
+        appData.checkedQuestions.add(qIdx);
+    }
     
     // Update nav button class
     const btn = document.getElementById(`navBtn_${qIdx}`);
@@ -990,11 +1382,23 @@ function selectOption(qIdx, oIdx) {
     // Redraw current question to apply selection styles
     showQuestion(qIdx);
     updateProgress();
+    saveActiveQuizToStorage();
 
     // Practice persistence belongs to the answer event, never to screen rendering.
     if (appData.quizMode === 'practice') {
         persistPracticeAnswer(qIdx);
     }
+}
+
+function checkAnswer() {
+    const idx = appData.currentQuestionIdx;
+    if (appData.userAnswers[idx] === undefined) return;
+    appData.checkedQuestions.add(idx);
+    if (appData.quizMode === 'practice') {
+        showPracticeFeedback(idx);
+        persistPracticeAnswer(idx);
+    }
+    saveActiveQuizToStorage();
 }
 
 function persistPracticeAnswer(qIdx) {
@@ -1050,14 +1454,15 @@ function showPracticeFeedback(qIdx) {
     feedbackTitle.textContent = isCorrect ? '答對了！' : `答錯了！正確答案是 (${correctLetter})`;
     
     // Set explanation text
-    let explText = `標準答案：(${correctLetter}) ${q.ans_text}\n\n`;
+    let explText = `${formatStandardAnswerHeader(correctLetter, q.ans_text)}\n\n`;
     if (q.explanation) {
         explText += `解析：\n${q.explanation}`;
     } else {
         explText += '無額外解析資訊。';
     }
-    lblExplanationText.textContent = explText;
+    lblExplanationText.innerHTML = formatQuestionText(explText);
     feedbackArea.classList.remove('hidden');
+    renderMathInContainer(feedbackArea);
 }
 
 // Star flagging toggle
@@ -1083,18 +1488,21 @@ function toggleFlag() {
     }
     
     showQuestion(idx);
+    saveActiveQuizToStorage();
 }
 
 // Previous/Next navigation functions
 function prevQuestion() {
     if (appData.currentQuestionIdx > 0) {
         showQuestion(appData.currentQuestionIdx - 1);
+        saveActiveQuizToStorage();
     }
 }
 
 function nextQuestion() {
     if (appData.currentQuestionIdx < appData.currentQuiz.length - 1) {
         showQuestion(appData.currentQuestionIdx + 1);
+        saveActiveQuizToStorage();
     }
 }
 
@@ -1118,12 +1526,21 @@ function confirmSubmitExam() {
     }
 }
 
+function confirmQuitQuiz() {
+    clearInterval(appData.timerInterval);
+    appData.quizActive = false;
+    clearActiveQuizStorage();
+    transitionScreen(quizScreen, welcomeScreen);
+}
+
 function exitQuizSession() {
     if (confirm('您確定要退出本次測驗嗎？這會遺失當前的進度。')) {
-        clearInterval(appData.timerInterval);
-        appData.quizActive = false;
-        transitionScreen(quizScreen, welcomeScreen);
+        confirmQuitQuiz();
     }
+}
+
+function finishQuiz() {
+    return gradeQuiz();
 }
 
 // Grading Algorithm
@@ -1141,6 +1558,7 @@ function gradeQuiz() {
     }
     clearInterval(appData.timerInterval);
     appData.quizActive = false;
+    clearActiveQuizStorage();
 
     const modules = window.EXAM_CONFIG.modules.filter(m => m.enabled);
     const mod = modules.find(m => m.id === appData.currentCert);
@@ -1210,7 +1628,11 @@ async function persistQuizResult(result) {
             }));
             if (!isAccountMode()) {
                 operations.push(updateQuestionStats(appData.currentCert, question, isCorrect));
-                if (!isCorrect) operations.push(addWrongQuestion(appData.currentCert, question));
+                if (isCorrect) {
+                    operations.push(updateWrongPoolAfterCorrect(appData.currentCert, question));
+                } else {
+                    operations.push(addWrongQuestion(appData.currentCert, question));
+                }
             }
         });
     }
@@ -1279,17 +1701,20 @@ function renderReviewList() {
             } else if (oIdx === userChoiceIdx) {
                 optClass = 'wrong';
             }
+            const letter = prefixes[oIdx];
+            const cleanOpt = stripOptionPrefix(opt, letter);
             optionsHtml += `
                 <div class="option-card card ${optClass}" style="cursor: default; pointer-events: none;">
-                    <div class="option-prefix">${prefixes[oIdx]}</div>
-                    <div class="option-text">${opt}</div>
+                    <div class="option-prefix">${letter}</div>
+                    <div class="option-text">${formatQuestionText(cleanOpt)}</div>
                 </div>
             `;
         });
         
+        const standardHeader = formatStandardAnswerHeader(q.answer, q.ans_text);
         accordion.innerHTML = `
             <div class="accordion-header">
-                <span class="accordion-header-text">
+                <span class="accordion-header-text review-q-stem">
                     <strong>第 ${idx + 1} 題：</strong>${formatQuestionText(q.question)}
                 </span>
                 <div class="accordion-badge-container">
@@ -1300,7 +1725,7 @@ function renderReviewList() {
                     </svg>
                 </div>
             </div>
-            <div class="accordion-content">
+            <div class="accordion-content review-item">
                 <div class="options-list" style="margin-bottom: 20px;">
                     ${optionsHtml}
                 </div>
@@ -1310,8 +1735,8 @@ function renderReviewList() {
                         <span class="feedback-title">你的回答：${userChoiceLetter} | 標準答案：${q.answer}</span>
                     </div>
                     <div class="feedback-body">
-                        <p><strong>標準選項：</strong>(${q.answer}) ${q.ans_text}</p>
-                        ${q.explanation ? `<p style="margin-top:10px;"><strong>官方詳細解析：</strong><br>${q.explanation}</p>` : ''}
+                        <p class="review-ans-header"><strong>${formatQuestionText(standardHeader)}</strong></p>
+                        ${q.explanation ? `<div class="review-explanation explanation-text" style="margin-top:10px;"><strong>官方詳細解析：</strong><br>${formatQuestionText(q.explanation)}</div>` : ''}
                         <p style="margin-top:10px; font-size:12px; color:var(--text-muted);">
                             類別：${q.subject} > ${q.chapter} | ${q.assessmentTopic || ''}${q.assessmentContent ? ' > ' + q.assessmentContent : ''} | 原始題號: ${q.display_num ?? q.num}
                         </p>
@@ -1327,6 +1752,7 @@ function renderReviewList() {
         
         reviewQuestionsList.appendChild(accordion);
     });
+    renderMathInContainer(reviewQuestionsList);
 }
 
 // Review filters logic
@@ -1350,27 +1776,37 @@ function filterReviewList(filterType) {
     });
 }
 
-// Markdown and code block formatter helper
-function formatQuestionText(text) {
-    if (!text) return '';
-    
-    // Escape HTML to prevent XSS
-    let escaped = text
-        .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;")
-        .replace(/"/g, "&quot;")
-        .replace(/'/g, "&#039;");
-        
-    // Convert ```code``` blocks
-    escaped = escaped.replace(/```(\w*)\n([\s\S]*?)```/g, (match, lang, code) => {
-        return `<pre class="code-block ${lang ? 'lang-' + lang : ''}"><code>${code.trim()}</code></pre>`;
+// Markdown, table, and math formatter helpers
+function formatQuestionText(raw) {
+    if (window.ExamCore && typeof window.ExamCore.formatQuestionText === 'function') {
+        return window.ExamCore.formatQuestionText(raw);
+    }
+    return String(raw || '');
+}
+
+function stripOptionPrefix(optText, letter) {
+    if (window.ExamCore && typeof window.ExamCore.stripOptionPrefix === 'function') {
+        return window.ExamCore.stripOptionPrefix(optText, letter);
+    }
+    return String(optText || '');
+}
+
+function formatStandardAnswerHeader(correctLetter, ansText) {
+    if (window.ExamCore && typeof window.ExamCore.formatStandardAnswerHeader === 'function') {
+        return window.ExamCore.formatStandardAnswerHeader(correctLetter, ansText);
+    }
+    return `標準答案：(${correctLetter}) ${ansText || ''}`.trim();
+}
+
+function renderMathInContainer(el) {
+    if (!el || typeof renderMathInElement !== 'function') return;
+    renderMathInElement(el, {
+        delimiters: [
+            { left: '$$', right: '$$', display: true },
+            { left: '$', right: '$', display: false }
+        ],
+        throwOnError: false
     });
-    
-    // Convert `inline code`
-    escaped = escaped.replace(/`([^`]+)`/g, '<code class="inline-code">$1</code>');
-    
-    return escaped;
 }
 
 // Taiwan ID validation functions
@@ -1395,6 +1831,7 @@ function createOperationId() {
 
 function setAccountSession(session) {
     appData.accountSession = session;
+    saveActiveSessionToStorage();
     if (btnLogout) btnLogout.classList.remove('hidden');
     void renderSyncStatus().then(() => flushSyncOutbox());
 }
@@ -1439,11 +1876,17 @@ async function renderSyncStatus() {
     }
 }
 
-function handleLogout() {
+function logoutUser() {
     appData.accountSession = null;
+    clearActiveSessionStorage();
+    clearActiveQuizStorage();
     const idInput = document.getElementById('txtNationalID');
     if (idInput) idInput.value = '';
     window.location.reload();
+}
+
+function handleLogout() {
+    logoutUser();
 }
 
 async function handleLogin() {
@@ -2340,32 +2783,34 @@ async function renderWeaknessCharts() {
     }
     section.style.display = '';
 
-    const subjectLabels = [];
-    const subjectWrongCount = [];
-
     const modules = window.EXAM_CONFIG.modules.filter(m => m.enabled);
     const mod = modules.find(m => m.id === appData.currentCert);
-    if (mod) {
-        const wrongPool = await getWrongPool(appData.currentCert);
-        for (const subj of mod.subjects) {
-            const related = wrongPool.filter(e =>
-                subj.matchKeywords.some(k => e.subject.includes(k)));
-            subjectLabels.push(subj.name);
-            subjectWrongCount.push(related.length);
-        }
-    }
+    const [wrongPool, questionStats] = await Promise.all([
+        getWrongPool(appData.currentCert),
+        loadQuestionStats(appData.currentCert)
+    ]);
 
-    const maxWrong = Math.max(...subjectWrongCount, 1);
+    const radarStats = window.ExamCore.buildRadarAxisStats(
+        appData.questions,
+        wrongPool,
+        questionStats,
+        mod ? mod.studyNotes : []
+    );
+    const axes = radarStats.axes;
+    const axisLabels = axes.map(a => a.shortLabel);
+    const axisWrongCounts = axes.map(a => a.wrongPoolCount);
+
+    const maxWrong = Math.max(...axisWrongCounts, 1);
     const ctx1 = document.getElementById('radarChart');
     if (ctx1) {
         if (radarChartInstance) radarChartInstance.destroy();
         radarChartInstance = new Chart(ctx1, {
             type: 'radar',
             data: {
-                labels: subjectLabels,
+                labels: axisLabels,
                 datasets: [{
                     label: '錯題數',
-                    data: subjectWrongCount,
+                    data: axisWrongCounts,
                     backgroundColor: 'rgba(248, 81, 73, 0.15)',
                     borderColor: '#f85149',
                     pointBackgroundColor: '#f85149',
@@ -2386,7 +2831,24 @@ async function renderWeaknessCharts() {
                     }
                 },
                 plugins: {
-                    legend: { display: false }
+                    legend: { display: false },
+                    tooltip: {
+                        callbacks: {
+                            title: (items) => {
+                                const idx = items[0]?.dataIndex;
+                                return (axes[idx] && axes[idx].fullName) || '';
+                            },
+                            label: (item) => {
+                                const axis = axes[item.dataIndex];
+                                if (!axis) return `錯題數: ${item.raw}`;
+                                return [
+                                    `錯題池：${axis.wrongPoolCount} 題`,
+                                    `正確率：${axis.accuracy}%`,
+                                    `已答/總題數：${axis.answeredQuestions} / ${axis.totalQuestions} 題`
+                                ];
+                            }
+                        }
+                    }
                 }
             }
         });

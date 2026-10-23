@@ -117,7 +117,7 @@
                         <div class="mode-card card hover-scale" id="btnStartStudy">
                             <div class="mode-icon">📖</div>
                             <h3>課程學習</h3>
-                            <p>按章節順序瀏覽題目，**即時顯示答案與解析**，無時間壓力。適合初次學習或地毯式複習時使用。</p>
+                            <p>依官方評鑑主題閱讀重點筆記、公式推導與常考陷阱，無時間壓力。適合初次學習或地毯式複習時使用。</p>
                             <span class="mode-action-btn">開始學習 →</span>
                         </div>
                     </div>
@@ -192,28 +192,46 @@
                             <option value="s2">考科二：經營管理數位化概論</option>
                         </select>
                     </div>
+                    <div class="filter-group" id="topicFilterGroup">
+                        <label for="selTopic">評鑑主題篩選：</label>
+                        <select id="selTopic">
+                            <option value="all">全部評鑑主題 (不限)</option>
+                        </select>
+                    </div>
                     <div class="filter-group">
-                        <label for="selectChapter">選擇章節：</label>
+                        <label for="selectChapter">章節 / 來源篩選：</label>
                         <select id="selectChapter">
                             <option value="all">全部章節 (不限)</option>
                         </select>
                     </div>
                     <div class="filter-group">
                         <label for="practiceNum">題數：</label>
-                            <select id="practiceNum">
-                                <option value="20">20 題</option>
-                                <option value="50">50 題</option>
-                                <option value="all">全部練習</option>
-                            </select>
-                            <div class="filter-group" style="margin-left:auto;">
-                                <label class="switch-label">
-                                    <input type="checkbox" id="chkWrongBook">
-                                    <span class="switch-slider"></span>
-                                    錯題特訓
-                                </label>
-                            </div>
+                        <select id="practiceNum">
+                            <option value="20">20 題</option>
+                            <option value="50">50 題</option>
+                            <option value="all">全部練習</option>
+                        </select>
                     </div>
-                    <button id="btnApplyPractice" class="btn btn-primary">開始練習</button>
+                    <div class="filter-group practice-toggles-group">
+                        <label class="switch-label">
+                            <input type="checkbox" id="chkWrongBook">
+                            <span class="switch-slider"></span>
+                            錯題特訓
+                        </label>
+                        <select id="selWrongMode" class="wrong-mode-select hidden" aria-label="錯題複習模式">
+                            <option value="due">今日到期複習 (SM-2 排程)</option>
+                            <option value="all">全部錯題 (不限到期日，考前總複習)</option>
+                        </select>
+                        <label class="switch-label">
+                            <input type="checkbox" id="chkUnansweredOnly">
+                            <span class="switch-slider"></span>
+                            僅測驗未作答過的新題
+                        </label>
+                    </div>
+                    <div class="filter-group practice-pool-summary">
+                        <span class="badge badge-secondary" id="lblPoolCount">符合條件：0 題</span>
+                        <button id="btnApplyPractice" class="btn btn-primary">開始練習</button>
+                    </div>
                 </div>
 
                 <div class="quiz-layout">
@@ -242,7 +260,7 @@
                                 <span class="feedback-title" id="feedbackTitle">正確 / 錯誤</span>
                             </div>
                             <div class="feedback-body">
-                                <p id="lblExplanationText">解析內容將在此顯示。</p>
+                                <div id="lblExplanationText" class="explanation-text">解析內容將在此顯示。</div>
                             </div>
                         </div>
 
@@ -259,6 +277,8 @@
                             <button id="btnSubmit" class="btn btn-danger hidden">提交考卷</button>
                             <button id="btnExitQuiz" class="btn btn-outline-danger">結束離開</button>
                         </div>
+
+                        <p class="quiz-shortcut-hint" id="quizShortcutHint">快捷鍵：1-4 / A-D 選答 ｜ ← → 切換題目 ｜ Enter 確認/下一題 ｜ F 標記</p>
                     </div>
 
                     <!-- Right: Navigation Panel / Grid -->
@@ -438,6 +458,19 @@
             </div>
             <div class="modal-body">
                 <p id="examModalDesc">請選擇您要進行模擬測驗的科目。每科均為 <strong>50 題選擇題</strong>，限時 <strong>80 分鐘</strong>：</p>
+                <div class="exam-sampling-bar" id="examSamplingBar">
+                    <div class="sampling-row">
+                        <label for="selExamSamplingStrategy">配題策略：</label>
+                        <select id="selExamSamplingStrategy">
+                            <option value="balanced_topic" selected>依官方評鑑主題均勻配題 (推薦)</option>
+                            <option value="proportional">依題庫章節比例抽題</option>
+                        </select>
+                    </div>
+                    <label class="sampling-checkbox-label" for="chkExcludePastExams">
+                        <input type="checkbox" id="chkExcludePastExams">
+                        <span>排除歷屆公告試題（僅測驗官方指引與補充題，避免背答案）</span>
+                    </label>
+                </div>
                 <div class="exam-subject-options" id="examSubjectOptions">
                     <!-- Generated dynamically by script.js -->
                 </div>

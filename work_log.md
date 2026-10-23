@@ -2,6 +2,30 @@
 
 本工作日誌記錄了 **IPAS 營運智慧分析師**、**AI應用規劃師** 及其他證照專案的學習講義製作、題庫自動化解析、雲端同步排程設定與雙證照模擬考試系統的開發歷程與里程碑。
 
+### 📌 2026-10-23 —— 中級 AI 應用規劃師官方學習指引全科講義、補充題庫擴充（566 題）與模擬測驗系統三階段全面升級
+
+* **【中級 AI 應用規劃師（L21 / L22 / L23）官方學習指引全科重點講義】**：
+  * 依據經濟部 iPAS 官方學習指引（科目1：人工智慧技術應用規劃、科目2：大數據處理分析與應用、科目3：機器學習技術與應用）、`1150410` 官方學習指引勘誤表（標註 `⚠ 勘誤`）與 `11506` 評鑑內容範圍參考，於 `exam/notes/ai_mid/` 建立完整的 11 份評鑑主題（`L211`～`L213`、`L221`～`L224`、`L231`～`L234`，涵蓋全部 34 個 `L2xxxx` 評鑑內容代碼）Markdown 課程筆記，並掛載至 `exam/config.js`。
+* **【中級官方學習指引實戰補充題庫擴充（448 題 → 566 題）】**：
+  * 新增 `AI應用規劃師/中級AI應用規劃師/ai_mid_guide_supplement_questions.json`（共 118 道貼合官方指引與勘誤表之單選實戰題，涵蓋 L21 30 題、L22 40 題、L23 48 題，含計算與情境題）並擴充 `parse_ai_mid_questions.py` 納入建置管線。
+  * 重新建置 `exam/ai_mid_questions.json` 與 `exam/ai_mid_questions.js`，中級總題數由 448 題提升至 **566 題**（既有 448 題之 `question_uid` 100% 維持不變）。
+* **【模擬測驗系統（`exam/`）Phase 1–3 診斷與全面改善】**：
+  * **Phase 1（P0：關鍵顯示修復與課程筆記錨點導覽）**：
+    * 於 `exam/core.js` 與 `exam/script.js` 升級 `formatQuestionText` 與 `renderMathInContainer`，完整支援題幹、選項與詳解中的 **Markdown 表格**（如混淆矩陣、交易紀錄表）與 **KaTeX 數學公式**（`$...$` 與 `$$...$$`），並通過全題庫 1,359 題驗證。
+    * 新增 `stripOptionPrefix` 與 `formatStandardAnswerHeader`，消除選項重複前綴 `A (A)` 與詳解重複標準答案 `標準答案：(A) 標準答案：(A)`。
+    * 為 `exam/config.js` 的 34 個中級課程筆記項目綁定 `#L2xxxx` 錨點，並升級 `loadNoteFile` 支援同一檔案內免重複請求平滑捲動至對應章節標題；修正 `ai_mid.questionCount` 為 `566` 及首頁「課程學習」卡片文案。
+  * **Phase 2（P1：全真模考均勻配題、練習篩選強化與多維度弱點雷達圖）**：
+    * 新增純函式 `sampleExamQuestions` 與模考配題設定列（`#examSamplingBar`），支援「**依官方評鑑主題均勻配題 (`balanced_topic`)**」與「**排除歷屆公告試題 (`#chkExcludePastExams`)**」，解決過往歷屆考題佔模考近 60% 的抽樣偏差。
+    * 單元自主練習新增「**評鑑主題篩選 (`#selTopic`)**」、錯題特訓切換「**今日到期複習 (SM-2) vs 全部錯題 (考前總複習) (`#selWrongMode`)**」及「**僅測驗未作答過的新題 (`#chkUnansweredOnly`)**」。
+    * 補齊模擬考模式（`exam`）交卷時答對錯題本題目的 SM-2 排程更新（`updateWrongPoolAfterCorrect`）。
+    * 新增 `buildRadarAxisStats` 升級弱點分析雷達圖，改以「評鑑主題（`assessmentTopic`）或章節」為多維度軸線（營運智慧 4 軸、初級 AI 9 軸、中級 AI 13 軸），解決原本 2 科證照退化為單一直線的問題。
+  * **Phase 3（P2：PWA 快取策略重構、測驗/登入狀態防丟失與鍵盤快捷鍵）**：
+    * 升級 `exam/sw.js` 至 `ipas-exam-v5`：同源請求改採 **Network-First（網路優先、離線降級快取）** 確保題庫與筆記更新即時生效；信任的 CDN 資源（KaTeX、Marked、Mermaid、Chart.js、Google Fonts）採 **Stale-While-Revalidate** 支援離線渲染。
+    * 新增 `serializeActiveSession` / `restoreActiveSession` 與 `serializeActiveQuiz` / `restoreActiveQuiz`，透過 `sessionStorage` 自動保存非機密登入狀態與進行中的 90 分鐘模考進度（含剩餘時間校正、已選答案、標記題目），頁面意外重整可無縫恢復，並嚴格確保身分證字號與 token 絕不寫入 storage。
+    * 新增桌面版答題鍵盤快捷鍵（`1-4` / `A-D` 選答、`←` / `→` 切換題目、`Enter` 確認或下一題、`F` 標記題目）與底部提示列。
+* **【驗證結果】**：
+  * `node --test tests/*.test.js` **43/43 測試全數通過**；`python -m unittest tests.test_question_identity` **4/4 測試全數通過**。
+
 ### 📌 2026-09-07 —— 初級與中級 AI 應用規劃師最新試題更新與詳解資訊強化
 
 * **【試題擴增】**：
@@ -316,6 +340,35 @@
 * **【去重邏輯】**：`parse_ai_mid_questions.py` 新增 dedup，優先保留學習指引題目（有章節歸屬），移除官方樣題重複題。`restructure_ai_questions.py` 一次性腳本執行完畢後已移除。
 * **【studyNotes 階層化（AI 中級）】**：`config.js` 改用官方 L21/L22/L23 科目代碼 + L211~L234 評鑑主題階層，現有筆記文件掛在 L224 下。
 * **【IRT 表新增評鑑內容欄】**：`index.html` IRT 表頭新增「評鑑內容」th，`renderIrtTable()` 資料管線含 assessmentContent。
+
+### 📌 2026-10-23 —— 中級 AI 應用規劃師完整考科上架：L21/L22/L23 官方學習指引考點筆記 (11份) + 實戰題庫擴充 (566 題)
+
+* **【產出 11 份官方學習指引核心考點筆記】**：
+  * 深度提煉官方學習指引（科目一、科目二、科目三）、勘誤表（1150410）、評鑑內容規範（11506 版）與歷屆公告試題。
+  * 於 `exam/notes/ai_mid/` 下建立完整 11 個評鑑主題的精準考點講義：
+    1. `L21_人工智慧技術應用與規劃/L211_AI相關技術應用.md`（NLP、CV 任務分級、GenAI、Multimodal、TF-IDF 勘誤算式、AOI 回饋）
+    2. `L21_人工智慧技術應用與規劃/L212_AI導入評估規劃.md`（PoC/PoV、SMART、PDPA 事前告知 6 大要件勘誤、EU AI Act 四級風險、負責任 AI 六大原則）
+    3. `L21_人工智慧技術應用與規劃/L213_AI技術應用與系統部署.md`（特徵工程、過擬合/欠擬合、Edge AI、Docker 容器化、MLOps CI/CD/CT、Data/Concept Drift）
+    4. `L22_大數據處理分析與應用/L221_機率統計基礎.md`（偏度均值中位數大小關係、IQR 與箱形圖離群值、經驗法則 68-95-99.7、柴比雪夫、CLT、型 I/型 II 錯誤、p-value 決策、ANOVA 與卡方檢定選型、計算題全拆解）
+    5. `L22_大數據處理分析與應用/L222_大數據處理技術.md`（大數據 5V、半結構化 JSON/XML、RDBMS vs NoSQL、HDFS 3 副本容錯、Kafka 分區高吞吐、Lakehouse、批次 vs 串流）
+    6. `L22_大數據處理分析與應用/L223_大數據分析方法與工具.md`（PCA 最大化變異數、Min-Max/Z-Score、關聯規則 Support/Confidence/Lift 計算、SMOTE 線性插值、混淆矩陣 Accuracy/Precision/Recall 勘誤公式/F1/ROC-AUC）
+    7. `L22_大數據處理分析與應用/L224_大數據在人工智慧之應用.md`（維度災難、資料平行 vs 模型平行、預測性維護、MinHash+LSH 去重、隱私增強 PETs：差分隱私/聯邦學習/同態加密/K-匿名性）
+    8. `L23_機器學習技術與應用/L231_機器學習基礎數學.md`（條件機率與貝氏定理、MLE vs MAP、特徵向量幾何意義、SVD、`[⚠ 勘誤]` NMF 元素逐項非負 $X,W,H \ge 0$、Mini-batch SGD、Adam 優化器）
+    9. `L23_機器學習技術與應用/L232_機器學習與深度學習.md`（四大學習範式、`[⚠ 勘誤]` 邏輯迴歸對數勝算線性關係 Linearity in Log-Odds、ID3/C4.5/CART、Bagging降方差 vs Boosting降偏差、SVM最大間距與支援向量、`[⚠ 勘誤]` 感知器加權求和 $Z = \sum w_i x_i + b$、ReLU與Leaky ReLU、LSTM三門一態）
+    10. `L23_機器學習技術與應用/L233_機器學習建模與參數調校.md`（特徵選擇三大法Filter/Wrapper/Embedded、NFL沒有白吃午餐定理、模型參數 vs 超參數、Stratified K-fold分層交叉驗證、MAE vs RMSE、決定係數 $R^2$、偏差-方差權衡、網格/隨機/貝氏優化、Early Stopping）
+    11. `L23_機器學習技術與應用/L234_機器學習治理.md`（五大模型安全威脅：資料投毒、對抗樣本與對抗訓練、模型反推、成員推論、模型竊取；偏見三大來源：歷史/表徵/測量；三大公平性指標：人口統計均等、機會均等、均等賠率；去偏見前中後三階段介入）
+  * 每份筆記均包含具體定義、比較表格、計算拆解、`[⚠ 勘誤]`、`[🎯 常考]` 及文末「10 句精華考點速記」。
+* **【串接 Web 課程筆記選單】**：
+  * 更新 `exam/config.js`，將 11 份全新考點講義共 34 個評鑑內容節點（L21101~L23402）完整掛載至中級課程筆記選單，前端直接可調閱研讀。
+* **【官方學習指引擴充題庫 118 題】**：
+  * 針對 L211~L213 (30題)、L221~L224 (44題)、L231~L234 (44題) 設計共 118 道高鑑別度實戰精選單選題。
+  * 題目來源儲存於 `AI應用規劃師/中級AI應用規劃師/ai_mid_guide_supplement_questions.json`。
+  * 更新 `parse_ai_mid_questions.py` 自動載入擴充題來源，並重新編譯產生題庫。
+  * 中級題庫總數由 **448 題擴充至 566 題**。
+* **【題庫穩定性與測試驗證】**：
+  * 原有 448 題之 `question_uid` 經嚴格比對 **100% 完全相同**，使用者歷史答題、錯題本與 IRT 分析無任何回歸或錯位。
+  * 更新 `tests/question-bank-smoke.test.js`、`AGENTS.md` 與 `README.md` 中的中級題數為 566 題。
+  * 通過全套測試：`node --test tests/*.test.js`（32 項全數 pass）、`python -m unittest tests.test_question_identity`（4 項全數 pass）。
 
 ---
 

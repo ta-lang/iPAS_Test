@@ -80,7 +80,7 @@ Use the project virtual environment if one is available.
 ## Current Notes
 
 - The root is the active Git repository; `exam/` is a static application directory, not an independent repository.
-- The current question-bank counts are 163 Operations Intelligence Analyst questions, 630 AI Application Planner junior questions, and 448 AI Application Planner intermediate questions. Confirm counts from the JSON files after parser changes.
+- The current question-bank counts are 163 Operations Intelligence Analyst questions, 630 AI Application Planner junior questions, and 566 AI Application Planner intermediate questions. Confirm counts from the JSON files after parser changes.
 - Persistent wrong-pool and question-stat records use `question_uid`; `display_num`/`num` are display-only compatibility fields. Ambiguous legacy records are kept in the IndexedDB `migrationQuarantine` store.
 - IndexedDB v5 account stores must be keyed by opaque `user_id`; never derive an account key from a national ID. The current backend lacks this contract, so production remains in explicit local-only mode until upgraded.
 - `Source/` currently contains six iPAS junior AI Application Planner Markdown notes. `out/` contains six generated TXT scripts and six offline MP3 files.

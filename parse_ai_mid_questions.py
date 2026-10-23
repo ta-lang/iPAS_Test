@@ -366,6 +366,14 @@ def main():
     guide_qs = parse_guide_questions()
     all_qs.extend(guide_qs)
     print(f"Parsed {len(guide_qs)} learning guide questions.")
+
+    # 4. Parse guide supplement questions
+    supp_path = os.path.join(pdf_dir, "ai_mid_guide_supplement_questions.json")
+    if os.path.exists(supp_path):
+        with open(supp_path, "r", encoding="utf-8") as f:
+            supp_qs = json.load(f)
+        all_qs.extend(supp_qs)
+        print(f"Parsed {len(supp_qs)} guide supplement questions.")
     
     # Post-processing corrections
     for q in all_qs:
