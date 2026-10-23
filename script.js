@@ -476,9 +476,9 @@ async function selectCert(certType) {
     const isLoginActive = loginScreen && loginScreen.classList.contains('active');
     
     if (isLoginActive) {
-        if (headerTitle) headerTitle.textContent = "iPAS 模擬考系統";
-        document.title = "iPAS 模擬考系統";
-        if (appFooterText) appFooterText.textContent = "© 2026 iPAS 模擬考系統. All Rights Reserved.";
+        if (headerTitle) headerTitle.textContent = "iPAS 備考系統";
+        document.title = "iPAS 備考系統";
+        if (appFooterText) appFooterText.textContent = "© 2026 iPAS 備考系統. All Rights Reserved.";
     }
     
     const qCount = appData.moduleQuestions[mod.id].length;
@@ -487,9 +487,9 @@ async function selectCert(certType) {
     welcomeDesc.textContent = `本系統整合了官方 115 年最新簡章範圍與教材精選題庫，共計有 ${qCount} 題真實樣題。提供您雙重模式進行衝刺學習：`;
     
     if (!isLoginActive) {
-        if (headerTitle) headerTitle.textContent = `IPAS ${mod.name}`;
-        document.title = `IPAS ${mod.name} 模擬考試與自主學習系統`;
-        if (appFooterText) appFooterText.textContent = `© 2026 IPAS ${mod.name} 備考工作區. All Rights Reserved. 講義內容轉譯自官方教材手冊。`;
+        if (headerTitle) headerTitle.textContent = `iPAS ${mod.name}`;
+        document.title = `iPAS ${mod.name} 備考系統`;
+        if (appFooterText) appFooterText.textContent = `© 2026 iPAS ${mod.name} 備考工作區. All Rights Reserved. 講義內容轉譯自官方教材手冊。`;
     }
 
     // Update Mode description and Modal description text dynamically based on cert level
