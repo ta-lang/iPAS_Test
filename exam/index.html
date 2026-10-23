@@ -369,6 +369,62 @@
                     </div>
                 </div>
             </section>
+
+            <!-- IRT 審題儀表板 Screen -->
+            <section id="irtScreen" class="screen">
+                <div class="results-container animate-fade-in">
+                    <div class="card" style="padding:16px 24px;display:flex;align-items:center;gap:12px;">
+                        <h2 style="margin:0;font-size:18px;">📊 審題儀表板</h2>
+                        <span id="irtSummary" style="color:var(--text-secondary);font-size:13px;flex:1;"></span>
+                        <button id="btnBackFromIrt" class="btn btn-outline" style="padding:4px 12px;font-size:13px;">← 回主選單</button>
+                    </div>
+                    <div class="card" style="padding:16px 24px;">
+                        <h3 style="margin:0 0 12px;font-size:15px;">📈 測驗統計</h3>
+                        <div id="irtStatsPanel" style="display:flex;gap:12px;flex-wrap:wrap;"></div>
+                    </div>
+                    <div class="card" style="padding:16px 24px;">
+                        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;">
+                            <h3 style="margin:0;font-size:15px;">📋 題項分析</h3>
+                            <div style="display:flex;gap:6px;">
+                                <button class="btn btn-sm btn-outline irt-sort active" data-sort="difficulty">難度</button>
+                                <button class="btn btn-sm btn-outline irt-sort" data-sort="wrong">錯題</button>
+                                <button class="btn btn-sm btn-outline irt-sort" data-sort="recent">最近</button>
+                            </div>
+                        </div>
+                        <div class="irt-table-wrapper" style="overflow-x:auto;">
+                            <table class="irt-table" id="irtTable" style="width:100%;border-collapse:collapse;font-size:13px;">
+                                <thead>
+                                    <tr style="border-bottom:1px solid var(--border);">
+                                        <th style="padding:6px 8px;text-align:left;">題號</th>
+                                        <th style="padding:6px 8px;text-align:left;">科目</th>
+                                        <th style="padding:6px 8px;text-align:left;">章節</th>
+                                        <th style="padding:6px 8px;text-align:left;">主題</th>
+                                        <th style="padding:6px 8px;text-align:left;">評鑑內容</th>
+                                        <th style="padding:6px 8px;text-align:left;">難度</th>
+                                        <th style="padding:6px 8px;text-align:center;">答對/答錯</th>
+                                        <th style="padding:6px 8px;text-align:center;">正確率</th>
+                                        <th style="padding:6px 8px;text-align:left;">最近答錯</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="irtTbody"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Reader Screen -->
+            <section id="readerScreen" class="screen">
+                <div class="results-container animate-fade-in">
+                    <div class="card reader-header-bar" style="padding:14px 20px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+                        <button id="btnBackFromReader" class="btn btn-outline" style="padding:8px 16px;font-size:14px;font-weight:600;">← 回選單</button>
+                        <h2 id="readerTitle" style="margin:0;font-size:20px;font-weight:700;"></h2>
+                    </div>
+                    <div class="card reader-content" id="readerContent" style="padding:32px 36px;line-height:1.9;">
+                        載入中...
+                    </div>
+                </div>
+            </section>
         </main>
 
         <!-- Footer -->
@@ -376,49 +432,6 @@
             <p id="appFooterText">© 2026 iPAS 模擬考系統. All Rights Reserved.</p>
         </footer>
     </div>
-
-    <!-- IRT 審題儀表板 Screen -->
-    <section id="irtScreen" class="screen">
-        <div class="results-container animate-fade-in">
-            <div class="card" style="padding:16px 24px;display:flex;align-items:center;gap:12px;">
-                <h2 style="margin:0;font-size:18px;">📊 審題儀表板</h2>
-                <span id="irtSummary" style="color:var(--text-secondary);font-size:13px;flex:1;"></span>
-                <button id="btnBackFromIrt" class="btn btn-outline" style="padding:4px 12px;font-size:13px;">← 回主選單</button>
-            </div>
-            <div class="card" style="padding:16px 24px;">
-                <h3 style="margin:0 0 12px;font-size:15px;">📈 測驗統計</h3>
-                <div id="irtStatsPanel" style="display:flex;gap:12px;flex-wrap:wrap;"></div>
-            </div>
-            <div class="card" style="padding:16px 24px;">
-                <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;">
-                    <h3 style="margin:0;font-size:15px;">📋 題項分析</h3>
-                    <div style="display:flex;gap:6px;">
-                        <button class="btn btn-sm btn-outline irt-sort active" data-sort="difficulty">難度</button>
-                        <button class="btn btn-sm btn-outline irt-sort" data-sort="wrong">錯題</button>
-                        <button class="btn btn-sm btn-outline irt-sort" data-sort="recent">最近</button>
-                    </div>
-                </div>
-                <div class="irt-table-wrapper" style="overflow-x:auto;">
-                    <table class="irt-table" id="irtTable" style="width:100%;border-collapse:collapse;font-size:13px;">
-                        <thead>
-                            <tr style="border-bottom:1px solid var(--border);">
-                                <th style="padding:6px 8px;text-align:left;">題號</th>
-                                <th style="padding:6px 8px;text-align:left;">科目</th>
-                                <th style="padding:6px 8px;text-align:left;">章節</th>
-                                <th style="padding:6px 8px;text-align:left;">主題</th>
-                                <th style="padding:6px 8px;text-align:left;">評鑑內容</th>
-                                <th style="padding:6px 8px;text-align:left;">難度</th>
-                                <th style="padding:6px 8px;text-align:center;">答對/答錯</th>
-                                <th style="padding:6px 8px;text-align:center;">正確率</th>
-                                <th style="padding:6px 8px;text-align:left;">最近答錯</th>
-                            </tr>
-                        </thead>
-                        <tbody id="irtTbody"></tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- 課程學習 Note Selection Modal -->
     <div id="studyNoteModal" class="modal-overlay">
@@ -433,21 +446,6 @@
             </div>
         </div>
     </div>
-
-    <!-- Reader Screen -->
-    <section id="readerScreen" class="screen">
-        <div class="results-container animate-fade-in">
-            <div class="results-header card">
-                <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
-                    <button id="btnBackFromReader" class="btn btn-outline" style="padding:6px 12px;font-size:13px;">← 回選單</button>
-                    <h2 id="readerTitle" style="margin:0;font-size:18px;"></h2>
-                </div>
-            </div>
-            <div class="card reader-content" id="readerContent" style="padding:24px;line-height:1.8;">
-                載入中...
-            </div>
-        </div>
-    </section>
 
     <!-- Exam Subject Selection Modal -->
     <div id="examSubjectModal" class="modal-overlay">
