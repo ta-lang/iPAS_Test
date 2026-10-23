@@ -261,6 +261,13 @@
             return addPlaceholder(escapeHtml(match));
         });
 
+        // 4.5. Protect Markdown images ![alt](src)
+        working = working.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, (_, alt, src) => {
+            const safeAlt = escapeHtml(alt);
+            const safeSrc = encodeURI(src.trim()).replace(/"/g, '&quot;');
+            return addPlaceholder(`<img src="${safeSrc}" alt="${safeAlt}" class="question-diagram" loading="lazy" style="max-width:100%;height:auto;margin:8px 0;display:block;" />`);
+        });
+
         // 5. Escape remaining HTML to prevent XSS
         working = escapeHtml(working);
 

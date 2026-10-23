@@ -6,7 +6,8 @@ const path = require('node:path');
 const banks = [
     { file: 'questions.json', wrapper: 'questions.js', variable: 'ipasQuestions', expectedCount: 163 },
     { file: 'ai_questions.json', wrapper: 'ai_questions.js', variable: 'ipasAiQuestions', expectedCount: 630 },
-    { file: 'ai_mid_questions.json', wrapper: 'ai_mid_questions.js', variable: 'ipasAiMidQuestions', expectedCount: 566 }
+    { file: 'ai_mid_questions.json', wrapper: 'ai_mid_questions.js', variable: 'ipasAiMidQuestions', expectedCount: 566 },
+    { file: '3d_questions.json', wrapper: '3d_questions.js', variable: 'ipas3dQuestions', expectedCount: 207 }
 ];
 
 for (const bank of banks) {
@@ -32,9 +33,9 @@ for (const bank of banks) {
                 assert.notEqual(option.trim(), '', `id ${question.id} 選項 ${optionIndex + 1} 為空`);
             });
             assert.match(question.answer, /^[A-D]$/, `id ${question.id} 答案不在 A-D`);
-            assert.match(question.question_uid, /^(oi|ai|ai_mid)-[a-f0-9]{24}$/, `id ${question.id} question_uid 格式錯誤`);
+            assert.match(question.question_uid, /^(oi|ai|ai_mid|3d)-[a-f0-9]{24}$/, `id ${question.id} question_uid 格式錯誤`);
             assert.equal(question.display_num, question.num, `id ${question.id} display_num 與 num 不一致`);
-            assert.match(question.source_id, /^(oi|ai|ai_mid)-[a-f0-9]{16}$/, `id ${question.id} source_id 格式錯誤`);
+            assert.match(question.source_id, /^(oi|ai|ai_mid|3d)-[a-f0-9]{16}$/, `id ${question.id} source_id 格式錯誤`);
             assert.equal(typeof question.source_version, 'string', `id ${question.id} 缺少 source_version`);
             assert.match(question.content_hash, /^[a-f0-9]{64}$/, `id ${question.id} content_hash 格式錯誤`);
         });
