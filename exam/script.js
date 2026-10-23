@@ -1052,9 +1052,11 @@ async function loadNoteFile(filePath, title, activeBtn) {
 
     const [basePath, anchorId] = String(filePath || '').split('#');
     readerTitle.textContent = title;
-    if (welcomeScreen && welcomeScreen.classList.contains('active')) {
-        transitionScreen(welcomeScreen, readerScreen);
-    }
+    document.querySelectorAll('.screen.active').forEach(s => {
+        if (s !== readerScreen) s.classList.remove('active');
+    });
+    readerScreen.classList.add('active');
+    readerScreen.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
     // If basePath is already loaded in noteContentBody, skip network fetch and scroll directly
     if (basePath && appData.currentNoteBasePath === basePath && noteContentBody.innerHTML && noteContentBody.innerHTML !== '載入中...') {
