@@ -1,4 +1,4 @@
-// IPAS Mock Exam System Configuration
+﻿// IPAS Mock Exam System Configuration
 window.EXAM_CONFIG = {
     // 部署後的 Google Apps Script Web App URL
     apiEndpoint: "https://script.google.com/macros/s/AKfycbzy120dNjp87TE49odkLAchskuv5ig0hf0-e9lOMyBm-2buBs7lpOcElq0dVgxjRjs1/exec",
@@ -146,6 +146,44 @@ window.EXAM_CONFIG = {
                 { topicGroup: "L234 機器學習治理" },
                 { title: "L23401 數據隱私、安全與合規", file: "notes/ai_mid/L23_機器學習技術與應用/L234_機器學習治理.md#L23401" },
                 { title: "L23402 演算法偏見與公平性", file: "notes/ai_mid/L23_機器學習技術與應用/L234_機器學習治理.md#L23402" }
+            ]
+        },
+        {
+            id: "3d",
+            name: "3D 列印積層製造工程師 (初級)",
+            icon: "🖨️",
+            description: "3D 列印概論、3D 製程與材料概論 (ME 及 VP 技術)",
+            enabled: true,
+            questionCount: 207,
+            questionsFile: "3d_questions.js",
+            questionsJson: "3d_questions.json",
+            questionsVar: "ipas3dQuestions",
+            subjects: [
+                { id: "s1", name: "第一科：3D列印概論", matchKeywords: ["第一科", "3D列印概論", "s1"] },
+                { id: "s2", name: "第二科：3D製程與材料概論", matchKeywords: ["第二科", "3D製程與材料概論", "s2"] }
+            ],
+            studyNotes: [
+                { subjectGroup: "第一科：3D列印概論" },
+                { topicGroup: "L111 基礎原理與成型機制" },
+                { title: "L11101 3D列印基礎原理與發展歷程", file: "notes/3d/s1_3D列印概論/L111_基礎原理與成型機制.md#L11101" },
+                { title: "L11102 ASTM七大成型機制基礎", file: "notes/3d/s1_3D列印概論/L111_基礎原理與成型機制.md#L11102" },
+                { title: "L11103 光固化反應原理與比爾-朗伯定律", file: "notes/3d/s1_3D列印概論/L111_基礎原理與成型機制.md#L11103" },
+                { topicGroup: "L112 設備系統與操作安全" },
+                { title: "L11201 ME與VP設備系統性能", file: "notes/3d/s1_3D列印概論/L112_設備系統與操作安全.md#L11201" },
+                { title: "L11202 機台操作實務與校正", file: "notes/3d/s1_3D列印概論/L112_設備系統與操作安全.md#L11202" },
+                { title: "L11203 電氣與作業環境安全規範", file: "notes/3d/s1_3D列印概論/L112_設備系統與操作安全.md#L11203" },
+                { subjectGroup: "第二科：3D製程與材料概論" },
+                { topicGroup: "L121 模型前處理與切層路徑" },
+                { title: "L12101 3D數位模型與檔案格式", file: "notes/3d/s2_3D製程與材料概論/L121_模型前處理與切層路徑.md#L12101" },
+                { title: "L12102 支撐結構設計準則", file: "notes/3d/s2_3D製程與材料概論/L121_模型前處理與切層路徑.md#L12102" },
+                { title: "L12103 列印方位與切層路徑規劃", file: "notes/3d/s2_3D製程與材料概論/L121_模型前處理與切層路徑.md#L12103" },
+                { topicGroup: "L122 加工參數與不良現象分析" },
+                { title: "L12201 關鍵加工參數調校", file: "notes/3d/s2_3D製程與材料概論/L122_加工參數與不良現象分析.md#L12201" },
+                { title: "L12202 常見加工不良現象原因與對策", file: "notes/3d/s2_3D製程與材料概論/L122_加工參數與不良現象分析.md#L12202" },
+                { topicGroup: "L123 材料類型與後處理法規" },
+                { title: "L12301 常用熱塑性與彈性體線材", file: "notes/3d/s2_3D製程與材料概論/L123_材料類型與後處理法規.md#L12301" },
+                { title: "L12302 光敏樹脂與粉末材料特性", file: "notes/3d/s2_3D製程與材料概論/L123_材料類型與後處理法規.md#L12302" },
+                { title: "L12303 產品後處理製程與法規安全", file: "notes/3d/s2_3D製程與材料概論/L123_材料類型與後處理法規.md#L12303" }
             ]
         },
         {
