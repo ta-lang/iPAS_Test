@@ -1,4 +1,4 @@
-﻿// IPAS Mock Exam System Configuration
+// IPAS Mock Exam System Configuration
 window.EXAM_CONFIG = {
     // 部署後的 Google Apps Script Web App URL
     apiEndpoint: "https://script.google.com/macros/s/AKfycbzy120dNjp87TE49odkLAchskuv5ig0hf0-e9lOMyBm-2buBs7lpOcElq0dVgxjRjs1/exec",
@@ -223,6 +223,45 @@ window.EXAM_CONFIG = {
                 { title: "L22101 軟板FPC特殊材料與構造", file: "notes/pcb/s2_軟硬板製造概論/L221_軟板與軟硬結合板特論.md#L22101" },
                 { title: "L22102 軟板捲對捲RTR生產與成型", file: "notes/pcb/s2_軟硬板製造概論/L221_軟板與軟硬結合板特論.md#L22102" },
                 { title: "L22103 微切片分析Microsection實務", file: "notes/pcb/s2_軟硬板製造概論/L221_軟板與軟硬結合板特論.md#L22103" }
+            ]
+        },
+        {
+            id: "aiot",
+            name: "AIoT 應用工程師",
+            icon: "🌐",
+            description: "AIoT 基礎概論、物聯網架構與通訊、感測技術、軟硬體整合與智慧製造",
+            enabled: true,
+            questionCount: 140,
+            questionsFile: "aiot_questions.js",
+            questionsJson: "aiot_questions.json",
+            questionsVar: "ipasAiotQuestions",
+            subjects: [
+                { id: "s1", name: "考科一：AIoT 基礎概論", matchKeywords: ["考科一", "AIoT基礎概論", "s1"] },
+                { id: "s2", name: "考科二：物聯網系統與應用", matchKeywords: ["考科二", "物聯網系統與應用", "s2"] }
+            ],
+            studyNotes: [
+                { subjectGroup: "考科一：AIoT 基礎概論" },
+                { topicGroup: "L111 AI基礎知識與應用" },
+                { title: "L11101 AI基礎概念", file: "notes/aiot/s1_AIoT基礎概論/L111_AI基礎知識與應用.md#L11101" },
+                { title: "L11102 AIoT應用案例", file: "notes/aiot/s1_AIoT基礎概論/L111_AI基礎知識與應用.md#L11102" },
+                { topicGroup: "L112 AIoT基礎與架構" },
+                { title: "L11201 物聯網架構與功能", file: "notes/aiot/s1_AIoT基礎概論/L112_AIoT基礎與架構.md#L11201" },
+                { title: "L11202 常見通訊協定與網路層技術", file: "notes/aiot/s1_AIoT基礎概論/L112_AIoT基礎與架構.md#L11202" },
+                { title: "L11203 工業通訊標準與資訊模型", file: "notes/aiot/s1_AIoT基礎概論/L112_AIoT基礎與架構.md#L11203" },
+                { title: "L11204 中介軟體與平台", file: "notes/aiot/s1_AIoT基礎概論/L112_AIoT基礎與架構.md#L11204" },
+                { title: "L11205 資安與隱私基本概念", file: "notes/aiot/s1_AIoT基礎概論/L112_AIoT基礎與架構.md#L11205" },
+                { topicGroup: "L113 感測器原理與應用" },
+                { title: "L11301 感測技術基礎", file: "notes/aiot/s1_AIoT基礎概論/L113_感測器原理與應用.md#L11301" },
+                { title: "L11302 感測訊號與通訊基礎", file: "notes/aiot/s1_AIoT基礎概論/L113_感測器原理與應用.md#L11302" },
+                { subjectGroup: "考科二：物聯網系統與應用" },
+                { topicGroup: "L121 軟硬體整合規劃" },
+                { title: "L12101 系統元件與架構", file: "notes/aiot/s2_物聯網系統與應用/L121_軟硬體整合規劃.md#L12101" },
+                { title: "L12102 簡易系統故障問題判斷與排除", file: "notes/aiot/s2_物聯網系統與應用/L121_軟硬體整合規劃.md#L12102" },
+                { title: "L12103 物聯網資訊安全", file: "notes/aiot/s2_物聯網系統與應用/L121_軟硬體整合規劃.md#L12103" },
+                { topicGroup: "L122 軟硬體設計" },
+                { title: "L12201 物聯網硬體設計基礎", file: "notes/aiot/s2_物聯網系統與應用/L122_軟硬體設計.md#L12201" },
+                { title: "L12202 雲端環境數據收集與平台設計", file: "notes/aiot/s2_物聯網系統與應用/L122_軟硬體設計.md#L12202" },
+                { title: "L12203 智慧製造流程優化與成本控制", file: "notes/aiot/s2_物聯網系統與應用/L122_軟硬體設計.md#L12203" }
             ]
         },
         {
