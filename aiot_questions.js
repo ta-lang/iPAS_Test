@@ -1720,12 +1720,12 @@ window.ipasAiotQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "is_multiple": false,
-    "explanation": "【核心考點】電阻式溫度感測器（RTD）：白金電阻 Pt100 之標稱阻值與溫度特性計算。\n\n【正確答案說明】(D) Pt100 中「Pt」代表金屬鉑（Platinum），「100」代表其在標準 $0^\\circ\text{C}$ 時的基準電阻值恰好為 $100\\ \\Omega$。白金具有正溫度係數（PTC），其電阻隨溫度線性上升公式為 $R(T) \u0007pprox R_0 (1 + \\alpha T)$。當溫度係數取工業簡化值 $\\alpha \u0007pprox 0.00385 \\sim 0.004\\ ^\\circ\text{C}^{-1}$ 時：\n- 當 $T = 0^\\circ\text{C}$ 時，$R = 100\\ \\Omega$；\n- 當 $T = 100^\\circ\text{C}$ 時，$R = 100 \times (1 + 0.004 \times 100) = 140\\ \\Omega$（國際 IEC 60751 精確標準值為 $138.51\\ \\Omega$），故 (D) 選項正確。\n\n【選項辨析】\n- (A) 錯誤。Pt100 在 $0^\\circ\text{C}$ 時的標準電阻值嚴格定義為 $100\\ \\Omega$，絕非 $40\\ \\Omega$。\n- (B) 錯誤。在 $10^\\circ\text{C}$ 時，其電阻值約為 $100 \times (1 + 0.004 \times 10) = 104\\ \\Omega$，非 $40\\ \\Omega$。\n- (C) 錯誤。在 $10^\\circ\text{C}$ 時阻值僅為約 $104\\ \\Omega$，不可能達到 $140\\ \\Omega$。\n- (D) 正確。在 $100^\\circ\text{C}$ 時，阻值上升增加約 $38.5 \\sim 40\\ \\Omega$，測得電阻約為 $140\\ \\Omega$。",
+    "explanation": "【核心考點】電阻式溫度感測器（RTD）：白金電阻 Pt100 之標稱阻值與溫度特性計算。\n\n【正確答案說明】(D) Pt100 中「Pt」代表金屬鉑（Platinum），「100」代表其在標準 $0^\\circ\\text{C}$ 時的基準電阻值恰好為 $100\\ \\Omega$。白金具有正溫度係數（PTC），其電阻隨溫度線性上升公式為 $R(T) \\approx R_0 (1 + \\alpha T)$。當溫度係數取工業簡化值 $\\alpha \\approx 0.00385 \\sim 0.004\\ ^\\circ\\text{C}^{-1}$ 時：\n- 當 $T = 0^\\circ\\text{C}$ 時，$R = 100\\ \\Omega$；\n- 當 $T = 100^\\circ\\text{C}$ 時，$R = 100 \\times (1 + 0.004 \\times 100) = 140\\ \\Omega$（國際 IEC 60751 精確標準值為 $138.51\\ \\Omega$），故 (D) 選項正確。\n\n【選項辨析】\n- (A) 錯誤。Pt100 在 $0^\\circ\\text{C}$ 時的標準電阻值嚴格定義為 $100\\ \\Omega$，絕非 $40\\ \\Omega$。\n- (B) 錯誤。在 $10^\\circ\\text{C}$ 時，其電阻值約為 $100 \\times (1 + 0.004 \\times 10) = 104\\ \\Omega$，非 $40\\ \\Omega$。\n- (C) 錯誤。在 $10^\\circ\\text{C}$ 時阻值僅為約 $104\\ \\Omega$，不可能達到 $140\\ \\Omega$。\n- (D) 正確。在 $100^\\circ\\text{C}$ 時，阻值上升增加約 $38.5 \\sim 40\\ \\Omega$，測得電阻約為 $140\\ \\Omega$。",
     "source": "official_guide",
     "source_id": "aiot-caade0cb2c842645",
     "source_version": "official-guide-2026",
     "question_uid": "aiot-fd410ec47da1462ec4090c86",
-    "content_hash": "119f9e789a11d4e399c60c440c115aff262d874bea711946680d7b8a7240e30a"
+    "content_hash": "fed0441bafe7284d9c4cd7d34f3c01a398d2e2d8ace2a1d9cc493e4f50f35ec4"
   },
   {
     "id": 65,
@@ -1801,12 +1801,12 @@ window.ipasAiotQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "is_multiple": false,
-    "explanation": "【核心考點】熱電偶冷端參考溫度補償技術：冷點補償（Cold Junction Compensation, CJC）。\n\n【正確答案說明】(A) 國際熱電偶分度表（E-T 對照表）所記載的毫伏電壓數值，均基於參考端（冷端）處於標準冰點 $0^\\circ\text{C}$ 的前提。在現場實際儀表接線時，冷端通常處於常溫環境（如 $25^\\circ\text{C}$），此時熱電偶輸出的熱電勢僅反映熱端與 $25^\\circ\text{C}$ 之溫差。因此必須利用內建的熱敏電阻測量冷端溫度，並將該環境溫度的對應電位透過電路或微處理器補償回去，此技術即稱為「冷點補償（Cold Junction Compensation, CJC）」或冷端補償。\n\n【選項辨析】\n- (A) 正確。冷點補償（CJC）專用於消除熱電偶參考端非處於 $0^\\circ\text{C}$ 所引入的環境基準偏差。\n- (B) 錯誤。相位補償用於控制系統或運算放大器負回授電路中調整相位裕度以防止振盪，與測溫補償無關。\n- (C) 錯誤。頻率補償用於音訊放大器或濾波器修正頻率響應曲線，非熱電偶測溫技術。\n- (D) 錯誤。環路補償通常指電流環路校正或控制迴路 PID 調諧，非熱電偶基準溫度校正術語。",
+    "explanation": "【核心考點】熱電偶冷端參考溫度補償技術：冷點補償（Cold Junction Compensation, CJC）。\n\n【正確答案說明】(A) 國際熱電偶分度表（E-T 對照表）所記載的毫伏電壓數值，均基於參考端（冷端）處於標準冰點 $0^\\circ\\text{C}$ 的前提。在現場實際儀表接線時，冷端通常處於常溫環境（如 $25^\\circ\\text{C}$），此時熱電偶輸出的熱電勢僅反映熱端與 $25^\\circ\\text{C}$ 之溫差。因此必須利用內建的熱敏電阻測量冷端溫度，並將該環境溫度的對應電位透過電路或微處理器補償回去，此技術即稱為「冷點補償（Cold Junction Compensation, CJC）」或冷端補償。\n\n【選項辨析】\n- (A) 正確。冷點補償（CJC）專用於消除熱電偶參考端非處於 $0^\\circ\\text{C}$ 所引入的環境基準偏差。\n- (B) 錯誤。相位補償用於控制系統或運算放大器負回授電路中調整相位裕度以防止振盪，與測溫補償無關。\n- (C) 錯誤。頻率補償用於音訊放大器或濾波器修正頻率響應曲線，非熱電偶測溫技術。\n- (D) 錯誤。環路補償通常指電流環路校正或控制迴路 PID 調諧，非熱電偶基準溫度校正術語。",
     "source": "official_guide",
     "source_id": "aiot-caade0cb2c842645",
     "source_version": "official-guide-2026",
     "question_uid": "aiot-1ac7ba54d40ab99203c2863b",
-    "content_hash": "48882b281f881d9fa3b66249bd27b3fa9b1bf05f2cab1631711bc0c2620252ff"
+    "content_hash": "13b6f1d2c63e6e5780d617698fb54eeba63deb8d6eb4717f775e09f8c327164d"
   },
   {
     "id": 68,
@@ -1828,12 +1828,12 @@ window.ipasAiotQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "is_multiple": false,
-    "explanation": "【核心考點】感測與量測工程基礎理論：量測誤差（Measurement Error）之定義與分類。\n\n【正確答案說明】(A) 在計量學與感測工程中，量測誤差（Error）的嚴格數學定義為「量測結果數值與待測物理量真實值（True Value）之間的差值」，即 $\text{誤差} = \text{量測值} - \text{真實值}$。而「平均值 - 標準差（$\bar{X} - \\sigma$）」僅是統計學常態分佈中的一種分散範圍度量指標，絕非誤差的定義公式，故 (A) 選項敘述錯誤。\n\n【選項辨析】\n- (A) 錯誤敘述（正解）。誤差定義為量測值與真實值之差（$\\Delta = X_{meas} - X_{true}$），非平均值減標準差。\n- (B) 正確敘述。系統誤差是由儀器校正不良、零點漂移或固定環境干擾所引起具規律性的恆定偏差。\n- (C) 正確敘述。隨機誤差是由熱雜訊、微小氣流晃動等不可預測因素引起服從常態分佈之隨機跳動。\n- (D) 正確敘述。人為誤差是操作人員讀數視差、操作手法失誤或錯誤接線所導致之過失誤差。",
+    "explanation": "【核心考點】感測與量測工程基礎理論：量測誤差（Measurement Error）之定義與分類。\n\n【正確答案說明】(A) 在計量學與感測工程中，量測誤差（Error）的嚴格數學定義為「量測結果數值與待測物理量真實值（True Value）之間的差值」，即 $\\text{誤差} = \\text{量測值} - \\text{真實值}$。而「平均值 - 標準差（$\\bar{X} - \\sigma$）」僅是統計學常態分佈中的一種分散範圍度量指標，絕非誤差的定義公式，故 (A) 選項敘述錯誤。\n\n【選項辨析】\n- (A) 錯誤敘述（正解）。誤差定義為量測值與真實值之差（$\\Delta = X_{meas} - X_{true}$），非平均值減標準差。\n- (B) 正確敘述。系統誤差是由儀器校正不良、零點漂移或固定環境干擾所引起具規律性的恆定偏差。\n- (C) 正確敘述。隨機誤差是由熱雜訊、微小氣流晃動等不可預測因素引起服從常態分佈之隨機跳動。\n- (D) 正確敘述。人為誤差是操作人員讀數視差、操作手法失誤或錯誤接線所導致之過失誤差。",
     "source": "official_guide",
     "source_id": "aiot-caade0cb2c842645",
     "source_version": "official-guide-2026",
     "question_uid": "aiot-42a7ccf79698466017417db6",
-    "content_hash": "394f0aef0c640ea5ddf9f73850f37fb96e5e3333dbe1a2efc2ca6801033a2cf8"
+    "content_hash": "04813328fee67d34c5b10f3a268a5e6850256446a52055d50709350e7dce424a"
   },
   {
     "id": 69,
@@ -1855,12 +1855,12 @@ window.ipasAiotQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "is_multiple": false,
-    "explanation": "【核心考點】壓阻效應（Piezoresistive Effect）與金屬應變規（Strain Gauge）感測原理。\n\n【正確答案說明】(B) 根據電阻定律 $R = \rho L / A$，當金屬細導線受到外力拉伸時，長度 $L$ 伸長且橫截面積 $A$ 變小，同時金屬晶格微觀形變導致電阻率 $\rho$ 改變，使其總電阻值顯著增大；受壓時則相反。此物理效應稱為壓阻效應。「應變規（Strain Gauge）」正是利用金屬箔式電阻柵緊密黏貼於結構件表面，透過惠斯登電橋量測微小電阻變化來推算應變、應力、重量或扭力。\n\n【選項辨析】\n- (A) 錯誤。光感測計（光電二極體/光敏電阻）是利用光電效應量測光子能量，非外力機械變形。\n- (B) 正確。應變規（Strain Gauge）專門利用金屬導體受機械力拉伸/壓縮變形產生電阻變化來量測應變。\n- (C) 錯誤。電流計是利用載流線圈在磁場中受安培力偏轉來量測電流大小。\n- (D) 錯誤。常規膨脹溫度計利用液體熱脹冷縮，電阻溫度計利用熱電阻效應，非機械外力作用。",
+    "explanation": "【核心考點】壓阻效應（Piezoresistive Effect）與金屬應變規（Strain Gauge）感測原理。\n\n【正確答案說明】(B) 根據電阻定律 $R = \\rho L / A$，當金屬細導線受到外力拉伸時，長度 $L$ 伸長且橫截面積 $A$ 變小，同時金屬晶格微觀形變導致電阻率 $\\rho$ 改變，使其總電阻值顯著增大；受壓時則相反。此物理效應稱為壓阻效應。「應變規（Strain Gauge）」正是利用金屬箔式電阻柵緊密黏貼於結構件表面，透過惠斯登電橋量測微小電阻變化來推算應變、應力、重量或扭力。\n\n【選項辨析】\n- (A) 錯誤。光感測計（光電二極體/光敏電阻）是利用光電效應量測光子能量，非外力機械變形。\n- (B) 正確。應變規（Strain Gauge）專門利用金屬導體受機械力拉伸/壓縮變形產生電阻變化來量測應變。\n- (C) 錯誤。電流計是利用載流線圈在磁場中受安培力偏轉來量測電流大小。\n- (D) 錯誤。常規膨脹溫度計利用液體熱脹冷縮，電阻溫度計利用熱電阻效應，非機械外力作用。",
     "source": "official_guide",
     "source_id": "aiot-caade0cb2c842645",
     "source_version": "official-guide-2026",
     "question_uid": "aiot-650dc97354e83e43119a0b33",
-    "content_hash": "feb94f0f78fb4a96480b8dc8403c147e9edc6fb3fa21ae2038db9698f59af9d4"
+    "content_hash": "3c20d37b5a8cbe0d2330682e6668d671e079059b42bdfd7e52ac4299712d709d"
   },
   {
     "id": 70,
@@ -1963,12 +1963,12 @@ window.ipasAiotQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "is_multiple": false,
-    "explanation": "【核心考點】微控制器晶片級通訊介面：I2C（內部整合電路匯流排）同步序列傳輸特性。\n\n【正確答案說明】(D) I2C（Inter-Integrated Circuit）是一種典型的「同步（Synchronous）」串列通訊協定，因為它具備一條專屬的硬體時脈信號線 SCL（Serial Clock Line），由主裝置發出時脈訊號以嚴格同步收發雙方的資料取樣時序。非同步通訊（如 UART）則沒有獨立時脈線。因此，敘述「是一種非同步的傳輸協定」是錯誤的，為本題正解。\n\n【選項辨析】\n- (A) 屬於 I2C 特性。I2C 僅需兩根雙向訊號線（SDA 與 SCL），接腳數極少，大幅節省 PCB 佈線空間。\n- (B) 屬於 I2C 特性。開漏極與拉升電阻架構導致其最大匯流排電容受限（通常 $\\le 400\text{ pF}$），傳輸線過長易引起波形失真。\n- (C) 屬於 I2C 特性。減少晶片引腳與走線數量，能顯著降低整體硬體體積、電路板重量與動態功耗。\n- (D) 不屬於 I2C 特性（正解）。I2C 依賴專屬 SCL 時脈線同步傳輸，為標準同步協定，非非同步。",
+    "explanation": "【核心考點】微控制器晶片級通訊介面：I2C（內部整合電路匯流排）同步序列傳輸特性。\n\n【正確答案說明】(D) I2C（Inter-Integrated Circuit）是一種典型的「同步（Synchronous）」串列通訊協定，因為它具備一條專屬的硬體時脈信號線 SCL（Serial Clock Line），由主裝置發出時脈訊號以嚴格同步收發雙方的資料取樣時序。非同步通訊（如 UART）則沒有獨立時脈線。因此，敘述「是一種非同步的傳輸協定」是錯誤的，為本題正解。\n\n【選項辨析】\n- (A) 屬於 I2C 特性。I2C 僅需兩根雙向訊號線（SDA 與 SCL），接腳數極少，大幅節省 PCB 佈線空間。\n- (B) 屬於 I2C 特性。開漏極與拉升電阻架構導致其最大匯流排電容受限（通常 $\\le 400\\text{ pF}$），傳輸線過長易引起波形失真。\n- (C) 屬於 I2C 特性。減少晶片引腳與走線數量，能顯著降低整體硬體體積、電路板重量與動態功耗。\n- (D) 不屬於 I2C 特性（正解）。I2C 依賴專屬 SCL 時脈線同步傳輸，為標準同步協定，非非同步。",
     "source": "official_guide",
     "source_id": "aiot-3050155a52e9032e",
     "source_version": "official-guide-2026",
     "question_uid": "aiot-9f8d13832a3872921044af05",
-    "content_hash": "e0e590b3c27428c29572ae00035ebf22c838530917a3de97c5e623310de7071a"
+    "content_hash": "412afd56e1ff48b117615498f79ab5d5a620e654c72a59058e7c6b1763157602"
   },
   {
     "id": 74,
@@ -2233,12 +2233,12 @@ window.ipasAiotQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "is_multiple": false,
-    "explanation": "【核心考點】物聯網低功耗節點工作週期（Duty Cycle）平均功耗與電池壽命計算。\n\n【正確答案說明】(C) 依據工作週期加權平均電流公式：\n1. 每小時（3600 秒）內消耗之總電荷量：\n   $Q = (I_{work} \times t_{work}) + (I_{sleep} \times t_{sleep})$\n   $= (60\text{ mA} \times 6\text{ s}) + (0.015\text{ mA} \times 3594\text{ s}) = 360 + 53.91 = 413.91\text{ mA}\\cdot\\text{s}$\n2. 週期平均電流：\n   $I_{avg} = 413.91\text{ mA}\\cdot\\text{s} / 3600\text{ s} \u0007pprox 0.115\text{ mA}$\n3. 理論電池使用壽命：\n   $T = 2400\text{ mAh} / 0.115\text{ mA} \u0007pprox 20869.5\text{ 小時} \u0007pprox 869.5\text{ 天} \u0007pprox 2.38\text{ 年}$。\n\n【選項辨析】\n- (A) 錯誤。計算錯誤，未將休眠時間權重（3594/3600）納入正確加權計算。\n- (B) 錯誤。工作時間僅佔 6/3600 = 0.167%，平均電流遠低於 1.0 mA。\n- (C) 正確。平均電流精確為 0.115 mA，理論電池壽命約為 20869 小時（約 2.38 年）。\n- (D) 錯誤。忽略了喚醒工作期間 60 mA 電流對整體平均功耗的顯著拉升。",
+    "explanation": "【核心考點】物聯網低功耗節點工作週期（Duty Cycle）平均功耗與電池壽命計算。\n\n【正確答案說明】(C) 依據工作週期加權平均電流公式：\n1. 每小時（3600 秒）內消耗之總電荷量：\n   $Q = (I_{work} \\times t_{work}) + (I_{sleep} \\times t_{sleep})$\n   $= (60\\text{ mA} \\times 6\\text{ s}) + (0.015\\text{ mA} \\times 3594\\text{ s}) = 360 + 53.91 = 413.91\\text{ mA}\\cdot\\text{s}$\n2. 週期平均電流：\n   $I_{avg} = 413.91\\text{ mA}\\cdot\\text{s} / 3600\\text{ s} \\approx 0.115\\text{ mA}$\n3. 理論電池使用壽命：\n   $T = 2400\\text{ mAh} / 0.115\\text{ mA} \\approx 20869.5\\text{ 小時} \\approx 869.5\\text{ 天} \\approx 2.38\\text{ 年}$。\n\n【選項辨析】\n- (A) 錯誤。計算錯誤，未將休眠時間權重（3594/3600）納入正確加權計算。\n- (B) 錯誤。工作時間僅佔 6/3600 = 0.167%，平均電流遠低於 1.0 mA。\n- (C) 正確。平均電流精確為 0.115 mA，理論電池壽命約為 20869 小時（約 2.38 年）。\n- (D) 錯誤。忽略了喚醒工作期間 60 mA 電流對整體平均功耗的顯著拉升。",
     "source": "practice_supplement",
     "source_id": "aiot-c3960799a06c7498",
     "source_version": "official-guide-2026",
     "question_uid": "aiot-b9e826f3722b22b46ea7b2af",
-    "content_hash": "28ebd867172e1a947626724d241a051840c45c1c55fd75d47d50f957da537cc2"
+    "content_hash": "8d1491a5297bf28d7f854884bdadcf621628c16ad9751778ee1a46083e84c02c"
   },
   {
     "id": 84,
@@ -2395,12 +2395,12 @@ window.ipasAiotQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "is_multiple": false,
-    "explanation": "【核心考點】類比數位轉換器（ADC）量化解析度與最小有效位元（LSB）計算。\n\n【正確答案說明】(A) 12-bit ADC 的量化階數為 $2^{12} = 4096$ 個量化區間（或 $2^{12}-1 = 4095$ 個步階）。\n最小有效位元（1 LSB）對應之電壓解析度公式為：\n$\text{LSB} = \frac{V_{ref}}{2^N} = \frac{3.30\text{ V}}{4096} \u0007pprox 0.00080566\text{ V} \u0007pprox 0.806\text{ mV}$。\n（若以 $4095$ 計算，$\frac{3.30}{4095} \u0007pprox 0.80586\text{ mV} \u0007pprox 0.806\text{ mV}$），故 (A) 選項正確。\n\n【選項辨析】\n- (A) 正確。$3.30\text{ V} / 4096 \u0007pprox 0.806\text{ mV}$，為 12-bit ADC 於 3.3V 參考電壓下之最小電壓量化步距。\n- (B) 錯誤。$3.30\text{ V} / 1024 \u0007pprox 3.22\text{ mV}$，此為 10-bit ADC 之量化解析度。\n- (C) 錯誤。$3.30\text{ V} / 256 \u0007pprox 12.89\text{ mV}$，此為 8-bit ADC 之量化解析度。\n- (D) 錯誤。計算錯誤，數值過大完全脫離 12-bit 解析度之物理意義。",
+    "explanation": "【核心考點】類比數位轉換器（ADC）量化解析度與最小有效位元（LSB）計算。\n\n【正確答案說明】(A) 12-bit ADC 的量化階數為 $2^{12} = 4096$ 個量化區間（或 $2^{12}-1 = 4095$ 個步階）。\n最小有效位元（1 LSB）對應之電壓解析度公式為：\n$\\text{LSB} = \\frac{V_{ref}}{2^N} = \\frac{3.30\\text{ V}}{4096} \\approx 0.00080566\\text{ V} \\approx 0.806\\text{ mV}$。\n（若以 $4095$ 計算，$\\frac{3.30}{4095} \\approx 0.80586\\text{ mV} \\approx 0.806\\text{ mV}$），故 (A) 選項正確。\n\n【選項辨析】\n- (A) 正確。$3.30\\text{ V} / 4096 \\approx 0.806\\text{ mV}$，為 12-bit ADC 於 3.3V 參考電壓下之最小電壓量化步距。\n- (B) 錯誤。$3.30\\text{ V} / 1024 \\approx 3.22\\text{ mV}$，此為 10-bit ADC 之量化解析度。\n- (C) 錯誤。$3.30\\text{ V} / 256 \\approx 12.89\\text{ mV}$，此為 8-bit ADC 之量化解析度。\n- (D) 錯誤。計算錯誤，數值過大完全脫離 12-bit 解析度之物理意義。",
     "source": "practice_supplement",
     "source_id": "aiot-c3960799a06c7498",
     "source_version": "official-guide-2026",
     "question_uid": "aiot-54e1c03a84a834bbd3cd672d",
-    "content_hash": "383b1f408faf54fe17728e8a4159dd68a465e88fee10fa88001b2a8bc0f03cdb"
+    "content_hash": "ba5804abe1be4cbab7ed4cac4dbf67b0dde2725b708e405a5405642dff7fb461"
   },
   {
     "id": 90,
@@ -2422,12 +2422,12 @@ window.ipasAiotQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "is_multiple": false,
-    "explanation": "【核心考點】訊號處理取樣理論：奈奎斯特採樣定理（Nyquist-Shannon Sampling Theorem）與混疊防範。\n\n【正確答案說明】(B) 奈奎斯特採樣定理規定：為了使離散採樣後的數位訊號能夠無失真地完整重建原始連續類比訊號，採樣頻率 $f_s$ 必須至少大於或等於原始信號中最高頻率成分 $f_{max}$ 的兩倍，即：\n$f_s \\ge 2 f_{max}$\n本題中最高特徵頻率 $f_{max} = 5\text{ kHz}$，因此最低採樣頻率必須為 $f_s \\ge 2 \times 5\text{ kHz} = 10\text{ kHz}$。若採樣頻率低於 10 kHz，高頻信號將會折疊至低頻區形成假頻混疊（Aliasing），造成嚴重的頻譜分析錯誤。\n\n【選項辨析】\n- (A) 錯誤。2.5 kHz 遠低於訊號最高頻率，會產生嚴重的取樣不足與混疊失真。\n- (B) 正確。根據奈奎斯特準則，$f_s \\ge 2 \times 5\text{ kHz} = 10\text{ kHz}$ 為避免混疊的理論最低門檻。\n- (C) 錯誤。5 kHz 僅等於信號最高頻率，未滿足兩倍原則，將無法重建波形相位與頻率。\n- (D) 錯誤。1 kHz 會遺失 1 kHz 以上的所有高頻特徵，完全無法用於軸承高頻故障診斷。",
+    "explanation": "【核心考點】訊號處理取樣理論：奈奎斯特採樣定理（Nyquist-Shannon Sampling Theorem）與混疊防範。\n\n【正確答案說明】(B) 奈奎斯特採樣定理規定：為了使離散採樣後的數位訊號能夠無失真地完整重建原始連續類比訊號，採樣頻率 $f_s$ 必須至少大於或等於原始信號中最高頻率成分 $f_{max}$ 的兩倍，即：\n$f_s \\ge 2 f_{max}$\n本題中最高特徵頻率 $f_{max} = 5\\text{ kHz}$，因此最低採樣頻率必須為 $f_s \\ge 2 \\times 5\\text{ kHz} = 10\\text{ kHz}$。若採樣頻率低於 10 kHz，高頻信號將會折疊至低頻區形成假頻混疊（Aliasing），造成嚴重的頻譜分析錯誤。\n\n【選項辨析】\n- (A) 錯誤。2.5 kHz 遠低於訊號最高頻率，會產生嚴重的取樣不足與混疊失真。\n- (B) 正確。根據奈奎斯特準則，$f_s \\ge 2 \\times 5\\text{ kHz} = 10\\text{ kHz}$ 為避免混疊的理論最低門檻。\n- (C) 錯誤。5 kHz 僅等於信號最高頻率，未滿足兩倍原則，將無法重建波形相位與頻率。\n- (D) 錯誤。1 kHz 會遺失 1 kHz 以上的所有高頻特徵，完全無法用於軸承高頻故障診斷。",
     "source": "practice_supplement",
     "source_id": "aiot-c3960799a06c7498",
     "source_version": "official-guide-2026",
     "question_uid": "aiot-002d9fffa2546836a271b558",
-    "content_hash": "53524d7cc8e40e991fdcae6277aa18de20d50eb7dd7c3da711cac89323b5bd11"
+    "content_hash": "358c9a7b7a140873f625b464e6aaba7b2226fd3091aeec10a87655215b4a4c8d"
   },
   {
     "id": 91,
@@ -2557,12 +2557,12 @@ window.ipasAiotQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "is_multiple": false,
-    "explanation": "【核心考點】電感性負載反電動勢（Back-EMF / Inductive Kickback）故障排除與續流二極體原理。\n\n【正確答案說明】(C) 繼電器線圈具有電感特性，其兩端電壓電流關係為 $V = L \frac{di}{dt}$。當電晶體由導通突然切換為截止時，電流瞬間歸零（$\frac{di}{dt}$ 極大且為負），線圈內部磁場崩潰會感應出極高的反向電動勢（可高達數百伏特），該高壓突波加在電晶體 C-E 極間超過其反向耐壓擊穿電晶體。在線圈兩端反向並聯一顆續流二極體（Flyback / Freewheeling Diode，陰極接 24V、陽極接電晶體集極），可在斷電瞬間為電感電流提供安全洩放迴路，將反峰電壓箝位在安全範圍內（約 24V + 0.7V）。\n\n【選項辨析】\n- (A) 錯誤。串聯高阻值電阻會降低線圈正常工作電流，導致繼電器無法正常吸合，無法吸收斷電反電動勢。\n- (B) 錯誤。提高電源電壓只會加劇斷電瞬態能量，使電晶體更快燒毀。\n- (C) 正確。反向並聯續流二極體能即時箝位電感反電動勢，提供電流釋放路徑，保護驅動電晶體。\n- (D) 錯誤。基極直接接地電晶體將永遠截止無法吸合，失去電路開關控制功能。",
+    "explanation": "【核心考點】電感性負載反電動勢（Back-EMF / Inductive Kickback）故障排除與續流二極體原理。\n\n【正確答案說明】(C) 繼電器線圈具有電感特性，其兩端電壓電流關係為 $V = L \\frac{di}{dt}$。當電晶體由導通突然切換為截止時，電流瞬間歸零（$\\frac{di}{dt}$ 極大且為負），線圈內部磁場崩潰會感應出極高的反向電動勢（可高達數百伏特），該高壓突波加在電晶體 C-E 極間超過其反向耐壓擊穿電晶體。在線圈兩端反向並聯一顆續流二極體（Flyback / Freewheeling Diode，陰極接 24V、陽極接電晶體集極），可在斷電瞬間為電感電流提供安全洩放迴路，將反峰電壓箝位在安全範圍內（約 24V + 0.7V）。\n\n【選項辨析】\n- (A) 錯誤。串聯高阻值電阻會降低線圈正常工作電流，導致繼電器無法正常吸合，無法吸收斷電反電動勢。\n- (B) 錯誤。提高電源電壓只會加劇斷電瞬態能量，使電晶體更快燒毀。\n- (C) 正確。反向並聯續流二極體能即時箝位電感反電動勢，提供電流釋放路徑，保護驅動電晶體。\n- (D) 錯誤。基極直接接地電晶體將永遠截止無法吸合，失去電路開關控制功能。",
     "source": "practice_supplement",
     "source_id": "aiot-a4038fd1f5b65934",
     "source_version": "official-guide-2026",
     "question_uid": "aiot-1e9f50ead5d0ad91c2e94740",
-    "content_hash": "ab20c5953dcf4d76ed48fe54d73746c2e5a67a2ac08e7e94ca827e6e65413daf"
+    "content_hash": "949a034a889a9cb14b2813f26a06e531144d7235c0dc9b119768c0f83a00e315"
   },
   {
     "id": 96,
@@ -2611,12 +2611,12 @@ window.ipasAiotQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "is_multiple": false,
-    "explanation": "【核心考點】物聯網射頻發射瞬間脈衝電流與電源軌欠壓重置（Brownout Reset, BOR）排除。\n\n【正確答案說明】(A) Wi-Fi 或蜂巢式射頻模組在發射無線電波訊號瞬間，會在數十微秒內抽取高達 300~500 mA 的峰值脈衝電流。若電源轉換器（LDO）最大輸出電流不足（例如僅選用 150 mA 小 LDO），或電源軌上未配置足夠容量的儲能電容，暫態內阻壓降將使 3.3V 電壓軌瞬間被拉低至 2.7V 以下，觸發微控制器內部的欠壓保護電路（Brownout Reset, BOR）導致系統強制重置重啟。解決之道是並聯大容量儲能電容（Bulk Capacitor）以吸收瞬態脈衝負載，並選用電流裕度充足（$\\ge 800\text{ mA}$）的穩壓晶片。\n\n【選項辨析】\n- (A) 正確。加大電源供電餘裕並在電源端配置充足的儲能與去耦電容，能有效防止射頻發射瞬態壓降觸發 BOR。\n- (B) 錯誤。在 RESET 引腳串聯高阻電阻無法改善 3.3V 主電源軌的瞬態電壓驟降問題。\n- (C) 錯誤。更換高增益天線無助於改善射頻晶片在發射時所需的瞬間電氣功率消耗。\n- (D) 錯誤。關閉 Flash 快取僅會降低 CPU 執行效能，無法解決射頻硬體脈衝抽電引起的電壓跌落。",
+    "explanation": "【核心考點】物聯網射頻發射瞬間脈衝電流與電源軌欠壓重置（Brownout Reset, BOR）排除。\n\n【正確答案說明】(A) Wi-Fi 或蜂巢式射頻模組在發射無線電波訊號瞬間，會在數十微秒內抽取高達 300~500 mA 的峰值脈衝電流。若電源轉換器（LDO）最大輸出電流不足（例如僅選用 150 mA 小 LDO），或電源軌上未配置足夠容量的儲能電容，暫態內阻壓降將使 3.3V 電壓軌瞬間被拉低至 2.7V 以下，觸發微控制器內部的欠壓保護電路（Brownout Reset, BOR）導致系統強制重置重啟。解決之道是並聯大容量儲能電容（Bulk Capacitor）以吸收瞬態脈衝負載，並選用電流裕度充足（$\\ge 800\\text{ mA}$）的穩壓晶片。\n\n【選項辨析】\n- (A) 正確。加大電源供電餘裕並在電源端配置充足的儲能與去耦電容，能有效防止射頻發射瞬態壓降觸發 BOR。\n- (B) 錯誤。在 RESET 引腳串聯高阻電阻無法改善 3.3V 主電源軌的瞬態電壓驟降問題。\n- (C) 錯誤。更換高增益天線無助於改善射頻晶片在發射時所需的瞬間電氣功率消耗。\n- (D) 錯誤。關閉 Flash 快取僅會降低 CPU 執行效能，無法解決射頻硬體脈衝抽電引起的電壓跌落。",
     "source": "practice_supplement",
     "source_id": "aiot-a4038fd1f5b65934",
     "source_version": "official-guide-2026",
     "question_uid": "aiot-18340ebe6d3fd45414334695",
-    "content_hash": "abbc4b7cb9c69809ecaceb968a3c2ea6320e80bfb5be816fd194ffd882268577"
+    "content_hash": "f4a2be1e2de92a58bffb4b56ce380c8f439f97385ec6242467e3f4c3f8736d56"
   },
   {
     "id": 98,
@@ -2692,12 +2692,12 @@ window.ipasAiotQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "is_multiple": false,
-    "explanation": "【核心考點】類比前端（AFE）信號調節電路設計：電壓範圍匹配與過壓飽和故障排除。\n\n【正確答案說明】(D) 晶片引腳輸入電壓具有嚴格的電氣極限（通常為 $V_{DD} + 0.3\text{ V}$，本題為 3.6V）。當感測器輸出 5V 信號直接接入 3.3V ADC 引腳時：\n1. 當感測器電壓大於 3.3V 時，ADC 輸出碼必然飽和截波在最大值 4095，造成量測失真；\n2. 超過 3.6V 的過電壓會強行灌入晶片內部的 ESD 保護二極體，引起內部栓鎖（Latch-up）效應或過熱燒毀引腳結構。\n標準排除方案是在 ADC 輸入前端配置精密電阻分壓電路（例如使用 17k 與 33k 歐姆分壓）或運算放大器衰減電路，將 0~5V 線性等比例映射縮小為 0~3.3V。\n\n【選項辨析】\n- (A) 錯誤。採樣頻率高低影響頻寬與動態特性，無法解決輸入電壓超過物理量程上限造成的飽和問題。\n- (B) 錯誤。感測器輸出阻抗小有利於驅動 ADC 內部採樣電容，體積大小與信號電壓幅值無關。\n- (C) 錯誤。常溫室內測試之飽和故障與避雷針防護無關。\n- (D) 正確。輸入電壓超出 ADC 參考電壓與耐受電壓，配置電阻分壓或運放衰減是唯一標準解決方案。",
+    "explanation": "【核心考點】類比前端（AFE）信號調節電路設計：電壓範圍匹配與過壓飽和故障排除。\n\n【正確答案說明】(D) 晶片引腳輸入電壓具有嚴格的電氣極限（通常為 $V_{DD} + 0.3\\text{ V}$，本題為 3.6V）。當感測器輸出 5V 信號直接接入 3.3V ADC 引腳時：\n1. 當感測器電壓大於 3.3V 時，ADC 輸出碼必然飽和截波在最大值 4095，造成量測失真；\n2. 超過 3.6V 的過電壓會強行灌入晶片內部的 ESD 保護二極體，引起內部栓鎖（Latch-up）效應或過熱燒毀引腳結構。\n標準排除方案是在 ADC 輸入前端配置精密電阻分壓電路（例如使用 17k 與 33k 歐姆分壓）或運算放大器衰減電路，將 0~5V 線性等比例映射縮小為 0~3.3V。\n\n【選項辨析】\n- (A) 錯誤。採樣頻率高低影響頻寬與動態特性，無法解決輸入電壓超過物理量程上限造成的飽和問題。\n- (B) 錯誤。感測器輸出阻抗小有利於驅動 ADC 內部採樣電容，體積大小與信號電壓幅值無關。\n- (C) 錯誤。常溫室內測試之飽和故障與避雷針防護無關。\n- (D) 正確。輸入電壓超出 ADC 參考電壓與耐受電壓，配置電阻分壓或運放衰減是唯一標準解決方案。",
     "source": "practice_supplement",
     "source_id": "aiot-a4038fd1f5b65934",
     "source_version": "official-guide-2026",
     "question_uid": "aiot-6b66af71c591304fb0a20552",
-    "content_hash": "4283fea1b46c6ea1f22b27b65547e3686304e7e2df8e482064b7fd592b3fa6da"
+    "content_hash": "095ec7bf0c0ba772113e3129a2eb8d6d089b926446b150fd542710b2889deef0"
   },
   {
     "id": 101,
@@ -2989,12 +2989,12 @@ window.ipasAiotQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "is_multiple": false,
-    "explanation": "【核心考點】I2C 匯流排實體層電路設計：上拉電阻（Rp）計算邊界與 RC 充放電時間常數。\n\n【正確答案說明】(C) I2C 匯流排採用開漏極（Open-Drain）架構，高電位靠外部上拉電阻對匯流排雜散電容 $C_b$ 充電達成。\n1. 上拉電阻最大值 $R_{p(max)}$：受限於最大允許上升時間 $t_r$（400 kHz 下 $t_r \\le 300\text{ ns}$），公式為 $t_r \u0007pprox 0.8473 \times R_p \times C_b$。若 $R_p$ 過大，波形上升緩慢無法在時脈週期內達到邏輯門檻 $0.7 V_{DD}$；\n2. 上拉電阻最小值 $R_{p(min)}$：受限於驅動器最大灌電流 $I_{OL}$（通常為 3 mA）與低電位電平 $V_{OL} \\le 0.4\text{ V}$，公式為 $R_{p(min)} = (V_{DD} - V_{OL}) / I_{OL}$。若 $R_p$ 過小，灌電流過大導致發熱且低電位被抬高而無法識別為邏輯 0。\n\n【選項辨析】\n- (A) 錯誤。阻值愈大，充電時間常數 $\tau = R \times C$ 愈大，上升時間愈長、波形愈遲鈍。\n- (B) 錯誤。根據歐姆定律 $I = V / R$，阻值愈小，低電位時灌入晶片的靜態電流愈大，反而更耗電。\n- (C) 正確。上拉電阻需兼顧上升時間上限（防波形失真）與灌電流及低電平上限（防過載與邏輯錯誤）。\n- (D) 錯誤。I2C 為標準開漏極（Open-Drain）架構而非推挽式，上升時間完全取決於外部上拉電阻與電容乘積。",
+    "explanation": "【核心考點】I2C 匯流排實體層電路設計：上拉電阻（Rp）計算邊界與 RC 充放電時間常數。\n\n【正確答案說明】(C) I2C 匯流排採用開漏極（Open-Drain）架構，高電位靠外部上拉電阻對匯流排雜散電容 $C_b$ 充電達成。\n1. 上拉電阻最大值 $R_{p(max)}$：受限於最大允許上升時間 $t_r$（400 kHz 下 $t_r \\le 300\\text{ ns}$），公式為 $t_r \\approx 0.8473 \\times R_p \\times C_b$。若 $R_p$ 過大，波形上升緩慢無法在時脈週期內達到邏輯門檻 $0.7 V_{DD}$；\n2. 上拉電阻最小值 $R_{p(min)}$：受限於驅動器最大灌電流 $I_{OL}$（通常為 3 mA）與低電位電平 $V_{OL} \\le 0.4\\text{ V}$，公式為 $R_{p(min)} = (V_{DD} - V_{OL}) / I_{OL}$。若 $R_p$ 過小，灌電流過大導致發熱且低電位被抬高而無法識別為邏輯 0。\n\n【選項辨析】\n- (A) 錯誤。阻值愈大，充電時間常數 $\\tau = R \\times C$ 愈大，上升時間愈長、波形愈遲鈍。\n- (B) 錯誤。根據歐姆定律 $I = V / R$，阻值愈小，低電位時灌入晶片的靜態電流愈大，反而更耗電。\n- (C) 正確。上拉電阻需兼顧上升時間上限（防波形失真）與灌電流及低電平上限（防過載與邏輯錯誤）。\n- (D) 錯誤。I2C 為標準開漏極（Open-Drain）架構而非推挽式，上升時間完全取決於外部上拉電阻與電容乘積。",
     "source": "practice_supplement",
     "source_id": "aiot-ea6d45310e7b49c4",
     "source_version": "official-guide-2026",
     "question_uid": "aiot-ee4deeea96e137cee8d222fc",
-    "content_hash": "ad66c88f0f447f6b09c80983e49cee0ac1c7b8d671c6acd88051c113b914fba4"
+    "content_hash": "9e8c3706d18e8d6787228a9ed991c341b6c7b1c8221e7690463d64ee66660741"
   },
   {
     "id": 112,
@@ -3043,12 +3043,12 @@ window.ipasAiotQuestions = [
     "answer": "A",
     "ans_text": "標準答案：(A)",
     "is_multiple": false,
-    "explanation": "【核心考點】UART 訊框結構（Framing）、位元時間與通訊傳輸延遲計算。\n\n【正確答案說明】(A) 標準非同步 UART 在傳輸每個 Byte 時，硬體會自動打包訊框：\n1. 1 個起始位元（Start Bit，邏輯 0）；\n2. 8 個資料位元（Data Bits，LSB 先出）；\n3. 無同位位元（No Parity）；\n4. 1 個停止位元（Stop Bit，邏輯 1）。\n因此傳輸單一 Byte 實體線上必須傳送 $1 + 8 + 0 + 1 = 10\text{ 個位元}$。\n在鮑率 115200 bps 下，單一物理位元時間（Bit Time）為：\n$T_{bit} = \frac{1}{115200} \u0007pprox 8.68055 \times 10^{-6}\text{ 秒} \u0007pprox 8.68\text{ us}$。\n傳輸 10 個位元總耗時為 $10 \times 8.68055\text{ us} \u0007pprox 86.8\text{ us}$，故 (A) 選項正確。\n\n【選項辨析】\n- (A) 正確。8-N-1 訊框包含 10 個位元，於 115200 bps 下單字元傳輸耗時約 86.8 微秒。\n- (B) 錯誤。忽略了非同步通訊必須的起始位元與停止位元框架開銷。\n- (C) 錯誤。無同位檢查時訊框並非 16 位元，且計算數值嚴重偏差。\n- (D) 錯誤。將整個字元混淆為單一電平位元，數值有誤。",
+    "explanation": "【核心考點】UART 訊框結構（Framing）、位元時間與通訊傳輸延遲計算。\n\n【正確答案說明】(A) 標準非同步 UART 在傳輸每個 Byte 時，硬體會自動打包訊框：\n1. 1 個起始位元（Start Bit，邏輯 0）；\n2. 8 個資料位元（Data Bits，LSB 先出）；\n3. 無同位位元（No Parity）；\n4. 1 個停止位元（Stop Bit，邏輯 1）。\n因此傳輸單一 Byte 實體線上必須傳送 $1 + 8 + 0 + 1 = 10\\text{ 個位元}$。\n在鮑率 115200 bps 下，單一物理位元時間（Bit Time）為：\n$T_{bit} = \\frac{1}{115200} \\approx 8.68055 \\times 10^{-6}\\text{ 秒} \\approx 8.68\\text{ us}$。\n傳輸 10 個位元總耗時為 $10 \\times 8.68055\\text{ us} \\approx 86.8\\text{ us}$，故 (A) 選項正確。\n\n【選項辨析】\n- (A) 正確。8-N-1 訊框包含 10 個位元，於 115200 bps 下單字元傳輸耗時約 86.8 微秒。\n- (B) 錯誤。忽略了非同步通訊必須的起始位元與停止位元框架開銷。\n- (C) 錯誤。無同位檢查時訊框並非 16 位元，且計算數值嚴重偏差。\n- (D) 錯誤。將整個字元混淆為單一電平位元，數值有誤。",
     "source": "practice_supplement",
     "source_id": "aiot-ea6d45310e7b49c4",
     "source_version": "official-guide-2026",
     "question_uid": "aiot-1cbbb89d09df7a26e48f7cfb",
-    "content_hash": "93f5bda367881eefe2849e02233fc1a5faa0856c2f473563ae62214b11206201"
+    "content_hash": "2c646d9b31ae71a5593555a01866ab46dadd0e10ff71e66e2cab51d37a770f69"
   },
   {
     "id": 114,
@@ -3097,12 +3097,12 @@ window.ipasAiotQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "is_multiple": false,
-    "explanation": "【核心考點】工業類比訊號傳輸標準：4-20 mA 電流迴路（Current Loop）優勢與「活動零點（Live Zero）」。\n\n【正確答案說明】(C) 工業現場導線常長達數百公尺，導線本身存在不可忽視的線阻 $R_{line}$。若採用電壓傳輸（如 0~10V），線路電阻產生的壓降 $I \times R_{line}$ 會使接收端電壓產生嚴重誤差。電流源輸出時，迴路中電流處處相等，完全不受導線電阻與接觸電阻影響。更關鍵的是，4-20 mA 設計採用「活動零點（Live Zero）」——4 mA 代表測量下限（0%），20 mA 代表測量上限（100%）。若儀表測得電流為 0 mA，系統即可 100% 斷定是「現場線路斷線、鬆脫或儀表斷電故障」，具備自我診斷安全防護能力。\n\n【選項辨析】\n- (A) 錯誤。導線中電氣訊號傳播速度受介電質限制，不可能超過光速。\n- (B) 錯誤。4-20 mA 迴路必須由外接 24V DC 工業電源供應能量，不可能無需供電運作。\n- (C) 正確。不受長導線電阻壓降影響，且 4 mA 活動零點特性使斷線故障（0 mA）能被立即偵測辨識。\n- (D) 錯誤。4-20 mA 為典型雙線制或四線制有線實體迴路，非無線電波。",
+    "explanation": "【核心考點】工業類比訊號傳輸標準：4-20 mA 電流迴路（Current Loop）優勢與「活動零點（Live Zero）」。\n\n【正確答案說明】(C) 工業現場導線常長達數百公尺，導線本身存在不可忽視的線阻 $R_{line}$。若採用電壓傳輸（如 0~10V），線路電阻產生的壓降 $I \\times R_{line}$ 會使接收端電壓產生嚴重誤差。電流源輸出時，迴路中電流處處相等，完全不受導線電阻與接觸電阻影響。更關鍵的是，4-20 mA 設計採用「活動零點（Live Zero）」——4 mA 代表測量下限（0%），20 mA 代表測量上限（100%）。若儀表測得電流為 0 mA，系統即可 100% 斷定是「現場線路斷線、鬆脫或儀表斷電故障」，具備自我診斷安全防護能力。\n\n【選項辨析】\n- (A) 錯誤。導線中電氣訊號傳播速度受介電質限制，不可能超過光速。\n- (B) 錯誤。4-20 mA 迴路必須由外接 24V DC 工業電源供應能量，不可能無需供電運作。\n- (C) 正確。不受長導線電阻壓降影響，且 4 mA 活動零點特性使斷線故障（0 mA）能被立即偵測辨識。\n- (D) 錯誤。4-20 mA 為典型雙線制或四線制有線實體迴路，非無線電波。",
     "source": "practice_supplement",
     "source_id": "aiot-ea6d45310e7b49c4",
     "source_version": "official-guide-2026",
     "question_uid": "aiot-bc8cf39d1106c2531db34574",
-    "content_hash": "e367abb07be412131fb9aad9e7ed064309cec4148f192138cc7f30d7d27ac10c"
+    "content_hash": "d6da109edc1a840da6383d4348120ccd9eb0baf5acae92145bea1a9c35866a9b"
   },
   {
     "id": 116,
@@ -3178,12 +3178,12 @@ window.ipasAiotQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "is_multiple": false,
-    "explanation": "【核心考點】電源轉換效率計算、LDO 線性耗散熱分析與 DC-DC Buck 降壓晶片選型。\n\n【正確答案說明】(B) 線性穩壓器（LDO）是透過內部傳遞電晶體的線性電阻壓降進行穩壓，其壓差與電流全部轉換為純熱能耗散：\n1. LDO 自身耗散功率：$P_{loss} = (V_{in} - V_{out}) \times I_{load} = (12\text{ V} - 3.3\text{ V}) \times 0.5\text{ A} = 8.7\text{ V} \times 0.5\text{ A} = 4.35\text{ W}$；\n2. 效率：$\\eta \\approx V_{out} / V_{in} = 3.3 / 12 \\approx 27.5\\%$。\n在密閉物聯網外殼中，超過 4W 的熱量會使小型 LDO 晶片表面溫度瞬間突破 100°C 觸發熱關斷甚至燒毀。因此在大壓差、大電流應用中，必須採用基於電感儲能與高頻 PWM 開關原理的降壓轉換器（DC-DC Buck Converter），其轉換效率通常高達 90%~95%，自身熱耗僅約 0.1~0.2W，能徹底解決過熱與能源浪費問題。\n\n【選項辨析】\n- (A) 錯誤。計算嚴重失真，忽略了 $(12 - 3.3) \times 0.5 = 4.35\text{ W}$ 的巨大線性發熱。\n- (B) 正確。精準計算出 4.35W 嚴重熱耗與 27.5% 低效率，改用高效率 DC-DC Buck 是唯一工程正解。\n- (C) 錯誤。熱敏電阻阻值隨溫度劇烈漂移且無法提供負載穩壓，絕不可用於晶片供電穩壓。\n- (D) 錯誤。220V 交流電無法直接驅動 3.3V 數位晶片，且馬達是動力執行器非電源轉換器。",
+    "explanation": "【核心考點】電源轉換效率計算、LDO 線性耗散熱分析與 DC-DC Buck 降壓晶片選型。\n\n【正確答案說明】(B) 線性穩壓器（LDO）是透過內部傳遞電晶體的線性電阻壓降進行穩壓，其壓差與電流全部轉換為純熱能耗散：\n1. LDO 自身耗散功率：$P_{loss} = (V_{in} - V_{out}) \\times I_{load} = (12\\text{ V} - 3.3\\text{ V}) \\times 0.5\\text{ A} = 8.7\\text{ V} \\times 0.5\\text{ A} = 4.35\\text{ W}$；\n2. 效率：$\\eta \\approx V_{out} / V_{in} = 3.3 / 12 \\approx 27.5\\%$。\n在密閉物聯網外殼中，超過 4W 的熱量會使小型 LDO 晶片表面溫度瞬間突破 100°C 觸發熱關斷甚至燒毀。因此在大壓差、大電流應用中，必須採用基於電感儲能與高頻 PWM 開關原理的降壓轉換器（DC-DC Buck Converter），其轉換效率通常高達 90%~95%，自身熱耗僅約 0.1~0.2W，能徹底解決過熱與能源浪費問題。\n\n【選項辨析】\n- (A) 錯誤。計算嚴重失真，忽略了 $(12 - 3.3) \\times 0.5 = 4.35\\text{ W}$ 的巨大線性發熱。\n- (B) 正確。精準計算出 4.35W 嚴重熱耗與 27.5% 低效率，改用高效率 DC-DC Buck 是唯一工程正解。\n- (C) 錯誤。熱敏電阻阻值隨溫度劇烈漂移且無法提供負載穩壓，絕不可用於晶片供電穩壓。\n- (D) 錯誤。220V 交流電無法直接驅動 3.3V 數位晶片，且馬達是動力執行器非電源轉換器。",
     "source": "practice_supplement",
     "source_id": "aiot-ea6d45310e7b49c4",
     "source_version": "official-guide-2026",
     "question_uid": "aiot-0ce2a8efebb7545b280dacd2",
-    "content_hash": "8b3b052c6b01ac72cb0c26696b7d8495b2527940adb89a2e7a9e3bfb7afb0ec0"
+    "content_hash": "1e4aee0ac986aea20735f5ae8f5616a41eb01c9c6720c475bfa7ea5e3710a5b6"
   },
   {
     "id": 119,
@@ -3529,12 +3529,12 @@ window.ipasAiotQuestions = [
     "answer": "C",
     "ans_text": "標準答案：(C)",
     "is_multiple": false,
-    "explanation": "【核心考點】智慧製造設備綜合效率（OEE）三要素計算：稼動率（可用率）、性能率與良率。\n\n【正確答案說明】(C) OEE（Overall Equipment Effectiveness）是評估設備生產效能的國際標準指標，計算公式為：\n$\text{OEE} = \text{時間稼動率 (Availability)} \times \text{性能率 (Performance)} \times \text{良率 (Quality)}$\n1. 時間稼動率（Availability）：\n   $\text{稼動率} = \frac{\text{實際運轉時間}}{\text{計畫運作時間}} = \frac{420\text{ 分鐘}}{480\text{ 分鐘}} = 0.875\\ (87.5\\%)$\n2. 性能率（Performance）：\n   $\text{性能率} = \frac{\text{標準節拍時間} \times \text{總產量}}{\text{實際運轉時間}} = \frac{0.5\text{ 分鐘/件} \times 800\text{ 件}}{420\text{ 分鐘}} = \frac{400}{420} \u0007pprox 0.95238\\ (95.24\\%)$\n3. 良率（Quality）：\n   $\text{良率} = \frac{\text{合格良品數}}{\text{總生產數量}} = \frac{760\text{ 件}}{800\text{ 件}} = 0.950\\ (95.0\\%)$\n4. 綜合 OEE：\n   $\text{OEE} = 0.875 \times 0.95238 \times 0.950 \u0007pprox 0.79165 \u0007pprox 79.17\\%$（約 79.1%），故 (C) 選項正確。\n\n【選項辨析】\n- (A) 錯誤。95.0% 僅為良率（Quality），未將停機損失與降速損失乘算納入。\n- (B) 錯誤。87.5% 僅為時間稼動率（Availability），未包含性能損失與不良品損失。\n- (C) 正確。$87.5\\% \\times 95.24\\% \\times 95.0\\% \\approx 79.1\\%$，精確反映 OEE 三要素綜合乘積。\n- (D) 錯誤。計算公式引用錯誤，數值過低不符合本題實際產出狀況。",
+    "explanation": "【核心考點】智慧製造設備綜合效率（OEE）三要素計算：稼動率（可用率）、性能率與良率。\n\n【正確答案說明】(C) OEE（Overall Equipment Effectiveness）是評估設備生產效能的國際標準指標，計算公式為：\n$\\text{OEE} = \\text{時間稼動率 (Availability)} \\times \\text{性能率 (Performance)} \\times \\text{良率 (Quality)}$\n1. 時間稼動率（Availability）：\n   $\\text{稼動率} = \\frac{\\text{實際運轉時間}}{\\text{計畫運作時間}} = \\frac{420\\text{ 分鐘}}{480\\text{ 分鐘}} = 0.875\\ (87.5\\%)$\n2. 性能率（Performance）：\n   $\\text{性能率} = \\frac{\\text{標準節拍時間} \\times \\text{總產量}}{\\text{實際運轉時間}} = \\frac{0.5\\text{ 分鐘/件} \\times 800\\text{ 件}}{420\\text{ 分鐘}} = \\frac{400}{420} \\approx 0.95238\\ (95.24\\%)$\n3. 良率（Quality）：\n   $\\text{良率} = \\frac{\\text{合格良品數}}{\\text{總生產數量}} = \\frac{760\\text{ 件}}{800\\text{ 件}} = 0.950\\ (95.0\\%)$\n4. 綜合 OEE：\n   $\\text{OEE} = 0.875 \\times 0.95238 \\times 0.950 \\approx 0.79165 \\approx 79.17\\%$（約 79.1%），故 (C) 選項正確。\n\n【選項辨析】\n- (A) 錯誤。95.0% 僅為良率（Quality），未將停機損失與降速損失乘算納入。\n- (B) 錯誤。87.5% 僅為時間稼動率（Availability），未包含性能損失與不良品損失。\n- (C) 正確。$87.5\\% \\times 95.24\\% \\times 95.0\\% \\approx 79.1\\%$，精確反映 OEE 三要素綜合乘積。\n- (D) 錯誤。計算公式引用錯誤，數值過低不符合本題實際產出狀況。",
     "source": "practice_supplement",
     "source_id": "aiot-44188c82de347877",
     "source_version": "official-guide-2026",
     "question_uid": "aiot-93ee16ed5413dbcff8435d30",
-    "content_hash": "18ac44174109cd297ebc53f6a385522267130a1d611c900b5f1bc961c175100c"
+    "content_hash": "9251a9b63812eb198e97b3432ad57805d32f48dda02b2bb2270daf13b5a523c8"
   },
   {
     "id": 132,
@@ -3610,12 +3610,12 @@ window.ipasAiotQuestions = [
     "answer": "B",
     "ans_text": "標準答案：(B)",
     "is_multiple": false,
-    "explanation": "【核心考點】邊緣運算 vs 雲端運算總擁有成本（TCO）架構分析：頻寬節省與邊緣推論效益。\n\n【正確答案說明】(B) 100 台相機若全天候直傳雲端：\n總頻寬需求 $= 100 \times 4\text{ Mbps} = 400\text{ Mbps}$ 專線頻寬，每月傳輸資料量高達約 $130\text{ TB}$，雲端入口頻寬、儲存與 API 呼叫費用極其高昂。改採 Edge AI 架構，99% 以上的正常良品影像在邊緣記憶體推論完畢後即刻丟棄，僅將佔比極少的不良品特徵（10 KB）上傳雲端品管資料庫，使雲端上傳資料量從數百 TB 驟降至數百 MB（降幅超過 99%），徹底節省專線費用並消除了雲端往返延遲對產線高速飛拍剔除機構的干擾。\n\n【選項辨析】\n- (A) 錯誤。邊緣過濾後僅上傳微量元數據，頻寬需求暴跌而非增加 10 倍。\n- (B) 正確。大幅削減 90% 以上的雲端傳輸與儲存資費，並消除網路抖動延遲，為邊緣運算最顯著之商業效益。\n- (C) 錯誤。邊緣運算就地推論需要投資採購配備 GPU/NPU 的工業邊緣工控機硬體。\n- (D) 錯誤。運算架構改變無法改變實體光學鏡頭與 CMOS 感光元件的物理物理像素解析度。",
+    "explanation": "【核心考點】邊緣運算 vs 雲端運算總擁有成本（TCO）架構分析：頻寬節省與邊緣推論效益。\n\n【正確答案說明】(B) 100 台相機若全天候直傳雲端：\n總頻寬需求 $= 100 \\times 4\\text{ Mbps} = 400\\text{ Mbps}$ 專線頻寬，每月傳輸資料量高達約 $130\\text{ TB}$，雲端入口頻寬、儲存與 API 呼叫費用極其高昂。改採 Edge AI 架構，99% 以上的正常良品影像在邊緣記憶體推論完畢後即刻丟棄，僅將佔比極少的不良品特徵（10 KB）上傳雲端品管資料庫，使雲端上傳資料量從數百 TB 驟降至數百 MB（降幅超過 99%），徹底節省專線費用並消除了雲端往返延遲對產線高速飛拍剔除機構的干擾。\n\n【選項辨析】\n- (A) 錯誤。邊緣過濾後僅上傳微量元數據，頻寬需求暴跌而非增加 10 倍。\n- (B) 正確。大幅削減 90% 以上的雲端傳輸與儲存資費，並消除網路抖動延遲，為邊緣運算最顯著之商業效益。\n- (C) 錯誤。邊緣運算就地推論需要投資採購配備 GPU/NPU 的工業邊緣工控機硬體。\n- (D) 錯誤。運算架構改變無法改變實體光學鏡頭與 CMOS 感光元件的物理物理像素解析度。",
     "source": "practice_supplement",
     "source_id": "aiot-44188c82de347877",
     "source_version": "official-guide-2026",
     "question_uid": "aiot-24c0258aa9d8d8263f124637",
-    "content_hash": "e35c5549d8ffb7f2652fc1be73febfd48f2e25e43a8ba2e3e75c3bbd29d3e657"
+    "content_hash": "ee40d65ddcb357ecdee496a4219d000d754c870ec160473544290d9fc628d37d"
   },
   {
     "id": 135,
@@ -3772,11 +3772,11 @@ window.ipasAiotQuestions = [
     "answer": "D",
     "ans_text": "標準答案：(D)",
     "is_multiple": false,
-    "explanation": "【核心考點】智慧工廠 AIoT 數位轉型投資回報率（ROI）與回收期（Payback Period）財務分析。\n\n【正確答案說明】(D) 企業進行智慧製造轉型決策必須進行量化財務效益評估：\n1. 專案年度效益（年節省損失）：原本年損失 500 萬，降至 100 萬，年節省成本 $= 500 - 100 = 400\text{ 萬元}$；\n2. 年度維運成本：每年需支付軟體授權與維護費 $= 50\text{ 萬元}$；\n3. 第一年淨收益（扣除經常性維運費用後之年淨節省額）：\n   $\text{年度淨節省} = 400\text{ 萬元} - 50\text{ 萬元} = 350\text{ 萬元}$；\n4. 初期一次性資本投資（CAPEX）：$= 200\text{ 萬元}$；\n5. 投資回收期（Payback Period）：\n   $\text{回收期} = \frac{\text{初期資本投資}}{\text{年度淨現金流入}} = \frac{200\text{ 萬元}}{350\text{ 萬元/年}} \u0007pprox 0.5714\text{ 年} \u0007pprox 6.86\text{ 個月}$（約 7 個月）。\n故第一年淨收益高達 350 萬元，且僅需約 7 個月即可全額回收初始 200 萬元的硬體建置成本，具備極高投資價值。\n\n【選項辨析】\n- (A) 錯誤。忽視了高達 400 萬元的停機損失削減收益，收益計算嚴重失真。\n- (B) 錯誤。將殘留損失 100 萬元混淆為淨收益，計算邏輯錯誤。\n- (C) 錯誤。未扣除年度 50 萬維護費，且未正確計算 400 萬節省額與投資回收速度。\n- (D) 正確。年淨收益 350 萬元，投資回收期約 0.57 年（約 7 個月），精準體現專案投資效益。",
+    "explanation": "【核心考點】智慧工廠 AIoT 數位轉型投資回報率（ROI）與回收期（Payback Period）財務分析。\n\n【正確答案說明】(D) 企業進行智慧製造轉型決策必須進行量化財務效益評估：\n1. 專案年度效益（年節省損失）：原本年損失 500 萬，降至 100 萬，年節省成本 $= 500 - 100 = 400\\text{ 萬元}$；\n2. 年度維運成本：每年需支付軟體授權與維護費 $= 50\\text{ 萬元}$；\n3. 第一年淨收益（扣除經常性維運費用後之年淨節省額）：\n   $\\text{年度淨節省} = 400\\text{ 萬元} - 50\\text{ 萬元} = 350\\text{ 萬元}$；\n4. 初期一次性資本投資（CAPEX）：$= 200\\text{ 萬元}$；\n5. 投資回收期（Payback Period）：\n   $\\text{回收期} = \\frac{\\text{初期資本投資}}{\\text{年度淨現金流入}} = \\frac{200\\text{ 萬元}}{350\\text{ 萬元/年}} \\approx 0.5714\\text{ 年} \\approx 6.86\\text{ 個月}$（約 7 個月）。\n故第一年淨收益高達 350 萬元，且僅需約 7 個月即可全額回收初始 200 萬元的硬體建置成本，具備極高投資價值。\n\n【選項辨析】\n- (A) 錯誤。忽視了高達 400 萬元的停機損失削減收益，收益計算嚴重失真。\n- (B) 錯誤。將殘留損失 100 萬元混淆為淨收益，計算邏輯錯誤。\n- (C) 錯誤。未扣除年度 50 萬維護費，且未正確計算 400 萬節省額與投資回收速度。\n- (D) 正確。年淨收益 350 萬元，投資回收期約 0.57 年（約 7 個月），精準體現專案投資效益。",
     "source": "practice_supplement",
     "source_id": "aiot-44188c82de347877",
     "source_version": "official-guide-2026",
     "question_uid": "aiot-f3eca1dc78face17859ad0af",
-    "content_hash": "ef149f22b6ee453ce22b59484299af6c177893f40d43fa89427a52c51996f819"
+    "content_hash": "2fe8685d93043a174150679afbf4da049545902957e4c86c70f32b11d0d6c538"
   }
 ];
