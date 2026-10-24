@@ -800,11 +800,19 @@ function setupEventListeners() {
     }
 
     // IRT Dashboard navigation
-    document.getElementById('btnShowIrt')?.addEventListener('click', showIrtDashboard);
+    let irtReturnScreen = welcomeScreen;
+    document.getElementById('btnShowIrt')?.addEventListener('click', () => {
+        irtReturnScreen = welcomeScreen;
+        showIrtDashboard(welcomeScreen);
+    });
+    document.getElementById('btnResultsShowIrt')?.addEventListener('click', () => {
+        irtReturnScreen = resultsScreen;
+        showIrtDashboard(resultsScreen);
+    });
     document.getElementById('btnBackFromIrt')?.addEventListener('click', () => {
         const irtScreen = document.getElementById('irtScreen');
-        const welcomeScreen = document.getElementById('welcomeScreen');
-        if (irtScreen && welcomeScreen) transitionScreen(irtScreen, welcomeScreen);
+        const targetScreen = irtReturnScreen || welcomeScreen;
+        if (irtScreen && targetScreen) transitionScreen(irtScreen, targetScreen);
     });
 
     // IRT sort buttons
@@ -1606,11 +1614,15 @@ function gradeQuiz() {
     lblCorrectCount.textContent = `${result.correctCount} / ${result.total} 題`;
     lblAnswerRate.textContent = `${result.answerRate}%`;
 
-    // Build breakdown bars
-    buildBreakdownHTML(result.subjectStats);
+    try {
+        // Build breakdown bars
+        buildBreakdownHTML(result.subjectStats);
 
-    // Render the final review accordion list
-    renderReviewList();
+        // Render the final review accordion list
+        renderReviewList();
+    } catch (renderError) {
+        console.error('Error rendering review details:', renderError);
+    }
 
     // Show Screen
     transitionScreen(quizScreen, resultsScreen);
@@ -2946,10 +2958,9 @@ function buildQuestionPerformanceRows(qStats, wrongPool, questions) {
     });
 }
 
-function showIrtDashboard() {
+function showIrtDashboard(fromScreen = welcomeScreen) {
     const irtScreen = document.getElementById('irtScreen');
-    const welcomeScreen = document.getElementById('welcomeScreen');
-    if (irtScreen && welcomeScreen) transitionScreen(welcomeScreen, irtScreen);
+    if (irtScreen && fromScreen) transitionScreen(fromScreen, irtScreen);
     renderIrtDashboard();
 }
 
