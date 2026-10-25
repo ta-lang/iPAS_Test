@@ -2,6 +2,22 @@
 
 本工作日誌記錄了 **IPAS 營運智慧分析師**、**AI應用規劃師** 及其他證照專案的學習講義製作、題庫自動化解析、雲端同步排程設定與雙證照模擬考試系統的開發歷程與里程碑。
 
+### 📌 2026-10-25 —— 中級 AI 應用規劃師 科目二（大數據處理分析與應用）Python 考點實戰與高頻代碼精華強化
+
+* **【盤點官方教材與歷屆真題 Python 分佈】**：
+  * 全面檢視官方學習指引（182 頁）與歷屆公告試題（114年第二次、115年第一次、考猜）：
+    * 確認科目二考題中確實包含約 10~15 題（佔比 20%~30%）直接涉及 Python、Pandas、Numpy、Scipy、Scikit-learn、Seaborn 與 Spark 分散式運算之情境代碼題。
+    * 確認目前 xam/ai_mid_questions.json 題庫已完整收錄該考科全部 196 題（含 21 題 Python / 代碼與報表題組），試題無缺漏。
+* **【強化大數據科目筆記（增補 Python 高頻實戰程式碼與常考陷阱）】**：
+  * **L221_機率統計基礎.md**：增補 Pandas/Numpy 敘述統計運算（describe、IQR 四分位距與離群值過濾）以及 Scipy 統計分佈代碼（poisson.pmf / cdf、
+orm.cdf 累積經驗區間計算）。
+  * **L222_大數據處理技術.md**：增補 50GB 大型資料防止 OOM 的 chunksize 串流分批讀取、Pandas 缺失值 NaN 向上轉型 loat64 陷阱與 Int64 解決方案、Python 函式預設可變參數（	ags=[]）閉包共享錯誤陷阱、以及 PySpark 分散式 DataFrame.agg() vs 避免 collect() 造成 Driver OOM 的架構考點。
+  * **L223_大數據分析方法與工具.md**：增補 Pandas 數據分組與排行高頻語法（groupby / sort_values / head(3)）、Scikit-learn 羅吉斯迴歸訓練與 classification_report（Precision/Recall/F1/Support/Macro/Weighted avg）報表結構判讀、Statsmodels OLS 多元線性迴歸摘要判讀（^2$、P-value 顯著性檢定）、以及 Seaborn（sns.barplot、sns.scatterplot、sns.heatmap 相關係數熱力圖）繪圖常考語法。
+* **【全回歸測試驗證】**：
+  * 執行 
+ode --test tests/*.test.js 46/46 全數通過。
+  * 執行 python -m unittest tests.test_question_identity 4/4 全數通過。
+
 ### 📌 2026-10-24 —— 模考結束審題儀表板直達導引與渲染保護修復
 
 * **【測驗結果頁新增審題儀表板直達入口】**：
