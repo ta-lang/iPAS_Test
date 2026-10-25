@@ -1095,6 +1095,32 @@ async function loadNoteFile(filePath, title, activeBtn) {
             block.classList.add('code-block');
         });
         if (typeof mermaid !== 'undefined') {
+            const isDark = document.documentElement.getAttribute('data-theme') !== 'light';
+            mermaid.initialize({
+                startOnLoad: false,
+                theme: isDark ? 'dark' : 'default',
+                themeVariables: isDark ? {
+                    darkMode: true,
+                    background: 'transparent',
+                    mainBkg: '#161b22',
+                    nodeBorder: '#58a6ff',
+                    textColor: '#ffffff',
+                    lineColor: '#8b949e',
+                    primaryColor: '#161b22',
+                    primaryTextColor: '#ffffff',
+                    primaryBorderColor: '#58a6ff'
+                } : {
+                    darkMode: false,
+                    background: 'transparent',
+                    mainBkg: '#ffffff',
+                    nodeBorder: '#0969da',
+                    textColor: '#1f2328',
+                    lineColor: '#57606a',
+                    primaryColor: '#ffffff',
+                    primaryTextColor: '#1f2328',
+                    primaryBorderColor: '#0969da'
+                }
+            });
             mermaid.run({ nodes: noteContentBody.querySelectorAll('.language-mermaid') });
         }
         renderMathInContainer(noteContentBody);

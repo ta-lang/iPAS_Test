@@ -1839,3 +1839,77 @@ body {
 }
 
 
+
+
+/* Mermaid Diagram Theme Harmonization & High Contrast */
+.mermaid {
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    margin: 20px 0;
+    overflow-x: auto;
+}
+
+/* Dark Mode: High Contrast Text & Vibrant Borders */
+[data-theme="dark"] .mermaid .node rect,
+[data-theme="dark"] .mermaid .node circle,
+[data-theme="dark"] .mermaid .node polygon,
+[data-theme="dark"] .mermaid .node path {
+    fill: #161b22 !important;
+    stroke: #58a6ff !important;
+    stroke-width: 1.8px !important;
+}
+
+[data-theme="dark"] .mermaid .node .label,
+[data-theme="dark"] .mermaid .node foreignObject,
+[data-theme="dark"] .mermaid .node text,
+[data-theme="dark"] .mermaid .label text,
+[data-theme="dark"] .mermaid text {
+    fill: #ffffff !important;
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+}
+
+[data-theme="dark"] .mermaid .edgePath .path {
+    stroke: #8b949e !important;
+    stroke-width: 1.8px !important;
+}
+
+[data-theme="dark"] .mermaid .edgeLabel {
+    background-color: #0d1117 !important;
+    color: #e6edf3 !important;
+    fill: #e6edf3 !important;
+}
+
+/* Light Mode: Clear Text & High Contrast Borders */
+[data-theme="light"] .mermaid .node rect,
+[data-theme="light"] .mermaid .node circle,
+[data-theme="light"] .mermaid .node polygon,
+[data-theme="light"] .mermaid .node path {
+    fill: #ffffff !important;
+    stroke: #0969da !important;
+    stroke-width: 1.8px !important;
+}
+
+[data-theme="light"] .mermaid .node .label,
+[data-theme="light"] .mermaid .node foreignObject,
+[data-theme="light"] .mermaid .node text,
+[data-theme="light"] .mermaid .label text,
+[data-theme="light"] .mermaid text {
+    fill: #1f2328 !important;
+    color: #1f2328 !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+}
+
+[data-theme="light"] .mermaid .edgePath .path {
+    stroke: #57606a !important;
+    stroke-width: 1.8px !important;
+}
+
+[data-theme="light"] .mermaid .edgeLabel {
+    background-color: #f6f8fa !important;
+    color: #1f2328 !important;
+    fill: #1f2328 !important;
+}

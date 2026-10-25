@@ -37,16 +37,6 @@ flowchart LR
     A2 <.->|"對應映射"| B2
     A1 <.->|"對應映射"| B1
 
-    style S1 fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#fff
-    style S2 fill:#0f172a,stroke:#10b981,stroke-width:2px,color:#fff
-    style A1 fill:#1e3a8a,stroke:#60a5fa,color:#fff
-    style A2 fill:#065f46,stroke:#34d399,color:#fff
-    style A3 fill:#78350f,stroke:#fbbf24,color:#fff
-    style B1 fill:#1e3a8a,stroke:#60a5fa,color:#fff
-    style B2 fill:#065f46,stroke:#34d399,color:#fff
-    style B3 fill:#581c87,stroke:#c084fc,color:#fff
-    style B4 fill:#78350f,stroke:#fbbf24,color:#fff
-    style B5 fill:#831843,stroke:#f472b6,color:#fff
 ```
 
 * **感知層 (Perception Layer)**：物聯網的「五官與神經末梢」，負責採集物理世界訊號（溫濕度、電流、壓力、聲學）或識別物體標籤（RFID/條碼），並將類比量轉換為微控制器可處理之數位資料。
@@ -73,13 +63,6 @@ flowchart TB
 
     C <--> WAN <--> F <--> LAN <--> E <--> BUS <--> DEV
 
-    style C fill:#1e3a8a,stroke:#60a5fa,stroke-width:2px,color:#fff
-    style F fill:#312e81,stroke:#818cf8,stroke-width:2px,color:#fff
-    style E fill:#065f46,stroke:#34d399,stroke-width:2px,color:#fff
-    style DEV fill:#1f2937,stroke:#9ca3af,stroke-width:2px,color:#fff
-    style WAN fill:#111827,stroke:#4b5563,stroke-dasharray: 5 5,color:#cbd5e1
-    style LAN fill:#111827,stroke:#4b5563,stroke-dasharray: 5 5,color:#cbd5e1
-    style BUS fill:#111827,stroke:#4b5563,stroke-dasharray: 5 5,color:#cbd5e1
 ```
 
 | 運算層次 | 實體硬體形態 | 網路延遲 (Latency) | 頻寬負載與成本 | 核心運算任務與職責 | 典型 AIoT 實例 |
@@ -120,12 +103,6 @@ flowchart LR
     UNLIC --> LORA["LoRa / LoRaWAN<br>• CSS 展頻調變技術<br>• 企業可自建私網 (Private Network)<br>• 零電信資費 / 大面積智慧農業與工業廠區"]
     UNLIC --> SIG["Sigfox<br>• 超窄頻技術 (UNB, 100Hz)<br>• 全球單一營運商託管 / 極限低功耗<br>• 每日限 140 則訊息 (每則 12 Bytes)"]
 
-    style ROOT fill:#1f2937,stroke:#9ca3af,stroke-width:2px,color:#fff
-    style LIC fill:#1e3a8a,stroke:#3b82f6,stroke-width:2px,color:#fff
-    style UNLIC fill:#065f46,stroke:#10b981,stroke-width:2px,color:#fff
-    style NBIOT fill:#172554,stroke:#60a5fa,stroke-width:2px,color:#fff
-    style LORA fill:#064e3b,stroke:#34d399,stroke-width:2px,color:#fff
-    style SIG fill:#78350f,stroke:#fbbf24,stroke-width:2px,color:#fff
 ```
 
 | 評鑑維度 | NB-IoT (Narrowband IoT) | LoRa / LoRaWAN | Sigfox |
@@ -273,9 +250,6 @@ flowchart LR
     P1 -.->|"邊緣資料清洗轉發"| P2
     P1 -.->|"加密上傳"| P3
 
-    style P1 fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#fff
-    style P2 fill:#1e293b,stroke:#10b981,stroke-width:2px,color:#fff
-    style P3 fill:#1e293b,stroke:#8b5cf6,stroke-width:2px,color:#fff
 ```
 
 | 平台工具 | 架構定位與特色 | 核心優勢 | 適用情境 |
@@ -308,9 +282,6 @@ flowchart LR
 
     T1 --> T2 --> T3
 
-    style T1 fill:#3f1414,stroke:#ef4444,stroke-width:2px,color:#fff
-    style T2 fill:#3b1d07,stroke:#f97316,stroke-width:2px,color:#fff
-    style T3 fill:#312e81,stroke:#8b5cf6,stroke-width:2px,color:#fff
 ```
 
 * **縱深防禦實踐**：不得依賴單一防線，必須在**晶片硬體、通訊鏈路、作業系統、雲端應用**建立層層防護。
