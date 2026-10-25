@@ -1,8 +1,0 @@
-__pycache__/
-.venv/
-.temp/
-sync.log
-*.mp4
-*.pptx
-*.xlsx
-*.docx
