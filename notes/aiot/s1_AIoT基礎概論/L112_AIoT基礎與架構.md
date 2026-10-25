@@ -12,19 +12,41 @@
 
 物聯網（IoT）將物理實體世界數位化並連接至數位網路。依據系統抽象層次，最常見的標準劃分為**三層架構**與**五層架構**：
 
-```
-[三層架構]              [五層架構]                    [主要功能與硬體/技術實作]
-┌─────────┐            ┌─────────┐
-│ 應用層   │ <--------> │ 商業層   │ Business        跨產業營運決策、商業模式、ROI 投資回報評估
-│         │            ├─────────┤
-│         │ <--------> │ 應用層   │ Application     智慧工廠 MES、智慧農業儀表板、智慧醫療大屏
-├─────────┤            ├─────────┤
-│         │ <--------> │ 處理層   │ Processing/     中介軟體 (Middleware)、資料庫、規則引擎、邊緣/雲端 AI
-│ 網路層   │            ├─────────┤ Middleware
-│         │ <--------> │ 傳輸層   │ Transport       5G、4G LTE、Wi-Fi、LoRaWAN、NB-IoT、乙太網
-├─────────┤            ├─────────┤
-│ 感知層   │ <--------> │ 感知層   │ Perception      感測器 (溫度/振動/壓力)、RFID、條碼、致動器 (Actuator)
-└─────────┘            └─────────┘
+```mermaid
+flowchart LR
+    subgraph S1["物聯網標準三層架構"]
+        direction TB
+        A3["【應用層 Application】<br>智慧製造 MES / 儀表板"]
+        A2["【網路層 Network】<br>5G / 乙太網 / LPWAN / 協定轉換"]
+        A1["【感知層 Perception】<br>感測器 / RFID / 致動器"]
+        A1 --> A2 --> A3
+    end
+
+    subgraph S2["擴展五層架構"]
+        direction TB
+        B5["【商業層 Business】<br>跨域營運決策 / ROI 評估"]
+        B4["【應用層 Application】<br>智慧工廠大屏 / 專家系統"]
+        B3["【處理層 Processing/Middleware】<br>資料庫 / 規則引擎 / 雲端邊緣 AI"]
+        B2["【傳輸層 Transport】<br>4G/5G / Wi-Fi / LoRa / MQTT / OPC UA"]
+        B1["【感知層 Perception】<br>物理量採集 / A/D 轉換 / 執行器"]
+        B1 --> B2 --> B3 --> B4 --> B5
+    end
+
+    A3 <.->|"對應映射"| B4
+    A2 <.->|"對應映射"| B3
+    A2 <.->|"對應映射"| B2
+    A1 <.->|"對應映射"| B1
+
+    style S1 fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#fff
+    style S2 fill:#0f172a,stroke:#10b981,stroke-width:2px,color:#fff
+    style A1 fill:#1e3a8a,stroke:#60a5fa,color:#fff
+    style A2 fill:#065f46,stroke:#34d399,color:#fff
+    style A3 fill:#78350f,stroke:#fbbf24,color:#fff
+    style B1 fill:#1e3a8a,stroke:#60a5fa,color:#fff
+    style B2 fill:#065f46,stroke:#34d399,color:#fff
+    style B3 fill:#581c87,stroke:#c084fc,color:#fff
+    style B4 fill:#78350f,stroke:#fbbf24,color:#fff
+    style B5 fill:#831843,stroke:#f472b6,color:#fff
 ```
 
 * **感知層 (Perception Layer)**：物聯網的「五官與神經末梢」，負責採集物理世界訊號（溫濕度、電流、壓力、聲學）或識別物體標籤（RFID/條碼），並將類比量轉換為微控制器可處理之數位資料。
@@ -39,20 +61,25 @@
 
 現代大型 AIoT 系統不再單純依賴中心化雲端，而是形成「端-邊-霧-雲」協同分散式拓撲：
 
-```
-[雲端運算 Cloud]   (大型資料中心 / 巨量資料倉儲 / 全域模型重訓 / 數位雙生)
-       ▲
-       │ 寬頻 WAN / 5G / 網際網路 (延遲: 100ms ~ 數秒)
-       ▼
-[霧運算 Fog]       (廠區邊緣伺服器 / On-Premise 叢集 / 區域資料整合)
-       ▲
-       │ 區域網路 LAN / 工業乙太網 (延遲: 10ms ~ 100ms)
-       ▼
-[邊緣運算 Edge]     (感測節點 / 智慧閘道器 / 即時推論與急停保護)
-       ▲
-       │ 現場匯流排 / 串列通訊 / BLE / Zigbee (延遲: < 1ms ~ 10ms)
-       ▼
-[現場感知與致動]   (機械手臂、馬達軸承、閥門開關、環境感測器)
+```mermaid
+flowchart TB
+    C["☁️ 雲端運算 (Cloud Computing)<br>國際公有雲 / 超大型資料中心 / 巨量資料倉儲<br>全域模型重訓練 / 數位雙生模擬 (延遲: 100ms ~ 數秒)"]
+    WAN["🌐 寬頻網際網路 / 5G 核心網 / 公網 VPN"]
+    F["🌫️ 霧運算 (Fog Computing)<br>廠區邊緣伺服器 (IPC) / On-Premise 叢集<br>跨機台區域數據聚合 / OPC UA 協定整合 (延遲: 10ms ~ 100ms)"]
+    LAN["🏭 工業乙太網 / 廠區 LAN / TSN 時間敏感網路"]
+    E["⚡ 邊緣運算 (Edge Computing)<br>智慧微控制器 (MCU/MPU) / 邊緣 AI 加速盒<br>微秒級濾波 / 毫秒級緊急停機防夾 / TinyML 推論 (延遲: < 10ms)"]
+    BUS["🔌 現場匯流排 (RS-485/Modbus) / CAN bus / BLE / Zigbee"]
+    DEV["🦾 現場實體感知與致動 (Field Devices)<br>三相馬達軸承 / 加速度計 / 熱電偶 / 電磁閥門開關"]
+
+    C <--> WAN <--> F <--> LAN <--> E <--> BUS <--> DEV
+
+    style C fill:#1e3a8a,stroke:#60a5fa,stroke-width:2px,color:#fff
+    style F fill:#312e81,stroke:#818cf8,stroke-width:2px,color:#fff
+    style E fill:#065f46,stroke:#34d399,stroke-width:2px,color:#fff
+    style DEV fill:#1f2937,stroke:#9ca3af,stroke-width:2px,color:#fff
+    style WAN fill:#111827,stroke:#4b5563,stroke-dasharray: 5 5,color:#cbd5e1
+    style LAN fill:#111827,stroke:#4b5563,stroke-dasharray: 5 5,color:#cbd5e1
+    style BUS fill:#111827,stroke:#4b5563,stroke-dasharray: 5 5,color:#cbd5e1
 ```
 
 | 運算層次 | 實體硬體形態 | 網路延遲 (Latency) | 頻寬負載與成本 | 核心運算任務與職責 | 典型 AIoT 實例 |
@@ -83,11 +110,22 @@
 
 針對遠距離、野外覆蓋與電池供電需求，**LPWAN (Low-Power Wide-Area Network)** 是物聯網不可或缺的基石：
 
-```
-                     授權頻段 (Licensed) ─── NB-IoT (電信級高可靠、需 SIM 卡、基地台維護)
-LPWAN 兩大陣營 ────┤
-                     非授權頻段 (Unlicensed) ─┬─ LoRaWAN (CSS 調變、自建私網靈活、免電信費)
-                                              └─ Sigfox (超窄頻 UNB、營運商全球漫遊託管)
+```mermaid
+flowchart LR
+    ROOT["LPWAN 低功耗廣域網路"] --> LIC["📶 授權頻段 (Licensed Band)<br>由電信運營商投標專用頻譜"]
+    ROOT --> UNLIC["📻 非授權頻段 (Unlicensed ISM)<br>Sub-GHz 免執照自由頻段"]
+
+    LIC --> NBIOT["NB-IoT (Narrowband IoT)<br>• 200kHz 頻寬 / 電信級高可靠 QoS<br>• 必須插 SIM 卡 / 需月繳電信通訊費<br>• 支援遠端韌體升級 (FOTA)"]
+
+    UNLIC --> LORA["LoRa / LoRaWAN<br>• CSS 展頻調變技術<br>• 企業可自建私網 (Private Network)<br>• 零電信資費 / 大面積智慧農業與工業廠區"]
+    UNLIC --> SIG["Sigfox<br>• 超窄頻技術 (UNB, 100Hz)<br>• 全球單一營運商託管 / 極限低功耗<br>• 每日限 140 則訊息 (每則 12 Bytes)"]
+
+    style ROOT fill:#1f2937,stroke:#9ca3af,stroke-width:2px,color:#fff
+    style LIC fill:#1e3a8a,stroke:#3b82f6,stroke-width:2px,color:#fff
+    style UNLIC fill:#065f46,stroke:#10b981,stroke-width:2px,color:#fff
+    style NBIOT fill:#172554,stroke:#60a5fa,stroke-width:2px,color:#fff
+    style LORA fill:#064e3b,stroke:#34d399,stroke-width:2px,color:#fff
+    style SIG fill:#78350f,stroke:#fbbf24,stroke-width:2px,color:#fff
 ```
 
 | 評鑑維度 | NB-IoT (Narrowband IoT) | LoRa / LoRaWAN | Sigfox |
@@ -121,6 +159,28 @@ LPWAN 兩大陣營 ────┤
 3. **保留訊息 (Retained Message)**：發布者發布訊息時若設定 `retain = true`，Broker 會保留該主題的「最新一筆有效數據」。當任何新訂閱者剛加入連線時，Broker 會**立刻主動推送此保留訊息**，使新節點無須等待下次採樣即可獲知當前狀態。
 4. **遺言機制 (Last Will and Testament, LWT)**：客戶端連線時在 Broker 預先註冊遺言主題與內容。當客戶端因斷電或斷網**非正常離線 (Abrupt Disconnection)** 時，Broker 會代為向全網廣播該設備的死亡遺言訊息。
 5. **Keep Alive 心跳機制**：客戶端與 Broker 定時交換 `PINGREQ` 與 `PINGRESP` 封包，若 Broker 在 $1.5 \times \text{Keep Alive}$ 時間內未收到任何心跳，則判定該客戶端異常斷線並觸發 LWT。
+
+---
+
+
+#### 數值算例：AIoT 物聯網平台網路頻寬與日吞吐量容量試算 [🎯 常考工程設計題]
+* **已知場景與參數**：
+  * 某高科技園區部署了 $M = 2,000$ 台智慧感測電表節點。
+  * 每個節點採集電壓、電流、瞬時功率與功率因數，經結構化打包為 JSON 封包，單筆有效負載大小為 $L_{payload} = 250\text{ Bytes}$。
+  * 傳輸協定採用 MQTT over TCP/IP，平均傳輸層與協定標頭開銷（Header Overhead）約為 $L_{header} = 50\text{ Bytes}$，即單筆總封包大小 $L_{pkt} = 300\text{ Bytes}$。
+  * 回傳週期：每隔 $T = 5\text{ 秒}$ 定時發送一筆監控封包。
+* **步驟 1：計算單一節點每秒產生之傳輸資料率 (Data Rate)**
+  $$R_{single} = \frac{L_{pkt}}{T} = \frac{300\text{ Bytes}}{5\text{ s}} = 60\text{ Bytes/s}$$
+* **步驟 2：計算園區中心物聯網閘道器匯聚之總頻寬需求 (Throughput)**
+  $$R_{total} = 2,000 \times 60\text{ Bytes/s} = 120,000\text{ Bytes/s} = 120\text{ KB/s}$$
+  轉換為常用之網路頻寬位元率 (kbps)：
+  $$\text{Bandwidth} = \frac{120,000 \times 8\text{ bits}}{1,000} = 960\text{ kbps} \approx 0.96\text{ Mbps}$$
+* **步驟 3：計算該園區物聯網伺服器每日 (24 小時) 之歷史資料儲存累計量 (Data Ingestion Volume)**
+  一天總秒數：$86,400\text{ 秒}$。
+  $$\text{Daily Volume} = 120,000\text{ Bytes/s} \times 86,400\text{ s} = 10,368,000,000\text{ Bytes} \approx 10.37\text{ GB/日}$$
+* **工程決策結論**：
+  1. 連外網路必須至少保留 $2 \sim 3\text{ Mbps}$ 頻寬（考慮 $2 \sim 3$ 倍尖峰波動冗餘）。
+  2. 若伺服器採用傳統關聯式資料庫，每日寫入 $10.37\text{ GB}$ 資料將在半年內耗盡常規硬碟空間；實務上應導入**邊緣死區過濾 (Deadband Filter)**（僅當數值變化大於 $1\%$ 才上傳）或採用**時序資料庫 (InfluxDB)** 高倍率壓縮儲存，使每日儲存需求縮減至 $1\text{ GB}$ 以下。
 
 ---
 
@@ -196,11 +256,26 @@ Modbus 暫存器四象限分類法：
 
 ### 2. 開源與公有雲 IoT 平台技術生態
 
-```
-[開源邊緣串接]                [開源管理平台]                [公有雲大型物聯網平台]
-Node-RED                    ThingsBoard                   AWS IoT Core / Azure IoT Hub
-(可視化流程 Flow,            (設備遙測儀表板,              (全託管、百萬級併發、
- 輕量閘道器快速原型)           多租戶架構, 規則引擎)         數位雙生 Device Shadow)
+```mermaid
+flowchart LR
+    subgraph P1["開源邊緣串接"]
+        N1["Node-RED<br>• Flow 流程式視覺化開發<br>• 輕量邊緣閘道器快速原型 (POC)<br>• 豐富節點庫橋接 MQTT/Modbus"]
+    end
+
+    subgraph P2["開源管理平台"]
+        N2["ThingsBoard<br>• 設備遙測視覺化儀表板<br>• 多租戶 (Multi-tenant) 架構<br>• 視覺化規則引擎 (Rule Engine)"]
+    end
+
+    subgraph P3["公有雲大型 IoT 平台"]
+        N3["AWS IoT Core / Azure IoT Hub<br>• 全託管架構、千萬級高併發連接<br>• 數位雙生 (Device Shadow/Twin)<br>• 企業級 IAM 權限控管與全球備援"]
+    end
+
+    P1 -.->|"邊緣資料清洗轉發"| P2
+    P1 -.->|"加密上傳"| P3
+
+    style P1 fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#fff
+    style P2 fill:#1e293b,stroke:#10b981,stroke-width:2px,color:#fff
+    style P3 fill:#1e293b,stroke:#8b5cf6,stroke-width:2px,color:#fff
 ```
 
 | 平台工具 | 架構定位與特色 | 核心優勢 | 適用情境 |
@@ -217,10 +292,25 @@ Node-RED                    ThingsBoard                   AWS IoT Core / Azure I
 
 物聯網系統由於「硬體節點散落野外、運算資源貧乏、生命週期長達十年」等特性，成為駭客最偏好的跳板：
 
-```
-[實體層/感知層威脅] ──> 實體探針偷取金鑰、JTAG 逆向工程提取韌體、更換偽造感測器
-[傳輸層/網路層威脅] ──> 中間人攻擊 (MITM)、無線封包竊聽、通訊重送攻擊 (Replay Attack)
-[平台層/應用層威脅] ──> 惡意軟體植入、DDoS 分散式阻斷服務 (Mirai 殭屍病毒)、勒索軟體加密
+```mermaid
+flowchart LR
+    subgraph T1["感知層/實體硬體威脅"]
+        A1["• JTAG / SWD 除錯埠逆向提取 Flash 韌體<br>• 實體探針直接窺探記憶體總線偷取金鑰<br>• 偽造或旁路置換感測器注入虛假資料"]
+    end
+
+    subgraph T2["傳輸層/網路通訊威脅"]
+        A2["• 中間人攻擊 (MITM) 竄改控制封包<br>• 無線頻段竊聽與封包重送攻擊 (Replay)<br>• 未加密 MQTT/HTTP 明文帳密洩漏"]
+    end
+
+    subgraph T3["平台層/應用軟體威脅"]
+        A3["• Mirai 殭屍網路惡意掃描弱密碼引爆 DDoS<br>• 惡意 OTA 韌體更新劫持控制權<br>• 雲端平台 API 憑證洩漏與勒索加密"]
+    end
+
+    T1 --> T2 --> T3
+
+    style T1 fill:#3f1414,stroke:#ef4444,stroke-width:2px,color:#fff
+    style T2 fill:#3b1d07,stroke:#f97316,stroke-width:2px,color:#fff
+    style T3 fill:#312e81,stroke:#8b5cf6,stroke-width:2px,color:#fff
 ```
 
 * **縱深防禦實踐**：不得依賴單一防線，必須在**晶片硬體、通訊鏈路、作業系統、雲端應用**建立層層防護。
@@ -257,6 +347,162 @@ Node-RED                    ThingsBoard                   AWS IoT Core / Azure I
 > 4. **NB-IoT vs LoRaWAN 頻段與營運歸屬**：NB-IoT 屬於「授權頻段 (Licensed)」，必須由電信運營商營運且需插 SIM 卡並繳交月租；LoRaWAN 屬於「非授權頻段 (Unlicensed Sub-GHz)」，企業可自主搭建私有閘道器與網路伺服器，免繳電信通訊費。
 
 ---
+
+
+---
+
+## 💻 🐍 Python paho-mqtt 物聯網通訊實戰代碼專區
+
+在 AIoT 專案實作中，`paho-mqtt` 為業界最廣泛採用的 MQTT 客戶端函式庫。以下為符合工業標準的高可靠通訊範例，完整涵蓋 **QoS 0/1/2 差別示範、KeepAlive 設定、遺囑訊息 (LWT)、TLS 憑證連線**，以及**常考工程避坑指南**。
+
+### 1. 工業級 MQTT 客戶端完整實作範例
+
+```python
+import time
+import json
+import ssl
+import threading
+import paho.mqtt.client as mqtt
+
+# ----------------- 核心配置參數 -----------------
+BROKER_HOST = "broker.emqx.io"       # MQTT Broker 位址 (可替換為自建 EMQX / Mosquitto)
+BROKER_PORT = 8883                  # TLS 安全通訊埠 (明文為 1883)
+CLIENT_ID   = "AIoT_EdgeGateway_001"
+TOPIC_TELEMETRY = "factory/line1/sensor/telemetry"
+TOPIC_CMD       = "factory/line1/control/command"
+TOPIC_LWT       = "factory/line1/status"
+
+# ----------------- 回呼函式 (Callbacks) -----------------
+def on_connect(client, userdata, flags, rc):
+    """連線建立回呼"""
+    rc_status = {
+        0: "連線成功 (Connection accepted)",
+        1: "連線拒絕 - 協定版本不符",
+        2: "連線拒絕 - 識別碼無效 (Client ID Rejected)",
+        3: "連線拒絕 - 伺服器不可用",
+        4: "連線拒絕 - 帳號密碼錯誤",
+        5: "連線拒絕 - 未經授權 (Unauthorized)"
+    }
+    print(f"[MQTT] 連線結果碼: {rc} -> {rc_status.get(rc, '未知錯誤')}")
+    
+    if rc == 0:
+        # 連線成功後立即連回正常在線狀態 (Retain=True 讓任何新訂閱者皆能獲知最新上線狀態)
+        online_payload = json.dumps({"client_id": CLIENT_ID, "status": "ONLINE", "timestamp": time.time()})
+        client.publish(TOPIC_LWT, payload=online_payload, qos=1, retain=True)
+        print(f"[MQTT] 發布在線狀態至: {TOPIC_LWT}")
+
+        # 訂閱下行控制主題 (示範 QoS 2: 嚴格恰好一次)
+        client.subscribe(TOPIC_CMD, qos=2)
+        print(f"[MQTT] 已訂閱控制主題: {TOPIC_CMD} (QoS 2)")
+
+def on_disconnect(client, userdata, rc):
+    """斷線回呼"""
+    if rc != 0:
+        print(f"[MQTT 警告] 非預期非正常中斷連線 (rc={rc})！背景執行緒將自動嘗試重連...")
+
+def on_message(client, userdata, msg):
+    """
+    訊息接收回呼
+    ⚠️ 重要工程警告：嚴禁在此函式內執行同步耗時任務 (如 sleep、大模型推論、資料庫長查詢)！
+    """
+    try:
+        payload_str = msg.payload.decode('utf-8')
+        print(f"[MQTT 接收] 主題: {msg.topic} | QoS: {msg.qos} | 內容: {payload_str}")
+        
+        # 將耗時任務丟入 Worker 執行緒池處理，避免阻塞 MQTT 網路事件循環
+        threading.Thread(target=heavy_computation_worker, args=(payload_str,), daemon=True).start()
+    except Exception as e:
+        print(f"[MQTT 接收解析異常] {e}")
+
+def heavy_computation_worker(data_payload):
+    """獨立線程處理耗時任務，保證 MQTT on_message 瞬時退出"""
+    print(f"  [Worker Thread] 開始執行非同步分析任務: {data_payload[:30]}...")
+    time.sleep(1.5)  # 模擬 AI 推論或耗時 I/O
+    print("  [Worker Thread] 耗時分析完成！")
+
+# ----------------- 主程序初始化 -----------------
+def main():
+    # 1. 實例化 Client (指定最新 Protocol MQTTv311 或 v5.0)
+    client = mqtt.Client(client_id=CLIENT_ID, clean_session=True, protocol=mqtt.MQTTv311)
+
+    # 2. 註冊回呼函式
+    client.on_connect = on_connect
+    client.on_disconnect = on_disconnect
+    client.on_message = on_message
+
+    # 3. 配置遺囑訊息 (LWT, Last Will and Testament)
+    # 當設備意外斷電或網路斷線時，Broker 會自動廣播此訊息
+    lwt_payload = json.dumps({"client_id": CLIENT_ID, "status": "OFFLINE_UNEXPECTED", "timestamp": time.time()})
+    client.will_set(topic=TOPIC_LWT, payload=lwt_payload, qos=1, retain=True)
+
+    # 4. 配置 TLS 加密安全連線 (示範驗證伺服器憑證)
+    # client.tls_set(
+    #     ca_certs="ca.crt",                # 根憑證 CA
+    #     certfile="client.crt",            # 客戶端憑證 (mTLS 雙向認證時需要)
+    #     keyfile="client.key",              # 客戶端私鑰
+    #     cert_reqs=ssl.CERT_REQUIRED,
+    #     tls_version=ssl.PROTOCOL_TLSv1_2
+    # )
+    # 若為測試用 Broker，可啟用內建系統預設信任庫：
+    client.tls_set(cert_reqs=ssl.CERT_NONE)
+    client.tls_insecure_set(True)
+
+    # 5. 連線至 Broker (keepalive=60 秒)
+    print(f"[MQTT] 正在連線至 {BROKER_HOST}:{BROKER_PORT} ...")
+    client.connect(BROKER_HOST, BROKER_PORT, keepalive=60)
+
+    # 6. 啟動背景非阻塞網路循環執行緒 (loop_start vs loop_forever 關鍵考點)
+    client.loop_start()
+
+    # 7. 模擬感測資料發布循環 (QoS 0 vs QoS 1 示範)
+    try:
+        sample_count = 0
+        while sample_count < 3:
+            sample_count += 1
+            # 建立感測資料
+            telemetry_data = {
+                "device_id": CLIENT_ID,
+                "temperature": round(25.0 + sample_count * 0.5, 2),
+                "vibration_rms": round(0.12 + sample_count * 0.01, 3),
+                "timestamp": int(time.time())
+            }
+            payload = json.dumps(telemetry_data)
+
+            # 發布示範：高頻遙測採用 QoS 0 (極低延遲)
+            res_qos0 = client.publish(TOPIC_TELEMETRY, payload=payload, qos=0)
+            
+            # 告警事件示範：緊急警報採用 QoS 1 (保證送達 PUBACK)
+            if sample_count == 2:
+                alarm_payload = json.dumps({"alarm": "OVERHEAT_WARNING", "level": "CRITICAL"})
+                res_qos1 = client.publish("factory/line1/alarm", payload=alarm_payload, qos=1)
+                res_qos1.wait_for_publish() # 等待 PUBACK 到達
+                print("  [MQTT] QoS 1 告警封包確認已成功送達 Broker！")
+
+            time.sleep(2)
+    except KeyboardInterrupt:
+        print("[主程序] 接收到終止訊號")
+    finally:
+        # 正確優雅關閉：手動上報正常下線狀態、停止 loop 並中斷連線
+        offline_payload = json.dumps({"client_id": CLIENT_ID, "status": "OFFLINE_NORMAL", "timestamp": time.time()})
+        client.publish(TOPIC_LWT, payload=offline_payload, qos=1, retain=True)
+        time.sleep(0.5)
+        client.loop_stop()
+        client.disconnect()
+        print("[MQTT] 已安全中斷連線退出。")
+
+if __name__ == "__main__":
+    main()
+```
+
+---
+
+### 2. 常考工程陷阱與避坑規範 (Exam Pitfalls)
+
+| 陷阱場景 | 錯誤寫法與現象 | 正確設計規範與原理 |
+|---|---|---|
+| **陷阱 1：`loop_start()` vs `loop_forever()` 混淆** | 主執行緒需執行感測採樣迴圈，卻呼叫了 `client.loop_forever()`，導致**主程式徹底被阻塞死鎖**在 MQTT 監聽中，無法執行下方的採樣邏輯。 | • `loop_forever()`：**阻塞式 (Blocking)**，獨佔當前執行緒，僅適用於「純訂閱型背景服務」。<br>• `loop_start()`：**非阻塞式 (Non-blocking)**，自動在背景啟動獨立執行緒處理網路心跳、自動重連與封包收發，**主執行緒可自由執行業務迴圈**。結束時成對呼叫 `loop_stop()`。 |
+| **陷阱 2：`on_message` 內部執行長耗時運算** | 在 `on_message` 回呼內直接進行深度學習推論（耗時 5 秒）或呼叫外部同步 REST API。此舉會**卡死 MQTT 網路執行緒**，導致無法及時發送 `PINGREQ` 心跳，Broker 判定超時直接斷線並觸發 LWT 遺言！ | **嚴格落實「非同步工作解耦」**：`on_message` 內僅進行 JSON 解析與特徵打包，隨即透過 `threading.Thread`、`concurrent.futures` 執行緒池或佇列 (`queue.Queue`) 將耗時計算非同步交由背景 Worker 處理，確保回呼函式在 **毫秒內立即返回**。 |
+| **陷阱 3：QoS 1 接收端未處理重複訊息** | QoS 1 保證訊息至少送達一次。若接收端未設計**冪等性 (Idempotency)**，網路重傳時重複執行「扣款」或「重複累加生產件數」，造成嚴重商業數據錯誤。 | 訊息體內應附帶唯一訊息流水號 (UUID / Message ID) 或時間戳記；接收端維護一組已處理 ID 快取，過濾重複投遞之重複封包。 |
 
 ### 🎯 考前衝刺「一句話考點」
 

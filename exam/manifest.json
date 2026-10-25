@@ -1,0 +1,28 @@
+{
+  "name": "iPAS 模擬考系統",
+  "short_name": "iPAS 模擬考",
+  "description": "iPAS 證照模擬考試與自主練習系統，支援營運智慧分析師、AI應用規劃師初級/中級",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#0a0e1a",
+  "theme_color": "#0d1117",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}
