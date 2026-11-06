@@ -1,43 +1,56 @@
 # 📝 IPAS 證照考試準備專案——工作日誌 (Work Log)
 
-本工作日誌記錄了 **IPAS 營運智慧分析師**、**AI應用規劃師** 及其他證照專案的學習講義製作、題庫自動化解析、雲端同步排程設定與雙證照模擬考試系統的開發歷程與里程碑。
+本工作日誌記錄了 **iPAS 營運智慧分析師**、**AI 應用規劃師 (初級/中級)**、**3D 列印積層製造工程師**、**電路板製程工程師** 與 **AIoT 應用工程師** 六大證照專案的學習講義製作、題庫自動化解析、雲端同步排程設定與全真模擬考試系統的開發歷程與里程碑。
+
+### 📌 2026-11-06 —— 專案文件基線全面同步、雙目錄講義校準與解析管線資產完整還原
+
+* **【核心文件更新與六大證照基線對齊】**：
+  * 更新 `README.md` 與 `AGENTS.md`，完整反映目前 **6 張證照、共 1,841 題** 之最新架構與建置流程：
+    1. 營運智慧分析師 (`oi`，初級)：163 題 + 4 份 SOP 講義
+    2. AI 應用規劃師 (`ai`，初級)：630 題 + 7 份 SOP 講義 + 6 份語音講稿/MP3
+    3. AI 應用規劃師 (`ai_mid`，中級)：566 題 + 11 份 SOP 講義（含科目二 Python/PySpark 實戰強化與向量 SVG 偏態圖）
+    4. 3D 列印積層製造工程師 (`3d`，初級)：207 題（含 59 張工程示意圖）+ 5 份 SOP 講義
+    5. 電路板製程工程師 (`pcb`，中級)：135 題（單選 105 題 + 複選 30 題）+ 5 份 SOP 講義
+    6. AIoT 應用工程師 (`aiot`，初級)：140 題 + 5 份 SOP 講義（含惠斯登電橋/ADC 向量 SVG 與 Python 實戰代碼專區）
+* **【雙目錄 (`notes/` 與 `exam/notes/`) 46 份講義 100% 同步校準】**：
+  * 同步 `L221_機率統計基礎.md`（向量 `<svg>` 偏態分佈圖卡）、`L211_AI相關技術應用.md` 與 `114年第二梯次中級AI應用規劃師第二科計算與程式解析.md` 至 `exam/notes/`，經 SHA-256 比對全數 46 份檔案達 100% 一致（0 差異）。
+* **【還原先前部署 Commit (`318ec60`) 誤刪之本地解析器、文件與教材資產】**：
+  * 從 Git 歷史 `318ec60^` 完整還原 `parse_*.py` 解析器、`generate_lecture.py`、`convert_pdf.py`、`project-id.json`、`docs/account_sync_api_contract.md`、`docs/ipas_exam_modernization_plan.md`、`Source/`、`out/` 與各證照官方 PDF 教材共 192 個檔案。
+* **【修復工作日誌與管理中樞交接文件之逸出斷字】**：
+  * 清理 `work_log.md`、管理中樞 `STATUS.md` 與 `handoffs/latest.md` 中因控制字元轉義造成的路徑與公式斷字。
 
 ### 📌 2026-10-25 —— AIoT 應用工程師 講義全方位升級符合 SOP（Mermaid + 向量 SVG + Python 實戰代碼專區 + 雙目錄同步）
 
 * **【SOP 規範全方位整改落地】**：
   * **視覺化升級（Mermaid + 向量 SVG 卡片）**：
-    * 徹底淘汰粗糙純文字與 ASCII 方塊，全面重構為標準 Mermaid 流程圖（深度學習架構演進、三層/五層物聯網架構、PdM 全管線流程、LPWAN 分支對比、Dual-Bank OTA 安全時序與 OEE 損失分解）。
-    * 在 L113_感測器原理與應用.md 內嵌兩組高品質深色透明響應式向量 <svg> 幾何卡片：
+    * 徹底淘汰粗糙純文字與 ASCII 方塊，全面重構為標準 Mermaid 流程圖（深度學習架構演進、三層/五層物聯網架構、PdM 全管線流程、LPWAN 分支對比、Dual-Bank OTA 安全時序與 OEE 損失分解），並移除所有自訂色彩標籤以符合深淺主題自適應規範。
+    * 在 `L113_感測器原理與應用.md` 內嵌兩組高品質深色透明響應式向量 `<svg>` 幾何卡片：
       1. **Wheatstone Bridge 惠斯登電橋微應變量測電路圖**（對稱四臂菱形電路、差動節點 Node A/B、平衡條件與儀表放大器介面）。
       2. **ADC 取樣保持 (S/H) 與量化階梯 (Quantization) 原理圖**（類比連續波、取樣脈衝點、紫色階梯量化碼與 LSB 水平格線）。
   * **SOP 階段 3 實作程式語言專區（Python）**：
-    * **L112_AIoT基礎與架構.md**：增設「🐍 Python paho-mqtt 物聯網通訊實戰代碼專區」，包含 QoS 0/1/2 差別、KeepAlive、LWT 遺囑訊息、TLS 憑證，以及 loop_start() vs loop_forever() 與 on_message 異步解耦避坑指南。
-    * **L113_感測器原理與應用.md**：增設「🐍 Python pymodbus 工業通訊與感測資料前處理專區」，包含 Modbus-TCP / RTU 保持暫存器讀取、16-bit / 32-bit 浮點數解碼還原，以及 (1)$ 環形緩衝區「滑動平均濾波器（Moving Average Filter）」演算法。
-    * **L111_AI基礎知識與應用.md**：增設「🐍 邊緣端 Edge AI 輕量推論實戰代碼專區」，示範 TFLite INT8 量化推論與 ONNX Runtime 跨平台單筆即時推論工作流。
+    * **`L112_AIoT基礎與架構.md`**：增設「🐍 Python `paho-mqtt` 物聯網通訊實戰代碼專區」，包含 QoS 0/1/2 差別、KeepAlive、LWT 遺囑訊息、TLS 憑證，以及 `loop_start()` vs `loop_forever()` 與 `on_message` 異步解耦避坑指南。
+    * **`L113_感測器原理與應用.md`**：增設「🐍 Python `pymodbus` 工業通訊與感測資料前處理專區」，包含 Modbus-TCP / RTU 保持暫存器讀取、16-bit / 32-bit 浮點數解碼還原，以及 $O(1)$ 環形緩衝區「滑動平均濾波器（Moving Average Filter）」演算法。
+    * **`L111_AI基礎知識與應用.md`**：增設「🐍 邊緣端 Edge AI 輕量推論實戰代碼專區」，示範 TFLite INT8 量化推論與 ONNX Runtime 跨平台單筆即時推論工作流。
   * **Worked Examples 數值計算示範補強**：
-    * 於 L113 補強 12-bit SAR ADC 最小解析電壓（ pprox 0.806	ext{ mV}$）與壓力感測器物理量還原算例。
-    * 於 L112 補強 2,000 台智慧電表節點之網路頻寬與每日歷史儲存容量（.37	ext{ GB/日}$）試算。
+    * 於 `L113` 補強 12-bit SAR ADC 最小解析電壓（$\approx 0.806\text{ mV}$）與壓力感測器物理量還原算例。
+    * 於 `L112` 補強 2,000 台智慧電表節點之網路頻寬與每日歷史儲存容量（$\approx 4.37\text{ GB/日}$）試算。
 * **【雙目錄完全同步與全回歸測試】**：
-  * 同步更新 
-otes/aiot/ 與 xam/notes/aiot/ 雙目錄，確保 100% 同步一致。
-  * 完整還原測試套件與 question_identity.py，執行 
-ode --test tests/*.test.js **46/46 全數 PASS**；python -m unittest tests.test_question_identity **4/4 全數 PASS**。
+  * 同步更新 `notes/aiot/` 與 `exam/notes/aiot/` 雙目錄，確保 100% 同步一致。
+  * 完整還原測試套件與 `question_identity.py`，執行 `node --test tests/*.test.js` **46/46 全數 PASS**；`python -m unittest tests.test_question_identity` **4/4 全數 PASS**。
 
 ### 📌 2026-10-25 —— 中級 AI 應用規劃師 科目二（大數據處理分析與應用）Python 考點實戰與高頻代碼精華強化
 
 * **【盤點官方教材與歷屆真題 Python 分佈】**：
   * 全面檢視官方學習指引（182 頁）與歷屆公告試題（114年第二次、115年第一次、考猜）：
     * 確認科目二考題中確實包含約 10~15 題（佔比 20%~30%）直接涉及 Python、Pandas、Numpy、Scipy、Scikit-learn、Seaborn 與 Spark 分散式運算之情境代碼題。
-    * 確認目前 xam/ai_mid_questions.json 題庫已完整收錄該考科全部 196 題（含 21 題 Python / 代碼與報表題組），試題無缺漏。
+    * 確認目前 `exam/ai_mid_questions.json` 題庫已完整收錄該考科全部 196 題（含 21 題 Python / 代碼與報表題組），試題無缺漏。
 * **【強化大數據科目筆記（增補 Python 高頻實戰程式碼與常考陷阱）】**：
-  * **L221_機率統計基礎.md**：增補 Pandas/Numpy 敘述統計運算（describe、IQR 四分位距與離群值過濾）以及 Scipy 統計分佈代碼（poisson.pmf / cdf、
-orm.cdf 累積經驗區間計算）。
-  * **L222_大數據處理技術.md**：增補 50GB 大型資料防止 OOM 的 chunksize 串流分批讀取、Pandas 缺失值 NaN 向上轉型 loat64 陷阱與 Int64 解決方案、Python 函式預設可變參數（	ags=[]）閉包共享錯誤陷阱、以及 PySpark 分散式 DataFrame.agg() vs 避免 collect() 造成 Driver OOM 的架構考點。
-  * **L223_大數據分析方法與工具.md**：增補 Pandas 數據分組與排行高頻語法（groupby / sort_values / head(3)）、Scikit-learn 羅吉斯迴歸訓練與 classification_report（Precision/Recall/F1/Support/Macro/Weighted avg）報表結構判讀、Statsmodels OLS 多元線性迴歸摘要判讀（^2$、P-value 顯著性檢定）、以及 Seaborn（sns.barplot、sns.scatterplot、sns.heatmap 相關係數熱力圖）繪圖常考語法。
+  * **`L221_機率統計基礎.md`**：增補 Pandas/Numpy 敘述統計運算（`describe`、IQR 四分位距與離群值過濾）以及 Scipy 統計分佈代碼（`poisson.pmf` / `cdf`、`norm.cdf` 累積經驗區間計算），並將偏態圖升級為向量 `<svg>` 卡片。
+  * **`L222_大數據處理技術.md`**：增補 50GB 大型資料防止 OOM 的 `chunksize` 串流分批讀取、Pandas 缺失值 NaN 向上轉型 `float64` 陷阱與 `Int64` 解決方案、Python 函式預設可變參數（`tags=[]`）閉包共享錯誤陷阱、以及 PySpark 分散式 `DataFrame.agg()` vs 避免 `collect()` 造成 Driver OOM 的架構考點。
+  * **`L223_大數據分析方法與工具.md`**：增補 Pandas 數據分組與排行高頻語法（`groupby` / `sort_values` / `head(3)`）、Scikit-learn 羅吉斯迴歸訓練與 `classification_report`（Precision/Recall/F1/Support/Macro/Weighted avg）報表結構判讀、Statsmodels OLS 多元線性迴歸摘要判讀（$R^2$、P-value 顯著性檢定）、以及 Seaborn（`sns.barplot`、`sns.scatterplot`、`sns.heatmap` 相關係數熱力圖）繪圖常考語法。
 * **【全回歸測試驗證】**：
-  * 執行 
-ode --test tests/*.test.js 46/46 全數通過。
-  * 執行 python -m unittest tests.test_question_identity 4/4 全數通過。
+  * 執行 `node --test tests/*.test.js` 46/46 全數通過。
+  * 執行 `python -m unittest tests.test_question_identity` 4/4 全數通過。
 
 ### 📌 2026-10-24 —— 模考結束審題儀表板直達導引與渲染保護修復
 
@@ -89,23 +102,22 @@ ode --test tests/*.test.js 46/46 全數通過。
 ### 📌 2026-10-23 —— 3D 列印積層製造工程師 (初級) 題庫解析建置 (207 題) 與雙科題庫全面上線
 
 * **【3D 列印積層製造工程師 (初級) 題庫解析與建置】**：
-  * 開發 parse_3d_questions.py 自動化剖析 4 份官方教材與歷屆試題 PDF：
+  * 開發 `parse_3d_questions.py` 自動化剖析 4 份官方教材與歷屆試題 PDF：
     1. 115年第一次初級3D列印積層製造工程師_第一科_3D列印概論：50 題。
     2. 115年第一次初級3D列印積層製造工程師_第二科_3D製程與材料概論：50 題。
     3. 3D列印概論(111年版) (科目一學習指引)：第一章 14 題 + 第二章 20 題 = 34 題。
     4. 3D列印製程與材料概論(111年版) (科目二學習指引)：第一章 29 題 + 第二章 22 題 + 第三章 22 題 = 73 題。
   * 題庫總數精準達成 **207 題**（科目一：84 題；科目二：123 題）。
 * **【圖示抽取與 Markdown 渲染保護】**：
-  * 精準提取剪裁 59 張題幹與選項示意圖（含向量裁切之下照式光固化系統架構圖），存放於 xam/images/3d/。
-  * 於 xam/core.js ormatQuestionText 新增 Markdown 圖片語法 ![alt](src) 佔位保護機制，防止 HTML 轉義破壞圖示標籤，確保題幹與選項圖示高相容渲染。
+  * 精準提取剪裁 59 張題幹與選項示意圖（含向量裁切之下照式光固化系統架構圖），存放於 `exam/images/3d/`。
+  * 於 `exam/core.js` `formatQuestionText` 新增 Markdown 圖片語法 `![alt](src)` 佔位保護機制，防止 HTML 轉義破壞圖示標籤，確保題幹與選項圖示高相容渲染。
 * **【異常修復與 100% 深度結構化詳解】**：
   * 完美修復 115 年第二科 Q26 官方排版異常（清除題幹殘留的 (A) 當線徑誤差過大時暫停列印）。
   * 207 道試題 100% 注入結構化 Markdown 解析（含【核心考點】、【正確答案說明】、【選項辨析】三段式分析）。
 * **【架構整合與測試驗證】**：
-  * 整合 question_identity.py 生成唯一確定性 question_uid 與 content_hash。
-  * 於 xam/config.js 註冊啟用 3d 證照模組；於 	ests/question-bank-smoke.test.js 擴充 3d_questions.json 驗證。
-  * 
-ode --test tests/*.test.js 44/44 全數通過；python -m unittest tests.test_question_identity 4/4 全數通過。
+  * 整合 `question_identity.py` 生成唯一確定性 `question_uid` 與 `content_hash`。
+  * 於 `exam/config.js` 註冊啟用 `3d` 證照模組；於 `tests/question-bank-smoke.test.js` 擴充 `3d_questions.json` 驗證。
+  * `node --test tests/*.test.js` 44/44 全數通過；`python -m unittest tests.test_question_identity` 4/4 全數通過。
 
 ### 📌 2026-10-23 —— 系統品牌標題微調為「iPAS 備考系統」與 GitHub Pages 同步
 

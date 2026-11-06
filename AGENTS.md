@@ -6,31 +6,38 @@ This workspace collects iPAS certification study material, parsed question banks
 
 Primary working areas:
 
-- `exam/`: Static mock exam app for GitHub Pages.
-- `exam/index.html`: App shell and screens.
-- `exam/script.js`: Exam flow, login checks, question loading, scoring, and UI behavior.
-- `exam/account-core.js`: Pure account session, partition key, question-state event, and sync-operation rules.
-- `exam/account-api.js`: Login/sync HTTP adapter; requires explicit per-operation acknowledgement.
-- `exam/style.css`: App styling.
-- `exam/*questions.json`: Parsed question bank data.
-- `exam/*questions.js`: Browser-loaded question bank wrappers.
+- `exam/`: Static mock exam app for GitHub Pages (mirrored at root for direct GitHub Pages root serving).
+- `exam/index.html` & `index.html`: App shell and screens.
+- `exam/config.js` & `config.js`: Certificate module registry, exam subject ratios, and study note `#L1xxxx`/`#L2xxxx` anchor navigation.
+- `exam/core.js` & `core.js`: Pure scoring (single & multiple-choice), Markdown/image protection, event deduplication, and timer core.
+- `exam/script.js` & `script.js`: Exam flow, login checks, question loading, IRT review dashboard, scoring, and UI behavior.
+- `exam/account-core.js` & `account-core.js`: Pure account session, partition key, question-state event, and sync-operation rules.
+- `exam/account-api.js` & `account-api.js`: Login/sync HTTP adapter; requires explicit per-operation acknowledgement.
+- `exam/style.css` & `style.css`: App styling, dark/light themes, and high-contrast Mermaid rendering rules.
+- `exam/notes/` & `notes/`: Dual-synced SOP study notes in Markdown (must be kept 100% identical).
+- `exam/*questions.json`: Parsed question bank data (canonical format).
+- `exam/*questions.js`: Browser-loaded question bank wrappers (`file://` fallback).
 - `Source/`: Read-only Markdown source notes for the lecture-script workflow.
 - `out/`: Generated lecture TXT and offline MP3 files.
 - `generate_lecture.py`: Converts `Source/*.md` into lecture scripts and audio.
-- `parse_questions.py`: Parser for Operations Intelligence Analyst questions.
-- `parse_ai_questions.py`: Parser for AI Application Planner junior questions.
-- `parse_ai_mid_questions.py`: Parser for AI Application Planner intermediate questions.
+- `parse_questions.py`: Parser for Operations Intelligence Analyst junior questions (163 questions).
+- `parse_ai_questions.py`: Parser for AI Application Planner junior questions (630 questions).
+- `parse_ai_mid_questions.py`: Parser for AI Application Planner intermediate questions (566 questions).
+- `parse_3d_questions.py`: Parser for 3D Printing Additive Manufacturing Engineer junior questions (207 questions).
+- `parse_pcb_questions.py`: Parser for PCB Process Engineer intermediate questions (135 questions).
+- `parse_aiot_questions.py` & `questions_aiot.py`: Parser and source for AIoT Application Engineer junior questions (140 questions).
 - `question_identity.py`: Shared stable question identity, source metadata, and content hash generator.
 - `convert_pdf.py`: Markdown-to-PDF conversion helper.
 - `work_log.md`: Main handoff and work history.
 - `README.md`: Project overview.
+- `docs/ipas_exam_preparation_sop.md`: Master SOP for question bank parsing, study note authoring, Mermaid color restrictions, Vector SVGs, Python/SQL/PySpark code sections, and dual-directory sync.
 - `docs/account_sync_api_contract.md`: Required backend contract and current local-only fallback boundary.
 - `project-id.json`: Portable project identity marker for continuity tooling.
 
 ## Startup Checklist
 
 1. Read `work_log.md` first to understand the latest handoff.
-2. Read `README.md` for project structure and expected workflows.
+2. Read `README.md` and `docs/ipas_exam_preparation_sop.md` for project structure, SOP standards, and expected workflows.
 3. Check whether the current folder or `exam/` is a git repository before using git commands. The current known state is that the root is the Git repository and `exam/` is not independent.
 4. Inspect recently modified files before editing, especially `exam/index.html`, `exam/script.js`, and `exam/style.css`.
 5. Preserve existing Chinese content and UTF-8 encoding.
@@ -40,7 +47,12 @@ Primary working areas:
 
 - Keep changes scoped to the requested certificate, parser, or app behavior.
 - Do not regenerate question bank files unless the parser or source material changed.
-- When modifying `exam/`, verify that the static app still works by opening `exam/index.html`.
+- Always follow `docs/ipas_exam_preparation_sop.md` when creating or updating study notes:
+  - Keep `notes/` and `exam/notes/` 100% synchronized.
+  - Never use custom color styling (`style ... fill/stroke`, `classDef`) in Mermaid diagrams.
+  - Use responsive inline `<svg>` cards for statistical curves, circuits, and geometric waveforms.
+  - Include practical code sections (Python/PySpark/SQL) for subjects with programming questions.
+- When modifying `exam/`, keep root web shell files (`index.html`, `script.js`, `style.css`, `core.js`, `config.js`, `sw.js`, `account-core.js`, `account-api.js`) synchronized with `exam/`.
 - Keep the app static and GitHub Pages friendly: no server-only dependencies.
 - Avoid changing generated data manually when a parser should be the source of truth.
 - Treat `Source/*.md` as the source of truth for lecture scripts; do not hand-edit generated `out/*.txt` or `out/*.mp3` files.
@@ -54,6 +66,9 @@ Primary working areas:
 python parse_questions.py
 python parse_ai_questions.py
 python parse_ai_mid_questions.py
+python parse_3d_questions.py
+python parse_pcb_questions.py
+python parse_aiot_questions.py
 
 # Validate question identity and browser question-bank contracts
 python -m unittest tests.test_question_identity
@@ -80,7 +95,14 @@ Use the project virtual environment if one is available.
 ## Current Notes
 
 - The root is the active Git repository; `exam/` is a static application directory, not an independent repository.
-- The current question-bank counts are 163 Operations Intelligence Analyst questions, 630 AI Application Planner junior questions, 566 AI Application Planner intermediate questions, 207 3D Printing Additive Manufacturing Engineer junior questions, 135 PCB Process Engineer intermediate questions, and 140 AIoT Application Engineer junior questions. Confirm counts from the JSON files after parser changes.
+- The current question-bank counts (total 1,841 questions across 6 certificates) are:
+  - 163 Operations Intelligence Analyst (`oi`) junior questions
+  - 630 AI Application Planner (`ai`) junior questions
+  - 566 AI Application Planner (`ai_mid`) intermediate questions
+  - 207 3D Printing Additive Manufacturing Engineer (`3d`) junior questions
+  - 135 PCB Process Engineer (`pcb`) intermediate questions
+  - 140 AIoT Application Engineer (`aiot`) junior questions
+  Confirm counts from the JSON files after parser changes.
 - Persistent wrong-pool and question-stat records use `question_uid`; `display_num`/`num` are display-only compatibility fields. Ambiguous legacy records are kept in the IndexedDB `migrationQuarantine` store.
 - IndexedDB v5 account stores must be keyed by opaque `user_id`; never derive an account key from a national ID. The current backend lacks this contract, so production remains in explicit local-only mode until upgraded.
 - `Source/` currently contains six iPAS junior AI Application Planner Markdown notes. `out/` contains six generated TXT scripts and six offline MP3 files.

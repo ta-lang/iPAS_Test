@@ -1,6 +1,19 @@
-# 📚 IPAS 證照學習與模擬考系統工作區
+# 📚 iPAS 證照學習與全真模擬考系統工作區
 
-本工作區整合了 **iPAS 營運智慧分析師**、**AI 應用規劃師 (初級)** 與 **AI 應用規劃師 (中級)** 證照考試的官方教材、自製精美考前衝刺學習筆記、自動化 PDF 題庫解析器、口語講稿與離線 MP3、背景雲端硬碟同步機制，以及一個現代化的模擬考試網頁系統。
+本工作區整合了經濟部產業人才能力鑑定（iPAS）**六大熱門證照**的官方教材、依 SOP 規範編撰的模組化考前衝刺講義（支援 Mermaid 流程圖、深色自適應向量 SVG 圖卡、KaTeX 公式與 Python/PySpark 實戰代碼專區）、自動化題庫解析管線、口語講稿與離線 MP3、背景雲端硬碟同步機制，以及現代化的純前端 PWA 模擬考試系統。
+
+---
+
+## 🏆 已支援證照與題庫規模（共 6 張證照 / 1,841 題）
+
+| 證照名稱 | 等級 | 題庫總數 | 考科組成與特色 | 重點講義模組 (`notes/` & `exam/notes/`) |
+|---|---|---:|---|---|
+| **營運智慧分析師** (`oi`) | 初級 | **163 題** | 營運智慧概論、經營管理數位化概論（100% 詳解） | 4 份 SOP 講義（13 個 `#L1xxxx` 錨點） |
+| **AI 應用規劃師** (`ai`) | 初級 | **630 題** | 人工智慧基礎概論、生成式 AI 應用與規劃（含 115-1~115-3 歷屆） | 7 份 SOP 講義 + 6 份語音講稿/MP3 |
+| **AI 應用規劃師** (`ai_mid`) | 中級 | **566 題** | AI 技術應用與規劃、大數據處理分析、機器學習技術與應用（含 Python/PySpark 實戰與補充題） | 11 份 SOP 講義（34 個 `#L2xxxx` 錨點 + 歷屆計算解析） |
+| **3D 列印積層製造工程師** (`3d`) | 初級 | **207 題** | 3D 列印概論（84題）、3D 製程與材料概論（123題），內嵌 59 張工程示意圖 | 5 份 SOP 講義（14 個 `#L1xxxx` 錨點） |
+| **電路板製程工程師** (`pcb`) | 中級 | **135 題** | 品管概論（45題）、軟板製程（45題）、硬板製程（45題），支援單選 105 題 + 複選 30 題 | 5 份 SOP 講義（14 個 `#L1xxxx`/`#L2xxxx` 錨點） |
+| **AIoT 應用工程師** (`aiot`) | 初級 | **140 題** | AIoT 基礎概論（80題）、物聯網系統與應用（60題），100% 三段式深度解析 | 5 份 SOP 講義（含惠斯登電橋/ADC 向量 SVG 與 Python 實戰代碼） |
 
 ---
 
@@ -8,40 +21,56 @@
 
 ```text
 c:\Drive224\Projects\iPAS 證照
-├── AGENTS.md                       # Agent 工作規範與目前專案基線
-├── .venv/                         # Python 本地虛擬環境
-├── .temp/                         # 轉檔時使用的暫存資料夾
-├── project-id.json                 # 跨 Agent 專案識別檔
-├── sync.py                        # 雲端硬碟同步指令碼 (偵測新增/修改/刪除)
-├── sync.log                       # 同步日誌檔 (記錄每次執行結果與異動)
-├── create_task.ps1                # Windows 排程工作註冊指令碼 (每 30 分鐘背景執行)
-├── convert_pdf.py                 # Markdown 轉 PDF 精美渲染轉檔工具
-├── parse_questions.py             # 營運智慧分析師題庫解析器
-├── parse_ai_questions.py          # AI 應用規劃師 (初級) 題庫解析器
-├── parse_ai_mid_questions.py      # AI 應用規劃師 (中級) 題庫解析器
-├── question_identity.py           # 題庫永久識別碼、來源代碼與內容雜湊共用模組
-├── generate_lecture.py             # Markdown → 口語講稿 TXT / MP3
-├── docs/                            # 系統改造、資料模型與階段計畫
-├── tests/                           # Node 內建測試與三題庫 smoke test
-├── Source/                         # 6 份講稿來源 Markdown（唯讀輸入）
-├── out/                            # 6 份 TXT 與 6 份離線 MP3 輸出
-├── work_log.md                    # 專案工作日誌 (記錄開發歷程與里程碑)
-├── 提示詞.txt                      # 題庫生成與 AI 改寫提示詞紀錄
-├── 營運智慧分析師/                 # 營運智慧分析師教材與衝刺講義 (單元A/B/C)
-├── AI應用規劃師/                   # AI應用規劃師 (包含初級、中級) 官方教材與講義
-└── exam/                          # 模擬考與自主學習網頁系統 (純前端 SPA)
-    ├── index.html                 # 系統首頁 (含身分驗證登入與科目選擇)
-    ├── core.js                    # 可獨立測試的評分、事件去重與計時核心
-    ├── account-core.js            # 不透明帳戶、分區鍵值、題目事件與同步操作核心
-    ├── account-api.js             # 登入與同步網路邊界、逾時及逐筆確認檢查
-    ├── script.js                  # 模擬考系統主控邏輯與加權驗證演算法
-    ├── style.css                  # 現代毛玻璃質感 (Glassmorphism) 與響應式樣式
-    ├── questions.js/json          # 營運智慧分析師題庫 (163 題)
-    ├── ai_questions.js/json       # AI應用規劃師 (初級) 題庫 (630 題)
-    └── ai_mid_questions.js/json   # AI應用規劃師 (中級) 題庫 (566 題)
+├── AGENTS.md                        # Agent 工作規範與目前專案基線
+├── README.md                        # 專案總覽與操作手冊
+├── work_log.md                      # 專案工作日誌 (記錄開發歷程與里程碑)
+├── project-id.json                  # 跨 Agent 專案識別檔
+├── question_identity.py             # 題庫永久識別碼 (question_uid)、來源代碼與內容雜湊共用模組
+├── parse_questions.py               # 營運智慧分析師 (初級) 題庫解析器 -> 163 題
+├── parse_ai_questions.py            # AI 應用規劃師 (初級) 題庫解析器 -> 630 題
+├── parse_ai_mid_questions.py        # AI 應用規劃師 (中級) 題庫解析器 -> 566 題
+├── parse_3d_questions.py            # 3D 列印積層製造工程師 (初級) 題庫解析器 -> 207 題
+├── parse_pcb_questions.py           # 電路板製程工程師 (中級) 題庫解析器 -> 135 題
+├── parse_aiot_questions.py          # AIoT 應用工程師 (初級) 題庫解析器 -> 140 題
+├── questions_aiot.py                # AIoT 試題資料與三段式結構化解析定義
+├── convert_pdf.py                   # Markdown 轉 A4 PDF 精美渲染轉檔工具
+├── generate_lecture.py              # Markdown → 口語講稿 TXT / 離線 MP3 生成工具
+├── sync.py / create_task.ps1        # 雲端硬碟同步指令碼與 Windows 排程設定
+├── docs/                            # 系統規範與架構設計文件
+│   ├── ipas_exam_preparation_sop.md # 證照備考與題庫／講義建置標準作業程序 (SOP)
+│   ├── account_sync_api_contract.md # 帳戶與跨裝置同步 API 契約
+│   └── ipas_exam_modernization_plan.md # 模擬考系統分階段改造工作計畫
+├── notes/                           # 根目錄講義鏡像（供 GitHub Pages 根路徑存取，與 exam/notes/ 100% 同步）
+├── tests/                           # Node 內建測試 (46 項) 與 Python 題庫識別測試 (4 項)
+├── Source/                          # 6 份初級 AI 講稿來源 Markdown（唯讀輸入）
+├── out/                             # 6 份 TXT 講稿與 6 份離線 MP3 輸出
+├── 營運智慧分析師/                  # 官方教材、簡章與單元講義
+├── AI應用規劃師/                    # 初級與中級官方學習指引、歷屆試題與補充題庫
+├── 3D 列印積層製造工程師/           # 官方學習指引與歷屆試題 PDF
+├── 電路板製程工程師/                # 初級與中級學習指引與公告試題 PDF
+├── AIoT應用工程師/                  # 學習指引與能力鑑定簡章 PDF
+└── exam/                            # 模擬考與自主學習網頁系統 (純前端 SPA / PWA)
+    ├── index.html                   # 系統首頁 (含身分證驗證登入、證照切換、審題儀表板與課程學習)
+    ├── config.js                    # 六大證照模組註冊、配題規則與講義錨點導覽設定
+    ├── core.js                      # 可獨立測試的評分、事件去重、Markdown 保護與計時核心
+    ├── account-core.js              # 不透明帳戶、分區鍵值、題目事件與同步操作核心
+    ├── account-api.js               # 登入與同步網路邊界、逾時及逐筆確認檢查
+    ├── script.js                    # 模擬考系統主控邏輯、IRT 審題儀表板與 UI 控制器
+    ├── style.css                    # 現代毛玻璃質感 (Glassmorphism)、深淺色主題與高對比 Mermaid 樣式
+    ├── sw.js                        # Service Worker 離線快取支援
+    ├── notes/                       # 六大證照 SOP 模組化 Markdown 講義
+    ├── images/3d/                   # 3D 列印題庫專屬裁切工程示意圖 (59 張)
+    ├── questions.js/json            # 營運智慧分析師題庫 (163 題)
+    ├── ai_questions.js/json         # AI 應用規劃師 (初級) 題庫 (630 題)
+    ├── ai_mid_questions.js/json     # AI 應用規劃師 (中級) 題庫 (566 題)
+    ├── 3d_questions.js/json         # 3D 列印積層製造工程師 (初級) 題庫 (207 題)
+    ├── pcb_questions.js/json        # 電路板製程工程師 (中級) 題庫 (135 題)
+    └── aiot_questions.js/json       # AIoT 應用工程師 (初級) 題庫 (140 題)
 ```
 
-題庫數量以 `exam/*.json` 的實際內容為準；重新執行解析器後，應再次核對 JSON 題目數與前端顯示。
+> **重要規範**：
+> 1. 題庫數量以 `exam/*questions.json` 的實際內容為準；重新執行解析器後，應核對 JSON 題目數與前端顯示。
+> 2. 編修任何課程講義時，必須確保 `notes/` 與 `exam/notes/` 雙目錄 100% 同步一致（詳見 [`docs/ipas_exam_preparation_sop.md`](docs/ipas_exam_preparation_sop.md)）。
 
 ---
 
@@ -49,15 +78,10 @@ c:\Drive224\Projects\iPAS 證照
 
 `Source/` 保存 6 份 iPAS 初級 AI 應用規劃師 Markdown 筆記，`generate_lecture.py` 將其轉換成老師講課風格的 TXT 講稿，並使用本機 Windows SAPI 產生 MP3 到 `out/`。目前輸出為 6 份 TXT 與 6 份 MP3。
 
-### 產生全部講稿與 MP3
-
 ```powershell
+# 產生全部講稿與 MP3
 .venv\Scripts\python generate_lecture.py --llm-engine codex --tts-engine sapi
-```
 
-### 常用選項
-
-```powershell
 # 只處理檔名含 Week1 的來源
 .venv\Scripts\python generate_lecture.py --only Week1 --llm-engine codex --tts-engine sapi
 
@@ -71,78 +95,38 @@ c:\Drive224\Projects\iPAS 證照
 
 ## 🛡️ 安全驗證登入機制
 
-為了完美模擬真實 iPAS 線上鑑定考試的考場登入體驗，系統在首頁整合了**身分證字號驗證登入機制**：
-1. **安全輸入遮罩**：使用 `<input type="password">` 隱藏輸入的身分證號碼，達到輸入時只顯示遮罩（`******`）的安全效果。
+為了模擬真實 iPAS 線上鑑定考試的考場登入體驗，系統在首頁整合了**身分證字號驗證登入機制**：
+1. **安全輸入遮罩**：使用 `<input type="password">` 隱藏輸入的身分證號碼，達到輸入時只顯示遮罩（`******`）的效果。
 2. **台灣身分證驗證演算法**：系統內建身分證加權模數（Modulo 10）演算法，首碼英文會自動轉換為相應的地區數值，並對所有位數進行加權乘積相加，餘數必須符合國家身分證檢核碼標準方可登入。
+3. **不透明帳戶儲存**：IndexedDB v5 帳戶儲存區以不透明 `user_id` 作為分區鍵值，絕不直接將身分證號作為資料庫主鍵。
 
 ---
 
-## 🔄 雲端硬碟自動同步系統 (`sync.py`)
+## 🚀 啟用與使用考試系統
 
-為了確保您的學習資料與雲端硬碟保持即時同步，我們設計了一套高效率的同步機制：
-1. **精準更新**：透過 HTTP `HEAD` 請求快速取得雲端檔案的 `Content-Length` 與 `Last-Modified`，只下載有異動或新加入的檔案，並保留原始修改時間。
-2. **真實鏡像**：當雲端檔案被刪除或移位時，同步系統會自動清除本地對應的舊檔案，以確保資料夾的乾淨整潔。
-
-### ⚙️ 背景排程設定 (`create_task.ps1`)
-
-工作區包含一個 PowerShell 註冊指令碼，可在 Windows 中註冊一個名為 `IPAS_GDrive_Sync` 的背景排程工作：
-* **排程頻率**：預設每 30 分鐘自動執行一次同步。
-* **背景靜態執行**：使用虛擬環境的 `.venv\Scripts\pythonw.exe` 執行，**完全不會彈出任何命令提示字元視窗**，在背景安靜且無感地守護您的資料。
-
----
-
-## 📄 精美學習筆記轉檔系統 (`convert_pdf.py`)
-
-本工作區提供了將 Markdown 筆記直接轉為 A4 規格 PDF 的渲染工具。轉檔系統具備以下特點：
-1. **精美排版 CSS**：使用微軟正黑體、Inter 英文無襯線字型，搭配精心設計的斑馬紋表格與頁面邊距。
-2. **考點 Alert Callouts 轉譯**：自動將 Markdown 原生的 `> [!IMPORTANT]` 等標籤，解析為符合現代網頁設計的精美提示框（包含主題代表色與小圖標）。
-3. **架構圖實體化**：自動將 Markdown 中的 Mermaid 語法轉換為高質感的 CSS 流程圖，無需連接外部網路。
-4. **轉譯工具執行**：
+1. **生成或更新題庫數據**（如教材或解析器有更新時）：
    ```powershell
-   # 使用本地虛擬環境 Python 執行轉檔
-   .venv\Scripts\python convert_pdf.py
-   ```
-
----
-
-## 📝 多科證照模擬考試系統 (`exam/`)
-
-全真網頁模擬考試與自主練習系統已全面支援三種證照模式：
-1. **營運智慧分析師 (163 題)**：依官方教材解析，涵蓋營運智慧概論與經營管理數位化概論。
-2. **AI 應用規劃師 - 初級 (530 題)**：涵蓋 AI 基礎理論、生成式 AI、機器學習與無程式碼應用。
-3. **AI 應用規劃師 - 中級 (298 題)**：涵蓋技術應用與規劃、大數據分析與機器學習三大專業學科。
-
-### 🚀 啟用與使用考試系統
-
-1. **生成或更新題庫數據**（如教材有更新時）：
-   在工作區目錄下執行對應的解析指令碼：
-   ```powershell
-   .venv\Scripts\python parse_questions.py
-   .venv\Scripts\python parse_ai_questions.py
-   .venv\Scripts\python parse_ai_mid_questions.py
+   python parse_questions.py
+   python parse_ai_questions.py
+   python parse_ai_mid_questions.py
+   python parse_3d_questions.py
+   python parse_pcb_questions.py
+   python parse_aiot_questions.py
    ```
 
 2. **本地開啟網頁考試**：
    由於課程學習與題庫載入使用 `fetch()`，建議從工作區根目錄啟動本機靜態伺服器：
    ```powershell
-   .venv\Scripts\python -m http.server 8000 --directory .
+   python -m http.server 8000 --directory .
    ```
-   然後開啟 [http://localhost:8000/exam/](http://localhost:8000/exam/)。系統不需要後端 API；本機伺服器只用來提供靜態檔案與 Markdown 講義。
+   然後開啟 [http://localhost:8000/exam/](http://localhost:8000/exam/)（或根目錄 [http://localhost:8000/](http://localhost:8000/)）。
 
 3. **線上瀏覽網頁考試 (GitHub Pages)**：
-   本系統已部署至 GitHub Pages，您可直接點擊以下連結線上作答：
-   👉 **[線上模擬考與自主學習系統](https://ta-lang.github.io/iPAS_Test/)**
+   👉 **[iPAS 線上模擬考與自主學習系統](https://ta-lang.github.io/iPAS_Test/)**
 
-4. **提交題庫或網頁更新**：
-   根目錄是目前的 Git 儲存庫，`exam/` 不是獨立 Git repository。請在根目錄檢查並提交實際變更：
-   ```powershell
-   git status --short
-   git add AGENTS.md README.md work_log.md exam/
-   git commit -m "更新題庫與介面優化"
-   ```
-   推送前請確認目標遠端與分支；GitHub Pages 的部署分支／遠端依目前 repository 設定處理，不要在 `exam/` 目錄執行 `git push`。
+---
 
-### ✅ 自動化基線驗證
+## ✅ 自動化基線驗證
 
 本專案使用 Node.js 與 Python 內建測試工具，不需要安裝額外測試套件：
 
@@ -155,15 +139,13 @@ node --check exam/config.js
 node --check exam/sw.js
 ```
 
-測試涵蓋評分結果、重複事件防護、牆鐘計時、永久 `question_uid`、舊資料消歧義、按證照載入、不透明帳戶、帳戶 A/B 分區、短效 session、同步逐筆確認，以及三份題庫契約與 JSON/JS wrapper 一致性。題庫在 GitHub Pages 上以 JSON 為 canonical 格式按需載入；JS wrapper 僅供 `file://` 本機備援，且只能由解析器產生。
-
-Phase 3 前端基礎已建立，但現有 Google Apps Script 尚未提供正式帳戶與同步契約，因此目前登入後會顯示「本機模式」，不會假裝已跨裝置同步。後端需求請見 [帳戶與同步 API 契約](docs/account_sync_api_contract.md)。
+測試涵蓋評分結果（含單選與複選題）、重複事件防護、牆鐘計時、永久 `question_uid`、舊資料消歧義、按證照載入、不透明帳戶、帳戶 A/B 分區、短效 session、同步逐筆確認，以及六大證照題庫契約與 JSON/JS wrapper 一致性。
 
 ---
 
-## 📐 系統設計與軟體規格書
+## 📐 系統設計與標準作業程序 (SOP)
 
-有關本系統的詳細架構、系統方塊圖、資料流向、各畫面流程圖、檔案關聯圖以及 AI 提示詞的規劃與定義，請參閱：
-* **[模擬考系統分階段改造工作計畫](docs/ipas_exam_modernization_plan.md)**：涵蓋帳戶資料、題庫、Note.Voice、NotebookLM MCP、離線同步、安全與測試。
-* **[系統軟體規格書 (system_software_specification.md)](file:///C:/Users/talan/.gemini/antigravity-ide/brain/2c5b7cd6-e6ce-4ddf-b77d-04b1e4b997ad/system_software_specification.md)**
-* **[專案工作日誌 (work_log.md)](file:///c:/Drive224/Projects/iPAS%20證照/work_log.md)**
+* **[iPAS 證照備考與題庫／講義建置 SOP](docs/ipas_exam_preparation_sop.md)**：規範講義雙目錄同步、Mermaid 禁用自訂色彩渲染、向量 `<svg>` 幾何繪圖、Python/SQL/PySpark 實戰代碼專區與三段式題庫詳解標準。
+* **[帳戶與同步 API 契約](docs/account_sync_api_contract.md)**：定義後端同步契約與本機模式退避邊界。
+* **[模擬考系統分階段改造工作計畫](docs/ipas_exam_modernization_plan.md)**：涵蓋帳戶資料、題庫、Note/Voice、離線同步、安全與測試。
+* **[專案工作日誌 (work_log.md)](work_log.md)**：完整記錄各階段開發歷程與里程碑。
