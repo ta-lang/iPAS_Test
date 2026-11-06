@@ -1,5 +1,6 @@
 // IPAS Mock Exam System Configuration
 window.EXAM_CONFIG = {
+    version: "20261106_815",
     // 部署後的 Google Apps Script Web App URL
     apiEndpoint: "https://script.google.com/macros/s/AKfycbzy120dNjp87TE49odkLAchskuv5ig0hf0-e9lOMyBm-2buBs7lpOcElq0dVgxjRjs1/exec",
     modules: [

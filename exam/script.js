@@ -321,7 +321,9 @@ themeToggle.addEventListener('click', () => {
 function loadScript(src) {
     return new Promise((resolve, reject) => {
         const script = document.createElement('script');
-        script.src = src;
+        const sep = src.includes('?') ? '&' : '?';
+        const v = (window.EXAM_CONFIG && window.EXAM_CONFIG.version) || '20261106_815';
+        script.src = `${src}${sep}v=${v}`;
         script.charset = 'utf-8';
         script.onload = () => resolve();
         script.onerror = () => reject(new Error(`Failed to load script ${src}`));
@@ -381,7 +383,9 @@ async function loadModuleQuestions(mod) {
     let questions = [];
     if (window.location.protocol !== 'file:') {
         try {
-            const response = await fetch(mod.questionsJson);
+            const sep = mod.questionsJson.includes('?') ? '&' : '?';
+            const v = (window.EXAM_CONFIG && window.EXAM_CONFIG.version) || '20261106_815';
+            const response = await fetch(`${mod.questionsJson}${sep}v=${v}`, { cache: 'no-cache' });
             if (response.ok) questions = await response.json();
         } catch (e) {
             console.warn(`Failed to fetch ${mod.questionsJson}: ${e.message}`);

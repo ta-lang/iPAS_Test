@@ -14,7 +14,7 @@ function countMatches(text, expression) {
 
 test('核心模組在主程式之前載入並納入離線 app shell', () => {
     assert.ok(index.indexOf('src="core.js"') < index.indexOf('src="script.js"'));
-    assert.match(serviceWorker, /const CACHE = 'ipas-exam-v5'/);
+    assert.match(serviceWorker, /const CACHE = 'ipas-exam-v6'/);
     assert.match(serviceWorker, /'core\.js'/);
 });
 
@@ -141,7 +141,7 @@ test('Phase 3 P2 Service Worker 快取策略、重新整理進度保留與測驗
     const style = fs.readFileSync(path.join(examDir, 'style.css'), 'utf8');
 
     // 1. Service Worker v5 Network-First + CDN Stale-While-Revalidate
-    assert.match(serviceWorker, /const CACHE = 'ipas-exam-v5'/);
+    assert.match(serviceWorker, /const CACHE = 'ipas-exam-v6'/);
     assert.match(serviceWorker, /fetch\(e\.request\)[\s\S]*?\.catch\(\(\) => caches\.match\(e\.request\)\)/);
     assert.match(serviceWorker, /cdn\.jsdelivr\.net/);
     assert.match(serviceWorker, /fonts\.googleapis\.com/);

@@ -20,6 +20,9 @@
   * 將解析建置邏輯完整融入 parse_ai_questions.py，並模組化資料至 i_junior_1029_mock_data.py。
   * 同步更新 xam/config.js 與根目錄 config.js（questionCount: 815）、題庫檔案 xam/ai_questions.json、xam/ai_questions.js 及根目錄鏡像。
   * 更新 	ests/question-bank-smoke.test.js 基線。
+* **【PWA 快取版本升級 (v6) 與題庫動態 Cache-Busting 機制】**：
+  * 將 `sw.js` 與 `exam/sw.js` 之快取空間由 `ipas-exam-v5` 升級為 `ipas-exam-v6`，在 SW 啟動時強制清空過期快取。
+  * 於 `script.js` 與 `exam/script.js` 之 `loadModuleQuestions` 加入 `{ cache: 'no-cache' }` 與版本參數 `?v=20261106_815`，徹底排除瀏覽器端與 CDN 強快取 630 舊題庫現象。
 * **【全自動化回歸測試驗證】**：
   * 執行 
 ode --test tests/*.test.js **46/46 全數 PASS**。
