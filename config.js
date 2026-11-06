@@ -45,7 +45,7 @@ window.EXAM_CONFIG = {
             icon: "🤖",
             description: "人工智慧基礎、生成式 AI、No-code/Low-code 與風險管理",
             enabled: true,
-            questionCount: 630,
+            questionCount: 815,
             questionsFile: "ai_questions.js",
             questionsJson: "ai_questions.json",
             questionsVar: "ipasAiQuestions",

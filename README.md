@@ -4,7 +4,7 @@
 
 ---
 
-## 🏆 已支援證照與題庫規模（共 6 張證照 / 1,841 題）
+## 🏆 已支援證照與題庫規模（共 6 張證照 / 2,026 題）
 
 | 證照名稱 | 等級 | 題庫總數 | 考科組成與特色 | 重點講義模組 (`notes/` & `exam/notes/`) |
 |---|---|---:|---|---|
@@ -27,7 +27,7 @@ c:\Drive224\Projects\iPAS 證照
 ├── project-id.json                  # 跨 Agent 專案識別檔
 ├── question_identity.py             # 題庫永久識別碼 (question_uid)、來源代碼與內容雜湊共用模組
 ├── parse_questions.py               # 營運智慧分析師 (初級) 題庫解析器 -> 163 題
-├── parse_ai_questions.py            # AI 應用規劃師 (初級) 題庫解析器 -> 630 題
+├── parse_ai_questions.py            # AI 應用規劃師 (初級) 題庫解析器 -> 815 題
 ├── parse_ai_mid_questions.py        # AI 應用規劃師 (中級) 題庫解析器 -> 566 題
 ├── parse_3d_questions.py            # 3D 列印積層製造工程師 (初級) 題庫解析器 -> 207 題
 ├── parse_pcb_questions.py           # 電路板製程工程師 (中級) 題庫解析器 -> 135 題
@@ -61,7 +61,7 @@ c:\Drive224\Projects\iPAS 證照
     ├── notes/                       # 六大證照 SOP 模組化 Markdown 講義
     ├── images/3d/                   # 3D 列印題庫專屬裁切工程示意圖 (59 張)
     ├── questions.js/json            # 營運智慧分析師題庫 (163 題)
-    ├── ai_questions.js/json         # AI 應用規劃師 (初級) 題庫 (630 題)
+    ├── ai_questions.js/json         # AI 應用規劃師 (初級) 題庫 (815 題)
     ├── ai_mid_questions.js/json     # AI 應用規劃師 (中級) 題庫 (566 題)
     ├── 3d_questions.js/json         # 3D 列印積層製造工程師 (初級) 題庫 (207 題)
     ├── pcb_questions.js/json        # 電路板製程工程師 (中級) 題庫 (135 題)

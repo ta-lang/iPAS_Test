@@ -5,7 +5,7 @@ const path = require('node:path');
 
 const banks = [
     { file: 'questions.json', wrapper: 'questions.js', variable: 'ipasQuestions', expectedCount: 163 },
-    { file: 'ai_questions.json', wrapper: 'ai_questions.js', variable: 'ipasAiQuestions', expectedCount: 630 },
+    { file: 'ai_questions.json', wrapper: 'ai_questions.js', variable: 'ipasAiQuestions', expectedCount: 815 },
     { file: 'ai_mid_questions.json', wrapper: 'ai_mid_questions.js', variable: 'ipasAiMidQuestions', expectedCount: 566 },
     { file: '3d_questions.json', wrapper: '3d_questions.js', variable: 'ipas3dQuestions', expectedCount: 207 },
     { file: 'pcb_questions.json', wrapper: 'pcb_questions.js', variable: 'ipasPcbQuestions', expectedCount: 135 },

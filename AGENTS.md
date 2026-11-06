@@ -95,7 +95,7 @@ Use the project virtual environment if one is available.
 ## Current Notes
 
 - The root is the active Git repository; `exam/` is a static application directory, not an independent repository.
-- The current question-bank counts (total 1,841 questions across 6 certificates) are:
+- The current question-bank counts (total 2,026 questions across 6 certificates) are:
   - 163 Operations Intelligence Analyst (`oi`) junior questions
   - 630 AI Application Planner (`ai`) junior questions
   - 566 AI Application Planner (`ai_mid`) intermediate questions
